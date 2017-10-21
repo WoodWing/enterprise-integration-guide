@@ -1,5 +1,4 @@
-# WoodWing Software - Enterprise Web Services Guide
-<span style="color:red">EXPERIMENTAL VERSION</span>
+<span style="color:red">THIS IS AN EXPERIMENTAL VERSION</span>
 
 ## Introduction
 Before Enterprise 7, a System Integration Guide was available for Enterprise 4. That document has now been discontinued in its current form and split up into two components:
