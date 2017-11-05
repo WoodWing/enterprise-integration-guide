@@ -1,6 +1,7 @@
 ---
 layout: chapter
 title: System Architecture
+sortid: 10
 ---
 This chapter provides a global overview of the Enterprise architecture, followed by how Web Services fit into the big figure.
 

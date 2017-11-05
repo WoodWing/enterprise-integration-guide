@@ -1,6 +1,7 @@
 ---
 layout: chapter
 title: Preview & Copyfit
+sortid: 040
 ---
 
 ## Preview & Copy-Fit \[since 7.4\]

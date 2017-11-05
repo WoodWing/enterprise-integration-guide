@@ -1,6 +1,7 @@
 ---
 layout: chapter
 title: Suggestions and Auto-completion [since 9.1]
+sortid: 080
 ---
 
 For a functional explanation of these two features and how to set them up, see the 'Tags' section of the *Enterprise Server Online Help*.

@@ -1,6 +1,7 @@
 ---
 layout: chapter
 title: Protocols [since 8.0]
+sortid: 20
 ---
 Enterprise Server 7 (and earlier versions) supports the SOAP protocol. Because this protocol has some performance- and integration disadvantages, Enterprise Server 8 supports two additional protocols (AMF and JSON) that can be used instead of SOAP.
 

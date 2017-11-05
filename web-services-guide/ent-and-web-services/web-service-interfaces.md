@@ -1,6 +1,7 @@
 ---
 layout: chapter
 title: Web Service Interfaces
+sortid: 40
 ---
 This chapter describes all flavors of the Web Service interfaces exposed by Enterprise Server. For each flavor, its primary purpose is given as well as how it needs to be accessed by client applications.
 

@@ -12,9 +12,17 @@
   </head>
   <body>
 
+  <aside style="float:left;padding:10px;padding-top:30px;width:150px;">
+      {% include /prev-next-page.html %}
+  </aside>
+
   <section class="page-header">
       <h1 class="project-name">{{ page.title }}</h1>
   </section>
+
+  <aside style="float:left;padding:10px;padding-top:30px;padding-right:20px;width:280px;">
+      {% include /toc.html %}
+  </aside>
 
   <section class="main-content">
       {{ content }}

@@ -1,6 +1,7 @@
 ---
 layout: chapter
 title: Spelling
+sortid: 030
 ---
 ## Spelling \[since 7.4\]
 

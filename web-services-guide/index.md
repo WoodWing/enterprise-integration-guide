@@ -15,9 +15,3 @@ We assume the reader of this guide is familiar with:
 
 ## Support
 To discuss any Web Services related issues, visit WoodWing’s Help Center site: https://helpcenter.woodwing.com/hc/en-us/community/topics/200276265-Development-Webservices (log-in required). If you require further support for Enterprise, visit the WoodWing support web site at http://www.WoodWing.com/support and follow the directions for submitting questions.
-
-## Topics
-* [Enterprise and Web Services](ent-and-web-services/intro.md)
-* [Enterprise Data Entities](ent-data-entities/intro.md)
-* [Enterprise in Action](ent-in-action/intro.md)
-* [Enterprise Services API](ent-services-api/intro.md)

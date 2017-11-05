@@ -1,6 +1,7 @@
 ---
 layout: chapter
 title: Client Applications
+sortid: 50
 ---
 
 The Web Service interfaces are accessible in different ways. The way to choose depends on the programming language used to develop your application and the way it needs to be deployed. Most common programming languages today support Web Services, including PHP, Java, RealBasic, VisualBasic, C++, C\#, Flex and many more. Enterprise Server implements its interfaces with PHP. When your solution is written in a programming language other than PHP, you need to develop a client application that talks Web Services as specified by the WSDLs of Enterprise Server.

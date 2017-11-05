@@ -1,0 +1,100 @@
+<style>
+	a {
+		text-decoration: none;
+		display: inline-block;
+	}
+	a:hover {
+		background-color: #f1f1f1;
+		color: black;
+	}
+	.btn-previous {
+		background-color: #f1f1f1;
+		color: black;
+	}
+	.btn-next {
+		background-color: #4CAF50;
+		color: white;
+	}
+	.btn-round {
+		padding: 8px 16px;
+		border-radius: 50%;
+	}
+	.btn-disabled {
+		cursor:not-allowed;
+		opacity:0.3;
+		pointer-events:none
+	}
+</style>
+{% capture thisGuidePath %}{% include /functions/getParentPath.html pagePath=page.path pathDepth=1 %}{% endcapture %}
+{% assign thisGuideId = thisGuidePath | strip_newlines | remove_first: '/' %}
+{% assign prevItem = '' %}
+{% assign thisItem = '' %}
+{% assign nextItem = '' %}
+
+{% if site.data[thisGuideId].toc.toc[0] %}
+	{% for item1 in site.data[thisGuideId].toc.toc %}
+		{%if item1.path == page.path %}
+			{% assign thisItem = item1 %}
+		{% else %}
+			{% if thisItem != '' and nextItem == '' %}
+				{% assign nextItem = item1 %}
+			{% endif %}
+			{% if thisItem == '' %}
+				{% assign prevItem = item1 %}
+			{% endif %}
+		{% endif %}
+		{% if item1.children[0] %}
+			{% for item2 in item1.children %}
+				{%if item2.path == page.path %}
+					{% assign thisItem = item2 %}
+				{% else %}
+					{% if thisItem != '' and nextItem == '' %}
+						{% assign nextItem = item2 %}
+					{% endif %}
+					{% if thisItem == '' %}
+						{% assign prevItem = item2 %}
+					{% endif %}
+				{% endif %}
+				{% if item2.children[0] %}
+					{% for item3 in item2.children %}
+						{%if item3.path == page.path %}
+							{% assign thisItem = item3 %}
+						{% else %}
+							{% if thisItem != '' and nextItem == '' %}
+								{% assign nextItem = item3 %}
+							{% endif %}
+							{% if thisItem == '' %}
+								{% assign prevItem = item3 %}
+							{% endif %}
+						{% endif %}
+						{% if item3.children[0] %}
+							{% for item4 in item3.children %}
+								{%if item4.path == page.path %}
+									{% assign thisItem = item4 %}
+								{% else %}
+									{% if thisItem != '' and nextItem == '' %}
+										{% assign nextItem = item4 %}
+									{% endif %}
+									{% if thisItem == '' %}
+										{% assign prevItem = item4 %}
+									{% endif %}
+								{% endif %}
+							{% endfor %}
+						{% endif %}
+					{% endfor %}
+				{% endif %}
+			{% endfor %}
+		{% endif %}
+	{% endfor %}
+{% endif %}
+
+{% if prevItem == '' %}
+	<a href="{{ prevItem.url }}" class="btn-previous btn-round btn-disabled">&#8249;</a>
+{% else %}
+	<a href="{{ prevItem.url }}" class="btn-previous btn-round">&#8249;</a>
+{% endif %}
+{% if nextItem == '' %}
+	<a href="{{ nextItem.url }}" class="btn-next btn-round btn-disabled">&#8250;</a>
+{% else %}
+	<a href="{{ nextItem.url }}" class="btn-next btn-round">&#8250;</a>
+{% endif %}

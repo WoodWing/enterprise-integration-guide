@@ -1,6 +1,7 @@
 ---
 layout: chapter
 title: Object Editing
+sortid: 010
 ---
 ## Common sequences
 

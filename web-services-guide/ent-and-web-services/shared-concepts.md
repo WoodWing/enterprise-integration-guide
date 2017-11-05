@@ -1,6 +1,7 @@
 ---
 layout: chapter
 title: Shared Concepts
+sortid: 60
 ---
 This chapter describes concepts used in all Web Service interfaces.
 
@@ -219,7 +220,7 @@ For user convenience, the client application GUI can be enhanced by hiding/disab
 When normal configurations made through admin pages do not fulfill the customer’s needs, Server Plug-ins could be the answer. Its connectors allow you to hook into any workflow service. See the Server Plug-ins documentation for more info. When any operation is not allowed, the connector could throw a BizException as follows:
 
 ```php
-throw new BizException( 'ERR\_AUTHORIZATION', 'Server', '' );
+throw new BizException( 'ERR_AUTHORIZATION', 'Server', '' );
 ```
 
 For example, it could check if the end user is member of a specific user group, it could check the status of the object involved, it could check the deadline and system time, etc, and then decide to block access.

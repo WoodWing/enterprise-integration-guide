@@ -1,0 +1,11 @@
+{% assign pathParts = include.pagePath | split: "/" %}
+{% if include.pathDepth %}
+	{% assign length = include.pathDepth | minus: 1 %}
+{% else %}
+	{% assign length = pathParts.size | minus: 2 %}
+{% endif %}
+{% assign thisPagePath = "" %}
+{% for c in (0..length) %}
+	{% capture thisPagePath %}{{thisPagePath}}/{{pathParts[c]}}{% endcapture %}
+{% endfor %}
+{{thisPagePath}}

@@ -12,10 +12,15 @@
   </head>
   <body>
 
-    <section class="main-content">
+  <aside style="float:left;padding:10px;padding-top:30px;padding-right:20px;width:280px;">
+      {% include /prev-next-page.html %}
+      {% include /toc.html %}
+  </aside>
+
+  <section class="main-content">
       <h1>{{ page.title }}</h1>
       {{ content }}
-    </section>
+  </section>
 
   </body>
 </html>

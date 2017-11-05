@@ -1,6 +1,7 @@
 ---
 layout: chapter
 title: Workflow Dialogs
+sortid: 010
 ---
 Through Dialog Setup pages, system administrators can configure workflow dialogs per Brand, object type and action. When a client is about to show a workflow dialog, such definitions are requested through the GetDialog workflow service (as specified in the SCEnterprise.wsdl). Whenever the user selects another Brand, Issue, Category or status, the client requests for that dialog definition (requesting for GetDialog again) and redraws the entire dialog.
 

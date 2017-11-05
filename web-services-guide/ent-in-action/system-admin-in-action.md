@@ -1,6 +1,7 @@
 ---
 layout: chapter
 title: System Administration in Action
+sortid: 090
 ---
 ## Adding Sub-Applications to Content Station \[since 9.0\]
 
