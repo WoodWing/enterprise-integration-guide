@@ -1,115 +1,115 @@
 toc:
   - title: Enterprise Web Service Guide
     layout: guide
-    path: enterprise-integration-guide/web-services-guide/index.md
+    path: web-services-guide/index.md
     url: /enterprise-integration-guide/web-services-guide/index.html
     children:
     - title: Enterprise and Web Services
       layout: section
-      path: enterprise-integration-guide/web-services-guide/ent-and-web-services/index.md
+      path: web-services-guide/ent-and-web-services/index.md
       url: /enterprise-integration-guide/web-services-guide/ent-and-web-services/index.html
       children:
       - title: System Architecture
         layout: chapter
-        path: enterprise-integration-guide/web-services-guide/ent-and-web-services/system-architecture.md
+        path: web-services-guide/ent-and-web-services/system-architecture.md
         url: /enterprise-integration-guide/web-services-guide/ent-and-web-services/system-architecture.html
       - title: Protocols [since 8.0]
         layout: chapter
-        path: enterprise-integration-guide/web-services-guide/ent-and-web-services/protocols.md
+        path: web-services-guide/ent-and-web-services/protocols.md
         url: /enterprise-integration-guide/web-services-guide/ent-and-web-services/protocols.html
       - title: Transfer Server [since 8.0]
         layout: chapter
-        path: enterprise-integration-guide/web-services-guide/ent-and-web-services/transfer-server.md
+        path: web-services-guide/ent-and-web-services/transfer-server.md
         url: /enterprise-integration-guide/web-services-guide/ent-and-web-services/transfer-server.html
       - title: Web Service Interfaces
         layout: chapter
-        path: enterprise-integration-guide/web-services-guide/ent-and-web-services/web-service-interfaces.md
+        path: web-services-guide/ent-and-web-services/web-service-interfaces.md
         url: /enterprise-integration-guide/web-services-guide/ent-and-web-services/web-service-interfaces.html
       - title: Client Applications
         layout: chapter
-        path: enterprise-integration-guide/web-services-guide/ent-and-web-services/client-applications.md
+        path: web-services-guide/ent-and-web-services/client-applications.md
         url: /enterprise-integration-guide/web-services-guide/ent-and-web-services/client-applications.html
       - title: Shared Concepts
         layout: chapter
-        path: enterprise-integration-guide/web-services-guide/ent-and-web-services/shared-concepts.md
+        path: web-services-guide/ent-and-web-services/shared-concepts.md
         url: /enterprise-integration-guide/web-services-guide/ent-and-web-services/shared-concepts.html
       - title: Messages
         layout: chapter
-        path: enterprise-integration-guide/web-services-guide/ent-and-web-services/messages.md
+        path: web-services-guide/ent-and-web-services/messages.md
         url: /enterprise-integration-guide/web-services-guide/ent-and-web-services/messages.html
     - title: Enterprise Data Entities
       layout: section
-      path: enterprise-integration-guide/web-services-guide/ent-data-entities/index.md
+      path: web-services-guide/ent-data-entities/index.md
       url: /enterprise-integration-guide/web-services-guide/ent-data-entities/index.html
       children:
       - title: Workflow Entities
         layout: chapter
-        path: enterprise-integration-guide/web-services-guide/ent-data-entities/workflow-entities.md
+        path: web-services-guide/ent-data-entities/workflow-entities.md
         url: /enterprise-integration-guide/web-services-guide/ent-data-entities/workflow-entities.html
     - title: Enterprise in Action
       layout: section
-      path: enterprise-integration-guide/web-services-guide/ent-in-action/index.md
+      path: web-services-guide/ent-in-action/index.md
       url: /enterprise-integration-guide/web-services-guide/ent-in-action/index.html
       children:
       - title: Planning in Action
         layout: chapter
-        path: enterprise-integration-guide/web-services-guide/ent-in-action/planning-in-action.md
+        path: web-services-guide/ent-in-action/planning-in-action.md
         url: /enterprise-integration-guide/web-services-guide/ent-in-action/planning-in-action.html
       - title: System Administration in Action
         layout: chapter
-        path: enterprise-integration-guide/web-services-guide/ent-in-action/system-admin-in-action.md
+        path: web-services-guide/ent-in-action/system-admin-in-action.md
         url: /enterprise-integration-guide/web-services-guide/ent-in-action/system-admin-in-action.html
       - title: Workflow in Action
         layout: section
-        path: enterprise-integration-guide/web-services-guide/ent-in-action/workflow-in-action/index.md
+        path: web-services-guide/ent-in-action/workflow-in-action/index.md
         url: /enterprise-integration-guide/web-services-guide/ent-in-action/workflow-in-action/index.html
         children:
         - title: Object Editing
           layout: chapter
-          path: enterprise-integration-guide/web-services-guide/ent-in-action/workflow-in-action/object-editing.md
+          path: web-services-guide/ent-in-action/workflow-in-action/object-editing.md
           url: /enterprise-integration-guide/web-services-guide/ent-in-action/workflow-in-action/object-editing.html
         - title: Object Searching
           layout: chapter
-          path: enterprise-integration-guide/web-services-guide/ent-in-action/workflow-in-action/object-searching.md
+          path: web-services-guide/ent-in-action/workflow-in-action/object-searching.md
           url: /enterprise-integration-guide/web-services-guide/ent-in-action/workflow-in-action/object-searching.html
         - title: Spelling
           layout: chapter
-          path: enterprise-integration-guide/web-services-guide/ent-in-action/workflow-in-action/spelling.md
+          path: web-services-guide/ent-in-action/workflow-in-action/spelling.md
           url: /enterprise-integration-guide/web-services-guide/ent-in-action/workflow-in-action/spelling.html
         - title: Preview & Copyfit
           layout: chapter
-          path: enterprise-integration-guide/web-services-guide/ent-in-action/workflow-in-action/preview-and-copyfit.md
+          path: web-services-guide/ent-in-action/workflow-in-action/preview-and-copyfit.md
           url: /enterprise-integration-guide/web-services-guide/ent-in-action/workflow-in-action/preview-and-copyfit.html
         - title: Trash Can & Clean Up [since 8.0]
           layout: chapter
-          path: enterprise-integration-guide/web-services-guide/ent-in-action/workflow-in-action/trashcan-and-cleanup.md
+          path: web-services-guide/ent-in-action/workflow-in-action/trashcan-and-cleanup.md
           url: /enterprise-integration-guide/web-services-guide/ent-in-action/workflow-in-action/trashcan-and-cleanup.html
         - title: Annotations [since 8.0]
           layout: chapter
-          path: enterprise-integration-guide/web-services-guide/ent-in-action/workflow-in-action/annotations.md
+          path: web-services-guide/ent-in-action/workflow-in-action/annotations.md
           url: /enterprise-integration-guide/web-services-guide/ent-in-action/workflow-in-action/annotations.html
         - title: Dossier Labels [since 9.1]
           layout: chapter
-          path: enterprise-integration-guide/web-services-guide/ent-in-action/workflow-in-action/dossier-labels.md
+          path: web-services-guide/ent-in-action/workflow-in-action/dossier-labels.md
           url: /enterprise-integration-guide/web-services-guide/ent-in-action/workflow-in-action/dossier-labels.html
         - title: Suggestions and Auto-completion [since 9.1]
           layout: chapter
-          path: enterprise-integration-guide/web-services-guide/ent-in-action/workflow-in-action/suggestions-and-autocomplete.md
+          path: web-services-guide/ent-in-action/workflow-in-action/suggestions-and-autocomplete.md
           url: /enterprise-integration-guide/web-services-guide/ent-in-action/workflow-in-action/suggestions-and-autocomplete.html
         - title: Download files directly from Content Source [since 9.7]
           layout: chapter
-          path: enterprise-integration-guide/web-services-guide/ent-in-action/workflow-in-action/download-from-contentsource.md
+          path: web-services-guide/ent-in-action/workflow-in-action/download-from-contentsource.md
           url: /enterprise-integration-guide/web-services-guide/ent-in-action/workflow-in-action/download-from-contentsource.html
         - title: Automated Print Workflow [since 9.8]
           layout: chapter
-          path: enterprise-integration-guide/web-services-guide/ent-in-action/workflow-in-action/automated-print-workflow.md
+          path: web-services-guide/ent-in-action/workflow-in-action/automated-print-workflow.md
           url: /enterprise-integration-guide/web-services-guide/ent-in-action/workflow-in-action/automated-print-workflow.html
     - title: Enterprise Services API
       layout: section
-      path: enterprise-integration-guide/web-services-guide/ent-services-api/index.md
+      path: web-services-guide/ent-services-api/index.md
       url: /enterprise-integration-guide/web-services-guide/ent-services-api/index.html
       children:
       - title: Workflow Dialogs
         layout: chapter
-        path: enterprise-integration-guide/web-services-guide/ent-services-api/workflow-dialogs.md
+        path: web-services-guide/ent-services-api/workflow-dialogs.md
         url: /enterprise-integration-guide/web-services-guide/ent-services-api/workflow-dialogs.html

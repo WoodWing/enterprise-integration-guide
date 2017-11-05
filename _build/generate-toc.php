@@ -46,7 +46,7 @@ function enrichWithHtmlUrls( &$children )
 {
 	foreach( $children as &$child ) {
 		if( isset($child['path']) ) {
-			$child['url'] = '/'.replaceFileExtension( $child['path'] );
+			$child['url'] = '/enterprise-integration-guide/'.replaceFileExtension( $child['path'] );
 		}
 		if( isset($child['children']) ) {
 			enrichWithHtmlUrls( $child['children'] );
@@ -118,7 +118,7 @@ function composeDirTree( $fontMattersPerFile )
 		$struct = composeMultiDimArrayFromFilePath( $mdFilePath,
 			function() use ( $mdFilePath, $fontMatterAttributes ) {
 				return array(
-					'path' => 'enterprise-integration-guide/'.$mdFilePath,
+					'path' => $mdFilePath,
 					'frontmatter' => $fontMatterAttributes
 				);
 			},
