@@ -118,7 +118,7 @@ function composeDirTree( $fontMattersPerFile )
 		$struct = composeMultiDimArrayFromFilePath( $mdFilePath,
 			function() use ( $mdFilePath, $fontMatterAttributes ) {
 				return array(
-					'path' => $mdFilePath,
+					'path' => 'enterprise-integration-guide/'.$mdFilePath,
 					'frontmatter' => $fontMatterAttributes
 				);
 			},
