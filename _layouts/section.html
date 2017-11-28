@@ -1,32 +1,31 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
-  <head>
+<head>
     <meta charset="UTF-8">
 
-{% seo %}
+    {% seo %}
     <meta name="description" content="{{ page.description | default: site.description | default: site.github.project_tagline }}"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-  </head>
-  <body>
+</head>
+<body>
 
-  <aside style="float:left;padding:10px;padding-top:30px;width:150px;">
-      {% include /prev-next-page.html %}
-  </aside>
+<aside style="float:left;padding:10px;padding-top:30px;padding-right:20px;width:280px;">
+    {% include /prev-next-page.html %}
+    {% include /toc.html %}
+</aside>
 
-  <section class="page-header">
-      <h1 class="project-name">{{ page.title }}</h1>
-  </section>
+<section class="main-content">
+    <div class="section-header">
+        <img src="/assets/css/Enterprise_192.png" />
+        <h1>{{ page.title }}</h1>
+    </div>
+    <div style="padding-left: 150px; padding-top:30px;">
+    {{ content }}
+    </div>
+</section>
 
-  <aside style="float:left;padding:10px;padding-top:30px;padding-right:20px;width:280px;">
-      {% include /toc.html %}
-  </aside>
-
-  <section class="main-content">
-      {{ content }}
-    </section>
-
-  </body>
+</body>
 </html>

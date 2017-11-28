@@ -1,3 +1,15 @@
 ---
 ---
+.section-header img {
+  width: 120px;
+  height: 120px;
+  margin-right: 25px;
+  display: inline;
+  vertical-align: middle;
+}
+
+.section-header h1 {
+  display: inline;
+}
+
 @import 'jekyll-theme-cayman';
