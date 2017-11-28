@@ -1,7 +1,7 @@
 jQuery(function() {
 
 	// Get the generated search_data.json file so lunr.js can search it locally.
-	window.data = $.getJSON('/assets/web-services-guide/search_data.json');
+	window.data = $.getJSON('/enterprise-integration-guide/assets/web-services-guide/search_data.json');
 
 	// Initialize lunr with the fields to be searched, plus the boost.
 	window.data.then(function(loaded_data){
