@@ -92,13 +92,13 @@ The login dialog could be made like this:
 A proxy object to the workflow interface could be made like this:
 
 ```xml
-<mx:RemoteObject id="wflProxy" destination="wflDestination"  showBusyCursor="true" source="WflServices">
-	<mx:method name="LogOn" result="onWflLogOnResult(event)"  fault="handleException(event)"/>
+<mx:RemoteObject id="wflProxy" destination="wflDestination" showBusyCursor="true" source="WflServices">
+	<mx:method name="LogOn" result="onWflLogOnResult(event)" fault="handleException(event)"/>
 </mx:RemoteObject>
 ```
 
 The login script (behind the login dialog) could look as simple as this:
-```js
+```
 private function doWflLogOn():void {
 	var req:WflLogOnRequest = new WflLogOnRequest();
 	req.User = userName.text;
@@ -107,10 +107,9 @@ private function doWflLogOn():void {
 }
 ```
 
-
 Once logged in, Flex gets called back, from where you can pickup data, like the ticket:
 
-```js
+```
 private function onWflLogOnResult(evt:ResultEvent):void {
 	Alert.show(evt.result.Ticket.toString(),
 		"Got a workflow ticket!");
