@@ -8,7 +8,55 @@ $guides = splitDirTreeInGuides( $dirTree );
 sortFilesPerFolder( $guides );
 enrichWithHtmlUrls( $guides );
 composeTocYamlForGuides( $projectPath, $guides );
+composeSearchIndex( $projectPath, $guides );
 //print_r( $guides );
+
+function composeSearchIndex( $projectPath, $guides )
+{
+	foreach( $guides as $guideId => $guide ) {
+		$folder = $projectPath.'/assets/'.$guideId;
+		if( !file_exists( $folder ) ) {
+			mkdir( $folder, 0777, true );
+		}
+		//$searchFileName = $folder . '/searchindex.js';
+		$searchFileName = $folder . '/search_data.json';
+
+		$index = new stdClass();
+		composeSearchIndexForDirTree( $projectPath, $index, $guide );
+		//$searchIndexData = "window.store = {".PHP_EOL.implode( ','.PHP_EOL, $searchIndexRecords ).'}'.PHP_EOL;
+		$searchIndexData = json_encode( $index, JSON_PRETTY_PRINT );
+		file_put_contents( $searchFileName, $searchIndexData );
+	}
+}
+
+function composeSearchIndexForDirTree( $projectPath, $index, $item )
+{
+	static $id = 0;
+	$fileName = $projectPath . '/' . $item['path'];
+	$fileContents = file_get_contents( $fileName );
+	$fileContents = preg_replace('/\s+/', ' ', $fileContents );
+
+	$record = new stdClass();
+	foreach( array( 'title', 'author', 'category' ) as $fieldName ) {
+		if( isset( $item['frontmatter'][$fieldName] ) ) {
+			$fieldValue = $item['frontmatter'][$fieldName];
+		} else {
+			$fieldValue = '';
+		}
+		$record->{$fieldName} = $fieldValue;
+	}
+	$record->content = $fileContents;
+	$record->url = $item['url'];
+
+	$index->{$id} = $record;
+	$id += 1;
+
+	if( isset( $item['children'] ) ) {
+		foreach( $item['children'] as $child ) {
+			composeSearchIndexForDirTree( $projectPath, $index, $child );
+		}
+	}
+}
 
 function composeTocYamlForGuides( $projectPath, $guides )
 {
@@ -27,7 +75,7 @@ function composeTocYamlForDirTree( $item, $indent = 0 )
 {
 	$contents = '';
 	$indentStr = str_repeat( ' ', $indent );
-	if( isset( $item['frontmatter'] ) ) {
+	if( isset( $item['frontmatter']['title'] ) && isset( $item['frontmatter']['layout'] ) ) {
 		$contents .= $indentStr . "  - title: {$item['frontmatter']['title']}" . PHP_EOL;
 		$contents .= $indentStr . "    layout: {$item['frontmatter']['layout']}" . PHP_EOL;
 		$contents .= $indentStr . "    path: {$item['path']}" . PHP_EOL;
