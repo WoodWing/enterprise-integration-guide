@@ -9,7 +9,6 @@ sortFilesPerFolder( $guides );
 enrichWithHtmlUrls( $guides );
 composeTocYamlForGuides( $projectPath, $guides );
 composeSearchIndex( $projectPath, $guides );
-//print_r( $guides );
 
 function composeSearchIndex( $projectPath, $guides )
 {
@@ -18,12 +17,10 @@ function composeSearchIndex( $projectPath, $guides )
 		if( !file_exists( $folder ) ) {
 			mkdir( $folder, 0777, true );
 		}
-		//$searchFileName = $folder . '/searchindex.js';
 		$searchFileName = $folder . '/search_data.json';
 
 		$index = new stdClass();
 		composeSearchIndexForDirTree( $projectPath, $index, $guide );
-		//$searchIndexData = "window.store = {".PHP_EOL.implode( ','.PHP_EOL, $searchIndexRecords ).'}'.PHP_EOL;
 		$searchIndexData = json_encode( $index, JSON_PRETTY_PRINT );
 		file_put_contents( $searchFileName, $searchIndexData );
 	}
