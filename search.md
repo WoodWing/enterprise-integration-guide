@@ -15,7 +15,3 @@ title: Seach
 <br/>&nbsp;
 
 <ul id="search_results"></ul>
-
-<script src="{{site.baseurl}}/assets/js/lunr.js"></script>
-<script src="{{site.baseurl}}/assets/js/jquery.min.js"></script>
-<script src="{{site.baseurl}}/assets/js/search.js"></script>
