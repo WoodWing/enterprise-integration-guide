@@ -91,7 +91,7 @@ function enrichWithHtmlUrls( &$children )
 {
 	foreach( $children as &$child ) {
 		if( isset($child['path']) ) {
-			$child['url'] = '/enterprise-integration-guide/'.replaceFileExtension( $child['path'] );
+			$child['url'] = replaceFileExtension( $child['path'] );
 		}
 		if( isset($child['children']) ) {
 			enrichWithHtmlUrls( $child['children'] );
