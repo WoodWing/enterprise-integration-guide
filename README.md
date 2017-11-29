@@ -64,11 +64,25 @@ The TOC can be generated. This is needed after making structural
 changes to the guide, such as adding chapters to moving files. 
 To generate the TOC please enter the following commands at the shell prompt:
 ```
-$ cd <this project folder>
-$ cd _build
-$ php71 generate-toc.php
+$ cd <this_project_folder>/_build
+$ php generate.php
 ```
 For each guide a TOC is generated at `_data/<guide>/toc.yaml`. 
 This YAML file is read by `_includes/toc.htm` to compose a HTML 
 variant and injected by the layout pages by a simple include 
 instruction `{% include /toc.html %}`.
+
+## Search
+There is a Google-like search feature provided that is based on [Lunr](https://lunrjs.com/).
+It is entirely written in JavaScript and uses a search index file. 
+To generate the search index file please enter the following commands at the shell prompt:
+```
+$ cd <this_project_folder>/_build
+$ php generate.php
+```
+For each guide, the generator reads all text content from the Markdown files/pages and adds one 
+record for each file/page in the index file. For each guide a search index file is generated at 
+`assets/<guide>/search_data.json`. The index file is downloaded by JavaScript as executed 
+by the search page. 
+Whenever you change text content of a guide, the generator should be executed to reflect 
+those changes in the search results.
