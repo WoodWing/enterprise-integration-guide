@@ -14,7 +14,17 @@
 	<script src="{{site.baseurl}}/assets/js/lunr.js"></script>
 	<script src="{{site.baseurl}}/assets/js/jquery.min.js"></script>
 	<script type="text/javascript">
-		appFolder = "{{site.baseurl}}";
+		function getParameterByName(name, url) {
+			if (!url) url = window.location.href;
+			name = name.replace(/[\[\]]/g, "\\$&");
+			var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+				results = regex.exec(url);
+			if (!results) return null;
+			if (!results[2]) return '';
+			return decodeURIComponent(results[2].replace(/\+/g, " "));
+		}
+		var appFolder = "{{site.baseurl}}";
+		var guideId = getParameterByName('guide');
 	</script>
 	<script src="{{site.baseurl}}/assets/js/search.js"></script>
 </head>
