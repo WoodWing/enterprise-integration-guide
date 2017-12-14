@@ -1,53 +1,5 @@
-<style>
-	a {
-		text-decoration: none;
-		display: inline-block;
-	}
-	a:hover {
-		background-color: #f1f1f1;
-		color: black;
-	}
-	.btn-previous {
-		background-color: #f1f1f1;
-		color: black;
-	}
-	.btn-next {
-		background-color: #4CAF50;
-		color: white;
-	}
-	.btn-round {
-		padding: 8px 17px;
-		border-radius: 50%;
-	}
-	.btn-round-12 {
-		padding: 8px 12px;
-		border-radius: 50%;
-	}
-	.btn-disabled {
-		cursor:not-allowed;
-		opacity:0.3;
-		pointer-events:none
-	}
-
-	a.svg {
-		position: relative;
-		display: inline-block;
-	}
-	a.svg:after {
-		content: "";
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left:0;
-	}
-</style>
-
 {% capture thisGuidePath %}{% include /functions/getParentPath.html pagePath=page.path pathDepth=1 %}{% endcapture %}
 {% assign thisGuideId = thisGuidePath | strip_newlines | remove_first: '/' %}
-
-<a href="{{site.baseurl}}/index.html" class="btn-previous btn-round-12">&#127968;</a> <!-- home button -->
-<a href="{{site.baseurl}}/search.html?guide={{thisGuideId}}" class="btn-previous btn-round-12">&#128270;</a> <!-- search button -->
 
 {% assign prevItem = '' %}
 {% assign thisItem = '' %}
@@ -110,14 +62,4 @@
 	{% endfor %}
 {% endif %}
 
-{% if prevItem == '' %}
-	<a href="{{site.baseurl}}/{{ prevItem.url }}" class="btn-previous btn-round btn-disabled">&#8249;</a>
-{% else %}
-	<a href="{{site.baseurl}}/{{ prevItem.url }}" class="btn-previous btn-round">&#8249;</a>
-{% endif %}
-{% if nextItem == '' %}
-	<a href="{{site.baseurl}}/{{ nextItem.url }}" class="btn-next btn-round btn-disabled">&#8250;</a>
-{% else %}
-	<a href="{{site.baseurl}}/{{ nextItem.url }}" class="btn-next btn-round">&#8250;</a>
-{% endif %}
 

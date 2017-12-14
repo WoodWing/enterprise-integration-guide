@@ -1,5 +1,24 @@
 ---
 ---
+
+@mixin border-radius( $radius ) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+div.toc {
+  float:left;
+  padding:10px;
+  padding-top:30px;
+  padding-right:20px;
+  width:280px;
+}
+@media screen and (min-width: 64em) { div.toc {} }
+@media screen and (min-width: 42em) and (max-width: 64em) { div.toc {} }
+@media screen and (max-width: 42em) { div.toc { display: none; } }
+
 .section-header img {
   width: 120px;
   height: 120px;
@@ -12,4 +31,179 @@
   display: inline;
 }
 
+/* Banner in header of the introduction pages */
+.page-header-banner {
+  background: black;
+  /*overflow: hidden;*/
+  top: 0;
+  width: 100%;
+  position: sticky;
+  display: inline-block;
+}
+.page-header-banner:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.6;
+  background-image: url('/assets/css/intro-banner.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.page-header-banner h1, .page-header-banner h2 {
+  text-align: center;
+  z-index: 2;
+  color: white;
+  position: relative;
+}
+@media screen and (min-width: 64em) { .page-header-banner { padding: 5rem 6rem; height: 300px; } }
+@media screen and (min-width: 42em) and (max-width: 64em) { .page-header-banner { padding: 3rem 4rem; height: 230px; } }
+@media screen and (max-width: 42em) { .page-header-banner { padding: 2rem 1rem; height: 190px; } }
+
+.page-header-banner-shrink {
+  padding: 2rem 1rem; height: 100px;
+}
+
+.page-header-banner-small {
+  @extend .page-header-banner;
+  @extend .page-header-banner-shrink;
+}
+
+/* Include the Cayman theme */
 @import 'jekyll-theme-cayman';
+
+/* Overrule the Cayman theme */
+.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
+  color: #f90;
+}
+.project-tagline { opacity: 0.9; }
+
+  /* SVG icons */
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-books {
+  width: 1.125em;
+}
+
+.icon-library {
+  width: 1.0625em;
+}
+
+/* button bar */
+.ww-btn-bar {
+  z-index:2;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+@media screen and (min-width: 64em) { .ww-btn-bar {
+  bottom:10px;
+  left:10px;
+} }
+@media screen and (min-width: 42em) and (max-width: 64em) { .ww-btn-bar {
+  bottom:8px;
+  left:8px;
+}}
+@media screen and (max-width: 42em) { .ww-btn-bar {
+  bottom:8px;
+  left:8px;
+}}
+
+a.ww-btn, .ww-btn > a {
+  text-decoration: none;
+}
+
+.ww-btn {
+  -webkit-box-shadow: 0px 1px 3px #666666;
+  -moz-box-shadow: 0px 1px 3px #666666;
+  box-shadow: 0px 1px 3px #666666;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: #8b89ac;
+  @include border-radius(2px);
+}
+@media screen and (min-width: 64em) { .ww-btn {
+  font-size: 20px;
+  padding: 10px 6px 5px 12px; /* t-r-b-l */
+  margin: 5px;
+}}
+@media screen and (min-width: 42em) and (max-width: 64em) { .ww-btn {
+  font-size: 16px;
+  padding: 7px 3px 3px 9px; /* t-r-b-l */
+  margin: 4px;
+}}
+@media screen and (max-width: 42em) { .ww-btn {
+  font-size: 16px;
+  padding: 7px 3px 3px 9px; /* t-r-b-l */
+  margin: 4px;
+}}
+
+.ww-btn-disabled {
+  color: #a19fc2;
+}
+
+.ww-btn-enabled {
+  color: #ffffff;
+}
+
+.ww-btn-enabled:hover {
+  background-color: #f90;
+}
+
+/* toc menu */
+
+ul.ww-menu {
+  margin-left:-20px;
+  list-style: none;
+}
+
+.ww-menu * {
+  color: #7062ac;
+}
+
+.ww-menu-item-selected * {
+  font-weight: bold;
+}
+
+.ww-menu-item, .ww-menu-item-selected {
+  list-style-type: none;
+  list-style-position: inside;
+  text-indent: -0.8em;
+}
+
+ul.ww-menu li.ww-menu-item-selected:before {
+  color: #f90;
+  font-size: 0.6em;
+  content: '◉ ';
+  vertical-align: middle;
+}
+
+ul.ww-menu li.ww-menu-item:before {
+  color: #f90;
+  font-size: 1em;
+  content: '○ ';
+}

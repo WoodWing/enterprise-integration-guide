@@ -1,4 +1,3 @@
-<br/><br/>
 <div class="container">
 	<div class="component">
 		<ul class="align">
@@ -23,7 +22,19 @@
 					<ul class="page">
 						<li></li>
 						<li>
-							<a class="book-btn" href="web-services-guide/index.html">Click to read</a>
+      <!-- "Start reading" button -->
+      <div style="z-index:2;">
+          <a href="web-services-guide/index.html" class="ww-btn ww-btn-enabled">
+              <div style="vertical-align: middle; display: inline-block; margin-top:-10px; margin-left:10px;">
+                  Read
+              </div>
+              &nbsp;
+              <svg class="icon icon-circle-right">
+                  <use xlink:href="{{ '/assets/symbol-defs.svg#icon-circle-right' | relative_url }}"></use>
+              </svg>
+          </a>
+          &nbsp;
+      </div>
 						</li>
 						<li></li>
 						<li></li>
@@ -42,7 +53,7 @@
 					</ul>
 					<figcaption>
 						<h1>Web Services Guide</h1>
-						<span>WoodWing Software</span>
+						<span>for Enterprise Server</span>
 						<p>Find out how client applications integrate with Enterprise Server.<br/> 
 						Study the concepts and basic logic behind the public API of this server.</p>
 					</figcaption>

@@ -15,9 +15,10 @@
     <link rel="stylesheet" type="text/css" href="{{ '/assets/book/css/demo.css' | relative_url }}" />
     <link rel="stylesheet" type="text/css" href="{{ '/assets/book/css/book.css' | relative_url }}" />
     <script src="{{ '/assets/book/js/modernizr.custom.js' | relative_url }}"></script>
+    <script src="{{site.baseurl}}/assets/js/jquery.min.js"></script>
   </head>
   <body>
-    <section class="page-header">
+    <section class="page-header-banner">
       <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
       <!--
@@ -32,7 +33,7 @@
     </section>
 
     <section class="main-content">
-      {{ content }}
+        {{ content }}
 
       <!--
       <footer class="site-footer">

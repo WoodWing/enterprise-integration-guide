@@ -25,12 +25,42 @@
 		}
 		var appFolder = "{{site.baseurl}}";
 		var guideId = getParameterByName('guide');
+		function getThisGuideIndexUrl() {
+			return appFolder + '/' + guideId + '/index.html';
+		}
 	</script>
 	<script src="{{site.baseurl}}/assets/js/search.js"></script>
 </head>
 <body>
 
+<section class="page-header-banner-small" style="padding: 1rem 1rem;">
+	<h1 class="project-name">{{ page.title }}</h1>
+	{% assign includeGuideButton = true %}
+	{% include /buttons.html %}
+</section>
+
 <section class="main-content">
+	<br/>&nbsp;
+	<form action="get" id="site_search">
+		<center>
+			<input style="font-size:20px;" type="text" id="search_box" size="40">
+			&nbsp;
+			<!-- search button -->
+			<a href="javascript:$('#site_search').submit();" class="ww-btn ww-btn-enabled" title="Search">
+				&nbsp;
+				<svg class="icon icon-search">
+					<use xlink:href="{{ '/assets/symbol-defs.svg#icon-search' | relative_url }}"></use>
+				</svg>
+				<div style="vertical-align: middle; display: inline-block; margin-top:-10px; margin-left:10px;">
+					Search
+				</div>
+				&nbsp;
+			</a>
+		</center>
+	</form>
+	<br/>&nbsp;
+	<br/>&nbsp;
+
 	{{content}}
 </section>
 

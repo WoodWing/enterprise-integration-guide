@@ -10,20 +10,27 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="icon" href="{{ '/assets/css/favicon.ico' | relative_url }}" type="image/x-icon" />
+    <script src="{{site.baseurl}}/assets/js/jquery.min.js"></script>
 </head>
 <body>
 
-<aside style="float:left;padding:10px;padding-top:30px;padding-right:20px;width:280px;">
-    {% include /prev-next-page.html %}
+{% include /prev-next-page.html %}
+
+<section class="page-header-banner-small" style="padding: 1rem 1rem;">
+    <h1 class="project-name">{{ site.data[thisGuideId].toc.toc[0].title }}</h1>
+    {% assign includeSearchButton = true %}
+    {% assign includePageNavButtons = true %}
+    {% include /buttons.html %}
+</section>
+
+<aside>
     {% include /toc.html %}
 </aside>
 
 <section class="main-content">
     <div class="section-header">
-        <img src="{{site.baseurl}}/assets/css/Enterprise_192.png" />
         <h1>{{ page.title }}</h1>
     </div>
-    <div style="padding-left: 150px; padding-top:30px;">
     {{ content }}
     </div>
 </section>

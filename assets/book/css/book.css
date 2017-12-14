@@ -1,43 +1,29 @@
 /*
 	A. Mini Reset 
 */
-*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-
-* {
-  margin: 0;
-  padding: 0;
-}
 
 ::before,
 ::after {
 	content: "";
 }
 
-html,
-body {
+.book > *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.book > * {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font-family: 'Lato', 'Arial', sans-serif;
+	font-weight: 400;
+	line-height: 1.2;
 	height: 100%;
 	-webkit-font-smoothing: subpixel-antialiased;
 }
 
-html {
-	font-size: 100%;
-}
-
-body {
-	background: #ecf0f1;
-	color: #34495e;
-	font-family: 'Lato', 'Arial', sans-serif;
-	font-weight: 400;
-	line-height: 1.2;
-}
-
-ul {
-	margin: 0;
-	padding: 0;
+.book > ul {
 	list-style: none;
 }
 
-a {
+.book > a {
 	color: #2c3e50;
 	text-decoration: none;
 }
@@ -57,8 +43,8 @@ a {
 }
 
 .book-btn:hover {
-	border-color: #16a085;
-	color: #16a085;
+	border-color: #f90;
+	color: #f90;
 }
 
 /* basic grid, only for this demo */
@@ -675,7 +661,7 @@ figcaption {
 	text-align: left;
 	position: absolute;
 	top: 0%;
-	left: 160px;
+	left: 200px;
 	width: 375px;
 	-webkit-backface-visibility: hidden;
 }
@@ -685,8 +671,7 @@ figcaption h1 {
 }
 
 figcaption span {
-	color: #16a085;
-	padding: 0.6em 0 1em 0;
+	color: #f90;
 	display: block;
 }
 

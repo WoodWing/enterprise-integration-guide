@@ -86,3 +86,11 @@ record for each file/page in the index file. For each guide a search index file 
 by the search page. 
 Whenever you change text content of a guide, the generator should be executed to reflect 
 those changes in the search results.
+
+# 3rd party resources
+The following 3rd party resources are used:
+* Background image used in page banners: https://pngtree.com/freebackground/electronic-technology-background-vector-banner_24720.html
+* Icons used in page navigation buttons: https://icomoon.io/app/#/select
+* Animated books used in landing page: https://tympanus.net/Development/AnimatedBooks/
+* Lunr used for indexed text search: https://lunrjs.com/
+* jQuery: https://jquery.com/ 
