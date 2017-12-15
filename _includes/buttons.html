@@ -5,22 +5,24 @@
 			<use xlink:href="{{ '/assets/symbol-defs.svg#icon-home3' | relative_url }}"></use>
 		</svg>
 	</a>
-	{% if includeGuideButton == true %}
-	<!-- this guide button -->
-	<a href="#" class="ww-btn ww-btn-enabled" title="This Guide" onclick="window.open(getThisGuideIndexUrl(),'_self'); return false;">
-		<svg class="icon icon-book">
-			<use xlink:href="{{ '/assets/symbol-defs.svg#icon-book' | relative_url }}"></use>
-		</svg>
-	</a>
-	{% endif %}
+
 	{% if includeSearchButton == true %}
 	<!-- search button -->
-	<a href="{{site.baseurl}}/search.html?guide={{thisGuideId}}" class="ww-btn ww-btn-enabled" title="Search">
+	<a href="{{site.baseurl}}/search.html?guideId={{thisGuideId}}&guideTitle={{site.data[thisGuideId].toc.toc[0].title}}" class="ww-btn ww-btn-enabled" title="Search">
 		<svg class="icon icon-search">
 			<use xlink:href="{{ '/assets/symbol-defs.svg#icon-search' | relative_url }}"></use>
 		</svg>
 	</a>
 	{% endif %}
+
+	{% if includeBackButton == true %}
+	<a href="#" class="ww-btn ww-btn-enabled" title="Back" onclick="window.history.back();">
+		<svg class="icon icon-undo2">
+			<use xlink:href="{{ '/assets/symbol-defs.svg#icon-undo2' | relative_url }}"></use>
+		</svg>
+	</a>
+	{% endif %}
+
 	{% if includePageNavButtons == true %}
 	<!-- prev page button -->
 	{% if prevItem == '' %}

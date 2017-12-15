@@ -23,19 +23,29 @@
 			if (!results[2]) return '';
 			return decodeURIComponent(results[2].replace(/\+/g, " "));
 		}
-		var appFolder = "{{site.baseurl}}";
-		var guideId = getParameterByName('guide');
+
 		function getThisGuideIndexUrl() {
-			return appFolder + '/' + guideId + '/index.html';
+			var guideId = getParameterByName('guideId');
+			return '{{site.baseurl}}/' + guideId + '/index.html';
 		}
+
+		function getThisGuideSearchDataUrl() {
+			var guideId = getParameterByName('guideId');
+			return '{{site.baseurl}}/assets/' + guideId + '/search_data.json';
+		}
+
+		$(document).ready(function() {
+			var guideTitle = getParameterByName('guideTitle');
+			$('#project-name-id').append( guideTitle );
+		});
 	</script>
 	<script src="{{site.baseurl}}/assets/js/search.js"></script>
 </head>
 <body>
 
-<section class="page-header-banner-small" style="padding: 1rem 1rem;">
-	<h1 class="project-name">{{ page.title }}</h1>
-	{% assign includeGuideButton = true %}
+<section class="page-header-banner-small">
+	<h1 id="project-name-id" class="project-name"></h1>
+	{% assign includeBackButton = true %}
 	{% include /buttons.html %}
 </section>
 

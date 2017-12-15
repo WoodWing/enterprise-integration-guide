@@ -88,6 +88,10 @@ Table of Contents
 	1. container
 */
 
+.container {
+	padding-top: 30px;
+}
+
 .book {
 	position: relative;
 	width: 160px;
