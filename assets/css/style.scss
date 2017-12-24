@@ -19,17 +19,28 @@ div.toc {
 @media screen and (min-width: 42em) and (max-width: 64em) { div.toc {} }
 @media screen and (max-width: 42em) { div.toc { display: none; } }
 
-.section-header img {
-  width: 120px;
-  height: 120px;
-  margin-right: 25px;
-  display: inline;
-  vertical-align: middle;
+.section-intro {
+  position: absolute;
+  padding-top:150px;
+  padding-left:250px;
+  padding-right: 50px;
+
 }
+@media screen and (min-width: 64em) { .section-intro {  } }
+@media screen and (min-width: 42em) and (max-width: 64em) { .section-intro {} }
+@media screen and (max-width: 42em) { .section-intro { padding-top:100px; padding-left:50px; } }
 
 .section-header h1 {
-  display: inline;
+  font-size: 3em;
 }
+@media screen and (max-width: 42em) { .section-header h1 { font-size: 2em; } }
+
+.section-intro-box {
+  border-left: 5px solid #f90;
+  padding-left: 20px;
+  padding-bottom: 1px;
+}
+
 
 /* Banner in header of the introduction pages */
 .page-header-banner {
