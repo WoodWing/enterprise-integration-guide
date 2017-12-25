@@ -2,6 +2,7 @@
 layout: chapter
 title: Messages
 sortid: 70
+permalink: doc1031
 ---
 Web Services are initiated by clients and executed by the server. But there is more. Halfway a service execution, the server can fire a message. It does this for all kind of events. The messages are pushed to any of the clients that are listening.
 

@@ -2,6 +2,7 @@
 layout: chapter
 title: Object Searching
 sortid: 020
+permalink: doc1048
 ---
 
 Object searching is the heart of Enterprise; it is a fundamental and complex centralized feature of the workflow system pumping objects through its veins. To breakdown complexity and to differentiate between all kind of search features, Enterprise has introduced several functional areas, as explained in this paragraph. The *search results* are explained in a following paragraph.

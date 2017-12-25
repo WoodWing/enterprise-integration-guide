@@ -2,6 +2,7 @@
 layout: chapter
 title: Automated Print Workflow [since 9.8]
 sortid: 100
+permalink: doc1043
 ---
 
 This feature is about Images and Articles contained in a Dossier that can be automatically placed on a Layout without the need to open the document in the InDesign client.

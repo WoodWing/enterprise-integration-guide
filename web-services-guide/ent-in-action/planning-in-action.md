@@ -2,6 +2,7 @@
 layout: chapter
 title: Planning in Action
 sortid: 010
+permalink: doc1040
 ---
 
 Planning is an optional feature which is taken care of by a third-party plan system integrated in Enterprise. Which plan system to integrate is the customer’s choice. Examples are Journal Designer (DataPlan) and Timone (Tell). Planning integrations are typically established through the planning interface, but in some cases with extra help of the workflow interface.

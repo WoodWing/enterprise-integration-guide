@@ -2,6 +2,7 @@
 layout: chapter
 title: Download files directly from Content Source [since 9.7]
 sortid: 090
+permalink: doc1045
 ---
 
 In Enterprise 9.7, improvements have been made in order to make communications with external file sources faster. It allows for clients to request direct file links to a Content Source, with which they can download file content directly from the Content Source, instead of it having to go through Enterprise Server first.

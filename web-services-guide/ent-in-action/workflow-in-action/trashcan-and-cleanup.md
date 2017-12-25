@@ -2,6 +2,7 @@
 layout: chapter
 title: Trash Can & Clean Up [since 8.0]
 sortid: 050
+permalink: doc1052
 ---
 
 Enterprise 7 allows system admin users to manage deleted objects through the admin pages. Enterprise 8 exposes that functionality to brand users and end users as well. Users can restore objects or delete objects permanently from the Trash Can.

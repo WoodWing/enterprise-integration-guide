@@ -1,7 +1,16 @@
 <?php
 
+/**
+ * Generator for:
+ * - Table Of Contents files (_data/<guide>/toc.yaml)
+ * - Search index files for Junr.js (assets/<guide>/search_data.json)
+ * - Permanent links (add a permalink to the front matter of the Markdown files)
+ */
+
 $projectPath = realpath( __DIR__ . '/..' );
-$fontMattersPerFile = parseFrontMattersForProjectPath( $projectPath );
+$configFile = $projectPath.'/_build/config.json';
+$configData = json_decode( file_exists($configFile) ? file_get_contents($configFile) : '{"maxDocId": 1000}' );
+$fontMattersPerFile = parseFrontMattersForProjectPath( $projectPath, $configData->maxDocId );
 $dirTree = composeDirTree( $fontMattersPerFile );
 moveupIndexFilesInDirTree( $dirTree );
 $guides = splitDirTreeInGuides( $dirTree );
@@ -9,6 +18,7 @@ sortFilesPerFolder( $guides );
 enrichWithHtmlUrls( $guides );
 composeTocYamlForGuides( $projectPath, $guides );
 composeSearchIndex( $projectPath, $guides );
+file_put_contents($configFile, json_encode($configData));
 
 function composeSearchIndex( $projectPath, $guides )
 {
@@ -43,7 +53,7 @@ function composeSearchIndexForDirTree( $projectPath, $index, $item )
 		$record->{$fieldName} = $fieldValue;
 	}
 	$record->content = $fileContents;
-	$record->url = $item['url'];
+	$record->url = $item['frontmatter']['permalink'];
 
 	$index->{$id} = $record;
 	$id += 1;
@@ -77,6 +87,7 @@ function composeTocYamlForDirTree( $item, $indent = 0 )
 		$contents .= $indentStr . "    layout: {$item['frontmatter']['layout']}" . PHP_EOL;
 		$contents .= $indentStr . "    path: {$item['path']}" . PHP_EOL;
 		$contents .= $indentStr . "    url: {$item['url']}" . PHP_EOL;
+		$contents .= $indentStr . "    permalink: {$item['frontmatter']['permalink']}" . PHP_EOL;
 	}
 	if( isset( $item['children'] ) ) {
 		$contents .= $indentStr . "    children:" . PHP_EOL;
@@ -190,12 +201,12 @@ function composeMultiDimArrayFromFilePath( $path, $cbFileItem, $cbDirItem )
 	}
 }
 
-function parseFrontMattersForProjectPath( $projectPath )
+function parseFrontMattersForProjectPath( $projectPath, &$maxDocId )
 {
 	$fontMattersPerFile = array();
 	$mdFiles = collectMarkDownFiles( $projectPath );
 	foreach( $mdFiles as $mdFile ) {
-		$frontMatters = parseFrontMattersForFile( $mdFile );
+		$frontMatters = parseFrontMattersForFile( $mdFile, $maxDocId );
 		$relativeFilePath = substr( $mdFile, strlen( $projectPath )+1 );
 		$fontMattersPerFile[$relativeFilePath] = $frontMatters;
 	}
@@ -203,7 +214,7 @@ function parseFrontMattersForProjectPath( $projectPath )
 	return $fontMattersPerFile;
 }
 
-function parseFrontMattersForFile( $mdFile )
+function parseFrontMattersForFile( $mdFile, &$maxDocId )
 {
 	$frontMatters = array();
 	$contents = file_get_contents( $mdFile );
@@ -218,6 +229,16 @@ function parseFrontMattersForFile( $mdFile )
 			$key = trim( $key );
 			$value = trim( $value );
 			$frontMatters[$key] = $value;
+		}
+		if( !array_key_exists( 'permalink', $frontMatters ) ) {
+			$parts = preg_split( '/^(---)$/m', $contents, 3 );
+			if( count($parts) === 3 ) {
+				$permalink = "doc{$maxDocId}";
+				$frontMatters['permalink'] = $permalink;
+				$contents = $parts[0].'---'.$parts[1].'permalink: '.$permalink.PHP_EOL.'---'.$parts[2];
+				file_put_contents( $mdFile, $contents );
+				$maxDocId += 1;
+			}
 		}
 	}
 	return $frontMatters;

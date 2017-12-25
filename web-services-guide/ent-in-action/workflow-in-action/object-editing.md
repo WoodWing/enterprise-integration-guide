@@ -2,6 +2,7 @@
 layout: chapter
 title: Object Editing
 sortid: 010
+permalink: doc1047
 ---
 ## Common sequences
 

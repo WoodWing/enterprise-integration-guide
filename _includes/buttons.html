@@ -8,7 +8,7 @@
 
 	{% if includeSearchButton == true %}
 	<!-- search button -->
-	<a href="{{site.baseurl}}/search.html?guideId={{thisGuideId}}&guideTitle={{site.data[thisGuideId].toc.toc[0].title}}" class="ww-btn ww-btn-enabled" title="Search">
+	<a href="{{site.baseurl}}/doc1028?guideId={{thisGuideId}}&guideTitle={{site.data[thisGuideId].toc.toc[0].title}}" class="ww-btn ww-btn-enabled" title="Search">
 		<svg class="icon icon-search">
 			<use xlink:href="{{ '/assets/symbol-defs.svg#icon-search' | relative_url }}"></use>
 		</svg>
@@ -32,7 +32,7 @@
 		</svg>
 	</a>
 	{% else %}
-	<a href="{{site.baseurl}}/{{ prevItem.url }}" class="ww-btn ww-btn-enabled" title="Previous page">
+	<a href="{{site.baseurl}}/{{ prevItem.permalink }}" class="ww-btn ww-btn-enabled" title="Previous page">
 		<svg class="icon icon-circle-left">
 			<use xlink:href="{{ '/assets/symbol-defs.svg#icon-circle-left' | relative_url }}"></use>
 		</svg>
@@ -46,7 +46,7 @@
 		</svg>
 	</a>
 	{% else %}
-	<a href="{{site.baseurl}}/{{ nextItem.url }}" class="ww-btn ww-btn-enabled" title="Next page">
+	<a href="{{site.baseurl}}/{{ nextItem.permalink }}" class="ww-btn ww-btn-enabled" title="Next page">
 		<svg class="icon icon-circle-right">
 			<use xlink:href="{{ '/assets/symbol-defs.svg#icon-circle-right' | relative_url }}"></use>
 		</svg>

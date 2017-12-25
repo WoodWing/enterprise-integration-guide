@@ -2,33 +2,33 @@
 {% if site.data[thisGuideId].toc.toc[0] %}
 	{% for item1 in site.data[thisGuideId].toc.toc %}
 		<!--{%if item1.path == page.path %}
-			<h3><a href="{{site.baseurl}}/{{ item1.url }}">{{ item1.title }}</a></h3>
+			<h3><a href="{{site.baseurl}}/{{ item1.permalink }}">{{ item1.title }}</a></h3>
 		{% else %}
-			<h3><a href="{{site.baseurl}}/{{ item1.url }}">{{ item1.title }}</a></h3>
+			<h3><a href="{{site.baseurl}}/{{ item1.permalink }}">{{ item1.title }}</a></h3>
 		{% endif %}-->
 		{% if item1.children[0] %}
 			<ul class="ww-menu">
 			{% for item2 in item1.children %}
 				{%if item2.path == page.path %}
-					<li class="ww-menu-item-selected"><a href="{{site.baseurl}}/{{ item2.url }}">{{ item2.title }}</a></li>
+					<li class="ww-menu-item-selected"><a href="{{site.baseurl}}/{{ item2.permalink }}">{{ item2.title }}</a></li>
 				{% else %}
-					<li class="ww-menu-item"><a href="{{site.baseurl}}/{{ item2.url }}">{{ item2.title }}</a></li>
+					<li class="ww-menu-item"><a href="{{site.baseurl}}/{{ item2.permalink }}">{{ item2.title }}</a></li>
 				{% endif %}
 				{% if item2.children[0] %}
 					<ul class="ww-menu">
 					{% for item3 in item2.children %}
 						{%if item3.path == page.path %}
-							<li class="ww-menu-item-selected"><a href="{{site.baseurl}}/{{ item3.url }}">{{ item3.title }}</a></li>
+							<li class="ww-menu-item-selected"><a href="{{site.baseurl}}/{{ item3.permalink }}">{{ item3.title }}</a></li>
 						{% else %}
-							<li class="ww-menu-item"><a href="{{site.baseurl}}/{{ item3.url }}">{{ item3.title }}</a></li>
+							<li class="ww-menu-item"><a href="{{site.baseurl}}/{{ item3.permalink }}">{{ item3.title }}</a></li>
 						{% endif %}
 						{% if item3.children[0] %}
 							<ul class="ww-menu">
 							{% for item4 in item3.children %}
 								{%if item4.path == page.path %}
-									<li class="ww-menu-item-selected"><a href="{{site.baseurl}}/{{ item4.url }}">{{ item4.title }}</a></li>
+									<li class="ww-menu-item-selected"><a href="{{site.baseurl}}/{{ item4.permalink }}">{{ item4.title }}</a></li>
 								{% else %}
-									<li class="ww-menu-item"><a href="{{site.baseurl}}/{{ item4.url }}">{{ item4.title }}</a></li>
+									<li class="ww-menu-item"><a href="{{site.baseurl}}/{{ item4.permalink }}">{{ item4.title }}</a></li>
 								{% endif %}
 							{% endfor %}
 							</ul>

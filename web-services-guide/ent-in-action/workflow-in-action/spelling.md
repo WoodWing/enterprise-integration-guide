@@ -2,6 +2,7 @@
 layout: chapter
 title: Spelling
 sortid: 030
+permalink: doc1050
 ---
 ## Spelling \[since 7.4\]
 

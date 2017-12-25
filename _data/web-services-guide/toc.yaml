@@ -3,113 +3,140 @@ toc:
     layout: guide
     path: web-services-guide/index.md
     url: web-services-guide/index.html
+    permalink: doc1055
     children:
     - title: Enterprise and Web Services
       layout: section
       path: web-services-guide/ent-and-web-services/index.md
       url: web-services-guide/ent-and-web-services/index.html
+      permalink: doc1030
       children:
       - title: System Architecture
         layout: chapter
         path: web-services-guide/ent-and-web-services/system-architecture.md
         url: web-services-guide/ent-and-web-services/system-architecture.html
+        permalink: doc1034
       - title: Protocols [since 8.0]
         layout: chapter
         path: web-services-guide/ent-and-web-services/protocols.md
         url: web-services-guide/ent-and-web-services/protocols.html
+        permalink: doc1032
       - title: Transfer Server [since 8.0]
         layout: chapter
         path: web-services-guide/ent-and-web-services/transfer-server.md
         url: web-services-guide/ent-and-web-services/transfer-server.html
+        permalink: doc1035
       - title: Web Service Interfaces
         layout: chapter
         path: web-services-guide/ent-and-web-services/web-service-interfaces.md
         url: web-services-guide/ent-and-web-services/web-service-interfaces.html
+        permalink: doc1036
       - title: Client Applications
         layout: chapter
         path: web-services-guide/ent-and-web-services/client-applications.md
         url: web-services-guide/ent-and-web-services/client-applications.html
+        permalink: doc1029
       - title: Shared Concepts
         layout: chapter
         path: web-services-guide/ent-and-web-services/shared-concepts.md
         url: web-services-guide/ent-and-web-services/shared-concepts.html
+        permalink: doc1033
       - title: Messages
         layout: chapter
         path: web-services-guide/ent-and-web-services/messages.md
         url: web-services-guide/ent-and-web-services/messages.html
+        permalink: doc1031
     - title: Enterprise Data Entities
       layout: section
       path: web-services-guide/ent-data-entities/index.md
       url: web-services-guide/ent-data-entities/index.html
+      permalink: doc1037
       children:
       - title: Workflow Entities
         layout: chapter
         path: web-services-guide/ent-data-entities/workflow-entities.md
         url: web-services-guide/ent-data-entities/workflow-entities.html
+        permalink: doc1038
     - title: Enterprise in Action
       layout: section
       path: web-services-guide/ent-in-action/index.md
       url: web-services-guide/ent-in-action/index.html
+      permalink: doc1039
       children:
       - title: Planning in Action
         layout: chapter
         path: web-services-guide/ent-in-action/planning-in-action.md
         url: web-services-guide/ent-in-action/planning-in-action.html
+        permalink: doc1040
       - title: System Administration in Action
         layout: chapter
         path: web-services-guide/ent-in-action/system-admin-in-action.md
         url: web-services-guide/ent-in-action/system-admin-in-action.html
+        permalink: doc1041
       - title: Workflow in Action
         layout: section
         path: web-services-guide/ent-in-action/workflow-in-action/index.md
         url: web-services-guide/ent-in-action/workflow-in-action/index.html
+        permalink: doc1046
         children:
         - title: Object Editing
           layout: chapter
           path: web-services-guide/ent-in-action/workflow-in-action/object-editing.md
           url: web-services-guide/ent-in-action/workflow-in-action/object-editing.html
+          permalink: doc1047
         - title: Object Searching
           layout: chapter
           path: web-services-guide/ent-in-action/workflow-in-action/object-searching.md
           url: web-services-guide/ent-in-action/workflow-in-action/object-searching.html
+          permalink: doc1048
         - title: Spelling
           layout: chapter
           path: web-services-guide/ent-in-action/workflow-in-action/spelling.md
           url: web-services-guide/ent-in-action/workflow-in-action/spelling.html
+          permalink: doc1050
         - title: Preview & Copyfit
           layout: chapter
           path: web-services-guide/ent-in-action/workflow-in-action/preview-and-copyfit.md
           url: web-services-guide/ent-in-action/workflow-in-action/preview-and-copyfit.html
+          permalink: doc1049
         - title: Trash Can & Clean Up [since 8.0]
           layout: chapter
           path: web-services-guide/ent-in-action/workflow-in-action/trashcan-and-cleanup.md
           url: web-services-guide/ent-in-action/workflow-in-action/trashcan-and-cleanup.html
+          permalink: doc1052
         - title: Annotations [since 8.0]
           layout: chapter
           path: web-services-guide/ent-in-action/workflow-in-action/annotations.md
           url: web-services-guide/ent-in-action/workflow-in-action/annotations.html
+          permalink: doc1042
         - title: Dossier Labels [since 9.1]
           layout: chapter
           path: web-services-guide/ent-in-action/workflow-in-action/dossier-labels.md
           url: web-services-guide/ent-in-action/workflow-in-action/dossier-labels.html
+          permalink: doc1044
         - title: Suggestions and Auto-completion [since 9.1]
           layout: chapter
           path: web-services-guide/ent-in-action/workflow-in-action/suggestions-and-autocomplete.md
           url: web-services-guide/ent-in-action/workflow-in-action/suggestions-and-autocomplete.html
+          permalink: doc1051
         - title: Download files directly from Content Source [since 9.7]
           layout: chapter
           path: web-services-guide/ent-in-action/workflow-in-action/download-from-contentsource.md
           url: web-services-guide/ent-in-action/workflow-in-action/download-from-contentsource.html
+          permalink: doc1045
         - title: Automated Print Workflow [since 9.8]
           layout: chapter
           path: web-services-guide/ent-in-action/workflow-in-action/automated-print-workflow.md
           url: web-services-guide/ent-in-action/workflow-in-action/automated-print-workflow.html
+          permalink: doc1043
     - title: Enterprise Services API
       layout: section
       path: web-services-guide/ent-services-api/index.md
       url: web-services-guide/ent-services-api/index.html
+      permalink: doc1053
       children:
       - title: Workflow Dialogs
         layout: chapter
         path: web-services-guide/ent-services-api/workflow-dialogs.md
         url: web-services-guide/ent-services-api/workflow-dialogs.html
+        permalink: doc1054

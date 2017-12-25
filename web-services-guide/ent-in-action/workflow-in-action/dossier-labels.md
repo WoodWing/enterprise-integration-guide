@@ -2,6 +2,7 @@
 layout: chapter
 title: Dossier Labels [since 9.1]
 sortid: 070
+permalink: doc1044
 ---
 
 Object labels can be created for Dossiers (and Dossier Templates) in order to filter Dossiers by one or more of these labels so that only those objects are shown. Once a label is created, it can be updated (renamed) or deleted for the Dossier. When a Dossier gets created (CreateObjects) it inherits the labels from its template.
