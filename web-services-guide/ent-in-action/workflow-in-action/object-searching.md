@@ -15,7 +15,7 @@ Enterprise supports freestyle search: users can search for objects their own way
 
 The user can type just a piece of text to search for, without indicating to which object property the filtering should be applied. In fact, the user is grabbing for text through any property. The figure below shows how this search looks in Content Station.
 
-![](images/image41.png) 
+![]({{ site.baseurl }}{% link web-services-guide/images/image41.png %}) 
 
 When the user clicks the search button, the client application fires the *QueryObjects* request to the server. The fragment below shows how this looks. Since there is actually no specific property involved, it passes the reserved property name *Search* to trigger this feature in the server.
 
@@ -36,7 +36,7 @@ When the user clicks the search button, the client application fires the *QueryO
 
 The most direct and simple way of searching is by selecting one of the predefined filters (also known as Search Modes). The figure below shows that the user has chosen the “WW News” Brand and the “sport” Category using Content Station.
 
-![](images/image42.png)
+![]({{ site.baseurl }}{% link web-services-guide/images/image42.png %})
 
 After clicking the search button, Content Station fires a search query, as shown in the fragment below. The ids of the Brand (formerly publication) and Category are passed.
 
@@ -62,11 +62,11 @@ After clicking the search button, Content Station fires a search query, as shown
 
 In the “Dialog Setup” Maintenance page, system admin users can define what parameters are allowed for filtering within User Queries (the Search Modes “Search” or “Custom Search” in the client GUI). (See the Admin Guide for configuration details.) In the example below, the *In Use By* property is configured for the query parameters. Internally this property is named *LockedBy*.
 
-![](images/image43.png) 
+![]({{ site.baseurl }}{% link web-services-guide/images/image43.png %}) 
 
 A user logged in to a client application can add the pre-configured query parameters to any custom search query. The figure below shows a fraction of the “Search Criteria” dialog in InDesign. In this example, the user has just added the *LockedBy* property to his/her query:
 
-![](images/image44.png) 
+![]({{ site.baseurl }}{% link web-services-guide/images/image44.png %}) 
 
 InDesign then fires the query request as show in the fragment below. Now it uses the unequal operation (!=) and leaves the value empty, just like the user did. The server then returns all objects that are currently in use. See the last subparagraph for an example of how the results usually look.
 
@@ -85,7 +85,7 @@ InDesign then fires the query request as show in the fragment below. Now it uses
 
 The full set of operators can be found in the workflow WSDL. The fragment below shows the definition (made for Enterprise 7) in two-fold. On the left, the WSDL is opened in a plain-text editor and on the right it is opened in an XML editor (or Web browser). The plain-text version shows that some operators use “&lt;”. This is the XML escaped representation of “&lt;” which means “less than”. In an XML editor (or Web browser) it shows the escaped version. The SOAP requests contain the escaped “&lt;” character because “&lt;” is a reserved symbol in XML. Nevertheless, this is hidden from client applications (using SOAP/XML tools) and from Server Plug-ins; they simply use the unescaped “&lt;” character.
 
-![](images/image45.png)
+![]({{ site.baseurl }}{% link web-services-guide/images/image45.png %})
 
 ```xml
 <simpleType name="OperationType">
@@ -110,7 +110,7 @@ The full set of operators can be found in the workflow WSDL. The fragment below 
 
 Enterprise client applications allow users to save their queries. The user can fill in a name as shown in the figure to the right. At this stage, the query is saved in the memory of the client application. When the user logs out, the queries are stored in the server through the *LogOff* request, as shown in the fragment below. The WSDL tells that the *Value* element must be a string. Adding XML elements as a string would make the SOAP request invalid. Therefore the string is escaped. Escaped characters are hard to read for humans, so in the example below they are left out and green colored italic formatting is used instead.
 
-![](images/image46.png)
+![]({{ site.baseurl }}{% link web-services-guide/images/image46.png %})
 
 ```xml
 <LogOff>
@@ -283,7 +283,7 @@ Zooming into the details of ObjectType, the default value and its option are inc
 
 After login, the client applications list the queries in their search panes, allowing users to pick one. In the figure below, the user logged in to InDesign and has picked our *Name Search* query and filled in a search string “hello world” for the *ObjectName* parameter. The *Layout* option of the *ObjectType* parameter is preselected (and remained untouched by user).
 
-![](images/image47.png)
+![]({{ site.baseurl }}{% link web-services-guide/images/image47.png %})
 
 By clicking the Search button, InDesign fires the *NamedQuery* request as shown in the fragment below. Both parameters as filled in by the end user are sent along the request.
 

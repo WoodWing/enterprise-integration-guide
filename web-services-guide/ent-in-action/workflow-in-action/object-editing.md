@@ -16,7 +16,7 @@ The figure below shows an end user (on the lleft) working with a client applicat
 
 This list is shown \[4\] in the login dialog. The user enters his / her name and password, picks one of the listed application servers and submits \[5\] the dialog. The client requests the picked server to login \[6\] and passes the name and password entered by the user. The server checks the user account and returns \[7\] a newly created ticket to start a session. This ticket is used by the client for all next following requests.
 
-![](images/image39.png)
+![]({{ site.baseurl }}{% link web-services-guide/images/image39.png %})
 
 Implicit to the login operation, clients fire a search request \[8\]. This can be the inbox (such as Content Station does) or the last-used query (such as InDesign does). The server runs the query in the database and returns \[9\] a list of objects. The client lists \[10\] the objects as rows in a table view.
 
@@ -24,7 +24,7 @@ Implicit to the login operation, clients fire a search request \[8\]. This can b
 
 Once the client is started and the user is logged in, the user can start working. Let’s say that the user want to edit an article, layout or image. The figure below shows how that is done. The user picks \[1\] one of the listed objects from the query results. The client takes the object id of the selected row and requests \[2\] to lock that object id and retrieve the native file of the object. When not already locked, the server locks the object, retrieves the native file from the file store and sends \[3\] it back (as DIME attachment). The client saves the file locally and opens it \[4\] in its own application (such as InDesign) or starts another application (such as Photoshop). Now the user starts editing the file and does a check-in \[5\] once completed. The client requests \[6\] for the dialog definition. The server queries the definition (as defined on the admin pages) from the database and returns it \[7\]. The client builds the dialog based on the definition and shows \[8\] it to the user. The user adjusts some properties in the workflow dialog \[9\] such as the status. The client uploads \[10\] the file (as a DIME attachment) back to the server, which creates a new version and stores it in the file store. The updated object properties are returned \[11\] when successful. When the client did not unlock the object while saving \[10\], it unlocks afterwards \[13\] for which the server does return \[14\] no info.
 
-![](images/image40.png)
+![]({{ site.baseurl }}{% link web-services-guide/images/image40.png %})
 
 ## Object locking
 

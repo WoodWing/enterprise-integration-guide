@@ -52,7 +52,7 @@ Since Enterprise Server 10.2.0 it is also possible to send the ticket as a cooki
 
 The figure below shows how file attachments travel along services when uploading files (such as the CreateObjects or SaveObjects workflow services). With v7 clients, they both travel through the same request and connection. With v8 clients, there are two connections; one to the Enterprise Server and one to the Transfer Server. In this case, clients can choose between SOAP, AMF or JSON. The red color shows how request data travels through the system. The file attachments are shown in purple.
 
-![](images/image6.png)
+![]({{ site.baseurl }}{% link web-services-guide/images/image6.png %})
 
 When clients log in, they catch a new option named ‘FileUploadUrl’ from the FeatureSet element of the LogOn response. When the HTTP Transfer Server is configured, the value could look like this:
 
@@ -72,7 +72,7 @@ Uploads are done chunk-wise to reduce memory consumption. Clients need to catch 
 
 The following figure shows how files are downloaded, such as for the GetObjects workflow service.
 
-![](images/image7.png)
+![]({{ site.baseurl }}{% link web-services-guide/images/image7.png %})
 
 The server returns the file location through the service response in Attachment-&gt;FileUrl elements. Such URLs looks like this:
 
@@ -148,7 +148,7 @@ It is the client application’s responsibility to clean files in the Transfer F
 
 Clients sending requests with file uploads first do the uploads and then the request. On download, they wait for the response and then start the download. The diagram below shows the interactions between client and server. Note that at the very end, the client cleans the files on the file transfer server. The reason why the server should not do this for the uploaded files is that when the request fails due to business logics (for example no access rights), the client could leave the files as-is, and try again with different parameters (for example a user choosing another Category). And, it enables clients to build async solutions in future too.
 
-![](images/image8.png)
+![]({{ site.baseurl }}{% link web-services-guide/images/image8.png %})
 
 ## Connector interface classes
 
@@ -247,7 +247,7 @@ Now the user picks one of the listed servers and attempts to log in. Before talk
 
 When servers are configured server-side, this is the sequence dialog of the handshake:
 
-![](images/image9.png)
+![]({{ site.baseurl }}{% link web-services-guide/images/image9.png %})
 
 Because there can be a mix of server versions, clients needs to do the second handshake too; It could be the case there is a v8 server listing a v7 server or the other way around.
 
@@ -255,7 +255,7 @@ Because there can be a mix of server versions, clients needs to do the second ha
 
 When servers are configured client-side, this is the sequence dialog of the handshake:
 
-![](images/image10.png)
+![]({{ site.baseurl }}{% link web-services-guide/images/image10.png %})
 
 ## Migration of Enterprise 7 integrations
 

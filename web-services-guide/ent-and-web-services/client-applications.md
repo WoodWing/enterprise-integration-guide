@@ -9,13 +9,13 @@ The Web Service interfaces are accessible in different ways. The way to choose d
 
 Typically the WSDL file is read by your SOAP library/tool to generate a proxy class (from its operations) and a bunch of data classes (from its type definitions). This way, you can build a request data structure based on the generated data classes, and fire the request through the proxy class by simply calling one of its methods (operations). The proxy takes care of building the SOAP request itself and parsing the returned SOAP response. In other terms, all SOAP challenges are encapsulated and hidden from your solution.
 
-![](images/image14.png)
+![]({{ site.baseurl }}{% link web-services-guide/images/image14.png %})
 
 Enterprise WSDLs refer to the DIME attachment specification to send documents along with SOAP traffic. DIME is required up to and including Enterprise Server 7. Since Enterprise Server 8 it is possible to move away from DIME and use the *Transfer Server* instead to send documents directly over HTTP. This is faster in execution and easier to integrate than DIME and therefore clients are encouraged to use the Transfer Server.
 
 When your solution is written in PHP, you can use helper classes shipped with Enterprise Server. When your solution -always- runs on the -same- server machine (as the Enterprise Server) you can use the *PHP service helper classes*. This way, your solution is executed by the very same process as the application server, as shown on the left side of the figure below. When it needs to be installed on other server machines though, you need the *PHP SOAP helper classes*. In this situation, whether it runs on the same(!) machine or not, your solution runs in a separate process, as shown on the right side of the figure below. In this case, there is a little overhead of SOAP traffic.
 
-![](images/image15.png)
+![]({{ site.baseurl }}{% link web-services-guide/images/image15.png %})
 
 ## .NET clients and Java clients using SOAP
 
@@ -235,7 +235,7 @@ For automatic data class mapping and DIME attachment support, Enterprise has ext
 
 The figure below shows how the classes inherit from each other, as displayed in the middle. On the left side, your PHP client code is calling any of the helper classes. On the right, the Enterprise Server is invoked through SOAP to execute a service.
 
-![](images/image16.png)
+![]({{ site.baseurl }}{% link web-services-guide/images/image16.png %})
 
 Some test modules in the .../Enterprise/server/wwtest folder use the SOAP helper classes from where you might want to take some useful code fragments:
 * workflow interface: speedtest.php

@@ -72,7 +72,7 @@ Once you have read this guide in its entirety, you might wonder how operation se
 
 In the figure below a scenario is shown in which a user is working with any of the client applications, such as InDesign or Content Station. Whenever an action \[1\] is done that requires the help of the server, the client fires a Web Service request \[2\] to the server. After processing, the server returns the results through a Web Service response \[3\] back to the client. The client mostly gives some kind of reaction \[4\] informing the user that the operation was successful (or not) such as a dialog, a document that gets opened, or simply a spinning wheel that has stopped.
 
-![](images/image11.png)
+![]({{ site.baseurl }}{% link web-services-guide/images/image11.png %})
 
 Playing around is obviously not recommended to do on a production server. There can be cases though where you simply want to examine what happens on a very rich data set, typically a production or demo server. When you are not the only person working on that server, enabling system wide server logging logs all operations of all users. This cacophony of operations will blur the logging you are looking for, as fired by your client only. Therefore, improvements have been made in this area since Enterprise Server 8.
 
@@ -90,7 +90,7 @@ The following steps show how to inspect the Web Services traffic:
 
 For example, logging of a LogOn service call could look like this:
 
-![](images/image12.png)
+![]({{ site.baseurl }}{% link web-services-guide/images/image12.png %})
 
 The name of each HTML log file refers to the PHP file that was used to handle a Web Service or web application. In this case, the index\_php.htm file refers to the index.php file. This PHP file can be looked up in *Definitions and entry points* and when found, it means that a Web Service was handled. In this case it is found that the workflow interface is used. When not found, it could be any of the web applications. The index\_php.htm file contains all logging of the Web Service call handling, in this case the LogOn.
 
@@ -145,7 +145,7 @@ In the following steps, used colors refer to the figure shown below:
 
 Open the found SCEnterprise.wsdl file in a web browser and start reading from the bottom up. The type definitions can be looked up from the bottom up. All data structure items mentioned can be found this way:
 
-![](images/image13.png)
+![]({{ site.baseurl }}{% link web-services-guide/images/image13.png %})
 ```xml
 <complexType name="PublicationInfo">
 	<all>

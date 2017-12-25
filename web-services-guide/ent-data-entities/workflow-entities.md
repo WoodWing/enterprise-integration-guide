@@ -191,7 +191,7 @@ Enterprise stores InDesign files (layouts). With a layout, layout template, Layo
 
 Pages have renditions, just like objects have. And so, a thumb, preview and output rendition file can be stored per page. The output rendition is typically PDF or EPS.
 
-![](images/image18.png)
+![]({{ site.baseurl }}{% link web-services-guide/images/image18.png %})
 
 Note: Page rendition files are not versioned; only the last version of each rendition is tracked. When restoring an old version of a layout without InDesign intervention, the page renditions remain untouched. As a result, the version that is ‘too new’ is still shown in the Publication Overview.
 
@@ -199,7 +199,7 @@ Note: Page rendition files are not versioned; only the last version of each rend
 
 Per page, the following is tracked: order, number and sequence. The *order* stands for the logical internal numeric position, as used by InDesign internally. Per page section, you can restart this numbering. Although you choose a numbering system (alphanumeric, roman, arabic, etc), the order is always numeric. The page *number* is the human readable representation. This reflects the page numbering system and optionally can be prefixed with the page section prefix. The number is typically used to print on the page. The page *sequence* represents the page position within the layout. This is used to uniquely identify pages since the page order does not tell, as shown in the following figure.
 
-![](images/image19.png)
+![]({{ site.baseurl }}{% link web-services-guide/images/image19.png %})
 
 It shows a layout with 7 pages divided into 3 page sections. Each section uses a different numbering system, respectively roman, arabic and alphanumeric. The second section has continued numbering and defines prefixes. The third section has restarted numbering.
 
@@ -248,7 +248,7 @@ With InDesign, articles and images are placed on layouts by using frames. Frames
 
 Consider a placed article shown on the left in the figure below. It consist of five frames; one *head* frame, one *intro* frame and three *body* frames. The three *body* frames are linked for continuous reading. The figure in the middle shows how InDesign frames become Enterprise placements. Multiple frames that are linked are seen as just one story, just like single frames. A story is called *Element* in Enterprise (or Component for the end user). In the example, the three *body* frames become one *Element*. So the article consists of three elements/components; *head*, *intro* and *body*, as shown on the right.
 
-![](images/image21.png) ![](images/image22.png) ![](images/image23.png)
+![]({{ site.baseurl }}{% link web-services-guide/images/image21.png %}) ![]({{ site.baseurl }}{% link web-services-guide/images/image22.png %}) ![]({{ site.baseurl }}{% link web-services-guide/images/image23.png %})
 
 Assume that the article is placed on the layout. The create and save requests (CreateObjects and SaveObjects) will carry out the elements and placements to the server.
 
@@ -318,11 +318,11 @@ For **article** create/save operations in Objects -&gt; Object -&gt; Placements 
 
 Articles can consist of a mix of text frames and graphic frames. The figure below shows an article with one graphic frame and two text frames, as shown on the left. In the middle, it shows there is just one object involved, which is the article. On the right, it shows that there are three elements.
 
-![](images/image24.png)  ![](images/image25.png)  ![](images/image26.png)
+![]({{ site.baseurl }}{% link web-services-guide/images/image24.png %})  ![]({{ site.baseurl }}{% link web-services-guide/images/image25.png %})  ![]({{ site.baseurl }}{% link web-services-guide/images/image26.png %})
 
 The very same example could be made differently. The figure below shows a graphics frame that holds a placed image object. (Note the little chain icon on the left of the butterfly, which is shown instead of the little pencil icon on top.) The two text frames belong to the article object, as shown in the middle. Also here, there are three elements involved, as shown on the right.
 
-![](images/image27.png)   ![](images/image28.png)  ![](images/image26.png)
+![]({{ site.baseurl }}{% link web-services-guide/images/image27.png %})   ![]({{ site.baseurl }}{% link web-services-guide/images/image28.png %})  ![]({{ site.baseurl }}{% link web-services-guide/images/image26.png %})
 
 ### Placements and Editions
 
@@ -332,7 +332,7 @@ An example. Imagine you have written a manual about your InDesign CS3 plug-in. T
 
 CS3 | CS4
 ---|---
-![](images/image29.png) | ![](images/image30.png) 
+![]({{ site.baseurl }}{% link web-services-guide/images/image29.png %}) | ![]({{ site.baseurl }}{% link web-services-guide/images/image30.png %}) 
 
 When saving the layout, the request from InDesign (SaveObjects) looks like the fragment shown below. because there are three objects related, there are three *Related* elements. They are all on the same page and share the same parent. For the images, a specific Edition is specified. The article is published for both Editions, and so nil is given, which means all Editions.
 
@@ -390,13 +390,13 @@ Objects can have zero, one or many targets. Zero targets are especially needed t
 
 The left the figure below shows some example objects targeted for several Issues. Targets are represented by dashed arrows. Each Issue belongs to a certain channel, such as “Euro Site” which belongs to the “Web” channel. The figure on the right shows how the abstract Enterprise entities are related to each other.
 
-![](images/image31.png)
+![]({{ site.baseurl }}{% link web-services-guide/images/image31.png %})
 
 ### Target Editions
 
 For print channels, admin users can setup Editions per channel. (This is done by means of the Maintenance pages, see the Admin Guide for details.) When an object is targeted for an Issue that belongs to a print channel, end users can select any of the configured Editions in the workflow dialogs. Selected Editions are tracked by Enterprise per target. The figure to the right illustrates how Editions relate to targets. (It zooms into a fragment of the target example shown above.) As shown, the user has selected three Editions for the target.
  
-![](images/image32.png) 
+![]({{ site.baseurl }}{% link web-services-guide/images/image32.png %}) 
 
 When the object should be targeted for all Editions, client applications should pass xsi:nil=”true” attribute for the *Editions* element. This is an exceptional meaning of the nil attribute; for other entities (other than Editions) nil means that the data is not provided, which implies existing data needs to remain untouched in the database.
 
@@ -446,9 +446,9 @@ When objects are locked by someone else, client applications can still change th
 
 Objects can inherit targets from other objects. This typically happens when objects are related to each other. Let’s take the “weather forecast USA” example and assume it consist of two articles and a Dossier. One article is in HTML format, and the other in InCopy format. The Dossier is given two object targets: “USA Site” and “USA Magazine”. In Content Station the Dossier looks as follows:
 
-![](images/image33.png) As we can see, the user has targeted each article to a different issue. Now, the Dossier has object targets, but the articles each have a related target. The figure below shows how that is tracked in Enterprise’s data model.
+![]({{ site.baseurl }}{% link web-services-guide/images/image33.png %}) As we can see, the user has targeted each article to a different issue. Now, the Dossier has object targets, but the articles each have a related target. The figure below shows how that is tracked in Enterprise’s data model.
 
-![](images/image34.png)
+![]({{ site.baseurl }}{% link web-services-guide/images/image34.png %})
 
 When the user tags the related targets for the articles, Content Station calls the *UpdateObjectRelation* service. For the Dossier-article relation, it passes the targets as shown in the following fragment:
 
@@ -475,7 +475,7 @@ When the user tags the related targets for the articles, Content Station calls t
 
 Let’s involve a layout in this example. The layout is just targeted to the print issue “USA magazine”. When the article is placed on the layout, an object relation is created between both. And again, upon the relation, a new relation target build. The following figure shows how this is tracked in the Enterprise model:
 
-![](images/image35.png)
+![]({{ site.baseurl }}{% link web-services-guide/images/image35.png %})
 
 ## Structural change for multiple channels
 

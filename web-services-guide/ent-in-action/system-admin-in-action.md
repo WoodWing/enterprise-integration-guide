@@ -34,7 +34,7 @@ final public function runAfter( SysGetSubApplicationsRequest $req, SysGetSubAppl
 
 Having the Server Plug-in activated, when the admin user now runs the Profile Maintenance page (under Access Profiles menu), the SysGetSubApplications service is called and so the code snippet above is executed. As a result, your sub-application is listed under the Applications section at the Profile Maintenance page. This enables the admin user to set up a profile that gives end-users access to your sub-application. On the Brand Maintenance page under User Authorizations, the admin user can select that profile for certain user groups.
 
-![](images/image48.png)
+![]({{ site.baseurl }}{% link web-services-guide/images/image48.png %})
 
 With the access profiles in place, when the end-user logs in to Content Station, Enterprise Server returns the profiles that are configured for that user. By default, all applications are assumed to be enabled. For such applications, simply no information is returned in the profile at all. Only when an application has been disabled in a profile will an entry be added to the LogOnResponse for that AppFeature. The value for it is set to “No” as shown in the following fragment of the LogOnResponse:
 

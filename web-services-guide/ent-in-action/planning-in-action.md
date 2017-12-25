@@ -16,13 +16,13 @@ Planning integrations allow planners to synchronize their issue plans to the pro
 
 Pages are used within a print-oriented workflow. Pages can be planned, produced and printed. In this context, Enterprise does the production, and third-party systems do the planning and printing.
 
-![](images/image36.png)
+![]({{ site.baseurl }}{% link web-services-guide/images/image36.png %})
 
 While the planner is creating pages in the plan system, planned pages also get created within the Enterprise database through the planning interface. This is done by creating layout objects from layout templates, which reside in the Enterprise database. The template pages are replicated for the layout for as many pages that are planned (by the planner).
 
 The following figure shows a planner with four pages planned \[1\]. The third-party planning tool picks up those pages and synchronizes \[2\] the four pages into the Enterprise system through the planning interface. The Enterprise Server retrieves \[3\] the requested layout template and creates a new layout \[4\] from it.
 
-![](images/image37.png)
+![]({{ site.baseurl }}{% link web-services-guide/images/image37.png %})
 
 At this point, a layout is created in Enterprise database with four planned pages. The InstanceType (as defined at workflow WSDL) is set to ‘Planning’ for these pages. Also, a message is sent to the layout and a flag is set. The flag indicates that the attention of the layout designer is needed; the message informs the layout designer about the creations (or changes) made to the planned layout.
 
@@ -36,6 +36,6 @@ Adverts are placed on pages. For more details, see *advert planning*.
 
 Let’s recap the step wherein planned pages are taken into production (see the figure below). First, the layout designer opens a layout \[1\] and the plug-ins request it to get \[2\] it from the database. The planned pages (orange) are synchronized \[3\] into production by the plug-ins. The produced pages (red) are saved \[4\] on the layout designer’s command and stored \[5\] in the database.
 
-![](images/image38.png)
+![]({{ site.baseurl }}{% link web-services-guide/images/image38.png %})
 
 Now there are two sets of pages: planned and produced. The produced pages have the InstanceType (as defined at workflow WSDL) set to ‘Production’.

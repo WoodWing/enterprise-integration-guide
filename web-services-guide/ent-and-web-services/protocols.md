@@ -16,7 +16,7 @@ The SOAP protocol is defined in WSDL files. Even though the requests, responses 
 
 Besides performance, the ease of integration can be important too. For a JavaScript module running in web browser, it is hard to deal with SOAP due to lack of decent libraries. For a Flex client, SOAP is possible, but AMF is much more suitable. The figure below shows a bunch of programming languages with their most obvious choice.
 
-![](images/image4.png)
+![]({{ site.baseurl }}{% link web-services-guide/images/image4.png %})
 
 See [Client Applications](client-applications.md) for more details about client applications integrating with Enterprise through specific protocols.
 
@@ -24,7 +24,7 @@ See [Client Applications](client-applications.md) for more details about client 
 
 On the server side, it is the responsibility of the interface layer to support protocols (SOAP, AMF and JSON). This is done for all interfaces (workflow, planning, admin, etc). In the figure below, you can see the concept of a client talking to the server. In the middle, the architectural layers of the server are shown. On the very top, where client requests arrive and the server responses depart, the interface layer is positioned. This layer unwraps the protocol notation of incoming requests and creates PHP request objects and data classes that are passed through the service layer underneath. On the way back, it wraps a protocol structure around the PHP response classes and data classes taken from the service layer before it gets sent out to client.
 
-![](images/image5.png)
+![]({{ site.baseurl }}{% link web-services-guide/images/image5.png %})
 
 On the far right of the figure, it shows that server plug-ins are called from service- and business layers. This shows that server plug-ins do not have to know about the protocols; this is taken care of by the server (at the interface layer).
 

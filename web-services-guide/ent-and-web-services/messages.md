@@ -18,7 +18,7 @@ Note that the Enterprise client applications do exactly the same, implementing t
 ## Message format for broadcasting / multicasting
 
 A message is always related to a single object (or user). They consist of a header followed by multiple data fields (properties). The following format is respected:
-![](images/image17.png)
+![]({{ site.baseurl }}{% link web-services-guide/images/image17.png %})
 
 The following table describes the tokens used in the picture:
 
