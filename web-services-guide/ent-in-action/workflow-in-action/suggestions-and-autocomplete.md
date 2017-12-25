@@ -5,15 +5,19 @@ sortid: 080
 permalink: doc1051
 ---
 
-For a functional explanation of these two features and how to set them up, see the 'Tags' section of the *Enterprise Server Online Help*.
+For a functional explanation of these two features and how to set them up, see the 'Tags' section of the *Enterprise 
+Server Online Help*.
 
 Enterprise Server offers two new connector interfaces for Server Plug-ins to implement:
 * A suggestions connector interface (SuggestionProvider\_EnterpriseConnector)
 * An auto-complete connector interface (AutocompleteProvider\_EnterpriseConnector)
 
-When a plug-in implements the suggestions connector interface, it becomes a suggestions provider. And, when implementing the auto-complete connector interface, it becomes an auto-complete provider. For example: the OpenCalais plug-in is a suggestion provider, and the Drupal7 plug-in is an auto-complete provider.
+When a plug-in implements the suggestions connector interface, it becomes a suggestions provider. And, when implementing 
+the auto-complete connector interface, it becomes an auto-complete provider. For example: the OpenCalais plug-in is a 
+suggestion provider, and the Drupal7 plug-in is an auto-complete provider.
 
-When a user opens a Publish Form, Enterprise Server requests the installed providers whether or not they support all custom object properties that are configured for that form and includes these in the response.
+When a user opens a Publish Form, Enterprise Server requests the installed providers whether or not they support all 
+custom object properties that are configured for that form and includes these in the response.
 
 The following example shows these attributes in bold:
 
@@ -35,15 +39,26 @@ The following example shows these attributes in bold:
 ```
 The property attributes explained:
 
-* ***TermEntity:*** Abstract name for a term. When given, it could be recognized by any auto-complete provider to help the user filling in the property.
-* ***SuggestionEntity:*** Abstract name for a Suggestion. It defines the entity for the types of tags that need to be suggested by the Suggestion Provider, such as 'City', 'Movie', 'TVShow' and so on.\
-* Note that suggestion providers are loosely coupled regarding the publishing providers. For example, OpenCalais and Drupal integrations do not need to know from each other. The challenge here is that for a custom object property, only the publishing connector and the external publishing system know what it is about. For example, a Cities field from Drupal, the custom property could be named C\_DRUPAL\_CITIES, which means nothing to OpenCalais. To tackle this challenge, a new attribute is added to the *PropertyInfo* element and is named *SuggestionEntity*. Having this abstract information in place, both integrated systems know where the property stands for.
-* ***AutocompleteProvider:*** The internal name of the Server Plug-in that has an auto-complete connector that supports this custom object property.
-* ***SuggestionProvider:*** The internal name of the Server Plug-in that has an auto-complete connector that supports this custom object property.
+* ***TermEntity:*** Abstract name for a term. When given, it could be recognized by any auto-complete provider to help 
+the user filling in the property.
+* ***SuggestionEntity:*** Abstract name for a Suggestion. It defines the entity for the types of tags that need to be 
+suggested by the Suggestion Provider, such as 'City', 'Movie', 'TVShow' and so on.\
+* Note that suggestion providers are loosely coupled regarding the publishing providers. For example, OpenCalais and 
+Drupal integrations do not need to know from each other. The challenge here is that for a custom object property, only 
+the publishing connector and the external publishing system know what it is about. For example, a Cities field from 
+Drupal, the custom property could be named C\_DRUPAL\_CITIES, which means nothing to OpenCalais. To tackle this challenge, 
+a new attribute is added to the *PropertyInfo* element and is named *SuggestionEntity*. Having this abstract information 
+in place, both integrated systems know where the property stands for.
+* ***AutocompleteProvider:*** The internal name of the Server Plug-in that has an auto-complete connector that supports 
+this custom object property.
+* ***SuggestionProvider:*** The internal name of the Server Plug-in that has an auto-complete connector that supports 
+this custom object property.
 
 ## Auto-complete
 
-Now the Publish Form is shown, the user can fill in the field. Let’s say that the user has already tagged "Amsterdam" in the Cities field of the Publish Form. Now the user  types "Ams" to create another tag. Even though it matches with "Amsterdam" it is no longer suggested.
+Now the Publish Form is shown, the user can fill in the field. Let’s say that the user has already tagged "Amsterdam" 
+in the Cities field of the Publish Form. Now the user  types "Ams" to create another tag. Even though it matches with 
+"Amsterdam" it is no longer suggested.
 
 The client fires the following request:
 
@@ -87,7 +102,8 @@ The server returns the following response:
 
 ## Suggestions
 
-Now the Publish Form is shown, the user can fill in the field. Let’s say that the user has typed an article about Amsterdam and presses the ‘Suggest’ button:
+Now the Publish Form is shown, the user can fill in the field. Let’s say that the user has typed an article about 
+Amsterdam and presses the ‘Suggest’ button:
 
 ```xml
 <Suggestions>

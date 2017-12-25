@@ -5,7 +5,9 @@ sortid: 070
 permalink: doc1044
 ---
 
-Object labels can be created for Dossiers (and Dossier Templates) in order to filter Dossiers by one or more of these labels so that only those objects are shown. Once a label is created, it can be updated (renamed) or deleted for the Dossier. When a Dossier gets created (CreateObjects) it inherits the labels from its template.
+Object labels can be created for Dossiers (and Dossier Templates) in order to filter Dossiers by one or more of these 
+labels so that only those objects are shown. Once a label is created, it can be updated (renamed) or deleted for the Dossier. 
+When a Dossier gets created (CreateObjects) it inherits the labels from its template.
 
 The following example creates a ‘Foo’ label for a Dossier:
 
@@ -76,9 +78,12 @@ Deleting the label goes like this:
 <DeleteObjectLabelsResponse/>
 ```
 
-When an object is contained by a Dossier, the object can be labelled as well. However, only labels that were created for the parent Dossier can be chosen. They therefore travel with the ‘contained’ object relation (with Dossier as parent and the object as child) whereas labels for Dossiers travel directly with the object.
+When an object is contained by a Dossier, the object can be labelled as well. However, only labels that were created for 
+the parent Dossier can be chosen. They therefore travel with the ‘contained’ object relation (with Dossier as parent and 
+the object as child) whereas labels for Dossiers travel directly with the object.
 
-For contained objects we speak of ‘adding’ and ‘removing’ labels (instead of ‘creating’ and ‘deleting’). These operations work with labels that already exist for the parent Dossier of the contained object.
+For contained objects we speak of ‘adding’ and ‘removing’ labels (instead of ‘creating’ and ‘deleting’). These operations 
+work with labels that already exist for the parent Dossier of the contained object.
 
 This is how to add an existing label to a contained object:
 
@@ -124,7 +129,8 @@ And this way you can remove that label again (from the contained object):
 <RemoveObjectLabelsResponse/>
 ```
 
-Labels defined for a Dossier can be retrieved through the *GetObjects* service by using a new *RequestInfo* option named ‘ObjectLabels’ as follows:
+Labels defined for a Dossier can be retrieved through the *GetObjects* service by using a new *RequestInfo* option named 
+‘ObjectLabels’ as follows:
 
 ```xml
 <GetObjects>
@@ -140,7 +146,8 @@ Labels defined for a Dossier can be retrieved through the *GetObjects* service b
     </RequestInfo>
     ...
 ```
-Because labels are defined for the Dossier itself, the server returns them directly under the *Object* element as shown here:
+Because labels are defined for the Dossier itself, the server returns them directly under the *Object* element 
+as shown here:
 
 ```xml
 <GetObjectsResponse>
@@ -194,7 +201,8 @@ Similar as for Dossiers, labels can be requested for ‘contained’ objects as 
     ...
 ```
 
-Because the labels are defined for the Dossier (and not for the ‘contained’ object) the server returns them under the ‘Contained’ *Relation* element with the Dossier as parent:
+Because the labels are defined for the Dossier (and not for the ‘contained’ object) the server returns them under 
+the ‘Contained’ *Relation* element with the Dossier as parent:
 
 ```xml
 <GetObjectsResponse>

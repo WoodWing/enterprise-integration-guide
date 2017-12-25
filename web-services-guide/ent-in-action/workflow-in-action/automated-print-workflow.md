@@ -5,9 +5,11 @@ sortid: 100
 permalink: doc1043
 ---
 
-This feature is about Images and Articles contained in a Dossier that can be automatically placed on a Layout without the need to open the document in the InDesign client.
+This feature is about Images and Articles contained in a Dossier that can be automatically placed on a Layout without 
+the need to open the document in the InDesign client.
 
-To make this happen, text frames and graphic frames on the Layout should be labelled with Element Labels and grouped into so-called InDesign Articles.
+To make this happen, text frames and graphic frames on the Layout should be labelled with Element Labels and grouped 
+into so-called InDesign Articles.
 
 The feature requires the following minimum versions:
 
@@ -40,11 +42,15 @@ When saving a Layout in Smart Connection the InDesign Articles and their frames 
 				...
 ```
 
-In the *Object* structure there are two places where *Placements* can be found. If a frame contains a text component of an Enterprise Article object or a graphic of an Enterprise Image object, it is defined under *Objects-&gt;Relations-&gt;Placements*. Or else, when the frame belongs to any of the InDesign Articles of the layout, it is defined under *Object-&gt;Placements*. This way, one frame will never be communicated in both places.
+In the *Object* structure there are two places where *Placements* can be found. If a frame contains a text component 
+of an Enterprise Article object or a graphic of an Enterprise Image object, it is defined under *Objects-&gt;Relations-&gt;Placements*. 
+Or else, when the frame belongs to any of the InDesign Articles of the layout, it is defined under *Object-&gt;Placements*. 
+This way, one frame will never be communicated in both places.
 
 ### Place dossier
 
-The contents of a Dossier can be placed on a Layout. The user clicks the Create Layout button in the channel view of a Dossier and picks a Layout. Content Station requests for the available InDesign Articles for that layout as follows:
+The contents of a Dossier can be placed on a Layout. The user clicks the Create Layout button in the channel view of a 
+Dossier and picks a Layout. Content Station requests for the available InDesign Articles for that layout as follows:
 
 ```xml
 <GetObjects>
@@ -70,7 +76,8 @@ Enterprise Server returns the InDesign Articles:
 				...
 ```
 
-The user picks one of the listed InDesign Articles. Content Station can not edit Layouts. Instead, it locks the Layout for editing (LockObjects) and indirectly ‘places’ the Dossier on the Layout by creating an Operation for the Layout:
+The user picks one of the listed InDesign Articles. Content Station can not edit Layouts. Instead, it locks the Layout 
+for editing (LockObjects) and indirectly ‘places’ the Dossier on the Layout by creating an Operation for the Layout:
 
 ```xml
 <CreateObjectOperations>
@@ -103,13 +110,18 @@ The user picks one of the listed InDesign Articles. Content Station can not edit
 </CreateObjectOperations>
 ```
 
-Note: Instead of picking a Layout, the user can pick a Layout Template. In that case Content Stations calls the *InstantiateTemplate* service instead.
+Note: Instead of picking a Layout, the user can pick a Layout Template. In that case Content Stations calls the 
+*InstantiateTemplate* service instead.
 
 The server queries for any server plug-in connectors that implement this interface:
 
 > *AutomatedPrintWorkflow\_EnterpriseConnector*
 
-For each connector found, it calls the *resolveOperation()* function to let the connector change the Operations (when needed) before they are actually stored in the database for the Layout. In this example, the *AutomatedPrintWorkflow* plug-in is installed which queries the database and finds out that the Dossier has one Article text component and one Image that could be matched with the InDesign Article of the Layout. Therefore it ‘resolves’ the *PlaceDossier* operation into two other operations, *PlaceArticleElement* and *PlaceImage*.
+For each connector found, it calls the *resolveOperation()* function to let the connector change the Operations 
+(when needed) before they are actually stored in the database for the Layout. In this example, the *AutomatedPrintWorkflow* 
+plug-in is installed which queries the database and finds out that the Dossier has one Article text component and one 
+Image that could be matched with the InDesign Article of the Layout. Therefore it ‘resolves’ the *PlaceDossier* operation 
+into two other operations, *PlaceArticleElement* and *PlaceImage*.
 
 ```xml
 <CreateObjectOperationsResponse>
@@ -131,7 +143,12 @@ For each connector found, it calls the *resolveOperation()* function to let the 
 </CreateObjectOperations>
 ```
 
-After a while, Content Station releases the Layout lock (UnlockObjects) to give way for further processing. When the IDS Automation feature is enabled, an *IDS\_AUTOMATION* job is created during the Operation creation. This job gets picked up from the queue and is processed in the background. Basically it requests InDesign Server (through SOAP) to run a very simple Javascript module (indesignserverjob.jsx). The script requests Smart Connection to LogOn, open and save the Layout and LogOff again. This is to let Smart Connection for InDesign Server process the Object Operations for the Layout.
+After a while, Content Station releases the Layout lock (UnlockObjects) to give way for further processing. When the 
+IDS Automation feature is enabled, an *IDS\_AUTOMATION* job is created during the Operation creation. This job gets 
+picked up from the queue and is processed in the background. Basically it requests InDesign Server (through SOAP) to 
+run a very simple Javascript module (indesignserverjob.jsx). The script requests Smart Connection to LogOn, open and 
+save the Layout and LogOff again. This is to let Smart Connection for InDesign Server process the Object Operations 
+for the Layout.
 
 After Smart Connection does the LogOn, it also requests (through the admin web services) for any so-called sub-applications:
 
@@ -142,7 +159,8 @@ After Smart Connection does the LogOn, it also requests (through the admin web s
 </GetSubApplicationsRequest>
 ```
 
-In this example, the *AutomatedPrintWorkflow* plug-in hooks in the *runAfter()* function of this web service and provides a JavaScript module that is provided by a server plug-in:
+In this example, the *AutomatedPrintWorkflow* plug-in hooks in the *runAfter()* function of this web service and provides 
+a JavaScript module that is provided by a server plug-in:
 
 ```xml
 <GetSubApplicationsResponse>
@@ -160,24 +178,40 @@ In this example, the *AutomatedPrintWorkflow* plug-in hooks in the *runAfter()* 
 </GetSubApplicationsResponse>
 ```
 
-Smart Connection downloads and extracts the package that contains a JavaScript module and loads it into IDS. The indesignserverjob.jsx script is still running and continues with opening the Layout. While opening, Smart Connection downloads and locks the Layout for editing. It finds the Operations sent along with the Layout (GetObjects) and provides those Operations to the JavaScript module. The module uses the information of the Operations to do the actual placing. In the example, this is where the Article text components and the Images are placed. The script continues and saves the Layout. Smart Connection generates page previews and PDFs (if needed) and creates a new version in Enterprise and releases the lock.
+Smart Connection downloads and extracts the package that contains a JavaScript module and loads it into IDS. The 
+indesignserverjob.jsx script is still running and continues with opening the Layout. While opening, Smart Connection 
+downloads and locks the Layout for editing. It finds the Operations sent along with the Layout (GetObjects) and provides 
+those Operations to the JavaScript module. The module uses the information of the Operations to do the actual placing. 
+In the example, this is where the Article text components and the Images are placed. The script continues and saves the 
+Layout. Smart Connection generates page previews and PDFs (if needed) and creates a new version in Enterprise and 
+releases the lock.
 
-When the IDS Automation feature is disabled, the Layout does not get processed directly, but has to wait until someone opens the Layout in InDesign client. Then the exact process takes place in InDesign client as described above for InDesign Server. It could happen that many operations are created before the Layout gets opened. That slows down opening the Layout since all those operations needs to be processed. For this performance reason it is recommended to enable the IDS Automation feature when the Automated Print Workflow feature is enabled.
+When the IDS Automation feature is disabled, the Layout does not get processed directly, but has to wait until someone 
+opens the Layout in InDesign client. Then the exact process takes place in InDesign client as described above for 
+InDesign Server. It could happen that many operations are created before the Layout gets opened. That slows down opening 
+the Layout since all those operations needs to be processed. For this performance reason it is recommended to enable 
+the IDS Automation feature when the Automated Print Workflow feature is enabled.
 
 ### Customizations
 
-As you may have noticed in the previous paragraph, the Automated Print Workflow feature is built into a server plug-in. While Enterprise introduces a mechanism to build such a feature, it also provides the *AutomatedPrintWorkflow* plug-in that implements the default behaviour (business logics) and does place operations.
+As you may have noticed in the previous paragraph, the Automated Print Workflow feature is built into a server plug-in. 
+While Enterprise introduces a mechanism to build such a feature, it also provides the *AutomatedPrintWorkflow* plug-in 
+that implements the default behaviour (business logics) and does place operations.
 
-Basically, all you need is a server plug-in that provides a server module and client module. The server module queries the text components and images in the database and the client module places them in the InDesign Article frames.
+Basically, all you need is a server plug-in that provides a server module and client module. The server module queries 
+the text components and images in the database and the client module places them in the InDesign Article frames.
 
 This allows you to:
 
-* Disable the *AutomatedPrintWorkflow* plug-in and build your own solution with different or customer specific business logics that determines which text component or image should be placed on which InDesign Article frame.
+* Disable the *AutomatedPrintWorkflow* plug-in and build your own solution with different or customer specific business 
+logics that determines which text component or image should be placed on which InDesign Article frame.
 * Add another plug-in that introduces more operations. See also *example on Labs*.
 
 ### Default behaviour
 
-The *AutomatedPrintWorkflow* plug-in implements the default behaviour. It works when Element Labels are unique within each InDesign Article (e.g. there should be one head, intro, body and graphic) and unique within Dossiers. It has the following reasoning:
+The *AutomatedPrintWorkflow* plug-in implements the default behaviour. It works when Element Labels are unique within 
+each InDesign Article (e.g. there should be one head, intro, body and graphic) and unique within Dossiers. It has the 
+following reasoning:
 
 1. Resolve the Layout frames that belong to the selected InDesign Article.
 1. Exclude duplicate InDesign Article frames; Those can not be uniquely matched.
