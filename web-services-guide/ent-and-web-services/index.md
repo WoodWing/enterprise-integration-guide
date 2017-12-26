@@ -1,7 +1,7 @@
 ---
 layout: section
 title: Enterprise and Web Services
-permalink: doc1030
+permalink: 1030-index
 ---
 Web Services are a keystone of the Enterprise architecture. Many services are exposed by Enterprise Server and are 
 defined in documents (WSDLs). Client applications communicate with Enterprise Server through services. A client can 

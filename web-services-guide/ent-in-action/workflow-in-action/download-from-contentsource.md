@@ -2,7 +2,7 @@
 layout: chapter
 title: Download files directly from Content Source [since 9.7]
 sortid: 090
-permalink: doc1045
+permalink: 1045-download-from-contentsource
 ---
 
 In Enterprise 9.7, improvements have been made in order to make communications with external file sources faster. 

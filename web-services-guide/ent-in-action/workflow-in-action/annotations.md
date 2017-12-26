@@ -2,7 +2,7 @@
 layout: chapter
 title: Annotations [since 8.0]
 sortid: 060
-permalink: doc1042
+permalink: 1042-annotations
 ---
 
 This chapter describes how the workflow interface/web services definition (SCEnterprise.wsdl) is extended to support the 

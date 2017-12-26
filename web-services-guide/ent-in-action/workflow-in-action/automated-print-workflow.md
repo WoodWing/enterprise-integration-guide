@@ -2,7 +2,7 @@
 layout: chapter
 title: Automated Print Workflow [since 9.8]
 sortid: 100
-permalink: doc1043
+permalink: 1043-automated-print-workflow
 ---
 
 This feature is about Images and Articles contained in a Dossier that can be automatically placed on a Layout without 

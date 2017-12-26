@@ -2,7 +2,7 @@
 layout: chapter
 title: System Architecture
 sortid: 10
-permalink: doc1034
+permalink: 1034-system-architecture
 ---
 This chapter provides a global overview of the Enterprise architecture, followed by how Web Services fit into the big figure.
 

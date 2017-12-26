@@ -2,7 +2,7 @@
 layout: chapter
 title: Shared Concepts
 sortid: 60
-permalink: doc1033
+permalink: 1033-shared-concepts
 ---
 This chapter describes concepts used in all Web Service interfaces.
 

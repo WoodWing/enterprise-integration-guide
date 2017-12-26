@@ -2,7 +2,7 @@
 layout: guide
 title: Web Services Guide
 description: for Enterprise Server
-permalink: doc1055
+permalink: 1055-index
 ---
 ## Introduction
 This guide intends not to be complete but to give a good starting point for integrating systems with Enterprise. 

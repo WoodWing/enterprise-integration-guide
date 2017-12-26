@@ -230,15 +230,20 @@ function parseFrontMattersForFile( $mdFile, &$maxDocId )
 			$value = trim( $value );
 			$frontMatters[$key] = $value;
 		}
-		if( !array_key_exists( 'permalink', $frontMatters ) ) {
-			$parts = preg_split( '/^(---)$/m', $contents, 3 );
-			if( count($parts) === 3 ) {
-				$permalink = "doc{$maxDocId}";
+		$parts = preg_split( '/^(---)$/m', $contents, 3 );
+		if( count($parts) === 3 ) {
+			if( !array_key_exists( 'permalink', $frontMatters ) ) {
+				$fileParts = pathinfo( $mdFile );
+				$permalink = "{$maxDocId}-".basename( $fileParts['filename'] );
 				$frontMatters['permalink'] = $permalink;
-				$contents = $parts[0].'---'.$parts[1].'permalink: '.$permalink.PHP_EOL.'---'.$parts[2];
-				file_put_contents( $mdFile, $contents );
 				$maxDocId += 1;
 			}
+			$contents = $parts[0] . '---' . PHP_EOL;
+			foreach( $frontMatters as $key => $value ) {
+				$contents .= "{$key}: {$value}" . PHP_EOL;
+			}
+			$contents .= '---'.$parts[2];
+			file_put_contents( $mdFile, $contents );
 		}
 	}
 	return $frontMatters;

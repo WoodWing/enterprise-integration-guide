@@ -2,7 +2,7 @@
 layout: chapter
 title: Workflow Dialogs
 sortid: 010
-permalink: doc1054
+permalink: 1054-workflow-dialogs
 ---
 Through Dialog Setup pages, system administrators can configure workflow dialogs per Brand, object type and action. 
 When a client is about to show a workflow dialog, such definitions are requested through the GetDialog workflow service 

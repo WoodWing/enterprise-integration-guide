@@ -2,7 +2,7 @@
 layout: chapter
 title: Transfer Server [since 8.0]
 sortid: 30
-permalink: doc1035
+permalink: 1035-transfer-server
 ---
 Enterprise Server 7 (and earlier versions) supports the SOAP protocol through which files can be sent as DIME attachments. 
 Because DIME has some performance- and integration disadvantages, Enterprise Server 8 supports a technique that can be 

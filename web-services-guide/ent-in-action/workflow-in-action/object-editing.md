@@ -2,7 +2,7 @@
 layout: chapter
 title: Object Editing
 sortid: 010
-permalink: doc1047
+permalink: 1047-object-editing
 ---
 ## Common sequences
 

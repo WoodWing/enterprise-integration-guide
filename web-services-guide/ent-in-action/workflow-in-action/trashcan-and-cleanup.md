@@ -2,7 +2,7 @@
 layout: chapter
 title: Trash Can & Clean Up [since 8.0]
 sortid: 050
-permalink: doc1052
+permalink: 1052-trashcan-and-cleanup
 ---
 
 Enterprise 7 allows system admin users to manage deleted objects through the admin pages. Enterprise 8 exposes that 

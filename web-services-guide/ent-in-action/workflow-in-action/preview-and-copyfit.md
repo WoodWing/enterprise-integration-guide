@@ -2,7 +2,7 @@
 layout: chapter
 title: Preview & Copyfit
 sortid: 040
-permalink: doc1049
+permalink: 1049-preview-and-copyfit
 ---
 
 ## Preview & Copy-Fit \[since 7.4\]

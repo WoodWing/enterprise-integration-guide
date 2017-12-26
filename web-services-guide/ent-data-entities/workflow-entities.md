@@ -2,7 +2,7 @@
 layout: chapter
 title: Workflow Entities
 sortid: 010
-permalink: doc1038
+permalink: 1038-workflow-entities
 ---
 ## Objects
 

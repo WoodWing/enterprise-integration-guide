@@ -2,7 +2,7 @@
 layout: chapter
 title: Dossier Labels [since 9.1]
 sortid: 070
-permalink: doc1044
+permalink: 1044-dossier-labels
 ---
 
 Object labels can be created for Dossiers (and Dossier Templates) in order to filter Dossiers by one or more of these 

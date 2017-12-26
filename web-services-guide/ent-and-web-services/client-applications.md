@@ -2,7 +2,7 @@
 layout: chapter
 title: Client Applications
 sortid: 50
-permalink: doc1029
+permalink: 1029-client-applications
 ---
 
 The Web Service interfaces are accessible in different ways. The way to choose depends on the programming language used 

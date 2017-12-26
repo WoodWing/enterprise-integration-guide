@@ -2,7 +2,7 @@
 layout: chapter
 title: Object Searching
 sortid: 020
-permalink: doc1048
+permalink: 1048-object-searching
 ---
 
 Object searching is the heart of Enterprise; it is a fundamental and complex centralized feature of the workflow system 

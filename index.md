@@ -24,7 +24,7 @@
 						<li>
       <!-- "Start reading" button -->
       <div style="z-index:2;">
-          <a href="doc1055" class="ww-btn ww-btn-enabled">
+          <a href="1055-index" class="ww-btn ww-btn-enabled">
               <div style="vertical-align: middle; display: inline-block; margin-top:-10px; margin-left:10px;">
                   Read
               </div>

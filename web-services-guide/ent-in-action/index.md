@@ -1,7 +1,7 @@
 ---
 layout: section
 title: Enterprise in Action
-permalink: doc1039
+permalink: 1039-index
 ---
 When client applications are used by end users, the Enterprise Server is continuously requested by those clients to 
 execute various operations. For common scenarios, this section gives a bird’s-eye view of such interactions. This is 

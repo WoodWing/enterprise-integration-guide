@@ -1,7 +1,7 @@
 ---
 layout: section
 title: Enterprise Data Entities
-permalink: doc1037
+permalink: 1037-index
 ---
 Web Services are all about operations through which data structures are passed and returned. Operations are performed 
 by the server on demand of client applications. Before diving into operations, you first need to understand what the 

@@ -1,5 +1,5 @@
 ---
 layout: section
 title: Workflow in Action
-permalink: doc1046
+permalink: 1046-index
 ---
