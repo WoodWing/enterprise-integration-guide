@@ -1,7 +1,7 @@
 ---
 layout: chapter
 title: Automated Print Workflow [since 9.8]
-sortid: 100
+sortid: 200
 permalink: 1043-automated-print-workflow
 ---
 

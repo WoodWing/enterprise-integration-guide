@@ -1,7 +1,7 @@
 ---
 layout: chapter
 title: Trash Can & Clean Up [since 8.0]
-sortid: 050
+sortid: 150
 permalink: 1052-trashcan-and-cleanup
 ---
 

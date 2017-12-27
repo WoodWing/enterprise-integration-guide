@@ -52,11 +52,21 @@ toc:
       url: web-services-guide/ent-data-entities/index.html
       permalink: 1037-index
       children:
-      - title: Workflow Entities
+      - title: Objects and Metadata
         layout: chapter
-        path: web-services-guide/ent-data-entities/workflow-entities.md
-        url: web-services-guide/ent-data-entities/workflow-entities.html
-        permalink: 1038-workflow-entities
+        path: web-services-guide/ent-data-entities/objects-and-metadata.md
+        url: web-services-guide/ent-data-entities/objects-and-metadata.html
+        permalink: 1056-objects-and-metadata
+      - title: Layouts and Placements
+        layout: chapter
+        path: web-services-guide/ent-data-entities/layouts-and-placements.md
+        url: web-services-guide/ent-data-entities/layouts-and-placements.html
+        permalink: 1057-layouts-and-placements
+      - title: Object Targets
+        layout: chapter
+        path: web-services-guide/ent-data-entities/object-targets.md
+        url: web-services-guide/ent-data-entities/object-targets.html
+        permalink: 1058-object-targets
     - title: Enterprise in Action
       layout: section
       path: web-services-guide/ent-in-action/index.md
@@ -65,70 +75,64 @@ toc:
       children:
       - title: Planning in Action
         layout: chapter
-        path: web-services-guide/ent-in-action/planning-in-action.md
-        url: web-services-guide/ent-in-action/planning-in-action.html
-        permalink: 1040-planning-in-action
-      - title: System Administration in Action
+        path: web-services-guide/ent-in-action/planning.md
+        url: web-services-guide/ent-in-action/planning.html
+        permalink: 1040-planning
+      - title: Object Editing
         layout: chapter
-        path: web-services-guide/ent-in-action/system-admin-in-action.md
-        url: web-services-guide/ent-in-action/system-admin-in-action.html
-        permalink: 1041-system-admin-in-action
-      - title: Workflow in Action
-        layout: section
-        path: web-services-guide/ent-in-action/workflow-in-action/index.md
-        url: web-services-guide/ent-in-action/workflow-in-action/index.html
-        permalink: 1046-index
-        children:
-        - title: Object Editing
-          layout: chapter
-          path: web-services-guide/ent-in-action/workflow-in-action/object-editing.md
-          url: web-services-guide/ent-in-action/workflow-in-action/object-editing.html
-          permalink: 1047-object-editing
-        - title: Object Searching
-          layout: chapter
-          path: web-services-guide/ent-in-action/workflow-in-action/object-searching.md
-          url: web-services-guide/ent-in-action/workflow-in-action/object-searching.html
-          permalink: 1048-object-searching
-        - title: Spelling
-          layout: chapter
-          path: web-services-guide/ent-in-action/workflow-in-action/spelling.md
-          url: web-services-guide/ent-in-action/workflow-in-action/spelling.html
-          permalink: 1050-spelling
-        - title: Preview & Copyfit
-          layout: chapter
-          path: web-services-guide/ent-in-action/workflow-in-action/preview-and-copyfit.md
-          url: web-services-guide/ent-in-action/workflow-in-action/preview-and-copyfit.html
-          permalink: 1049-preview-and-copyfit
-        - title: Trash Can & Clean Up [since 8.0]
-          layout: chapter
-          path: web-services-guide/ent-in-action/workflow-in-action/trashcan-and-cleanup.md
-          url: web-services-guide/ent-in-action/workflow-in-action/trashcan-and-cleanup.html
-          permalink: 1052-trashcan-and-cleanup
-        - title: Annotations [since 8.0]
-          layout: chapter
-          path: web-services-guide/ent-in-action/workflow-in-action/annotations.md
-          url: web-services-guide/ent-in-action/workflow-in-action/annotations.html
-          permalink: 1042-annotations
-        - title: Dossier Labels [since 9.1]
-          layout: chapter
-          path: web-services-guide/ent-in-action/workflow-in-action/dossier-labels.md
-          url: web-services-guide/ent-in-action/workflow-in-action/dossier-labels.html
-          permalink: 1044-dossier-labels
-        - title: Suggestions and Auto-completion [since 9.1]
-          layout: chapter
-          path: web-services-guide/ent-in-action/workflow-in-action/suggestions-and-autocomplete.md
-          url: web-services-guide/ent-in-action/workflow-in-action/suggestions-and-autocomplete.html
-          permalink: 1051-suggestions-and-autocomplete
-        - title: Download files directly from Content Source [since 9.7]
-          layout: chapter
-          path: web-services-guide/ent-in-action/workflow-in-action/download-from-contentsource.md
-          url: web-services-guide/ent-in-action/workflow-in-action/download-from-contentsource.html
-          permalink: 1045-download-from-contentsource
-        - title: Automated Print Workflow [since 9.8]
-          layout: chapter
-          path: web-services-guide/ent-in-action/workflow-in-action/automated-print-workflow.md
-          url: web-services-guide/ent-in-action/workflow-in-action/automated-print-workflow.html
-          permalink: 1043-automated-print-workflow
+        path: web-services-guide/ent-in-action/object-editing.md
+        url: web-services-guide/ent-in-action/object-editing.html
+        permalink: 1047-object-editing
+      - title: Object Searching
+        layout: chapter
+        path: web-services-guide/ent-in-action/object-searching.md
+        url: web-services-guide/ent-in-action/object-searching.html
+        permalink: 1048-object-searching
+      - title: Spelling
+        layout: chapter
+        path: web-services-guide/ent-in-action/spelling.md
+        url: web-services-guide/ent-in-action/spelling.html
+        permalink: 1050-spelling
+      - title: Preview & Copyfit
+        layout: chapter
+        path: web-services-guide/ent-in-action/preview-and-copyfit.md
+        url: web-services-guide/ent-in-action/preview-and-copyfit.html
+        permalink: 1049-preview-and-copyfit
+      - title: Trash Can & Clean Up [since 8.0]
+        layout: chapter
+        path: web-services-guide/ent-in-action/trashcan-and-cleanup.md
+        url: web-services-guide/ent-in-action/trashcan-and-cleanup.html
+        permalink: 1052-trashcan-and-cleanup
+      - title: Annotations [since 8.0]
+        layout: chapter
+        path: web-services-guide/ent-in-action/annotations.md
+        url: web-services-guide/ent-in-action/annotations.html
+        permalink: 1042-annotations
+      - title: Dossier Labels [since 9.1]
+        layout: chapter
+        path: web-services-guide/ent-in-action/dossier-labels.md
+        url: web-services-guide/ent-in-action/dossier-labels.html
+        permalink: 1044-dossier-labels
+      - title: Suggestions and Auto-completion [since 9.1]
+        layout: chapter
+        path: web-services-guide/ent-in-action/suggestions-and-autocomplete.md
+        url: web-services-guide/ent-in-action/suggestions-and-autocomplete.html
+        permalink: 1051-suggestions-and-autocomplete
+      - title: Download files directly from Content Source [since 9.7]
+        layout: chapter
+        path: web-services-guide/ent-in-action/download-from-contentsource.md
+        url: web-services-guide/ent-in-action/download-from-contentsource.html
+        permalink: 1045-download-from-contentsource
+      - title: Automated Print Workflow [since 9.8]
+        layout: chapter
+        path: web-services-guide/ent-in-action/automated-print-workflow.md
+        url: web-services-guide/ent-in-action/automated-print-workflow.html
+        permalink: 1043-automated-print-workflow
+      - title: System Administration
+        layout: chapter
+        path: web-services-guide/ent-in-action/system-admin.md
+        url: web-services-guide/ent-in-action/system-admin.html
+        permalink: 1041-system-admin
     - title: Enterprise Services API
       layout: section
       path: web-services-guide/ent-services-api/index.md

@@ -1,7 +1,7 @@
 ---
 layout: chapter
 title: Download files directly from Content Source [since 9.7]
-sortid: 090
+sortid: 190
 permalink: 1045-download-from-contentsource
 ---
 

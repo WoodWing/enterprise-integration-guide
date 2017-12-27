@@ -1,7 +1,7 @@
 ---
 layout: chapter
 title: Spelling
-sortid: 030
+sortid: 130
 permalink: 1050-spelling
 ---
 ## Spelling \[since 7.4\]

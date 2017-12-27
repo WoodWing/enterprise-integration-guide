@@ -1,8 +1,8 @@
 ---
 layout: chapter
-title: System Administration in Action
-sortid: 090
-permalink: 1041-system-admin-in-action
+title: System Administration
+sortid: 300
+permalink: 1041-system-admin
 ---
 ## Adding Sub-Applications to Content Station \[since 9.0\]
 

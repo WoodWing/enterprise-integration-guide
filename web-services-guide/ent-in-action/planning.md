@@ -1,8 +1,8 @@
 ---
 layout: chapter
-title: Planning in Action
+title: Planning
 sortid: 010
-permalink: 1040-planning-in-action
+permalink: 1040-planning
 ---
 
 Planning is an optional feature which is taken care of by a third-party plan system integrated in Enterprise. Which plan 

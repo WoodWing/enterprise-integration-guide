@@ -1,7 +1,7 @@
 ---
 layout: chapter
 title: Suggestions and Auto-completion [since 9.1]
-sortid: 080
+sortid: 180
 permalink: 1051-suggestions-and-autocomplete
 ---
 

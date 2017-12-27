@@ -1,7 +1,7 @@
 ---
 layout: chapter
 title: Dossier Labels [since 9.1]
-sortid: 070
+sortid: 170
 permalink: 1044-dossier-labels
 ---
 

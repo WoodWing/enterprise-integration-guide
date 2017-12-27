@@ -1,7 +1,7 @@
 ---
 layout: chapter
 title: Object Editing
-sortid: 010
+sortid: 110
 permalink: 1047-object-editing
 ---
 ## Common sequences
