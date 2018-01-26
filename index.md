@@ -9,7 +9,7 @@
 					<ul class="hardcover_front">
 						<li>
 							<div class="coverDesign orange">
-								<span class="ribbon">10.2</span>
+								<span class="ribbon">10.3</span>
 								<h1>WEB</h1>
 								<p>SERVICES</p>
 							</div>
