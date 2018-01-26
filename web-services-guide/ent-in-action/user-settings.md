@@ -8,7 +8,7 @@ User settings are stored in Enterprise per user per client application. A user s
 
 The client can choose between two different flows to handle the user settings. The next chapter describes the original, more rigid flow. The succeeding chapter describes a more dynamic flow which gives a better performance and is a better choice for web applications.
 
-## Rigid flow (old, discouraged)
+## Rigid flow (old, deprecated)
 User settings can be returned through LogOn response and saved through LogOff request. 
 
 During the years more and more information is added to the LogOn response which has made it an expensive service. It is more efficient to have smaller web services that can be called after the logon so the end-user does not need to wait before he/she can get started with the client application. If your client is using this rigid flow, please consider migrating to the dynamic flow to offload the user settings from the LogOn response.
