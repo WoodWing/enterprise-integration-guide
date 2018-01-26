@@ -128,6 +128,11 @@ toc:
         path: web-services-guide/ent-in-action/automated-print-workflow.md
         url: web-services-guide/ent-in-action/automated-print-workflow.html
         permalink: 1043-automated-print-workflow
+      - title: User Settings
+        layout: chapter
+        path: web-services-guide/ent-in-action/user-settings.md
+        url: web-services-guide/ent-in-action/user-settings.html
+        permalink: 1059-user-settings
       - title: System Administration
         layout: chapter
         path: web-services-guide/ent-in-action/system-admin.md
