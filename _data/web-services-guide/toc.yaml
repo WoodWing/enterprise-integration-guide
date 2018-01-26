@@ -73,7 +73,7 @@ toc:
       url: web-services-guide/ent-in-action/index.html
       permalink: 1039-index
       children:
-      - title: Planning in Action
+      - title: Planning
         layout: chapter
         path: web-services-guide/ent-in-action/planning.md
         url: web-services-guide/ent-in-action/planning.html
