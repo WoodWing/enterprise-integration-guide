@@ -18,5 +18,5 @@ We assume the reader of this guide is familiar with:
 * PHP language. For more information, see: www.php.net.
 
 ## Support
-To discuss any Web Services related issues, visit WoodWing’s Help Center site: https://helpcenter.woodwing.com/hc/en-us/community/topics/200276265-Development-Webservices (log-in required). 
-If you require further support for Enterprise, visit the WoodWing support web site at http://www.WoodWing.com/support and follow the directions for submitting questions.
+To discuss any Web Services related issues, visit WoodWing's [Community web site](https://helpcenter.woodwing.com/hc/en-us/community/topics) (log-in required). 
+If you require further support for Enterprise, visit WoodWing's [Help Center web site](https://helpcenter.woodwing.com/hc/en-us) and follow the directions for submitting questions.
