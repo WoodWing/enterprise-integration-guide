@@ -16,12 +16,14 @@
 
   {% include /prev-next-page.html %}
 
+  <div style="position:relative">
   <section class="page-header-banner-small">
       <h1 class="project-name">{{ site.data[thisGuideId].toc.toc[0].title }}</h1>
       {% assign includeSearchButton = true %}
       {% assign includePageNavButtons = true %}
       {% include /buttons.html %}
   </section>
+  </div>
 
   <aside>
       {% include /toc.html %}

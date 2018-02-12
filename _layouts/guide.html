@@ -16,6 +16,7 @@
 
   {% include /prev-next-page.html %}
 
+  <div style="position:relative">
   <section class="page-header-banner">
       <h1 class="project-name">{{ page.title }}</h1>
       <h2 class="project-tagline">{{ page.description }}</h2>
@@ -37,6 +38,7 @@
       {% assign includeSearchButton = true %}
       {% include /buttons.html %}
   </section>
+  </div>
 
   <section class="main-content">
       {{ content }}
