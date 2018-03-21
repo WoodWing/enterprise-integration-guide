@@ -88,6 +88,11 @@ toc:
         path: web-services-guide/ent-in-action/object-searching.md
         url: web-services-guide/ent-in-action/object-searching.html
         permalink: 1048-object-searching
+      - title: Object Variants [since 10.4]
+        layout: chapter
+        path: web-services-guide/ent-in-action/object-variants.md
+        url: web-services-guide/ent-in-action/object-variants.html
+        permalink: 1060-object-variants
       - title: Spelling
         layout: chapter
         path: web-services-guide/ent-in-action/spelling.md
