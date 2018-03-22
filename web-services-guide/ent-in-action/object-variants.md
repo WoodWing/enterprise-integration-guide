@@ -128,11 +128,11 @@ the following response:
 When searching for objects that have a `MasterId` set to a certain value, all variants (copies) of that master and all
 variants of variants are returned except for the master object itself. To invoke the master as well, the `ID` property 
 should be queried too. 
-However, the `QueryObjects` service won't allow composing such query because when searching for two properties, assumed 
-is that the `AND` operator should be applied. Only when searching for two different values of the same property the `OR` 
-operator is applied. In other words, searching for "`ID` = 123 OR `MasterId` = 123" can not be done with this service. 
-Instead, a Named Query `OriginalObjectsAndVariants` is introduced that that can be called through the `NamedQuery` web 
-service as follows:
+However, the `QueryObjects` service won't allow composing such query because when searching for two *different* properties, 
+assumed is that the `AND` operator should be applied. But when searching for two different values of the *same* property 
+the `OR` operator is applied. In other words, searching for "`ID` = 123 OR `MasterId` = 123" can not be done with this 
+service. Instead, a Named Query `OriginalObjectsAndVariants` is introduced that that can be called through the `NamedQuery` 
+web service as follows:
 
 ```xml
 <NamedQuery>
