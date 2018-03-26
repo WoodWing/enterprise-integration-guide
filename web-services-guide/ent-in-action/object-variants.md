@@ -150,12 +150,11 @@ web service as follows:
 </NamedQuery>
 ```
 
-## Parallel Editions / Related Pages
-The Publication Overview application in Content Station 11 can show related pages of a selected layout page. 
-This is called the Parallel Editions feature. For this feature the `GetRelatedPages` and `GetRelatedPagesInfo` 
-services are called which make use of the `MasterId` to find out which master and which variants exist for the 
-selected layout page. The services return the master and all its variants regardless whether the selected layout page 
-is a master or a variant.
+## Related Pages
+The Publication Overview application in Content Station 11 can show Related Pages of a selected layout page. 
+For this feature the `GetRelatedPages` and `GetRelatedPagesInfo` services are called which make use of the `MasterId` 
+to find out which master and which variants exist for the selected layout page. The services return the master and all 
+its variants regardless whether the selected layout page is a master or a variant.
 
 ## Create Print Variant
 Content Station 11 allows to create a print article (variant object) from a digital article (master object). 
