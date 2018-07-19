@@ -47,45 +47,50 @@ The following shows all supported events and their messages:
 
 |  **ID**  | **Action**                       | **Since**  | **Fields**
 |  --------| ---------------------------------| -----------| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-|  1       | Logon                            |            | Ticket 9), UserID, FullName (user), Server (name)
-|  2       | Logoff                           |            | Ticket 9), UserID
-|  3       | CreateObject 3)                |            | Ticket 9), ID (object), Type (object) 1), Name (object), PublicationId, IssueIds, EditionIds, SectionId, StateId, Modified, Modifier, RouteTo (user), LockedBy (user), Version (object), Format (object), UserId 7)
-|  4       | DeleteObject                     |            | Ticket 9), ID (object), Type (object) 1), Name (object), PublicationId, IssueIds, EditionIds, SectionId, StateId, Deleted, Deleter, RouteTo (user), LockedBy (user), Version (object), Format (object), UserId, Permanent
-|  5       | SaveObject 3)                  |            | Ticket 9), ID (object), Type (object) 1), Name (object), PublicationId, IssueIds, EditionIds, SectionId, StateId, Modified, Modifier, RouteTo (user), LockedBy (user), Version (object), Format (object), UserId 7), OldRouteTo (user)
-|  6       | SetObjectProperties              |            | Ticket 9), ID (object), Type (object) 1), Name (object), PublicationId, IssueIds, EditionIds, SectionId, StateId, RouteTo (user), LockedBy (user), Modified, Modifier, Version (object), Format (object), UserId 7), OldRouteTo (user)
-|  8       | LockObject                       |            | Ticket 9), ID (object), LockedBy (user)
-|  9       | UnlockObject                     |            | Ticket 9), ID (object), LockedBy (user), LockForOffline, RouteTo (user)
-|  10      | CreateObjectRelation             |            | Ticket 9), Child (object id), Type (relation) 2), Parent (object id), PlacedOn (parent name)
-|  11      | DeleteObjectRelation             |            | Ticket 9), Child (object id), Type (relation) 2), Parent (object id), PlacedOn (parent name)
-|  12      | SendMessage                      |            | Ticket 9), UserID, ObjectID, MessageID, MessageType 4), MessageTypeDetail, Message, TimeStamp, MessageLevel, FromUser, ThreadMessageID, ReplyToMessageID, MessageStatus, ObjectVersion, IsRead 12)
+|  1       | Logon                            |            | Ticket <sup>9)</sup>, UserID, FullName (user), Server (name)
+|  2       | Logoff                           |            | Ticket <sup>9)</sup>, UserID
+|  3       | CreateObject <sup>3)</sup>       |            | Ticket <sup>9)</sup>, ID (object), Type (object) <sup>1)</sup>, Name (object), PublicationId, IssueIds, EditionIds, SectionId, StateId, Modified, Modifier, RouteTo (user), LockedBy (user), Version (object), Format (object), UserId <sup>7)</sup>
+|  4       | DeleteObject                     |            | Ticket <sup>9)</sup>, ID (object), Type (object) <sup>1)</sup>, Name (object), PublicationId, IssueIds, EditionIds, SectionId, StateId, Deleted, Deleter, RouteTo (user), LockedBy (user), Version (object), Format (object), UserId, Permanent
+|  5       | SaveObject <sup>3)</sup>         |            | Ticket <sup>9)</sup>, ID (object), Type (object) <sup>1)</sup>, Name (object), PublicationId, IssueIds, EditionIds, SectionId, StateId, Modified, Modifier, RouteTo (user), LockedBy (user), Version (object), Format (object), UserId <sup>7)</sup>, OldRouteTo (user)
+|  6       | SetObjectProperties              |            | Ticket <sup>9)</sup>, ID (object), Type (object) <sup>1)</sup>, Name (object), PublicationId, IssueIds, EditionIds, SectionId, StateId, RouteTo (user), LockedBy (user), Modified, Modifier, Version (object), Format (object), UserId <sup>7)</sup>, OldRouteTo (user)
+|  8       | LockObject                       |            | Ticket <sup>9)</sup>, ID (object), LockedBy (user)
+|  9       | UnlockObject                     |            | Ticket <sup>9)</sup>, ID (object), LockedBy (user), LockForOffline, RouteTo (user)
+|  10      | CreateObjectRelation             |            | Ticket <sup>9)</sup>, Child (object id), Type (relation) <sup>2)</sup>, Parent (object id), PlacedOn (parent name)
+|  11      | DeleteObjectRelation             |            | Ticket <sup>9)</sup>, Child (object id), Type (relation) <sup>2)</sup>, Parent (object id), PlacedOn (parent name)
+|  12      | SendMessage                      |            | Ticket <sup>9)</sup>, UserID, ObjectID, MessageID, MessageType <sup>4)</sup>, MessageTypeDetail, Message, TimeStamp, MessageLevel, FromUser, ThreadMessageID, ReplyToMessageID, MessageStatus, ObjectVersion, IsRead <sup>12)</sup>
 |          |                                  |            | Extra fields for Sticky Notes only: AnchorX, AnchorY, Left, Top, Width, Height, Page, Version, Color, PageSequence
-|  13      | UpdateObjectRelation             |            | Ticket 9), Child (placable object id), Type (relation) 2), Parent (layout object id), PlacedOn (layout name)
-|  14      | DeadlineChanged                  |            | Ticket 9), ID (object), DeadlineHard, DeadlineSoft
-|  15      | DeleteMessage                    |            | Ticket 9), MessageID
-|  16      | AddToQuery                       |            | Ticket 9), UpdateID 5), ID (object), Type (object) 1), Name (object), PublicationId, SectionId, StateId, RouteTo (user), LockedBy (user)
-|  17      | RemoveFromQuery                  |            | Ticket 9), UpdateID 5), ID (object)
-|  18      | ReLogOn                          |            | Ticket 9), UserId (the full name of the user that should relogon, without prompting the user with a logon dialog) 8)
-|  19      | RestoreVersion                   |            | Ticket 9), ID (object), Type (object) 1), Name (object), PublicationId, IssueIds, EditionIds, SectionId, StateId, Modified, Modifier, RouteTo (user), LockedBy (user), Version (object), Format (object), UserId 7), OldRouteTo (user)
-|  20      | CreateObjectTarget               |            | Ticket 9), UserId 7), ID (object), PubChannelId, IssueId, EditionIds
-|  21      | DeleteObjectTarget               |            | Ticket 9), UserId 7), ID (object), PubChannelId, IssueId, EditionIds
-|  22      | UpdateObjectTarget               |            | Ticket 9), UserId 7), ID (object), PubChannelId, IssueId, EditionIds
-|  23      | RestoreObject                    | 8.0.0      | Ticket 9), ID (object), Type (object) 1), Name (object), PublicationId, IssueIds, EditionIds, SectionId, StateId, Deleted, Deleter, RouteTo (user), LockedBy (user), Modified, Modifier, Version (object), Format (object), UserId 7)
-|  24      | IssueDossierReorderAtProduction  | 7.0.13     | Ticket 9), PubChannelType, IssueId, DossierIds 10)
-|  25      | IssueDossierReorderPublished     | 7.5.0      | Ticket 9), PubChannelType, PubChannelId, IssueId, EditionId, DossierIds 10)
-|  26      | PublishDossier                   | 7.5.0      | Ticket 9), DossierId, PubChannelType, PubChannelId, IssueId, EditionId, PublishedDate \[, specific fields 11)\]
-|  27      | UpdateDossier                    | 7.5.0      | Ticket 9), DossierId, PubChannelType, PubChannelId, IssueId, EditionId, PublishedDate \[, specific fields 11)\]
-|  28      | UnpublishDossier                 | 7.5.0      | Ticket 9), DossierId, PubChannelType, PubChannelId, IssueId, EditionId \[, specific fields 11)\]
-|  29      | SetPublishInfoForDossier         | 7.5.0      | Ticket 9), DossierId, PubChannelType, PubChannelId, IssueId, EditionId, PublishedDate \[, specific fields 11)\]
-|  30      | PublishIssue                     | 7.5.0      | Ticket 9), PubChannelType, PubChannelId, IssueId, EditionId, Version, PublishedDate \[, specific fields 11)\]
-|  31      | UpdateIssue                      | 7.5.0      | Ticket 9), PubChannelType, PubChannelId, IssueId, EditionId, Version, PublishedDate \[, specific fields 11)\]
-|  32      | UnpublishIssue                   | 7.5.0      | Ticket 9), PubChannelType, PubChannelId, IssueId, EditionId, Version \[, specific fields 11)\]
-|  33      | SetPublishInfoForIssue           | 7.5.0      | Ticket 9), PubChannelType, PubChannelId, IssueId, EditionId, Version, PublishedDate \[, specific fields 11)\]
-|  34      | CreateObjectLabels               | 9.1.0      | Ticket 9), ObjectId, Labels 13)
-|  35      | UpdateObjectLabels               | 9.1.0      | Ticket 9), ObjectId, Labels 13)
-|  36      | DeleteObjectLabels               | 9.1.0      | Ticket 9), ObjectId, Labels 13)
-|  37      | AddObjectLabels                  | 9.1.0      | Ticket 9), ParentId, ChildIds, Labels 13)
-|  38      | RemoveObjectLabels               | 9.1.0      | Ticket 9), ParentId, ChildIds, Labels 13)
-|  39      | SetPropertiesForMultipleObjects  | 9.2.0      | Ticket 9), ObjectIds, properties
+|  13      | UpdateObjectRelation             |            | Ticket <sup>9)</sup>, Child (placable object id), Type (relation) <sup>2)</sup>, Parent (layout object id), PlacedOn (layout name)
+|  14      | DeadlineChanged                  |            | Ticket <sup>9)</sup>, ID (object), DeadlineHard, DeadlineSoft
+|  15      | DeleteMessage                    |            | Ticket <sup>9)</sup>, MessageID
+|  16      | AddToQuery                       |            | Ticket <sup>9)</sup>, UpdateID <sup>5)</sup>, ID (object), Type (object) <sup>1)</sup>, Name (object), PublicationId, SectionId, StateId, RouteTo (user), LockedBy (user)
+|  17      | RemoveFromQuery                  |            | Ticket <sup>9)</sup>, UpdateID <sup>5)</sup>, ID (object)
+|  18      | ReLogOn                          |            | Ticket <sup>9)</sup>, UserId (the full name of the user that should relogon, without prompting the user with a logon dialog) <sup>8)</sup>
+|  19      | RestoreVersion                   |            | Ticket <sup>9)</sup>, ID (object), Type (object) <sup>1)</sup>, Name (object), PublicationId, IssueIds, EditionIds, SectionId, StateId, Modified, Modifier, RouteTo (user), LockedBy (user), Version (object), Format (object), UserId <sup>7)</sup>, OldRouteTo (user)
+|  20      | CreateObjectTarget               |            | Ticket <sup>9)</sup>, UserId <sup>7)</sup>, ID (object), PubChannelId, IssueId, EditionIds
+|  21      | DeleteObjectTarget               |            | Ticket <sup>9)</sup>, UserId <sup>7)</sup>, ID (object), PubChannelId, IssueId, EditionIds
+|  22      | UpdateObjectTarget               |            | Ticket <sup>9)</sup>, UserId <sup>7)</sup>, ID (object), PubChannelId, IssueId, EditionIds
+|  23      | RestoreObject                    | 8.0.0      | Ticket <sup>9)</sup>, ID (object), Type (object) <sup>1)</sup>, Name (object), PublicationId, IssueIds, EditionIds, SectionId, StateId, Deleted, Deleter, RouteTo (user), LockedBy (user), Modified, Modifier, Version (object), Format (object), UserId <sup>7)</sup>
+|  24      | IssueDossierReorderAtProduction  | 7.0.13     | Ticket <sup>9)</sup>, PubChannelType, IssueId, DossierIds <sup>10)</sup>
+|  25      | IssueDossierReorderPublished     | 7.5.0      | Ticket <sup>9)</sup>, PubChannelType, PubChannelId, IssueId, EditionId, DossierIds <sup>10)</sup>
+|  26      | PublishDossier                   | 7.5.0      | Ticket <sup>9)</sup>, DossierId, PubChannelType, PubChannelId, IssueId, EditionId, PublishedDate \[, specific fields <sup>11)</sup>\]
+|  27      | UpdateDossier                    | 7.5.0      | Ticket <sup>9)</sup>, DossierId, PubChannelType, PubChannelId, IssueId, EditionId, PublishedDate \[, specific fields <sup>11)</sup>\]
+|  28      | UnpublishDossier                 | 7.5.0      | Ticket <sup>9)</sup>, DossierId, PubChannelType, PubChannelId, IssueId, EditionId \[, specific fields <sup>11)</sup>\]
+|  29      | SetPublishInfoForDossier         | 7.5.0      | Ticket <sup>9)</sup>, DossierId, PubChannelType, PubChannelId, IssueId, EditionId, PublishedDate \[, specific fields <sup>11)</sup>\]
+|  30      | PublishIssue                     | 7.5.0      | Ticket <sup>9)</sup>, PubChannelType, PubChannelId, IssueId, EditionId, Version, PublishedDate \[, specific fields <sup>11)</sup>\]
+|  31      | UpdateIssue                      | 7.5.0      | Ticket <sup>9)</sup>, PubChannelType, PubChannelId, IssueId, EditionId, Version, PublishedDate \[, specific fields <sup>11)</sup>\]
+|  32      | UnpublishIssue                   | 7.5.0      | Ticket <sup>9)</sup>, PubChannelType, PubChannelId, IssueId, EditionId, Version \[, specific fields <sup>11)</sup>\]
+|  33      | SetPublishInfoForIssue           | 7.5.0      | Ticket <sup>9)</sup>, PubChannelType, PubChannelId, IssueId, EditionId, Version, PublishedDate \[, specific fields <sup>11)</sup>\]
+|  34      | CreateObjectLabels               | 9.1.0      | Ticket <sup>9)</sup>, ObjectId, Labels <sup>13)</sup>
+|  35      | UpdateObjectLabels               | 9.1.0      | Ticket <sup>9)</sup>, ObjectId, Labels <sup>13)</sup>
+|  36      | DeleteObjectLabels               | 9.1.0      | Ticket <sup>9)</sup>, ObjectId, Labels <sup>13)</sup>
+|  37      | AddObjectLabels                  | 9.1.0      | Ticket <sup>9)</sup>, ParentId, ChildIds, Labels <sup>13)</sup>
+|  38      | RemoveObjectLabels               | 9.1.0      | Ticket <sup>9)</sup>, ParentId, ChildIds, Labels <sup>13)</sup>
+|  39      | SetPropertiesForMultipleObjects  | 9.2.0      | Ticket <sup>9)</sup>, ObjectIds, properties
+|  40      | CreateIssue <sup>18)</sup>       | 10.4.1     | Ticket <sup>9)</sup>, PublicationId, PubChannelId, Id (issue), Name (issue), OverrulePublication <sup>17)</sup>, Activated <sup>16)</sup>, PublicationDate, ReversedRead, Description <sup>14)</sup>, Subject <sup>14)</sup>
+|  41      | ModifyIssue <sup>18)</sup>       | 10.4.1     | Ticket <sup>9)</sup>, PublicationId, PubChannelId, Id (issue), Name (issue), OverrulePublication <sup>17)</sup>, Activated <sup>16)</sup>, PublicationDate, ReversedRead, Description <sup>14)</sup>, Subject <sup>14)</sup>
+|  42      | DeleteIssue <sup>18)</sup>       | 10.4.1     | Ticket <sup>9)</sup>, Id (issue)
+|  43      | UpdateIssuesOrder                | 10.4.1     | Ticket <sup>9)</sup>, PublicationId, PubChannelId, IssueIdsOrder <sup>15)</sup> 
+|  44      | UpdatePublicationChannel         | 10.4.1     | Ticket <sup>9)</sup>, PublicationId, Id (publication channel), Name (publication channel), Type, CurrentIssueId, DirectPublish, SupportsForms, SupportsCropping
 
 1.  ObjectType as specified in the workflow WSDL. Options are: Article, Layout, Image, etc.
 
@@ -125,6 +130,25 @@ Adobe DPS integration there is one field named ‘PublishStatus’ for all issue
 12.  Only sent when the message is set to “Read”.
 
 13.  Labels are comma-separated and each label consists of an id and a name attribute separated by a tab: `id\tname`
+
+14.  The Description and Subject fields are purposely put at the end of the message; For n-casting (broadcasting / 
+multi-casting), when fields are too long to fit into the message, they will be left out entirely.
+
+15. IssueIdsOrder is an array of issue IDs in configured order. For n-casting (broadcasting / multi-casting), when there 
+are many issue IDs, the server will split-up the IDs over multiple network packages. Those packages may overtake each other 
+underway and arrive in random order. There is no information for clients to put them in the right order again. Therefore 
+this message should not be implemented for n-casting client side. For RabbitMQ there is no such problem and so this is 
+the recommended protocol.
+
+16. An issue could be activated or de-activated. Only activated issues should be shown in the UI for end-users. 
+Clients should check the Activated flag for this.
+
+17. If the client does not support Overrule Issues (such as Content Station) all issue events for which the OverrulePublication 
+flag is set should be ignored.
+
+18. The CreateIssue event is not supported for Overrule Issues (issues having the OverrulePublication flag set) because 
+client applications would then need the entire workflow setup which is only provided through a logon response. The 
+ModifyIssue and DeleteIssue events are sent out for normal issues and Overrule Issues. 
 
 ## RabbitMQ integration \[since 10.0\]
 
