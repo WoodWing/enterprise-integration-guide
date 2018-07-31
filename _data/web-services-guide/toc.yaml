@@ -26,6 +26,11 @@ toc:
         path: web-services-guide/ent-and-web-services/transfer-server.md
         url: web-services-guide/ent-and-web-services/transfer-server.html
         permalink: 1035-transfer-server
+      - title: Elvis Proxy Server [since 10.5]
+        layout: chapter
+        path: web-services-guide/ent-and-web-services/elvis-proxy-server.md
+        url: web-services-guide/ent-and-web-services/elvis-proxy-server.html
+        permalink: 1061-elvis-proxy-server
       - title: Web Service Interfaces
         layout: chapter
         path: web-services-guide/ent-and-web-services/web-service-interfaces.md
