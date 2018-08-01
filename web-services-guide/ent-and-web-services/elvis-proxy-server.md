@@ -6,37 +6,42 @@ permalink: 1061-elvis-proxy-server
 ---
 
 A proxy server is added to the Elvis plug-in for Enterprise Server to expose the Elvis Preview API to Enterprise client 
-applications. This is called the Elvis proxy server. The client may request for an Elvis image preview, which which then 
+applications. This is called the Elvis proxy server. The client may request for an Elvis image preview, which then 
 will be proxied to the Elvis Server Preview API. The client may also let the user create a crop of an image, which can be 
 requested through the API as well.
 
+> **Note** - At the time writing this chapter, there are no client applications using the proxy server yet.
+
 Compared with the Transfer Server, using the proxy has the following advantages:
 * Faster download because the proxy provides a download stream (while the Transfer Server saves the file in the Transfer Folder).
-* The client application can define preview dimensions/resolution that suites the best in its UI.
-* Provides 'stable' URLs, which have the following advantages:
+* The client application can define preview dimensions/resolution that suits the best in its UI.
+* Provides 'stable' URLs <sup>1)</sup>, which have the following advantages:
   * The client application can share the download URL with other clients or users.
   * The preview URLs can be embedded in a text document.
   * Enables usage of the web browser cache to avoid downloading the same preview over and over again.
 * The same API can be used to make image crops.
 * Support for the `ETag` HTTP header to avoid preview download when client application has latest version already. 
 (In this header the client can provide the current version number and the server will return HTTP 304 without file when 
-it is the latest version, or HTTP 200 with file if there is a newer version.)
+it is the latest version, or HTTP 200 with file if there is a newer version.) Web browsers also support this protocol, 
+so web applications automatically gain from this optimization.
+
+> 1\) **'Stable' URLs** contain the whole preview/crop download definition, so they never have to be adjusted e.g. to 
+be used in another context. Authorization is done through HTTP headers, to exclude access tokens or tickets from the URL, 
+which may vary per user session or client application.
 
 The responsibilities of the proxy server are:
 * Check the Enterprise ticket and authorize the Enterprise user.
-* Validate file access to the image in Enterprise.
+* Validate file access to the image in Enterprise, with access rules defined in Enterprise.
 * Setup a trust connection with Elvis and authorize the Elvis user.
-* Provide stable URLs to support web browser cache.
+* Provide 'stable' URLs to support web browser cache.
 * Expose the Elvis API to the client, but hide the Elvis location (base URL).
 * Resolve the Elvis asset id from an Enterprise object id.
-* Stream the image preview (or crop) back to the waiting CS app.
+* Stream the image preview (or crop) back to the waiting client application.
 
 The Elvis proxy server is shipped with the Elvis server plug-in for Enterprise Server. This plug-in must be activated to 
-be able to use the proxy. The proxy takes a HTTP GET request and composes an REST request for Elvis Server. The response 
+be able to use the proxy. The proxy accepts a HTTP GET request and composes a REST request for Elvis Server. The response 
 is streamed back to the caller. The proxy talks to the Elvis Server that is configured with the ELVIS_URL option in the 
 Enterprise/config/config_elvis.php file.
-
-> **Note** - At the time writing this chapter, there are no client applications using the proxy server yet.
 
 ## Web service integration
 
@@ -133,7 +138,7 @@ objectid        | *[Required]* The ID of the workflow object in Enterprise. The 
 rendition       | *[Required]* The file rendition to download. Supported values: 'native', 'preview' or 'thumb'.
 preview-args    | *[Optional]* The preview- or cropping dimensions. See [Elvis Preview API](https://helpcenter.woodwing.com/hc/en-us/articles/115002690026) for details.
 
-1) Note that 'stable' URLs have the following advantages:
+> 1) **'Stable' URLs** have the following advantages:
 * Support for the web browser's cache.
 * Can be exchanged between users or client applications.
 * Can be embedded in a document.
@@ -149,7 +154,7 @@ The following HTTP codes may be returned:
 * HTTP 500: Unexpected server error.
 
 ## Preview example
-When the `Foo Bar` client wants an Elvis image preview for object id `123`, the proxy can be called as follows:
+When the `Foo Bar` client wants an Elvis image **preview** for object id `123`, the proxy can be called as follows:
 ```
 http://localhost/Enterprise/server/plugins/Elvis/restproxyindex.php?ww-app=Foo%20Bar&objectid=123&rendition=preview&preview-args=maxWidth_600_maxHeight_400.jpg
 ```
@@ -163,7 +168,7 @@ http://localhost:18800/preview/6uk-q7GeKiD9yTAgKPsu6F/previews/maxWidth_600_maxH
 In this example the Enterprise object id `123` is a shadow object for Elvis asset id `6uk-q7GeKiD9yTAgKPsu6F`.
 
 ## Crop example
-When the `Foo Bar` client wants an Elvis image preview for object id `123`, the proxy can be called as follows:
+When the `Foo Bar` client wants an Elvis image **crop** for object id `123`, the proxy can be called as follows:
 ```
 http://localhost/Enterprise/server/plugins/Elvis/restproxyindex.php?ww-app=Foo%20Bar&objectid=123&rendition=preview&preview-args=cropWidth_590_cropHeight_390_cropOffsetX_10_cropOffsetY_10.jpg
 ```
