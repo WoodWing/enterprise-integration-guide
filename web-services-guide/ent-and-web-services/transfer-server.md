@@ -33,7 +33,7 @@ make a difference, such as:
 * Upload/download files asynchronously and/or in parallel
 * Skip download of locally cached files
 * Report errors from the service -before- upload/download (large) files
-* Use standard libraries (SOAP parsers, AMF, etc) that do not handle DIME
+* Use standard SOAP parsers that does not handle DIME
 
 System administrators can set up the Enterprise Server on one machine and the Transfer Server on another. And, there can 
 be multiple Enterprise Servers and multiple Transfer Servers, all working together serving a group of client machines. 
@@ -83,7 +83,7 @@ More information about cookie based tickets can be found later in this document.
 The figure below shows how file attachments travel along services when uploading files (such as the CreateObjects or 
 SaveObjects workflow services). With v7 clients, they both travel through the same request and connection. With v8 
 clients, there are two connections; one to the Enterprise Server and one to the Transfer Server. In this case, clients 
-can choose between SOAP, AMF or JSON. The red color shows how request data travels through the system. The file 
+can choose between SOAP or JSON. The red color shows how request data travels through the system. The file 
 attachments are shown in purple.
 
 ![]({{ site.baseurl }}{% link web-services-guide/images/image6.png %})
@@ -269,7 +269,7 @@ $transferServer->writeContentToFileTransferServer( $content, $attachment );
 ## Handshake
 
 “Do you speak English?”. That question is heard at touristic places quite often. But what answer do you expect from 
-people who do not speak English at all? Introducing AMF and JSON brings similar challenges; How can a client start 
+people who do not speak English at all? Introducing JSON brings similar challenges; How can a client start 
 talking to a server without knowing what server it is talking to and what protocols it understands? This challenge is 
 new with v8; Before, only SOAP and DIME were supported. But now, the listed servers (configured in WWSettings.xml or 
 configserver.php) need to be accessed with care, before clients start talking new protocols. Clients have no idea what 
@@ -293,7 +293,6 @@ Enterprise Server 8 (and later) will return a home brewed XML structure like thi
 <?xml version="1.0" encoding="UTF-8"?>
 <EnterpriseHandshake version="1">
 	<Techniques>
-		<Technique protocol="AMF" transfer="HTTP"/>
 		<Technique protocol="SOAP" transfer="HTTP"/>
 		<Technique protocol="JSON" transfer="HTTP"/>
 		<Technique protocol="SOAP" transfer="DIME"/>
@@ -310,21 +309,20 @@ Enterprise Server 8 (and later) will return a home brewed XML structure like thi
 ```
 
 This tells the client that:
-* AMF is preferred above SOAP
-* AMF can be combined with HTTP, but not with DIME
+* JSON can be combined with HTTP, but not with DIME
 * SOAP can be combined with HTTP or DIME
-* SOAP over HTTP is p* referred above SOAP over DIME
+* SOAP over HTTP is preferred above SOAP over DIME
 
 The client knows what protocols and transfers it supports (by itself) and now picks the best match that is most 
 preferred by the server. Now it reconnects to the entry point again to let server know its choice, for example:
 
-`http://123.123.123.123/transferindex.php?protocol=AMF&transfer=HTTP`
+`http://123.123.123.123/transferindex.php?protocol=JSON&transfer=HTTP`
 
 When the client does not connect this way (leaving out the protocol and transfer parameters), the server assumes the 
 client is v7 (or older) and starts using DIME over SOAP for backwards compatibility reasons.
 
-For each request, the client may choose other parameters. For example, it might support AMF, but still does SOAP for 
-some specific services that have not been ported to AMF yet.
+For each request, the client may choose other parameters. For example, it might support JSON, but still does SOAP for 
+some specific services that have not been ported to JSON yet.
 
 Note that the parameters can be applied to all public interfaces: workflow, planning, administration, datasource, 
 datasource admin and publish. Internal application interfaces support SOAP only.

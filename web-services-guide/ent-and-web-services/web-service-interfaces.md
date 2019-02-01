@@ -171,10 +171,6 @@ them with both structures (old and new).
 Attached documents (DIME attachments) sent along with SOAP traffic are not logged server side. This is to avoid 
 outrageous disk space consumption. InDesign/InCopy clients support DIME logging though.
 
-> **\[Since 8.0\]** For SOAP and JSON the original request is logged. Because AMF is a binary format, this is not done 
-for AMF. In such cases you have to rely on the PHP objects logged in TXT format; this can be enabled with the 
-LOG\_INTERNAL\_SERVICES option.
-
 ## Service validation \[since 8.0\]
 
 Since Enterprise Server 8 it is possible to validate Web Service requests and responses. This is implemented for all 

@@ -101,62 +101,6 @@ generate the Java classes.
 A “HelloWorld” sample application made in Java is available from *WoodWing Labs,* showing how to logon to Enterprise Server 
 through the SOAP workflow interface by using the generated Java classes. Use this sample as a starting point.
 
-## Flex clients using AMF \[since 8.0\]
-
-To ease Flex integrations, Enterprise Server 8 ships request-, response- and data classes for all interfaces. For each 
-class it provides an Action Script, which can be found here:
-
-`.../Enterprise/sdk/flex/src/com`
-
-When developing an AMF client that integrates with Enterprise Server, please import these classes into your Flex project 
-as a starting point. This can be done for one, many or all interfaces, depending on which interface is most suitable for 
-your integration. When integrating a newer (updated) version of Enterprise Server, reimport those classes again, since 
-the classes shipped with Enterprise are always respecting the latest WSDL changes.
-
-Let’s use the LogOn request as an example. The LogOn request class (Action Script) for the workflow interface can be 
-found here:
-
-`.../Enterprise/sdk/flex/src/com/woodwing/enterprise/interfaces/services/wfl/WflLogOnRequest.as`
-
-The login dialog could be made like this:
-```xml
-<mx:Panel title="Login">
-	<mx:TextInput id="userName"/>
-	<mx:TextInput id="password"/>
-	<mx:Button label="Login" click="doWflLogOn()"/>
-</mx:Panel>
-```
-
-A proxy object to the workflow interface could be made like this:
-
-```xml
-<mx:RemoteObject id="wflProxy" destination="wflDestination" showBusyCursor="true" source="WflServices">
-	<mx:method name="LogOn" result="onWflLogOnResult(event)" fault="handleException(event)"/>
-</mx:RemoteObject>
-```
-
-The login script (behind the login dialog) could look as simple as this:
-```
-private function doWflLogOn():void {
-	var req:WflLogOnRequest = new WflLogOnRequest();
-	req.User = userName.text;
-	req.Password = password.text;
-	wflProxy.LogOn( req );
-}
-```
-
-Once logged in, Flex gets called back, from where you can pickup data, like the ticket:
-
-```
-private function onWflLogOnResult(evt:ResultEvent):void {
-	Alert.show(evt.result.Ticket.toString(),
-		"Got a workflow ticket!");
-}
-```
-
-At the time of updating this document with Enterprise 8 info, a demo application is being developed in Flex showing how 
-to integrate with Enterprise with AMF. Once completed, the application will appear on Labs.
-
 ## JavaScript clients using JSON \[since 8.0\]
 
 When developing a JavaScript client that integrates with Enterprise Server, JSON is the most suitable and recommended 
@@ -168,12 +112,12 @@ server’s response (but logically it could feel synchronous with the end-user w
 response arrives, a registered callback function in JavaScript is triggered, which allows the client to continue its 
 procedure. With all this in place, we speak of a JavaScript client application.
 
-All operations specified in any of the *Web Service Interfaces* can be used with JSON. But unlike SOAP and AMF, for 
+All operations specified in any of the *Web Service Interfaces* can be used with JSON. But unlike SOAP, for 
 JSON there are no request or data classes shipped. This is with a reason: It would lead into downloading all class 
 definitions from server to client before the client can start talking. This significant overhead is something to avoid 
 for the sake of performance (and there is no technical need to have such classes in place). The communication using 
-JSON is very lightweighted and data properties that are not known by client or server are simply not sent over HTTP. 
-Basically, everything that is defined as nil / nullable can be simply left out (unlike SOAP and AMF that have to specify 
+JSON is very light weighted and data properties that are not known by client or server are simply not sent over HTTP. 
+Basically, everything that is defined as nil / nullable can be simply left out (unlike SOAP that has to specify 
 the property being set to nil) which reduces communication traffic.
 
 For example, this is how a LogOn request looks like:
@@ -194,7 +138,7 @@ For example, this is how a LogOn request looks like:
 }
 ```
 
-On the server, arrived JSON classes are mapped onto PHP classes like done for SOAP and AMF. Therefore the client 
+On the server, arrived JSON classes are mapped onto PHP classes like done for SOAP. Therefore the client 
 application should specify the class names so that Enterprise Server can do the mapping. (This is not needed for the 
 request class itself since it is already specified in the “method” parameter the JSON RPC structure.) Enterprise Server 
 expects the first property of an object to be named “\_\_classname\_\_” that caries the name of the data class (which 
