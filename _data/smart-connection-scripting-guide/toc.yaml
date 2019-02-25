@@ -1,0 +1,46 @@
+toc:
+  - title: Smart Connection Scripting Guide
+    layout: guide
+    path: smart-connection-scripting-guide/index.md
+    url: smart-connection-scripting-guide/index.html
+    permalink: 1068-index
+    children:
+    - title: Application
+      layout: section
+      path: smart-connection-scripting-guide/Application/index.md
+      url: smart-connection-scripting-guide/Application/index.html
+      permalink: 1065-index
+      children:
+      - title: Application properties
+        layout: section
+        path: smart-connection-scripting-guide/Application/Properties/index.md
+        url: smart-connection-scripting-guide/Application/Properties/index.html
+        permalink: 1067-index
+        children:
+        - title: entSession
+          layout: chapter
+          path: smart-connection-scripting-guide/Application/Properties/entSession.md
+          url: smart-connection-scripting-guide/Application/Properties/entSession.html
+          permalink: 1066-entSession
+    - title: Section
+      layout: section
+      path: smart-connection-scripting-guide/Session/index.md
+      url: smart-connection-scripting-guide/Session/index.html
+      permalink: 1069-index
+      children:
+      - title: Session properties
+        layout: section
+        path: smart-connection-scripting-guide/Session/Properties/index.md
+        url: smart-connection-scripting-guide/Session/Properties/index.html
+        permalink: 1072-index
+        children:
+        - title: activeServer
+          layout: chapter
+          path: smart-connection-scripting-guide/Session/Properties/activeServer.md
+          url: smart-connection-scripting-guide/Session/Properties/activeServer.html
+          permalink: 1070-activeServer
+        - title: activeTicket
+          layout: chapter
+          path: smart-connection-scripting-guide/Session/Properties/activeTicket.md
+          url: smart-connection-scripting-guide/Session/Properties/activeTicket.html
+          permalink: 1071-activeTicket

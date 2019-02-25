@@ -1,0 +1,58 @@
+{
+    "0": {
+        "title": "Smart Connection Scripting Guide",
+        "author": "",
+        "category": "",
+        "content": "--- layout: guide title: Smart Connection Scripting Guide description: Scripting Guide for Smart Connection permalink: 1068-index --- ## Introduction Many aspects of the Smart Connection client application are scriptable using JavaScript. This guide contains examples sharing how to script the Smart Connection specific part of the scripting object model. It should be used as a companion to InDesign\u2019s Scripting Guide and the scripting model presented by the Adobe ExtendScript Toolkit. This guide can be used for the following version of Smart Connection: * Smart Connection for Adobe CC * Smart Connection for Adobe CC 2014 * Smart Connection for Adobe CC 2015 * Smart Connection for Adobe CC 2017 * Smart Connection for Adobe CC 2018 ## Required knowledge We assume the reader of this guide is familiar with: * The functionality of the Enterprise system. * The functionality of Smart Connection within InDesign and InCopy. * JavaScrippt language. For more information, see: https:\/\/javascript.info. ## Support To discuss any Smart Connection scripting related issues, visit WoodWing's [Community web site](https:\/\/helpcenter.woodwing.com\/hc\/en-us\/community\/topics) (log-in required). If you require further support for Enterprise, visit WoodWing's [Help Center web site](https:\/\/helpcenter.woodwing.com\/hc\/en-us) and follow the directions for submitting questions. ",
+        "url": "1068-index"
+    },
+    "1": {
+        "title": "Application",
+        "author": "",
+        "category": "",
+        "content": "--- layout: section title: Application permalink: 1065-index --- The object representing the InDesign or InCopy application. ",
+        "url": "1065-index"
+    },
+    "2": {
+        "title": "Application properties",
+        "author": "",
+        "category": "",
+        "content": "--- layout: section title: Application properties permalink: 1067-index --- Properties on the Application object. * [entSession](.\/entSession.md)",
+        "url": "1067-index"
+    },
+    "3": {
+        "title": "entSession",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: entSession sortid: 10 permalink: 1066-entSession --- # entSession ## Syntax ```javascript app.entSession; ``` ## Description The `entSession` property gives access to the Enterprise session by returning a Session object. For more info about the Session object please see the [Session](..\/..\/Session\/index.md) documentation. ## Examples **Check if there is an active session** When `activeUrl` is empty, there is no active session. ```javascript \/\/ Check if the session is active. var sessionObject = app.entSession; var activeSession = (sessionObject.activeUrl !== \"\"); ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | ## See also * [Session](..\/..\/Session\/index.md)",
+        "url": "1066-entSession"
+    },
+    "4": {
+        "title": "Section",
+        "author": "",
+        "category": "",
+        "content": "--- layout: section title: Section permalink: 1069-index --- The object representing the Enterprise session. ### Properties * [activeServer](.\/Properties\/activeServer.md) * [activeTicket](.\/Properties\/activeTicket.md) * [activeUrl](.\/Properties\/activeUrl.md) * [activeUser](.\/Properties\/activeUser.md) ### Methods",
+        "url": "1069-index"
+    },
+    "5": {
+        "title": "Session properties",
+        "author": "",
+        "category": "",
+        "content": "--- layout: section title: Session properties permalink: 1072-index --- Properties on the Session object. * [activeServer](.\/activeServer.md) * [activeTicket](.\/activeTicket.md) * [activeUrl](.\/activeUrl.md) * [activeUser](.\/activeUser.md)",
+        "url": "1072-index"
+    },
+    "6": {
+        "title": "activeServer",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: activeServer sortid: 20 permalink: 1070-activeServer --- # activeServer ## Syntax ```javascript Session.activeServer; ``` ## Description The `activeServer` property is used to get the display name of the server used for the current session. It returns empty when not logged in. For more info about the Session object please see the [entSession](..\/..\/Application\/Properties\/entSession.md) documentation. ## Examples **Get the server name used for the current session** When `activeServer` is empty, there is no active session. ```javascript \/\/ Get the server name used for the current session. var sessionObject = app.entSession; var serverName = sessionObject.activeServer; ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | ## See also * [entSession](..\/..\/Application\/Properties\/entSession.md)",
+        "url": "1070-activeServer"
+    },
+    "7": {
+        "title": "activeTicket",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: activeTicket sortid: 21 permalink: 1071-activeTicket --- # activeTicket ## Syntax ```javascript Session.activeTicket; ``` ## Description The `activeTicket` property is used to get the ticket of the current session. It returns empty when not logged in. For more info about the Session object please see the [entSession](..\/..\/Application\/Properties\/entSession.md) documentation. ## Examples **Get the active ticket used for the current session** When `activeTicket` is empty, there is no active session. ```javascript \/\/ Get the active ticket used for the current session. var sessionObject = app.entSession; var logonTicket = sessionObject.activeTicket; ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | ## See also * [entSession](..\/..\/Application\/Properties\/entSession.md)",
+        "url": "1071-activeTicket"
+    }
+}
