@@ -20,7 +20,7 @@ This guide can be used for the following version of Smart Connection:
 We assume the reader of this guide is familiar with:
 * The functionality of the Enterprise system. 
 * The functionality of Smart Connection within InDesign and InCopy.
-* JavaScrippt language. For more information, see: [https://javascript.info](https://javascript.info).
+* JavaScript language. For more information, see: [https://javascript.info](https://javascript.info).
 
 ## Support
 To discuss any Smart Connection scripting related issues, visit WoodWing's [Community web site](https://helpcenter.woodwing.com/hc/en-us/community/topics) (log-in required). 
