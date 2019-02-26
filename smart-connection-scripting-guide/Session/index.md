@@ -1,6 +1,6 @@
 ---
 layout: section
-title: Section
+title: Session
 permalink: 1069-index
 ---
 The object representing the Enterprise session.
