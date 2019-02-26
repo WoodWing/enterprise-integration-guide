@@ -1,34 +1,33 @@
 ---
 layout: chapter
-title: activeUrl
-sortid: 22
-permalink: 1074-activeUrl
+title: activeUser
+sortid: 23
+permalink: 1075-activeUser
 ---
 ## Syntax
 
 ```javascript
-Session.activeUrl;
+Session.activeUser;
 ```
 
 ## Description
 
-The `activeUrl` property is used to get the URL of the server for the current session. It returns empty when not logged in.
-The name of the server will have the value of the `url` property of the `<SCEnt:ServerInfo/>` tag in the WWSettings.xml file.
+The `activeUser` property is used to get the user's short name of the user currently logged in. It returns empty when not logged in.
 
 For more info about the Session object please see the [entSession](../../Application/Properties/entSession.md) documentation.
 
 ## Examples
 
-**Get the URL of the server for the current session**
+**Get the name of the user currently logged in**
 
-When `activeUrl` is empty, there is no active session.
+When `activeUser` is empty, there is no active session.
 
 ```javascript
-// Get the URL of the server for the current session.
+// Get the name of the user currently logged in.
 var sessionObject = app.entSession;
-var serverUrl = sessionObject.activeUrl;
+var userShortName = sessionObject.activeUser;
 
-// serverUrl is now 'https://server.company.net/enterprise/index.php'.
+// userShortName is now 'Joe'.
 ```
 
 ## Support versions
