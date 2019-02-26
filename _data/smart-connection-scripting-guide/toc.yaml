@@ -15,14 +15,14 @@ toc:
         layout: section
         path: smart-connection-scripting-guide/Application/Properties/index.md
         url: smart-connection-scripting-guide/Application/Properties/index.html
-        permalink: 1067-index
+        permalink: 1073-index
         children:
         - title: entSession
           layout: chapter
           path: smart-connection-scripting-guide/Application/Properties/entSession.md
           url: smart-connection-scripting-guide/Application/Properties/entSession.html
           permalink: 1066-entSession
-    - title: Section
+    - title: Session
       layout: section
       path: smart-connection-scripting-guide/Session/index.md
       url: smart-connection-scripting-guide/Session/index.html
@@ -44,3 +44,8 @@ toc:
           path: smart-connection-scripting-guide/Session/Properties/activeTicket.md
           url: smart-connection-scripting-guide/Session/Properties/activeTicket.html
           permalink: 1071-activeTicket
+        - title: activeUrl
+          layout: chapter
+          path: smart-connection-scripting-guide/Session/Properties/activeUrl.md
+          url: smart-connection-scripting-guide/Session/Properties/activeUrl.html
+          permalink: 1074-activeUrl

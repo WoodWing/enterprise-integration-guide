@@ -2,6 +2,7 @@
 layout: chapter
 title: activeUrl
 sortid: 22
+permalink: 1074-activeUrl
 ---
 ## Syntax
 
