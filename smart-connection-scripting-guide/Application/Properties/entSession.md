@@ -4,8 +4,6 @@ title: entSession
 sortid: 10
 permalink: 1066-entSession
 ---
-# entSession
-
 ## Syntax
 
 ```javascript

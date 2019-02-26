@@ -4,8 +4,6 @@ title: activeTicket
 sortid: 21
 permalink: 1071-activeTicket
 ---
-# activeTicket
-
 ## Syntax
 
 ```javascript

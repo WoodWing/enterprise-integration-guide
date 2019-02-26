@@ -4,8 +4,6 @@ title: activeServer
 sortid: 20
 permalink: 1070-activeServer
 ---
-# activeServer
-
 ## Syntax
 
 ```javascript
