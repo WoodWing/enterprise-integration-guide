@@ -26,6 +26,9 @@ When `activeUrl` is empty, there is no active session.
 // Check if the session is active.
 var sessionObject = app.entSession;
 var activeSession = (sessionObject.activeUrl !== "");
+
+// When logged in, activeSession is now 'true'.
+// When not logged in, activeSession is 'false'.
 ```
 
 ## Support versions
@@ -37,6 +40,7 @@ var activeSession = (sessionObject.activeUrl !== "");
 | CC 2015       | ✔       |
 | CC 2017       | ✔       |
 | CC 2018       | ✔       |
+| CC 2019       | ✔       |
 
 ## See also
 

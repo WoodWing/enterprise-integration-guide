@@ -1,31 +1,32 @@
 ---
 layout: chapter
-title: activeServer
-sortid: 20
-permalink: 1070-activeServer
+title: activeUrl
+sortid: 22
 ---
 ## Syntax
 
 ```javascript
-Session.activeServer;
+Session.activeUrl;
 ```
 
 ## Description
 
-The `activeServer` property is used to get the display name of the server used for the current session. It returns empty when not logged in.
+The `activeUrl` property is used to get the URL o fthe server for the current session. It returns empty when not logged in.
 
 For more info about the Session object please see the [entSession](../../Application/Properties/entSession.md) documentation.
 
 ## Examples
 
-**Get the server name used for the current session**
+**Get the URL of the server for the current session**
 
-When `activeServer` is empty, there is no active session.
+When `activeUrl` is empty, there is no active session.
 
 ```javascript
-// Get the server name used for the current session.
+// Get the URL of the server for the current session.
 var sessionObject = app.entSession;
-var serverName = sessionObject.activeServer;
+var serverUrl = sessionObject.activeUrl;
+
+// serverUrl is now http://www.
 ```
 
 ## Support versions
