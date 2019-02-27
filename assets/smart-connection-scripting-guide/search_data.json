@@ -10,59 +10,73 @@
         "title": "Application",
         "author": "",
         "category": "",
-        "content": "--- layout: section title: Application permalink: 1065-index --- The object representing the InDesign or InCopy application. ### Properties * [entSession](Properties\/entSession.md)",
+        "content": "--- layout: section title: Application permalink: 1065-index --- The object representing the InDesign or InCopy application. ### Properties * [entSession](Properties\/entSession.md) ### Methods * [browseQuery](Methods\/browseQuery.md) * [getDossiersForItem](Methods\/getDossiersForItem.md) * [jsonRequest](Methods\/jsonRequest.md) * [namedQuery](Methods\/namedQuery.md) * [offlineQuery](Methods\/offlineQuery.md) * [openObject](Methods\/openObject.md) * [queryObjects](Methods\/queryObjects.md) * [sendObjectToNext](Methods\/sendObjectToNext.md) * [storedUserQuery](Methods\/storedUserQuery.md) * [updatePanels](Methods\/updatePanels.md)",
         "url": "1065-index"
     },
     "2": {
+        "title": "Application methods",
+        "author": "",
+        "category": "",
+        "content": "--- layout: section title: Application methods permalink: 1077-index --- Methods on the Application object. * [browseQuery](.\/browseQuery.md) * [getDossiersForItem](.\/getDossiersForItem.md) * [jsonRequest](.\/jsonRequest.md) * [namedQuery](.\/namedQuery.md) * [offlineQuery](.\/offlineQuery.md) * [openObject](.\/openObject.md) * [queryObjects](.\/queryObjects.md) * [sendObjectToNext](.\/sendObjectToNext.md) * [storedUserQuery](.\/storedUserQuery.md) * [updatePanels](.\/updatePanels.md) ",
+        "url": "1077-index"
+    },
+    "3": {
+        "title": "browseQuery",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: browseQuery sortid: 9 permalink: 1076-browseQuery --- ## Syntax ```javascript app.browseQuery; ``` ### Parameters **brand** *string* The name of the Brand to browse for. **issue** *string* The name of the Issue to browse for. **section** *string* The name of the Section to browse for. **state** *string* The name of the State to browse for. **Return value** A string reprerepresenting the Browse query result. The result is comma separated. ## Description The `browseQuery()` method generates the result of the Browse query returned by the Enterprise server. ## Examples **Get the results for a specific query** ```javascript \/\/ Check if the session is active. var queryResult = app.browseQuery(\"WW News\", \"1st Issue\", \"News\", \"Ready\"); \/\/ queryResult is now: \/\/ \/\/ \"Columns: <int, ID><string, Name><string, Type><string, In Use By> \/\/ <int, Rating><multilist, Issues><list, Status><string, Status ID> \/\/ <int, Flag><list, Category><string, Category><double, Width> \/\/ <double, Height><string, Created By><string, Aspect ratio> \/\/ <string, Urgency><datetime, Created On><multiline, Description> \/\/ <string, Copyright (c)><int, Size><datetime, Modified On> \/\/ <string, Modified By><string, Author><list, Route To> \/\/ <string, Placed On><list, Brand><string, Brand ID> \/\/ <string, Planned Page Range><string, Page Range><string, FlagMsg> \/\/ <icon, Deadline><datetime, Deadline><string, Placed On Page> \/\/ <multiline, Comment><string, Color Space><int, Columns> \/\/ <string, Issue ID><string, Format><bool, LockForOffline> \/\/ <multilist, Issue IDs><multilist, Edition IDs><bool, HasChildren> \/\/ \/\/ Rows: \/\/ <6315, test-layout, Article, , , 1st Issue, Ready, 2, , \/\/ News, 1, 523.275591, 769.889764, Joe, , , 06\/12\/2018 09:07, , , \/\/ 56 KB, 06\/12\/2018 09:10, Joe, , , L-testupdate1, WW News, 1, , , , \/\/ 0;cdcdcd, , 1, , , 1, , application\/incopyicml, false, 1, 1, 2, false> \/\/ \/\/ <1921, AWinttroart1, Article, , , 1st Issue, Ready, 2, , \/\/ News, 1, 164, 175, Joe, , , 03\/01\/2018 14:54, , , 56 KB, \/\/ 03\/01\/2018 15:05, Joe, , Joe, LWinttroart1, WW News, 1, , , , \/\/ 0;cdcdcd, , 1, , , 3, , application\/incopyicml, false, 1, 1, 2, false> \/\/ \/\/ <1922, Art2, Article, , , 1st Issue, Ready, 2, , News, 1, \/\/ 523.275591, 769.889764, Joe, , , 03\/01\/2018 14:59, , , 50 KB, \/\/ 03\/01\/2018 15:01, Joe, , , LWinttroart1, WW News, 1, , , , 0;cdcdcd, \/\/ , 1, , , 1, , application\/incopyicml, false, 1, 1, 2, false> \/\/ \/\/ \/\/ First Entry: 1 \/\/ \/\/ Listed Entries: 3 \/\/ \/\/ Total Entries: 3\" ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1076-browseQuery"
+    },
+    "4": {
         "title": "Application properties",
         "author": "",
         "category": "",
         "content": "--- layout: section title: Application properties permalink: 1073-index --- Properties on the Application object. * [entSession](.\/entSession.md)",
         "url": "1073-index"
     },
-    "3": {
+    "5": {
         "title": "entSession",
         "author": "",
         "category": "",
         "content": "--- layout: chapter title: entSession sortid: 10 permalink: 1066-entSession --- ## Syntax ```javascript app.entSession; ``` ## Description The `entSession` property gives access to the Enterprise session by returning a Session object. For more info about the Session object please see the [Session](..\/..\/Session\/index.md) documentation. ## Examples **Check if there is an active session** When `activeUrl` is empty, there is no active session. ```javascript \/\/ Check if the session is active. var sessionObject = app.entSession; var activeSession = (sessionObject.activeUrl !== \"\"); \/\/ When logged in, activeSession is now 'true'. \/\/ When not logged in, activeSession is 'false'. ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 | ## See also * [Session](..\/..\/Session\/index.md)",
         "url": "1066-entSession"
     },
-    "4": {
+    "6": {
         "title": "Session",
         "author": "",
         "category": "",
         "content": "--- layout: section title: Session permalink: 1069-index --- The object representing the Enterprise session. ### Properties * [activeServer](.\/Properties\/activeServer.md) * [activeTicket](.\/Properties\/activeTicket.md) * [activeUrl](.\/Properties\/activeUrl.md) * [activeUser](.\/Properties\/activeUser.md) ### Methods",
         "url": "1069-index"
     },
-    "5": {
+    "7": {
         "title": "Session properties",
         "author": "",
         "category": "",
         "content": "--- layout: section title: Session properties permalink: 1072-index --- Properties on the Session object. * [activeServer](.\/activeServer.md) * [activeTicket](.\/activeTicket.md) * [activeUrl](.\/activeUrl.md) * [activeUser](.\/activeUser.md)",
         "url": "1072-index"
     },
-    "6": {
+    "8": {
         "title": "activeServer",
         "author": "",
         "category": "",
-        "content": "--- layout: chapter title: activeServer sortid: 20 permalink: 1070-activeServer --- ## Syntax ```javascript Session.activeServer; ``` ## Description The `activeServer` property is used to get the display name of the server used for the current session. It returns empty when not logged in. For more info about the Session object please see the [entSession](..\/..\/Application\/Properties\/entSession.md) documentation. ## Examples **Get the server name used for the current session** When `activeServer` is empty, there is no active session. ```javascript \/\/ Get the server name used for the current session. var sessionObject = app.entSession; var serverName = sessionObject.activeServer; ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 | ## See also * [entSession](..\/..\/Application\/Properties\/entSession.md)",
+        "content": "--- layout: chapter title: activeServer sortid: 20 permalink: 1070-activeServer --- ## Syntax ```javascript Session.activeServer; ``` ## Description The `activeServer` property is used to get the display name of the server used for the current session. It returns empty when not logged in. The name of the server will have the value of the `name` property of the `<SCEnt:ServerInfo\/>` tag in the WWSettings.xml file. For more info about the Session object please see the [entSession](..\/..\/Application\/Properties\/entSession.md) documentation. ## Examples **Get the server name used for the current session** When `activeServer` is empty, there is no active session. ```javascript \/\/ Get the server name used for the current session. var sessionObject = app.entSession; var serverName = sessionObject.activeServer; \/\/ Given in WWSettings '<SCEnt:ServerInfo name=\"Enterprise v10.5.0\" url=\"https:\/\/server.company.net\/enterprise\/index.php\"\/>' \/\/ serverUrl is now 'Enterprise v10.5.0'. ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 | ## See also * [entSession](..\/..\/Application\/Properties\/entSession.md)",
         "url": "1070-activeServer"
     },
-    "7": {
+    "9": {
         "title": "activeTicket",
         "author": "",
         "category": "",
         "content": "--- layout: chapter title: activeTicket sortid: 21 permalink: 1071-activeTicket --- ## Syntax ```javascript Session.activeTicket; ``` ## Description The `activeTicket` property is used to get the ticket of the current session. It returns empty when not logged in. For more info about the Session object please see the [entSession](..\/..\/Application\/Properties\/entSession.md) documentation. ## Examples **Get the active ticket used for the current session** When `activeTicket` is empty, there is no active session. ```javascript \/\/ Get the active ticket used for the current session. var sessionObject = app.entSession; var logonTicket = sessionObject.activeTicket; ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 | ## See also * [entSession](..\/..\/Application\/Properties\/entSession.md)",
         "url": "1071-activeTicket"
     },
-    "8": {
+    "10": {
         "title": "activeUrl",
         "author": "",
         "category": "",
-        "content": "--- layout: chapter title: activeUrl sortid: 22 permalink: 1074-activeUrl --- ## Syntax ```javascript Session.activeUrl; ``` ## Description The `activeUrl` property is used to get the URL of the server for the current session. It returns empty when not logged in. The name of the server will have the value of the `url` property of the `<SCEnt:ServerInfo\/>` tag in the WWSettings.xml file. For more info about the Session object please see the [entSession](..\/..\/Application\/Properties\/entSession.md) documentation. ## Examples **Get the URL of the server for the current session** When `activeUrl` is empty, there is no active session. ```javascript \/\/ Get the URL of the server for the current session. var sessionObject = app.entSession; var serverUrl = sessionObject.activeUrl; \/\/ serverUrl is now 'https:\/\/server.company.net\/enterprise\/index.php'. ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 | ## See also * [entSession](..\/..\/Application\/Properties\/entSession.md)",
+        "content": "--- layout: chapter title: activeUrl sortid: 22 permalink: 1074-activeUrl --- ## Syntax ```javascript Session.activeUrl; ``` ## Description The `activeUrl` property is used to get the URL of the server for the current session. It returns empty when not logged in. The URL of the server will have the value of the `url` property of the `<SCEnt:ServerInfo\/>` tag in the WWSettings.xml file. For more info about the Session object please see the [entSession](..\/..\/Application\/Properties\/entSession.md) documentation. ## Examples **Get the URL of the server for the current session** When `activeUrl` is empty, there is no active session. ```javascript \/\/ Get the URL of the server for the current session. var sessionObject = app.entSession; var serverUrl = sessionObject.activeUrl; \/\/ Given in WWSettings '<SCEnt:ServerInfo name=\"Enterprise v10.5.0\" url=\"https:\/\/server.company.net\/enterprise\/index.php\"\/>' \/\/ serverUrl is now 'https:\/\/server.company.net\/enterprise\/index.php'. ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 | ## See also * [entSession](..\/..\/Application\/Properties\/entSession.md)",
         "url": "1074-activeUrl"
     },
-    "9": {
+    "11": {
         "title": "activeUser",
         "author": "",
         "category": "",

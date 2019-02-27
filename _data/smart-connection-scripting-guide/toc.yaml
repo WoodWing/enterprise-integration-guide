@@ -11,6 +11,17 @@ toc:
       url: smart-connection-scripting-guide/Application/index.html
       permalink: 1065-index
       children:
+      - title: Application methods
+        layout: section
+        path: smart-connection-scripting-guide/Application/Methods/index.md
+        url: smart-connection-scripting-guide/Application/Methods/index.html
+        permalink: 1077-index
+        children:
+        - title: browseQuery
+          layout: chapter
+          path: smart-connection-scripting-guide/Application/Methods/browseQuery.md
+          url: smart-connection-scripting-guide/Application/Methods/browseQuery.html
+          permalink: 1076-browseQuery
       - title: Application properties
         layout: section
         path: smart-connection-scripting-guide/Application/Properties/index.md
