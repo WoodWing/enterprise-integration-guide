@@ -13,6 +13,7 @@ Session.activeServer;
 ## Description
 
 The `activeServer` property is used to get the display name of the server used for the current session. It returns empty when not logged in.
+The name of the server will have the value of the `name` property of the `<SCEnt:ServerInfo/>` tag in the WWSettings.xml file.
 
 For more info about the Session object please see the [entSession](../../Application/Properties/entSession.md) documentation.
 
@@ -26,6 +27,9 @@ When `activeServer` is empty, there is no active session.
 // Get the server name used for the current session.
 var sessionObject = app.entSession;
 var serverName = sessionObject.activeServer;
+
+// Given in WWSettings '<SCEnt:ServerInfo name="Enterprise v10.5.0" url="https://server.company.net/enterprise/index.php"/>'
+// serverUrl is now 'Enterprise v10.5.0'.
 ```
 
 ## Support versions

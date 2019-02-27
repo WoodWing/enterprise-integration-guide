@@ -13,7 +13,7 @@ Session.activeUrl;
 ## Description
 
 The `activeUrl` property is used to get the URL of the server for the current session. It returns empty when not logged in.
-The name of the server will have the value of the `url` property of the `<SCEnt:ServerInfo/>` tag in the WWSettings.xml file.
+The URL of the server will have the value of the `url` property of the `<SCEnt:ServerInfo/>` tag in the WWSettings.xml file.
 
 For more info about the Session object please see the [entSession](../../Application/Properties/entSession.md) documentation.
 
@@ -28,6 +28,7 @@ When `activeUrl` is empty, there is no active session.
 var sessionObject = app.entSession;
 var serverUrl = sessionObject.activeUrl;
 
+// Given in WWSettings '<SCEnt:ServerInfo name="Enterprise v10.5.0" url="https://server.company.net/enterprise/index.php"/>'
 // serverUrl is now 'https://server.company.net/enterprise/index.php'.
 ```
 
