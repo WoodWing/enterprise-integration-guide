@@ -42,7 +42,7 @@ The `browseQuery()` method generates the result of the Browse query returned by 
 **Get the results for a specific query**
 
 ```javascript
-// Check if the session is active.
+// Get browse query results from the server.
 var queryResult = app.browseQuery("WW News", "1st Issue", "News", "Ready");
 
 // queryResult is now:
