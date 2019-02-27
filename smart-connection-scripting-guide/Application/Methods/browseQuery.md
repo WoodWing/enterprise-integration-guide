@@ -7,7 +7,7 @@ permalink: 1076-browseQuery
 ## Syntax
 
 ```javascript
-app.browseQuery;
+app.browseQuery(brand, issue, section, state);
 ```
 
 ### Parameters
