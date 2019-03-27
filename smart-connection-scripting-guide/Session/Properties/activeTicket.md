@@ -1,7 +1,7 @@
 ---
 layout: chapter
 title: activeTicket
-sortid: 21
+sortid: 63
 permalink: 1071-activeTicket
 ---
 ## Syntax
@@ -9,6 +9,16 @@ permalink: 1071-activeTicket
 ```javascript
 Session.activeTicket;
 ```
+
+### Access
+
+*readonly*
+
+### Parameters
+
+**Return value** *string*
+
+The ticket of the current session.
 
 ## Description
 

@@ -1,7 +1,7 @@
 ---
 layout: chapter
 title: activeUser
-sortid: 23
+sortid: 65
 permalink: 1075-activeUser
 ---
 ## Syntax
@@ -9,6 +9,16 @@ permalink: 1075-activeUser
 ```javascript
 Session.activeUser;
 ```
+
+### Access
+
+*readonly*
+
+### Parameters
+
+**Return value** *string*
+
+The (short) user name.
 
 ## Description
 

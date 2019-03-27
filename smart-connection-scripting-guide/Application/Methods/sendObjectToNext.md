@@ -1,0 +1,44 @@
+---
+layout: chapter
+title: sendObjectToNext
+sortid: 9
+permalink: 1084-sendObjectToNext
+---
+## Syntax
+
+```javascript
+app.sendObjectToNext(objectId);
+```
+
+### Parameters
+
+**objectId** *string*
+
+The object ID on the Enterprise Server.
+
+**Return value**
+
+The `sendObjectToNext()` method does not return anything.
+
+## Description
+
+The `sendObjectToNext()` method sends an object to its next status. Throws an exception in case of an error.
+
+## Examples
+
+**Example title**
+
+```javascript
+
+```
+
+## Support versions
+
+| Adobe Version | Support |
+|---------------|---------|
+| CC            | ✔       |
+| CC 2014       | ✔       |
+| CC 2015       | ✔       |
+| CC 2017       | ✔       |
+| CC 2018       | ✔       |
+| CC 2019       | ✔       |

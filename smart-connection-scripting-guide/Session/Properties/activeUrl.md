@@ -1,7 +1,7 @@
 ---
 layout: chapter
 title: activeUrl
-sortid: 22
+sortid: 64
 permalink: 1074-activeUrl
 ---
 ## Syntax
@@ -9,6 +9,16 @@ permalink: 1074-activeUrl
 ```javascript
 Session.activeUrl;
 ```
+
+### Access
+
+*readonly*
+
+### Parameters
+
+**Return value** *string*
+
+The URL of the active server.
 
 ## Description
 

@@ -1,7 +1,7 @@
 ---
 layout: chapter
 title: activeServer
-sortid: 20
+sortid: 62
 permalink: 1070-activeServer
 ---
 ## Syntax
@@ -9,6 +9,16 @@ permalink: 1070-activeServer
 ```javascript
 Session.activeServer;
 ```
+
+### Access
+
+*readonly*
+
+### Parameters
+
+**Return value** *string*
+
+The display name of the active serer.
 
 ## Description
 

@@ -1,14 +1,24 @@
 ---
 layout: chapter
 title: entSession
-sortid: 10
-permalink: 1066-entSession
+sortid: 12
+permalink: 1087-entSession
 ---
 ## Syntax
 
 ```javascript
 app.entSession;
 ```
+
+### Access
+
+*readonly*
+
+### Parameters
+
+**Return value** *Session*
+
+The Enterprise Session object.
 
 ## Description
 

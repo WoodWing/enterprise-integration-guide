@@ -1,7 +1,7 @@
 ---
 layout: chapter
 title: browseQuery
-sortid: 9
+sortid: 1
 permalink: 1076-browseQuery
 ---
 ## Syntax
@@ -28,9 +28,9 @@ The name of the Section to browse for.
 
 The name of the State to browse for.
 
-**Return value**
+**Return value** *string*
 
-A string reprerepresenting the Browse query result.
+A string representing the Browse query result.
 The result is comma separated.
 
 ## Description
