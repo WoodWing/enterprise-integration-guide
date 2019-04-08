@@ -28,9 +28,9 @@ The `remove()` method removes the Dossier object. The corresponding Dossier is r
 
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

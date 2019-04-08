@@ -32,9 +32,9 @@ The `retrieve()` method retrieves a Dossier from the Enterprise system and adds 
 
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

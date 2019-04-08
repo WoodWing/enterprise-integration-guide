@@ -32,9 +32,9 @@ The `sendObjectToNext()` method sends an object to its next status. Throws an ex
 
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

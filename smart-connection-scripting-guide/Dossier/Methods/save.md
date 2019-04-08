@@ -28,9 +28,9 @@ The `save()` method saves the Dossier object. The corresponding Dossier is saved
 
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

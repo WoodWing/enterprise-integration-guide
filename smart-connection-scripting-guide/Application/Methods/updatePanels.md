@@ -28,9 +28,9 @@ The `updatePanels()` method refreshes the contents of all Enterprise query panel
 
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

@@ -31,9 +31,9 @@ The `managedAdverts` property is used to get all managed adverts belonging to th
 ```javascript
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

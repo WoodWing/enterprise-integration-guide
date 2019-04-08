@@ -41,9 +41,9 @@ var activeSession = (sessionObject.activeUrl !== "");
 // When not logged in, activeSession is 'false'.
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

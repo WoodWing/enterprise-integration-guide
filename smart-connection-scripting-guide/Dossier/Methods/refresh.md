@@ -28,9 +28,9 @@ The `refresh()` method refreshes the Dossier object with new information from th
 
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

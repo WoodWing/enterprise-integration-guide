@@ -38,9 +38,9 @@ var sessionObject = app.entSession;
 var logonTicket = sessionObject.activeTicket;
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

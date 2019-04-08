@@ -32,9 +32,9 @@ The `storedUserQuery()` method generates the result for the strored user query e
 
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

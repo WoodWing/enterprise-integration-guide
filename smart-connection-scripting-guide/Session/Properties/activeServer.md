@@ -42,9 +42,9 @@ var serverName = sessionObject.activeServer;
 // serverUrl is now 'Enterprise v10.5.0'.
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

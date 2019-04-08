@@ -32,9 +32,9 @@ The `removeItem()` method removes an item from the Dossier. Removes the item fro
 
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

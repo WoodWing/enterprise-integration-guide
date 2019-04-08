@@ -28,9 +28,9 @@ The `count()` method returns the number of ManagedImage objects within the Manag
 
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

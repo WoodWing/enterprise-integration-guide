@@ -28,9 +28,9 @@ The `unplacedComponents()` method returns a list of GUIDs of the components that
 
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

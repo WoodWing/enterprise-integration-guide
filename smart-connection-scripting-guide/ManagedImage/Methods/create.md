@@ -32,9 +32,9 @@ The `create()` method creates an image from the given page item in the Enterpris
 
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

@@ -42,9 +42,9 @@ var serverUrl = sessionObject.activeUrl;
 // serverUrl is now 'https://server.company.net/enterprise/index.php'.
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

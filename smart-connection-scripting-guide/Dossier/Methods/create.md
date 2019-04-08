@@ -28,9 +28,9 @@ The `create()` method creates a new Dossier object. The Dossier is created in En
 
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

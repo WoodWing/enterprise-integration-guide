@@ -31,9 +31,9 @@ The `entMetaData` property is used to get the Enterprise metadata associated wit
 ```javascript
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

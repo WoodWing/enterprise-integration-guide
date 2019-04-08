@@ -28,9 +28,9 @@ The `checkIn()` method checks-in the placed Article in the Enterprise system.
 
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |
