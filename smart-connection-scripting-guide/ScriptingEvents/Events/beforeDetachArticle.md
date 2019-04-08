@@ -24,5 +24,16 @@ n/a
 ## Notes 
 A template with all placed components of the article will be generated in the file path: templateGeoFilePath, and will be deleted after the event.
 
+## Supported versions
+
+| Adobe Version | Supported |
+|---------------|-----------|
+| CC            | ✔         |
+| CC 2014       | ✔         |
+| CC 2015       | ✔         |
+| CC 2017       | ✔         |
+| CC 2018       | ✔         |
+| CC 2019       | ✔         |
+
 ## See also
 * [Scripting Events](../../ScriptingEvents/index.md)
