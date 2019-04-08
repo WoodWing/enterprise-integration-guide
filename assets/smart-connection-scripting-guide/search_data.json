@@ -1,709 +1,730 @@
 {
-    "0": {
+    "31": {
         "title": "Smart Connection Scripting Guide",
         "author": "",
         "category": "",
         "content": "--- layout: guide title: Smart Connection Scripting Guide description: Scripting Guide for Smart Connection permalink: 1068-index --- ## Introduction Many aspects of the Smart Connection client application are scriptable using JavaScript. This guide contains examples sharing how to script the Smart Connection specific part of the scripting object model. It should be used as a companion to InDesign\u2019s Scripting Guide and the scripting model presented by the Adobe ExtendScript Toolkit. This guide can be used for the following version of Smart Connection: * Smart Connection for Adobe CC * Smart Connection for Adobe CC 2014 * Smart Connection for Adobe CC 2015 * Smart Connection for Adobe CC 2017 * Smart Connection for Adobe CC 2018 * Smart Connection for Adobe CC 2019 ## Required knowledge We assume the reader of this guide is familiar with: * The functionality of the Enterprise system. * The functionality of Smart Connection within InDesign and InCopy. * JavaScript language. For more information, see: [https:\/\/javascript.info](https:\/\/javascript.info). ## Support To discuss any Smart Connection scripting related issues, visit WoodWing's [Community web site](https:\/\/helpcenter.woodwing.com\/hc\/en-us\/community\/topics) (log-in required). If you require further support for Enterprise, visit WoodWing's [Help Center web site](https:\/\/helpcenter.woodwing.com\/hc\/en-us) and follow the directions for submitting questions. ",
         "url": "1068-index"
     },
-    "1": {
-        "title": "Application",
-        "author": "",
-        "category": "",
-        "content": "--- layout: section title: Application permalink: 1065-index --- The object representing the InDesign or InCopy application. ### Properties * [entSession](Properties\/entSession.md) ### Methods * [browseQuery](Methods\/browseQuery.md) * [getDossiersForItem](Methods\/getDossiersForItem.md) * [jsonRequest](Methods\/jsonRequest.md) * [namedQuery](Methods\/namedQuery.md) * [offlineQuery](Methods\/offlineQuery.md) * [openObject](Methods\/openObject.md) * [queryObjects](Methods\/queryObjects.md) * [sendObjectToNext](Methods\/sendObjectToNext.md) * [storedUserQuery](Methods\/storedUserQuery.md) * [updatePanels](Methods\/updatePanels.md)",
-        "url": "1065-index"
-    },
-    "2": {
-        "title": "Application methods",
-        "author": "",
-        "category": "",
-        "content": "--- layout: section title: Application methods permalink: 1077-index --- Methods on the Application object. * [browseQuery](.\/browseQuery.md) * [getDossiersForItem](.\/getDossiersForItem.md) * [jsonRequest](.\/jsonRequest.md) * [namedQuery](.\/namedQuery.md) * [offlineQuery](.\/offlineQuery.md) * [openObject](.\/openObject.md) * [queryObjects](.\/queryObjects.md) * [sendObjectToNext](.\/sendObjectToNext.md) * [storedUserQuery](.\/storedUserQuery.md) * [updatePanels](.\/updatePanels.md) ",
-        "url": "1077-index"
-    },
-    "3": {
-        "title": "browseQuery",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: browseQuery sortid: 1 permalink: 1076-browseQuery --- ## Syntax ```javascript app.browseQuery(brand, issue, section, state); ``` ### Parameters **brand** *string* The name of the Brand to browse for. **issue** *string* The name of the Issue to browse for. **section** *string* The name of the Section to browse for. **state** *string* The name of the State to browse for. **Return value** *string* A string representing the Browse query result. The result is comma separated. ## Description The `browseQuery()` method generates the result of the Browse query returned by the Enterprise server. ## Examples **Get the results for a specific query** ```javascript \/\/ Get browse query results from the server. var queryResult = app.browseQuery(\"WW News\", \"1st Issue\", \"News\", \"Ready\"); \/\/ queryResult is now: \/\/ \/\/ \"Columns: <int, ID><string, Name><string, Type><string, In Use By> \/\/ <int, Rating><multilist, Issues><list, Status><string, Status ID> \/\/ <int, Flag><list, Category><string, Category><double, Width> \/\/ <double, Height><string, Created By><string, Aspect ratio> \/\/ <string, Urgency><datetime, Created On><multiline, Description> \/\/ <string, Copyright (c)><int, Size><datetime, Modified On> \/\/ <string, Modified By><string, Author><list, Route To> \/\/ <string, Placed On><list, Brand><string, Brand ID> \/\/ <string, Planned Page Range><string, Page Range><string, FlagMsg> \/\/ <icon, Deadline><datetime, Deadline><string, Placed On Page> \/\/ <multiline, Comment><string, Color Space><int, Columns> \/\/ <string, Issue ID><string, Format><bool, LockForOffline> \/\/ <multilist, Issue IDs><multilist, Edition IDs><bool, HasChildren> \/\/ \/\/ Rows: \/\/ <6315, test-layout, Article, , , 1st Issue, Ready, 2, , \/\/ News, 1, 523.275591, 769.889764, Joe, , , 06\/12\/2018 09:07, , , \/\/ 56 KB, 06\/12\/2018 09:10, Joe, , , L-testupdate1, WW News, 1, , , , \/\/ 0;cdcdcd, , 1, , , 1, , application\/incopyicml, false, 1, 1, 2, false> \/\/ \/\/ <1921, AWinttroart1, Article, , , 1st Issue, Ready, 2, , \/\/ News, 1, 164, 175, Joe, , , 03\/01\/2018 14:54, , , 56 KB, \/\/ 03\/01\/2018 15:05, Joe, , Joe, LWinttroart1, WW News, 1, , , , \/\/ 0;cdcdcd, , 1, , , 3, , application\/incopyicml, false, 1, 1, 2, false> \/\/ \/\/ <1922, Art2, Article, , , 1st Issue, Ready, 2, , News, 1, \/\/ 523.275591, 769.889764, Joe, , , 03\/01\/2018 14:59, , , 50 KB, \/\/ 03\/01\/2018 15:01, Joe, , , LWinttroart1, WW News, 1, , , , 0;cdcdcd, \/\/ , 1, , , 1, , application\/incopyicml, false, 1, 1, 2, false> \/\/ \/\/ \/\/ First Entry: 1 \/\/ \/\/ Listed Entries: 3 \/\/ \/\/ Total Entries: 3\" ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1076-browseQuery"
-    },
-    "4": {
-        "title": "getDossiersForItem",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: getDossiersForItem sortid: 2 permalink: 1078-getDossiersForItem --- ## Syntax ```javascript app.getDossiersForItem(objectId); ``` ### Parameters **objectId** *string* The object ID on the Enterprise Server of the object to get its Dossiers for. **Return value** *string[]* An array of string representing the Browse query result. The result is comma separated. ## Description The `getDossierForItem()` method performs a query on the Enterprise Server to retrieve all Dossier IDs of which the object is part of. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1078-getDossiersForItem"
-    },
-    "5": {
-        "title": "jsonRequest",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: jsonRequest sortid: 3 permalink: 1079-jsonRequest --- ## Syntax ```javascript app.jsonRequest(jsonUrl, jsonRequest); ``` ### Parameters **jsonUrl** *string* The path to the Enterprise server URL which can receive and respond to requests done in JSON object string format. **jsonRequest** *string* The request to post to the above URL in JSON object string format. **Return value** *string* A string containing the complete and total server response. ## Description The `jsonRequest()` method posts a JSON object string as a request to an Enterprise Server URL in order to receive a response in JSON object string format. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1079-jsonRequest"
-    },
-    "6": {
-        "title": "namedQuery",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: namedQuery sortid: 4 permalink: 1080-namedQuery --- ## Syntax ```javascript app.namedQuery(queryName [, filename] [, fileType]); ``` ### Parameters **queryName** *string* The name of the query **fileName** *string (Optional)* The name of the object or file. **fileType** *string (Optional)* The type of th object or file. **Return value** *string* A string representing the Browse query result. The result is comma separated. ## Description The `namedQuery()` method performs a named query. It can be used for the Inbox, Templates and NameSearch queries. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1080-namedQuery"
-    },
-    "7": {
-        "title": "offlineQuery",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: offlineQuery sortid: 5 permalink: 1081-offlineQuery --- ## Syntax ```javascript app.offlineQuery(); ``` ### Parameters **Return value** *string* A string representing the result for the offline query event. ## Description The `namedQuery()` method performs an offline query. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1081-offlineQuery"
-    },
-    "8": {
-        "title": "openObject",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: openObject sortid: 6 permalink: 1082-openObject --- ## Syntax ```javascript app.openObject(objectId [, checkout] [, withWindow] [, type] [, doessierId]); ``` ### Parameters **objectId** *string* The object ID on the Enterprise Server of the object to open. **checkout** *boolean (Optional)* Pass `false` to open te document as read-only. For template files, pass `false` top open an instance instead of the original object. Default value is `true`. **withWindow** *boolean (Optional)* Pass `false` top open the document without opening a window. Default is `true`. **type** *string (Optional)* The object type. Default is an empty string. **dossierId** *string (Optional)* The ID of the default parent Dossier. Default is an empty string. The passed Dossier ID will be used as the default selected Dossier in the Save As dialog ow when creating an Article or Image from the Layout (if the document is a layout). **Return value** *Document* The Document object which is opened. Undefined when a Document could not be openend. ## Description The `openObject()` method opens a Document from the Enterprise Server. Throws an exception in case of an error. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1082-openObject"
-    },
-    "9": {
-        "title": "queryObjects",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: queryObjects sortid: 8 permalink: 1083-queryObjects --- ## Syntax ```javascript app.queryObjects(criteria); ``` ### Parameters **criteria** *string[]* The query criteria in the form of `<key, value>` pairs ```javascript criteria[0] = 'Brand, WW News'; criteria[1] = 'Issue, 2nd Issue'; ... ``` **Return value** *string* A string representing the query result. ## Description The `queryObjects()` method performs a user query based in the passed criteria. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1083-queryObjects"
-    },
-    "10": {
-        "title": "sendObjectToNext",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: sendObjectToNext sortid: 9 permalink: 1084-sendObjectToNext --- ## Syntax ```javascript app.sendObjectToNext(objectId); ``` ### Parameters **objectId** *string* The object ID on the Enterprise Server. **Return value** The `sendObjectToNext()` method does not return anything. ## Description The `sendObjectToNext()` method sends an object to its next status. Throws an exception in case of an error. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1084-sendObjectToNext"
-    },
-    "11": {
-        "title": "storedUserQuery",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: storedUserQuery sortid: 10 permalink: 1085-storedUserQuery --- ## Syntax ```javascript app.storedUserQuery(queryName); ``` ### Parameters **queryName** *string* The stored name of the query **Return value** *string* A string representing the stored user query result. ## Description The `storedUserQuery()` method generates the result for the strored user query event. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1085-storedUserQuery"
-    },
-    "12": {
-        "title": "updatePanels",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: updatePanels sortid: 11 permalink: 1086-updatePanels --- ## Syntax ```javascript app.updatePanels(); ``` ### Parameters **Return value** The `updatePanels()` method does not return anything. ## Description The `updatePanels()` method refreshes the contents of all Enterprise query panels. Throws an exception in case of an error. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1086-updatePanels"
-    },
-    "13": {
-        "title": "Application properties",
-        "author": "",
-        "category": "",
-        "content": "--- layout: section title: Application properties permalink: 1073-index --- Properties on the Application object. * [entSession](.\/entSession.md)",
-        "url": "1073-index"
-    },
-    "14": {
-        "title": "entSession",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: entSession sortid: 12 permalink: 1087-entSession --- ## Syntax ```javascript app.entSession; ``` ### Access *readonly* ### Parameters **Return value** *Session* The Enterprise Session object. ## Description The `entSession` property gives access to the Enterprise session by returning a Session object. For more info about the Session object please see the [Session](..\/..\/Session\/index.md) documentation. ## Examples **Check if there is an active session** When `activeUrl` is empty, there is no active session. ```javascript \/\/ Check if the session is active. var sessionObject = app.entSession; var activeSession = (sessionObject.activeUrl !== \"\"); \/\/ When logged in, activeSession is now 'true'. \/\/ When not logged in, activeSession is 'false'. ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 | ## See also * [Session](..\/..\/Session\/index.md)",
-        "url": "1087-entSession"
-    },
-    "15": {
-        "title": "Document",
-        "author": "",
-        "category": "",
-        "content": "--- layout: section title: Document permalink: 1088-index --- The Document in InDesign, InDesign Server (layout) or InCopy (article). ### Properties * [activeEdition](Properties\/activeEdition.md) * [defaultEdition](Properties\/defaultEdition.md) * [managedArticles](Properties\/managedArticles.md) * [managedImages](Properties\/managedImages.md) * [managedAdverts](Properties\/managedAdverts.md) * [managedLayoutModules](Properties\/managedLayoutModules.md) * [entMetaData](Properties\/entMetaData.md) * [entWorkflow](Properties\/entWorkflow.md)",
-        "url": "1088-index"
-    },
-    "16": {
-        "title": "Document properties",
-        "author": "",
-        "category": "",
-        "content": "--- layout: section title: Document properties permalink: 1093-index --- Properties on the Document object. * [activeEdition](.\/activeEdition.md) * [defaultEdition](.\/defaultEdition.md) * [entMetaData](.\/entMetaData.md) * [entWorkflow](.\/entWorkflow.md) * [managedAdverts](.\/managedAdverts.md) * [managedArticles](.\/managedArticles.md) * [managedImages](.\/managedImages.md) * [managedLayoutModules](.\/managedLayoutModules.md)",
-        "url": "1093-index"
-    },
-    "17": {
-        "title": "activeEdition",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: activeEdition sortid: 13 permalink: 1089-activeEdition --- ## Syntax ```javascript Document.activeEdition; ``` ### Access *read\/write* ### Parameters **Return value** *string* The active Edition. ## Description The `activeEdition` property is used to get the active Edition of the current Document. The metadata of the Document contains all possible Editions that can be set. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1089-activeEdition"
-    },
-    "18": {
-        "title": "defaultEditions",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: defaultEditions sortid: 14 permalink: 1090-defaultEditions --- ## Syntax ```javascript Document.defaultEditions; ``` ### Access *read\/write* ### Parameters **Return value** *string[]* A list of Edition names. ## Description The `defaultEditions` property is used to get the list of Edition names that new page items will be assigned to on creation. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1090-defaultEditions"
-    },
-    "19": {
-        "title": "entMetaData",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: entMetaData sortid: 15 permalink: 1091-entMetaData --- ## Syntax ```javascript Document.entMetaData; ``` ### Access *readonly* ### Parameters **Return value** *EntMetaData* An EntMetaData object. ## Description The `entMetaData` property is used to get the Enterprise metadata associated with the Document. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1091-entMetaData"
-    },
-    "20": {
-        "title": "entWorkflow",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: entWorkflow sortid: 16 permalink: 1092-entWorkflow --- ## Syntax ```javascript Document.entWorkflow; ``` ### Access *readonly* ### Parameters **Return value** *EntWorkflow* An EntWorkflow object. ## Description The `entWorkflow` property is used to get access to the Enterprise worlkflow actions for the Document. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1092-entWorkflow"
-    },
-    "21": {
-        "title": "managedAdverts",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: managedAdverts sortid: 17 permalink: 1094-managedAdverts --- ## Syntax ```javascript Document.managedAdverts; ``` ### Access *readonly* ### Parameters **Return value** *ManagedAdverts* A ManagedAdverts object. ## Description The `managedAdverts` property is used to get all managed adverts belonging to the Document. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1094-managedAdverts"
-    },
-    "22": {
-        "title": "managedArticles",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: managedArticles sortid: 18 permalink: 1095-managedArticles --- ## Syntax ```javascript Document.managedArticles; ``` ### Access *readonly* ### Parameters **Return value** *ManagedArticles* A ManagedArticles object. ## Description The `managedArticles` property is used to get all managed articles belonging to the Document. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1095-managedArticles"
-    },
-    "23": {
-        "title": "managedImages",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: managedImages sortid: 19 permalink: 1096-managedImages --- ## Syntax ```javascript Document.managedImages; ``` ### Access *readonly* ### Parameters **Return value** *ManagedImages* A ManagedImages object. ## Description The `managedImages` property is used to get all managed images belonging to the Document. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1096-managedImages"
-    },
-    "24": {
-        "title": "managedLayoutModules",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: managedLayoutModules sortid: 20 permalink: 1097-managedLayoutModules --- ## Syntax ```javascript Document.managedLayoutModules; ``` ### Access *readonly* ### Parameters **Return value** *ManagedLayoutModules* A ManagedLayoutModules object. ## Description The `managedLayoutModules` property is used to get all managed Layout Modules belonging to the Document. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1097-managedLayoutModules"
-    },
-    "25": {
-        "title": "Dossier",
-        "author": "",
-        "category": "",
-        "content": "--- layout: section title: Dossier permalink: 1098-index --- ### Properties * [entMetaData](Properties\/entMetaData.md) * [items](Properties\/items.md) ### Methods * [addItem](Methods\/addItem.md) * [create](Methods\/create.md) * [refresh](Methods\/refresh.md) * [remove](Methods\/remove.md) * [removeItem](Methods\/removeItem.md) * [save](Methods\/save.md)",
-        "url": "1098-index"
-    },
-    "26": {
-        "title": "Dossier methods",
-        "author": "",
-        "category": "",
-        "content": "--- layout: section title: Dossier methods permalink: 1101-index --- Methods on the Dossier object. * [addItem](.\/addItem.md) * [create](.\/create.md) * [refresh](.\/refresh.md) * [remove](.\/remove.md) * [removeItem](.\/removeItem.md) * [save](.\/save.md) ",
-        "url": "1101-index"
-    },
-    "27": {
-        "title": "removeItem",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: removeItem sortid: 21 permalink: 1099-addItem --- ## Syntax ```javascript Dossier.removeItem(objectId); ``` ### Parameters **objectId** *string* The object ID on the Enterprise Server of the object to remove from the Dossier. **Return value** The `removeItem()` method does not return anything. ## Description The `removeItem()` method removes an item from the Dossier. Removes the item from the corresponding Dossier in Enterprise as well. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1099-addItem"
-    },
-    "28": {
-        "title": "create",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: create sortid: 22 permalink: 1100-create --- ## Syntax ```javascript Dossier.create(); ``` ### Parameters **Return value** The `create()` method does not return anything. ## Description The `create()` method creates a new Dossier object. The Dossier is created in Enterprise as well. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1100-create"
-    },
-    "29": {
-        "title": "refresh",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: refresh sortid: 23 permalink: 1102-refresh --- ## Syntax ```javascript Dossier.refresh(); ``` ### Parameters **Return value** The `refresh()` method does not return anything. ## Description The `refresh()` method refreshes the Dossier object with new information from the Enterprise Server. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1102-refresh"
-    },
-    "30": {
-        "title": "remove",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: remove sortid: 24 permalink: 1103-remove --- ## Syntax ```javascript Dossier.remove(); ``` ### Parameters **Return value** The `remove()` method does not return anything. ## Description The `remove()` method removes the Dossier object. The corresponding Dossier is removed from Enterprise as well. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1103-remove"
-    },
-    "31": {
-        "title": "addItem",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: addItem sortid: 25 permalink: 1104-removeItem --- ## Syntax ```javascript Dossier.addItem(objectId); ``` ### Parameters **objectId** *string* The object ID on the Enterprise Server of the object to add to the Dossier. **Return value** The `addItem()` method does not return anything. ## Description The `addItem()` method adds an item to the Dossier. Adds the item to the corresponding Dossier in Enterprise as well. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1104-removeItem"
-    },
     "32": {
-        "title": "save",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: save sortid: 26 permalink: 1105-save --- ## Syntax ```javascript Dossier.save(); ``` ### Parameters **Return value** The `save()` method does not return anything. ## Description The `save()` method saves the Dossier object. The corresponding Dossier is saved in Enterprise as well. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1105-save"
-    },
-    "33": {
-        "title": "Dossier properties",
-        "author": "",
-        "category": "",
-        "content": "--- layout: section title: Dossier properties permalink: 1107-index --- Properties on the Dossier object. * [entMetaData](.\/entMetaData.md) * [items](.\/items.md)",
-        "url": "1107-index"
-    },
-    "34": {
-        "title": "entMetaData",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: entMetaData sortid: 27 permalink: 1106-entMetaData --- ## Syntax ```javascript Dossier.entMetaData; ``` ### Access *readonly* ### Parameters **Return value** *EntMetaData* An EntMetaData object. ## Description The `entMetaData` property is used to get the Enterprise metadata associated with the Dossier. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1106-entMetaData"
-    },
-    "35": {
-        "title": "items",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: items sortid: 28 permalink: 1108-items --- ## Syntax ```javascript Dossier.items; ``` ### Access *readonly* ### Parameters **Return value** *string[]* A string of Enterprise object IDs. ## Description The `items` property is used to get a list of IDs of Enterprise objects which are residing in the current Dossier. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1108-items"
-    },
-    "36": {
-        "title": "Dossiers",
-        "author": "",
-        "category": "",
-        "content": "--- layout: section title: Dossiers permalink: 1109-index --- ### Methods * [add](Methods\/add.md) * [count](Methods\/count.md) * [retrieve](Methods\/retrieve.md)",
-        "url": "1109-index"
-    },
-    "37": {
-        "title": "Dossiers methods",
-        "author": "",
-        "category": "",
-        "content": "--- layout: section title: Dossiers methods permalink: 1112-index --- Methods on the Dossiers object. * [add](.\/add.md) * [count](.\/count.md) * [retrieve](.\/retrieve.md) ",
-        "url": "1112-index"
-    },
-    "38": {
-        "title": "add",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: add sortid: 29 permalink: 1110-add --- ## Syntax ```javascript Dossiers.add(); ``` ### Parameters **Return value** *Dossier* The created, or newly added, Dossier object. ## Description The `add()` method creates a new Dossier scripting object that can serve as the basis for creating a new Dossier in Enterprise. Does not actually create the Dossier in Enterprise. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1110-add"
-    },
-    "39": {
-        "title": "count",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: count sortid: 30 permalink: 1111-count --- ## Syntax ```javascript Dossiers.count(); ``` ### Parameters **Return value** *number* The number of Dossier objects in the collection. ## Description The `count()` method returns the number of Dossier objects within the Dossiers collection object. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1111-count"
-    },
-    "40": {
-        "title": "retrieve",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: retrieve sortid: 31 permalink: 1113-retrieve --- ## Syntax ```javascript Dossiers.retrieve(objectId); ``` ### Parameters **objectId** *string* The object ID of the Dossier to retrieve from the Enterprise system. **Return value** *Dossier* The requested Dossier object. ## Description The `retrieve()` method retrieves a Dossier from the Enterprise system and adds it to the Dossiers collection object. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1113-retrieve"
-    },
-    "41": {
-        "title": "EntIssue",
-        "author": "",
-        "category": "",
-        "content": "--- layout: section title: EntIssue permalink: 1114-index --- ### Properties * [id](Properties\/id.md) * [name](Properties\/name.md)",
-        "url": "1114-index"
-    },
-    "42": {
-        "title": "EntIssue properties",
-        "author": "",
-        "category": "",
-        "content": "--- layout: section title: EntIssue properties permalink: 1116-index --- Properties on the EntIssue object. * [id](.\/id.md) * [name](.\/name.md)",
-        "url": "1116-index"
-    },
-    "43": {
-        "title": "id",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: id sortid: 32 permalink: 1115-id --- ## Syntax ```javascript EntIssue.id; ``` ### Access *readonly* ### Parameters **Return value** *string* The ID of the Issue. ## Description The `id` property is used to get the object ID of the Issue. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1115-id"
-    },
-    "44": {
-        "title": "name",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: name sortid: 33 permalink: 1117-name --- ## Syntax ```javascript EntIssue.name; ``` ### Access *readonly* ### Parameters **Return value** *string* The name of the Issue. ## Description The `name` property is used to get the name of the Issue. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1117-name"
-    },
-    "45": {
-        "title": "EntPublication",
-        "author": "",
-        "category": "",
-        "content": "--- layout: section title: EntPublication permalink: 1118-index --- ### Properties * [id](Properties\/id.md) * [name](Properties\/name.md)",
-        "url": "1118-index"
-    },
-    "46": {
-        "title": "EntPublication properties",
-        "author": "",
-        "category": "",
-        "content": "--- layout: section title: EntPublication properties permalink: 1120-index --- Properties on the EntPublication object. * [id](.\/id.md) * [name](.\/name.md)",
-        "url": "1120-index"
-    },
-    "47": {
-        "title": "id",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: id sortid: 34 permalink: 1119-id --- ## Syntax ```javascript EntPublication.id; ``` ### Access *readonly* ### Parameters **Return value** *string* The ID of the Brand. ## Description The `id` property is used to get the ID of the Brand. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1119-id"
-    },
-    "48": {
-        "title": "name",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: name sortid: 35 permalink: 1121-name --- ## Syntax ```javascript EntPublication.name; ``` ### Access *readonly* ### Parameters **Return value** *string* The name of the Issue. ## Description The `name` property is used to get the name of the Brand. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1121-name"
-    },
-    "49": {
-        "title": "EntSection",
-        "author": "",
-        "category": "",
-        "content": "--- layout: section title: EntSection permalink: 1122-index --- ### Properties * [id](Properties\/id.md) * [name](Properties\/name.md)",
-        "url": "1122-index"
-    },
-    "50": {
-        "title": "EntSection properties",
-        "author": "",
-        "category": "",
-        "content": "--- layout: section title: EntSection properties permalink: 1124-index --- Properties on the EntSection object. * [id](.\/id.md) * [name](.\/name.md)",
-        "url": "1124-index"
-    },
-    "51": {
-        "title": "id",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: id sortid: 36 permalink: 1123-id --- ## Syntax ```javascript EntSection.id; ``` ### Access *readonly* ### Parameters **Return value** *string* The ID of the Category. ## Description The `id` property is used to get the ID of the Category. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1123-id"
-    },
-    "52": {
-        "title": "name",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: name sortid: 37 permalink: 1125-name --- ## Syntax ```javascript EntSection.name; ``` ### Access *readonly* ### Parameters **Return value** *string* The name of the Category. ## Description The `name` property is used to get the name of the Category. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1125-name"
-    },
-    "53": {
-        "title": "ManagedAdvert",
-        "author": "",
-        "category": "",
-        "content": "--- layout: section title: ManagedAdvert permalink: 1126-index --- ### Properties * [entMetaData](Properties\/entMetaData.md) * [pageItem](Properties\/pageItem.md)",
-        "url": "1126-index"
-    },
-    "54": {
-        "title": "ManagedAdvert properties",
-        "author": "",
-        "category": "",
-        "content": "--- layout: section title: ManagedAdvert properties permalink: 1128-index --- Properties on the ManagedAdvert object. * [entMetaData](.\/entMetaData.md) * [pageItems](.\/pageItem.md)",
-        "url": "1128-index"
-    },
-    "55": {
-        "title": "entMetaData",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: entMetaData sortid: 38 permalink: 1127-entMetaData --- ## Syntax ```javascript ManagedAdvert.entMetaData; ``` ### Access *readonly* ### Parameters **Return value** *EntMetaData* An EntMetaData object. ## Description The `entMetaData` property is used to get the Enterprise metadata associated with the Advert. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1127-entMetaData"
-    },
-    "56": {
-        "title": "pageItem",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: pageItem sortid: 39 permalink: 1129-pageItem --- ## Syntax ```javascript ManagedAdvert.pageItem; ``` ### Access *readonly* ### Parameters **Return value** *PageItem* A PageItem object. ## Description The `pageItem` property is used to get access to the associated InDesign PageItem object. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1129-pageItem"
-    },
-    "57": {
-        "title": "ManagedAdverts",
-        "author": "",
-        "category": "",
-        "content": "--- layout: section title: ManagedAdverts permalink: 1130-index --- ### Methods * [count](Methods\/count.md)",
-        "url": "1130-index"
-    },
-    "58": {
-        "title": "ManagedAdverts methods",
-        "author": "",
-        "category": "",
-        "content": "--- layout: section title: ManagedAdverts methods permalink: 1132-index --- Methods on the ManagedAdverts object. * [count](.\/count.md) ",
-        "url": "1132-index"
-    },
-    "59": {
-        "title": "count",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: count sortid: 40 permalink: 1131-count --- ## Syntax ```javascript ManagedAdverts.count(); ``` ### Parameters **Return value** *number* The number of ManagedAdvert objects in the collection. ## Description The `count()` method returns the number of ManagedAdvert objects within the ManagedAdverts collection object. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1131-count"
-    },
-    "60": {
-        "title": "ManagedArticle",
-        "author": "",
-        "category": "",
-        "content": "--- layout: section title: ManagedArticle permalink: 1133-index --- ### Properties * [entMetaData](Properties\/entMetaData.md) * [components](Properties\/components.md) ### Methods * [abortCheckOut](Methods\/abortCeckOut.md) * [checkIn](Methods\/checkIn.md) * [checkOut](Methods\/checkOut.md) * [create](Methods\/create.md) * [detach](Methods\/detach.md) * [detachComponent](Methods\/detachComponent.md) * [detachFrame](Methods\/detachFrame.md) * [refresh](Methods\/refresh.md) * [unplacedComponents](Methods\/unplacedComponents.md)",
-        "url": "1133-index"
-    },
-    "61": {
-        "title": "ManagedArticle methods",
-        "author": "",
-        "category": "",
-        "content": "--- layout: section title: ManagedArticle methods permalink: 1141-index --- Methods on the ManagedArticle object. * [abortCheckOut](.\/abortCeckOut.md) * [checkIn](.\/checkIn.md) * [checkOut](.\/checkOut.md) * [create](.\/create.md) * [detach](.\/detach.md) * [detachComponent](.\/detachComponent.md) * [detachFrame](.\/detachFrame.md) * [refresh](.\/refresh.md) * [unplacedComponents](.\/unplacedComponents.md)",
-        "url": "1141-index"
-    },
-    "62": {
-        "title": "abortCheckOut",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: abortCheckOut sortid: 41 permalink: 1134-abortCheckOut --- ## Syntax ```javascript ManagedArticle.abortCheckOut(); ``` ### Parameters **Return value** The `abortCheckOut()` method does not return anything. ## Description The `abortCheckOut()` method cancels the check-out of the placed Article. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1134-abortCheckOut"
-    },
-    "63": {
-        "title": "checkIn",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: checkIn sortid: 42 permalink: 1135-checkIn --- ## Syntax ```javascript ManagedArticle.checkIn(); ``` ### Parameters **Return value** The `checkIn()` method does not return anything. ## Description The `checkIn()` method checks-in the placed Article in the Enterprise system. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1135-checkIn"
-    },
-    "64": {
-        "title": "checkOut",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: checkOut sortid: 43 permalink: 1136-checkOut --- ## Syntax ```javascript ManagedArticle.checkOut(); ``` ### Parameters **Return value** The `checkOut()` method does not return anything. ## Description The `checkOut()` method checks-out the placed Article. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1136-checkOut"
-    },
-    "65": {
-        "title": "create",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: create sortid: 44 permalink: 1137-create --- ## Syntax ```javascript ManagedArticle.create(pageItems [, stationary]); ``` ### Parameters **pageItems** *PageItem[]* The Page items that will form the Article. **stationary** *boolean (Optional)* If set to `true`, an Article Template will be created instead of an Article. Default is `false`. **Return value** The `create()` method does not return anything. ## Description The `create()` method creates a placed Article from the given page items. Depending on the system configuration, the given page item can contain images which become part of the Article. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1137-create"
-    },
-    "66": {
-        "title": "detach",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: detach sortid: 45 permalink: 1138-detach --- ## Syntax ```javascript ManagedArticle.detach(); ``` ### Parameters **Return value** The `detach()` method does not return anything. ## Description The `detach()` method detaches the Article from the Layout. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1138-detach"
-    },
-    "67": {
-        "title": "detachComponent",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: detachComponent sortid: 46 permalink: 1139-detachComponent --- ## Syntax ```javascript ManagedArticle.detachComponent(pageItem); ``` ### Parameters **pageItem** *PageItem, Story* Page item, or Story, that needs to be removed from the multi-component Article. **Return value** The `detachComponent()` method does not return anything. ## Description The `detachComponent()` method removes a component from a multi-component Article. The last component of the Article cannot be deatched using this method. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1139-detachComponent"
-    },
-    "68": {
-        "title": "detachFrame",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: detachFrame sortid: 47 permalink: 1140-detachFrame --- ## Syntax ```javascript ManagedArticle.detachFrame(pageItem); ``` ### Parameters **pageItem** *PageItem, Story* Page item, or Story, that will be detached if it is a multiple placed Article component. If the passed page item is not a multiple placed Article component the Error Code \"The object cannot be detached.\" will be returned. **Return value** The `detachFrame()` method does not return anything. ## Description The `detachFrame()` method detaches a frame from a multi-component Article. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1140-detachFrame"
-    },
-    "69": {
-        "title": "refresh",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: refresh sortid: 48 permalink: 1142-refresh --- ## Syntax ```javascript ManagedArticle.refresh(); ``` ### Parameters **Return value** The `refresh()` method does not return anything. ## Description The `refresh()` method updates the content of the placed Article. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1142-refresh"
-    },
-    "70": {
-        "title": "unplacedComponents",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: unplacedComponents sortid: 49 permalink: 1143-unplacedComponents --- ## Syntax ```javascript ManagedArticle.unplacedComponents(); ``` ### Parameters **Return value** *string[]* A list of GUIDs. ## Description The `unplacedComponents()` method returns a list of GUIDs of the components that are not placed on the current Layout. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1143-unplacedComponents"
-    },
-    "71": {
-        "title": "ManagedArticle properties",
-        "author": "",
-        "category": "",
-        "content": "--- layout: section title: ManagedArticle properties permalink: 1146-index --- Properties on the ManagedArticle object. * [entMetaData](.\/entMetaData.md) * [components](.\/components.md)",
-        "url": "1146-index"
-    },
-    "72": {
-        "title": "components",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: components sortid: 50 permalink: 1144-components --- ## Syntax ```javascript ManagedArticle.components; ``` ### Access *readonly* ### Parameters **Return value** *PageItem[], Story* An array of PageItem objects or a Story. ## Description The `components` property is used to get access to the InDesign page items and stories that are the components of the current Article. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1144-components"
-    },
-    "73": {
-        "title": "entMetaData",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: entMetaData sortid: 51 permalink: 1145-entMetaData --- ## Syntax ```javascript ManagedArticle.entMetaData; ``` ### Access *readonly* ### Parameters **Return value** *EntMetaData* An EntMetaData object. ## Description The `entMetaData` property is used to get the Enterprise metadata associated with the Article. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1145-entMetaData"
-    },
-    "74": {
-        "title": "ManagedArticles",
-        "author": "",
-        "category": "",
-        "content": "--- layout: section title: ManagedArticles permalink: 1147-index --- ### Methods * [add](Methods\/add.md) * [count](Methods\/count.md)",
-        "url": "1147-index"
-    },
-    "75": {
-        "title": "ManagedArticles methods",
-        "author": "",
-        "category": "",
-        "content": "--- layout: section title: ManagedArticles methods permalink: 1150-index --- Methods on the ManagedArticles object. * [add](.\/add.md) * [count](.\/count.md) ",
-        "url": "1150-index"
-    },
-    "76": {
-        "title": "add",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: add sortid: 52 permalink: 1148-add --- ## Syntax ```javascript ManagedArticles.add(); ``` ### Parameters **Return value** *ManagedArticle* The created, or newly added, MangedArticle object. ## Description The `add()` method creates a new ManagedArticle scripting object that can serve as the basis for creating a new Article in Enterprise. Does not actually create the Article in Enterprise. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1148-add"
-    },
-    "77": {
-        "title": "count",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: count sortid: 53 permalink: 1149-count --- ## Syntax ```javascript ManagedArticles.count(); ``` ### Parameters **Return value** *number* The number of ManagedArticle objects in the collection. ## Description The `count()` method returns the number of ManagedArticle objects within the ManagedArticles collection object. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1149-count"
-    },
-    "78": {
-        "title": "ManagedImage",
-        "author": "",
-        "category": "",
-        "content": "--- layout: section title: ManagedImage permalink: 1151-index --- ### Properties * [entMetaData](Properties\/entMetaData.md) * [pageItem](Properties\/pageItem.md) ### Methods * [create](Methods\/create.md)",
-        "url": "1151-index"
-    },
-    "79": {
-        "title": "ManagedImage methods",
-        "author": "",
-        "category": "",
-        "content": "--- layout: section title: ManagedImage methods permalink: 1153-index --- Methods on the ManagedImage object. * [create](.\/create.md)",
-        "url": "1153-index"
-    },
-    "80": {
-        "title": "create",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: create sortid: 54 permalink: 1152-create --- ## Syntax ```javascript ManagedImage.create(pageItem); ``` ### Parameters **pageItems** *PageItem* The Page item of which the image will be created. **Return value** The `create()` method does not return anything. ## Description The `create()` method creates an image from the given page item in the Enterprise system. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1152-create"
-    },
-    "81": {
-        "title": "ManagedImage properties",
-        "author": "",
-        "category": "",
-        "content": "--- layout: section title: ManagedImage properties permalink: 1155-index --- Properties on the ManagedImage object. * [entMetaData](.\/entMetaData.md) * [items](.\/pageItem.md)",
-        "url": "1155-index"
-    },
-    "82": {
-        "title": "entMetaData",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: entMetaData sortid: 55 permalink: 1154-entMetaData --- ## Syntax ```javascript ManagedImage.entMetaData; ``` ### Access *readonly* ### Parameters **Return value** *EntMetaData* An EntMetaData object. ## Description The `entMetaData` property is used to get the Enterprise metadata associated with the image. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1154-entMetaData"
-    },
-    "83": {
-        "title": "pageItem",
-        "author": "",
-        "category": "",
-        "content": "--- layout: chapter title: pageItem sortid: 56 permalink: 1156-pageItem --- ## Syntax ```javascript ManagedImage.pageItem; ``` ### Access *readonly* ### Parameters **Return value** *PageItem* A PageItem object. ## Description The `pageItem` property is used to get access to the associated InDesign PageItem object. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
-        "url": "1156-pageItem"
-    },
-    "84": {
         "title": "ManagedImages",
         "author": "",
         "category": "",
         "content": "--- layout: section title: ManagedImages permalink: 1157-index --- ### Methods * [add](Methods\/add.md) * [count](Methods\/count.md)",
         "url": "1157-index"
     },
-    "85": {
+    "33": {
         "title": "ManagedImages methods",
         "author": "",
         "category": "",
         "content": "--- layout: section title: ManagedImages methods permalink: 1160-index --- Methods on the ManagedImages object. * [add](.\/add.md) * [count](.\/count.md) ",
         "url": "1160-index"
     },
-    "86": {
+    "34": {
         "title": "add",
         "author": "",
         "category": "",
         "content": "--- layout: chapter title: add sortid: 57 permalink: 1158-add --- ## Syntax ```javascript ManagedImages.add(); ``` ### Parameters **Return value** *ManagedImage* The created, or newly added, MangedImage object. ## Description The `add()` method creates a new ManagedImage scripting object that can serve as the basis for creating a new image in Enterprise. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
         "url": "1158-add"
     },
-    "87": {
+    "35": {
         "title": "count",
         "author": "",
         "category": "",
         "content": "--- layout: chapter title: count sortid: 58 permalink: 1159-count --- ## Syntax ```javascript ManagedImages.count(); ``` ### Parameters **Return value** *number* The number of ManagedImage objects in the collection. ## Description The `count()` method returns the number of ManagedImage objects within the ManagedImages collection object. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
         "url": "1159-count"
     },
-    "88": {
+    "36": {
+        "title": "ManagedImage",
+        "author": "",
+        "category": "",
+        "content": "--- layout: section title: ManagedImage permalink: 1151-index --- ### Properties * [entMetaData](Properties\/entMetaData.md) * [pageItem](Properties\/pageItem.md) ### Methods * [create](Methods\/create.md)",
+        "url": "1151-index"
+    },
+    "37": {
+        "title": "ManagedImage properties",
+        "author": "",
+        "category": "",
+        "content": "--- layout: section title: ManagedImage properties permalink: 1155-index --- Properties on the ManagedImage object. * [entMetaData](.\/entMetaData.md) * [items](.\/pageItem.md)",
+        "url": "1155-index"
+    },
+    "38": {
+        "title": "entMetaData",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: entMetaData sortid: 55 permalink: 1154-entMetaData --- ## Syntax ```javascript ManagedImage.entMetaData; ``` ### Access *readonly* ### Parameters **Return value** *EntMetaData* An EntMetaData object. ## Description The `entMetaData` property is used to get the Enterprise metadata associated with the image. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1154-entMetaData"
+    },
+    "39": {
+        "title": "pageItem",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: pageItem sortid: 56 permalink: 1156-pageItem --- ## Syntax ```javascript ManagedImage.pageItem; ``` ### Access *readonly* ### Parameters **Return value** *PageItem* A PageItem object. ## Description The `pageItem` property is used to get access to the associated InDesign PageItem object. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1156-pageItem"
+    },
+    "40": {
+        "title": "ManagedImage methods",
+        "author": "",
+        "category": "",
+        "content": "--- layout: section title: ManagedImage methods permalink: 1153-index --- Methods on the ManagedImage object. * [create](.\/create.md)",
+        "url": "1153-index"
+    },
+    "41": {
+        "title": "create",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: create sortid: 54 permalink: 1152-create --- ## Syntax ```javascript ManagedImage.create(pageItem); ``` ### Parameters **pageItems** *PageItem* The Page item of which the image will be created. **Return value** The `create()` method does not return anything. ## Description The `create()` method creates an image from the given page item in the Enterprise system. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1152-create"
+    },
+    "42": {
+        "title": "ManagedArticles",
+        "author": "",
+        "category": "",
+        "content": "--- layout: section title: ManagedArticles permalink: 1147-index --- ### Methods * [add](Methods\/add.md) * [count](Methods\/count.md)",
+        "url": "1147-index"
+    },
+    "43": {
+        "title": "ManagedArticles methods",
+        "author": "",
+        "category": "",
+        "content": "--- layout: section title: ManagedArticles methods permalink: 1150-index --- Methods on the ManagedArticles object. * [add](.\/add.md) * [count](.\/count.md) ",
+        "url": "1150-index"
+    },
+    "44": {
+        "title": "add",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: add sortid: 52 permalink: 1148-add --- ## Syntax ```javascript ManagedArticles.add(); ``` ### Parameters **Return value** *ManagedArticle* The created, or newly added, MangedArticle object. ## Description The `add()` method creates a new ManagedArticle scripting object that can serve as the basis for creating a new Article in Enterprise. Does not actually create the Article in Enterprise. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1148-add"
+    },
+    "45": {
+        "title": "count",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: count sortid: 53 permalink: 1149-count --- ## Syntax ```javascript ManagedArticles.count(); ``` ### Parameters **Return value** *number* The number of ManagedArticle objects in the collection. ## Description The `count()` method returns the number of ManagedArticle objects within the ManagedArticles collection object. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1149-count"
+    },
+    "46": {
         "title": "ManagedLayoutModule",
         "author": "",
         "category": "",
         "content": "--- layout: section title: ManagedLayoutModule permalink: 1161-index --- ### Properties * [entMetaData](Properties\/entMetaData.md) * [pageItem](Properties\/pageItem.md)",
         "url": "1161-index"
     },
-    "89": {
+    "47": {
         "title": "ManagedLayoutModule properties",
         "author": "",
         "category": "",
         "content": "--- layout: section title: ManagedLayoutModule properties permalink: 1163-index --- Properties on the ManagedLayoutModule object. * [entMetaData](.\/entMetaData.md) * [pageItems](.\/pageItem.md)",
         "url": "1163-index"
     },
-    "90": {
+    "48": {
         "title": "entMetaData",
         "author": "",
         "category": "",
         "content": "--- layout: chapter title: entMetaData sortid: 59 permalink: 1162-entMetaData --- ## Syntax ```javascript ManagedLayoutModule.entMetaData; ``` ### Access *readonly* ### Parameters **Return value** *EntMetaData* An EntMetaData object. ## Description The `entMetaData` property is used to get the Enterprise metadata associated with the Layout Module. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
         "url": "1162-entMetaData"
     },
-    "91": {
+    "49": {
         "title": "pageItem",
         "author": "",
         "category": "",
         "content": "--- layout: chapter title: pageItem sortid: 60 permalink: 1164-pageItem --- ## Syntax ```javascript ManagedLayoutModule.pageItem; ``` ### Access *readonly* ### Parameters **Return value** *PageItem* A PageItem object. ## Description The `pageItem` property is used to get access to the associated InDesign PageItem object. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
         "url": "1164-pageItem"
     },
-    "92": {
+    "50": {
         "title": "ManagedLayoutModules",
         "author": "",
         "category": "",
         "content": "--- layout: section title: ManagedLayoutModules permalink: 1165-index --- ### Methods * [count](Methods\/count.md)",
         "url": "1165-index"
     },
-    "93": {
+    "51": {
         "title": "ManagedLayoutModules methods",
         "author": "",
         "category": "",
         "content": "--- layout: section title: ManagedLayoutModules methods permalink: 1167-index --- Methods on the ManagedLayoutModules object. * [count](.\/count.md) ",
         "url": "1167-index"
     },
-    "94": {
+    "52": {
         "title": "count",
         "author": "",
         "category": "",
         "content": "--- layout: chapter title: count sortid: 61 permalink: 1166-count --- ## Syntax ```javascript ManagedLayoutModules.count(); ``` ### Parameters **Return value** *number* The number of ManagedLayoutModules objects in the collection. ## Description The `count()` method returns the number of ManagedLayoutModule objects within the ManagedLayoutModules collection object. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
         "url": "1166-count"
     },
-    "95": {
+    "53": {
+        "title": "Story",
+        "author": "",
+        "category": "",
+        "content": "--- layout: section title: Story permalink: 1168-index --- The object representing an Enterprise Story. ### Properties * [managedArticle](.\/Properties\/managedArticle.md)",
+        "url": "1168-index"
+    },
+    "54": {
+        "title": "Story properties",
+        "author": "",
+        "category": "",
+        "content": "--- layout: section title: Story properties permalink: 1169-index --- Properties on the Story object. * [managedArticle](.\/managedArticle.md)",
+        "url": "1169-index"
+    },
+    "55": {
+        "title": "managedArticle",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: managedArticle sortid: 62 permalink: 1170-managedArticle --- ## Syntax ```javascript Story.managedArticle; ``` ### Access *readonly* ### Parameters **Return value** *ManagedArticle* The managed article scripting object. ## Description The `managedArticle` property is used to obtain access to the associated ManagedArticle scripting object. Returns nothing if there is no object associated. For more info about the Managed Article object please see the [ManagedArticle](..\/..\/ManagedArticle\/index.md) documentation. ## Examples ## Supported versions | Adobe Version | Supported | |---------------|-----------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 | ## See also * [ManagedArticle](..\/..\/ManagedArticle\/index.md)",
+        "url": "1170-managedArticle"
+    },
+    "56": {
         "title": "Session",
         "author": "",
         "category": "",
         "content": "--- layout: section title: Session permalink: 1069-index --- The object representing the Enterprise session. ### Properties * [activeServer](.\/Properties\/activeServer.md) * [activeTicket](.\/Properties\/activeTicket.md) * [activeUrl](.\/Properties\/activeUrl.md) * [activeUser](.\/Properties\/activeUser.md) ### Methods",
         "url": "1069-index"
     },
-    "96": {
+    "57": {
         "title": "Session properties",
         "author": "",
         "category": "",
         "content": "--- layout: section title: Session properties permalink: 1072-index --- Properties on the Session object. * [activeServer](.\/activeServer.md) * [activeTicket](.\/activeTicket.md) * [activeUrl](.\/activeUrl.md) * [activeUser](.\/activeUser.md)",
         "url": "1072-index"
     },
-    "97": {
+    "58": {
         "title": "activeServer",
         "author": "",
         "category": "",
         "content": "--- layout: chapter title: activeServer sortid: 62 permalink: 1070-activeServer --- ## Syntax ```javascript Session.activeServer; ``` ### Access *readonly* ### Parameters **Return value** *string* The display name of the active serer. ## Description The `activeServer` property is used to get the display name of the server used for the current session. It returns empty when not logged in. The name of the server will have the value of the `name` property of the `<SCEnt:ServerInfo\/>` tag in the WWSettings.xml file. For more info about the Session object please see the [entSession](..\/..\/Application\/Properties\/entSession.md) documentation. ## Examples **Get the server name used for the current session** When `activeServer` is empty, there is no active session. ```javascript \/\/ Get the server name used for the current session. var sessionObject = app.entSession; var serverName = sessionObject.activeServer; \/\/ Given in WWSettings '<SCEnt:ServerInfo name=\"Enterprise v10.5.0\" url=\"https:\/\/server.company.net\/enterprise\/index.php\"\/>' \/\/ serverUrl is now 'Enterprise v10.5.0'. ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 | ## See also * [entSession](..\/..\/Application\/Properties\/entSession.md)",
         "url": "1070-activeServer"
     },
-    "98": {
+    "59": {
         "title": "activeTicket",
         "author": "",
         "category": "",
         "content": "--- layout: chapter title: activeTicket sortid: 63 permalink: 1071-activeTicket --- ## Syntax ```javascript Session.activeTicket; ``` ### Access *readonly* ### Parameters **Return value** *string* The ticket of the current session. ## Description The `activeTicket` property is used to get the ticket of the current session. It returns empty when not logged in. For more info about the Session object please see the [entSession](..\/..\/Application\/Properties\/entSession.md) documentation. ## Examples **Get the active ticket used for the current session** When `activeTicket` is empty, there is no active session. ```javascript \/\/ Get the active ticket used for the current session. var sessionObject = app.entSession; var logonTicket = sessionObject.activeTicket; ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 | ## See also * [entSession](..\/..\/Application\/Properties\/entSession.md)",
         "url": "1071-activeTicket"
     },
-    "99": {
+    "60": {
         "title": "activeUrl",
         "author": "",
         "category": "",
         "content": "--- layout: chapter title: activeUrl sortid: 64 permalink: 1074-activeUrl --- ## Syntax ```javascript Session.activeUrl; ``` ### Access *readonly* ### Parameters **Return value** *string* The URL of the active server. ## Description The `activeUrl` property is used to get the URL of the server for the current session. It returns empty when not logged in. The URL of the server will have the value of the `url` property of the `<SCEnt:ServerInfo\/>` tag in the WWSettings.xml file. For more info about the Session object please see the [entSession](..\/..\/Application\/Properties\/entSession.md) documentation. ## Examples **Get the URL of the server for the current session** When `activeUrl` is empty, there is no active session. ```javascript \/\/ Get the URL of the server for the current session. var sessionObject = app.entSession; var serverUrl = sessionObject.activeUrl; \/\/ Given in WWSettings '<SCEnt:ServerInfo name=\"Enterprise v10.5.0\" url=\"https:\/\/server.company.net\/enterprise\/index.php\"\/>' \/\/ serverUrl is now 'https:\/\/server.company.net\/enterprise\/index.php'. ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 | ## See also * [entSession](..\/..\/Application\/Properties\/entSession.md)",
         "url": "1074-activeUrl"
     },
-    "100": {
+    "61": {
         "title": "activeUser",
         "author": "",
         "category": "",
         "content": "--- layout: chapter title: activeUser sortid: 65 permalink: 1075-activeUser --- ## Syntax ```javascript Session.activeUser; ``` ### Access *readonly* ### Parameters **Return value** *string* The (short) user name. ## Description The `activeUser` property is used to get the user's short name of the user currently logged in. It returns empty when not logged in. For more info about the Session object please see the [entSession](..\/..\/Application\/Properties\/entSession.md) documentation. ## Examples **Get the name of the user currently logged in** When `activeUser` is empty, there is no active session. ```javascript \/\/ Get the name of the user currently logged in. var sessionObject = app.entSession; var userShortName = sessionObject.activeUser; \/\/ userShortName is now 'Joe'. ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 | ## See also * [entSession](..\/..\/Application\/Properties\/entSession.md)",
         "url": "1075-activeUser"
+    },
+    "62": {
+        "title": "ManagedArticle",
+        "author": "",
+        "category": "",
+        "content": "--- layout: section title: ManagedArticle permalink: 1133-index --- ### Properties * [entMetaData](Properties\/entMetaData.md) * [components](Properties\/components.md) ### Methods * [abortCheckOut](Methods\/abortCeckOut.md) * [checkIn](Methods\/checkIn.md) * [checkOut](Methods\/checkOut.md) * [create](Methods\/create.md) * [detach](Methods\/detach.md) * [detachComponent](Methods\/detachComponent.md) * [detachFrame](Methods\/detachFrame.md) * [refresh](Methods\/refresh.md) * [unplacedComponents](Methods\/unplacedComponents.md)",
+        "url": "1133-index"
+    },
+    "63": {
+        "title": "ManagedArticle properties",
+        "author": "",
+        "category": "",
+        "content": "--- layout: section title: ManagedArticle properties permalink: 1146-index --- Properties on the ManagedArticle object. * [entMetaData](.\/entMetaData.md) * [components](.\/components.md)",
+        "url": "1146-index"
+    },
+    "64": {
+        "title": "components",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: components sortid: 50 permalink: 1144-components --- ## Syntax ```javascript ManagedArticle.components; ``` ### Access *readonly* ### Parameters **Return value** *PageItem[], Story* An array of PageItem objects or a Story. ## Description The `components` property is used to get access to the InDesign page items and stories that are the components of the current Article. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1144-components"
+    },
+    "65": {
+        "title": "entMetaData",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: entMetaData sortid: 51 permalink: 1145-entMetaData --- ## Syntax ```javascript ManagedArticle.entMetaData; ``` ### Access *readonly* ### Parameters **Return value** *EntMetaData* An EntMetaData object. ## Description The `entMetaData` property is used to get the Enterprise metadata associated with the Article. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1145-entMetaData"
+    },
+    "66": {
+        "title": "ManagedArticle methods",
+        "author": "",
+        "category": "",
+        "content": "--- layout: section title: ManagedArticle methods permalink: 1141-index --- Methods on the ManagedArticle object. * [abortCheckOut](.\/abortCeckOut.md) * [checkIn](.\/checkIn.md) * [checkOut](.\/checkOut.md) * [create](.\/create.md) * [detach](.\/detach.md) * [detachComponent](.\/detachComponent.md) * [detachFrame](.\/detachFrame.md) * [refresh](.\/refresh.md) * [unplacedComponents](.\/unplacedComponents.md)",
+        "url": "1141-index"
+    },
+    "67": {
+        "title": "abortCheckOut",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: abortCheckOut sortid: 41 permalink: 1134-abortCheckOut --- ## Syntax ```javascript ManagedArticle.abortCheckOut(); ``` ### Parameters **Return value** The `abortCheckOut()` method does not return anything. ## Description The `abortCheckOut()` method cancels the check-out of the placed Article. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1134-abortCheckOut"
+    },
+    "68": {
+        "title": "checkIn",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: checkIn sortid: 42 permalink: 1135-checkIn --- ## Syntax ```javascript ManagedArticle.checkIn(); ``` ### Parameters **Return value** The `checkIn()` method does not return anything. ## Description The `checkIn()` method checks-in the placed Article in the Enterprise system. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1135-checkIn"
+    },
+    "69": {
+        "title": "checkOut",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: checkOut sortid: 43 permalink: 1136-checkOut --- ## Syntax ```javascript ManagedArticle.checkOut(); ``` ### Parameters **Return value** The `checkOut()` method does not return anything. ## Description The `checkOut()` method checks-out the placed Article. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1136-checkOut"
+    },
+    "70": {
+        "title": "create",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: create sortid: 44 permalink: 1137-create --- ## Syntax ```javascript ManagedArticle.create(pageItems [, stationary]); ``` ### Parameters **pageItems** *PageItem[]* The Page items that will form the Article. **stationary** *boolean (Optional)* If set to `true`, an Article Template will be created instead of an Article. Default is `false`. **Return value** The `create()` method does not return anything. ## Description The `create()` method creates a placed Article from the given page items. Depending on the system configuration, the given page item can contain images which become part of the Article. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1137-create"
+    },
+    "71": {
+        "title": "detach",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: detach sortid: 45 permalink: 1138-detach --- ## Syntax ```javascript ManagedArticle.detach(); ``` ### Parameters **Return value** The `detach()` method does not return anything. ## Description The `detach()` method detaches the Article from the Layout. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1138-detach"
+    },
+    "72": {
+        "title": "detachComponent",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: detachComponent sortid: 46 permalink: 1139-detachComponent --- ## Syntax ```javascript ManagedArticle.detachComponent(pageItem); ``` ### Parameters **pageItem** *PageItem, Story* Page item, or Story, that needs to be removed from the multi-component Article. **Return value** The `detachComponent()` method does not return anything. ## Description The `detachComponent()` method removes a component from a multi-component Article. The last component of the Article cannot be deatched using this method. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1139-detachComponent"
+    },
+    "73": {
+        "title": "detachFrame",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: detachFrame sortid: 47 permalink: 1140-detachFrame --- ## Syntax ```javascript ManagedArticle.detachFrame(pageItem); ``` ### Parameters **pageItem** *PageItem, Story* Page item, or Story, that will be detached if it is a multiple placed Article component. If the passed page item is not a multiple placed Article component the Error Code \"The object cannot be detached.\" will be returned. **Return value** The `detachFrame()` method does not return anything. ## Description The `detachFrame()` method detaches a frame from a multi-component Article. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1140-detachFrame"
+    },
+    "74": {
+        "title": "refresh",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: refresh sortid: 48 permalink: 1142-refresh --- ## Syntax ```javascript ManagedArticle.refresh(); ``` ### Parameters **Return value** The `refresh()` method does not return anything. ## Description The `refresh()` method updates the content of the placed Article. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1142-refresh"
+    },
+    "75": {
+        "title": "unplacedComponents",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: unplacedComponents sortid: 49 permalink: 1143-unplacedComponents --- ## Syntax ```javascript ManagedArticle.unplacedComponents(); ``` ### Parameters **Return value** *string[]* A list of GUIDs. ## Description The `unplacedComponents()` method returns a list of GUIDs of the components that are not placed on the current Layout. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1143-unplacedComponents"
+    },
+    "76": {
+        "title": "ManagedAdverts",
+        "author": "",
+        "category": "",
+        "content": "--- layout: section title: ManagedAdverts permalink: 1130-index --- ### Methods * [count](Methods\/count.md)",
+        "url": "1130-index"
+    },
+    "77": {
+        "title": "ManagedAdverts methods",
+        "author": "",
+        "category": "",
+        "content": "--- layout: section title: ManagedAdverts methods permalink: 1132-index --- Methods on the ManagedAdverts object. * [count](.\/count.md) ",
+        "url": "1132-index"
+    },
+    "78": {
+        "title": "count",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: count sortid: 40 permalink: 1131-count --- ## Syntax ```javascript ManagedAdverts.count(); ``` ### Parameters **Return value** *number* The number of ManagedAdvert objects in the collection. ## Description The `count()` method returns the number of ManagedAdvert objects within the ManagedAdverts collection object. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1131-count"
+    },
+    "79": {
+        "title": "Dossiers",
+        "author": "",
+        "category": "",
+        "content": "--- layout: section title: Dossiers permalink: 1109-index --- ### Methods * [add](Methods\/add.md) * [count](Methods\/count.md) * [retrieve](Methods\/retrieve.md)",
+        "url": "1109-index"
+    },
+    "80": {
+        "title": "Dossiers methods",
+        "author": "",
+        "category": "",
+        "content": "--- layout: section title: Dossiers methods permalink: 1112-index --- Methods on the Dossiers object. * [add](.\/add.md) * [count](.\/count.md) * [retrieve](.\/retrieve.md) ",
+        "url": "1112-index"
+    },
+    "81": {
+        "title": "add",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: add sortid: 29 permalink: 1110-add --- ## Syntax ```javascript Dossiers.add(); ``` ### Parameters **Return value** *Dossier* The created, or newly added, Dossier object. ## Description The `add()` method creates a new Dossier scripting object that can serve as the basis for creating a new Dossier in Enterprise. Does not actually create the Dossier in Enterprise. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1110-add"
+    },
+    "82": {
+        "title": "count",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: count sortid: 30 permalink: 1111-count --- ## Syntax ```javascript Dossiers.count(); ``` ### Parameters **Return value** *number* The number of Dossier objects in the collection. ## Description The `count()` method returns the number of Dossier objects within the Dossiers collection object. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1111-count"
+    },
+    "83": {
+        "title": "retrieve",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: retrieve sortid: 31 permalink: 1113-retrieve --- ## Syntax ```javascript Dossiers.retrieve(objectId); ``` ### Parameters **objectId** *string* The object ID of the Dossier to retrieve from the Enterprise system. **Return value** *Dossier* The requested Dossier object. ## Description The `retrieve()` method retrieves a Dossier from the Enterprise system and adds it to the Dossiers collection object. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1113-retrieve"
+    },
+    "84": {
+        "title": "Dossier",
+        "author": "",
+        "category": "",
+        "content": "--- layout: section title: Dossier permalink: 1098-index --- ### Properties * [entMetaData](Properties\/entMetaData.md) * [items](Properties\/items.md) ### Methods * [addItem](Methods\/addItem.md) * [create](Methods\/create.md) * [refresh](Methods\/refresh.md) * [remove](Methods\/remove.md) * [removeItem](Methods\/removeItem.md) * [save](Methods\/save.md)",
+        "url": "1098-index"
+    },
+    "85": {
+        "title": "Dossier properties",
+        "author": "",
+        "category": "",
+        "content": "--- layout: section title: Dossier properties permalink: 1107-index --- Properties on the Dossier object. * [entMetaData](.\/entMetaData.md) * [items](.\/items.md)",
+        "url": "1107-index"
+    },
+    "86": {
+        "title": "entMetaData",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: entMetaData sortid: 27 permalink: 1106-entMetaData --- ## Syntax ```javascript Dossier.entMetaData; ``` ### Access *readonly* ### Parameters **Return value** *EntMetaData* An EntMetaData object. ## Description The `entMetaData` property is used to get the Enterprise metadata associated with the Dossier. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1106-entMetaData"
+    },
+    "87": {
+        "title": "items",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: items sortid: 28 permalink: 1108-items --- ## Syntax ```javascript Dossier.items; ``` ### Access *readonly* ### Parameters **Return value** *string[]* A string of Enterprise object IDs. ## Description The `items` property is used to get a list of IDs of Enterprise objects which are residing in the current Dossier. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1108-items"
+    },
+    "88": {
+        "title": "Dossier methods",
+        "author": "",
+        "category": "",
+        "content": "--- layout: section title: Dossier methods permalink: 1101-index --- Methods on the Dossier object. * [addItem](.\/addItem.md) * [create](.\/create.md) * [refresh](.\/refresh.md) * [remove](.\/remove.md) * [removeItem](.\/removeItem.md) * [save](.\/save.md) ",
+        "url": "1101-index"
+    },
+    "89": {
+        "title": "removeItem",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: removeItem sortid: 21 permalink: 1099-addItem --- ## Syntax ```javascript Dossier.removeItem(objectId); ``` ### Parameters **objectId** *string* The object ID on the Enterprise Server of the object to remove from the Dossier. **Return value** The `removeItem()` method does not return anything. ## Description The `removeItem()` method removes an item from the Dossier. Removes the item from the corresponding Dossier in Enterprise as well. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1099-addItem"
+    },
+    "90": {
+        "title": "create",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: create sortid: 22 permalink: 1100-create --- ## Syntax ```javascript Dossier.create(); ``` ### Parameters **Return value** The `create()` method does not return anything. ## Description The `create()` method creates a new Dossier object. The Dossier is created in Enterprise as well. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1100-create"
+    },
+    "91": {
+        "title": "refresh",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: refresh sortid: 23 permalink: 1102-refresh --- ## Syntax ```javascript Dossier.refresh(); ``` ### Parameters **Return value** The `refresh()` method does not return anything. ## Description The `refresh()` method refreshes the Dossier object with new information from the Enterprise Server. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1102-refresh"
+    },
+    "92": {
+        "title": "remove",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: remove sortid: 24 permalink: 1103-remove --- ## Syntax ```javascript Dossier.remove(); ``` ### Parameters **Return value** The `remove()` method does not return anything. ## Description The `remove()` method removes the Dossier object. The corresponding Dossier is removed from Enterprise as well. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1103-remove"
+    },
+    "93": {
+        "title": "addItem",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: addItem sortid: 25 permalink: 1104-removeItem --- ## Syntax ```javascript Dossier.addItem(objectId); ``` ### Parameters **objectId** *string* The object ID on the Enterprise Server of the object to add to the Dossier. **Return value** The `addItem()` method does not return anything. ## Description The `addItem()` method adds an item to the Dossier. Adds the item to the corresponding Dossier in Enterprise as well. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1104-removeItem"
+    },
+    "94": {
+        "title": "save",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: save sortid: 26 permalink: 1105-save --- ## Syntax ```javascript Dossier.save(); ``` ### Parameters **Return value** The `save()` method does not return anything. ## Description The `save()` method saves the Dossier object. The corresponding Dossier is saved in Enterprise as well. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1105-save"
+    },
+    "95": {
+        "title": "Document",
+        "author": "",
+        "category": "",
+        "content": "--- layout: section title: Document permalink: 1088-index --- The Document in InDesign, InDesign Server (layout) or InCopy (article). ### Properties * [activeEdition](Properties\/activeEdition.md) * [defaultEdition](Properties\/defaultEdition.md) * [managedArticles](Properties\/managedArticles.md) * [managedImages](Properties\/managedImages.md) * [managedAdverts](Properties\/managedAdverts.md) * [managedLayoutModules](Properties\/managedLayoutModules.md) * [entMetaData](Properties\/entMetaData.md) * [entWorkflow](Properties\/entWorkflow.md)",
+        "url": "1088-index"
+    },
+    "96": {
+        "title": "Document properties",
+        "author": "",
+        "category": "",
+        "content": "--- layout: section title: Document properties permalink: 1093-index --- Properties on the Document object. * [activeEdition](.\/activeEdition.md) * [defaultEdition](.\/defaultEdition.md) * [entMetaData](.\/entMetaData.md) * [entWorkflow](.\/entWorkflow.md) * [managedAdverts](.\/managedAdverts.md) * [managedArticles](.\/managedArticles.md) * [managedImages](.\/managedImages.md) * [managedLayoutModules](.\/managedLayoutModules.md)",
+        "url": "1093-index"
+    },
+    "97": {
+        "title": "activeEdition",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: activeEdition sortid: 13 permalink: 1089-activeEdition --- ## Syntax ```javascript Document.activeEdition; ``` ### Access *read\/write* ### Parameters **Return value** *string* The active Edition. ## Description The `activeEdition` property is used to get the active Edition of the current Document. The metadata of the Document contains all possible Editions that can be set. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1089-activeEdition"
+    },
+    "98": {
+        "title": "defaultEditions",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: defaultEditions sortid: 14 permalink: 1090-defaultEditions --- ## Syntax ```javascript Document.defaultEditions; ``` ### Access *read\/write* ### Parameters **Return value** *string[]* A list of Edition names. ## Description The `defaultEditions` property is used to get the list of Edition names that new page items will be assigned to on creation. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1090-defaultEditions"
+    },
+    "99": {
+        "title": "entMetaData",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: entMetaData sortid: 15 permalink: 1091-entMetaData --- ## Syntax ```javascript Document.entMetaData; ``` ### Access *readonly* ### Parameters **Return value** *EntMetaData* An EntMetaData object. ## Description The `entMetaData` property is used to get the Enterprise metadata associated with the Document. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1091-entMetaData"
+    },
+    "100": {
+        "title": "entWorkflow",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: entWorkflow sortid: 16 permalink: 1092-entWorkflow --- ## Syntax ```javascript Document.entWorkflow; ``` ### Access *readonly* ### Parameters **Return value** *EntWorkflow* An EntWorkflow object. ## Description The `entWorkflow` property is used to get access to the Enterprise worlkflow actions for the Document. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1092-entWorkflow"
+    },
+    "101": {
+        "title": "managedAdverts",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: managedAdverts sortid: 17 permalink: 1094-managedAdverts --- ## Syntax ```javascript Document.managedAdverts; ``` ### Access *readonly* ### Parameters **Return value** *ManagedAdverts* A ManagedAdverts object. ## Description The `managedAdverts` property is used to get all managed adverts belonging to the Document. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1094-managedAdverts"
+    },
+    "102": {
+        "title": "managedArticles",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: managedArticles sortid: 18 permalink: 1095-managedArticles --- ## Syntax ```javascript Document.managedArticles; ``` ### Access *readonly* ### Parameters **Return value** *ManagedArticles* A ManagedArticles object. ## Description The `managedArticles` property is used to get all managed articles belonging to the Document. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1095-managedArticles"
+    },
+    "103": {
+        "title": "managedImages",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: managedImages sortid: 19 permalink: 1096-managedImages --- ## Syntax ```javascript Document.managedImages; ``` ### Access *readonly* ### Parameters **Return value** *ManagedImages* A ManagedImages object. ## Description The `managedImages` property is used to get all managed images belonging to the Document. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1096-managedImages"
+    },
+    "104": {
+        "title": "managedLayoutModules",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: managedLayoutModules sortid: 20 permalink: 1097-managedLayoutModules --- ## Syntax ```javascript Document.managedLayoutModules; ``` ### Access *readonly* ### Parameters **Return value** *ManagedLayoutModules* A ManagedLayoutModules object. ## Description The `managedLayoutModules` property is used to get all managed Layout Modules belonging to the Document. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1097-managedLayoutModules"
+    },
+    "105": {
+        "title": "EntIssue",
+        "author": "",
+        "category": "",
+        "content": "--- layout: section title: EntIssue permalink: 1114-index --- ### Properties * [id](Properties\/id.md) * [name](Properties\/name.md)",
+        "url": "1114-index"
+    },
+    "106": {
+        "title": "EntIssue properties",
+        "author": "",
+        "category": "",
+        "content": "--- layout: section title: EntIssue properties permalink: 1116-index --- Properties on the EntIssue object. * [id](.\/id.md) * [name](.\/name.md)",
+        "url": "1116-index"
+    },
+    "107": {
+        "title": "id",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: id sortid: 32 permalink: 1115-id --- ## Syntax ```javascript EntIssue.id; ``` ### Access *readonly* ### Parameters **Return value** *string* The ID of the Issue. ## Description The `id` property is used to get the object ID of the Issue. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1115-id"
+    },
+    "108": {
+        "title": "name",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: name sortid: 33 permalink: 1117-name --- ## Syntax ```javascript EntIssue.name; ``` ### Access *readonly* ### Parameters **Return value** *string* The name of the Issue. ## Description The `name` property is used to get the name of the Issue. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1117-name"
+    },
+    "109": {
+        "title": "EntPublication",
+        "author": "",
+        "category": "",
+        "content": "--- layout: section title: EntPublication permalink: 1118-index --- ### Properties * [id](Properties\/id.md) * [name](Properties\/name.md)",
+        "url": "1118-index"
+    },
+    "110": {
+        "title": "EntPublication properties",
+        "author": "",
+        "category": "",
+        "content": "--- layout: section title: EntPublication properties permalink: 1120-index --- Properties on the EntPublication object. * [id](.\/id.md) * [name](.\/name.md)",
+        "url": "1120-index"
+    },
+    "111": {
+        "title": "id",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: id sortid: 34 permalink: 1119-id --- ## Syntax ```javascript EntPublication.id; ``` ### Access *readonly* ### Parameters **Return value** *string* The ID of the Brand. ## Description The `id` property is used to get the ID of the Brand. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1119-id"
+    },
+    "112": {
+        "title": "name",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: name sortid: 35 permalink: 1121-name --- ## Syntax ```javascript EntPublication.name; ``` ### Access *readonly* ### Parameters **Return value** *string* The name of the Issue. ## Description The `name` property is used to get the name of the Brand. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1121-name"
+    },
+    "113": {
+        "title": "ManagedAdvert",
+        "author": "",
+        "category": "",
+        "content": "--- layout: section title: ManagedAdvert permalink: 1126-index --- ### Properties * [entMetaData](Properties\/entMetaData.md) * [pageItem](Properties\/pageItem.md)",
+        "url": "1126-index"
+    },
+    "114": {
+        "title": "ManagedAdvert properties",
+        "author": "",
+        "category": "",
+        "content": "--- layout: section title: ManagedAdvert properties permalink: 1128-index --- Properties on the ManagedAdvert object. * [entMetaData](.\/entMetaData.md) * [pageItems](.\/pageItem.md)",
+        "url": "1128-index"
+    },
+    "115": {
+        "title": "entMetaData",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: entMetaData sortid: 38 permalink: 1127-entMetaData --- ## Syntax ```javascript ManagedAdvert.entMetaData; ``` ### Access *readonly* ### Parameters **Return value** *EntMetaData* An EntMetaData object. ## Description The `entMetaData` property is used to get the Enterprise metadata associated with the Advert. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1127-entMetaData"
+    },
+    "116": {
+        "title": "pageItem",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: pageItem sortid: 39 permalink: 1129-pageItem --- ## Syntax ```javascript ManagedAdvert.pageItem; ``` ### Access *readonly* ### Parameters **Return value** *PageItem* A PageItem object. ## Description The `pageItem` property is used to get access to the associated InDesign PageItem object. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1129-pageItem"
+    },
+    "117": {
+        "title": "EntSection",
+        "author": "",
+        "category": "",
+        "content": "--- layout: section title: EntSection permalink: 1122-index --- ### Properties * [id](Properties\/id.md) * [name](Properties\/name.md)",
+        "url": "1122-index"
+    },
+    "118": {
+        "title": "EntSection properties",
+        "author": "",
+        "category": "",
+        "content": "--- layout: section title: EntSection properties permalink: 1124-index --- Properties on the EntSection object. * [id](.\/id.md) * [name](.\/name.md)",
+        "url": "1124-index"
+    },
+    "119": {
+        "title": "id",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: id sortid: 36 permalink: 1123-id --- ## Syntax ```javascript EntSection.id; ``` ### Access *readonly* ### Parameters **Return value** *string* The ID of the Category. ## Description The `id` property is used to get the ID of the Category. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1123-id"
+    },
+    "120": {
+        "title": "name",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: name sortid: 37 permalink: 1125-name --- ## Syntax ```javascript EntSection.name; ``` ### Access *readonly* ### Parameters **Return value** *string* The name of the Category. ## Description The `name` property is used to get the name of the Category. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1125-name"
+    },
+    "121": {
+        "title": "Application",
+        "author": "",
+        "category": "",
+        "content": "--- layout: section title: Application permalink: 1065-index --- The object representing the InDesign or InCopy application. ### Properties * [entSession](Properties\/entSession.md) ### Methods * [browseQuery](Methods\/browseQuery.md) * [getDossiersForItem](Methods\/getDossiersForItem.md) * [jsonRequest](Methods\/jsonRequest.md) * [namedQuery](Methods\/namedQuery.md) * [offlineQuery](Methods\/offlineQuery.md) * [openObject](Methods\/openObject.md) * [queryObjects](Methods\/queryObjects.md) * [sendObjectToNext](Methods\/sendObjectToNext.md) * [storedUserQuery](Methods\/storedUserQuery.md) * [updatePanels](Methods\/updatePanels.md)",
+        "url": "1065-index"
+    },
+    "122": {
+        "title": "Application properties",
+        "author": "",
+        "category": "",
+        "content": "--- layout: section title: Application properties permalink: 1073-index --- Properties on the Application object. * [entSession](.\/entSession.md)",
+        "url": "1073-index"
+    },
+    "123": {
+        "title": "entSession",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: entSession sortid: 12 permalink: 1087-entSession --- ## Syntax ```javascript app.entSession; ``` ### Access *readonly* ### Parameters **Return value** *Session* The Enterprise Session object. ## Description The `entSession` property gives access to the Enterprise session by returning a Session object. For more info about the Session object please see the [Session](..\/..\/Session\/index.md) documentation. ## Examples **Check if there is an active session** When `activeUrl` is empty, there is no active session. ```javascript \/\/ Check if the session is active. var sessionObject = app.entSession; var activeSession = (sessionObject.activeUrl !== \"\"); \/\/ When logged in, activeSession is now 'true'. \/\/ When not logged in, activeSession is 'false'. ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 | ## See also * [Session](..\/..\/Session\/index.md)",
+        "url": "1087-entSession"
+    },
+    "124": {
+        "title": "Application methods",
+        "author": "",
+        "category": "",
+        "content": "--- layout: section title: Application methods permalink: 1077-index --- Methods on the Application object. * [browseQuery](.\/browseQuery.md) * [getDossiersForItem](.\/getDossiersForItem.md) * [jsonRequest](.\/jsonRequest.md) * [namedQuery](.\/namedQuery.md) * [offlineQuery](.\/offlineQuery.md) * [openObject](.\/openObject.md) * [queryObjects](.\/queryObjects.md) * [sendObjectToNext](.\/sendObjectToNext.md) * [storedUserQuery](.\/storedUserQuery.md) * [updatePanels](.\/updatePanels.md) ",
+        "url": "1077-index"
+    },
+    "125": {
+        "title": "browseQuery",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: browseQuery sortid: 1 permalink: 1076-browseQuery --- ## Syntax ```javascript app.browseQuery(brand, issue, section, state); ``` ### Parameters **brand** *string* The name of the Brand to browse for. **issue** *string* The name of the Issue to browse for. **section** *string* The name of the Section to browse for. **state** *string* The name of the State to browse for. **Return value** *string* A string representing the Browse query result. The result is comma separated. ## Description The `browseQuery()` method generates the result of the Browse query returned by the Enterprise server. ## Examples **Get the results for a specific query** ```javascript \/\/ Get browse query results from the server. var queryResult = app.browseQuery(\"WW News\", \"1st Issue\", \"News\", \"Ready\"); \/\/ queryResult is now: \/\/ \/\/ \"Columns: <int, ID><string, Name><string, Type><string, In Use By> \/\/ <int, Rating><multilist, Issues><list, Status><string, Status ID> \/\/ <int, Flag><list, Category><string, Category><double, Width> \/\/ <double, Height><string, Created By><string, Aspect ratio> \/\/ <string, Urgency><datetime, Created On><multiline, Description> \/\/ <string, Copyright (c)><int, Size><datetime, Modified On> \/\/ <string, Modified By><string, Author><list, Route To> \/\/ <string, Placed On><list, Brand><string, Brand ID> \/\/ <string, Planned Page Range><string, Page Range><string, FlagMsg> \/\/ <icon, Deadline><datetime, Deadline><string, Placed On Page> \/\/ <multiline, Comment><string, Color Space><int, Columns> \/\/ <string, Issue ID><string, Format><bool, LockForOffline> \/\/ <multilist, Issue IDs><multilist, Edition IDs><bool, HasChildren> \/\/ \/\/ Rows: \/\/ <6315, test-layout, Article, , , 1st Issue, Ready, 2, , \/\/ News, 1, 523.275591, 769.889764, Joe, , , 06\/12\/2018 09:07, , , \/\/ 56 KB, 06\/12\/2018 09:10, Joe, , , L-testupdate1, WW News, 1, , , , \/\/ 0;cdcdcd, , 1, , , 1, , application\/incopyicml, false, 1, 1, 2, false> \/\/ \/\/ <1921, AWinttroart1, Article, , , 1st Issue, Ready, 2, , \/\/ News, 1, 164, 175, Joe, , , 03\/01\/2018 14:54, , , 56 KB, \/\/ 03\/01\/2018 15:05, Joe, , Joe, LWinttroart1, WW News, 1, , , , \/\/ 0;cdcdcd, , 1, , , 3, , application\/incopyicml, false, 1, 1, 2, false> \/\/ \/\/ <1922, Art2, Article, , , 1st Issue, Ready, 2, , News, 1, \/\/ 523.275591, 769.889764, Joe, , , 03\/01\/2018 14:59, , , 50 KB, \/\/ 03\/01\/2018 15:01, Joe, , , LWinttroart1, WW News, 1, , , , 0;cdcdcd, \/\/ , 1, , , 1, , application\/incopyicml, false, 1, 1, 2, false> \/\/ \/\/ \/\/ First Entry: 1 \/\/ \/\/ Listed Entries: 3 \/\/ \/\/ Total Entries: 3\" ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1076-browseQuery"
+    },
+    "126": {
+        "title": "getDossiersForItem",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: getDossiersForItem sortid: 2 permalink: 1078-getDossiersForItem --- ## Syntax ```javascript app.getDossiersForItem(objectId); ``` ### Parameters **objectId** *string* The object ID on the Enterprise Server of the object to get its Dossiers for. **Return value** *string[]* An array of string representing the Browse query result. The result is comma separated. ## Description The `getDossierForItem()` method performs a query on the Enterprise Server to retrieve all Dossier IDs of which the object is part of. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1078-getDossiersForItem"
+    },
+    "127": {
+        "title": "jsonRequest",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: jsonRequest sortid: 3 permalink: 1079-jsonRequest --- ## Syntax ```javascript app.jsonRequest(jsonUrl, jsonRequest); ``` ### Parameters **jsonUrl** *string* The path to the Enterprise server URL which can receive and respond to requests done in JSON object string format. **jsonRequest** *string* The request to post to the above URL in JSON object string format. **Return value** *string* A string containing the complete and total server response. ## Description The `jsonRequest()` method posts a JSON object string as a request to an Enterprise Server URL in order to receive a response in JSON object string format. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1079-jsonRequest"
+    },
+    "128": {
+        "title": "namedQuery",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: namedQuery sortid: 4 permalink: 1080-namedQuery --- ## Syntax ```javascript app.namedQuery(queryName [, filename] [, fileType]); ``` ### Parameters **queryName** *string* The name of the query **fileName** *string (Optional)* The name of the object or file. **fileType** *string (Optional)* The type of th object or file. **Return value** *string* A string representing the Browse query result. The result is comma separated. ## Description The `namedQuery()` method performs a named query. It can be used for the Inbox, Templates and NameSearch queries. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1080-namedQuery"
+    },
+    "129": {
+        "title": "offlineQuery",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: offlineQuery sortid: 5 permalink: 1081-offlineQuery --- ## Syntax ```javascript app.offlineQuery(); ``` ### Parameters **Return value** *string* A string representing the result for the offline query event. ## Description The `namedQuery()` method performs an offline query. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1081-offlineQuery"
+    },
+    "130": {
+        "title": "openObject",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: openObject sortid: 6 permalink: 1082-openObject --- ## Syntax ```javascript app.openObject(objectId [, checkout] [, withWindow] [, type] [, doessierId]); ``` ### Parameters **objectId** *string* The object ID on the Enterprise Server of the object to open. **checkout** *boolean (Optional)* Pass `false` to open te document as read-only. For template files, pass `false` top open an instance instead of the original object. Default value is `true`. **withWindow** *boolean (Optional)* Pass `false` top open the document without opening a window. Default is `true`. **type** *string (Optional)* The object type. Default is an empty string. **dossierId** *string (Optional)* The ID of the default parent Dossier. Default is an empty string. The passed Dossier ID will be used as the default selected Dossier in the Save As dialog ow when creating an Article or Image from the Layout (if the document is a layout). **Return value** *Document* The Document object which is opened. Undefined when a Document could not be openend. ## Description The `openObject()` method opens a Document from the Enterprise Server. Throws an exception in case of an error. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1082-openObject"
+    },
+    "131": {
+        "title": "queryObjects",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: queryObjects sortid: 8 permalink: 1083-queryObjects --- ## Syntax ```javascript app.queryObjects(criteria); ``` ### Parameters **criteria** *string[]* The query criteria in the form of `<key, value>` pairs ```javascript criteria[0] = 'Brand, WW News'; criteria[1] = 'Issue, 2nd Issue'; ... ``` **Return value** *string* A string representing the query result. ## Description The `queryObjects()` method performs a user query based in the passed criteria. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1083-queryObjects"
+    },
+    "132": {
+        "title": "sendObjectToNext",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: sendObjectToNext sortid: 9 permalink: 1084-sendObjectToNext --- ## Syntax ```javascript app.sendObjectToNext(objectId); ``` ### Parameters **objectId** *string* The object ID on the Enterprise Server. **Return value** The `sendObjectToNext()` method does not return anything. ## Description The `sendObjectToNext()` method sends an object to its next status. Throws an exception in case of an error. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1084-sendObjectToNext"
+    },
+    "133": {
+        "title": "storedUserQuery",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: storedUserQuery sortid: 10 permalink: 1085-storedUserQuery --- ## Syntax ```javascript app.storedUserQuery(queryName); ``` ### Parameters **queryName** *string* The stored name of the query **Return value** *string* A string representing the stored user query result. ## Description The `storedUserQuery()` method generates the result for the strored user query event. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1085-storedUserQuery"
+    },
+    "134": {
+        "title": "updatePanels",
+        "author": "",
+        "category": "",
+        "content": "--- layout: chapter title: updatePanels sortid: 11 permalink: 1086-updatePanels --- ## Syntax ```javascript app.updatePanels(); ``` ### Parameters **Return value** The `updatePanels()` method does not return anything. ## Description The `updatePanels()` method refreshes the contents of all Enterprise query panels. Throws an exception in case of an error. ## Examples **Example title** ```javascript ``` ## Support versions | Adobe Version | Support | |---------------|---------| | CC | \u2714 | | CC 2014 | \u2714 | | CC 2015 | \u2714 | | CC 2017 | \u2714 | | CC 2018 | \u2714 | | CC 2019 | \u2714 |",
+        "url": "1086-updatePanels"
     }
 }

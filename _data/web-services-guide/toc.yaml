@@ -5,73 +5,17 @@ toc:
     url: web-services-guide/index.html
     permalink: 1055-index
     children:
-    - title: Enterprise and Web Services
+    - title: Enterprise Services API
       layout: section
-      path: web-services-guide/ent-and-web-services/index.md
-      url: web-services-guide/ent-and-web-services/index.html
-      permalink: 1030-index
+      path: web-services-guide/ent-services-api/index.md
+      url: web-services-guide/ent-services-api/index.html
+      permalink: 1053-index
       children:
-      - title: System Architecture
+      - title: Workflow Dialogs
         layout: chapter
-        path: web-services-guide/ent-and-web-services/system-architecture.md
-        url: web-services-guide/ent-and-web-services/system-architecture.html
-        permalink: 1034-system-architecture
-      - title: Protocols [since 8.0]
-        layout: chapter
-        path: web-services-guide/ent-and-web-services/protocols.md
-        url: web-services-guide/ent-and-web-services/protocols.html
-        permalink: 1032-protocols
-      - title: Transfer Server [since 8.0]
-        layout: chapter
-        path: web-services-guide/ent-and-web-services/transfer-server.md
-        url: web-services-guide/ent-and-web-services/transfer-server.html
-        permalink: 1035-transfer-server
-      - title: Elvis Proxy Server [since 10.5]
-        layout: chapter
-        path: web-services-guide/ent-and-web-services/elvis-proxy-server.md
-        url: web-services-guide/ent-and-web-services/elvis-proxy-server.html
-        permalink: 1061-elvis-proxy-server
-      - title: Web Service Interfaces
-        layout: chapter
-        path: web-services-guide/ent-and-web-services/web-service-interfaces.md
-        url: web-services-guide/ent-and-web-services/web-service-interfaces.html
-        permalink: 1036-web-service-interfaces
-      - title: Client Applications
-        layout: chapter
-        path: web-services-guide/ent-and-web-services/client-applications.md
-        url: web-services-guide/ent-and-web-services/client-applications.html
-        permalink: 1029-client-applications
-      - title: Shared Concepts
-        layout: chapter
-        path: web-services-guide/ent-and-web-services/shared-concepts.md
-        url: web-services-guide/ent-and-web-services/shared-concepts.html
-        permalink: 1033-shared-concepts
-      - title: Messages
-        layout: chapter
-        path: web-services-guide/ent-and-web-services/messages.md
-        url: web-services-guide/ent-and-web-services/messages.html
-        permalink: 1031-messages
-    - title: Enterprise Data Entities
-      layout: section
-      path: web-services-guide/ent-data-entities/index.md
-      url: web-services-guide/ent-data-entities/index.html
-      permalink: 1037-index
-      children:
-      - title: Objects and Metadata
-        layout: chapter
-        path: web-services-guide/ent-data-entities/objects-and-metadata.md
-        url: web-services-guide/ent-data-entities/objects-and-metadata.html
-        permalink: 1056-objects-and-metadata
-      - title: Layouts and Placements
-        layout: chapter
-        path: web-services-guide/ent-data-entities/layouts-and-placements.md
-        url: web-services-guide/ent-data-entities/layouts-and-placements.html
-        permalink: 1057-layouts-and-placements
-      - title: Object Targets
-        layout: chapter
-        path: web-services-guide/ent-data-entities/object-targets.md
-        url: web-services-guide/ent-data-entities/object-targets.html
-        permalink: 1058-object-targets
+        path: web-services-guide/ent-services-api/workflow-dialogs.md
+        url: web-services-guide/ent-services-api/workflow-dialogs.html
+        permalink: 1054-workflow-dialogs
     - title: Enterprise in Action
       layout: section
       path: web-services-guide/ent-in-action/index.md
@@ -148,14 +92,70 @@ toc:
         path: web-services-guide/ent-in-action/system-admin.md
         url: web-services-guide/ent-in-action/system-admin.html
         permalink: 1041-system-admin
-    - title: Enterprise Services API
+    - title: Enterprise Data Entities
       layout: section
-      path: web-services-guide/ent-services-api/index.md
-      url: web-services-guide/ent-services-api/index.html
-      permalink: 1053-index
+      path: web-services-guide/ent-data-entities/index.md
+      url: web-services-guide/ent-data-entities/index.html
+      permalink: 1037-index
       children:
-      - title: Workflow Dialogs
+      - title: Objects and Metadata
         layout: chapter
-        path: web-services-guide/ent-services-api/workflow-dialogs.md
-        url: web-services-guide/ent-services-api/workflow-dialogs.html
-        permalink: 1054-workflow-dialogs
+        path: web-services-guide/ent-data-entities/objects-and-metadata.md
+        url: web-services-guide/ent-data-entities/objects-and-metadata.html
+        permalink: 1056-objects-and-metadata
+      - title: Layouts and Placements
+        layout: chapter
+        path: web-services-guide/ent-data-entities/layouts-and-placements.md
+        url: web-services-guide/ent-data-entities/layouts-and-placements.html
+        permalink: 1057-layouts-and-placements
+      - title: Object Targets
+        layout: chapter
+        path: web-services-guide/ent-data-entities/object-targets.md
+        url: web-services-guide/ent-data-entities/object-targets.html
+        permalink: 1058-object-targets
+    - title: Enterprise and Web Services
+      layout: section
+      path: web-services-guide/ent-and-web-services/index.md
+      url: web-services-guide/ent-and-web-services/index.html
+      permalink: 1030-index
+      children:
+      - title: System Architecture
+        layout: chapter
+        path: web-services-guide/ent-and-web-services/system-architecture.md
+        url: web-services-guide/ent-and-web-services/system-architecture.html
+        permalink: 1034-system-architecture
+      - title: Protocols [since 8.0]
+        layout: chapter
+        path: web-services-guide/ent-and-web-services/protocols.md
+        url: web-services-guide/ent-and-web-services/protocols.html
+        permalink: 1032-protocols
+      - title: Transfer Server [since 8.0]
+        layout: chapter
+        path: web-services-guide/ent-and-web-services/transfer-server.md
+        url: web-services-guide/ent-and-web-services/transfer-server.html
+        permalink: 1035-transfer-server
+      - title: Elvis Proxy Server [since 10.5]
+        layout: chapter
+        path: web-services-guide/ent-and-web-services/elvis-proxy-server.md
+        url: web-services-guide/ent-and-web-services/elvis-proxy-server.html
+        permalink: 1061-elvis-proxy-server
+      - title: Web Service Interfaces
+        layout: chapter
+        path: web-services-guide/ent-and-web-services/web-service-interfaces.md
+        url: web-services-guide/ent-and-web-services/web-service-interfaces.html
+        permalink: 1036-web-service-interfaces
+      - title: Client Applications
+        layout: chapter
+        path: web-services-guide/ent-and-web-services/client-applications.md
+        url: web-services-guide/ent-and-web-services/client-applications.html
+        permalink: 1029-client-applications
+      - title: Shared Concepts
+        layout: chapter
+        path: web-services-guide/ent-and-web-services/shared-concepts.md
+        url: web-services-guide/ent-and-web-services/shared-concepts.html
+        permalink: 1033-shared-concepts
+      - title: Messages
+        layout: chapter
+        path: web-services-guide/ent-and-web-services/messages.md
+        url: web-services-guide/ent-and-web-services/messages.html
+        permalink: 1031-messages
