@@ -322,6 +322,69 @@ toc:
           path: smart-connection-scripting-guide/ScriptingEvents/Events/afterCreateArticle.md
           url: smart-connection-scripting-guide/ScriptingEvents/Events/afterCreateArticle.html
           permalink: 1174-afterCreateArticle
+    - title: Dossier
+      layout: section
+      path: smart-connection-scripting-guide/PageItem/index.md
+      url: smart-connection-scripting-guide/PageItem/index.html
+      permalink: 1098-index
+      children:
+      - title: Dossier properties
+        layout: section
+        path: smart-connection-scripting-guide/PageItem/Properties/index.md
+        url: smart-connection-scripting-guide/PageItem/Properties/index.html
+        permalink: 1107-index
+        children:
+        - title: managedImage
+          layout: chapter
+          path: smart-connection-scripting-guide/PageItem/Properties/managedImage.md
+          url: smart-connection-scripting-guide/PageItem/Properties/managedImage.html
+          permalink: 1171-managedImage
+        - title: managedArticle
+          layout: chapter
+          path: smart-connection-scripting-guide/PageItem/Properties/managedLayoutModule.md
+          url: smart-connection-scripting-guide/PageItem/Properties/managedLayoutModule.html
+          permalink: 1172-managedLayoutModule
+        - title: managedArticle
+          layout: chapter
+          path: smart-connection-scripting-guide/PageItem/Properties/managedArticle.md
+          url: smart-connection-scripting-guide/PageItem/Properties/managedArticle.html
+          permalink: 1170-managedArticle
+        - title: managedAdvert
+          layout: chapter
+          path: smart-connection-scripting-guide/PageItem/Properties/managedAdvert.md
+          url: smart-connection-scripting-guide/PageItem/Properties/managedAdvert.html
+          permalink: 1169-managedAdvert
+        - title: entMetaData
+          layout: chapter
+          path: smart-connection-scripting-guide/PageItem/Properties/allIndesignArticleIds.md
+          url: smart-connection-scripting-guide/PageItem/Properties/allIndesignArticleIds.html
+          permalink: 1106-entMetaData
+        - title: entMetaData
+          layout: chapter
+          path: smart-connection-scripting-guide/PageItem/Properties/elementLabel.md
+          url: smart-connection-scripting-guide/PageItem/Properties/elementLabel.html
+          permalink: 1106-entMetaData
+        - title: items
+          layout: chapter
+          path: smart-connection-scripting-guide/PageItem/Properties/editions.md
+          url: smart-connection-scripting-guide/PageItem/Properties/editions.html
+          permalink: 1108-items
+      - title: Dossier methods
+        layout: section
+        path: smart-connection-scripting-guide/PageItem/Methods/index.md
+        url: smart-connection-scripting-guide/PageItem/Methods/index.html
+        permalink: 1101-index
+        children:
+        - title: updateCaptionAndCredit
+          layout: chapter
+          path: smart-connection-scripting-guide/PageItem/Methods/updateCaptionAndCredit.md
+          url: smart-connection-scripting-guide/PageItem/Methods/updateCaptionAndCredit.html
+          permalink: 1168-updateCaptionAndCredit
+        - title: removeItem
+          layout: chapter
+          path: smart-connection-scripting-guide/PageItem/Methods/placeObject.md
+          url: smart-connection-scripting-guide/PageItem/Methods/placeObject.html
+          permalink: 1099-addItem
     - title: ManagedArticles
       layout: section
       path: smart-connection-scripting-guide/ManagedArticles/index.md
