@@ -5,14 +5,13 @@ permalink: 1204-index
 ---
 The following fields are used to describe an event:
 
-**When** Describes at what moment the event occurs.
-
-**Where** Describes in what applications the event occurs.
-
-**Arguments in** Table describing key value pairs set in app.scriptArgs for the event.
-
-**Arguments out** Table describing key value pairs that a script can set in app.scriptArgs for the event.
-Notes Event related notes.
+|Field|Description|
+|-----|-----------|
+|When |Describes at what moment the event occurs.|
+|Where |Describes in what applications the event occurs.|
+|Arguments in |Table describing key value pairs set in app.scriptArgs for the event.|
+|Arguments out |Table describing key value pairs that a script can set in app.scriptArgs for the event.|
+|Notes |Event related notes.|
 
 ### Events
 * [afterCreateArticle](./afterCreateArticle.md)

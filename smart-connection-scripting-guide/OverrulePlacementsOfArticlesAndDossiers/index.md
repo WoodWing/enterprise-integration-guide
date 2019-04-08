@@ -29,7 +29,7 @@ placeOverride = new PlaceOverride).
 ### Parameters
 **Return value** *array of boolean*
 
-It returns an array of bool
+It returns an array of booleans:
 |#|Description|
 |-|-----------|
 |1|debug canPlaceItems?|
@@ -148,7 +148,7 @@ The return value is an array with two values:
 |----|----|-----------|
 |1	|boolean	|Indicates if the script handled the place or not. If this boolean is true the script handled the placement and Smart Connection should not perform its place code. If this boolean is false the script did not handle the placement and Smart Connection should perform its place code. Smart Connection is not able to place Dossiers. If the script to place a dossier returns false Smart Connection will empty the place gun.|
 |2	|array of number	|This is an array of ids of the items that are placed or replaced by the scripting code. If this list is empty and the boolean was true the Smart Connection place code is not called and the place gun is still loaded. If this list contains items the Smart Connection place code is not called and the place gun will be emptied.|
-A sample of the return value is:
+An example of the return value is:
 ```javascript
 var arr = new Array();
 arr.push( 123 );

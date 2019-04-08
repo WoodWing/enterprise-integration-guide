@@ -30,8 +30,6 @@ The AddToDossierOverride class needs to have the following functions:
 
 **Return value** *Array of Boolean*
 
-Tells Smart Connection whether the functions need to be debugged or not.
-
 It returns an array of bool:
 
 |#|Description|
@@ -40,7 +38,7 @@ It returns an array of bool:
 |2 |debug placeItems?|
 |3 |show error alerts?|
 
-sample:
+Example:
 ```javascript
 return [ false, false, true ];
 ```
