@@ -5,6 +5,45 @@ toc:
     url: smart-connection-scripting-guide/index.html
     permalink: 1068-index
     children:
+    - title: ManagedLayoutModules
+      layout: section
+      path: smart-connection-scripting-guide/ManagedLayoutModules/index.md
+      url: smart-connection-scripting-guide/ManagedLayoutModules/index.html
+      permalink: 1165-index
+      children:
+      - title: ManagedLayoutModules methods
+        layout: section
+        path: smart-connection-scripting-guide/ManagedLayoutModules/Methods/index.md
+        url: smart-connection-scripting-guide/ManagedLayoutModules/Methods/index.html
+        permalink: 1167-index
+        children:
+        - title: count
+          layout: chapter
+          path: smart-connection-scripting-guide/ManagedLayoutModules/Methods/count.md
+          url: smart-connection-scripting-guide/ManagedLayoutModules/Methods/count.html
+          permalink: 1166-count
+    - title: ManagedLayoutModule
+      layout: section
+      path: smart-connection-scripting-guide/ManagedLayoutModule/index.md
+      url: smart-connection-scripting-guide/ManagedLayoutModule/index.html
+      permalink: 1161-index
+      children:
+      - title: ManagedLayoutModule properties
+        layout: section
+        path: smart-connection-scripting-guide/ManagedLayoutModule/Properties/index.md
+        url: smart-connection-scripting-guide/ManagedLayoutModule/Properties/index.html
+        permalink: 1163-index
+        children:
+        - title: entMetaData
+          layout: chapter
+          path: smart-connection-scripting-guide/ManagedLayoutModule/Properties/entMetaData.md
+          url: smart-connection-scripting-guide/ManagedLayoutModule/Properties/entMetaData.html
+          permalink: 1162-entMetaData
+        - title: pageItem
+          layout: chapter
+          path: smart-connection-scripting-guide/ManagedLayoutModule/Properties/pageItem.md
+          url: smart-connection-scripting-guide/ManagedLayoutModule/Properties/pageItem.html
+          permalink: 1164-pageItem
     - title: ManagedImages
       layout: section
       path: smart-connection-scripting-guide/ManagedImages/index.md
@@ -60,67 +99,18 @@ toc:
           path: smart-connection-scripting-guide/ManagedImage/Methods/create.md
           url: smart-connection-scripting-guide/ManagedImage/Methods/create.html
           permalink: 1152-create
-    - title: ManagedArticles
+    - title: Overrule adding of created Enterprise image to Dossier
       layout: section
-      path: smart-connection-scripting-guide/ManagedArticles/index.md
-      url: smart-connection-scripting-guide/ManagedArticles/index.html
-      permalink: 1147-index
+      path: smart-connection-scripting-guide/OverruleAddingOfCreatedEnterpriseImageToDossier/index.md
+      url: smart-connection-scripting-guide/OverruleAddingOfCreatedEnterpriseImageToDossier/index.html
+      permalink: 1172-index
       children:
-      - title: ManagedArticles methods
-        layout: section
-        path: smart-connection-scripting-guide/ManagedArticles/Methods/index.md
-        url: smart-connection-scripting-guide/ManagedArticles/Methods/index.html
-        permalink: 1150-index
-        children:
-        - title: add
-          layout: chapter
-          path: smart-connection-scripting-guide/ManagedArticles/Methods/add.md
-          url: smart-connection-scripting-guide/ManagedArticles/Methods/add.html
-          permalink: 1148-add
-        - title: count
-          layout: chapter
-          path: smart-connection-scripting-guide/ManagedArticles/Methods/count.md
-          url: smart-connection-scripting-guide/ManagedArticles/Methods/count.html
-          permalink: 1149-count
-    - title: ManagedLayoutModule
+    - title: Overrule placement of Article and Dossiers
       layout: section
-      path: smart-connection-scripting-guide/ManagedLayoutModule/index.md
-      url: smart-connection-scripting-guide/ManagedLayoutModule/index.html
-      permalink: 1161-index
+      path: smart-connection-scripting-guide/OverrulePlacementsOfArticlesAndDossiers/index.md
+      url: smart-connection-scripting-guide/OverrulePlacementsOfArticlesAndDossiers/index.html
+      permalink: 1173-index
       children:
-      - title: ManagedLayoutModule properties
-        layout: section
-        path: smart-connection-scripting-guide/ManagedLayoutModule/Properties/index.md
-        url: smart-connection-scripting-guide/ManagedLayoutModule/Properties/index.html
-        permalink: 1163-index
-        children:
-        - title: entMetaData
-          layout: chapter
-          path: smart-connection-scripting-guide/ManagedLayoutModule/Properties/entMetaData.md
-          url: smart-connection-scripting-guide/ManagedLayoutModule/Properties/entMetaData.html
-          permalink: 1162-entMetaData
-        - title: pageItem
-          layout: chapter
-          path: smart-connection-scripting-guide/ManagedLayoutModule/Properties/pageItem.md
-          url: smart-connection-scripting-guide/ManagedLayoutModule/Properties/pageItem.html
-          permalink: 1164-pageItem
-    - title: ManagedLayoutModules
-      layout: section
-      path: smart-connection-scripting-guide/ManagedLayoutModules/index.md
-      url: smart-connection-scripting-guide/ManagedLayoutModules/index.html
-      permalink: 1165-index
-      children:
-      - title: ManagedLayoutModules methods
-        layout: section
-        path: smart-connection-scripting-guide/ManagedLayoutModules/Methods/index.md
-        url: smart-connection-scripting-guide/ManagedLayoutModules/Methods/index.html
-        permalink: 1167-index
-        children:
-        - title: count
-          layout: chapter
-          path: smart-connection-scripting-guide/ManagedLayoutModules/Methods/count.md
-          url: smart-connection-scripting-guide/ManagedLayoutModules/Methods/count.html
-          permalink: 1166-count
     - title: Story
       layout: section
       path: smart-connection-scripting-guide/Story/index.md
@@ -170,6 +160,190 @@ toc:
           path: smart-connection-scripting-guide/Session/Properties/activeUser.md
           url: smart-connection-scripting-guide/Session/Properties/activeUser.html
           permalink: 1075-activeUser
+    - title: Scripting Events
+      layout: section
+      path: smart-connection-scripting-guide/ScriptingEvents/index.md
+      url: smart-connection-scripting-guide/ScriptingEvents/index.html
+      permalink: 1205-index
+      children:
+      - title: Event
+        layout: section
+        path: smart-connection-scripting-guide/ScriptingEvents/Events/index.md
+        url: smart-connection-scripting-guide/ScriptingEvents/Events/index.html
+        permalink: 1204-index
+        children:
+        - title: beforeCreateLayout
+          layout: chapter
+          path: smart-connection-scripting-guide/ScriptingEvents/Events/beforeCreateLayout.md
+          url: smart-connection-scripting-guide/ScriptingEvents/Events/beforeCreateLayout.html
+          permalink: 1194-beforeCreateLayout
+        - title: beforeCreateLayoutTemplate
+          layout: chapter
+          path: smart-connection-scripting-guide/ScriptingEvents/Events/beforeCreateLayoutTemplate.md
+          url: smart-connection-scripting-guide/ScriptingEvents/Events/beforeCreateLayoutTemplate.html
+          permalink: 1195-beforeCreateLayoutTemplate
+        - title: beforeCreateArticleTemplate
+          layout: chapter
+          path: smart-connection-scripting-guide/ScriptingEvents/Events/beforeCreateArticleTemplate.md
+          url: smart-connection-scripting-guide/ScriptingEvents/Events/beforeCreateArticleTemplate.html
+          permalink: 1193-beforeCreateArticleTemplate
+        - title: beforeCreateArticle
+          layout: chapter
+          path: smart-connection-scripting-guide/ScriptingEvents/Events/beforeCreateArticle.md
+          url: smart-connection-scripting-guide/ScriptingEvents/Events/beforeCreateArticle.html
+          permalink: 1192-beforeCreateArticle
+        - title: afterSaveArticle
+          layout: chapter
+          path: smart-connection-scripting-guide/ScriptingEvents/Events/afterSaveArticle.md
+          url: smart-connection-scripting-guide/ScriptingEvents/Events/afterSaveArticle.html
+          permalink: 1190-afterSaveArticle
+        - title: afterSaveLayout
+          layout: chapter
+          path: smart-connection-scripting-guide/ScriptingEvents/Events/afterSaveLayout.md
+          url: smart-connection-scripting-guide/ScriptingEvents/Events/afterSaveLayout.html
+          permalink: 1191-afterSaveLayout
+        - title: beforeDetachArticle
+          layout: chapter
+          path: smart-connection-scripting-guide/ScriptingEvents/Events/beforeDetachArticle.md
+          url: smart-connection-scripting-guide/ScriptingEvents/Events/beforeDetachArticle.html
+          permalink: 1196-beforeDetachArticle
+        - title: beforeExportArticle
+          layout: chapter
+          path: smart-connection-scripting-guide/ScriptingEvents/Events/beforeExportArticle.md
+          url: smart-connection-scripting-guide/ScriptingEvents/Events/beforeExportArticle.html
+          permalink: 1197-beforeExportArticle
+        - title: beforeSaveArticle
+          layout: chapter
+          path: smart-connection-scripting-guide/ScriptingEvents/Events/beforeSaveArticle.md
+          url: smart-connection-scripting-guide/ScriptingEvents/Events/beforeSaveArticle.html
+          permalink: 1202-beforeSaveArticle
+        - title: beforeSaveLayout
+          layout: chapter
+          path: smart-connection-scripting-guide/ScriptingEvents/Events/beforeSaveLayout.md
+          url: smart-connection-scripting-guide/ScriptingEvents/Events/beforeSaveLayout.html
+          permalink: 1203-beforeSaveLayout
+        - title: beforePlace
+          layout: chapter
+          path: smart-connection-scripting-guide/ScriptingEvents/Events/beforePlace.md
+          url: smart-connection-scripting-guide/ScriptingEvents/Events/beforePlace.html
+          permalink: 1201-beforePlace
+        - title: beforeLogOff
+          layout: chapter
+          path: smart-connection-scripting-guide/ScriptingEvents/Events/beforeLogOff.md
+          url: smart-connection-scripting-guide/ScriptingEvents/Events/beforeLogOff.html
+          permalink: 1200-beforeLogOff
+        - title: beforeExportArticleTemplate
+          layout: chapter
+          path: smart-connection-scripting-guide/ScriptingEvents/Events/beforeExportArticleTemplate.md
+          url: smart-connection-scripting-guide/ScriptingEvents/Events/beforeExportArticleTemplate.html
+          permalink: 1198-beforeExportArticleTemplate
+        - title: beforeImportImage
+          layout: chapter
+          path: smart-connection-scripting-guide/ScriptingEvents/Events/beforeImportImage.md
+          url: smart-connection-scripting-guide/ScriptingEvents/Events/beforeImportImage.html
+          permalink: 1199-beforeImportImage
+        - title: afterRefreshImage
+          layout: chapter
+          path: smart-connection-scripting-guide/ScriptingEvents/Events/afterRefreshImage.md
+          url: smart-connection-scripting-guide/ScriptingEvents/Events/afterRefreshImage.html
+          permalink: 1189-afterRefreshImage
+        - title: afterRefreshArticle
+          layout: chapter
+          path: smart-connection-scripting-guide/ScriptingEvents/Events/afterRefreshArticle.md
+          url: smart-connection-scripting-guide/ScriptingEvents/Events/afterRefreshArticle.html
+          permalink: 1188-afterRefreshArticle
+        - title: afterCreateLayout
+          layout: chapter
+          path: smart-connection-scripting-guide/ScriptingEvents/Events/afterCreateLayout.md
+          url: smart-connection-scripting-guide/ScriptingEvents/Events/afterCreateLayout.html
+          permalink: 1179-afterCreateLayout
+        - title: afterCreateLayoutTemplate
+          layout: chapter
+          path: smart-connection-scripting-guide/ScriptingEvents/Events/afterCreateLayoutTemplate.md
+          url: smart-connection-scripting-guide/ScriptingEvents/Events/afterCreateLayoutTemplate.html
+          permalink: 1180-afterCreateLayoutTemplate
+        - title: afterCreateJump
+          layout: chapter
+          path: smart-connection-scripting-guide/ScriptingEvents/Events/afterCreateJump.md
+          url: smart-connection-scripting-guide/ScriptingEvents/Events/afterCreateJump.html
+          permalink: 1178-afterCreateJump
+        - title: afterCreateEnterpriseImageFromElvisImage
+          layout: chapter
+          path: smart-connection-scripting-guide/ScriptingEvents/Events/afterCreateEnterpriseImageFromElvisImage.md
+          url: smart-connection-scripting-guide/ScriptingEvents/Events/afterCreateEnterpriseImageFromElvisImage.html
+          permalink: 1177-afterCreateEnterpriseImageFromElvisImage
+        - title: afterCreateArticleTemplate
+          layout: chapter
+          path: smart-connection-scripting-guide/ScriptingEvents/Events/afterCreateArticleTemplate.md
+          url: smart-connection-scripting-guide/ScriptingEvents/Events/afterCreateArticleTemplate.html
+          permalink: 1175-afterCreateArticleTemplate
+        - title: afterCreateContinuationElement
+          layout: chapter
+          path: smart-connection-scripting-guide/ScriptingEvents/Events/afterCreateContinuationElement.md
+          url: smart-connection-scripting-guide/ScriptingEvents/Events/afterCreateContinuationElement.html
+          permalink: 1176-afterCreateContinuationElement
+        - title: afterDetachArticle
+          layout: chapter
+          path: smart-connection-scripting-guide/ScriptingEvents/Events/afterDetachArticle.md
+          url: smart-connection-scripting-guide/ScriptingEvents/Events/afterDetachArticle.html
+          permalink: 1181-afterDetachArticle
+        - title: afterExportArticle
+          layout: chapter
+          path: smart-connection-scripting-guide/ScriptingEvents/Events/afterExportArticle.md
+          url: smart-connection-scripting-guide/ScriptingEvents/Events/afterExportArticle.html
+          permalink: 1182-afterExportArticle
+        - title: afterOpenLayout
+          layout: chapter
+          path: smart-connection-scripting-guide/ScriptingEvents/Events/afterOpenLayout.md
+          url: smart-connection-scripting-guide/ScriptingEvents/Events/afterOpenLayout.html
+          permalink: 1186-afterOpenLayout
+        - title: afterPlace
+          layout: chapter
+          path: smart-connection-scripting-guide/ScriptingEvents/Events/afterPlace.md
+          url: smart-connection-scripting-guide/ScriptingEvents/Events/afterPlace.html
+          permalink: 1187-afterPlace
+        - title: beforeSaveLayout
+          layout: chapter
+          path: smart-connection-scripting-guide/ScriptingEvents/Events/afterOpenArticle.md
+          url: smart-connection-scripting-guide/ScriptingEvents/Events/afterOpenArticle.html
+          permalink: 1185-afterOpenArticle
+        - title: afterLogOn
+          layout: chapter
+          path: smart-connection-scripting-guide/ScriptingEvents/Events/afterLogOn.md
+          url: smart-connection-scripting-guide/ScriptingEvents/Events/afterLogOn.html
+          permalink: 1184-afterLogOn
+        - title: afterExportArticleTemplate
+          layout: chapter
+          path: smart-connection-scripting-guide/ScriptingEvents/Events/afterExportArticleTemplate.md
+          url: smart-connection-scripting-guide/ScriptingEvents/Events/afterExportArticleTemplate.html
+          permalink: 1183-afterExportArticleTemplate
+        - title: afterCreateArticle
+          layout: chapter
+          path: smart-connection-scripting-guide/ScriptingEvents/Events/afterCreateArticle.md
+          url: smart-connection-scripting-guide/ScriptingEvents/Events/afterCreateArticle.html
+          permalink: 1174-afterCreateArticle
+    - title: ManagedArticles
+      layout: section
+      path: smart-connection-scripting-guide/ManagedArticles/index.md
+      url: smart-connection-scripting-guide/ManagedArticles/index.html
+      permalink: 1147-index
+      children:
+      - title: ManagedArticles methods
+        layout: section
+        path: smart-connection-scripting-guide/ManagedArticles/Methods/index.md
+        url: smart-connection-scripting-guide/ManagedArticles/Methods/index.html
+        permalink: 1150-index
+        children:
+        - title: add
+          layout: chapter
+          path: smart-connection-scripting-guide/ManagedArticles/Methods/add.md
+          url: smart-connection-scripting-guide/ManagedArticles/Methods/add.html
+          permalink: 1148-add
+        - title: count
+          layout: chapter
+          path: smart-connection-scripting-guide/ManagedArticles/Methods/count.md
+          url: smart-connection-scripting-guide/ManagedArticles/Methods/count.html
+          permalink: 1149-count
     - title: ManagedArticle
       layout: section
       path: smart-connection-scripting-guide/ManagedArticle/index.md
@@ -243,23 +417,6 @@ toc:
           path: smart-connection-scripting-guide/ManagedArticle/Methods/unplacedComponents.md
           url: smart-connection-scripting-guide/ManagedArticle/Methods/unplacedComponents.html
           permalink: 1143-unplacedComponents
-    - title: ManagedAdverts
-      layout: section
-      path: smart-connection-scripting-guide/ManagedAdverts/index.md
-      url: smart-connection-scripting-guide/ManagedAdverts/index.html
-      permalink: 1130-index
-      children:
-      - title: ManagedAdverts methods
-        layout: section
-        path: smart-connection-scripting-guide/ManagedAdverts/Methods/index.md
-        url: smart-connection-scripting-guide/ManagedAdverts/Methods/index.html
-        permalink: 1132-index
-        children:
-        - title: count
-          layout: chapter
-          path: smart-connection-scripting-guide/ManagedAdverts/Methods/count.md
-          url: smart-connection-scripting-guide/ManagedAdverts/Methods/count.html
-          permalink: 1131-count
     - title: Dossiers
       layout: section
       path: smart-connection-scripting-guide/Dossiers/index.md
@@ -397,6 +554,12 @@ toc:
           path: smart-connection-scripting-guide/Document/Properties/managedLayoutModules.md
           url: smart-connection-scripting-guide/Document/Properties/managedLayoutModules.html
           permalink: 1097-managedLayoutModules
+    - title: Smart Connection Custom Menu Items
+      layout: section
+      path: smart-connection-scripting-guide/CustomMenuItems/index.md
+      url: smart-connection-scripting-guide/CustomMenuItems/index.html
+      permalink: 1171-index
+      children:
     - title: EntIssue
       layout: section
       path: smart-connection-scripting-guide/EntIssue/index.md
@@ -441,6 +604,23 @@ toc:
           path: smart-connection-scripting-guide/EntPublication/Properties/name.md
           url: smart-connection-scripting-guide/EntPublication/Properties/name.html
           permalink: 1121-name
+    - title: ManagedAdverts
+      layout: section
+      path: smart-connection-scripting-guide/ManagedAdverts/index.md
+      url: smart-connection-scripting-guide/ManagedAdverts/index.html
+      permalink: 1130-index
+      children:
+      - title: ManagedAdverts methods
+        layout: section
+        path: smart-connection-scripting-guide/ManagedAdverts/Methods/index.md
+        url: smart-connection-scripting-guide/ManagedAdverts/Methods/index.html
+        permalink: 1132-index
+        children:
+        - title: count
+          layout: chapter
+          path: smart-connection-scripting-guide/ManagedAdverts/Methods/count.md
+          url: smart-connection-scripting-guide/ManagedAdverts/Methods/count.html
+          permalink: 1131-count
     - title: ManagedAdvert
       layout: section
       path: smart-connection-scripting-guide/ManagedAdvert/index.md
