@@ -40,7 +40,7 @@ The `jsonRequest()` method posts a JSON object string as a request to an Enterpr
 
 | Adobe Version | Supported |
 |---------------|-----------|
-| CC            | ✔         |
+| CC            |           |
 | CC 2014       | ✔         |
 | CC 2015       | ✔         |
 | CC 2017       | ✔         |

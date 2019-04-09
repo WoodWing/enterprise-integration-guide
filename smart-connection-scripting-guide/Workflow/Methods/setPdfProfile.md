@@ -38,7 +38,7 @@ The `setPdfProfile()` method sets the profile to use when generating PDF files f
 |---------------|-----------|
 | CC            |           |
 | CC 2014       |           |
-| CC 2015       |           |
+| CC 2015       | ✔ (v11.2) |
 | CC 2017       | ✔ (v12.1) |
 | CC 2018       | ✔         |
 | CC 2019       | ✔         |

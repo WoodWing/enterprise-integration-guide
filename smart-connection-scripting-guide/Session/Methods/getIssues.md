@@ -36,7 +36,7 @@ The `getIssues()` method returns a list of all Issues of the provided Brand.
 
 | Adobe Version | Supported |
 |---------------|---------|
-| CC            | ✔       |
+| CC            |         |
 | CC 2014       | ✔       |
 | CC 2015       | ✔       |
 | CC 2017       | ✔       |
