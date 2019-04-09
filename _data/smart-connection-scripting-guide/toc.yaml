@@ -111,6 +111,74 @@ toc:
       url: smart-connection-scripting-guide/OverrulePlacementsOfArticlesAndDossiers/index.html
       permalink: 1173-index
       children:
+    - title: ManagedWorkflow
+      layout: section
+      path: smart-connection-scripting-guide/Workflow/index.md
+      url: smart-connection-scripting-guide/Workflow/index.html
+      permalink: 1171-index
+      children:
+      - title: ManagedImage properties
+        layout: section
+        path: smart-connection-scripting-guide/Workflow/Properties/index.md
+        url: smart-connection-scripting-guide/Workflow/Properties/index.html
+        permalink: 1155-index
+        children:
+        - title: defaultDossier
+          layout: chapter
+          path: smart-connection-scripting-guide/Workflow/Properties/defaultDossier.md
+          url: smart-connection-scripting-guide/Workflow/Properties/defaultDossier.html
+          permalink: 1182-defaultDossier
+      - title: Workflow methods
+        layout: section
+        path: smart-connection-scripting-guide/Workflow/Methods/index.md
+        url: smart-connection-scripting-guide/Workflow/Methods/index.html
+        permalink: 1174-index
+        children:
+        - title: sendDesignUpdate
+          layout: chapter
+          path: smart-connection-scripting-guide/Workflow/Methods/sendDesignUpdate.md
+          url: smart-connection-scripting-guide/Workflow/Methods/sendDesignUpdate.html
+          permalink: 1179-sendDesignUpdate
+        - title: setPdfProfile
+          layout: chapter
+          path: smart-connection-scripting-guide/Workflow/Methods/setPdfProfile.md
+          url: smart-connection-scripting-guide/Workflow/Methods/setPdfProfile.html
+          permalink: 1180-setPdfProfile
+        - title: updateAllContent
+          layout: chapter
+          path: smart-connection-scripting-guide/Workflow/Methods/updateAllContent.md
+          url: smart-connection-scripting-guide/Workflow/Methods/updateAllContent.html
+          permalink: 1181-updateAllContent
+        - title: saveVersion
+          layout: chapter
+          path: smart-connection-scripting-guide/Workflow/Methods/saveVersion.md
+          url: smart-connection-scripting-guide/Workflow/Methods/saveVersion.html
+          permalink: 1178-saveVersion
+        - title: saveAs
+          layout: chapter
+          path: smart-connection-scripting-guide/Workflow/Methods/saveAs.md
+          url: smart-connection-scripting-guide/Workflow/Methods/saveAs.html
+          permalink: 1177-saveAs
+        - title: checkIn
+          layout: chapter
+          path: smart-connection-scripting-guide/Workflow/Methods/checkIn.md
+          url: smart-connection-scripting-guide/Workflow/Methods/checkIn.html
+          permalink: 1173-checkIn
+        - title: placeObject
+          layout: chapter
+          path: smart-connection-scripting-guide/Workflow/Methods/placeObject.md
+          url: smart-connection-scripting-guide/Workflow/Methods/placeObject.html
+          permalink: 1175-placeObject
+        - title: restoreFromArchive
+          layout: chapter
+          path: smart-connection-scripting-guide/Workflow/Methods/restoreFromArchive.md
+          url: smart-connection-scripting-guide/Workflow/Methods/restoreFromArchive.html
+          permalink: 1176-restoreFromArchive
+        - title: abortCheckOut
+          layout: chapter
+          path: smart-connection-scripting-guide/Workflow/Methods/abortCheckOut.md
+          url: smart-connection-scripting-guide/Workflow/Methods/abortCheckOut.html
+          permalink: 1172-abortCheckOut
     - title: Story
       layout: section
       path: smart-connection-scripting-guide/Story/index.md
