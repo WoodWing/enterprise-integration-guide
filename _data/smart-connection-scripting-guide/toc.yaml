@@ -228,6 +228,82 @@ toc:
           path: smart-connection-scripting-guide/Session/Properties/activeUser.md
           url: smart-connection-scripting-guide/Session/Properties/activeUser.html
           permalink: 1075-activeUser
+      - title: Session methods
+        layout: section
+        path: smart-connection-scripting-guide/Session/Methods/index.md
+        url: smart-connection-scripting-guide/Session/Methods/index.html
+        permalink: 1217-index
+        children:
+        - title: getUserGroups
+          layout: chapter
+          path: smart-connection-scripting-guide/Session/Methods/getUserGroups.md
+          url: smart-connection-scripting-guide/Session/Methods/getUserGroups.html
+          permalink: 1215-getUserGroups
+        - title: getTerm
+          layout: chapter
+          path: smart-connection-scripting-guide/Session/Methods/getTerm.md
+          url: smart-connection-scripting-guide/Session/Methods/getTerm.html
+          permalink: 1214-getTerm
+        - title: getUsers
+          layout: chapter
+          path: smart-connection-scripting-guide/Session/Methods/getUsers.md
+          url: smart-connection-scripting-guide/Session/Methods/getUsers.html
+          permalink: 1216-getUsers
+        - title: login
+          layout: chapter
+          path: smart-connection-scripting-guide/Session/Methods/login.md
+          url: smart-connection-scripting-guide/Session/Methods/login.html
+          permalink: 1218-login
+        - title: reLogin
+          layout: chapter
+          path: smart-connection-scripting-guide/Session/Methods/reLogin.md
+          url: smart-connection-scripting-guide/Session/Methods/reLogin.html
+          permalink: 1220-reLogin
+        - title: logout
+          layout: chapter
+          path: smart-connection-scripting-guide/Session/Methods/logout.md
+          url: smart-connection-scripting-guide/Session/Methods/logout.html
+          permalink: 1219-logout
+        - title: getServers
+          layout: chapter
+          path: smart-connection-scripting-guide/Session/Methods/getServers.md
+          url: smart-connection-scripting-guide/Session/Methods/getServers.html
+          permalink: 1213-getServers
+        - title: getPublications
+          layout: chapter
+          path: smart-connection-scripting-guide/Session/Methods/getPublications.md
+          url: smart-connection-scripting-guide/Session/Methods/getPublications.html
+          permalink: 1212-getPublications
+        - title: getCategory
+          layout: chapter
+          path: smart-connection-scripting-guide/Session/Methods/getCategory.md
+          url: smart-connection-scripting-guide/Session/Methods/getCategory.html
+          permalink: 1208-getCategory
+        - title: getCategories
+          layout: chapter
+          path: smart-connection-scripting-guide/Session/Methods/getCategories.md
+          url: smart-connection-scripting-guide/Session/Methods/getCategories.html
+          permalink: 1207-getCategories
+        - title: getIssue
+          layout: chapter
+          path: smart-connection-scripting-guide/Session/Methods/getIssue.md
+          url: smart-connection-scripting-guide/Session/Methods/getIssue.html
+          permalink: 1209-getIssue
+        - title: getIssues
+          layout: chapter
+          path: smart-connection-scripting-guide/Session/Methods/getIssues.md
+          url: smart-connection-scripting-guide/Session/Methods/getIssues.html
+          permalink: 1210-getIssues
+        - title: getPublication
+          layout: chapter
+          path: smart-connection-scripting-guide/Session/Methods/getPublication.md
+          url: smart-connection-scripting-guide/Session/Methods/getPublication.html
+          permalink: 1211-getPublication
+        - title: forkLogin
+          layout: chapter
+          path: smart-connection-scripting-guide/Session/Methods/forkLogin.md
+          url: smart-connection-scripting-guide/Session/Methods/forkLogin.html
+          permalink: 1206-forkLogin
     - title: Scripting Events
       layout: section
       path: smart-connection-scripting-guide/ScriptingEvents/index.md
