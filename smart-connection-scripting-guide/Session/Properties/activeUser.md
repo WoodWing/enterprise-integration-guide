@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: activeUser
-sortid: 65
+sortid: 98
 permalink: 1075-activeUser
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 Session.activeUser;
 ```

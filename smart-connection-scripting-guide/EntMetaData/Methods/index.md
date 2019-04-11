@@ -1,6 +1,7 @@
 ---
 layout: section
 title: EntMetaData methods
+sortid: 37
 permalink: 1225-index
 ---
 Methods on the [EntMetaData](../index.md) object.

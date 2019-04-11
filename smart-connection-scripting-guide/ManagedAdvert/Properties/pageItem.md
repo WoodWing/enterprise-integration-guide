@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: pageItem
-sortid: 39
+sortid: 48
 permalink: 1129-pageItem
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 ManagedAdvert.pageItem;
 ```

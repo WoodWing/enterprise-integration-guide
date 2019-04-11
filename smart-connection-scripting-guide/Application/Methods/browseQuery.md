@@ -6,6 +6,7 @@ permalink: 1076-browseQuery
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 app.browseQuery(brand, issue, section, state);
 ```

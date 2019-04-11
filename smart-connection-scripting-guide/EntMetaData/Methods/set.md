@@ -1,13 +1,14 @@
 ---
 layout: chapter
 title: set
-sortid: 61
+sortid: 41
 permalink: 1229-set
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
-EntMetaData.set(key,value);
+EntMetaData.set(key, value);
 ```
 
 ### Parameters

@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: defaultDossier
-sortid: 55
+sortid: 109
 permalink: 1182-defaultDossier
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 Workflow.defaultDossier;
 ```

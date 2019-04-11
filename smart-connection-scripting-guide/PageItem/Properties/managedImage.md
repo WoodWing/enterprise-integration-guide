@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: managedImage
-sortid: 27
+sortid: 79
 permalink: 1171-managedImage
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 PageItem.managedImage;
 ```

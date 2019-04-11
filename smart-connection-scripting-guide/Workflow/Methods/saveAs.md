@@ -1,13 +1,14 @@
 ---
 layout: chapter
 title: saveAs
-sortid: 54
-permalink: 1177-saveAs
+sortid: 104
+permalink: 1239-saveAs
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
-
+Workflow.saveAs();
 ```
 
 ### Parameters

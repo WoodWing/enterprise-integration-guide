@@ -1,13 +1,14 @@
 ---
 layout: chapter
 title: sendDesignUpdate
-sortid: 54
+sortid: 106
 permalink: 1179-sendDesignUpdate
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
-
+Workflow.sendDesignUpdate();
 ```
 
 ### Parameters

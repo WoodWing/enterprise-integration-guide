@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: queryObjects
-sortid: 8
+sortid: 7
 permalink: 1083-queryObjects
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 app.queryObjects(criteria);
 ```

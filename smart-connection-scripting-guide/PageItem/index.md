@@ -1,6 +1,7 @@
 ---
 layout: section
 title: PageItem
+permalink: 1232-index
 ---
 
 ### Properties

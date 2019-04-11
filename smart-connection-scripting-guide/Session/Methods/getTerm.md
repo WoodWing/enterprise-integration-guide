@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: getTerm
-sortid: 61
+sortid: 89
 permalink: 1214-getTerm
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 Session.getTerm(term);
 ```

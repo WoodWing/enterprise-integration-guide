@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: refresh
-sortid: 48
+sortid: 57
 permalink: 1142-refresh
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 ManagedArticle.refresh();
 ```

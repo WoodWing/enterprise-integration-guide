@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: count
-sortid: 61
+sortid: 34
 permalink: 1222-count
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 EntMetaData.count();
 ```

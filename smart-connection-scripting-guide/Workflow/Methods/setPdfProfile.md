@@ -1,13 +1,14 @@
 ---
 layout: chapter
 title: setPdfProfile
-sortid: 54
+sortid: 107
 permalink: 1180-setPdfProfile
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
-
+Workflow.sendDesignUpdate(pdfProfile);
 ```
 
 ### Parameters

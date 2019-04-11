@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: components
-sortid: 50
+sortid: 59
 permalink: 1144-components
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 ManagedArticle.components;
 ```

@@ -1,13 +1,14 @@
 ---
 layout: chapter
 title: restoreFromArchive
-sortid: 54
+sortid: 103
 permalink: 1176-restoreFromArchive
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
-
+Workflow.restoreFromArchive([pathInElvis] [, imageRestoreLocation]);
 ```
 
 ### Parameters

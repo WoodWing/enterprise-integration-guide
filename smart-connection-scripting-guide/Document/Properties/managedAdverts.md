@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: managedAdverts
-sortid: 17
+sortid: 16
 permalink: 1094-managedAdverts
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 Document.managedAdverts;
 ```

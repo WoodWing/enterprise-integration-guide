@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: activeEdition
-sortid: 13
+sortid: 12
 permalink: 1089-activeEdition
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 Document.activeEdition;
 ```

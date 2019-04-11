@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: getIssues
-sortid: 61
+sortid: 85
 permalink: 1210-getIssues
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 Session.getIssues(brandName);
 ```

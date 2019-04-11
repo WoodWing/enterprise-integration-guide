@@ -1,13 +1,14 @@
 ---
 layout: chapter
 title: placeObject
-sortid: 54
+sortid: 102
 permalink: 1175-placeObject
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
-
+Workflow.placeObject(id, where, position);
 ```
 
 ### Parameters
@@ -22,7 +23,7 @@ The page or spread to place the article on.
 
 **position** *Array of 2 Units*
 
- The left top starting point used for placing the article’s template, in the form (top, left). Th origin of the place is the top left corner of the page or spread object given.
+ The left top starting point used for placing the article’s template, in the form (top, left). The origin of the place is the top left corner of the page or spread object given.
 
 **Return value** *Array Of PageItem*
 

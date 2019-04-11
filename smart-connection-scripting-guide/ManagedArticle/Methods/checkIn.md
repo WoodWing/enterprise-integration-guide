@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: checkIn
-sortid: 42
+sortid: 51
 permalink: 1135-checkIn
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 ManagedArticle.checkIn();
 ```

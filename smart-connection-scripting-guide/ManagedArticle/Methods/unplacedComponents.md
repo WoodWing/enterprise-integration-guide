@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: unplacedComponents
-sortid: 49
+sortid: 58
 permalink: 1143-unplacedComponents
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 ManagedArticle.unplacedComponents();
 ```

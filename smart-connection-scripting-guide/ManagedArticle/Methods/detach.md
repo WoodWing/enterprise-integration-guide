@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: detach
-sortid: 45
+sortid: 54
 permalink: 1138-detach
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 ManagedArticle.detach();
 ```

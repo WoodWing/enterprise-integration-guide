@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: detachFrame
-sortid: 47
+sortid: 56
 permalink: 1140-detachFrame
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 ManagedArticle.detachFrame(pageItem);
 ```

@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: logout
-sortid: 61
+sortid: 93
 permalink: 1219-logout
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 Session.logout();
 ```

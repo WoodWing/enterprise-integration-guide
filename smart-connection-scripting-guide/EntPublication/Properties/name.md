@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: name
-sortid: 35
+sortid: 44
 permalink: 1121-name
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 EntPublication.name;
 ```

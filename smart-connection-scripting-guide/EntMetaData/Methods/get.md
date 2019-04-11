@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: get
-sortid: 61
+sortid: 35
 permalink: 1223-get
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 EntMetaData.get(key);
 ```

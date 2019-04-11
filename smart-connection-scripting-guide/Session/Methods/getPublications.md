@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: getPublications
-sortid: 61
+sortid: 87
 permalink: 1212-getPublications
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 Session.getPublications();
 ```

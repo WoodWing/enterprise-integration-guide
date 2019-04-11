@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: has
-sortid: 61
+sortid: 36
 permalink: 1224-has
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 EntMetaData.has(key);
 ```

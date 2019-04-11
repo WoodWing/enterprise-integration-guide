@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: activeServer
-sortid: 62
+sortid: 95
 permalink: 1070-activeServer
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 Session.activeServer;
 ```

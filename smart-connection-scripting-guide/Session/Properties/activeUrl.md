@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: activeUrl
-sortid: 64
+sortid: 97
 permalink: 1074-activeUrl
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 Session.activeUrl;
 ```

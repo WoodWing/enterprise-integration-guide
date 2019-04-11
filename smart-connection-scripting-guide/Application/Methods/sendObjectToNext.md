@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: sendObjectToNext
-sortid: 9
+sortid: 8
 permalink: 1084-sendObjectToNext
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 app.sendObjectToNext(objectId);
 ```

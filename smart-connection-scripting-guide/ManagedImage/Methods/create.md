@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: create
-sortid: 54
+sortid: 63
 permalink: 1152-create
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 ManagedImage.create(pageItem);
 ```

@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: reLogin
-sortid: 61
+sortid: 94
 permalink: 1220-reLogin
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 Session.reLogin();
 ```

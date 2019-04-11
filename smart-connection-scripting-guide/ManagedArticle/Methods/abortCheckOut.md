@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: abortCheckOut
-sortid: 41
+sortid: 50
 permalink: 1134-abortCheckOut
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 ManagedArticle.abortCheckOut();
 ```

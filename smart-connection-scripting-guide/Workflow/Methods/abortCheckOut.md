@@ -1,13 +1,14 @@
 ---
 layout: chapter
 title: abortCheckOut
-sortid: 54
+sortid: 100
 permalink: 1172-abortCheckOut
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
-
+Workflow.saveVersion();
 ```
 
 ### Parameters

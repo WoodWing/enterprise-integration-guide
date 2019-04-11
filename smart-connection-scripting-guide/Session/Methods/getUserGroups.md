@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: getUserGroups
-sortid: 61
+sortid: 90
 permalink: 1215-getUserGroups
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 Session.getUserGroups();
 ```

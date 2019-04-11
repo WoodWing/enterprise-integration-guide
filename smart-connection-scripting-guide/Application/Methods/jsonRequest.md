@@ -6,6 +6,7 @@ permalink: 1079-jsonRequest
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 app.jsonRequest(jsonUrl, jsonRequest);
 ```

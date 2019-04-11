@@ -6,6 +6,7 @@ permalink: 1081-offlineQuery
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 app.offlineQuery();
 ```

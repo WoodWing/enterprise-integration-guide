@@ -6,6 +6,7 @@ permalink: 1117-name
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 EntIssue.name;
 ```

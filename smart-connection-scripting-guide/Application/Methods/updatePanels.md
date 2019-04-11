@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: updatePanels
-sortid: 11
+sortid: 10
 permalink: 1086-updatePanels
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy")
 ```javascript
 app.updatePanels();
 ```

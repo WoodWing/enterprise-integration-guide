@@ -1,6 +1,7 @@
 ---
 layout: section
 title: PageItem properties
+permalink: 1238-index
 ---
 Properties on the PageItem object.
 

@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: count
-sortid: 40
+sortid: 49
 permalink: 1131-count
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 ManagedAdverts.count();
 ```

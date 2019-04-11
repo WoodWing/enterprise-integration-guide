@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: activeTicket
-sortid: 63
+sortid: 96
 permalink: 1071-activeTicket
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 Session.activeTicket;
 ```

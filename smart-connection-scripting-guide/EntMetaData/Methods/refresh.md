@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: refresh
-sortid: 61
+sortid: 39
 permalink: 1227-refresh
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 EntMetaData.refresh();
 ```

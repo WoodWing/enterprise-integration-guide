@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: pageItem
-sortid: 56
+sortid: 65
 permalink: 1156-pageItem
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 ManagedImage.pageItem;
 ```

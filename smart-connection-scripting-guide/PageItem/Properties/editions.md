@@ -1,10 +1,12 @@
 ---
 layout: chapter
 title: editions
-sortid: 28
+sortid: 75
+permalink: 1236-editions
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 PageItem.editions;
 ```

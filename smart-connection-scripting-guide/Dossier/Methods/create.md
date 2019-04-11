@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: create
-sortid: 22
+sortid: 21
 permalink: 1100-create
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 Dossier.create();
 ```

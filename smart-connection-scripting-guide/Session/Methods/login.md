@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: login
-sortid: 61
+sortid: 92
 permalink: 1218-login
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 Session.login(username, password, server, requestInfo);
 ```

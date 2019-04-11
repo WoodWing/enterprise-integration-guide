@@ -17,21 +17,21 @@ Below is a list with common properties, exceptions and sample values.
 
 |Key |Type |Description |Sample Value|
 |----|-----|------------|------------|
-|Core_ID |string |Object ID |“123”|
-|Core_Name |string |Name |“32_Intro”|
-|Core_Publication |string |Brand |“WW News”|
-|Core_Issue |string |Issue |“2nd Issue”|
-|Core_Section |string |Category |“News”|
-|Core_Basket |string |Status |“Ready”|
-|Type |string |Object Type |“Article”, “Image”|
-|LockedBy |string |In use by |“woodwing”|
-|RouteTo |string |Routed to |“woodwing”|
-|Comment |string |Comment |“This image needs retouching”|
-|Format |string |Object Format |“application/indesign”|
-|Editions |Array of string |Editions |[ “North, “South” ]|
-|Deadline |string |Deadline |“2007-11-05T18:00:00|
-|CopyrightMarked |string |Copyright Marked |“false”|
-|C_ACUSTOMPROP |string |Custom property ‘A custom prop’ |“A value”|
+|Core_ID |string |Object ID |"123"|
+|Core_Name |string |Name |"32_Intro"|
+|Core_Publication |string |Brand |"WW News"|
+|Core_Issue |string |Issue |"2nd Issue"|
+|Core_Section |string |Category |"News"|
+|Core_Basket |string |Status |"Ready"|
+|Type |string |Object Type |"Article", "Image"|
+|LockedBy |string |In use by |"woodwing"|
+|RouteTo |string |Routed to |"woodwing"|
+|Comment |string |Comment |"This image needs retouching"|
+|Format |string |Object Format |"application/indesign"|
+|Editions |Array of string |Editions |[ "North, “South" ]|
+|Deadline |string |Deadline |"2007-11-05T18:00:00"|
+|CopyrightMarked |string |Copyright Marked |"false"|
+|C_ACUSTOMPROP |string |Custom property 'A custom prop' |"A value"|
 
 ### Properties
 

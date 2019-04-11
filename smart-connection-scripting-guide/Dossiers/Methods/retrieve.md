@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: retrieve
-sortid: 31
+sortid: 30
 permalink: 1113-retrieve
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 Dossiers.retrieve(objectId);
 ```

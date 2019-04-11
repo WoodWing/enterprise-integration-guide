@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: addItem
-sortid: 25
+sortid: 24
 permalink: 1104-removeItem
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 Dossier.addItem(objectId);
 ```

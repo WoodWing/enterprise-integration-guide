@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: length
-sortid: 32
+sortid: 42
 permalink: 1231-length
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 EntMetaData.length;
 ```

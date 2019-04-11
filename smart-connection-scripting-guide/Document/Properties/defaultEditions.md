@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: defaultEditions
-sortid: 14
+sortid: 13
 permalink: 1090-defaultEditions
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 Document.defaultEditions;
 ```

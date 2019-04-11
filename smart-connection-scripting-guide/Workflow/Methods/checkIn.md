@@ -1,13 +1,14 @@
 ---
 layout: chapter
 title: checkIn
-sortid: 54
+sortid: 101
 permalink: 1173-checkIn
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
-
+Workflow.checkIn();
 ```
 
 ### Parameters

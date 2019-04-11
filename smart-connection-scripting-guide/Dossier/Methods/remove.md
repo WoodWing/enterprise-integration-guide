@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: remove
-sortid: 24
+sortid: 23
 permalink: 1103-remove
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 Dossier.remove();
 ```

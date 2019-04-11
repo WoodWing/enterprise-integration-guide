@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: getCategories
-sortid: 61
+sortid: 82
 permalink: 1207-getCategories
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 Session.getCategories(brandName,issueName);
 ```

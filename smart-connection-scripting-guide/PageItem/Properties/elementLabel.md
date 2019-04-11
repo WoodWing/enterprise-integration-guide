@@ -1,10 +1,12 @@
 ---
 layout: chapter
 title: elementLabel
-sortid: 27
+sortid: 76
+permalink: 1237-elementLabel
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 PageItem.elementLabel;
 ```

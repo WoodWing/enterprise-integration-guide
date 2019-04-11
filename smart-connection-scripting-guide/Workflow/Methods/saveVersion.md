@@ -1,13 +1,14 @@
 ---
 layout: chapter
 title: saveVersion
-sortid: 54
+sortid: 105
 permalink: 1178-saveVersion
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
-
+Workflow.saveVersion();
 ```
 
 ### Parameters

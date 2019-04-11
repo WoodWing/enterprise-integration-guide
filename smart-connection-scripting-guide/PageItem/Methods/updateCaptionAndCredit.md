@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: updateCaptionAndCredit
-sortid: 21
+sortid: 73
 permalink: 1168-updateCaptionAndCredit
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 PageItem.updateCaptionAndCredit();
 ```
@@ -35,25 +36,25 @@ The sample will show how to update the credit and/or caption values on specific 
 ```javascript
 try
 {
-var myDoc = doc.documents.item(0);
-// Update the Caption and Credit on an image item.
-var myGraphic = myDoc.allGraphics[0];
-myGraphic.updateCaptionAndCredit();
-// Update the Caption and Credit on a spline item.
-var myFrame = myDoc.pageItems.item(0);
-myFrame.updateCaptionAndCredit();
-// Update the Caption of a spline item.
-var myCaptionFrame = myDoc.pageItems.item(1);
-myCaptionFrame.updateCaptionAndCredit();
-// Update the Credit of a spline item.
-var myCreditFrame = myDoc.pageItems.item(2);
-myCreditFrame.updateCaptionAndCredit();
+    var myDoc = doc.documents.item(0);
+    // Update the Caption and Credit on an image item.
+    var myGraphic = myDoc.allGraphics[0];
+    myGraphic.updateCaptionAndCredit();
+    // Update the Caption and Credit on a spline item.
+    var myFrame = myDoc.pageItems.item(0);
+    myFrame.updateCaptionAndCredit();
+    // Update the Caption of a spline item.
+    var myCaptionFrame = myDoc.pageItems.item(1);
+    myCaptionFrame.updateCaptionAndCredit();
+    // Update the Credit of a spline item.
+    var myCreditFrame = myDoc.pageItems.item(2);
+    myCreditFrame.updateCaptionAndCredit();
 }
 catch( e)
 {
-desc = e.description;
-num = e.number;
-alert( "error " + num + ": " + desc );
+    desc = e.description;
+    num = e.number;
+    alert( "error " + num + ": " + desc );
 }
 ```
 

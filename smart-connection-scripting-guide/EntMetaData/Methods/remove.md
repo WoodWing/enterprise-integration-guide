@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: remove
-sortid: 61
+sortid: 40
 permalink: 1228-remove
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 EntMetaData.remove(key);
 ```

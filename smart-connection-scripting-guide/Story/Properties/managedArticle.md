@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: managedArticle
-sortid: 62
+sortid: 99
 permalink: 1170-managedArticle
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 Story.managedArticle;
 ```

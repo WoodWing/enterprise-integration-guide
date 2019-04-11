@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: entMetaData
-sortid: 38
+sortid: 47
 permalink: 1127-entMetaData
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 ManagedAdvert.entMetaData;
 ```

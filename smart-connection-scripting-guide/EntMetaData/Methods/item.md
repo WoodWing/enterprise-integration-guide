@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: item
-sortid: 61
+sortid: 38
 permalink: 1226-item
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 EntMetaData.item(index);
 ```
@@ -16,7 +17,7 @@ EntMetaData.item(index);
 
 The index (number) or name (string)
 
-**Return value** *string, Array of string, number, Array of number, boolean or Array of boolean*
+**Return value** *string, string[], number, number[], boolean or boolean[]*
 
 The property value for the given index or key name. If the key does not exist, an error will be thrown.
 

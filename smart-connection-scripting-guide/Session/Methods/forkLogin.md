@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: forkLogin
-sortid: 61
+sortid: 81
 permalink: 1206-forkLogin
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 Session.forkLogin(username, ticket, server, quick, requestInfo);
 ```

@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: count
-sortid: 30
+sortid: 28
 permalink: 1111-count
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 Dossiers.count();
 ```

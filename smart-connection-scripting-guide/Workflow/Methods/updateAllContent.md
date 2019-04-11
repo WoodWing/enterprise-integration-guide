@@ -1,13 +1,14 @@
 ---
 layout: chapter
 title: updateAllContent
-sortid: 54
+sortid: 108
 permalink: 1181-updateAllContent
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
-
+Workflow.updateAllContent();
 ```
 
 ### Parameters

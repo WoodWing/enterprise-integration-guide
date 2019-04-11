@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: getUsers
-sortid: 61
+sortid: 91
 permalink: 1216-getUsers
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 Session.getUsers();
 ```

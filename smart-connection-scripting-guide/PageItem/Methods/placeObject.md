@@ -1,10 +1,12 @@
 ---
 layout: chapter
 title: placeObject
-sortid: 21
+sortid: 72
+permalink: 1234-placeObject
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 PageItem.placeObject(id [, componentId] [, fileType]);
 ```

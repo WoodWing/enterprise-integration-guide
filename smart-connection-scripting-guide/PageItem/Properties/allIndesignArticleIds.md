@@ -1,10 +1,12 @@
 ---
 layout: chapter
 title: allIndesignArticleIds
-sortid: 27
+sortid: 74
+permalink: 1235-allIndesignArticleIds
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 PageItem.allIndesignArticleIds;
 ```

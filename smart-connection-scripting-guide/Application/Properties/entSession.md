@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: entSession
-sortid: 12
+sortid: 11
 permalink: 1087-entSession
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 app.entSession;
 ```

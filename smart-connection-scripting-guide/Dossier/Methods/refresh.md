@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: refresh
-sortid: 23
+sortid: 22
 permalink: 1102-refresh
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 Dossier.refresh();
 ```

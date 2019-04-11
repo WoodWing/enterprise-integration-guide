@@ -5,12 +5,12 @@ permalink: 1174-index
 ---
 Methods on the Workflow object.
 
-* [checkIn](./checkIn.md)
 * [abortCheckOut](./abortCheckOut.md)
-* [saveAs](./saveAs.md)
-* [saveVersion](./saveVersion.md)
-* [updateAllContent](./updateAllContent.md)
-* [sendDesignUpdate](./sendDesignUpdate.md)
+* [checkIn](./checkIn.md)
 * [placeObject](./placeObject.md)
 * [restoreFromArchive](./restoreFromArchive.md)
+* [saveAs](./saveAs.md)
+* [saveVersion](./saveVersion.md)
+* [sendDesignUpdate](./sendDesignUpdate.md)
 * [setPdfProfile](./setPdfProfile.md)
+* [updateAllContent](./updateAllContent.md)

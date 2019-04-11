@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: count
-sortid: 58
+sortid: 67
 permalink: 1159-count
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 ManagedImages.count();
 ```
