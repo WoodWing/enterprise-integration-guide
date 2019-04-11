@@ -1,6 +1,6 @@
 ---
 layout: section
-title: ManagedWorkflow
+title: Workflow
 permalink: 1171-index
 ---
 Provides access to workflow actions for a document

@@ -1,6 +1,6 @@
 ---
 layout: section
-title: ManagedImage properties
+title: Workflow properties
 permalink: 1155-index
 ---
 Properties on the ManagedImage object.
