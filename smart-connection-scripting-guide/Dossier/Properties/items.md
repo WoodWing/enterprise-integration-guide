@@ -6,6 +6,7 @@ permalink: 1108-items
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 Dossier.items;
 ```
@@ -31,9 +32,9 @@ The `items` property is used to get a list of IDs of Enterprise objects which ar
 ```javascript
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

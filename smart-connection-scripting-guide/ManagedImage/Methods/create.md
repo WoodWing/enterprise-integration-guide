@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: create
-sortid: 54
+sortid: 63
 permalink: 1152-create
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 ManagedImage.create(pageItem);
 ```
@@ -32,9 +33,9 @@ The `create()` method creates an image from the given page item in the Enterpris
 
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

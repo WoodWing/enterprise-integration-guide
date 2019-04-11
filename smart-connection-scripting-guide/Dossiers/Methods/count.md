@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: count
-sortid: 30
+sortid: 28
 permalink: 1111-count
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 Dossiers.count();
 ```
@@ -28,9 +29,9 @@ The `count()` method returns the number of Dossier objects within the Dossiers c
 
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

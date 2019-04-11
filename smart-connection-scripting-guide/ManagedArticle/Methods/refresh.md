@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: refresh
-sortid: 48
+sortid: 57
 permalink: 1142-refresh
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 ManagedArticle.refresh();
 ```
@@ -28,9 +29,9 @@ The `refresh()` method updates the content of the placed Article.
 
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

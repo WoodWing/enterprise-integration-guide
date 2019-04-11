@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: add
-sortid: 52
+sortid: 61
 permalink: 1148-add
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 ManagedArticles.add();
 ```
@@ -29,9 +30,9 @@ Does not actually create the Article in Enterprise.
 
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

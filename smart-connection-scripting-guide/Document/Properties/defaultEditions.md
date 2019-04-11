@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: defaultEditions
-sortid: 14
+sortid: 13
 permalink: 1090-defaultEditions
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 Document.defaultEditions;
 ```
@@ -31,9 +32,9 @@ The `defaultEditions` property is used to get the list of Edition names that new
 ```javascript
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

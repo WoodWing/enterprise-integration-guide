@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: managedImages
-sortid: 19
+sortid: 18
 permalink: 1096-managedImages
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 Document.managedImages;
 ```
@@ -31,9 +32,9 @@ The `managedImages` property is used to get all managed images belonging to the 
 ```javascript
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

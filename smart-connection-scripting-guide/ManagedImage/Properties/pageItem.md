@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: pageItem
-sortid: 56
+sortid: 65
 permalink: 1156-pageItem
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 ManagedImage.pageItem;
 ```
@@ -31,9 +32,9 @@ The `pageItem` property is used to get access to the associated InDesign PageIte
 ```javascript
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

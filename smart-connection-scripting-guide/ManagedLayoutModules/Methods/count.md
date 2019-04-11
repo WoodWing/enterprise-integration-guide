@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: count
-sortid: 61
+sortid: 70
 permalink: 1166-count
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 ManagedLayoutModules.count();
 ```
@@ -28,9 +29,9 @@ The `count()` method returns the number of ManagedLayoutModule objects within th
 
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

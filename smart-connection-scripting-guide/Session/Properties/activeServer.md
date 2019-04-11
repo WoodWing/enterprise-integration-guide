@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: activeServer
-sortid: 62
+sortid: 95
 permalink: 1070-activeServer
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 Session.activeServer;
 ```
@@ -42,9 +43,9 @@ var serverName = sessionObject.activeServer;
 // serverUrl is now 'Enterprise v10.5.0'.
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

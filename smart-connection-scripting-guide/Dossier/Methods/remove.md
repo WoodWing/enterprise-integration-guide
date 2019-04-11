@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: remove
-sortid: 24
+sortid: 23
 permalink: 1103-remove
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 Dossier.remove();
 ```
@@ -28,9 +29,9 @@ The `remove()` method removes the Dossier object. The corresponding Dossier is r
 
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

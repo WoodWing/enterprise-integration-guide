@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: entWorkflow
-sortid: 16
+sortid: 15
 permalink: 1092-entWorkflow
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 Document.entWorkflow;
 ```
@@ -31,9 +32,9 @@ The `entWorkflow` property is used to get access to the Enterprise worlkflow act
 ```javascript
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

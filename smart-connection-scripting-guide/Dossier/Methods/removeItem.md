@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: addItem
-sortid: 25
+sortid: 24
 permalink: 1104-removeItem
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 Dossier.addItem(objectId);
 ```
@@ -32,9 +33,9 @@ The `addItem()` method adds an item to the Dossier. Adds the item to the corresp
 
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

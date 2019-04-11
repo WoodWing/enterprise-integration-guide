@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: sendObjectToNext
-sortid: 9
+sortid: 8
 permalink: 1084-sendObjectToNext
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 app.sendObjectToNext(objectId);
 ```
@@ -32,9 +33,9 @@ The `sendObjectToNext()` method sends an object to its next status. Throws an ex
 
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

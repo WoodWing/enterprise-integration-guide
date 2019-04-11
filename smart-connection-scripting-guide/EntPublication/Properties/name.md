@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: name
-sortid: 35
+sortid: 44
 permalink: 1121-name
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 EntPublication.name;
 ```
@@ -31,9 +32,9 @@ The `name` property is used to get the name of the Brand.
 ```javascript
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

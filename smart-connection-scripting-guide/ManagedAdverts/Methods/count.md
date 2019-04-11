@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: count
-sortid: 40
+sortid: 49
 permalink: 1131-count
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 ManagedAdverts.count();
 ```
@@ -28,9 +29,9 @@ The `count()` method returns the number of ManagedAdvert objects within the Mana
 
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

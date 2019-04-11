@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: activeEdition
-sortid: 13
+sortid: 12
 permalink: 1089-activeEdition
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 Document.activeEdition;
 ```
@@ -32,9 +33,9 @@ The metadata of the Document contains all possible Editions that can be set.
 ```javascript
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

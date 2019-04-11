@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: abortCheckOut
-sortid: 41
+sortid: 50
 permalink: 1134-abortCheckOut
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 ManagedArticle.abortCheckOut();
 ```
@@ -28,9 +29,9 @@ The `abortCheckOut()` method cancels the check-out of the placed Article.
 
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

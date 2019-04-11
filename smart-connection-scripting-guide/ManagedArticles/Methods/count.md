@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: count
-sortid: 53
+sortid: 62
 permalink: 1149-count
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 ManagedArticles.count();
 ```
@@ -28,9 +29,9 @@ The `count()` method returns the number of ManagedArticle objects within the Man
 
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

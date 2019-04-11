@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: retrieve
-sortid: 31
+sortid: 30
 permalink: 1113-retrieve
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 Dossiers.retrieve(objectId);
 ```
@@ -32,9 +33,9 @@ The `retrieve()` method retrieves a Dossier from the Enterprise system and adds 
 
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

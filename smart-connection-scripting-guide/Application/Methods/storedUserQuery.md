@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: storedUserQuery
-sortid: 10
+sortid: 9
 permalink: 1085-storedUserQuery
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 app.storedUserQuery(queryName);
 ```
@@ -32,9 +33,9 @@ The `storedUserQuery()` method generates the result for the strored user query e
 
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

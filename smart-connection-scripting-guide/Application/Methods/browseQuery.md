@@ -6,6 +6,7 @@ permalink: 1076-browseQuery
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 app.browseQuery(brand, issue, section, state);
 ```
@@ -85,13 +86,13 @@ var queryResult = app.browseQuery("WW News", "1st Issue", "News", "Ready");
 //  Total Entries: 3"
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
-|---------------|---------|
-| CC            | ✔       |
-| CC 2014       | ✔       |
-| CC 2015       | ✔       |
-| CC 2017       | ✔       |
-| CC 2018       | ✔       |
-| CC 2019       | ✔       |
+| Adobe Version | Supported |
+|---------------|-----------|
+| CC            | ✔         |
+| CC 2014       | ✔         |
+| CC 2015       | ✔         |
+| CC 2017       | ✔         |
+| CC 2018       | ✔         |
+| CC 2019       | ✔         |

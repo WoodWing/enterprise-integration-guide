@@ -1,0 +1,53 @@
+---
+layout: chapter
+title: getCategory
+sortid: 83
+permalink: 1208-getCategory
+---
+## Syntax
+
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
+```javascript
+Session.getCategory(brandName, categoryName, issueName);
+```
+
+### Parameters
+
+**publication** *string*
+
+The name of the Brand.
+
+**category** *string*
+
+The name of the Category..
+
+**issue** *string (Optional)*
+
+The name of the overruled Issue.
+
+**Return value** *[EntSection](../../EntSection/index.md)*
+
+Returns the Category with the provided name. Throws an exception if the Category does not exist.
+
+## Description
+
+The `getCategory()` method returns the Category with the provided name. 
+
+## Examples
+
+**Example title**
+
+```javascript
+
+```
+
+## Supported versions
+
+| Adobe Version | Supported |
+|---------------|---------|
+| CC            | ✔       |
+| CC 2014       | ✔       |
+| CC 2015       | ✔       |
+| CC 2017       | ✔       |
+| CC 2018       | ✔       |
+| CC 2019       | ✔       |

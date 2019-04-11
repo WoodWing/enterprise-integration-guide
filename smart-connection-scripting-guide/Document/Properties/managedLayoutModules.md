@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: managedLayoutModules
-sortid: 20
+sortid: 19
 permalink: 1097-managedLayoutModules
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 Document.managedLayoutModules;
 ```
@@ -31,9 +32,9 @@ The `managedLayoutModules` property is used to get all managed Layout Modules be
 ```javascript
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

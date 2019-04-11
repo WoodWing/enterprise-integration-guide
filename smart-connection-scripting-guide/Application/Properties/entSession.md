@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: entSession
-sortid: 12
+sortid: 11
 permalink: 1087-entSession
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 app.entSession;
 ```
@@ -41,9 +42,9 @@ var activeSession = (sessionObject.activeUrl !== "");
 // When not logged in, activeSession is 'false'.
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

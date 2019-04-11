@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: save
-sortid: 26
+sortid: 25
 permalink: 1105-save
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 Dossier.save();
 ```
@@ -28,9 +29,9 @@ The `save()` method saves the Dossier object. The corresponding Dossier is saved
 
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: components
-sortid: 50
+sortid: 59
 permalink: 1144-components
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 ManagedArticle.components;
 ```
@@ -31,9 +32,9 @@ The `components` property is used to get access to the InDesign page items and s
 ```javascript
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

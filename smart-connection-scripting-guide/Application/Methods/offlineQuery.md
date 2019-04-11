@@ -6,6 +6,7 @@ permalink: 1081-offlineQuery
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 app.offlineQuery();
 ```
@@ -28,13 +29,13 @@ The `namedQuery()` method performs an offline query.
 
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
-|---------------|---------|
-| CC            | ✔       |
-| CC 2014       | ✔       |
-| CC 2015       | ✔       |
-| CC 2017       | ✔       |
-| CC 2018       | ✔       |
-| CC 2019       | ✔       |
+| Adobe Version | Supported |
+|---------------|-----------|
+| CC            | ✔         |
+| CC 2014       | ✔         |
+| CC 2015       | ✔         |
+| CC 2017       | ✔         |
+| CC 2018       | ✔         |
+| CC 2019       | ✔         |

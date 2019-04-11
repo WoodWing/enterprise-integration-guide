@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: managedAdverts
-sortid: 17
+sortid: 16
 permalink: 1094-managedAdverts
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 Document.managedAdverts;
 ```
@@ -31,9 +32,9 @@ The `managedAdverts` property is used to get all managed adverts belonging to th
 ```javascript
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

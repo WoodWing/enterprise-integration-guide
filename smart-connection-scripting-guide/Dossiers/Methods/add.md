@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: add
-sortid: 29
+sortid: 27
 permalink: 1110-add
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 Dossiers.add();
 ```
@@ -29,9 +30,9 @@ Does not actually create the Dossier in Enterprise.
 
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

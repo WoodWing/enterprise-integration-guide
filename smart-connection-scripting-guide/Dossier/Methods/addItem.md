@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: removeItem
-sortid: 21
+sortid: 20
 permalink: 1099-addItem
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 Dossier.removeItem(objectId);
 ```
@@ -32,9 +33,9 @@ The `removeItem()` method removes an item from the Dossier. Removes the item fro
 
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

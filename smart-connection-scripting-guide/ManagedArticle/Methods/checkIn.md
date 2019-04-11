@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: checkIn
-sortid: 42
+sortid: 51
 permalink: 1135-checkIn
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 ManagedArticle.checkIn();
 ```
@@ -28,9 +29,9 @@ The `checkIn()` method checks-in the placed Article in the Enterprise system.
 
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

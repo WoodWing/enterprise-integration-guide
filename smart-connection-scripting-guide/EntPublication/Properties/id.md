@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: id
-sortid: 34
+sortid: 43
 permalink: 1119-id
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 EntPublication.id;
 ```
@@ -31,9 +32,9 @@ The `id` property is used to get the ID of the Brand.
 ```javascript
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

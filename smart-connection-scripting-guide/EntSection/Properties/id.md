@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: id
-sortid: 36
+sortid: 45
 permalink: 1123-id
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 EntSection.id;
 ```
@@ -31,9 +32,9 @@ The `id` property is used to get the ID of the Category.
 ```javascript
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

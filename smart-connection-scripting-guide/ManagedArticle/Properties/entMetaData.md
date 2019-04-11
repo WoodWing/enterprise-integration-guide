@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: entMetaData
-sortid: 51
+sortid: 60
 permalink: 1145-entMetaData
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 ManagedArticle.entMetaData;
 ```
@@ -31,9 +32,9 @@ The `entMetaData` property is used to get the Enterprise metadata associated wit
 ```javascript
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: updatePanels
-sortid: 11
+sortid: 10
 permalink: 1086-updatePanels
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy")
 ```javascript
 app.updatePanels();
 ```
@@ -28,9 +29,9 @@ The `updatePanels()` method refreshes the contents of all Enterprise query panel
 
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

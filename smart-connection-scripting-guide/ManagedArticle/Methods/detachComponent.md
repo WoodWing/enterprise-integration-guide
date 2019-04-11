@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: detachComponent
-sortid: 46
+sortid: 55
 permalink: 1139-detachComponent
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 ManagedArticle.detachComponent(pageItem);
 ```
@@ -32,9 +33,9 @@ The `detachComponent()` method removes a component from a multi-component Articl
 
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

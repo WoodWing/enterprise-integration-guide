@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: queryObjects
-sortid: 8
+sortid: 7
 permalink: 1083-queryObjects
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 app.queryObjects(criteria);
 ```
@@ -37,13 +38,13 @@ The `queryObjects()` method performs a user query based in the passed criteria.
 
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
-|---------------|---------|
-| CC            | ✔       |
-| CC 2014       | ✔       |
-| CC 2015       | ✔       |
-| CC 2017       | ✔       |
-| CC 2018       | ✔       |
-| CC 2019       | ✔       |
+| Adobe Version | Supported |
+|---------------|-----------|
+| CC            | ✔         |
+| CC 2014       | ✔         |
+| CC 2015       | ✔         |
+| CC 2017       | ✔         |
+| CC 2018       | ✔         |
+| CC 2019       | ✔         |

@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: add
-sortid: 57
+sortid: 66
 permalink: 1158-add
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 ManagedImages.add();
 ```
@@ -28,9 +29,9 @@ The `add()` method creates a new ManagedImage scripting object that can serve as
 
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

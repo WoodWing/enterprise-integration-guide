@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: detachFrame
-sortid: 47
+sortid: 56
 permalink: 1140-detachFrame
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 ManagedArticle.detachFrame(pageItem);
 ```
@@ -33,9 +34,9 @@ The `detachFrame()` method detaches a frame from a multi-component Article.
 
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

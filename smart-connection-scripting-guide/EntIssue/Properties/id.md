@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: id
-sortid: 32
+sortid: 31
 permalink: 1115-id
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 EntIssue.id;
 ```
@@ -31,9 +32,9 @@ The `id` property is used to get the object ID of the Issue.
 ```javascript
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

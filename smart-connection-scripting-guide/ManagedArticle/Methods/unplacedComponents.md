@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: unplacedComponents
-sortid: 49
+sortid: 58
 permalink: 1143-unplacedComponents
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 ManagedArticle.unplacedComponents();
 ```
@@ -28,9 +29,9 @@ The `unplacedComponents()` method returns a list of GUIDs of the components that
 
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

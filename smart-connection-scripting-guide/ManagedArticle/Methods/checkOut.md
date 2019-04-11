@@ -1,11 +1,12 @@
 ---
 layout: chapter
 title: checkOut
-sortid: 43
+sortid: 52
 permalink: 1136-checkOut
 ---
 ## Syntax
 
+![](../../images/indesign.png "InDesign") ![](../../images/indesignserver.png "InDesign Server")
 ```javascript
 ManagedArticle.checkOut();
 ```
@@ -28,9 +29,9 @@ The `checkOut()` method checks-out the placed Article.
 
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |
