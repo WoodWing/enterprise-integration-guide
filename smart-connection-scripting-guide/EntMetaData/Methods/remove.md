@@ -1,29 +1,28 @@
 ---
 layout: chapter
-title: elementLabel
-sortid: 27
+title: remove
+sortid: 61
+permalink: 1228-remove
 ---
 ## Syntax
 
 ```javascript
-PageItem.elementLabel;
+EntMetaData.remove(key);
 ```
-
-### Access
-
-*read/write*
 
 ### Parameters
 
-**Return value** *string*
+**key** *string* 
 
-The name of the Element Label.
+The property key.
+
+**Return value**
+
+The `remove()` method does not return anything.
 
 ## Description
 
-The Element Label assigned to the page item. When assigning to
-a text frame, all threaded text frames will get the same Element
-Label.
+The `remove()` method removes the property with the given key from the collection.
 
 ## Examples
 
@@ -32,9 +31,9 @@ Label.
 ```javascript
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

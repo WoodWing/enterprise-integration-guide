@@ -1,29 +1,24 @@
 ---
 layout: chapter
-title: elementLabel
-sortid: 27
+title: count
+sortid: 61
+permalink: 1222-count
 ---
 ## Syntax
 
 ```javascript
-PageItem.elementLabel;
+EntMetaData.count();
 ```
-
-### Access
-
-*read/write*
 
 ### Parameters
 
-**Return value** *string*
+**Return value** *number*
 
-The name of the Element Label.
+The number of properties present in the metadata collection object.
 
 ## Description
 
-The Element Label assigned to the page item. When assigning to
-a text frame, all threaded text frames will get the same Element
-Label.
+The `count()` method returns the number of properties present in the metadata collection object.
 
 ## Examples
 
@@ -32,9 +27,9 @@ Label.
 ```javascript
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

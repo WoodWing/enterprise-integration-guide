@@ -1,40 +1,36 @@
 ---
 layout: chapter
-title: elementLabel
-sortid: 27
+title: getUsers
+sortid: 61
+permalink: 1216-getUsers
 ---
 ## Syntax
 
 ```javascript
-PageItem.elementLabel;
+Session.getUsers();
 ```
-
-### Access
-
-*read/write*
 
 ### Parameters
 
-**Return value** *string*
+**Return value** *Array of Array of string*
 
-The name of the Element Label.
+The returned array contains arrays of two strings: the user’s short name and the user’s full name.
 
 ## Description
 
-The Element Label assigned to the page item. When assigning to
-a text frame, all threaded text frames will get the same Element
-Label.
+The `getUsers()` method returns a list of users.
 
 ## Examples
 
 **Example title**
 
 ```javascript
+
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

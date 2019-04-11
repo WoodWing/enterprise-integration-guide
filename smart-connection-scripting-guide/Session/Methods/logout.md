@@ -1,40 +1,36 @@
 ---
 layout: chapter
-title: elementLabel
-sortid: 27
+title: logout
+sortid: 61
+permalink: 1219-logout
 ---
 ## Syntax
 
 ```javascript
-PageItem.elementLabel;
+Session.logout();
 ```
-
-### Access
-
-*read/write*
 
 ### Parameters
 
-**Return value** *string*
+**Return value**
 
-The name of the Element Label.
+The `logout()` method does not return anything. It throws an exception in case of an error.
 
 ## Description
 
-The Element Label assigned to the page item. When assigning to
-a text frame, all threaded text frames will get the same Element
-Label.
+The `logout()` method performs a logout from the Enterprise system. 
 
 ## Examples
 
 **Example title**
 
 ```javascript
+
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

@@ -1,13 +1,8 @@
 ---
 layout: section
-title: Dossier methods
-permalink: 1101-index
+title: PageItem methods
 ---
-Methods on the Dossier object.
+Methods on the PageItem object.
 
-* [addItem](./addItem.md)
-* [create](./create.md)
-* [refresh](./refresh.md)
-* [remove](./remove.md)
-* [removeItem](./removeItem.md)
-* [save](./save.md)
+* [placeObject](./placeObject.md)
+* [updateCaptionAndCredit](./updateCaptionAndCredit.md)

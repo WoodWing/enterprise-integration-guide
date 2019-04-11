@@ -1,40 +1,36 @@
 ---
 layout: chapter
-title: elementLabel
-sortid: 27
+title: getUserGroups
+sortid: 61
+permalink: 1215-getUserGroups
 ---
 ## Syntax
 
 ```javascript
-PageItem.elementLabel;
+Session.getUserGroups();
 ```
-
-### Access
-
-*read/write*
 
 ### Parameters
 
-**Return value** *string*
+**Return value** *Array of string*
 
-The name of the Element Label.
+The returned array is a list of user group names.
 
 ## Description
 
-The Element Label assigned to the page item. When assigning to
-a text frame, all threaded text frames will get the same Element
-Label.
+The `getUserGroups()` method returns a list of user group names.
 
 ## Examples
 
 **Example title**
 
 ```javascript
+
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

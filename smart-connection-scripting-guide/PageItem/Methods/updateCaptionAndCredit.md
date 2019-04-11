@@ -61,7 +61,7 @@ alert( "error " + num + ": " + desc );
 
 | Adobe Version | Support |
 |---------------|---------|
-| CC            | ✔       |
+| CC            |         |
 | CC 2014       | ✔       |
 | CC 2015       | ✔       |
 | CC 2017       | ✔       |

@@ -1,9 +1,13 @@
 ---
 layout: section
-title: Dossier properties
-permalink: 1107-index
+title: PageItem properties
 ---
-Properties on the Dossier object.
+Properties on the PageItem object.
 
-* [entMetaData](./entMetaData.md)
-* [items](./items.md)
+* [editions](./editions.md)
+* [elementLabel](./elementLabel.md)
+* [managedArticle](./managedArticle.md)
+* [managedImage](./managedImage.md)
+* [managedAdvert](./managedAdvert.md)
+* [managedLayoutModule](./managedLayoutModule.md)
+* [allIndesignArticleIds](./allIndesignArticleIds.md)

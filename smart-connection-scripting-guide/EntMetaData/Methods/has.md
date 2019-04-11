@@ -1,29 +1,28 @@
 ---
 layout: chapter
-title: elementLabel
-sortid: 27
+title: has
+sortid: 61
+permalink: 1224-has
 ---
 ## Syntax
 
 ```javascript
-PageItem.elementLabel;
+EntMetaData.has(key);
 ```
-
-### Access
-
-*read/write*
 
 ### Parameters
 
-**Return value** *string*
+**key** *string* 
 
-The name of the Element Label.
+The property key.
+
+**Return value** *boolean*
+
+Returns if the property with the given key exists or not.
 
 ## Description
 
-The Element Label assigned to the page item. When assigning to
-a text frame, all threaded text frames will get the same Element
-Label.
+The `has()` method returns if the property with the given key exists or not. 
 
 ## Examples
 
@@ -32,9 +31,9 @@ Label.
 ```javascript
 ```
 
-## Support versions
+## Supported versions
 
-| Adobe Version | Support |
+| Adobe Version | Supported |
 |---------------|---------|
 | CC            | ✔       |
 | CC 2014       | ✔       |

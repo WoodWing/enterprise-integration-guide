@@ -26,12 +26,37 @@ InDesign, InDesign Server.
 ## Notes 
 The script argument key ‘objectId’ is mandatory and case sensitive when sending back an object ID.
 
+## Example Script
+
+```javascript
+var objId = app.scriptArgs.get("Core_ID");
+var compGUID = app.scriptArgs.get("GUID");
+ 
+// Define the return variable (default empty string).
+var overrulingObjId = "";
+var overrulingGUID = "";
+ 
+// If the sent object ID is '11801 indicate that object with ID '9668' should be placed.
+if(objId === "11801") {
+    overrulingObjId = "9668"
+}
+ 
+// Correct GUID if necessary.
+if(compGUID === "9460ad9f-7e87-4dea-9a25-491a0d43e297") {
+    overrulingGUID = "6f717dfc-6c71-4072-a219-519ac94e2c0a";
+}
+ 
+// The script argument key 'objectId' is mandatory and case sensative when sending back an object ID.
+app.scriptArgs.set("objectId", overrulingObjId);
+app.scriptArgs.set("GUID", overrulingGUID);
+```
+
 ## Supported versions
 
 | Adobe Version | Supported |
 |---------------|-----------|
-| CC            | ✔         |
-| CC 2014       | ✔         |
+| CC            |           |
+| CC 2014       |           |
 | CC 2015       | ✔         |
 | CC 2017       | ✔         |
 | CC 2018       | ✔         |

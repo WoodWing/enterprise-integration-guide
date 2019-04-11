@@ -1,28 +1,29 @@
 ---
 layout: chapter
-title: items
+title: editions
 sortid: 28
-permalink: 1108-items
 ---
 ## Syntax
 
 ```javascript
-Dossier.items;
+PageItem.editions;
 ```
 
 ### Access
 
-*readonly*
+*read/write*
 
 ### Parameters
 
-**Return value** *string[]*
+**Return value** *Array of string*
 
-A string of Enterprise object IDs.
+A string of Edition names.
 
 ## Description
 
-The `items` property is used to get a list of IDs of Enterprise objects which are residing in the current Dossier.
+The Editions assigned to the page item. When assigning to a text
+frame, all linked text frames will get the same set of Editions
+assigned.
 
 ## Examples
 

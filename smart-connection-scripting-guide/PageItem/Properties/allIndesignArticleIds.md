@@ -1,13 +1,12 @@
 ---
 layout: chapter
-title: entMetaData
+title: allIndesignArticleIds
 sortid: 27
-permalink: 1106-entMetaData
 ---
 ## Syntax
 
 ```javascript
-Dossier.entMetaData;
+PageItem.allIndesignArticleIds;
 ```
 
 ### Access
@@ -16,13 +15,17 @@ Dossier.entMetaData;
 
 ### Parameters
 
-**Return value** *EntMetaData*
+**Return value** *Array of String*
 
-An EntMetaData object.
+The IDs of all InDesign Articles to which the page item
+belongs.
 
 ## Description
 
-The `entMetaData` property is used to get the Enterprise metadata associated with the Dossier.
+Returns the IDs of all InDesign Articles to which the page item
+belongs. The IDs of InDesign Articles that contain a parent
+group item of the page item will also be returned. This differs
+from the PageItem.allArticles call.
 
 ## Examples
 
@@ -35,7 +38,7 @@ The `entMetaData` property is used to get the Enterprise metadata associated wit
 
 | Adobe Version | Support |
 |---------------|---------|
-| CC            | ✔       |
+| CC            |         |
 | CC 2014       | ✔       |
 | CC 2015       | ✔       |
 | CC 2017       | ✔       |

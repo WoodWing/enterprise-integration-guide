@@ -111,6 +111,74 @@ toc:
       url: smart-connection-scripting-guide/OverrulePlacementsOfArticlesAndDossiers/index.html
       permalink: 1173-index
       children:
+    - title: ManagedWorkflow
+      layout: section
+      path: smart-connection-scripting-guide/Workflow/index.md
+      url: smart-connection-scripting-guide/Workflow/index.html
+      permalink: 1171-index
+      children:
+      - title: ManagedImage properties
+        layout: section
+        path: smart-connection-scripting-guide/Workflow/Properties/index.md
+        url: smart-connection-scripting-guide/Workflow/Properties/index.html
+        permalink: 1155-index
+        children:
+        - title: defaultDossier
+          layout: chapter
+          path: smart-connection-scripting-guide/Workflow/Properties/defaultDossier.md
+          url: smart-connection-scripting-guide/Workflow/Properties/defaultDossier.html
+          permalink: 1182-defaultDossier
+      - title: Workflow methods
+        layout: section
+        path: smart-connection-scripting-guide/Workflow/Methods/index.md
+        url: smart-connection-scripting-guide/Workflow/Methods/index.html
+        permalink: 1174-index
+        children:
+        - title: sendDesignUpdate
+          layout: chapter
+          path: smart-connection-scripting-guide/Workflow/Methods/sendDesignUpdate.md
+          url: smart-connection-scripting-guide/Workflow/Methods/sendDesignUpdate.html
+          permalink: 1179-sendDesignUpdate
+        - title: setPdfProfile
+          layout: chapter
+          path: smart-connection-scripting-guide/Workflow/Methods/setPdfProfile.md
+          url: smart-connection-scripting-guide/Workflow/Methods/setPdfProfile.html
+          permalink: 1180-setPdfProfile
+        - title: updateAllContent
+          layout: chapter
+          path: smart-connection-scripting-guide/Workflow/Methods/updateAllContent.md
+          url: smart-connection-scripting-guide/Workflow/Methods/updateAllContent.html
+          permalink: 1181-updateAllContent
+        - title: saveVersion
+          layout: chapter
+          path: smart-connection-scripting-guide/Workflow/Methods/saveVersion.md
+          url: smart-connection-scripting-guide/Workflow/Methods/saveVersion.html
+          permalink: 1178-saveVersion
+        - title: saveAs
+          layout: chapter
+          path: smart-connection-scripting-guide/Workflow/Methods/saveAs.md
+          url: smart-connection-scripting-guide/Workflow/Methods/saveAs.html
+          permalink: 1177-saveAs
+        - title: checkIn
+          layout: chapter
+          path: smart-connection-scripting-guide/Workflow/Methods/checkIn.md
+          url: smart-connection-scripting-guide/Workflow/Methods/checkIn.html
+          permalink: 1173-checkIn
+        - title: placeObject
+          layout: chapter
+          path: smart-connection-scripting-guide/Workflow/Methods/placeObject.md
+          url: smart-connection-scripting-guide/Workflow/Methods/placeObject.html
+          permalink: 1175-placeObject
+        - title: restoreFromArchive
+          layout: chapter
+          path: smart-connection-scripting-guide/Workflow/Methods/restoreFromArchive.md
+          url: smart-connection-scripting-guide/Workflow/Methods/restoreFromArchive.html
+          permalink: 1176-restoreFromArchive
+        - title: abortCheckOut
+          layout: chapter
+          path: smart-connection-scripting-guide/Workflow/Methods/abortCheckOut.md
+          url: smart-connection-scripting-guide/Workflow/Methods/abortCheckOut.html
+          permalink: 1172-abortCheckOut
     - title: Story
       layout: section
       path: smart-connection-scripting-guide/Story/index.md
@@ -160,6 +228,82 @@ toc:
           path: smart-connection-scripting-guide/Session/Properties/activeUser.md
           url: smart-connection-scripting-guide/Session/Properties/activeUser.html
           permalink: 1075-activeUser
+      - title: Session methods
+        layout: section
+        path: smart-connection-scripting-guide/Session/Methods/index.md
+        url: smart-connection-scripting-guide/Session/Methods/index.html
+        permalink: 1217-index
+        children:
+        - title: getUserGroups
+          layout: chapter
+          path: smart-connection-scripting-guide/Session/Methods/getUserGroups.md
+          url: smart-connection-scripting-guide/Session/Methods/getUserGroups.html
+          permalink: 1215-getUserGroups
+        - title: getTerm
+          layout: chapter
+          path: smart-connection-scripting-guide/Session/Methods/getTerm.md
+          url: smart-connection-scripting-guide/Session/Methods/getTerm.html
+          permalink: 1214-getTerm
+        - title: getUsers
+          layout: chapter
+          path: smart-connection-scripting-guide/Session/Methods/getUsers.md
+          url: smart-connection-scripting-guide/Session/Methods/getUsers.html
+          permalink: 1216-getUsers
+        - title: login
+          layout: chapter
+          path: smart-connection-scripting-guide/Session/Methods/login.md
+          url: smart-connection-scripting-guide/Session/Methods/login.html
+          permalink: 1218-login
+        - title: reLogin
+          layout: chapter
+          path: smart-connection-scripting-guide/Session/Methods/reLogin.md
+          url: smart-connection-scripting-guide/Session/Methods/reLogin.html
+          permalink: 1220-reLogin
+        - title: logout
+          layout: chapter
+          path: smart-connection-scripting-guide/Session/Methods/logout.md
+          url: smart-connection-scripting-guide/Session/Methods/logout.html
+          permalink: 1219-logout
+        - title: getServers
+          layout: chapter
+          path: smart-connection-scripting-guide/Session/Methods/getServers.md
+          url: smart-connection-scripting-guide/Session/Methods/getServers.html
+          permalink: 1213-getServers
+        - title: getPublications
+          layout: chapter
+          path: smart-connection-scripting-guide/Session/Methods/getPublications.md
+          url: smart-connection-scripting-guide/Session/Methods/getPublications.html
+          permalink: 1212-getPublications
+        - title: getCategory
+          layout: chapter
+          path: smart-connection-scripting-guide/Session/Methods/getCategory.md
+          url: smart-connection-scripting-guide/Session/Methods/getCategory.html
+          permalink: 1208-getCategory
+        - title: getCategories
+          layout: chapter
+          path: smart-connection-scripting-guide/Session/Methods/getCategories.md
+          url: smart-connection-scripting-guide/Session/Methods/getCategories.html
+          permalink: 1207-getCategories
+        - title: getIssue
+          layout: chapter
+          path: smart-connection-scripting-guide/Session/Methods/getIssue.md
+          url: smart-connection-scripting-guide/Session/Methods/getIssue.html
+          permalink: 1209-getIssue
+        - title: getIssues
+          layout: chapter
+          path: smart-connection-scripting-guide/Session/Methods/getIssues.md
+          url: smart-connection-scripting-guide/Session/Methods/getIssues.html
+          permalink: 1210-getIssues
+        - title: getPublication
+          layout: chapter
+          path: smart-connection-scripting-guide/Session/Methods/getPublication.md
+          url: smart-connection-scripting-guide/Session/Methods/getPublication.html
+          permalink: 1211-getPublication
+        - title: forkLogin
+          layout: chapter
+          path: smart-connection-scripting-guide/Session/Methods/forkLogin.md
+          url: smart-connection-scripting-guide/Session/Methods/forkLogin.html
+          permalink: 1206-forkLogin
     - title: Scripting Events
       layout: section
       path: smart-connection-scripting-guide/ScriptingEvents/index.md
@@ -645,28 +789,64 @@ toc:
           path: smart-connection-scripting-guide/EntIssue/Properties/name.md
           url: smart-connection-scripting-guide/EntIssue/Properties/name.html
           permalink: 1117-name
-    - title: EntPublication
+    - title: EntMetaData
       layout: section
-      path: smart-connection-scripting-guide/EntPublication/index.md
-      url: smart-connection-scripting-guide/EntPublication/index.html
-      permalink: 1118-index
+      path: smart-connection-scripting-guide/EntMetaData/index.md
+      url: smart-connection-scripting-guide/EntMetaData/index.html
+      permalink: 1221-index
       children:
-      - title: EntPublication properties
+      - title: EntMetaData properties
         layout: section
-        path: smart-connection-scripting-guide/EntPublication/Properties/index.md
-        url: smart-connection-scripting-guide/EntPublication/Properties/index.html
-        permalink: 1120-index
+        path: smart-connection-scripting-guide/EntMetaData/Properties/index.md
+        url: smart-connection-scripting-guide/EntMetaData/Properties/index.html
+        permalink: 1230-index
         children:
-        - title: id
+        - title: length
           layout: chapter
-          path: smart-connection-scripting-guide/EntPublication/Properties/id.md
-          url: smart-connection-scripting-guide/EntPublication/Properties/id.html
-          permalink: 1119-id
-        - title: name
+          path: smart-connection-scripting-guide/EntMetaData/Properties/length.md
+          url: smart-connection-scripting-guide/EntMetaData/Properties/length.html
+          permalink: 1231-length
+      - title: EntMetaData methods
+        layout: section
+        path: smart-connection-scripting-guide/EntMetaData/Methods/index.md
+        url: smart-connection-scripting-guide/EntMetaData/Methods/index.html
+        permalink: 1225-index
+        children:
+        - title: remove
           layout: chapter
-          path: smart-connection-scripting-guide/EntPublication/Properties/name.md
-          url: smart-connection-scripting-guide/EntPublication/Properties/name.html
-          permalink: 1121-name
+          path: smart-connection-scripting-guide/EntMetaData/Methods/remove.md
+          url: smart-connection-scripting-guide/EntMetaData/Methods/remove.html
+          permalink: 1228-remove
+        - title: set
+          layout: chapter
+          path: smart-connection-scripting-guide/EntMetaData/Methods/set.md
+          url: smart-connection-scripting-guide/EntMetaData/Methods/set.html
+          permalink: 1229-set
+        - title: refresh
+          layout: chapter
+          path: smart-connection-scripting-guide/EntMetaData/Methods/refresh.md
+          url: smart-connection-scripting-guide/EntMetaData/Methods/refresh.html
+          permalink: 1227-refresh
+        - title: item
+          layout: chapter
+          path: smart-connection-scripting-guide/EntMetaData/Methods/item.md
+          url: smart-connection-scripting-guide/EntMetaData/Methods/item.html
+          permalink: 1226-item
+        - title: get
+          layout: chapter
+          path: smart-connection-scripting-guide/EntMetaData/Methods/get.md
+          url: smart-connection-scripting-guide/EntMetaData/Methods/get.html
+          permalink: 1223-get
+        - title: has
+          layout: chapter
+          path: smart-connection-scripting-guide/EntMetaData/Methods/has.md
+          url: smart-connection-scripting-guide/EntMetaData/Methods/has.html
+          permalink: 1224-has
+        - title: count
+          layout: chapter
+          path: smart-connection-scripting-guide/EntMetaData/Methods/count.md
+          url: smart-connection-scripting-guide/EntMetaData/Methods/count.html
+          permalink: 1222-count
     - title: ManagedAdverts
       layout: section
       path: smart-connection-scripting-guide/ManagedAdverts/index.md
@@ -728,6 +908,28 @@ toc:
           path: smart-connection-scripting-guide/EntSection/Properties/name.md
           url: smart-connection-scripting-guide/EntSection/Properties/name.html
           permalink: 1125-name
+    - title: EntPublication
+      layout: section
+      path: smart-connection-scripting-guide/EntPublication/index.md
+      url: smart-connection-scripting-guide/EntPublication/index.html
+      permalink: 1118-index
+      children:
+      - title: EntPublication properties
+        layout: section
+        path: smart-connection-scripting-guide/EntPublication/Properties/index.md
+        url: smart-connection-scripting-guide/EntPublication/Properties/index.html
+        permalink: 1120-index
+        children:
+        - title: id
+          layout: chapter
+          path: smart-connection-scripting-guide/EntPublication/Properties/id.md
+          url: smart-connection-scripting-guide/EntPublication/Properties/id.html
+          permalink: 1119-id
+        - title: name
+          layout: chapter
+          path: smart-connection-scripting-guide/EntPublication/Properties/name.md
+          url: smart-connection-scripting-guide/EntPublication/Properties/name.html
+          permalink: 1121-name
     - title: Application
       layout: section
       path: smart-connection-scripting-guide/Application/index.md

@@ -1,19 +1,19 @@
 ---
 layout: section
-title: Dossier
-permalink: 1098-index
+title: PageItem
 ---
 
 ### Properties
 
-* [entMetaData](Properties/entMetaData.md)
-* [items](Properties/items.md)
+* [editions](Properties/editions.md)
+* [elementLabel](Properties/elementLabel.md)
+* [managedArticle](Properties/managedArticle.md)
+* [managedImage](Properties/managedImage.md)
+* [managedAdvert](Properties/managedAdvert.md)
+* [managedLayoutModule](Properties/managedLayoutModule.md)
+* [allIndesignArticleIds](Properties/allIndesignArticleIds.md)
 
 ### Methods
 
-* [addItem](Methods/addItem.md)
-* [create](Methods/create.md)
-* [refresh](Methods/refresh.md)
-* [remove](Methods/remove.md)
-* [removeItem](Methods/removeItem.md)
-* [save](Methods/save.md)
+* [placeObject](Methods/placeObject.md)
+* [updateCaptionAndCredit](Methods/updateCaptionAndCredit.md)
