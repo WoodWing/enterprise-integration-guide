@@ -18,10 +18,9 @@ The script in which this can be implemented should be placed into the Startup Sc
 ||/Applications/Adobe InDesign CC/Scripts/Startup Scripts|
 
 The script should have the following properties:
-* The target engine must be “placeoverride” (#targetengine "placeoverride")
-* The name of the object must be “PlaceOverride” (function PlaceOverride)
-* There may only be one object of the PlaceOverride class and this needs to have the name “placeOverride” (var
-placeOverride = new PlaceOverride).
+* The target engine must be “placeoverride” (`#targetengine "placeoverride"`)
+* The name of the object must be “PlaceOverride” (`function PlaceOverride`)
+* There may only be one object of the PlaceOverride class and this needs to have the name “placeOverride” (`var placeOverride = new PlaceOverride`).
 * The PlaceOverride class needs to implement all following functions:
 
 ## getDebugConfig

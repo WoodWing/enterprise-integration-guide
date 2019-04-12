@@ -17,10 +17,10 @@ folder or in the user’s scripts folder. The script locations are:
 ||/Applications/Adobe InDesign CC/Scripts/Startup Scripts|
 
 The script should have the following properties:
-* The target engine must be “elvisobjectoverride” (#targetengine "elvisobjectoverride").
-* The name of the object must be “AddToDossierOverride” (function AddToDossierOverride).
+* The target engine must be “elvisobjectoverride” (`#targetengine "elvisobjectoverride"`).
+* The name of the object must be “AddToDossierOverride” (`function AddToDossierOverride`).
 * There may only be one object of the AddToDossierOverride class and this needs to have the name “addToDossierOverride”
-(var addToDossierOverride = new AddToDossierOverride).
+(`var addToDossierOverride = new AddToDossierOverride`).
 
 The AddToDossierOverride class needs to have the following functions:
 
