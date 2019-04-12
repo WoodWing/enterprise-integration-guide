@@ -17,7 +17,7 @@ folder or in the user’s scripts folder. The script locations are:
 ||/Applications/Adobe InDesign CC/Scripts/Startup Scripts|
 
 The script should have the following properties:
-* The target engine must be “elvisobjectoverride” (#targetengine “elvisobjectoverride”).
+* The target engine must be “elvisobjectoverride” (#targetengine "elvisobjectoverride").
 * The name of the object must be “AddToDossierOverride” (function AddToDossierOverride).
 * There may only be one object of the AddToDossierOverride class and this needs to have the name “addToDossierOverride”
 (var addToDossierOverride = new AddToDossierOverride).
@@ -55,9 +55,11 @@ Tells Smart Connection whether the functions need to be debugged or not.
 
 A string with json content that contains the database ID and page item of the objects to be added to a Dossier. A sample of such a json string is:
 ```javascript
-[{“objectID”: “909”, “pageItem”: “123”}]
+[{"objectID": "909", "pageItem": "123"}]
 ```
+
 Properties of one item in this json string:
+
 |Name|Type|Description|
 |----|----|-----------|
 |objectID |string |The database id of the object to be added|
@@ -92,7 +94,7 @@ boolean is false)|
 
 A sample of the return value is:
 ```javascript
-return [ true, “123”, “false” ];
+return [ true, "123", "false" ];
 ```
 
 ### Description
