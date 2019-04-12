@@ -316,7 +316,7 @@ This tells the client that:
 The client knows what protocols and transfers it supports (by itself) and now picks the best match that is most 
 preferred by the server. Now it reconnects to the entry point again to let server know its choice, for example:
 
-`http://123.123.123.123/transferindex.php?protocol=JSON&transfer=HTTP`
+`http://123.123.123.123/index.php?protocol=JSON&transfer=HTTP`
 
 When the client does not connect this way (leaving out the protocol and transfer parameters), the server assumes the 
 client is v7 (or older) and starts using DIME over SOAP for backwards compatibility reasons.
