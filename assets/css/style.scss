@@ -14,9 +14,6 @@ div.toc {
   padding-top:30px;
   padding-right:20px;
   width:280px;
-  height: calc(100% - 100px);
-  overflow-x: hidden;
-  overflow-y: scroll;
 }
 @media screen and (min-width: 64em) { div.toc {} }
 @media screen and (min-width: 42em) and (max-width: 64em) { div.toc {} }

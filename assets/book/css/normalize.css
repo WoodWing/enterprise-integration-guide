@@ -1,11 +1,6 @@
 article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{
     display:block;
 }
-aside, section {
-    height: calc(100% - 100px);
-    overflow-x: hidden;
-    overflow-y: scroll;
-}
 audio,canvas,video{
     display:inline-block;
 }
