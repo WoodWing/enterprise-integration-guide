@@ -1,6 +1,7 @@
 ---
 layout: section
 title: Smart Connection Custom Menu Items
+sortid: 10000
 permalink: 1171-index
 ---
 
