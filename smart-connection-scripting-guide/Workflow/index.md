@@ -1,6 +1,7 @@
 ---
 layout: section
 title: Workflow
+sortid: 20
 permalink: 1171-index
 ---
 Provides access to workflow actions for a document

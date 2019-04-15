@@ -1,6 +1,7 @@
 ---
 layout: section
 title: Scripting Events
+sortid: 21
 permalink: 1205-index
 ---
 Scripting events allow the integrator to perform scripts on a number of events occurring in the InDesign and InCopy application. Currently scripts can be executed around saving, opening and placing.

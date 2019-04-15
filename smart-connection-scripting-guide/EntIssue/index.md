@@ -1,6 +1,7 @@
 ---
 layout: section
 title: EntIssue
+sortid: 5
 permalink: 1114-index
 ---
 

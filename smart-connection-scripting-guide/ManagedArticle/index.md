@@ -1,6 +1,7 @@
 ---
 layout: section
 title: ManagedArticle
+sortid: 11
 permalink: 1133-index
 ---
 

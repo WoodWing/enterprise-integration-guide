@@ -1,6 +1,7 @@
 ---
 layout: section
 title: ManagedAdvert
+sortid: 9
 permalink: 1126-index
 ---
 

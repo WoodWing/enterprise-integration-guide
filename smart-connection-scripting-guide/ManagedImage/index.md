@@ -1,6 +1,7 @@
 ---
 layout: section
 title: ManagedImage
+sortid: 13
 permalink: 1151-index
 ---
 

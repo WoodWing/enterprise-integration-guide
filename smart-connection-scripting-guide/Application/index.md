@@ -1,6 +1,7 @@
 ---
 layout: section
 title: Application
+sortid: 1
 permalink: 1065-index
 ---
 The object representing the InDesign or InCopy application.

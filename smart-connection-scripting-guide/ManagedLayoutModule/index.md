@@ -1,6 +1,7 @@
 ---
 layout: section
 title: ManagedLayoutModule
+sortid: 15
 permalink: 1161-index
 ---
 

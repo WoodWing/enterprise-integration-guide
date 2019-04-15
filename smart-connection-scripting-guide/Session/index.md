@@ -1,6 +1,7 @@
 ---
 layout: section
 title: Session
+sortid: 18
 permalink: 1069-index
 ---
 The object representing the Enterprise session.
