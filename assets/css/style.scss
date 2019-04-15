@@ -205,12 +205,12 @@ ul.ww-menu {
 ul.ww-menu li.ww-menu-item-selected:before {
   color: #f90;
   font-size: 0.6em;
-  content: '◉ ';
+  content: '◉\00a0';
   vertical-align: middle;
 }
 
 ul.ww-menu li.ww-menu-item:before {
   color: #f90;
   font-size: 1em;
-  content: '○ ';
+  content: '○\00a0';
 }
