@@ -92,7 +92,7 @@ div.toc {
 @import 'jekyll-theme-cayman';
 
 /* Overrule the Cayman theme */
-.main-content {
+.main-menu, .main-content {
   height: calc(100vh - 100px);
   overflow-x: hidden;
   overflow-y: scroll;
