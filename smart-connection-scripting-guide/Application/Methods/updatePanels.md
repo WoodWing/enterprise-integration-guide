@@ -6,7 +6,7 @@ permalink: 1086-updatePanels
 ---
 ## Syntax
 
-![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy")
+![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %})
 ```javascript
 app.updatePanels();
 ```

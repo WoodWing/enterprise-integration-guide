@@ -12,7 +12,7 @@ for scripter to use before detaching the article component.
 
 ## Where
 
-![](../../images/indesign.png "InDesign") ![](../../images/indesignserver.png "InDesign Server")
+![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
 
 ## Arguments in
 

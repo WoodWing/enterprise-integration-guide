@@ -6,7 +6,7 @@ permalink: 1206-forkLogin
 ---
 ## Syntax
 
-![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
+![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
 ```javascript
 Session.forkLogin(username, ticket, server, quick, requestInfo);
 ```

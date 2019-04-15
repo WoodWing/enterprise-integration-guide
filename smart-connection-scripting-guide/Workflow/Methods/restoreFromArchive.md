@@ -6,7 +6,7 @@ permalink: 1176-restoreFromArchive
 ---
 ## Syntax
 
-![](../../images/indesign.png "InDesign") ![](../../images/indesignserver.png "InDesign Server")
+![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
 ```javascript
 Workflow.restoreFromArchive([pathInElvis] [, imageRestoreLocation]);
 ```

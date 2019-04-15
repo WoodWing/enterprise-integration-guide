@@ -62,6 +62,16 @@ The events mechanism has its own logging which can be enabled through the WWsett
 
 ### Events
 
+The following fields are used to describe an event:
+
+|Field|Description|
+|-----|-----------|
+|When |Describes at what moment the event occurs.|
+|Where |Describes in what applications the event occurs.|
+|Arguments in |Table describing key value pairs set in app.scriptArgs for the event.|
+|Arguments out |Table describing key value pairs that a script can set in app.scriptArgs for the event.|
+|Notes |Event related notes.|
+
 * [afterCreateArticle](./Events/afterCreateArticle.md)
 * [afterCreateArticleTemplate](./Events/afterCreateArticleTemplate.md)
 * [afterCreateContinuationElement](./Events/afterCreateContinuationElement.md)

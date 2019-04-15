@@ -1,31 +1,29 @@
 ---
 layout: chapter
-title: afterCreateLayout
-sortid: 115
-permalink: 1179-afterCreateLayout
+title: afterSaveArticle
+sortid: 126
+permalink: 1190-afterSaveArticle
 ---
 
 ## When
 
-After creating a new layout in the Enterprise system. This includes Save As.
+After sending an article to the Enterprise system.
 
 ## Where
 
-![](../../images/indesign.png "InDesign") ![](../../images/indesignserver.png "InDesign Server")
+![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
 
 ## Arguments in
 
 |Key |Description|
 |----|-----------|
-|Core_ID |The object id of the layout that was created.|
+|Core_ID |The object id of the article that was saved.
 
 ## Arguments out
 
-n/a
+n/a|
 
 ## Notes
-
-Changes can be made to the document, these will be saved and sent to the Enterprise system.
 
 ## Supported versions
 

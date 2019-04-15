@@ -11,7 +11,7 @@ After creating a continuation element for a Smart Jump article.
 
 ## Where
 
-![](../../images/indesign.png "InDesign")
+![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %})
 
 ## Arguments in
 

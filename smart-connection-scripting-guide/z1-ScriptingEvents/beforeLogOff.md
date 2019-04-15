@@ -1,23 +1,21 @@
 ---
 layout: chapter
-title: afterSaveLayout
-sortid: 127
-permalink: 1191-afterSaveLayout
+title: beforeLogOff
+sortid: 136
+permalink: 1200-beforeLogOff
 ---
 
 ## When
 
-After sending a layout to the Enterprise system.
+Just before the log-off action.
 
 ## Where
 
-![](../../images/indesign.png "InDesign") ![](../../images/indesignserver.png "InDesign Server")
+![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
 
 ## Arguments in
 
-|Key |Description|
-|----|-----------|
-|Core_ID |The object id of the layout that was saved.|
+n/a
 
 ## Arguments out
 
@@ -29,7 +27,7 @@ n/a
 
 | Adobe Version | Supported |
 |---------------|-----------|
-| CC            | ✔         |
+| CC            |           |
 | CC 2014       | ✔         |
 | CC 2015       | ✔         |
 | CC 2017       | ✔         |

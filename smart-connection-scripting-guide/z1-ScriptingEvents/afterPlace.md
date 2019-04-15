@@ -1,23 +1,23 @@
 ---
 layout: chapter
-title: afterRefreshArticle
-sortid: 124
-permalink: 1188-afterRefreshArticle
+title: afterPlace
+sortid: 123
+permalink: 1187-afterPlace
 ---
 
 ## When
 
-After refreshing the XML representation of an article from disk.
+After placing an object.
 
 ## Where
 
-![](../../images/incopy.png "InCopy")
+![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
 
 ## Arguments in
 
 |Key |Description|
 |----|-----------|
-|Core_ID |The object id of the article that was refreshed.|
+|pageitem |The id of the frame the object was placed into.|
 
 ## Arguments out
 

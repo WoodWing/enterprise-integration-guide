@@ -1,31 +1,29 @@
 ---
 layout: chapter
-title: afterCreateLayoutTemplate
-sortid: 116
-permalink: 1180-afterCreateLayoutTemplate
+title: afterSaveLayout
+sortid: 127
+permalink: 1191-afterSaveLayout
 ---
 
 ## When
 
-After creating a new layout template in the Enterprise system. This includes Save As.
+After sending a layout to the Enterprise system.
 
 ## Where
 
-![](../../images/indesign.png "InDesign") ![](../../images/indesignserver.png "InDesign Server")
+![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
 
 ## Arguments in
 
 |Key |Description|
 |----|-----------|
-|Core_ID| The object id of the layout template that was created.|
+|Core_ID |The object id of the layout that was saved.|
 
 ## Arguments out
 
 n/a
 
 ## Notes
-
-Changes can be made to the document, these will be saved and sent to the Enterprise system.
 
 ## Supported versions
 

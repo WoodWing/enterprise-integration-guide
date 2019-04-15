@@ -1,21 +1,23 @@
 ---
 layout: chapter
-title: beforeCreateLayoutTemplate
-sortid: 131
-permalink: 1195-beforeCreateLayoutTemplate
+title: afterCreateLayoutTemplate
+sortid: 116
+permalink: 1180-afterCreateLayoutTemplate
 ---
 
 ## When
 
-Before creating a new layout template in the Enterprise system. This includes Save As.
+After creating a new layout template in the Enterprise system. This includes Save As.
 
 ## Where
 
-![](../../images/indesign.png "InDesign") ![](../../images/indesignserver.png "InDesign Server")
+![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
 
 ## Arguments in
 
-n/a
+|Key |Description|
+|----|-----------|
+|Core_ID| The object id of the layout template that was created.|
 
 ## Arguments out
 

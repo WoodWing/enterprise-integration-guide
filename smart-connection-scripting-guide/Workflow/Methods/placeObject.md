@@ -6,7 +6,7 @@ permalink: 1175-placeObject
 ---
 ## Syntax
 
-![](../../images/indesign.png "InDesign") ![](../../images/indesignserver.png "InDesign Server")
+![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
 ```javascript
 Workflow.placeObject(id, where, position);
 ```

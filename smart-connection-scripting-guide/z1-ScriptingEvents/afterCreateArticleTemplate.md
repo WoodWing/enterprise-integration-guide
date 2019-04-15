@@ -1,17 +1,17 @@
 ---
 layout: chapter
-title: afterDetachArticle
-sortid: 117
-permalink: 1181-afterDetachArticle
+title: afterCreateArticleTemplate
+sortid: 111
+permalink: 1175-afterCreateArticleTemplate
 ---
 
 ## When
 
-After detaching an article from a layout.
+After sending a new article template to the Enterprise system.
 
 ## Where
 
-![](../../images/indesign.png "InDesign") ![](../../images/indesignserver.png "InDesign Server")
+![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
 
 ## Arguments in
 
@@ -24,9 +24,6 @@ After detaching an article from a layout.
 n/a
 
 ## Notes
-
-This event is only broadcasted when using the Detach Article action, not when detaching by deleting the
-article from the layout.
 
 ## Supported versions
 

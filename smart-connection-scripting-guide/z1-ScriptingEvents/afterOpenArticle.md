@@ -1,23 +1,23 @@
 ---
 layout: chapter
-title: afterExportArticle
-sortid: 118
-permalink: 1182-afterExportArticle
+title: beforeSaveLayout
+sortid: 121
+permalink: 1185-afterOpenArticle
 ---
 
 ## When
 
-After creating the XML representation of an article on disk.
+After opening an article
 
 ## Where
 
-![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
+![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %})
 
 ## Arguments in
 
-|Key |Description|
-|----|-----------|
-|Core_ID |The object id of the article that was exported.|
+|Key     | Description                          |
+|--------|--------------------------------------|
+|Core_ID | The object id of the placed article. |
 
 ## Arguments out
 

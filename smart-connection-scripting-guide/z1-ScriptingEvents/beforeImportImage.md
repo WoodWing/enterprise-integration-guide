@@ -11,7 +11,7 @@ Before importing (planned) image type files when synchronizing planned layouts a
 
 ## Where
 
-![](../../images/indesign.png "InDesign")
+![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %})
 
 ## Arguments in
 

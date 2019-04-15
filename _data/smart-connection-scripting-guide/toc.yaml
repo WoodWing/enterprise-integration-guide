@@ -118,163 +118,157 @@ toc:
       url: smart-connection-scripting-guide/z1-ScriptingEvents/index.html
       permalink: 1205-index
       children:
-      - title: Event
-        layout: section
-        path: smart-connection-scripting-guide/z1-ScriptingEvents/Events/index.md
-        url: smart-connection-scripting-guide/z1-ScriptingEvents/Events/index.html
-        permalink: 1204-index
-        children:
-        - title: afterCreateArticle
-          layout: chapter
-          path: smart-connection-scripting-guide/z1-ScriptingEvents/Events/afterCreateArticle.md
-          url: smart-connection-scripting-guide/z1-ScriptingEvents/Events/afterCreateArticle.html
-          permalink: 1174-afterCreateArticle
-        - title: afterCreateArticleTemplate
-          layout: chapter
-          path: smart-connection-scripting-guide/z1-ScriptingEvents/Events/afterCreateArticleTemplate.md
-          url: smart-connection-scripting-guide/z1-ScriptingEvents/Events/afterCreateArticleTemplate.html
-          permalink: 1175-afterCreateArticleTemplate
-        - title: afterCreateContinuationElement
-          layout: chapter
-          path: smart-connection-scripting-guide/z1-ScriptingEvents/Events/afterCreateContinuationElement.md
-          url: smart-connection-scripting-guide/z1-ScriptingEvents/Events/afterCreateContinuationElement.html
-          permalink: 1176-afterCreateContinuationElement
-        - title: afterCreateEnterpriseImageFromElvisImage
-          layout: chapter
-          path: smart-connection-scripting-guide/z1-ScriptingEvents/Events/afterCreateEnterpriseImageFromElvisImage.md
-          url: smart-connection-scripting-guide/z1-ScriptingEvents/Events/afterCreateEnterpriseImageFromElvisImage.html
-          permalink: 1177-afterCreateEnterpriseImageFromElvisImage
-        - title: afterCreateJump
-          layout: chapter
-          path: smart-connection-scripting-guide/z1-ScriptingEvents/Events/afterCreateJump.md
-          url: smart-connection-scripting-guide/z1-ScriptingEvents/Events/afterCreateJump.html
-          permalink: 1178-afterCreateJump
-        - title: afterCreateLayout
-          layout: chapter
-          path: smart-connection-scripting-guide/z1-ScriptingEvents/Events/afterCreateLayout.md
-          url: smart-connection-scripting-guide/z1-ScriptingEvents/Events/afterCreateLayout.html
-          permalink: 1179-afterCreateLayout
-        - title: afterCreateLayoutTemplate
-          layout: chapter
-          path: smart-connection-scripting-guide/z1-ScriptingEvents/Events/afterCreateLayoutTemplate.md
-          url: smart-connection-scripting-guide/z1-ScriptingEvents/Events/afterCreateLayoutTemplate.html
-          permalink: 1180-afterCreateLayoutTemplate
-        - title: afterDetachArticle
-          layout: chapter
-          path: smart-connection-scripting-guide/z1-ScriptingEvents/Events/afterDetachArticle.md
-          url: smart-connection-scripting-guide/z1-ScriptingEvents/Events/afterDetachArticle.html
-          permalink: 1181-afterDetachArticle
-        - title: afterExportArticle
-          layout: chapter
-          path: smart-connection-scripting-guide/z1-ScriptingEvents/Events/afterExportArticle.md
-          url: smart-connection-scripting-guide/z1-ScriptingEvents/Events/afterExportArticle.html
-          permalink: 1182-afterExportArticle
-        - title: afterExportArticleTemplate
-          layout: chapter
-          path: smart-connection-scripting-guide/z1-ScriptingEvents/Events/afterExportArticleTemplate.md
-          url: smart-connection-scripting-guide/z1-ScriptingEvents/Events/afterExportArticleTemplate.html
-          permalink: 1183-afterExportArticleTemplate
-        - title: afterLogOn
-          layout: chapter
-          path: smart-connection-scripting-guide/z1-ScriptingEvents/Events/afterLogOn.md
-          url: smart-connection-scripting-guide/z1-ScriptingEvents/Events/afterLogOn.html
-          permalink: 1184-afterLogOn
-        - title: beforeSaveLayout
-          layout: chapter
-          path: smart-connection-scripting-guide/z1-ScriptingEvents/Events/afterOpenArticle.md
-          url: smart-connection-scripting-guide/z1-ScriptingEvents/Events/afterOpenArticle.html
-          permalink: 1185-afterOpenArticle
-        - title: afterOpenLayout
-          layout: chapter
-          path: smart-connection-scripting-guide/z1-ScriptingEvents/Events/afterOpenLayout.md
-          url: smart-connection-scripting-guide/z1-ScriptingEvents/Events/afterOpenLayout.html
-          permalink: 1186-afterOpenLayout
-        - title: afterPlace
-          layout: chapter
-          path: smart-connection-scripting-guide/z1-ScriptingEvents/Events/afterPlace.md
-          url: smart-connection-scripting-guide/z1-ScriptingEvents/Events/afterPlace.html
-          permalink: 1187-afterPlace
-        - title: afterRefreshArticle
-          layout: chapter
-          path: smart-connection-scripting-guide/z1-ScriptingEvents/Events/afterRefreshArticle.md
-          url: smart-connection-scripting-guide/z1-ScriptingEvents/Events/afterRefreshArticle.html
-          permalink: 1188-afterRefreshArticle
-        - title: afterRefreshImage
-          layout: chapter
-          path: smart-connection-scripting-guide/z1-ScriptingEvents/Events/afterRefreshImage.md
-          url: smart-connection-scripting-guide/z1-ScriptingEvents/Events/afterRefreshImage.html
-          permalink: 1189-afterRefreshImage
-        - title: afterSaveArticle
-          layout: chapter
-          path: smart-connection-scripting-guide/z1-ScriptingEvents/Events/afterSaveArticle.md
-          url: smart-connection-scripting-guide/z1-ScriptingEvents/Events/afterSaveArticle.html
-          permalink: 1190-afterSaveArticle
-        - title: afterSaveLayout
-          layout: chapter
-          path: smart-connection-scripting-guide/z1-ScriptingEvents/Events/afterSaveLayout.md
-          url: smart-connection-scripting-guide/z1-ScriptingEvents/Events/afterSaveLayout.html
-          permalink: 1191-afterSaveLayout
-        - title: beforeCreateArticle
-          layout: chapter
-          path: smart-connection-scripting-guide/z1-ScriptingEvents/Events/beforeCreateArticle.md
-          url: smart-connection-scripting-guide/z1-ScriptingEvents/Events/beforeCreateArticle.html
-          permalink: 1192-beforeCreateArticle
-        - title: beforeCreateArticleTemplate
-          layout: chapter
-          path: smart-connection-scripting-guide/z1-ScriptingEvents/Events/beforeCreateArticleTemplate.md
-          url: smart-connection-scripting-guide/z1-ScriptingEvents/Events/beforeCreateArticleTemplate.html
-          permalink: 1193-beforeCreateArticleTemplate
-        - title: beforeCreateLayout
-          layout: chapter
-          path: smart-connection-scripting-guide/z1-ScriptingEvents/Events/beforeCreateLayout.md
-          url: smart-connection-scripting-guide/z1-ScriptingEvents/Events/beforeCreateLayout.html
-          permalink: 1194-beforeCreateLayout
-        - title: beforeCreateLayoutTemplate
-          layout: chapter
-          path: smart-connection-scripting-guide/z1-ScriptingEvents/Events/beforeCreateLayoutTemplate.md
-          url: smart-connection-scripting-guide/z1-ScriptingEvents/Events/beforeCreateLayoutTemplate.html
-          permalink: 1195-beforeCreateLayoutTemplate
-        - title: beforeDetachArticle
-          layout: chapter
-          path: smart-connection-scripting-guide/z1-ScriptingEvents/Events/beforeDetachArticle.md
-          url: smart-connection-scripting-guide/z1-ScriptingEvents/Events/beforeDetachArticle.html
-          permalink: 1196-beforeDetachArticle
-        - title: beforeExportArticle
-          layout: chapter
-          path: smart-connection-scripting-guide/z1-ScriptingEvents/Events/beforeExportArticle.md
-          url: smart-connection-scripting-guide/z1-ScriptingEvents/Events/beforeExportArticle.html
-          permalink: 1197-beforeExportArticle
-        - title: beforeExportArticleTemplate
-          layout: chapter
-          path: smart-connection-scripting-guide/z1-ScriptingEvents/Events/beforeExportArticleTemplate.md
-          url: smart-connection-scripting-guide/z1-ScriptingEvents/Events/beforeExportArticleTemplate.html
-          permalink: 1198-beforeExportArticleTemplate
-        - title: beforeImportImage
-          layout: chapter
-          path: smart-connection-scripting-guide/z1-ScriptingEvents/Events/beforeImportImage.md
-          url: smart-connection-scripting-guide/z1-ScriptingEvents/Events/beforeImportImage.html
-          permalink: 1199-beforeImportImage
-        - title: beforeLogOff
-          layout: chapter
-          path: smart-connection-scripting-guide/z1-ScriptingEvents/Events/beforeLogOff.md
-          url: smart-connection-scripting-guide/z1-ScriptingEvents/Events/beforeLogOff.html
-          permalink: 1200-beforeLogOff
-        - title: beforePlace
-          layout: chapter
-          path: smart-connection-scripting-guide/z1-ScriptingEvents/Events/beforePlace.md
-          url: smart-connection-scripting-guide/z1-ScriptingEvents/Events/beforePlace.html
-          permalink: 1201-beforePlace
-        - title: beforeSaveArticle
-          layout: chapter
-          path: smart-connection-scripting-guide/z1-ScriptingEvents/Events/beforeSaveArticle.md
-          url: smart-connection-scripting-guide/z1-ScriptingEvents/Events/beforeSaveArticle.html
-          permalink: 1202-beforeSaveArticle
-        - title: beforeSaveLayout
-          layout: chapter
-          path: smart-connection-scripting-guide/z1-ScriptingEvents/Events/beforeSaveLayout.md
-          url: smart-connection-scripting-guide/z1-ScriptingEvents/Events/beforeSaveLayout.html
-          permalink: 1203-beforeSaveLayout
-    - title: ManagedWorkflow
+      - title: afterCreateArticle
+        layout: chapter
+        path: smart-connection-scripting-guide/z1-ScriptingEvents/afterCreateArticle.md
+        url: smart-connection-scripting-guide/z1-ScriptingEvents/afterCreateArticle.html
+        permalink: 1174-afterCreateArticle
+      - title: afterCreateArticleTemplate
+        layout: chapter
+        path: smart-connection-scripting-guide/z1-ScriptingEvents/afterCreateArticleTemplate.md
+        url: smart-connection-scripting-guide/z1-ScriptingEvents/afterCreateArticleTemplate.html
+        permalink: 1175-afterCreateArticleTemplate
+      - title: afterCreateContinuationElement
+        layout: chapter
+        path: smart-connection-scripting-guide/z1-ScriptingEvents/afterCreateContinuationElement.md
+        url: smart-connection-scripting-guide/z1-ScriptingEvents/afterCreateContinuationElement.html
+        permalink: 1176-afterCreateContinuationElement
+      - title: afterCreateEnterpriseImageFromElvisImage
+        layout: chapter
+        path: smart-connection-scripting-guide/z1-ScriptingEvents/afterCreateEnterpriseImageFromElvisImage.md
+        url: smart-connection-scripting-guide/z1-ScriptingEvents/afterCreateEnterpriseImageFromElvisImage.html
+        permalink: 1177-afterCreateEnterpriseImageFromElvisImage
+      - title: afterCreateJump
+        layout: chapter
+        path: smart-connection-scripting-guide/z1-ScriptingEvents/afterCreateJump.md
+        url: smart-connection-scripting-guide/z1-ScriptingEvents/afterCreateJump.html
+        permalink: 1178-afterCreateJump
+      - title: afterCreateLayout
+        layout: chapter
+        path: smart-connection-scripting-guide/z1-ScriptingEvents/afterCreateLayout.md
+        url: smart-connection-scripting-guide/z1-ScriptingEvents/afterCreateLayout.html
+        permalink: 1179-afterCreateLayout
+      - title: afterCreateLayoutTemplate
+        layout: chapter
+        path: smart-connection-scripting-guide/z1-ScriptingEvents/afterCreateLayoutTemplate.md
+        url: smart-connection-scripting-guide/z1-ScriptingEvents/afterCreateLayoutTemplate.html
+        permalink: 1180-afterCreateLayoutTemplate
+      - title: afterDetachArticle
+        layout: chapter
+        path: smart-connection-scripting-guide/z1-ScriptingEvents/afterDetachArticle.md
+        url: smart-connection-scripting-guide/z1-ScriptingEvents/afterDetachArticle.html
+        permalink: 1181-afterDetachArticle
+      - title: afterExportArticle
+        layout: chapter
+        path: smart-connection-scripting-guide/z1-ScriptingEvents/afterExportArticle.md
+        url: smart-connection-scripting-guide/z1-ScriptingEvents/afterExportArticle.html
+        permalink: 1182-afterExportArticle
+      - title: afterExportArticleTemplate
+        layout: chapter
+        path: smart-connection-scripting-guide/z1-ScriptingEvents/afterExportArticleTemplate.md
+        url: smart-connection-scripting-guide/z1-ScriptingEvents/afterExportArticleTemplate.html
+        permalink: 1183-afterExportArticleTemplate
+      - title: afterLogOn
+        layout: chapter
+        path: smart-connection-scripting-guide/z1-ScriptingEvents/afterLogOn.md
+        url: smart-connection-scripting-guide/z1-ScriptingEvents/afterLogOn.html
+        permalink: 1184-afterLogOn
+      - title: beforeSaveLayout
+        layout: chapter
+        path: smart-connection-scripting-guide/z1-ScriptingEvents/afterOpenArticle.md
+        url: smart-connection-scripting-guide/z1-ScriptingEvents/afterOpenArticle.html
+        permalink: 1185-afterOpenArticle
+      - title: afterOpenLayout
+        layout: chapter
+        path: smart-connection-scripting-guide/z1-ScriptingEvents/afterOpenLayout.md
+        url: smart-connection-scripting-guide/z1-ScriptingEvents/afterOpenLayout.html
+        permalink: 1186-afterOpenLayout
+      - title: afterPlace
+        layout: chapter
+        path: smart-connection-scripting-guide/z1-ScriptingEvents/afterPlace.md
+        url: smart-connection-scripting-guide/z1-ScriptingEvents/afterPlace.html
+        permalink: 1187-afterPlace
+      - title: afterRefreshArticle
+        layout: chapter
+        path: smart-connection-scripting-guide/z1-ScriptingEvents/afterRefreshArticle.md
+        url: smart-connection-scripting-guide/z1-ScriptingEvents/afterRefreshArticle.html
+        permalink: 1188-afterRefreshArticle
+      - title: afterRefreshImage
+        layout: chapter
+        path: smart-connection-scripting-guide/z1-ScriptingEvents/afterRefreshImage.md
+        url: smart-connection-scripting-guide/z1-ScriptingEvents/afterRefreshImage.html
+        permalink: 1189-afterRefreshImage
+      - title: afterSaveArticle
+        layout: chapter
+        path: smart-connection-scripting-guide/z1-ScriptingEvents/afterSaveArticle.md
+        url: smart-connection-scripting-guide/z1-ScriptingEvents/afterSaveArticle.html
+        permalink: 1190-afterSaveArticle
+      - title: afterSaveLayout
+        layout: chapter
+        path: smart-connection-scripting-guide/z1-ScriptingEvents/afterSaveLayout.md
+        url: smart-connection-scripting-guide/z1-ScriptingEvents/afterSaveLayout.html
+        permalink: 1191-afterSaveLayout
+      - title: beforeCreateArticle
+        layout: chapter
+        path: smart-connection-scripting-guide/z1-ScriptingEvents/beforeCreateArticle.md
+        url: smart-connection-scripting-guide/z1-ScriptingEvents/beforeCreateArticle.html
+        permalink: 1192-beforeCreateArticle
+      - title: beforeCreateArticleTemplate
+        layout: chapter
+        path: smart-connection-scripting-guide/z1-ScriptingEvents/beforeCreateArticleTemplate.md
+        url: smart-connection-scripting-guide/z1-ScriptingEvents/beforeCreateArticleTemplate.html
+        permalink: 1193-beforeCreateArticleTemplate
+      - title: beforeCreateLayout
+        layout: chapter
+        path: smart-connection-scripting-guide/z1-ScriptingEvents/beforeCreateLayout.md
+        url: smart-connection-scripting-guide/z1-ScriptingEvents/beforeCreateLayout.html
+        permalink: 1194-beforeCreateLayout
+      - title: beforeCreateLayoutTemplate
+        layout: chapter
+        path: smart-connection-scripting-guide/z1-ScriptingEvents/beforeCreateLayoutTemplate.md
+        url: smart-connection-scripting-guide/z1-ScriptingEvents/beforeCreateLayoutTemplate.html
+        permalink: 1195-beforeCreateLayoutTemplate
+      - title: beforeDetachArticle
+        layout: chapter
+        path: smart-connection-scripting-guide/z1-ScriptingEvents/beforeDetachArticle.md
+        url: smart-connection-scripting-guide/z1-ScriptingEvents/beforeDetachArticle.html
+        permalink: 1196-beforeDetachArticle
+      - title: beforeExportArticle
+        layout: chapter
+        path: smart-connection-scripting-guide/z1-ScriptingEvents/beforeExportArticle.md
+        url: smart-connection-scripting-guide/z1-ScriptingEvents/beforeExportArticle.html
+        permalink: 1197-beforeExportArticle
+      - title: beforeExportArticleTemplate
+        layout: chapter
+        path: smart-connection-scripting-guide/z1-ScriptingEvents/beforeExportArticleTemplate.md
+        url: smart-connection-scripting-guide/z1-ScriptingEvents/beforeExportArticleTemplate.html
+        permalink: 1198-beforeExportArticleTemplate
+      - title: beforeImportImage
+        layout: chapter
+        path: smart-connection-scripting-guide/z1-ScriptingEvents/beforeImportImage.md
+        url: smart-connection-scripting-guide/z1-ScriptingEvents/beforeImportImage.html
+        permalink: 1199-beforeImportImage
+      - title: beforeLogOff
+        layout: chapter
+        path: smart-connection-scripting-guide/z1-ScriptingEvents/beforeLogOff.md
+        url: smart-connection-scripting-guide/z1-ScriptingEvents/beforeLogOff.html
+        permalink: 1200-beforeLogOff
+      - title: beforePlace
+        layout: chapter
+        path: smart-connection-scripting-guide/z1-ScriptingEvents/beforePlace.md
+        url: smart-connection-scripting-guide/z1-ScriptingEvents/beforePlace.html
+        permalink: 1201-beforePlace
+      - title: beforeSaveArticle
+        layout: chapter
+        path: smart-connection-scripting-guide/z1-ScriptingEvents/beforeSaveArticle.md
+        url: smart-connection-scripting-guide/z1-ScriptingEvents/beforeSaveArticle.html
+        permalink: 1202-beforeSaveArticle
+      - title: beforeSaveLayout
+        layout: chapter
+        path: smart-connection-scripting-guide/z1-ScriptingEvents/beforeSaveLayout.md
+        url: smart-connection-scripting-guide/z1-ScriptingEvents/beforeSaveLayout.html
+        permalink: 1203-beforeSaveLayout
+    - title: Workflow
       layout: section
       path: smart-connection-scripting-guide/Workflow/index.md
       url: smart-connection-scripting-guide/Workflow/index.html
@@ -331,7 +325,7 @@ toc:
           path: smart-connection-scripting-guide/Workflow/Methods/updateAllContent.md
           url: smart-connection-scripting-guide/Workflow/Methods/updateAllContent.html
           permalink: 1181-updateAllContent
-      - title: ManagedImage properties
+      - title: Workflow properties
         layout: section
         path: smart-connection-scripting-guide/Workflow/Properties/index.md
         url: smart-connection-scripting-guide/Workflow/Properties/index.html

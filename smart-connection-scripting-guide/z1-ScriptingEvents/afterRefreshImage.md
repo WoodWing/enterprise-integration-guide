@@ -1,24 +1,23 @@
 ---
 layout: chapter
-title: afterCreateEnterpriseImageFromElvisImage
-sortid: 113
-permalink: 1177-afterCreateEnterpriseImageFromElvisImage
+title: afterRefreshImage
+sortid: 125
+permalink: 1189-afterRefreshImage
 ---
 
 ## When
 
-After an Enterprise Image was created from an Elvis Image (and added to a Dossier)
+When opening a layout after a highres advert is placed or modified using the planning interface.
 
 ## Where
 
-![](../../images/indesign.png "InDesign")
+![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %})
 
 ## Arguments in
 
 |Key |Description|
 |----|-----------|
-|Core_ID |The object id of the created image. |
-|pageItem |The id of the frame that contains the image|
+|Core_ID |The object id of the advert that was created or modified.|
 
 ## Arguments out
 

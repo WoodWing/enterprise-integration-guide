@@ -1,23 +1,23 @@
 ---
 layout: chapter
-title: afterRefreshImage
-sortid: 125
-permalink: 1189-afterRefreshImage
+title: afterExportArticle
+sortid: 118
+permalink: 1182-afterExportArticle
 ---
 
 ## When
 
-When opening a layout after a highres advert is placed or modified using the planning interface.
+After creating the XML representation of an article on disk.
 
 ## Where
 
-![](../../images/indesign.png "InDesign")
+![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
 
 ## Arguments in
 
 |Key |Description|
 |----|-----------|
-|Core_ID |The object id of the advert that was created or modified.|
+|Core_ID |The object id of the article that was exported.|
 
 ## Arguments out
 

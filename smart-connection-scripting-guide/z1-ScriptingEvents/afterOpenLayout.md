@@ -1,17 +1,17 @@
 ---
 layout: chapter
-title: afterLogOn
-sortid: 120
-permalink: 1184-afterLogOn
+title: afterOpenLayout
+sortid: 122
+permalink: 1186-afterOpenLayout
 ---
 
 ## When
 
-After a successful login, re-login or fork login.
+After opening a layout
 
 ## Where
 
-![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
+![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
 
 ## Arguments in
 
@@ -27,7 +27,7 @@ n/a
 
 | Adobe Version | Supported |
 |---------------|-----------|
-| CC            |           |
+| CC            | ✔         |
 | CC 2014       | ✔         |
 | CC 2015       | ✔         |
 | CC 2017       | ✔         |

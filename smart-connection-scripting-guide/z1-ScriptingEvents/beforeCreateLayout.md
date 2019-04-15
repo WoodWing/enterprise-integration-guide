@@ -1,17 +1,17 @@
 ---
 layout: chapter
-title: afterOpenLayout
-sortid: 122
-permalink: 1186-afterOpenLayout
+title: beforeCreateLayout
+sortid: 130
+permalink: 1194-beforeCreateLayout
 ---
 
 ## When
 
-After opening a layout
+Before creating a new layout in the Enterprise system. This includes Save As.
 
 ## Where
 
-![](../../images/indesign.png "InDesign") ![](../../images/indesignserver.png "InDesign Server")
+![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
 
 ## Arguments in
 
@@ -22,6 +22,8 @@ n/a
 n/a
 
 ## Notes
+
+Changes can be made to the document, these will be saved and sent to the Enterprise system.
 
 ## Supported versions
 

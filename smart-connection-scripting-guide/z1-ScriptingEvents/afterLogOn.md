@@ -1,17 +1,17 @@
 ---
 layout: chapter
-title: beforeLogOff
-sortid: 136
-permalink: 1200-beforeLogOff
+title: afterLogOn
+sortid: 120
+permalink: 1184-afterLogOn
 ---
 
 ## When
 
-Just before the log-off action.
+After a successful login, re-login or fork login.
 
 ## Where
 
-![](../../images/indesign.png "InDesign") ![](../../images/incopy.png "InCopy") ![](../../images/indesignserver.png "InDesign Server")
+![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
 
 ## Arguments in
 

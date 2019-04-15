@@ -1,46 +1,46 @@
 ---
 layout: chapter
-title: beforeSaveLayout
-sortid: 139
-permalink: 1203-beforeSaveLayout
+title: beforeSaveArticle
+sortid: 138
+permalink: 1202-beforeSaveArticle
 ---
 
 ## When
 
-Before sending a layout to the Enterprise system.
+Before sending an article to the Enterprise system.
 
 ## Where
 
-![](../../images/indesign.png "InDesign") ![](../../images/indesignserver.png "InDesign Server")
+![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
 
 ## Arguments in
 
-|Key | Description |
-|----|-------------|
-|Core_ID |The object id of the layout being saved.|
+|Key |Description|
+|----|-----------|
+|Core_ID |The object id of the article being saved.|
 |Core_Name |New name.|
-|Core_Publication| New Brand.|
+|Core_Publication |New Brand.|
 |Core_Issue |New Issue.|
 |Core_Section |New Section.|
-|Editions |New Edition(s)|
-|Core_Basket |New Status|
-|RouteTo |New routing|
+|Editions |New Edition(s).|
+|Core_Basket |New Status.|
+|RouteTo |New routing.|
 |Action |The workflow action done by the user.|
 
 ## Arguments out
 
 |Key |Description|
 |----|-----------|
-|errorId |Sets the error id to a non-zero value to abort the save.|
-|errorMessage |The message to be shown to the user. Requires the errorId to be set.
+|errorId |Set the error id to a non-zero value to abort the save.|
+|errorMessage |The message to be shown to the user. Requires the errorId to be set.|
 
 ## Notes
 
-The script can change the document. Changes will be saved and sent to the server.
+Don’t change the text of the article at this stage. Changes are not sent to the server. Use beforeExportArticle instead.
 
 ## Examples
 
-**Using beforeSaveLayout**
+**Using beforeSaveArticle**
 
 ```javascript
 var msg = 'ID: ' + app.scriptArgs.get( 'Core_ID' ) + '\n';
