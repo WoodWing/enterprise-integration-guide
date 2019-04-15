@@ -1,7 +1,7 @@
 ---
 layout: chapter
 title: count
-sortid: 67
+sortid: 6700
 permalink: 1159-count
 ---
 ## Syntax
