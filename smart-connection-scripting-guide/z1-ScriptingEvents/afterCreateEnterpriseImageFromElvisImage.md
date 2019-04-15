@@ -1,6 +1,6 @@
 ---
 layout: chapter
-title: afterCreateEnterpriseImageFromElvisImage
+title: afterCreateEnterprise&shy;ImageFromElvisImage
 sortid: 113
 permalink: 1177-afterCreateEnterpriseImageFromElvisImage
 ---
