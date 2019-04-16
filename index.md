@@ -58,7 +58,8 @@
 						Study the concepts and basic logic behind the public API of this server.</p>
 					</figcaption>
 				</figure>
-
+			</li>
+			<li>
 				<figure class="book">
 
 					<!-- Front -->
@@ -67,7 +68,7 @@
 						<li>
 							<div class="coverDesign blue">
 								<span class="ribbon">1.3</span>
-								<h1>Smart Connection</h1>
+								<h2>Smart Connection</h2>
 								<p>Scripting Guide</p>
 							</div>
 						</li>
@@ -81,7 +82,7 @@
 						<li>
 							<!-- "Start reading" button -->
 							<div style="z-index:2;">
-								<a href="1055-index" class="ww-btn ww-btn-enabled">
+								<a href="1068-index" class="ww-btn ww-btn-enabled">
 									<div style="vertical-align: middle; display: inline-block; margin-top:-10px; margin-left:10px;">
 										Read
 									</div>
