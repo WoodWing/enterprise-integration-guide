@@ -33,7 +33,7 @@ The AddToDossierOverride class needs to have the following functions:
 
 It returns an array of bool:
 
-|#|Description|
+| &num; |Description|
 |-|-----------|
 |1 |debug canPlaceItems?|
 |2 |debug placeItems?|
@@ -85,7 +85,7 @@ Should any user interface be suppressed or not.
 
 The return value is an array with three values:
 
-|#|Type|Description|
+| &num; |Type|Description|
 |-|----|-----------|
 |1 |boolean |Indicates if the Smart Connection code to add the objects to the Dossier should be performed or not.|
 |2 |string |The database id of the Dossier to which the object should be added to by the Smart Connection code. (not used when the first boolean is false)|
