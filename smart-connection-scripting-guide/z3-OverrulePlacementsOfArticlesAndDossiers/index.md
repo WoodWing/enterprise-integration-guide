@@ -2,7 +2,7 @@
 layout: section
 title: Overrule placement of Article and Dossiers
 sortid: 22
-permalink: 1173-index
+permalink: 1242-index
 ---
 
 The scripting possibilities of this chapter are introduced in Smart Connection v8.3.
@@ -30,7 +30,7 @@ The script should have the following properties:
 **Return value** *array of boolean*
 
 It returns an array of booleans:
-| &num; |Description|
+| |Description|
 |-|-----------|
 |1|debug canPlaceItems?|
 |2|debug placeItems?|
@@ -145,7 +145,7 @@ Properties of one point:
 
 The return value is an array with two values:
 
-| &num; |Type|Description|
+| |Type|Description|
 |-|----|-----------|
 |1	|boolean	|Indicates if the script handled the place or not. If this boolean is true the script handled the placement and Smart Connection should not perform its place code. If this boolean is false the script did not handle the placement and Smart Connection should perform its place code. Smart Connection is not able to place Dossiers. If the script to place a dossier returns false Smart Connection will empty the place gun.|
 |2	|array of number	|This is an array of ids of the items that are placed or replaced by the scripting code. If this list is empty and the boolean was true the Smart Connection place code is not called and the place gun is still loaded. If this list contains items the Smart Connection place code is not called and the place gun will be emptied.|

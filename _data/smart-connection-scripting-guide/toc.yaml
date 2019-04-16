@@ -827,7 +827,7 @@ toc:
       layout: section
       path: smart-connection-scripting-guide/z1-ScriptingEvents/index.md
       url: smart-connection-scripting-guide/z1-ScriptingEvents/index.html
-      permalink: 1205-index
+      permalink: 1240-index
       children:
       - title: afterCreateArticle
         layout: chapter
@@ -983,17 +983,17 @@ toc:
       layout: section
       path: smart-connection-scripting-guide/z3-OverrulePlacementsOfArticlesAndDossiers/index.md
       url: smart-connection-scripting-guide/z3-OverrulePlacementsOfArticlesAndDossiers/index.html
-      permalink: 1173-index
+      permalink: 1242-index
       children:
     - title: Overrule adding of created Enterprise image to Dossier
       layout: section
       path: smart-connection-scripting-guide/z4-OverruleAddingOfCreatedEnterpriseImageToDossier/index.md
       url: smart-connection-scripting-guide/z4-OverruleAddingOfCreatedEnterpriseImageToDossier/index.html
-      permalink: 1172-index
+      permalink: 1243-index
       children:
     - title: Smart Connection Custom Menu Items
       layout: section
       path: smart-connection-scripting-guide/z2-CustomMenuItems/index.md
       url: smart-connection-scripting-guide/z2-CustomMenuItems/index.html
-      permalink: 1171-index
+      permalink: 1241-index
       children:

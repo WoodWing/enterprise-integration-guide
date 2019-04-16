@@ -2,7 +2,7 @@
 layout: section
 title: Overrule adding of created Enterprise image to Dossier
 sortid: 23
-permalink: 1172-index
+permalink: 1243-index
 ---
 
 With scripting code it is possible to overrule the addition of Enterprise images, created from Elvis images, to a Dossier.
@@ -33,7 +33,7 @@ The AddToDossierOverride class needs to have the following functions:
 
 It returns an array of bool:
 
-| &num; |Description|
+| |Description|
 |-|-----------|
 |1 |debug canPlaceItems?|
 |2 |debug placeItems?|
@@ -85,7 +85,7 @@ Should any user interface be suppressed or not.
 
 The return value is an array with three values:
 
-| &num; |Type|Description|
+| |Type|Description|
 |-|----|-----------|
 |1 |boolean |Indicates if the Smart Connection code to add the objects to the Dossier should be performed or not.|
 |2 |string |The database id of the Dossier to which the object should be added to by the Smart Connection code. (not used when the first boolean is false)|

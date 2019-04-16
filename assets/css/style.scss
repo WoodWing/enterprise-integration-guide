@@ -105,10 +105,11 @@ div.toc {
   margin: 0;
 }
 .main-content-intro {
-  padding-left: 14rem;
-  padding-right: 14rem;
+  padding-left: 20rem;
+  padding-right: 20rem;
 }
-.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
+.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6,
+.main-content-intro h1, .main-content-intro h2, .main-content-intro h3, .main-content-intro h4, .main-content-intro h5, .main-content-intro h6 {
   color: #f90;
 }
 .project-tagline { opacity: 0.9; }
