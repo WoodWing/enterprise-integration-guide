@@ -30,6 +30,7 @@ The script should have the following properties:
 **Return value** *array of boolean*
 
 It returns an array of booleans:
+
 | Nº | Description |
 | - | ----------- |
 | 1 | debug canPlaceItems? |
@@ -55,6 +56,7 @@ A string with json content that contains the database ID, type, format and guid 
 [{"itemID": "909", "type": "Article", "format": "application/incopyicml", "guid": ""}]
 ```
 Properties of one item in this json string:
+
 |Name|Type|Description|
 |----|----|-----------|
 |itemID	|string	|The database id of the item to be placed|
@@ -69,6 +71,7 @@ A string with json content that contains the database ID and type of the target 
 [{"itemID": "444","type": "Layout"}]
 ```
 Properties of one item in this json string:
+
 |Name|Type|Description|
 |----|----|-----------|
 |itemID	|string	|The database id of the target Layout|
@@ -102,6 +105,7 @@ A string with json content that contains the database ID, type, format and guid 
 [{"itemID": "909", "type": "Article", "format": "application/incopyicml", "guid": ""}]
 ```
 Properties of one item in this json string:
+
 |Name|Type|Description|
 |----|----|-----------|
 |itemID	|string	|The database id of the item to be placed|
@@ -136,6 +140,7 @@ Two points:
 [{"x": "36","y": "470"},{"x": "199", "y": "568.8"}]
 ```
 Properties of one point:
+
 |Name|Type|Description|
 |----|----|-----------|
 |x	|string	|x position of the point|

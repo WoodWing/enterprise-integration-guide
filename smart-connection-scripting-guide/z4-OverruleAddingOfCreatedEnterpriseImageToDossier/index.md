@@ -89,9 +89,7 @@ The return value is an array with three values:
 | - | ---- | ----------- |
 | 1 | boolean | Indicates if the Smart Connection code to add the objects to the Dossier should be performed or not. |
 | 2 | string | The database id of the Dossier to which the object should be added to by the Smart Connection code. (not used when the first boolean is false) |
-| 3 | string | Indicates if the Select Dossier dialog should be shown
-or not (“true” or “false”). (not used when the first
-boolean is false) |
+| 3 | string | Indicates if the Select Dossier dialog should be shown or not (“true” or “false”). (not used when the first boolean is false) |
 
 A sample of the return value is:
 ```javascript
