@@ -38,4 +38,4 @@ Don’t change the text of the article template at this stage. Changes will not 
 
 ## See also
 
-* [Scripting Events](../../ScriptingEvents/index.md)
+* [Scripting Events](./index.md)

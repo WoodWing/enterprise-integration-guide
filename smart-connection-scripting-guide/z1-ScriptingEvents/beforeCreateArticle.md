@@ -38,4 +38,4 @@ Don’t change the text of the article at this stage. Changes will not be sent t
 
 ## See also
 
-* [Scripting Events](../../ScriptingEvents/index.md)
+* [Scripting Events](./index.md)

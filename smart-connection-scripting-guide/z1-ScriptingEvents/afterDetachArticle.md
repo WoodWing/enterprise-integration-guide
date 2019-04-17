@@ -41,4 +41,4 @@ article from the layout.
 
 ## See also
 
-* [Scripting Events](../../ScriptingEvents/index.md)
+* [Scripting Events](./index.md)

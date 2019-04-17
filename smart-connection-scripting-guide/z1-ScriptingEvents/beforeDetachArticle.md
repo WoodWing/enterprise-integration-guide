@@ -42,4 +42,4 @@ A template with all placed components of the article will be generated in the fi
 
 ## See also
 
-* [Scripting Events](../../ScriptingEvents/index.md)
+* [Scripting Events](./index.md)

@@ -57,4 +57,4 @@ alert( msg );
 
 ## See also
 
-* [Scripting Events](../../ScriptingEvents/index.md)
+* [Scripting Events](./index.md)

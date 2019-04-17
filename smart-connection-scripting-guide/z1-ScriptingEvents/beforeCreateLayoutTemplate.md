@@ -38,4 +38,4 @@ Changes can be made to the document, these will be saved and sent to the Enterpr
 
 ## See also
 
-* [Scripting Events](../../ScriptingEvents/index.md)
+* [Scripting Events](./index.md)

@@ -39,4 +39,4 @@ Changes made to the text will be part of the export, as well as changes made to 
 
 ## See also
 
-* [Scripting Events](../../ScriptingEvents/index.md)
+* [Scripting Events](./index.md)
