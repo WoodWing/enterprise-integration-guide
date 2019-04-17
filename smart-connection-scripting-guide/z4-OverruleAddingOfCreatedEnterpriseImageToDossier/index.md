@@ -33,11 +33,11 @@ The AddToDossierOverride class needs to have the following functions:
 
 It returns an array of bool:
 
-| |Description|
-|-|-----------|
-|1 |debug canPlaceItems?|
-|2 |debug placeItems?|
-|3 |show error alerts?|
+| Nº | Description |
+| - | ----------- |
+| 1 | debug canPlaceItems? |
+| 2 | debug placeItems? |
+| 3 | show error alerts? |
 
 Example:
 ```javascript
@@ -85,13 +85,13 @@ Should any user interface be suppressed or not.
 
 The return value is an array with three values:
 
-| |Type|Description|
-|-|----|-----------|
-|1 |boolean |Indicates if the Smart Connection code to add the objects to the Dossier should be performed or not.|
-|2 |string |The database id of the Dossier to which the object should be added to by the Smart Connection code. (not used when the first boolean is false)|
-|3 |string |Indicates if the Select Dossier dialog should be shown
+| Nº | Type | Description |
+| - | ---- | ----------- |
+| 1 | boolean | Indicates if the Smart Connection code to add the objects to the Dossier should be performed or not. |
+| 2 | string | The database id of the Dossier to which the object should be added to by the Smart Connection code. (not used when the first boolean is false) |
+| 3 | string | Indicates if the Select Dossier dialog should be shown
 or not (“true” or “false”). (not used when the first
-boolean is false)|
+boolean is false) |
 
 A sample of the return value is:
 ```javascript
