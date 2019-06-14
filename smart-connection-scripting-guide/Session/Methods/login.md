@@ -62,6 +62,7 @@ When logging in on servers which have Single Sign-On (SSO) enabled, the `login()
 SSO will be enabled for the follwing Smart Connection versions:
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
+
 | Adobe Version | Supported |
 |---------------|-----------|
 | CC 2017       | v12.3+ ✔  |
