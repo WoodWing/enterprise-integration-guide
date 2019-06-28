@@ -59,7 +59,7 @@ The `login()` method performs a login to the Enterprise system.
 ### Single Sign-On
 
 When logging in on servers which have Single Sign-On (SSO) enabled, the `login()` call will not work on clients except for InDesign Server.
-SSO will be enabled for the following Smart Connection versions:
+SSO is available for the following Smart Connection versions:
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
 
