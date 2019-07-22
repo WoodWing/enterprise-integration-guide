@@ -37,12 +37,12 @@ The object type. Default is an empty string.
 The ID of the default parent Dossier. Default is an empty string.
 The passed Dossier ID will be used as the default selected Dossier in the Save As dialog when creating an Article or Image from the Layout (if the document is a Layout).
 
-**server** *string (Optional)*
+**server** *string (Optional)*  
+<sub>(Supported from v12.3, v13.1, v14.1)</sub>
 
 The name of the server on which the object with the `objectId` is stored. When needed the user will get the possibility to log in to this server.
 
 **Return value** *Document*  
-<sub>(Supported from v12.3, v13.1, v14.1)</sub>
 
 The Document object which is opened. Undefined when a Document could not be openend.
 
