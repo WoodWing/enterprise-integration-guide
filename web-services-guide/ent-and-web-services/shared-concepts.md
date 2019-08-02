@@ -270,7 +270,7 @@ can look up definitions. Because the Brand admin user has configured for all sta
 *State* and *Section* elements are not provided (*xsi:nil* attribute set to “true”). Nil typically means no specific 
 item configured, which implies all options. (Note that Category was formerly named Section.) When configured, an id is 
 filled in for those elements. When access rights are configured for an Issue with the “Overrule Brand” option enabled, 
-the *Issue* element is used to pass its id.
+the *Issue* element is used to pass its id. *Note: the Overrule Brand option is no longer supported from Enterprise Server 10.7.0 onwards.*
 
 ```xml
 <LogOnResponse>

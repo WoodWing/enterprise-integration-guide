@@ -466,3 +466,8 @@ interpreted as a Set Properties operation for a single object.
 
 Based on the parameter value, advanced business rules may apply when determining the dialog options, only returning 
 those properties that apply when handling multiple objects.
+
+### Dropped support for the Overrule Brand option \[since 10.7.0\]
+
+Since Enterprise Server 10.7.0 the option to determine if an Issue should have its own Categories, Workflow, and User Authorization definitions
+is removed. References to this option in both the Admin as the Workflow services will result in an error (Missing function parameter (S1000)).
