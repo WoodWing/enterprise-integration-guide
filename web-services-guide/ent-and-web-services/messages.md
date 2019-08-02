@@ -181,6 +181,7 @@ originate from the brands the user has access to.
 
 Issues that have the Overrule Brand option enabled are much the same as regular brands: for both setups a workflow can 
 be configured including access rights. Therefore wherever ‘brand’ is mentioned in this chapter, this includes overrule issues.
+*Note: the Overrule Brand option is no longer supported from Enterprise Server 10.7.0 onwards.*
 
 ### On logon, server prepares RabbitMQ
 
