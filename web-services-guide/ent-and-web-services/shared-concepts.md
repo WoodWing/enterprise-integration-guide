@@ -295,6 +295,13 @@ the *Issue* element is used to pass its id.
 
 ```
 
+#### Changes since 10.7.0
+
+Since Enterprise Server 10.7.0 the PublicationInfo and FeatureAccess list can also be requested via specific API calls. 
+The WflGetPublications service can be used to get the PublicationInfo objects and the WflGetAuthorizations service can 
+be used to get the FeatureProfile objects. For backwards compatibility the information is also returned in the 
+LogOnResponse when requested. 
+
 ### Disabling GUI items
 
 For user convenience, the client application GUI can be enhanced by hiding/disabling operations that are expected to 
