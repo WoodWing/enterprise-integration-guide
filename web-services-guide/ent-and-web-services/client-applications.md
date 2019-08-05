@@ -226,8 +226,8 @@ try {
 	$request->Users = array( $userObj );
 
 	// Request Enterprise to create user in the database.
-	$service = WW_DIContainer::get( WflGetNamedQueriesService::class ); // Since 10.7.0
-	$response = $service->execute( $request );
+	$service = new AdmCreateUsersService();
+	$response = $service = WW_DIContainer::get( AdmCreateUsersService::class ); // Since 10.7.0
 	// $response is an AdmCreateUsersResponse object
 
 	// Just display the user’s DB id of the created user.
@@ -261,19 +261,19 @@ AdmCreateUsersService, AdmCreateUsersRequest and AdmCreateUsersResponse. Those o
 
 ### Changes since 10.7.0
 
-Due to internal changes in the service, business and database layers of Enterprise Server loading the services has 
-changed. Loading services introduced in 10.7 and higher can only be achieved when using:
+Due to internal changes in the service, business and database layers of Enterprise Server, the way that services are 
+loaded has changed. Loading services that are introduced since 10.7 and higher can only be achieved when using:
 
 `$service = WW_DIContainer::get( WflGetNamedQueriesService::class );`
 
-Services that existed before 10.7 can still be loaded with the old code (e.g. 
-`$service = new WflGetNamedQueriesService();`) but is deprecated. Existing services can change in later versions and 
-throw a PHP error. You are therefore encouraged to update the code. 
+Services that existed before 10.7 can still be loaded with the old code (e.g. `$service = new WflGetNamedQueriesService();`) 
+but is deprecated. Existing services can change in later versions and throw a PHP error. You are therefore encouraged 
+to update your code to use the new syntax. 
 
-If you have an integration that needs to support both pre 10.7 versions and 10.7 and higher you can use the following 
-code to be backwards compatible.
+If you have an integration that needs to support both pre-10.7 versions and 10.7 and higher you can use the following 
+code to be backwards compatible:
 
-```
+```php
 $service = getServiceInstance( WflGetNamedQueriesService::class );
 
 function getServiceInstance( $classname )

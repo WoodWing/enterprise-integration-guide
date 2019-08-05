@@ -300,7 +300,7 @@ the *Issue* element is used to pass its id. *Note: the Overrule Brand option is 
 Since Enterprise Server 10.7.0 the PublicationInfo and FeatureAccess list can also be requested via specific API calls. 
 The WflGetPublications service can be used to get the PublicationInfo objects and the WflGetAuthorizations service can 
 be used to get the FeatureProfile objects. For backwards compatibility the information is also returned in the 
-LogOnResponse when requested. 
+LogOnResponse when explicitly requested in the RequestInfo. 
 
 ### Disabling GUI items
 
