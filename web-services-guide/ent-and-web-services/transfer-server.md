@@ -198,16 +198,16 @@ Content Station 9.5 uses Deflate compression when remote users are saving (uploa
 articles. This feature becomes affective when in the LogOnResponse the ‘IsRemoteUser’ feature is set to ‘true' and the 
 ‘AcceptsCompressions’ feature lists the ‘deflate’ technology.
 
-## Signed transfer server URLs \[since 10.7\]
+## Signed Transfer Server URLs \[since 10.7\]
 
-Since Enterprise Server version 10.7.0 it is possible to request signed download links from the server. This
-will allow clients to download files from the transfer server without knowing the ticket and fileguid. The signed url can 
-only be generated with a client that has a valid session ticket and the token is only valid for a specific amount of 
+Since Enterprise Server version 10.7.0 it is possible to request signed download links from the server. The signed URL 
+allows clients to download files from the Transfer Server without knowing the ticket and fileguid. The signed url can 
+only be generated with a client that has a valid session ticket and the token is only valid for a specific period of 
 time for only the file it was generated for. This feature is useful when you want to get a download link and pass it to a 
 different application (for example for downloading). 
 
-To request a signed URL from the server you can add the following parameters to the server URL that is used to call 
-a service on Enterprise Server. An example URL would be: 
+To request a signed URL from the server you can add the following parameters to the web service entry point. An example 
+URL would be: 
 
 `http://123.123.123.123/index.php?protocol=JSON&transfer=HTTP&signedUrls=true&autoCleanUrls=true`
 
@@ -221,10 +221,10 @@ The possible options are:
      FILE_TRANSFER_SIGNED_URL_TIMEOUT in the configuration of the server. 
 * autoCleanUrls
 	 * When autoCleanUrls is true the autoclean parameter is added to the generated url or token. This will clean the file 
-     from the transfer server folder after downloading. In combination with signedUrls this means that the download is valid 
+     from the Transfer Server folder after downloading. In combination with signedUrls this means that the download is valid 
      only once.
 
-When the signedUrls option is given transfer server URLs are returned like:
+When the signedUrls option is given Transfer Server URLs are returned like:
 
 `http://123.123.123.123/transferindex.php?token=<generated_token>`
 
