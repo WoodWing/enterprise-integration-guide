@@ -226,8 +226,8 @@ try {
 	$request->Users = array( $userObj );
 
 	// Request Enterprise to create user in the database.
-	$service = new AdmCreateUsersService();
-	$response = $service = WW_DIContainer::get( AdmCreateUsersService::class ); // Since 10.7.0
+	$service = WW_DIContainer::get( AdmCreateUsersService::class ); // Since 10.7.0
+	$response = $service->execute( $request );
 	// $response is an AdmCreateUsersResponse object
 
 	// Just display the user’s DB id of the created user.
