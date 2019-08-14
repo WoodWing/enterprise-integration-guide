@@ -198,6 +198,49 @@ Content Station 9.5 uses Deflate compression when remote users are saving (uploa
 articles. This feature becomes affective when in the LogOnResponse the ‘IsRemoteUser’ feature is set to ‘true' and the 
 ‘AcceptsCompressions’ feature lists the ‘deflate’ technology.
 
+## Signed Transfer Server URLs \[since 10.7\]
+
+Since Enterprise Server version 10.7.0 it is possible to request signed download links from the server. The signed URL 
+allows clients to download files from the Transfer Server without knowing the ticket and fileguid. The signed url can 
+only be generated with a client that has a valid session ticket and the token is only valid for a specific period of 
+time for only the file it was generated for. This feature is useful when you want to get a download link and pass it to a 
+different application (for example for downloading). 
+
+To request a signed URL from the server you can add the following parameters to the web service entry point. An example 
+URL would be: 
+
+`http://123.123.123.123/index.php?protocol=JSON&transfer=HTTP&signedUrls=true&autoCleanUrls=true`
+
+The possible options are:
+
+* compressionEnabledUrls
+    * When compressionEnabledUrls is true the compression parameter will be added to the url or added to the token when 
+    signedUrls is true. The compression parameter is automatically set to 'deflate'.
+* signedUrls
+    * When signedUrls is true a token will be generated that is valid for a number of seconds as configured with 
+     FILE_TRANSFER_SIGNED_URL_TIMEOUT in the configuration of the server. 
+* autoCleanUrls
+	 * When autoCleanUrls is true the autoclean parameter is added to the generated url or token. This will clean the file 
+     from the Transfer Server folder after downloading. In combination with signedUrls this means that the download is valid 
+     only once.
+
+When the signedUrls option is given Transfer Server URLs are returned like:
+
+`http://123.123.123.123/transferindex.php?token=<generated_token>`
+
+Uploading files can also be executed with a signed URL. First you need to call the transfer index with the following
+parameter (with a valid Enterprise Server ticket):
+
+`http://123.123.123.123/transferindex.php?uploadtokens=<number_of_upload_tokens>`
+
+Unique tokens are then generated and returned as a JSON encoded array. The token already contains a unique fileguid 
+parameter so there is no need to generate this guid in the client. The files can then be uploaded by calling the 
+following URL (no need for a ticket):
+
+`PUT ../transferindex.php?token=<token>`
+
+The same URL can then be used as FileURL when calling the Enterprise Server services.
+
 ## Deleting files
 
 The separation of messages and file transfers can have big performance gains in all kinds of situations. This heavily 
