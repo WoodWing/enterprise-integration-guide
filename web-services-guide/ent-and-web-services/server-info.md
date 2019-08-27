@@ -151,9 +151,9 @@ Unlike examples mentioned above, this service request is _not_ a JSON RPC reques
 Example response [since 10.8]:
 ```json
 {
-   Name: "Enterprise",
-   Version: "10.8.0 Build 123",
-   EnterpriseSystemId: "f8210fed-3e64-a351-bfa7-55e9a7bd83bf"
+   "Name": "Enterprise",
+   "Version": "10.8.0 Build 123",
+   "EnterpriseSystemId": "f8210fed-3e64-a351-bfa7-55e9a7bd83bf"
 }
 ```
 
@@ -166,13 +166,13 @@ Unlike examples mentioned above chapter, this service request is _not_ a JSON RP
 Example response:
 ```json
 {
-	Name: "Enterprise",
-	Version: "10.8.0 Build 123",
-	EnterpriseSystemId: "f8210fed-3e64-a351-bfa7-55e9a7bd83bf",
-	Status: {
-		Filestore: "OK",
-		Database: "OK",
-		FileTransferServer: "OK"
+	"Name": "Enterprise",
+	"Version": "10.8.0 Build 123",
+	"EnterpriseSystemId": "f8210fed-3e64-a351-bfa7-55e9a7bd83bf",
+	"Status": {
+		"Filestore": "OK",
+		"Database": "OK",
+		"FileTransferServer": "OK"
 	}
 }
 ```
