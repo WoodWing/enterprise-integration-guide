@@ -324,7 +324,7 @@ To find out, there is a very lightweight handshake done between client an server
 request to the entry point with a new handshake parameter. For example this is what a client sends to the workflow 
 entry point:
 
-`http://123.123.123.123/transferindex.php?handshake=v1`
+`http://123.123.123.123/index.php?handshake=v1`
 
 This tells that the client understands (version 1 of) the handshake. Enterprise Server 7 does not support handshakes 
 and returns the logon page (HTML). This is not XML, so the client can safely assume DIME over SOAP needs to be chosen. 
