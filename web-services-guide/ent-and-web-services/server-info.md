@@ -15,7 +15,7 @@ A client application may want to cache some information that originates from a s
 
  Instead of the Enterprise Server URL, the `Enterprise System ID` should be used to uniquely identify an `Enterprise installation`. There are several ways how to retrieve this ID as described hereafter.
  
- ### GetServers service
+### GetServers service
   Although this service always has been provided, since Enterprise Server 10.8 the response contains the `Enterprise System ID`. This ID is only provided for the `ServerInfo` item that represents the `Enterprise installation` being requested. 
   
   Note that the `GetServers` service does not require a ticket and therefor it can be called even before calling the `LogOn` service. 
@@ -95,6 +95,8 @@ Example response in JSON:
 
 ### LogOn service
 Although this service always has been provided, since Enterprise Server 9.2 the response contains the `Enterprise System ID`. 
+
+Example request in JSON:
 ```json
 {
     "method": "LogOn",
