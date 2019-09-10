@@ -91,6 +91,7 @@ The following shows all supported events and their messages:
 |  42      | DeleteIssue <sup>18)</sup>       | 10.4.1     | Ticket <sup>9)</sup>, Id (issue)
 |  43      | UpdateIssuesOrder                | 10.4.1     | Ticket <sup>9)</sup>, PublicationId, PubChannelId, IssueIdsOrder <sup>15)</sup> 
 |  44      | UpdatePublicationChannel         | 10.4.1     | Ticket <sup>9)</sup>, PublicationId, Id (publication channel), Name (publication channel), Type, CurrentIssueId, DirectPublish, SupportsForms, SupportsCropping
+|  45      | UpdateProgress  <sup>19)</sup>   | 10.8.0     | Ticket <sup>9) 20)</sup>, OperationId (returned by web service), Progress (percentage in range 0..100)
 
 1.  ObjectType as specified in the workflow WSDL. Options are: Article, Layout, Image, etc.
 
@@ -148,7 +149,23 @@ flag is set should be ignored.
 
 18. The CreateIssue event is not supported for Overrule Issues (issues having the OverrulePublication flag set) because 
 client applications would then need the entire workflow setup which is only provided through a logon response. The 
-ModifyIssue and DeleteIssue events are sent out for normal issues and Overrule Issues. 
+ModifyIssue and DeleteIssue events are sent out for normal issues and Overrule Issues.
+
+19. Some of the provided web services are asynchronous (such as the CreateObjectRelationsAsync service). A service is made 
+asynchronous as it may require significant processing time. This way, HTTP connections are kept open for a very limited 
+amount of time, enabling load balancers to evenly spread the work over the available servers. Therefore an asynchronous web 
+service does not execute work in direct context of the client application's HTTP request. Instead, it pushes a new server 
+job in the queue and immediately returns an `OperationId`. When the job has support for a progress indication, it periodically 
+updates its progress in its job record but also sends out a message with progress info. (If there is no such support, the 
+job processor sends a message once the entire job is finished.) This enables the client application to show a progress 
+indicator for the end user waiting for the operation to complete. A progress message includes an `OperationId` field to 
+enable the client application to recognize the operation it has initiated. As failed jobs may be retried, the progress 
+indicator may be reset to zero to let the job show its progress again. When a job execution was successful or when it 
+has failed too many times and was given up, the progress will be set to 100 to let the client application retrieve the 
+service results through a subsequent web service. This could be either a successful response or an error. 
+
+20. As the server job is working on the offloaded operation in the background, the Ticket will *not* be the same as the ticket
+of the client application that initiated the job. 
 
 ## RabbitMQ integration \[since 10.0\]
 
