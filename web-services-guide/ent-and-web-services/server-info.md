@@ -155,7 +155,8 @@ Example response [since 10.8]:
 {
    "Name": "Enterprise",
    "Version": "10.8.0 Build 123",
-   "EnterpriseSystemId": "f8210fed-3e64-a351-bfa7-55e9a7bd83bf"
+   "EnterpriseSystemId": "f8210fed-3e64-a351-bfa7-55e9a7bd83bf",
+   "ContentStationUrl": "http://localhost/Enterprise/contentstation/"
 }
 ```
 
@@ -171,6 +172,7 @@ Example response:
 	"Name": "Enterprise",
 	"Version": "10.8.0 Build 123",
 	"EnterpriseSystemId": "f8210fed-3e64-a351-bfa7-55e9a7bd83bf",
+	"ContentStationUrl": "http://localhost/Enterprise/contentstation/",
 	"Status": {
 		"Filestore": "OK",
 		"Database": "OK",
