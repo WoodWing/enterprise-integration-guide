@@ -16,9 +16,9 @@ A client application may want to cache some information that originates from a s
  Instead of the Enterprise Server URL, the `Enterprise System ID` should be used to uniquely identify an `Enterprise installation`. There are several ways how to retrieve this ID as described hereafter.
  
 ### GetServers service
-  Although this service always has been provided, since Enterprise Server 10.8 the response contains the `Enterprise System ID`. This ID is only provided for the `ServerInfo` item that represents the `Enterprise installation` being requested. 
+  Although this service has been introduced since earlier versions of Enterprise, since Enterprise Server 10.8 the response contains the `Enterprise System ID`. This ID is only provided for the `ServerInfo` item that represents the `Enterprise installation` being requested. 
   
-  Note that the `GetServers` service does not require a ticket and therefor it can be called even before calling the `LogOn` service. 
+  Note that the `GetServers` service does not require a ticket and therefore it can be called even before calling the `LogOn` service. 
   
 Example request in JSON:
 ```json
@@ -38,17 +38,15 @@ Example response in JSON:
 {
     "id": "1",
     "result": {
-        "Servers": [
-            {
-                "Name": "Enterprise",
-                "URL": "http:\/\/localhost\/Enterprise\/index.php",
-                ...
-                "Version": "10.8.0 Build 123",
-                ...
-                "EnterpriseSystemId": "f8210fed-3e64-a351-bfa7-55e9a7bd83bf",
-                "__classname__": "ServerInfo"
-            }
-        ],
+        "Servers": [ {
+            "Name": "Enterprise",
+            "URL": "http://localhost/Enterprise/index.php",
+            ...
+            "Version": "10.8.0 Build 123",
+            ...
+            "EnterpriseSystemId": "f8210fed-3e64-a351-bfa7-55e9a7bd83bf",
+            "__classname__": "ServerInfo"
+        } ],
         "CompanyLanguage": "enUS",
         "__classname__": "WflGetServersResponse"
     },
@@ -76,17 +74,15 @@ Example response in JSON:
 {
     "id": "1",
     "result": {
-        "ServerInfo": [
-            {
-                "Name": "Enterprise",
-                "URL": "http:\/\/localhost\/Enterprise\/index.php",
-                ...
-                "Version": "10.8.0 Build 123",
-                ...
-                "EnterpriseSystemId": "f8210fed-3e64-a351-bfa7-55e9a7bd83bf",
-                "__classname__": "ServerInfo"
-            }
-        ],
+        "ServerInfo": [ {
+            "Name": "Enterprise",
+            "URL": "http://localhost/Enterprise/index.php",
+            ...
+            "Version": "10.8.0 Build 123",
+            ...
+            "EnterpriseSystemId": "f8210fed-3e64-a351-bfa7-55e9a7bd83bf",
+            "__classname__": "ServerInfo"
+        } ],
         "__classname__": "WflGetServerInfoResponse"
     },
     "jsonrpc": "2.0"
@@ -94,7 +90,7 @@ Example response in JSON:
 ```
 
 ### LogOn service
-Although this service always has been provided, since Enterprise Server 9.2 the response contains the `Enterprise System ID`. 
+Although this service has been introduced since earlier versions of Enterprise, since Enterprise Server 9.2 the response contains the `Enterprise System ID`. 
 
 Example request in JSON:
 ```json
@@ -127,7 +123,7 @@ Example response in JSON:
         ...
         "ServerInfo": {
             "Name": "Enterprise",
-            "URL": "http:\/\/localhost\/Enterprise\/index.php",
+            "URL": "http://localhost/Enterprise/index.php",
             ...
             "Version": "10.8.0 Build 123",
             ...
@@ -142,11 +138,11 @@ Example response in JSON:
 ```
 
 ### Ping service [since 10.2]
-The most light service to resolve the `Enterprise System ID` is the following:
+The most lightweight service to resolve the `Enterprise System ID` is the following:
 * `http://localhost/Enterprise/index.php?test=ping`
 
-Unlike examples mentioned above, this service request is _not_ a JSON RPC request but a simple HTTP GET request. The service may (or may not) return a JSON body, depending on the Enterprise Server version:
-* 10.1 or older gives a HTTP 302 (redirect to the admin logon page)
+Unlike the examples provided in the chapters hereinabove, the ping service request is _not_ a JSON RPC request but a simple HTTP GET request. The service may (or may not) return a JSON body, depending on the Enterprise Server version:
+* 3.0 - 10.1 gives a HTTP 302 (redirect to the admin logon page)
 * 10.2 - 10.7 gives a HTTP 200 with an empty body
 * 10.8 or newer gives a HTTP 200 with a JSON body (see example below)
 
@@ -164,7 +160,10 @@ Example response [since 10.8]:
 For a load balancer you may want to configure a light service that periodically determines whether an `Enterprise installation` is still healthy. The following service request can be configured:
 * `http://localhost/Enterprise/index.php?test=status`
 
-Unlike examples mentioned above chapter, this service request is _not_ a JSON RPC request but a simple HTTP GET request.
+Unlike the examples provided in the chapters hereinabove, the server status service request is _not_ a JSON RPC request but a simple HTTP GET request. The service may (or may not) return a JSON body, depending on the Enterprise Server version:
+* 3.0 - 10.1 gives a HTTP 302 (redirect to the admin logon page)
+* 10.2 - 10.7 gives a HTTP 200 with an empty body
+* 10.8 or newer gives a HTTP 200 with a JSON body (see example below)
 
 Example response:
 ```json
