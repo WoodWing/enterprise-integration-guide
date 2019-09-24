@@ -153,7 +153,7 @@ ModifyIssue and DeleteIssue events are sent out for normal issues and Overrule I
 
 19. Some of the provided web services are asynchronous (such as the CreateObjectRelationsAsync service). A service is made 
 asynchronous as it may require significant processing time. This way, HTTP connections are kept open for a very limited 
-amount of time, enabling load balancers to evenly spread the work over the available servers. Therefore an asynchronous web 
+amount of time. Therefore an asynchronous web 
 service does not execute work in direct context of the client application's HTTP request. Instead, it pushes a new server 
 job in the queue and immediately returns an `OperationId`. When the job has support for a progress indication, it periodically 
 updates its progress in its job record but also sends out a message with progress info. (If there is no such support, the 
