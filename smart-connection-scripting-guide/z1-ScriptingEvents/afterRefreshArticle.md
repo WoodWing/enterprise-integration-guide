@@ -11,7 +11,7 @@ After refreshing the XML representation of an article from disk.
 
 ## Where
 
-![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %})
+![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
 
 ## Arguments in
 
