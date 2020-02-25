@@ -9,10 +9,7 @@ Many aspects of the Smart Connection client application are scriptable using Jav
 sharing how to script the Smart Connection specific part of the scripting object model. It should be used as a companion
 to InDesign’s Scripting Guide and the scripting model presented by the Adobe ExtendScript Toolkit.
 
-This guide can be used for the following version of Smart Connection:
-* Smart Connection for Adobe CC
-* Smart Connection for Adobe CC 2014
-* Smart Connection for Adobe CC 2015
+This guide can be used for the following versions of Smart Connection:
 * Smart Connection for Adobe CC 2017
 * Smart Connection for Adobe CC 2018
 * Smart Connection for Adobe CC 2019

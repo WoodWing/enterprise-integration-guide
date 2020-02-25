@@ -29,9 +29,6 @@ Don’t change the text of the article at this stage. Changes will not be sent t
 
 | Adobe Version | Supported |
 |---------------|-----------|
-| CC            | ✔         |
-| CC 2014       | ✔         |
-| CC 2015       | ✔         |
 | CC 2017       | ✔         |
 | CC 2018       | ✔         |
 | CC 2019       | ✔         |
