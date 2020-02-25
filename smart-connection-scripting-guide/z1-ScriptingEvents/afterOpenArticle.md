@@ -1,6 +1,6 @@
 ---
 layout: chapter
-title: beforeSaveLayout
+title: afterOpenArticle
 sortid: 121
 permalink: 1185-afterOpenArticle
 ---
