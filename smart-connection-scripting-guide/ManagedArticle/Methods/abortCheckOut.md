@@ -39,3 +39,4 @@ The `abortCheckOut()` method cancels the check-out of the placed Article.
 | CC 2017       | ✔       |
 | CC 2018       | ✔       |
 | CC 2019       | ✔       |
+| 2020          | ✔       |

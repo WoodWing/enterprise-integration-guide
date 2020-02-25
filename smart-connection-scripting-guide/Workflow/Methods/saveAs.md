@@ -41,3 +41,4 @@ Use the “Type” key in the EntMetaData to indicate what kind of object should
 | CC 2017       | ✔         |
 | CC 2018       | ✔         |
 | CC 2019       | ✔         |
+| 2020          | ✔         |

@@ -47,3 +47,4 @@ The `jsonRequest()` method posts a JSON object string as a request to an Enterpr
 | CC 2017       | ✔         |
 | CC 2018       | ✔         |
 | CC 2019       | ✔         |
+| 2020          | ✔         |

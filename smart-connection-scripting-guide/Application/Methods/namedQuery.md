@@ -52,3 +52,4 @@ The `namedQuery()` method performs a named query. It can be used for the Inbox, 
 | CC 2017       | ✔         |
 | CC 2018       | ✔         |
 | CC 2019       | ✔         |
+| 2020          | ✔         |

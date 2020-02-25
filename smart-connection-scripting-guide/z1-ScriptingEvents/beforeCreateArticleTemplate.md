@@ -35,6 +35,7 @@ Don’t change the text of the article template at this stage. Changes will not 
 | CC 2017       | ✔         |
 | CC 2018       | ✔         |
 | CC 2019       | ✔         |
+| 2020          | ✔         |
 
 ## See also
 

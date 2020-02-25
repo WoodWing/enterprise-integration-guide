@@ -42,3 +42,4 @@ The `defaultEditions` property is used to get the list of Edition names that new
 | CC 2017       | ✔       |
 | CC 2018       | ✔       |
 | CC 2019       | ✔       |
+| 2020          | ✔       |

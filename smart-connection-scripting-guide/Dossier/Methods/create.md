@@ -39,3 +39,4 @@ The `create()` method creates a new Dossier object. The Dossier is created in En
 | CC 2017       | ✔       |
 | CC 2018       | ✔       |
 | CC 2019       | ✔       |
+| 2020          | ✔       |

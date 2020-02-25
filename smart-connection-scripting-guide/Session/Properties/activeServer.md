@@ -53,6 +53,7 @@ var serverName = sessionObject.activeServer;
 | CC 2017       | ✔       |
 | CC 2018       | ✔       |
 | CC 2019       | ✔       |
+| 2020          | ✔       |
 
 ## See also
 

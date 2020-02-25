@@ -42,3 +42,4 @@ The `defaultDossier` property is used to get or get the the name of the Dossier 
 | CC 2017       | ✔         |
 | CC 2018       | ✔         |
 | CC 2019       | ✔         |
+| 2020          | ✔         |

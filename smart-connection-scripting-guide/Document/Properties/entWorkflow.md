@@ -42,3 +42,4 @@ The `entWorkflow` property is used to get access to the Enterprise worlkflow act
 | CC 2017       | ✔       |
 | CC 2018       | ✔       |
 | CC 2019       | ✔       |
+| 2020          | ✔       |

@@ -39,6 +39,7 @@ The `reLogin()` method performs a re-login to the Enterprise system. Useful when
 | CC 2017       | ✔       |
 | CC 2018       | ✔       |
 | CC 2019       | ✔       |
+| 2020          | ✔       |
 
 ### Single Sign-On
 
@@ -52,3 +53,4 @@ SSO is available for the following Smart Connection versions:
 | CC 2017       | v12.3+ ✔  |
 | CC 2018       | v13.1+ ✔  |
 | CC 2019       | v14.1+ ✔  |
+| 2020          | ✔         |

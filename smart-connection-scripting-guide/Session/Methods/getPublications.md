@@ -39,3 +39,4 @@ The `getPublications()` method returns a list of all Brands of the current serve
 | CC 2017       | ✔       |
 | CC 2018       | ✔       |
 | CC 2019       | ✔       |
+| 2020          | ✔       |

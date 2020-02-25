@@ -48,3 +48,4 @@ The `queryObjects()` method performs a user query based in the passed criteria.
 | CC 2017       | ✔         |
 | CC 2018       | ✔         |
 | CC 2019       | ✔         |
+| 2020          | ✔         |

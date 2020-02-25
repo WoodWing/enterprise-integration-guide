@@ -16,6 +16,7 @@ This guide can be used for the following version of Smart Connection:
 * Smart Connection for Adobe CC 2017
 * Smart Connection for Adobe CC 2018
 * Smart Connection for Adobe CC 2019
+* Smart Connection for Adobe 2020
 
 ## Required knowledge
 We assume the reader of this guide is familiar with:
