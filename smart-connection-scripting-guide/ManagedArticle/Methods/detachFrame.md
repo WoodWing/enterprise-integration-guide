@@ -13,10 +13,9 @@ ManagedArticle.detachFrame(pageItem);
 
 ### Parameters
 
-**pageItem** *PageItem, Story*
+**pageItems** *PageItem[]*
 
-Page item, or Story, that will be detached if it is a multiple placed Article component.
-If the passed page item is not a multiple placed Article component the Error Code "The object cannot be detached." will be returned.
+The page items that will be detached from the article. If the passed page item is the last placed component of the Article the Error Code "The object cannot be detached." will be returned.
 
 **Return value**
 
@@ -24,7 +23,7 @@ The `detachFrame()` method does not return anything.
 
 ## Description
 
-The `detachFrame()` method detaches a frame from a multi-component Article.
+The `detachFrame()` method detaches frames from a multi-component Article. The last placed component of the Article cannot be detached using this method. The functionality is similar to the 'Detach Component' menu.
 
 ## Examples
 
