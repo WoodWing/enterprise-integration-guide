@@ -23,7 +23,7 @@ The `detachComponent()` method does not return anything.
 
 ## Description
 
-The `detachComponent()` method detaches a component from the layout and deletes the component from a multi-component Article. The last placed component of the Article cannot be detached and deleted using this method.
+The `detachComponent()` method detaches a component from the layout and deletes the component from a multi-component Article. The last placed component of the Article cannot be detached and deleted using this method. The functionality is similar to the 'Detach and Delete Component from Article' menu.
 
 ## Examples
 
