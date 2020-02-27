@@ -13,6 +13,10 @@ ManagedArticle.checkIn();
 
 ### Parameters
 
+**pageItems** *PageItem[] (Optional)*
+
+The page items that will be additionally added to the Article.
+
 **Return value**
 
 The `checkIn()` method does not return anything.
