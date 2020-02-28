@@ -13,6 +13,10 @@ ManagedArticle.checkIn();
 
 ### Parameters
 
+**pageItems** *PageItem[] (Optional)*
+
+The page items that will be additionally added to the Article.
+
 **Return value**
 
 The `checkIn()` method does not return anything.
@@ -33,9 +37,7 @@ The `checkIn()` method checks-in the placed Article in the Enterprise system.
 
 | Adobe Version | Supported |
 |---------------|---------|
-| CC            | ✔       |
-| CC 2014       | ✔       |
-| CC 2015       | ✔       |
 | CC 2017       | ✔       |
 | CC 2018       | ✔       |
 | CC 2019       | ✔       |
+| 2020          | ✔       |

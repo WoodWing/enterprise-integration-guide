@@ -23,7 +23,7 @@ The `detachComponent()` method does not return anything.
 
 ## Description
 
-The `detachComponent()` method removes a component from a multi-component Article. The last component of the Article cannot be deatched using this method.
+The `detachComponent()` method detaches a component from the layout and deletes the component from a multi-component Article. The last placed component of the Article cannot be detached and deleted using this method. The functionality is similar to the 'Detach and Delete Component from Article' menu.
 
 ## Examples
 
@@ -37,9 +37,7 @@ The `detachComponent()` method removes a component from a multi-component Articl
 
 | Adobe Version | Supported |
 |---------------|---------|
-| CC            | ✔       |
-| CC 2014       | ✔       |
-| CC 2015       | ✔       |
 | CC 2017       | ✔       |
 | CC 2018       | ✔       |
 | CC 2019       | ✔       |
+| 2020          | ✔       |
