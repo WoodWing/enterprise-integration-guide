@@ -5,8 +5,6 @@ sortid: 22
 permalink: 1242-index
 ---
 
-The scripting possibilities of this chapter are introduced in Smart Connection v8.3.
-
 With scripting code it is possible to overrule the placement of whole articles and it is possible to implement the placement of Dossiers. It is currently not possible to overrule the placement of images and article components.
 
 The script in which this can be implemented should be placed into the Startup Scripts folder in either the application’s scripts folder or in the user’s scripts folder. The script locations are:

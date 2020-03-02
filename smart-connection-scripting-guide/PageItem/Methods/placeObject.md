@@ -23,7 +23,7 @@ The component’s id
 
 **fileType** *string* (Optional)
 
-The object’s type. This is an optional parameter since CC 2014.
+The object’s type.
 
 **Return value**
 

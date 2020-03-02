@@ -27,11 +27,11 @@ Name of the location to log in to. This is the name of the entry in the server l
 
 **quick** *boolean (Optional)*
 
-*(Introduced in CC 2014)* Boolean that indicates if the login to the Enterprise system should be performed without retrieving session information or not. Default is false.
+Boolean that indicates if the login to the Enterprise system should be performed without retrieving session information or not. Default is false.
 
 **requestInfo** *Array of string  (Optional)*
 
-*(Introduced in CC 2014)* The list of request information that should be obtained with the logon. When not specified all information will be requested.
+The list of request information that should be obtained with the logon. When not specified all information will be requested.
 
 **Return value**
 

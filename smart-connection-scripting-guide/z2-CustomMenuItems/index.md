@@ -4,7 +4,7 @@ title: Smart Connection Custom Menu Items
 permalink: 1241-index
 ---
 
-The context menu of the Documents pane in the Smart Connection panel can be extended with custom menu items. These custom menu items are provided with information by Smart Connection about the selected items, giving the custom menu items the ability to control the enabling of the items. The information passed by Smart Connection is all data from the query result for the selected itema. Custom menu items work in both list and thumbnail view, althought the information passed to the script in thumbnail view is limited.
+The context menu of the Documents pane in the Smart Connection panel can be extended with custom menu items. These custom menu items are provided with information by Smart Connection about the selected items, giving the custom menu items the ability to control the enabling of the items. The information passed by Smart Connection is all data from the query result for the selected items. Custom menu items work in both list and thumbnail view, although the information passed to the script in thumbnail view is limited.
 
 Custom menu items are added and controlled through a script. The script is placed in the Startup Scripts folder in either the application’s scripts folder or in the user’s scripts folder. The script locations are:
 

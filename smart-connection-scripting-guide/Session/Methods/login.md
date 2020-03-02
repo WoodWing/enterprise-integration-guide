@@ -27,7 +27,7 @@ Name of the location to log in to. This is the name of the entry in the server l
 
 **requestInfo** *Array of string  (Optional)*
 
-*(Introduced in CC 2014)* The list of request information that should be obtained with the logon. When not specified all information will be requested.
+The list of request information that should be obtained with the logon. When not specified all information will be requested.
 
 **Return value**
 
