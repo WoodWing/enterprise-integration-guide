@@ -19,11 +19,11 @@ Dossier.items;
 
 **Return value** *string[]*
 
-A string of Enterprise object IDs.
+A string of Enterprise or Studio Server object IDs.
 
 ## Description
 
-The `items` property is used to get a list of IDs of Enterprise objects which are residing in the current Dossier.
+The `items` property is used to get a list of IDs of Enterprise or Studio Server objects which are residing in the current Dossier.
 
 ## Examples
 

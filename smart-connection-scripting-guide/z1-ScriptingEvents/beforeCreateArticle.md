@@ -7,7 +7,7 @@ permalink: 1192-beforeCreateArticle
 
 ## When
 
-Before sending a new article to the Enterprise system.
+Before sending a new article to the Enterprise or Studio Server system.
 
 ## Where
 

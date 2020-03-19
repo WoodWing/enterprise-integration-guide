@@ -19,7 +19,7 @@ The `remove()` method does not return anything.
 
 ## Description
 
-The `remove()` method removes the Dossier object. The corresponding Dossier is removed from Enterprise as well.
+The `remove()` method removes the Dossier object. The corresponding Dossier is removed from Enterprise or Studio Server as well.
 
 ## Examples
 

@@ -19,7 +19,7 @@ The `refresh()` method does not return anything.
 
 ## Description
 
-The `refresh()` method refreshes the metadata in this scripting object with the metadata stored in the document. The refresh does not interact with the Enterprise system to retrieve the latest data, but relies on the data delivered to the application through the messaging
+The `refresh()` method refreshes the metadata in this scripting object with the metadata stored in the document. The refresh does not interact with the Enterprise or Studio Server system to retrieve the latest data, but relies on the data delivered to the application through the messaging
 subsystem.
 
 ## Examples

@@ -15,7 +15,7 @@ app.sendObjectToNext(objectId);
 
 **objectId** *string*
 
-The object ID on the Enterprise Server.
+The object ID on the Enterprise or Studio Server.
 
 **Return value**
 

@@ -19,7 +19,7 @@ The `updatePanels()` method does not return anything.
 
 ## Description
 
-The `updatePanels()` method refreshes the contents of all Enterprise query panels. Throws an exception in case of an error.
+The `updatePanels()` method refreshes the contents of all Smart Connection or Studio query panels. Throws an exception in case of an error.
 
 ## Examples
 

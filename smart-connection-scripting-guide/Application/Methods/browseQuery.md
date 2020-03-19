@@ -36,7 +36,7 @@ The result is comma separated.
 
 ## Description
 
-The `browseQuery()` method generates the result of the Browse query returned by the Enterprise server.
+The `browseQuery()` method generates the result of the Browse query returned by the Enterprise or Studio server.
 
 ## Examples
 

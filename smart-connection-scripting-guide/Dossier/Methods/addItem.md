@@ -15,7 +15,7 @@ Dossier.removeItem(objectId);
 
 **objectId** *string*
 
-The object ID on the Enterprise Server of the object to remove from the Dossier.
+The object ID on the Enterprise or Studio Server of the object to remove from the Dossier.
 
 **Return value**
 
@@ -23,7 +23,7 @@ The `removeItem()` method does not return anything.
 
 ## Description
 
-The `removeItem()` method removes an item from the Dossier. Removes the item from the corresponding Dossier in Enterprise as well.
+The `removeItem()` method removes an item from the Dossier. Removes the item from the corresponding Dossier in Enterprise or Studio Server as well.
 
 ## Examples
 

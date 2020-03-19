@@ -19,7 +19,7 @@ The `refresh()` method does not return anything.
 
 ## Description
 
-The `refresh()` method refreshes the Dossier object with new information from the Enterprise Server.
+The `refresh()` method refreshes the Dossier object with new information from the Enterprise or Studio Server.
 
 ## Examples
 

@@ -23,7 +23,7 @@ The `checkIn()` method does not return anything.
 
 ## Description
 
-The `checkIn()` method checks-in the placed Article in the Enterprise system.
+The `checkIn()` method checks-in the placed Article in the Enterprise or Studio Server system.
 
 ## Examples
 

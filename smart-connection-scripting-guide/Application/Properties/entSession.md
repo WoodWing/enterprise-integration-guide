@@ -19,11 +19,11 @@ app.entSession;
 
 **Return value** *Session*
 
-The Enterprise Session object.
+The Enterprise or Studio Server Session object.
 
 ## Description
 
-The `entSession` property gives access to the Enterprise session by returning a Session object.
+The `entSession` property gives access to the Enterprise or Studio Server session by returning a Session object.
 
 For more info about the Session object please see the [Session](../../Session/index.md) documentation.
 

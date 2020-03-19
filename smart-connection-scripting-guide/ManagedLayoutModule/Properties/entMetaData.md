@@ -23,7 +23,7 @@ An EntMetaData object.
 
 ## Description
 
-The `entMetaData` property is used to get the Enterprise metadata associated with the Layout Module.
+The `entMetaData` property is used to get the Enterprise or Studio Server metadata associated with the Layout Module.
 
 ## Examples
 

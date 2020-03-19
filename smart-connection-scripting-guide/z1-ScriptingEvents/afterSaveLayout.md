@@ -7,7 +7,7 @@ permalink: 1191-afterSaveLayout
 
 ## When
 
-After sending a layout to the Enterprise system.
+After sending a layout to the Enterprise or Studio Server system.
 
 ## Where
 

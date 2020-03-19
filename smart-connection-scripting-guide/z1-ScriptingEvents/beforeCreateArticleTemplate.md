@@ -7,7 +7,7 @@ permalink: 1193-beforeCreateArticleTemplate
 
 ## When
 
-Before sending a new article template to the Enterprise system.
+Before sending a new article template to the Enterprise or Studio Server system.
 
 ## Where
 

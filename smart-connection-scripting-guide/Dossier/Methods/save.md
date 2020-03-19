@@ -19,7 +19,7 @@ The `save()` method does not return anything.
 
 ## Description
 
-The `save()` method saves the Dossier object. The corresponding Dossier is saved in Enterprise as well.
+The `save()` method saves the Dossier object. The corresponding Dossier is saved in Enterprise or Studio Server as well.
 
 ## Examples
 
