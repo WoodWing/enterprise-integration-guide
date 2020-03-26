@@ -150,7 +150,7 @@ The return value is an array with two values:
 
 | Nº | Type | Description |
 | - | ---- | ----------- |
-| 1	| boolean | Indicates if the script handled the place or not. If this boolean is true the script handled the placement and Smart Connection  or Studioshould not perform its place code. If this boolean is false the script did not handle the placement and Smart Connection or Studio should perform its place code. Smart Connection or Studio is not able to place Dossiers. If the script to place a dossier returns false Smart Connection or Studio will empty the place gun. |
+| 1	| boolean | Indicates if the script handled the place or not. If this boolean is true the script handled the placement and Smart Connection or Studio should not perform its place code. If this boolean is false the script did not handle the placement and Smart Connection or Studio should perform its place code. Smart Connection or Studio is not able to place Dossiers. If the script to place a dossier returns false Smart Connection or Studio will empty the place gun. |
 | 2	| array of number | This is an array of ids of the items that are placed or replaced by the scripting code. If this list is empty and the boolean was true the Smart Connection or Studio place code is not called and the place gun is still loaded. If this list contains items the Smart Connection or Studio place code is not called and the place gun will be emptied. |
 
 An example of the return value is:

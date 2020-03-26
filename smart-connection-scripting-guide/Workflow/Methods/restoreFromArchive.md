@@ -21,7 +21,7 @@ Only used in combination with the “Elvis_Copy” image restore location (defin
 
 **imageRestoreLocation** *String (Optional)*
 
-Defines the restore location of images. When not de defined the option as de defined in the Elvis Enterprise Server plug-in is used. Possible values:
+Defines the restore location of images. When not defined the option as defined in the Elvis Enterprise Server plug-in is used. Possible values:
 
 | Value      | Description                                                                |
 |------------|----------------------------------------------------------------------------|
