@@ -18,6 +18,7 @@ The object representing the InDesign or InCopy application.
 * [namedQuery](Methods/namedQuery.md)
 * [offlineQuery](Methods/offlineQuery.md)
 * [openObject](Methods/openObject.md)
+* [openObjects](Methods/openObjects.md)
 * [queryObjects](Methods/queryObjects.md)
 * [sendObjectToNext](Methods/sendObjectToNext.md)
 * [storedUserQuery](Methods/storedUserQuery.md)

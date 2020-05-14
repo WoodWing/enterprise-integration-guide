@@ -44,7 +44,7 @@ The name of the server on which the object with the `objectId` is stored. When n
 
 **Return value** *Document*  
 
-The Document object which is opened. Undefined when a Document could not be openend.
+The Document object which is opened. Undefined when a Document could not be opened.
 
 ## Description
 

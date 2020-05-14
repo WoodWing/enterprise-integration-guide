@@ -1,5 +1,5 @@
 toc:
-  - title: Smart Connection Scripting Guide
+  - title: Scripting Guide for Smart Connection and Studio for InDesign & InCopy
     layout: guide
     path: smart-connection-scripting-guide/index.md
     url: smart-connection-scripting-guide/index.html
@@ -47,6 +47,11 @@ toc:
           path: smart-connection-scripting-guide/Application/Methods/openObject.md
           url: smart-connection-scripting-guide/Application/Methods/openObject.html
           permalink: 1082-openObject
+        - title: openObjects
+          layout: chapter
+          path: smart-connection-scripting-guide/Application/Methods/openObjects.md
+          url: smart-connection-scripting-guide/Application/Methods/openObjects.html
+          permalink: 1082-openObjects
         - title: queryObjects
           layout: chapter
           path: smart-connection-scripting-guide/Application/Methods/queryObjects.md
@@ -985,13 +990,13 @@ toc:
       url: smart-connection-scripting-guide/z3-OverrulePlacementsOfArticlesAndDossiers/index.html
       permalink: 1242-index
       children:
-    - title: Overrule adding of created Enterprise image to Dossier
+    - title: Overrule adding created images to a Dossier
       layout: section
       path: smart-connection-scripting-guide/z4-OverruleAddingOfCreatedEnterpriseImageToDossier/index.md
       url: smart-connection-scripting-guide/z4-OverruleAddingOfCreatedEnterpriseImageToDossier/index.html
       permalink: 1243-index
       children:
-    - title: Smart Connection Custom Menu Items
+    - title: Custom menu items
       layout: section
       path: smart-connection-scripting-guide/z2-CustomMenuItems/index.md
       url: smart-connection-scripting-guide/z2-CustomMenuItems/index.html
