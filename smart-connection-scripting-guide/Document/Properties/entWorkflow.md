@@ -23,7 +23,7 @@ An EntWorkflow object.
 
 ## Description
 
-The `entWorkflow` property is used to get access to the Enterprise worlkflow actions for the Document.
+The `entWorkflow` property is used to get access to the Enterprise or Studio Server worlkflow actions for the Document.
 
 ## Examples
 

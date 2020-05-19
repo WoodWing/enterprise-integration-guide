@@ -16,7 +16,7 @@ app.openObject(objectId [, checkout] [, withWindow] [, type] [, dossierId]);
 
 **objectId** *string*
 
-The ID of the object to open on Enterprise Server
+The ID of the object to open on Enterprise or Studio Server
 
 **checkout** *boolean (Optional)*
 
@@ -44,11 +44,11 @@ The name of the server on which the object with the `objectId` is stored. When n
 
 **Return value** *Document*  
 
-The Document object which is opened. Undefined when a Document could not be openend.
+The Document object which is opened. Undefined when a Document could not be opened.
 
 ## Description
 
-The `openObject()` method opens a Document from the Enterprise Server. Throws an exception in case of an error.
+The `openObject()` method opens a Document from the Enterprise or Studio Server. Throws an exception in case of an error.
 
 ## Examples
 

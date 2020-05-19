@@ -7,7 +7,7 @@ permalink: 1190-afterSaveArticle
 
 ## When
 
-After sending an article to the Enterprise system.
+After sending an article to the Enterprise or Studio Server system.
 
 ## Where
 

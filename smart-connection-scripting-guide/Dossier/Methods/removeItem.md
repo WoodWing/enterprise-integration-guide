@@ -15,7 +15,7 @@ Dossier.addItem(objectId);
 
 **objectId** *string*
 
-The object ID on the Enterprise Server of the object to add to the Dossier.
+The object ID on the Enterprise or Studio Server of the object to add to the Dossier.
 
 **Return value**
 
@@ -23,7 +23,7 @@ The `addItem()` method does not return anything.
 
 ## Description
 
-The `addItem()` method adds an item to the Dossier. Adds the item to the corresponding Dossier in Enterprise as well.
+The `addItem()` method adds an item to the Dossier. Adds the item to the corresponding Dossier in Enterprise or Studio Server as well.
 
 ## Examples
 

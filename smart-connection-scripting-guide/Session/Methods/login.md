@@ -35,7 +35,7 @@ The `login()` method does not return anything. It throws an exception in case of
 
 ## Description
 
-The `login()` method performs a login to the Enterprise system. 
+The `login()` method performs a login to the Enterprise or Studio Server system. 
 
 ## Examples
 
@@ -57,7 +57,7 @@ The `login()` method performs a login to the Enterprise system.
 ### Single Sign-On
 
 When logging in on servers which have Single Sign-On (SSO) enabled, the `login()` call will not work on clients except for InDesign Server.
-SSO is available for the following Smart Connection versions:
+SSO is available for all versions of Studio and the following versions of Smart Connection:
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
 

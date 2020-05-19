@@ -7,7 +7,7 @@ permalink: 1174-afterCreateArticle
 
 ## When
 
-After sending a new article to the Enterprise system.
+After sending a new article to the Enterprise or Studio Server system.
 
 ## Where
 

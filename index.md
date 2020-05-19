@@ -68,8 +68,8 @@
 						<li>
 							<div class="coverDesign blue">
 								<span class="ribbon">1.3</span>
-								<h2>Smart Connection</h2>
-								<p>Scripting Guide</p>
+								<h2>Scripting Guide</h2>
+								<p>for Smart Connection and Studio for InDesign & InCopy</p>
 							</div>
 						</li>
 						<li></li>
@@ -111,8 +111,8 @@
 					</ul>
 					<figcaption>
 						<h1>Scripting Guide</h1>
-						<span>for Smart Connection</span>
-						<p>Many aspects of the Smart Connection client application are scriptable using JavaScript. This guide contains examples sharing how to script the Smart Connection specific part of the scripting object model. It should be used as a companion to InDesign’s Scripting Guide and the scripting model presented by the Adobe ExtendScript Toolkit.</p>
+						<span>for Smart Connection and Studio for InDesign & InCopy</span>
+						<p>Many aspects of Smart Connection and Studio for InDesign & InCopy are scriptable using JavaScript. This guide contains examples sharing how to script the scripting object model that deals with Smart Connection and Studio. It should be used as a companion to InDesign’s Scripting Guide and the scripting model presented by the Adobe ExtendScript Toolkit.</p>
 					</figcaption>
 				</figure>
 			</li>

@@ -19,7 +19,7 @@ The `create()` method does not return anything.
 
 ## Description
 
-The `create()` method creates a new Dossier object. The Dossier is created in Enterprise as well.
+The `create()` method creates a new Dossier object. The Dossier is created in Enterprise or Studio Server as well.
 
 ## Examples
 

@@ -19,7 +19,7 @@ The `logout()` method does not return anything. It throws an exception in case o
 
 ## Description
 
-The `logout()` method performs a logout from the Enterprise system. 
+The `logout()` method performs a logout from the Enterprise or Studio Server system. 
 
 ## Examples
 

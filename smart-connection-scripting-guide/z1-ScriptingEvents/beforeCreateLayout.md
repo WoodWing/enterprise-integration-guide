@@ -7,7 +7,7 @@ permalink: 1194-beforeCreateLayout
 
 ## When
 
-Before creating a new layout in the Enterprise system. This includes Save As.
+Before creating a new layout in the Enterprise or Studio Server system. This includes Save As.
 
 ## Where
 
@@ -23,7 +23,7 @@ n/a
 
 ## Notes
 
-Changes can be made to the document, these will be saved and sent to the Enterprise system.
+Changes can be made to the document, these will be saved and sent to the Enterprise or Studio Server system.
 
 ## Supported versions
 

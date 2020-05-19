@@ -23,7 +23,7 @@ The `create()` method does not return anything.
 
 ## Description
 
-The `create()` method creates an image from the given page item in the Enterprise system.
+The `create()` method creates an image from the given page item in the Enterprise or Studio Server system.
 
 ## Examples
 

@@ -7,7 +7,7 @@ permalink: 1175-afterCreateArticleTemplate
 
 ## When
 
-After sending a new article template to the Enterprise system.
+After sending a new article template to the Enterprise or Studio Server system.
 
 ## Where
 

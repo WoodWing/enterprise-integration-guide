@@ -15,7 +15,7 @@ app.jsonRequest(jsonUrl, jsonRequest);
 
 **jsonUrl** *string*
 
-The path to the Enterprise server URL which can receive and respond to requests done in JSON object string format.
+The path to the Enterprise or Studio server URL which can receive and respond to requests done in JSON object string format.
 
 **jsonRequest** *string*
 
@@ -27,7 +27,7 @@ A string containing the complete and total server response.
 
 ## Description
 
-The `jsonRequest()` method posts a JSON object string as a request to an Enterprise Server URL in order to receive a response in JSON object string format.
+The `jsonRequest()` method posts a JSON object string as a request to an Enterprise or Studio Server URL in order to receive a response in JSON object string format.
 
 ## Examples
 

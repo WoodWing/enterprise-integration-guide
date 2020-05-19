@@ -4,7 +4,7 @@ title: Session
 sortid: 18
 permalink: 1069-index
 ---
-The object representing the Enterprise session.
+The object representing the Enterprise or Studio Server session.
 
 ### Properties
 

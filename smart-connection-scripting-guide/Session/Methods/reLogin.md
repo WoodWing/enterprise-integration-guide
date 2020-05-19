@@ -19,7 +19,7 @@ The `reLogin()` method does not return anything. It throws an exception in case 
 
 ## Description
 
-The `reLogin()` method performs a re-login to the Enterprise system. Useful when changes were made to the configuration, workflow, etc on the server and those value are returned during the login. 
+The `reLogin()` method performs a re-login to the Enterprise or Studio Server system. Useful when changes were made to the configuration, workflow, etc on the server and those value are returned during the login. 
 
 ## Examples
 
@@ -41,7 +41,7 @@ The `reLogin()` method performs a re-login to the Enterprise system. Useful when
 ### Single Sign-On
 
 When logging in on servers which have Single Sign-On (SSO) enabled, the `reLogin()` call will not work on clients except for InDesign Server.
-SSO is available for the following Smart Connection versions:
+SSO is available for all versions of Studio and the following versions of Smart Connection:
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
 

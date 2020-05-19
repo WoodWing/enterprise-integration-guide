@@ -7,7 +7,7 @@ permalink: 1203-beforeSaveLayout
 
 ## When
 
-Before sending a layout to the Enterprise system.
+Before sending a layout to the Enterprise or Studio Server system.
 
 ## Where
 

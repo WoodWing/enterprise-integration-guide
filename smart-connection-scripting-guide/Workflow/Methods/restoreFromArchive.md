@@ -21,12 +21,12 @@ Only used in combination with the “Elvis_Copy” image restore location (defin
 
 **imageRestoreLocation** *String (Optional)*
 
-Defines the restore location of images. When not de ned the option as de ned in the Elvis Enterprise Server plug-in is used. Possible values:
+Defines the restore location of images. When not defined the option as defined in the Elvis Enterprise Server plug-in is used. Possible values:
 
 | Value      | Description                                                                |
 |------------|----------------------------------------------------------------------------|
-| Elvis_Copy | The image is copied in Elvis and is linked via an Enterprise shadow object |
-| Enterprise | The image is copied to Enterprise                                          |
+| Elvis_Copy | The image is copied in Elvis and is linked via an Enterprise/Studio Server shadow object |
+| Enterprise | The image is copied to Enterprise or Studio Server                         |
 
 **Return value** *Document*
 
@@ -34,9 +34,9 @@ The restored Document object.
 
 ## Description
 
-The `restoreFromArchive()` method restores the opened archived document from Elvis as a new object in the Enterprise system. Throws an exception in case of an error. Change the metadata before calling `restoreFromArchive()`.
+The `restoreFromArchive()` method restores the opened archived document from Elvis as a new object in the Enterprise or Studio Server system. Throws an exception in case of an error. Change the metadata before calling `restoreFromArchive()`.
 
-Articles on the document will be copied to Enterprise and the Article Components will get new IDs. Spreadsheets are copied to Enterprise.
+Articles on the document will be copied to Enterprise  or Studio Server and the Article Components will get new IDs. Spreadsheets are copied to Enterprise or Studio Server.
 
 ## Examples
 

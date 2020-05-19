@@ -27,7 +27,7 @@ Name of the location to log in to. This is the name of the entry in the server l
 
 **quick** *boolean (Optional)*
 
-Boolean that indicates if the login to the Enterprise system should be performed without retrieving session information or not. Default is false.
+Boolean that indicates if the login to the Enterprise or Studio Server system should be performed without retrieving session information or not. Default is false.
 
 **requestInfo** *Array of string  (Optional)*
 
@@ -39,7 +39,7 @@ The `forkLogin()` method does not return anything. It throws an exception in cas
 
 ## Description
 
-The `forkLogin()` method performs a login to the Enterprise system based on an existing login.
+The `forkLogin()` method performs a login to the Enterprise or Studio Server system based on an existing login.
 
 ## Examples
 
@@ -61,7 +61,7 @@ The `forkLogin()` method performs a login to the Enterprise system based on an e
 ### Single Sign-On
 
 When logging in on servers which have Single Sign-On (SSO) enabled, the `forkLogin()` call will not work on clients except for InDesign Server.
-SSO is available for the following Smart Connection versions:
+SSO is available for all Studio versions and the following Smart Connection versions:
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
 

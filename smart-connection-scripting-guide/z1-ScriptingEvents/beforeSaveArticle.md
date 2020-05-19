@@ -7,7 +7,7 @@ permalink: 1202-beforeSaveArticle
 
 ## When
 
-Before sending an article to the Enterprise system.
+Before sending an article to the Enterprise or Studio Server system.
 
 ## Where
 

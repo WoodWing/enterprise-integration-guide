@@ -7,7 +7,7 @@ permalink: 1221-index
 
 EntMetaData is a scripting object that manages a collection of properties in the form of key value pairs. EntMetaData objects are
 proxy objects: changes to the EntMetaData scripting object are not applied directly to the underlying InDesign object. Instead,
-the changed metadata is kept in memory and used in actions towards the Enterprise system initiated from scripting. These
+the changed metadata is kept in memory and used in actions towards the Enterprise or Studio Server system initiated from scripting. These
 actions do change the underlying InDesign objects and afterwards the EntMetaData object is updated.
 
 ### Keys

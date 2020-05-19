@@ -37,7 +37,7 @@ It returns an array of booleans:
 
 ### Description
 
-Tells Smart Connection whether the functions need to be debugged or not.
+Tells Smart Connection or Studio whether the functions need to be debugged or not.
 
 ### Example
 ```javascript
@@ -90,7 +90,7 @@ The string can also be "0". In that case the target item is unknown.
 A boolean that indicates if the script is capable of placing the passed item(s) or not.
 
 ### Description
-Tells Smart Connection whether this script can place the passed items or not. At this moment this function is only called for Dossiers.
+Tells Smart Connection or Studio whether this script can place the passed items or not. At this moment this function is only called for Dossiers.
 
 ## placeItems
 
@@ -150,8 +150,8 @@ The return value is an array with two values:
 
 | Nº | Type | Description |
 | - | ---- | ----------- |
-| 1	| boolean | Indicates if the script handled the place or not. If this boolean is true the script handled the placement and Smart Connection should not perform its place code. If this boolean is false the script did not handle the placement and Smart Connection should perform its place code. Smart Connection is not able to place Dossiers. If the script to place a dossier returns false Smart Connection will empty the place gun. |
-| 2	| array of number | This is an array of ids of the items that are placed or replaced by the scripting code. If this list is empty and the boolean was true the Smart Connection place code is not called and the place gun is still loaded. If this list contains items the Smart Connection place code is not called and the place gun will be emptied. |
+| 1	| boolean | Indicates if the script handled the place or not. If this boolean is true the script handled the placement and Smart Connection or Studio should not perform its place code. If this boolean is false the script did not handle the placement and Smart Connection or Studio should perform its place code. Smart Connection or Studio is not able to place Dossiers. If the script to place a dossier returns false Smart Connection or Studio will empty the place gun. |
+| 2	| array of number | This is an array of ids of the items that are placed or replaced by the scripting code. If this list is empty and the boolean was true the Smart Connection or Studio place code is not called and the place gun is still loaded. If this list contains items the Smart Connection or Studio place code is not called and the place gun will be emptied. |
 
 An example of the return value is:
 ```javascript
@@ -163,14 +163,13 @@ return [ true, arr ];
 
 ### Description
 
-Called to override the default placement functionality of articles. Dependent on the returned information the Smart Connection code will perform or not perform its own place code.
-Also called to place Dossiers if the canPlaceItems call returned true. The Smart Connection code is not capable of placing Dossiers.
+Called to override the default placement functionality of articles. Depending on the returned information the Smart Connection or Studio code will perform or not perform its own place code. Also called to place Dossiers if the canPlaceItems call returned true. The Smart Connection or Studio code is not capable of placing Dossiers.
 
 ## Sample script
 
 The following script shows the parameters to the user that are passed to the placeItems call.
 
-At the end we tell Smart Connection that we handled the placement, but since nothing is placed the place gun will not be unloaded.
+At the end we tell Smart Connection or Studio that we handled the placement, but since nothing is placed the place gun will not be unloaded.
 
 ```javascript
 #targetengine "placeoverride"
@@ -188,13 +187,14 @@ function PlaceOverride()
     // - getDebugConfig -
     function getDebugConfig()
     {
-        // Tell Smart Connection not to debug, but to show alerts.
+        // Tell Smart Connection or Studio not to debug, but to show alerts.
         return [ false, false, true ];
     }
     // - canPlaceItems -
     function canPlaceItems( itemsToPlaceJson, targetLayoutJson, targetItem )
     {
-        // Tell Smart Connection that we are able to place the passed item.
+        // Tell Smart Connection or Studio that we are able to place the passed 
+        // item.
         return true;
     }
     // - placeItems -
@@ -231,8 +231,8 @@ function PlaceOverride()
         }
         // Show the collected information about the target position.
         alert( pos_message );        
-        // Tell Smart Connection that we handled the placement, but we did not place anything.
-        // So the placegun is not unloaded.
+        // Tell Smart Connection or Studio that we handled the placement, 
+        // but we did not place anything. So the placegun is not unloaded.
         var arr = new Array();
         return [ true, arr ];
     }

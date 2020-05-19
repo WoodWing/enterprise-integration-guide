@@ -1,11 +1,11 @@
 ---
 layout: section
-title: Overrule adding of created Enterprise image to Dossier
+title: Overrule adding created images to a Dossier
 sortid: 23
 permalink: 1243-index
 ---
 
-With scripting code it is possible to overrule the addition of Enterprise images, created from Elvis images, to a Dossier.
+When an image that is stored in Elvis/Assets is turned into an image that is stored in Enterprise or Studio Server, it is by default added to a Dossier. This action can be overruled with scripting code.
 
 The script in which this can be implemented should be placed into the Startup Scripts folder in either the application’s scripts
 folder or in the user’s scripts folder. The script locations are:
@@ -46,7 +46,7 @@ return [ false, false, true ];
 
 ### Description
 
-Tells Smart Connection whether the functions need to be debugged or not.
+Tells Smart Connection or Studio whether the functions need to be debugged or not.
 
 ## addObjectsToDossier
 
@@ -69,12 +69,12 @@ Properties of one item in this json string:
 **targetDossier** *string*
 
 A string with the database id of the Dossier that was found by the
-Smart Connection code as default Dossier.
+Smart Connection or Studio code as default Dossier.
 
 **showSelectDossierDialog** *string*
 
 A string (“true” or “false”) that indicates if the Smart Connection
-code finds that it is needed to show the Select Dossier dialog or
+or Studio code finds that it is needed to show the Select Dossier dialog or
 not.
 
 **suppressUI** *boolean*
@@ -87,8 +87,8 @@ The return value is an array with three values:
 
 | Nº | Type | Description |
 | - | ---- | ----------- |
-| 1 | boolean | Indicates if the Smart Connection code to add the objects to the Dossier should be performed or not. |
-| 2 | string | The database id of the Dossier to which the object should be added to by the Smart Connection code. (not used when the first boolean is false) |
+| 1 | boolean | Indicates if the Smart Connection or Studio code to add the objects to the Dossier should be performed or not. |
+| 2 | string | The database id of the Dossier to which the object should be added to by the Smart Connection or Studio code. (not used when the first boolean is false) |
 | 3 | string | Indicates if the Select Dossier dialog should be shown or not (“true” or “false”). (not used when the first boolean is false) |
 
 A sample of the return value is:
@@ -98,11 +98,11 @@ return [ true, "123", "false" ];
 
 ### Description
 
-Called to override the default dossier that is used to add the objects to. Dependent on the returned information the Smart Connection code will use the updated target dossier, show the select dossier dialog or does not do anything.
+Called to override the default Dossier that is used to add the objects to. Depending on the returned information, the Smart Connection or Studio code will use the updated target Dossier, show the Select Dossier dialog, or does not do anything.
 
 ## Sample script
 
-The following script shows the parameters to the user that are passed to the addObjectsToDossier call. At the end we tell Smart Connection that it can add the objects to the Dossier.
+The following script shows the parameters to the user that are passed to the addObjectsToDossier call. At the end we tell Smart Connection or Studio that it can add the objects to the Dossier.
 
 ```javascript
 #targetengine "elvisobjectoverride"
@@ -120,7 +120,7 @@ function AddToDossierOverride()
     // - getDebugConfig -
     function getDebugConfig()
     {
-        // Tell Smart Connection not to debug, but to show alerts.
+        // Tell Smart Connection or Studio not to debug, but to show alerts.
         return [ false, false, true ];
     }
 
@@ -142,7 +142,8 @@ function AddToDossierOverride()
         message = message + "showSelectDossierDialog = " + showSelectDossierDialog + "\n\n";
         message = message + "suppressUI = " + suppressUI + "\n\n";
         alert( message );
-        // Tell Smart Connection that to continue with adding the objects to the dossier
+        // Tell Smart Connection or Studio that to continue with adding the objects 
+        // to the dossier
         return [ true, targetDossier, showSelectDossierDialog ];
     }
 }

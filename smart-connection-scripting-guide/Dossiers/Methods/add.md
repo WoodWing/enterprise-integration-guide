@@ -19,8 +19,8 @@ The created, or newly added, Dossier object.
 
 ## Description
 
-The `add()` method creates a new Dossier scripting object that can serve as the basis for creating a new Dossier in Enterprise.
-Does not actually create the Dossier in Enterprise.
+The `add()` method creates a new Dossier scripting object that can serve as the basis for creating a new Dossier in Enterprise or Studio Server.
+Does not actually create the Dossier in Enterprise or Studio Server.
 
 ## Examples
 

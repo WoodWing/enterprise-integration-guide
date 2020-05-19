@@ -19,8 +19,8 @@ The created, or newly added, MangedArticle object.
 
 ## Description
 
-The `add()` method creates a new ManagedArticle scripting object that can serve as the basis for creating a new Article in Enterprise.
-Does not actually create the Article in Enterprise.
+The `add()` method creates a new ManagedArticle scripting object that can serve as the basis for creating a new Article in Enterprise or Studio Server.
+Does not actually create the Article in Enterprise or Studio Server.
 
 ## Examples
 
