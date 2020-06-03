@@ -5,6 +5,8 @@ sortid: 180
 permalink: 1051-suggestions-and-autocomplete
 ---
 
+> Note that Publish Forms and Suggestion Providers are deprecated since Studio Server 10.11.
+
 For a functional explanation of these two features and how to set them up, see the 'Tags' section of the *Enterprise 
 Server Online Help*.
 
