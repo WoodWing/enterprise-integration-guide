@@ -6,6 +6,8 @@ permalink: 1050-spelling
 ---
 ## Spelling \[since 7.4\]
 
+> Note that Spelling and Suggestions services are deprecated since Studio Server 10.11.
+
 The Multi-Channel Text Editor of Content Station 7.4 includes support for spelling checking. This feature runs through 
 new web services exposed by Enterprise Server 7.4. This feature is about having a consistent spelling checking throughout 
 the whole workflow. For example, once an article is spell-checked by an editor, he/she puts the article in the next status, 
