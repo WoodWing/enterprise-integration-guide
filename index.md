@@ -53,8 +53,8 @@
 					</ul>
 					<figcaption>
 						<h1>Web Services Guide</h1>
-						<span>for Enterprise Server</span>
-						<p>Find out how client applications integrate with Enterprise Server.<br/> 
+						<span>for Studio Server</span>
+						<p>Find out how client applications integrate with Studio Server.<br/> 
 						Study the concepts and basic logic behind the public API of this server.</p>
 					</figcaption>
 				</figure>

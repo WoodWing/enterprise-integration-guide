@@ -1,13 +1,13 @@
 # Introduction
 This GitHub project is an initiative of WoodWing Software. 
 It provides a simple framework to write and publish technical documentation 
-for the Enterprise system. Through this channel WoodWing engineers can 
+for the Studio system. Through this channel WoodWing engineers can 
 update partners and integrators with technical information helping them 
-to integrate their own solutions with Enterprise. 
+to integrate their own solutions with Studio. 
 
 ## Installation
 This GitHub project is using Jekyll and is ran by the GitHub Pages server. 
-For maintance and testing, you can run it locally as decribed 
+For maintenance and testing, you can run it locally as described 
 [here](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/) 
 before you push your changes to Git.
 
@@ -21,7 +21,7 @@ How this is organised is explained in the chapter below.
 # Documentation structure
 ## Guides
 At the root level of this project there are folders. 
-Each folder reprensents a guide. A guide can be seen as a book. 
+Each folder represents a guide. A guide can be seen as a book. 
 In the folder of a guide there must be an index.md file.
 This is the landing page of the guide. 
 The front matter of this page must have the follow attributes:
@@ -34,8 +34,8 @@ case the `_layouts/guide.html` page is applied.
 
 ## Sections
 A guide may have many chapters. Those may be bundled in sections. 
-To add a section to a guide, simply create a subfolder in the guide's 
-folder and add an index.md file with the folliwng front matter:
+To add a section to a guide, simply create a sub-folder in the guide's 
+folder and add an index.md file with the following front matter:
 ```markdown
 layout: section
 title: <title of the section>
