@@ -19,7 +19,7 @@ the Web Editor.
 ### Admin interface
 Used for various Brand- and user administration purposes, such as creating Publication Channels for Brands, creating 
 users and assigning them to user groups, etc. These operations are only accessible to Brand- or system administrators. 
-(With Enterprise 7 the interface is not complete yet. For example, you cannot give users access to a Brand and you 
+(With Enterprise Server 7.x the interface is not complete yet. For example, you cannot give users access to a Brand and you 
 cannot set up a workflow definition. So, you can set up a basic Brand structure from scratch, but it requires manual 
 completion.) The interface is mainly used by the admin web applications. It could also be very useful for third-party 
 integrators, such as creating many Issues simultaneously for a specific Publication Channel.
@@ -62,25 +62,25 @@ shows the Enterprise version in which the interface was officially introduced.
 
 | interface       | short     | WSDL(1), URN (2), web service entry point (3)  | since
 ------------------|-----------|------------------------------------------------|-----------
-|  workflow       | wfl       | SCEnterprise.wsdl                              |  v3
+|  workflow       | wfl       | SCEnterprise.wsdl                              | 3.0
 |                 |           | urn:SmartConnection                            | 
 |                 |           | .../Enterprise/index.php                       | 
-|  admin          | adm       | SmartConnectionAdmin.wsdl                      | v5
+|  admin          | adm       | SmartConnectionAdmin.wsdl                      | 5.0
 |                 |           | urn:SmartConnectionAdmin                       | 
 |                 |           | .../Enterprise/adminindex.php                  | 
-|  system admin   | sys       | SystemAdmin.wsdl                               | v9
+|  system admin   | sys       | SystemAdmin.wsdl                               | 9.0
 |                 |           | urn:SmartConnectionSysAdmin                    | 
 |                 |           | ../Enterprise/sysadminindex.php                | 
-|  planning       |  pln      |  SmartEditorialPlan.wsdl                       |  v4
+|  planning       |  pln      |  SmartEditorialPlan.wsdl                       | 4.0
 |                 |           | urn:SmartEditorialPlan                         | 
 |                 |           | .../Enterprise/editorialplan.php               | 
-|  publishing     | pub       | EnterprisePublishing.wsdl                      | v6
+|  publishing     | pub       | EnterprisePublishing.wsdl                      | 6.0
 |                 |           | urn:EnterprisePublishing                       | 
 |                 |           | .../Enterprise/publishindex.php                | 
-|  data source    | dat       | PlutusDatasource.wsdl                          | v6
+|  data source    | dat       | PlutusDatasource.wsdl                          | 6.0
 |                 |           | urn:PlutusDatasource                           | 
 |                 |           | .../Enterprise/datasourceindex.php             | 
-|  admin data source | ads    | PlutusAdmin.wsdl                               | v6
+|  admin data source | ads    | PlutusAdmin.wsdl                               | 6.0
 |                 |           | urn:PlutusAdmin                                | 
 |                 |           | .../Enterprise/datasourceadminindex.php        | 
 
@@ -131,7 +131,7 @@ made in this area since Enterprise Server 8.
 
 ## Improved logging \[since 8.0\]
 
-Since Enterprise 8, logging can be enabled per client IP, and for each client IP a separate logging folder is created. 
+Since Enterprise Server 8.0, logging can be enabled per client IP, and for each client IP a separate logging folder is created. 
 (See DEBUGLEVELS option described in the Help Center how to configure.) You can add your client IP with a DEBUG value 
 so that only for your client application all details are logged.
 

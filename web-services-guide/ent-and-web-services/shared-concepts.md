@@ -45,7 +45,7 @@ For more information on SOAP attachments, see [here](http://www.w3.org/TR/soap12
 
 For more information on DIME encapsulation, see [here](http://www.watersprings.org/pub/id/draft-nielsen-dime-soap-01.txt).
 
-Since Enterprise 8, it is recommended to use the *Transfer Server* instead of DIME. For both technologies, the DIME 
+Since Enterprise Server 8.0, it is recommended to use the *Transfer Server* instead of DIME. For both technologies, the DIME 
 definitions in the WSDLs specify what service requests or responses can deal with file attachments.
 
 ## Errors
@@ -179,7 +179,7 @@ structured as follows:
 </Placements>
 ```
 
-\[Since 7.0\] Since Enterprise 7.0 this notation has been changed to meet new standards with better support of SOAP 
+\[Since 7.0\] Since Enterprise Server 7.0 this notation has been changed to meet new standards with better support of SOAP 
 tools. The definition has been changed in such a way that the old notation (usage) is still supported though:
 
 ```xml
@@ -206,7 +206,7 @@ This tells the same as before, but now a new notation can be used too:
 ```
 
 Basically, the parent `Placements` attributes says that its child `item` elements are actually `Placement` elements. 
-For Enterprise 7, Content Station uses this technique, while InDesign / InCopy still use the ‘old’ method.
+Content Station 7.x uses this technique, while Smart Connection 7.x for InDesign / InCopy still use the ‘old’ method.
 
 ## User access rights
 
@@ -230,7 +230,7 @@ user has gained access unexpectedly.
 When the end user performs a login action to the system, the server returns the configured profile definitions (through 
 the LogOnResponse -&gt; FeatureProfiles element) made by the admin user that are relevant for the end user. Only access 
 options that have no default value are returned. You can determine the defaults by creating a new Access Profile through 
-the admin pages and see which ones are selected. (At least up to v7.0 all options are selected by default, with the 
+the admin pages and see which ones are selected. (At least up to Enterprise Server 7.0 all options are selected by default, with the 
 exception of the “Force Track Changes” option.)
 
 Let’s say that the system admin creates one Access Profile, clears the “Create Dossiers” option and names it “no Dossier 

@@ -26,11 +26,11 @@ to the layout opened in InDesign. InDesign is responsible for handing conflicts 
 
 **Access rights**
 
-On the Profile Maintenance page, the “Edit Sticky Notes” option in the Workflow section has been renamed in Enterprise 8.0 
+On the Profile Maintenance page, the “Edit Sticky Notes” option in the Workflow section has been renamed in Enterprise Server 8.0 
 to “Create and Reply Sticky Notes” and moved to a new section named “Annotations”. Two more access rights are added to 
 that section as well: “View Sticky Notes” and “Delete Sticky Notes”.
 
-When the “Edit Sticky Notes” was enabled (or disabled) for older Enterprise Server versions, once migrated to Enterprise 8.0, 
+When the “Edit Sticky Notes” was enabled (or disabled) for older Enterprise Server versions, once migrated to Enterprise Server 8.0, 
 “Create and Reply Sticky Notes” and “Delete Sticky Notes” are automatically set accordingly. The “View Sticky Notes” is 
 always enabled.
 
@@ -90,7 +90,7 @@ request, SendMessages request,
 
 And, the meaning of ReadMessageIDs has been changed; It no longer means to delete the messages. Instead, there is a new 
 property introduced, named DeleteMessageIDs that does actual deletions. When messages are read by a user, the 
-ReadMessageIDs is used. This is for v8 clients talking to a v8 server. When v7 clients are talking, the v8 will detect 
+ReadMessageIDs is used. This is for 8.0 clients talking to a 8.0 server. When 7.x clients are talking, the 8.0 will detect 
 and change the request on-the-fly in its service layer.
 
 **Server Plug-ins: Migration to 8.0 (or newer)**
@@ -184,7 +184,7 @@ the obsoleted Messages structure is used instead.
 
 # Sticky Notes \[since 4.2\]
 
-Since Enterprise 4.2 a new message type is introduced, named ‘sticky’:
+Since Enterprise Server 4.2 a new message type is introduced, named ‘sticky’:
 
 ```xml
 <simpleType name="MessageType">
@@ -408,7 +408,7 @@ On the Publication Overview, the user places a Sticky Note on a page:
 
 ## Reply to a message \[since 8.0\]
 
-Since Enterprise 8.0, a new message type is introduced, named ‘reply’:
+Since Enterprise Server 8.0, a new message type is introduced, named ‘reply’:
 
 ```xml
 <simpleType name="MessageType">
@@ -628,9 +628,9 @@ In the Publication Overview, the user deletes a Sticky Note or reply:
 </SendMessages>
 ```
 
-**_Server Plug-ins: Migration to 8.0 (or newer)_**
+**_Server Plug-ins: Migration to Enterprise Server 8.0 (or newer)_**
 
-Custom server plug-ins designed for Enterprise 7.x (or older) that implement the SendMessages connector to detect message 
+Custom server plug-ins designed for Enterprise Server 7.x (or older) that implement the SendMessages connector to detect message 
 deletions need to be migrated to the 8.0 method. The service layer transforms old service requests into new service 
 requests, so the connectors will be called in the 8.0 way, regardless of how it gets called by clients.
 
