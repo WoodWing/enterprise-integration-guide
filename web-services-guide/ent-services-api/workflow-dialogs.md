@@ -16,7 +16,7 @@ could differ due to access rights.
 
 System integrators can overrule the standard server behavior of the GetDialog service through server plug-ins. 
 This is why clients should have no logics nor assume or predict certain behavior. Instead, they should listen to 
-the GetDialog response and fully rely on that. The LogOn response should no longer be used by any 7.x client to get 
+the GetDialog response and fully rely on that. The LogOn response should no longer be used by any 7.x compliant client to get 
 definitions in relation to workflow dialogs. Also, there is no reason anymore to call the GetStates service since 
 that is embraced by the GetDialog service.
 
@@ -81,13 +81,13 @@ parameter; else nil. When the server received a 0 (zero) or valid Dossier ID, an
 the GetDialogResponse-&gt;Dialog elements).
 
 Clients do not worry about server criteria, so they pass 0 (zero) or a valid Dossier ID for any object type, including 
-Dossier objects. Let’s assume that Enterprise Server 8.0 supports Dossier-in-Dossier relations. When a 7.x client is talking to a 8.0 server, 
-the Dossier property will then be shown in the dialog, and will work well.
+Dossier objects. Let’s assume that Enterprise Server 8.0 supports Dossier-in-Dossier relations. When a 7.x compliant client 
+is talking to a 8.0 server, the Dossier property will then be shown in the dialog, and will work well.
 
-Let’s assume that for Enterprise Server 8.0 the CopyTo dialog supports the Dossier property. Any 8.0 client passes a value for 
+Let’s assume that for Enterprise Server 8.0 the CopyTo dialog supports the Dossier property. Any 8.0 compliant client passes a value for 
 DefaultDossier parameter and the server returns the Dossier property, which is shown in the dialog. The client 
-then passes the chosen Dossier ID (by end user) through the CopyObjects service. But, when a 7.x client is talking to a 
-8.0 server, the DefaultDossier parameter is set to nil, and *no* Dossier property is shown. And vice versa, when a 8.0 client 
+then passes the chosen Dossier ID (by end user) through the CopyObjects service. But, when a 7.x compliant client is talking to a 
+8.0 server, the DefaultDossier parameter is set to nil, and *no* Dossier property is shown. And vice versa, when a 8.0 compliant client 
 is talking to a 7.x server, the client passes a value for DefaultDossier parameter, but the server does not return the 
 Dossier property, and so it is not shown in the dialog.
 

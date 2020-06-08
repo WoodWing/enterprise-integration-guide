@@ -90,8 +90,8 @@ request, SendMessages request,
 
 And, the meaning of ReadMessageIDs has been changed; It no longer means to delete the messages. Instead, there is a new 
 property introduced, named DeleteMessageIDs that does actual deletions. When messages are read by a user, the 
-ReadMessageIDs is used. This is for 8.0 clients talking to a 8.0 server. When 7.x clients are talking, the 8.0 will detect 
-and change the request on-the-fly in its service layer.
+ReadMessageIDs is used. This is for 8.0 compliant clients talking to a 8.0 server. When 7.x compliant clients are talking,  
+the 8.0 server will detect and change the request on-the-fly in its service layer.
 
 **Server Plug-ins: Migration to 8.0 (or newer)**
 
@@ -771,7 +771,7 @@ To track for which object version a message was created, the Message is extended
 ```
 
 To allow 7.6 clients talking to a 8.0 server, the ObjectVersion property is made optional. 7.6 clients send no 
-ObjectVersion, but 8.0 client send an ObjectVersion set to nil. The reason is that for a future version this property 
+ObjectVersion, but 8.0 clients send an ObjectVersion set to nil. The reason is that for a future version this property 
 will be made mandatory (but remains nillable).
 
 When a Message is sent along with the CreateObjects or SaveObjects requests (fired by Smart Connection), the 

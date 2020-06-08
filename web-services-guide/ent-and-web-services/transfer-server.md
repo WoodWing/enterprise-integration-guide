@@ -81,10 +81,10 @@ More information about cookie based tickets can be found later in this document.
 ## Uploading files
 
 The figure below shows how file attachments travel along services when uploading files (such as the CreateObjects or 
-SaveObjects workflow services). With 7.x clients, they both travel through the same request and connection. With 8.0 
-clients, there are two connections; one to the Enterprise Server and one to the Transfer Server. In this case, clients 
-can choose between SOAP or JSON. The red color shows how request data travels through the system. The file 
-attachments are shown in purple.
+SaveObjects workflow services). With 7.x compliant clients, they both travel through the same request and connection. 
+With 8.0 compliant clients, there are two connections; one to the Enterprise Server and one to the Transfer Server. 
+In this case, clients can choose between SOAP or JSON. The red color shows how request data travels through the system. 
+The file attachments are shown in purple.
 
 ![]({{ site.baseurl }}{% link web-services-guide/images/image6.png %})
 
