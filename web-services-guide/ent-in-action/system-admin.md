@@ -10,7 +10,7 @@ This chapter won’t tell you how to develop your sub-application in Flex nor ho
 Instead it describes how to enable admin users to configure access rights for your own sub-applications that run inside 
 Content Station and how to provide a download URL which enables users to install or upgrade your application with ease.
 
-First you need to develop a Server Plug-in. Since Enterprise 9.0 that is as simple as creating a folder in the 
+First you need to develop a Server Plug-in. Since Enterprise Server 9.0 that is as simple as creating a folder in the 
 Enterprise/config/plugins folder with a name (camel case) followed by running the Server Plug-ins page. In the folder 
 you’ll find a new PluginInfo.php file that was generated for you. In that file you should uncomment the following option 
 (by removing the leading // slashes):

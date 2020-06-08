@@ -50,7 +50,7 @@ CreateArticleWorkspaceResponse
 	WorkspaceId
 ```
 
-Since Enterprise 9.5, when the ID parameter is provided, the Content parameter can be set to nil. In that case, the 
+Since Enterprise Server 9.5, when the ID parameter is provided, the Content parameter can be set to nil. In that case, the 
 latest version of the article is retrieved by Enterprise Server and put into the workspace folder. This saves time for 
 remote workers and/or large articles.
 
@@ -109,7 +109,7 @@ PreviewArticleAtWorkspaceResponse (Preview/PDF do Compose implicitly)
 		Page
 			Files
 				File
-					FileUrl (taken from v8)
+					FileUrl (taken from 8.0)
 					L> http://.../previewindex.php?ticket=12&
 					workspaceid=34&action=preview&pageseq=1&
 					layoutid=56&editionid=78&articleid=90

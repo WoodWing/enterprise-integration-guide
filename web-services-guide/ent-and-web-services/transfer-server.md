@@ -81,10 +81,10 @@ More information about cookie based tickets can be found later in this document.
 ## Uploading files
 
 The figure below shows how file attachments travel along services when uploading files (such as the CreateObjects or 
-SaveObjects workflow services). With v7 clients, they both travel through the same request and connection. With v8 
-clients, there are two connections; one to the Enterprise Server and one to the Transfer Server. In this case, clients 
-can choose between SOAP or JSON. The red color shows how request data travels through the system. The file 
-attachments are shown in purple.
+SaveObjects workflow services). With 7.x compliant clients, they both travel through the same request and connection. 
+With 8.0 compliant clients, there are two connections; one to the Enterprise Server and one to the Transfer Server. 
+In this case, clients can choose between SOAP or JSON. The red color shows how request data travels through the system. 
+The file attachments are shown in purple.
 
 ![]({{ site.baseurl }}{% link web-services-guide/images/image6.png %})
 
@@ -129,7 +129,7 @@ The client can check its local cache if this version of the file has already bee
 the file through a HTTP GET command by following the given URL. Downloads are done chunk-wise to reduce memory consumption. 
 Clients need to catch unexpected errors (HTTP 4xx / 5xx) and needs to follow redirections (HTTP 3xx).
 
-Since Enterprise 10.0.0 / 9.8.2 / 9.4.9 there is an optional parameter named “filename” to improve integrations with HTML 
+Since Enterprise Server 10.0.0 / 9.8.2 / 9.4.9 there is an optional parameter named “filename” to improve integrations with HTML 
 based clients, such as Content Station HTML. When provided, the Transfer Server returns that filename in the 
 Content-Disposition header enriched with a file extension (as resolved through the EXTENSIONMAP option in the 
 configserver.php file). For previous versions, or when the “filename” parameter is left out, the fileguid is returned instead.
@@ -278,12 +278,12 @@ enables clients to build async solutions in future too.
 To support the new transfer methods changes had to made to the connector interfaces.
 
 **_Preview\_EnterpriseConnector class:_**
-* before v8: generatePreview( **\$format, \$buffer**, \$max, &\$previewFormat, &\$meta, \$bizMetaDataPreview )
-* since v8: generatePreview( **Attachment \$attachment**, \$max, &\$previewFormat, &\$meta, \$bizMetaDataPreview )
+* before 8.0: generatePreview( **\$format, \$buffer**, \$max, &\$previewFormat, &\$meta, \$bizMetaDataPreview )
+* since 8.0: generatePreview( **Attachment \$attachment**, \$max, &\$previewFormat, &\$meta, \$bizMetaDataPreview )
 
 **_MetaData\_EnterpriseConnector class:_**
-* before v8: readMetaData( **\$format, \$buffer**, \$bizMetaDataPreview )
-* since v8: readMetaData( **Attachment \$attachment**, \$bizMetaDataPreview )
+* before 8.0: readMetaData( **\$format, \$buffer**, \$bizMetaDataPreview )
+* since 8.0: readMetaData( **Attachment \$attachment**, \$bizMetaDataPreview )
 
 Plugins implementing these connectors have to be changed and must respect the new function parameters.
 
@@ -314,7 +314,7 @@ $transferServer->writeContentToFileTransferServer( $content, $attachment );
 “Do you speak English?”. That question is heard at touristic places quite often. But what answer do you expect from 
 people who do not speak English at all? Introducing JSON brings similar challenges; How can a client start 
 talking to a server without knowing what server it is talking to and what protocols it understands? This challenge is 
-new with v8; Before, only SOAP and DIME were supported. But now, the listed servers (configured in WWSettings.xml or 
+new with Enterprise Server 8.0; Before, only SOAP and DIME were supported. But now, the listed servers (configured in WWSettings.xml or 
 configserver.php) need to be accessed with care, before clients start talking new protocols. Clients have no idea what 
 server version they start talking to since they can not look into the future.
 
@@ -362,7 +362,7 @@ preferred by the server. Now it reconnects to the entry point again to let serve
 `http://123.123.123.123/index.php?protocol=JSON&transfer=HTTP`
 
 When the client does not connect this way (leaving out the protocol and transfer parameters), the server assumes the 
-client is v7 (or older) and starts using DIME over SOAP for backwards compatibility reasons.
+client is 7.x (or older) and starts using DIME over SOAP for backwards compatibility reasons.
 
 For each request, the client may choose other parameters. For example, it might support JSON, but still does SOAP for 
 some specific services that have not been ported to JSON yet.
@@ -396,7 +396,7 @@ When servers are configured server-side, this is the sequence dialog of the hand
 ![]({{ site.baseurl }}{% link web-services-guide/images/image9.png %})
 
 Because there can be a mix of server versions, clients needs to do the second handshake too; It could be the case 
-there is a v8 server listing a v7 server or the other way around.
+there is a 8.0 server listing a 7.0 server or the other way around.
 
 ### Sequence diagram: client-side config
 
@@ -404,7 +404,7 @@ When servers are configured client-side, this is the sequence dialog of the hand
 
 ![]({{ site.baseurl }}{% link web-services-guide/images/image10.png %})
 
-## Migration of Enterprise 7 integrations
+## Migration of Enterprise Server 7.x integrations
 
 Changes made to Enterprise Server 8 are done with care; The impact to clients and Server Plug-ins is reduced as much 
 as possible. Nevertheless, SOAP clients are encouraged to migrate and Server Plug-ins (that are dealing with file 
@@ -413,7 +413,7 @@ attachments) are forced to migrate.
 ### SOAP clients
 
 Although DIME is still supported for backwards compatibility reasons, SOAP clients are strongly encouraged to move 
-along with the server and start using the File Transfer Server. Note that DIME might get dropped with v9.
+along with the server and start using the File Transfer Server.
 
 ### Server Plug-ins
 

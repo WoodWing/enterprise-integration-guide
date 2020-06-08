@@ -20,7 +20,7 @@ challenges are encapsulated and hidden from your solution.
 ![]({{ site.baseurl }}{% link web-services-guide/images/image14.png %})
 
 Enterprise WSDLs refer to the DIME attachment specification to send documents along with SOAP traffic. DIME is required 
-up to and including Enterprise Server 7. Since Enterprise Server 8 it is possible to move away from DIME and use the 
+up to and including Enterprise Server 7.x. Since Enterprise Server 8.0 it is possible to move away from DIME and use the 
 *Transfer Server* instead to send documents directly over HTTP. This is faster in execution and easier to integrate 
 than DIME and therefore clients are encouraged to use the Transfer Server.
 
@@ -35,11 +35,11 @@ the right side of the figure below. In this case, there is a little overhead of 
 
 ## .NET clients and Java clients using SOAP
 
-Enterprise 7 has changed the standard notation used for arrays in the WSDL files. (See also *Arrays*.) As a result, 
+Enterprise Server 7.0 has changed the standard notation used for arrays in the WSDL files. (See also *Arrays*.) As a result, 
 .NET and Java integrations could no longer use the WSDL files shipped with the server, and the array definitions 
 needed to be manually changed back to the ‘old’ notation.
 
-For example, this was the ‘old’ notation used for Enterprise 6 (and older):
+For example, this was the ‘old’ notation used for Enterprise Server 6.0 (and older):
 ```xml
 <complexType name="ArrayOfUser">
 	<sequence>
@@ -48,7 +48,7 @@ For example, this was the ‘old’ notation used for Enterprise 6 (and older):
 </complexType>
 ```
 
-while this is the ‘new’ notation used for Enterprise 7 (and later):
+while this is the ‘new’ notation used for Enterprise Server 7.0 (and later):
 ```xml
 <complexType name="ArrayOfUser">
 	<complexContent>
@@ -59,7 +59,7 @@ while this is the ‘new’ notation used for Enterprise 7 (and later):
 </complexType>
 ```
 
-To solve this incompatibility, Enterprise 8 has introduced an option that automatically converts any requested WSDL 
+To solve this incompatibility, Enterprise Server 8.0 has introduced an option that automatically converts any requested WSDL 
 file from the new into the old array notation on-the-fly.
 
 ## .NET clients
@@ -68,7 +68,7 @@ When importing WSDL files in your .NET project, please add the ws-i value to the
 conversion, for example:
 `http://localhost/Enterprise/index.php?wsdl=ws-i`
 
-At the time of updating this document with Enterprise 8 info, a demo application is being developed in .NET showing 
+At the time of updating this document with Enterprise Server 8.0 info, a demo application is being developed in .NET showing 
 how to integrate with Enterprise (which uses this conversion method). Once completed, the application will appear on Labs.
 
 ## Java clients
@@ -81,7 +81,7 @@ This is done for all data structures (simpleType), requests and response classes
 regenerated classes are shipped with the server. Therefore make sure to reimport and compile the classes in your Java 
 project to use the latest features.
 
-From Enterprise 8.3.2. / 9.0.2 onwards, essential fixes have been made to the Java classes shipped in the SDK folder. 
+From Enterprise Server 8.3.2. / 9.0.2 onwards, essential fixes have been made to the Java classes shipped in the SDK folder. 
 These fixes solve fatal errors in your Java client. For example:
 
 `org.xml.sax.SAXException: Invalid element in com.woodwing.enterprise.interfaces.services.wfl.PublicationInfo - PublicationInfo`
@@ -93,8 +93,8 @@ Apache Axis:
 `java org.apache.axis.wsdl.WSDL2Java -u -W -p com.woodwing.enterprise.interfaces.services.wfl http://localhost/Enterprise/index.php?wsdl=ws-i -o out`
 
 Note that the special `wsdl=ws-i` parameter triggers Enterprise Server to change the array definitions into WS-I notation 
-for the requested WSDL (as explained earlier in this chapter). Support for this parameter is introduced in Enterprise 8. 
-Earlier versions do not ship the Java classes, but you could generate them yourself as written above. For Enterprise 7 
+for the requested WSDL (as explained earlier in this chapter). Support for this parameter is introduced in Enterprise Server 8.0. 
+Earlier versions do not ship the Java classes, but you could generate them yourself as written above. For Enterprise Server 7.x 
 you could copy the WSDLs and manually adjust all the array definitions (as explained earlier in this chapter) before you 
 generate the Java classes.
 
@@ -165,7 +165,7 @@ and an Edition data classes, which therefore must be specified, as done by the r
 }
 ```
 
-> At the time of updating this document with Enterprise 8 info, a demo application is being developed in JavaScript 
+> At the time of updating this document with Enterprise Server 8.0 info, a demo application is being developed in JavaScript 
 showing how to integrate with Enterprise with JSON (using jQuery). Once completed, the application will appear on Labs.
 
 Note that the demo client application includes some JavaScript modules that takes care of the low level communication 

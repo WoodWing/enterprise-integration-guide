@@ -16,18 +16,18 @@ could differ due to access rights.
 
 System integrators can overrule the standard server behavior of the GetDialog service through server plug-ins. 
 This is why clients should have no logics nor assume or predict certain behavior. Instead, they should listen to 
-the GetDialog response and fully rely on that. The LogOn response should no longer be used by any v7 client to get 
+the GetDialog response and fully rely on that. The LogOn response should no longer be used by any 7.x compliant client to get 
 definitions in relation to workflow dialogs. Also, there is no reason anymore to call the GetStates service since 
 that is embraced by the GetDialog service.
 
 ## History
 
--   Since v5.0, the GetDialog service was introduced and used by the Web Editor only.
+-   Since 5.0, the GetDialog service was introduced and used by the Web Editor only.
 
--   Since v6.0, Publication Channel awareness has been added to the GetDialog service. Content Station started using it 
+-   Since 6.0, Publication Channel awareness has been added to the GetDialog service. Content Station started using it 
 (but is still using the LogOn response too to build dialogs).
 
--   Since v7.0, new features have been added to the service and InDesign / InCopy clients started using the service. 
+-   Since 7.0, new features have been added to the service and InDesign / InCopy clients started using the service. 
 The service itself is also improved and logics are moved from the clients to the service:
 
     -   The returned PublicationInfo element tree has been pruned, clarifying what response information should be used 
@@ -46,19 +46,19 @@ The service itself is also improved and logics are moved from the clients to the
   Publication            | Publication ID. Nil when ID, Layout or Template is provided, but is mandatory to redraw dialog.
   Issue                  | Issue ID. Nil for initial draw. Mandatory to redraw the dialog.
   Section                | Section ID. Nil for initial draw. Mandatory to redraw the dialog.
-  State                  | \[v7.0\] Status ID. Nil for initial draw. Mandatory to redraw the dialog.
+  State                  | \[7.0\] Status ID. Nil for initial draw. Mandatory to redraw the dialog.
   Type                   | Object type.
   Action                 | Workflow operation. See Action definition for possible values. The empty value is not allowed in this context. For Save-As operations, the Create action should be used.
   RequestDialog          | Request for Dialog element at response time.
   RequestPublication     | Request for Publications and PublicationInfo elements at response time.
   RequestMetaData        | Request for MetaData element at response time. (Has no impact on Dialog-&gt;MetaData.)
   RequestStates          | Request for GetStatesResponse element at response time.
-  RequestTargets         | \[v6.0\] Request for the Targets property (PropertyUsage element) at response time. Clients should pass “true” when they support the complex target widget that holds the Issues and Editions. The server determines where the Targets property should be placed in the dialog. Clients should then ignore the Issues and Editions property positions.
-  DefaultDossier         | \[v7.0\] Dossier object ID. Request to populate the Dossiers element at response time as well as to return the Dossier property at the Dialog definition. The given Publication, Issue and Section are used to get Dossiers. The DefaultDossier is also used to set the default value as the Dossier property. If DefaultDossier is nil (or left out) no Dossier property nor Dossiers will be returned. See also \[1\].
-  Parent                 | \[v7.0\] Parent object ID. In the specific case when creating objects that are already placed (such as creating articles from a layout) the client knows that the object will be placed, but the server does not know yet. (Existing placement relations are resolved server-side.) When the Parent has targets, the RelatedTargets will hold targets of this additional parent too. And, instead of the current Issue, the parent’s Issue is preselected (returned through GetDialogResponse -&gt; Targets). This is because placed objects are assumed to travel along with their parents. Also, the Brand / Category are taken from the Parent when Publication / Section are not given. When the Parent is a Layout Module (or Layout Module Template) the Brand, Issue and Editions are inherited. The Publication and Issue parameters are then ignored.
-  Template               | \[v7.0\] Template object ID. Should only be given when Action = “Create”; else nil. When creating objects, most MetaData should be taken from a template. Those should be pre-filled for the new object in the Create workflow dialog. Provide the object ID of the template (that was picked by user) to let the server inherit its MetaData structure. Nil (or left out) means that the object is not created from the template. For Save As operations, the Template parameter can be used to pass the original object ID from which the MetaData will be inherited. Unlike the Parent parameter, the template’s Issue is not used for preselection. This is because in most cases there is a special templates issue, or templates do not have an Issue assigned.
+  RequestTargets         | \[6.0\] Request for the Targets property (PropertyUsage element) at response time. Clients should pass “true” when they support the complex target widget that holds the Issues and Editions. The server determines where the Targets property should be placed in the dialog. Clients should then ignore the Issues and Editions property positions.
+  DefaultDossier         | \[7.0\] Dossier object ID. Request to populate the Dossiers element at response time as well as to return the Dossier property at the Dialog definition. The given Publication, Issue and Section are used to get Dossiers. The DefaultDossier is also used to set the default value as the Dossier property. If DefaultDossier is nil (or left out) no Dossier property nor Dossiers will be returned. See also \[1\].
+  Parent                 | \[7.0\] Parent object ID. In the specific case when creating objects that are already placed (such as creating articles from a layout) the client knows that the object will be placed, but the server does not know yet. (Existing placement relations are resolved server-side.) When the Parent has targets, the RelatedTargets will hold targets of this additional parent too. And, instead of the current Issue, the parent’s Issue is preselected (returned through GetDialogResponse -&gt; Targets). This is because placed objects are assumed to travel along with their parents. Also, the Brand / Category are taken from the Parent when Publication / Section are not given. When the Parent is a Layout Module (or Layout Module Template) the Brand, Issue and Editions are inherited. The Publication and Issue parameters are then ignored.
+  Template               | \[7.0\] Template object ID. Should only be given when Action = “Create”; else nil. When creating objects, most MetaData should be taken from a template. Those should be pre-filled for the new object in the Create workflow dialog. Provide the object ID of the template (that was picked by user) to let the server inherit its MetaData structure. Nil (or left out) means that the object is not created from the template. For Save As operations, the Template parameter can be used to pass the original object ID from which the MetaData will be inherited. Unlike the Parent parameter, the template’s Issue is not used for preselection. This is because in most cases there is a special templates issue, or templates do not have an Issue assigned.
 
-\[1\] 'Dossier' is a property introduced in v7.0 and can be configured in the Dialog Setup Maintenance page. 
+\[1\] 'Dossier' is a property introduced in 7.0 and can be configured in the Dialog Setup Maintenance page. 
 When a dialog is not customized, a default dialog is assumed by the server, which now also includes the Dossier property. 
 Unlike other properties, the Dossier property is only shown in the dialogs when useful. That is, when the client and 
 server can both handle it. If one doesn’t, the Dossier property won’t be shown in the dialog.
@@ -70,9 +70,9 @@ For client side, that means it is able to:
 that is the CreateObjects request.
 
 For server-side, that means it is able to:
-* Support the Object-in-Dossier relation. For example, for v7.0, Dossier-in-Dossier is not supported, and so Dossier and 
+* Support the Object-in-Dossier relation. For example, for 7.0, Dossier-in-Dossier is not supported, and so Dossier and 
 DossierTemplate objects won’t get a Dossier property.
-* Support implicit Dossier creation for ‘next’ called service. Since v7.0. this is implemented for the CreateObjects 
+* Support implicit Dossier creation for ‘next’ called service. Since 7.0. this is implemented for the CreateObjects 
 service, and so, only for Create dialogs, the Dossier property is shown.
 
 When a client does meet all its criteria listed above, it passes 0 (zero) or a valid Dossier ID for the DefaultDossier 
@@ -81,14 +81,14 @@ parameter; else nil. When the server received a 0 (zero) or valid Dossier ID, an
 the GetDialogResponse-&gt;Dialog elements).
 
 Clients do not worry about server criteria, so they pass 0 (zero) or a valid Dossier ID for any object type, including 
-Dossier objects. Let’s assume that v8 supports Dossier-in-Dossier relations. When a v7 client is talking to a v8 server, 
-the Dossier property will then be shown in the dialog, and will work well.
+Dossier objects. Let’s assume that Enterprise Server 8.0 supports Dossier-in-Dossier relations. When a 7.x compliant client 
+is talking to a 8.0 server, the Dossier property will then be shown in the dialog, and will work well.
 
-Let’s assume that for Enterprise 8.0 the CopyTo dialog supports the Dossier property. Any v8 client passes a value for 
-DefaultDossier parameter and the v8 Server returns the Dossier property, which is shown in the dialog. The 8.0 client 
-then passes the chosen Dossier ID (by end user) through the CopyObjects service. But, when a v7 client is talking to a 
-v8 server, the DefaultDossier parameter is set to nil, and *no* Dossier property is shown. And vice versa, when a v8 client 
-is talking to a v7 server, the client passes a value for DefaultDossier parameter, but the server does not return the 
+Let’s assume that for Enterprise Server 8.0 the CopyTo dialog supports the Dossier property. Any 8.0 compliant client passes a value for 
+DefaultDossier parameter and the server returns the Dossier property, which is shown in the dialog. The client 
+then passes the chosen Dossier ID (by end user) through the CopyObjects service. But, when a 7.x compliant client is talking to a 
+8.0 server, the DefaultDossier parameter is set to nil, and *no* Dossier property is shown. And vice versa, when a 8.0 compliant client 
+is talking to a 7.x server, the client passes a value for DefaultDossier parameter, but the server does not return the 
 Dossier property, and so it is not shown in the dialog.
 
 When the user is about to Create a new object, the server resolves and returns the Dossiers to let the user pick one. 
@@ -249,11 +249,11 @@ a different value than the source object).
 
 ## GetDialog2 service \[since 8.0\]
 
-Up to and including v7, InDesign, InCopy and Content Station call the *GetDialog service* each time when user changes a 
+Smart Connection 7.x for InDesign / InCopy and Content Station 7.x call the *GetDialog service* each time when user changes a 
 property value (dialog field) for which the ‘Refresh’ flag is enabled. The request contains the new user typed value. 
 That way, a custom server plug-in is able to act on the change.
 
-Since v8, there is a new service, called GetDialog2, which supersedes the GetDialog service. Its request and the response 
+Since Enterprise Server 8.0, there is a new service, called GetDialog2, which supersedes the GetDialog service. Its request and the response 
 are simplified to make it easier for clients, especially when it comes to refreshing dialogs. Basically it does the same, 
 but instead of separate parameters, structured data trees are round-tripped through MetaData and Targets. This takes away 
 the need to cache user typed data, which is quite complicated to merge on the way back. This makes clients rely even more 
@@ -289,7 +289,7 @@ GetDialog2
 For client convenience, the MetaData tree is not used (with BasicMetaData, etc), but instead, the list structure is 
 used (with MetaDataValue). Custom properties are supported and are prefixed with “C\_”.
 
-In v7, the following properties are round-tripped through a fixed set of GetDialog service parameters:
+In 7.x, the following properties are round-tripped through a fixed set of GetDialog service parameters:
 
 ``` 
 GetDialog
@@ -307,7 +307,7 @@ There is one exceptional field; The RouteTo field should respect the Brand’s R
 of by the core server. The round-trips caused by the Refresh fields should not disturb this existing feature.
 
 To optimize data traffic and server-side execution speed, clients can request for less data, in case they don’t need 
-that much. In v7, this is done as follows:
+that much. In 7.x, this is done as follows:
 
 ```xml
 <GetDialog>
@@ -332,7 +332,7 @@ GetDialogResponse
 	RelatedTargets
 	Dossiers
 ```
-Since v8, the response structure has changed into this:
+Since 8.0, the response structure has changed into this:
 
 ``` 
 GetDialog2Response
@@ -349,12 +349,12 @@ the GetDialog2 request.
 
 For configured data structures, such as Brands, Issues, etc, the client and server communicate DB ids, while showing 
 display names to end users. To do such, both sides need to know about the configured data structures, which is very 
-dedicated and therefore limited to built-in (known) properties. In v7, there is no common structure that can hold both 
-internal values and display names. With v8 there is, and so custom properties can use those, but also the built-in 
-properties can be expressed in a more common way. This takes out some client logics, which makes things less dependent 
+dedicated and therefore limited to built-in (known) properties. In 7.x, there is no common structure that can hold both 
+internal values and display names. With Enterprise Server 8.0 there is, and so custom properties can use those, but also the built-in 
+properties can be expressed in a more common way. This takes out some client logic, which makes things less dependent 
 and specific.
 
-The structure that holds the values, is defined as follows, whereby v8 changes are in bold:
+The structure that holds the values, is defined as follows, whereby 8.0 changes are in bold:
 
 ```xml
 <complexType name="MetaDataValue">
@@ -369,7 +369,7 @@ The structure that holds the values, is defined as follows, whereby v8 changes a
 </complexType>
 ```
 
-The following definitions are added since v8 as well:
+The following definitions are added since Enterprise Server 8.0 as well:
 
 ```xml
 <complexType name="PropertyValue">
@@ -389,7 +389,7 @@ The following definitions are added since v8 as well:
 </complexType>
 ```
 
-v7 example of usage, which is dis-encouraged:
+7.x example of usage, which is dis-encouraged:
 
 ```xml
 <MetaDataValue>
@@ -400,7 +400,7 @@ v7 example of usage, which is dis-encouraged:
 </MetaDataValue>
 ```
 
-v8 example of usage:
+8.0 example of usage:
 
 ```xml
 <MetaDataValue>
@@ -419,7 +419,7 @@ Users and UserGroups.
 
 ### Refresh dialog fields \[since 8.0\]
 
-Workflow dialogs guide users through their workflow. Even though dialogs are already made very flexible, Enterprise 8 
+Workflow dialogs guide users through their workflow. Even though dialogs are already made very flexible, Enterprise Server 8.0 
 takes another step; It enables application engineers to redraw the dialog in specific cases for which some fields needs 
 to be ‘refreshed’.
 
@@ -458,7 +458,7 @@ which represents the current behavior.
 
 ### Multiple objects support \[since 9.2\]
 
-Since Enterprise 9.2, a new parameter 'MultipleObjects' is added to the request. This boolean field can be used to 
+Since Enterprise Server 9.2, a new parameter 'MultipleObjects' is added to the request. This boolean field can be used to 
 specify whether the dialog is being drawn for a single object (false or nil) or for multiple objects (true).
 
 For backwards compatibility with older clients, the parameter is optional. A request without this parameter is 

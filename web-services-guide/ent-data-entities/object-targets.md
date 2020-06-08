@@ -7,7 +7,7 @@ permalink: 1058-object-targets
 Objects can be targeted for an Issue. This means it is intended to get published for that Issue. During creation, or 
 at the end of the selection & gathering phase, objects typically get targeted. During production, users could add 
 (or remove) targets to send them through additional publication channels. After production, admin users might postpone 
-some objects (that could not get published) to the next Issue by changing targets. With Enterprise 5 (or earlier), 
+some objects (that could not get published) to the next Issue by changing targets. With Enterprise Server 5.x (or earlier), 
 objects were always targeted for just one Issue though.
 
 Objects can have zero, one or many targets. Zero targets are especially needed to support selection & gathering. Many 
@@ -41,7 +41,7 @@ These operations only work for objects that are locked by the current user.
 **Important**: When an object is locked for editing by the current user, its targets can be set by other users in 
 the meantime. Therefore, the targets sent through the create and save operations are assumed to be complete.
 
-> Since Enterprise 6, the `TargetMetaData` element is obsolete. (For more details, see *Structural change for multiple channels*.) 
+> Since Enterprise Server 6.0, the `TargetMetaData` element is obsolete. (For more details, see *Structural change for multiple channels*.) 
 Instead, the `Targets` element should be used and the `TargetMetaData` element should be nullified (by setting the 
 `xsi:nil="true"` attribute).
 
@@ -126,9 +126,9 @@ build. The following figure shows how this is tracked in the Enterprise model:
 
 ## Structural change for multiple channels
 
-Since Enterprise 6, various structural changes have been implemented which are mainly about the need to support multiple 
+Since Enterprise Server 6.0, various structural changes have been implemented which are mainly about the need to support multiple 
 publication channels. This had quite some impact on the workflow WSDL as described below. This paragraph is written for 
-those who are migrating from Enterprise 3/4/5 (to 6 or higher).
+those who are migrating from Enterprise Server 3.x / 4.x / 5.x (to 6.0 or higher).
 
 New insights told that objects are no longer targeted to a Brand (formerly called Publication). The object is owned by 
 the Brand, and therefore the *Publication* element needed to move from *TargetMetaData* to *BasicMetaData*.
@@ -154,7 +154,7 @@ for the GUI, but for the WSDL as well.
 Just like the *Publication* element, the *Section* is nothing like a target anymore. Therefore it is moved to 
 *BasicMetaData* element too, and renamed to *Category*.
 
-Although the WSDL structure has been changed, Enterprise 6 and 7 still support requests that are structured the old way 
+Although the WSDL structure has been changed, Enterprise Server 6.x and 7.x still support requests that are structured the old way 
 for backwards compatibility reasons. Nevertheless, this will no longer be done for future versions. Server Plug-in 
 developers don’t have to deal with this since the core server does restructure on-the-fly before calling the plug-ins 
 for incoming requests, and after outgoing responses. This includes all changes mentioned above. So Server Plug-ins 

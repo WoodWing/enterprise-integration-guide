@@ -9,7 +9,7 @@ server can fire a message. It does this for all kind of events. The messages are
 listening.
 
 The messaging system of Enterprise is built on network broadcasting or multicasting. That works for LAN only. Since 
-Enterprise 10.0 there is a message queue integration with RabbitMQ that allows messages to travel over WAN.
+Enterprise Server 10.0 there is a message queue integration with RabbitMQ that allows messages to travel over WAN.
 
 This chapter describes the format of all messages sent by Enterprise Server. This is typically useful when you develop 
 you own client application and you want to receive and interpret such messages.
@@ -111,7 +111,7 @@ and higher does not implement this, it’s only supported by Content Station ver
 
 6. (no longer in use)
 
-7.  UserId is a full name (Enterprise 6 and higher) that defines the user that initiated the action.
+7.  UserId is a full name (Enterprise Server 6.0 and higher) that defines the user that initiated the action.
 
 8.  Supported by Content Station to allow Content Sources to trigger a re-logon when queries are added/removed. 
 Note that the standard Enterprise Server version 6 and higher does not implement this, it’s only supported by Content Station 

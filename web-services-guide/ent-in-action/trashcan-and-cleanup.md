@@ -5,7 +5,7 @@ sortid: 150
 permalink: 1052-trashcan-and-cleanup
 ---
 
-Enterprise 7 allows system admin users to manage deleted objects through the admin pages. Enterprise 8 exposes that 
+Enterprise Server 7.0 allows system admin users to manage deleted objects through the admin pages. Enterprise Server 8.0 exposes that 
 functionality to brand users and end users as well. Users can restore objects or delete objects permanently from the 
 Trash Can.
 
@@ -58,7 +58,7 @@ Note that access rights options only affect brand admins and end-users. Not syst
 The server reports all kinds of problems back to clients so they can ask the user for confirmation or just inform the 
 user to what extent the operation was successful.
 
-The server is backwards compatible with v7 clients which only know about SOAP faults. Those clients simply raise errors 
+The server is backwards compatible with 7.x clients which only know about SOAP faults. Those clients simply raise errors 
 instead of confirmations. No objects are listed in the dialogs. The server tries to apply the operation for all objects, 
 even when an error has occurred.
 
@@ -71,7 +71,7 @@ The following changes are made to the workflow interface (SCEnterprise.wsdl):
 * ***DeleteObjects service:*** Since deleted objects do not leave the system yet, client applications might want to know 
 what happened (for example to update the Trash Can that is currently still opened in the background). Therefore this 
 service returns objects that are deleted (which is a change). A new “Areas” parameter tells if the object needs to be 
-deleted from the workflow (v7.0 behavior) or needs to be deleted permanently from the Trash Can.
+deleted from the workflow (7.0 behavior) or needs to be deleted permanently from the Trash Can.
 
 The combinations of parameter values result in the following system operations:
 
@@ -95,7 +95,7 @@ configured for the Preview dialog (at Dialog Setup).
 To support live updates between Search results, Inbox and Trash Can, some changes have been made to the messages that 
 are broadcasted or multi-casted over the network to all client applications listening for updates:
 
-* ***DeleteObject (\#4)*** - Before v8, the ID was sent only. Since v8, the following properties are sent: ID (object), 
+* ***DeleteObject (\#4)*** - Before Enterprise Server 8.0, the ID was sent only. Since 8.0, the following properties are sent: ID (object), 
 Type (object) \[1\], Name (object), PublicationId, IssueIds, EditionIds, SectionId, StateId, Deleted, Deleter, 
 RouteTo (user), LockedBy (user), Version (object), UserId and Permanent \[9\].
   * \[9\] The Permanent property is set ‘true’ when the object is deleted permanently, or ‘false’ when the object is 
@@ -128,9 +128,9 @@ When IDs is null, it means ‘for all objects’.
 Assume the user has made a multiple selection of some objects and does a Delete or Restore operation, for which some 
 objects have no problems, while some others have errors.
 
-**v8 client with v8 server**
+**8.0 client with 8.0 server**
 
-For a v8 client talking to v8 server, the SOAP messages looks like the examples below.
+For a 8.0 client talking to 8.0 server, the SOAP messages looks like the examples below.
 
 The initial request:
 
@@ -178,9 +178,9 @@ The response for which an error dialog and confirmation dialog is raised:
 Note that there can still be SOAP faults instead of responses, for example when the ticket has expired. Errors mentioned 
 above are about individual objects causing problems only.
 
-**v7 client with v8 server**
+**7.x client with 8.0 server**
 
-For a v7 client talking to a v8 server, the SOAP messages looks like the examples below.
+For a 7.x client talking to a 8.0 server, the SOAP messages looks like the examples below.
 
 The initial request:
 

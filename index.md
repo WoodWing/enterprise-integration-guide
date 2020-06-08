@@ -9,7 +9,7 @@
 					<ul class="hardcover_front">
 						<li>
 							<div class="coverDesign orange">
-								<span class="ribbon">10.8</span>
+								<span class="ribbon">10.11</span>
 								<h1>WEB</h1>
 								<p>SERVICES</p>
 							</div>
@@ -53,8 +53,8 @@
 					</ul>
 					<figcaption>
 						<h1>Web Services Guide</h1>
-						<span>for Enterprise Server</span>
-						<p>Find out how client applications integrate with Enterprise Server.<br/> 
+						<span>for Studio Server</span>
+						<p>Find out how client applications integrate with Studio Server.<br/> 
 						Study the concepts and basic logic behind the public API of this server.</p>
 					</figcaption>
 				</figure>

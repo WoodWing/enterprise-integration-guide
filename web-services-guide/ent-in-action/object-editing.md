@@ -167,7 +167,7 @@ Health Check pages.
 
 ## Automatic workflow status assignment \[since 8.2\]
 
-Since Enterprise 8.2 it is allowed to create objects without specifying a status. Enterprise Server will then 
+Since Enterprise Server 8.2 it is allowed to create objects without specifying a status. Enterprise Server will then 
 automatically take the first status configured in the workflow (for the given object type and Brand). When there are 
 no statuses defined, but the Personal Status feature is enabled, a Personal Status will be assigned to the newly 
 created object. SOAP clients calling the CreateObjects service should set the State to nil as follows:

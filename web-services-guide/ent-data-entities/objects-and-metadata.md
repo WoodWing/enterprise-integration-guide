@@ -206,7 +206,7 @@ different purposes:
 
 - *BasicMetaData* - Identifies the object and tells how it is bound to the Brand and workflow. For new objects, there 
 is no id, and so name, type and Brand (publication) are needed.
-- *TargetMetaData* - Obsoleted since Enterprise 6. Use Object -&gt; Targets instead. See *Structural change for multiple 
+- *TargetMetaData* - Obsoleted since Enterprise Server 6.0. Use Object -&gt; Targets instead. See *Structural change for multiple 
 channels* for more information.
 - *RightsMetaData* - Copyright information.
 - *SourceMetaData* - Credit information.
@@ -251,7 +251,7 @@ services can be used to manage object relations:
 - DeletetObjectRelations
 - GetObjectRelations
 
-\[Since 7.0\] Since Enterprise 7 users can create an object (let’s say a new article), whereby he/she is offered to 
+\[Since 7.0\] Since Enterprise Server 7.0 users can create an object (let’s say a new article), whereby he/she is offered to 
 select the “Create Dossier” item of the Dossier property in the workflow dialog. Therefore, the object creation service 
 (CreateObjects) supports implicit Dossier creation. This is simply done by sending a fictitious relation to the Dossier 
 through this service. This triggers the server to create a new Dossier before creating the article. With both objects 

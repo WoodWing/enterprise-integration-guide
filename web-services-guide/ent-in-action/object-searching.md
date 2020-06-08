@@ -100,7 +100,7 @@ subparagraph for an example of how the results usually look.
 	..
 ```
 
-The full set of operators can be found in the workflow WSDL. The fragment below shows the definition (made for Enterprise 7) 
+The full set of operators can be found in the workflow WSDL. The fragment below shows the definition (made for Enterprise Server 7.0) 
 in two-fold. On the left, the WSDL is opened in a plain-text editor and on the right it is opened in an XML editor 
 (or Web browser). The plain-text version shows that some operators use “&lt;”. This is the XML escaped representation of 
 “&lt;” which means “less than”. In an XML editor (or Web browser) it shows the escaped version. The SOAP requests contain 
@@ -261,11 +261,11 @@ describes several ways of using this service.
 **Inbox**
 
 Maybe the most frequently used query is the *Inbox* query. It shows the objects that are assigned to the user or one of 
-the groups the user is in. From the *Inbox*, the user opens files that must be worked on. Up to Enterprise 6, the *Inbox* 
+the groups the user is in. From the *Inbox*, the user opens files that must be worked on. Up to Enterprise Server 6.x, the *Inbox* 
 query was shipped as a true Named Query. This implies that any system admin user can adjust it in the “Named Queries” 
 Maintenance page.
 
-\[Since 7.0\] Since Enterprise 7, the *Inbox* is built-in to the server. Nevertheless, it still acts as a true Named Query, 
+\[Since 7.0\] Since Enterprise Server 7.0, the *Inbox* is built-in to the server. Nevertheless, it still acts as a true Named Query, 
 as if it still exists. It is hidden from the “Named Queries” Maintenance page though, so changes cannot be made anymore.
 
 When a user selects and runs the *Inbox* query, client applications fire the *NamedQuery* request as shown in the fragment 

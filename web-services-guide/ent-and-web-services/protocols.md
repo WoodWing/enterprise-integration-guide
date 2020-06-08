@@ -69,7 +69,7 @@ This does not imply that DIME -has- to be used. Instead, the File Transfer Serve
 chapter. For DIME, the Content element of the file attachment is used. To send files through the File Transfer Server, 
 the FileUrl element is used. No matter which of the two methods is used, the server plug-ins use the FilePath attribute 
 of the Attachment object. (Same for PHP web/admin applications.) The WSDL files show that FilePath and FileUrl are 
-introduced since v8 as an alternative for Content:
+introduced since Enterprise Server 8.0 as an alternative for Content:
 ```xml
 <complexType name="Attachment">
 	<all>
@@ -83,9 +83,9 @@ introduced since v8 as an alternative for Content:
 ```
 For these three elements, there is always one in use while the other two are nullified.
 
-## Migration of Enterprise 7 integrations
+## Migration of Enterprise Server 7.x integrations
 
-The impact of the introduction of the new JSON protocol to your Enterprise 7 integrations are discussed in 
+The impact of the introduction of the new JSON protocol to your Enterprise Server 7.x integrations are discussed in 
 this chapter.
 
 ### SOAP clients
