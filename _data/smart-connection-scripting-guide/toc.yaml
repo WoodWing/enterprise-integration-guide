@@ -83,6 +83,11 @@ toc:
           path: smart-connection-scripting-guide/Application/Properties/entSession.md
           url: smart-connection-scripting-guide/Application/Properties/entSession.html
           permalink: 1087-entSession
+        - title: studioPreferences
+          layout: chapter
+          path: smart-connection-scripting-guide/Application/Properties/studioPreferences.md
+          url: smart-connection-scripting-guide/Application/Properties/studioPreferences.html
+          permalink: 1087-studioPreferences
     - title: Document
       layout: section
       path: smart-connection-scripting-guide/Document/index.md
@@ -95,6 +100,11 @@ toc:
         url: smart-connection-scripting-guide/Document/Properties/index.html
         permalink: 1093-index
         children:
+        - title: studioDocumentPreferences
+          layout: chapter
+          path: smart-connection-scripting-guide/Document/Properties/studioDocumentPreferences.md
+          url: smart-connection-scripting-guide/Document/Properties/studioDocumentPreferences.html
+          permalink: 1087-studioDocumentPreferences
         - title: activeEdition
           layout: chapter
           path: smart-connection-scripting-guide/Document/Properties/activeEdition.md
@@ -743,6 +753,90 @@ toc:
           path: smart-connection-scripting-guide/Session/Properties/activeUser.md
           url: smart-connection-scripting-guide/Session/Properties/activeUser.html
           permalink: 1075-activeUser
+    - title: StudioDocumentPreference
+      layout: section
+      path: smart-connection-scripting-guide/StudioDocumentPreference/index.md
+      url: smart-connection-scripting-guide/StudioDocumentPreference/index.html
+      permalink: 1304-index
+      children:
+      - title: StudioDocumentPreference properties
+        layout: section
+        path: smart-connection-scripting-guide/StudioDocumentPreference/Properties/index.md
+        url: smart-connection-scripting-guide/StudioDocumentPreference/Properties/index.html
+        permalink: 1303-index
+        children:
+        - title: applyObjectStyle
+          layout: chapter
+          path: smart-connection-scripting-guide/StudioDocumentPreference/Properties/applyObjectStyle.md
+          url: smart-connection-scripting-guide/StudioDocumentPreference/Properties/applyObjectStyle.html
+          permalink: 1162-applyObjectStyle
+    - title: StudioPreference
+      layout: section
+      path: smart-connection-scripting-guide/StudioPreference/index.md
+      url: smart-connection-scripting-guide/StudioPreference/index.html
+      permalink: 1302-index
+      children:
+      - title: StudioPreference properties
+        layout: section
+        path: smart-connection-scripting-guide/StudioPreference/Properties/index.md
+        url: smart-connection-scripting-guide/StudioPreference/Properties/index.html
+        permalink: 1301-index
+        children:
+        - title: applyObjectStyle
+          layout: chapter
+          path: smart-connection-scripting-guide/StudioPreference/Properties/applyObjectStyle.md
+          url: smart-connection-scripting-guide/StudioPreference/Properties/applyObjectStyle.html
+          permalink: 1162-applyObjectStyle
+        - title: autoAddPlacedAssetsImageToStudio
+          layout: chapter
+          path: smart-connection-scripting-guide/StudioPreference/Properties/autoAddPlacedAssetsImageToStudio.md
+          url: smart-connection-scripting-guide/StudioPreference/Properties/autoAddPlacedAssetsImageToStudio.html
+          permalink: 1162-autoAddPlacedAssetsImageToStudio
+        - title: bringInCopyArticlesToFrontInLayoutView
+          layout: chapter
+          path: smart-connection-scripting-guide/StudioPreference/Properties/bringInCopyArticlesToFrontInLayoutView.md
+          url: smart-connection-scripting-guide/StudioPreference/Properties/bringInCopyArticlesToFrontInLayoutView.html
+          permalink: 1162-bringInCopyArticlesToFrontInLayoutView
+        - title: displayLayoutNameInCreateArticle
+          layout: chapter
+          path: smart-connection-scripting-guide/StudioPreference/Properties/displayLayoutNameInCreateArticle.md
+          url: smart-connection-scripting-guide/StudioPreference/Properties/displayLayoutNameInCreateArticle.html
+          permalink: 1162-displayLayoutNameInCreateArticle
+        - title: documentPaneFontSize
+          layout: chapter
+          path: smart-connection-scripting-guide/StudioPreference/Properties/documentPaneFontSize.md
+          url: smart-connection-scripting-guide/StudioPreference/Properties/documentPaneFontSize.html
+          permalink: 1162-documentPaneFontSize
+        - title: enableSmartCaching
+          layout: chapter
+          path: smart-connection-scripting-guide/StudioPreference/Properties/enableSmartCaching.md
+          url: smart-connection-scripting-guide/StudioPreference/Properties/enableSmartCaching.html
+          permalink: 1162-enableSmartCaching
+        - title: playSoundWhenRoutingMessageArrives
+          layout: chapter
+          path: smart-connection-scripting-guide/StudioPreference/Properties/playSoundWhenRoutingMessageArrives.md
+          url: smart-connection-scripting-guide/StudioPreference/Properties/playSoundWhenRoutingMessageArrives.html
+          permalink: 1162-playSoundWhenRoutingMessageArrives
+        - title: previewPaneFontSize
+          layout: chapter
+          path: smart-connection-scripting-guide/StudioPreference/Properties/previewPaneFontSize.md
+          url: smart-connection-scripting-guide/StudioPreference/Properties/previewPaneFontSize.html
+          permalink: 1162-previewPaneFontSize
+        - title: showImportOptionsDialogOnPlace
+          layout: chapter
+          path: smart-connection-scripting-guide/StudioPreference/Properties/showImportOptionsDialogOnPlace.md
+          url: smart-connection-scripting-guide/StudioPreference/Properties/showImportOptionsDialogOnPlace.html
+          permalink: 1162-showImportOptionsDialogOnPlace
+        - title: applyObjectStyle
+          layout: chapter
+          path: smart-connection-scripting-guide/StudioPreference/Properties/showRoutingMessageAlert.md
+          url: smart-connection-scripting-guide/StudioPreference/Properties/showRoutingMessageAlert.html
+          permalink: 1162-showRoutingMessageAlert
+        - title: updatePlacedImagesWhenOpeningLayout
+          layout: chapter
+          path: smart-connection-scripting-guide/StudioPreference/Properties/updatePlacedImagesWhenOpeningLayout.md
+          url: smart-connection-scripting-guide/StudioPreference/Properties/updatePlacedImagesWhenOpeningLayout.html
+          permalink: 1162-updatePlacedImagesWhenOpeningLayout
     - title: Story
       layout: section
       path: smart-connection-scripting-guide/Story/index.md

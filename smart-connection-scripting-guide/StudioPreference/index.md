@@ -2,7 +2,7 @@
 layout: section
 title: StudioPreference
 sortid: 18
-permalink: 1069-index
+permalink: 1302-index
 ---
 The object representing the Studio preferences.
 

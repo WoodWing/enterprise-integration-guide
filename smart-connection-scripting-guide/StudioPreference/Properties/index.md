@@ -1,7 +1,7 @@
 ---
 layout: section
 title: StudioPreference properties
-permalink: 1073-index
+permalink: 1301-index
 ---
 Properties on the StudioPreference object.
 
