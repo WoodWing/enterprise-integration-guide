@@ -60,29 +60,29 @@ shows the abbreviation (short name) used internally by Enterprise Server. For ex
 abbreviations. The third column shows three items of which their meaning is explained below the table. The last column 
 shows the Enterprise version in which the interface was officially introduced.
 
-| interface       | short     | WSDL(1), URN (2), web service entry point (3)  | since
-------------------|-----------|------------------------------------------------|-----------
-|  workflow       | wfl       | SCEnterprise.wsdl                              | 3.0
-|                 |           | urn:SmartConnection                            | 
-|                 |           | .../Enterprise/index.php                       | 
-|  admin          | adm       | SmartConnectionAdmin.wsdl                      | 5.0
-|                 |           | urn:SmartConnectionAdmin                       | 
-|                 |           | .../Enterprise/adminindex.php                  | 
-|  system admin   | sys       | SystemAdmin.wsdl                               | 9.0
-|                 |           | urn:SmartConnectionSysAdmin                    | 
-|                 |           | ../Enterprise/sysadminindex.php                | 
-|  planning       |  pln      |  SmartEditorialPlan.wsdl                       | 4.0
-|                 |           | urn:SmartEditorialPlan                         | 
-|                 |           | .../Enterprise/editorialplan.php               | 
-|  publishing     | pub       | EnterprisePublishing.wsdl                      | 6.0
-|                 |           | urn:EnterprisePublishing                       | 
-|                 |           | .../Enterprise/publishindex.php                | 
-|  data source    | dat       | PlutusDatasource.wsdl                          | 6.0
-|                 |           | urn:PlutusDatasource                           | 
-|                 |           | .../Enterprise/datasourceindex.php             | 
-|  admin data source | ads    | PlutusAdmin.wsdl                               | 6.0
-|                 |           | urn:PlutusAdmin                                | 
-|                 |           | .../Enterprise/datasourceadminindex.php        | 
+| interface       | short     | WSDL(1), URN (2), web service entry point (3)  | since | comment 
+------------------|-----------|------------------------------------------------|-------|----
+|  workflow       | wfl       | SCEnterprise.wsdl                              | 3.0   |
+|                 |           | urn:SmartConnection                            |       |
+|                 |           | .../Enterprise/index.php                       |       |
+|  admin          | adm       | SmartConnectionAdmin.wsdl                      | 5.0   |
+|                 |           | urn:SmartConnectionAdmin                       |       |
+|                 |           | .../Enterprise/adminindex.php                  |       |
+|  system admin   | sys       | SystemAdmin.wsdl                               | 9.0   |
+|                 |           | urn:SmartConnectionSysAdmin                    |       |
+|                 |           | ../Enterprise/sysadminindex.php                |       |
+|  planning       |  pln      |  SmartEditorialPlan.wsdl                       | 4.0   |
+|                 |           | urn:SmartEditorialPlan                         |       |
+|                 |           | .../Enterprise/editorialplan.php               |       |
+|  ~~publishing~~ | ~~pub~~   | EnterprisePublishing.wsdl                      | 6.0   | DISCONTINUED since 10.12
+|                 |           | urn:EnterprisePublishing                       |       |
+|                 |           | .../Enterprise/publishindex.php                |       |
+|  ~~data source~~ | ~~dat~~  | PlutusDatasource.wsdl                          | 6.0   | DEPRECATED since 10.12
+|                 |           | urn:PlutusDatasource                           |       |
+|                 |           | .../Enterprise/datasourceindex.php             |       | 
+|  ~~admin data source~~ | ~~ads~~ | PlutusAdmin.wsdl                          | 6.0   | DEPRECATED since 10.12
+|                 |           | urn:PlutusAdmin                                |       |
+|                 |           | .../Enterprise/datasourceadminindex.php        |       |
 
 **(1) WSDL**
 
@@ -112,7 +112,7 @@ Once you have read this guide in its entirety, you might wonder how operation se
 data structures are sent back and forth between clients and server. Playing with existing clients while server DEBUG 
 logging is enabled could give you a quick starting point and allows you to examine the process that occurred. This 
 could be helpful when you want to create a new client application from scratch, or let your client support new features 
-that are exposed by a freshly released Enterpriser Server (or hook into running services by using Server plug-ins, which 
+that are exposed by a freshly released Enterprise Server (or hook into running services by using Server plug-ins, which 
 is out-of-scope for this guide). This section tells how this can be done.
 
 In the figure below a scenario is shown in which a user is working with any of the client applications, such as InDesign 
