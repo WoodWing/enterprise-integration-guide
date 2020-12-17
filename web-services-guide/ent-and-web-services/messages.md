@@ -70,16 +70,16 @@ The following shows all supported events and their messages:
 |  21      | DeleteObjectTarget               |            | Ticket <sup>9)</sup>, UserId <sup>7)</sup>, ID (object), PubChannelId, IssueId, EditionIds
 |  22      | UpdateObjectTarget               |            | Ticket <sup>9)</sup>, UserId <sup>7)</sup>, ID (object), PubChannelId, IssueId, EditionIds
 |  23      | RestoreObject                    | 8.0.0      | Ticket <sup>9)</sup>, ID (object), Type (object) <sup>1)</sup>, Name (object), PublicationId, IssueIds, EditionIds, SectionId, StateId, Deleted, Deleter, RouteTo (user), LockedBy (user), Modified, Modifier, Version (object), Format (object), UserId <sup>7)</sup>
-|  24      | IssueDossierReorderAtProduction  | 7.0.13     | Ticket <sup>9)</sup>, PubChannelType, IssueId, DossierIds <sup>10)</sup>
-|  25      | IssueDossierReorderPublished     | 7.5.0      | Ticket <sup>9)</sup>, PubChannelType, PubChannelId, IssueId, EditionId, DossierIds <sup>10)</sup>
-|  26      | PublishDossier                   | 7.5.0      | Ticket <sup>9)</sup>, DossierId, PubChannelType, PubChannelId, IssueId, EditionId, PublishedDate \[, specific fields <sup>11)</sup>\]
-|  27      | UpdateDossier                    | 7.5.0      | Ticket <sup>9)</sup>, DossierId, PubChannelType, PubChannelId, IssueId, EditionId, PublishedDate \[, specific fields <sup>11)</sup>\]
-|  28      | UnpublishDossier                 | 7.5.0      | Ticket <sup>9)</sup>, DossierId, PubChannelType, PubChannelId, IssueId, EditionId \[, specific fields <sup>11)</sup>\]
-|  29      | SetPublishInfoForDossier         | 7.5.0      | Ticket <sup>9)</sup>, DossierId, PubChannelType, PubChannelId, IssueId, EditionId, PublishedDate \[, specific fields <sup>11)</sup>\]
-|  30      | PublishIssue                     | 7.5.0      | Ticket <sup>9)</sup>, PubChannelType, PubChannelId, IssueId, EditionId, Version, PublishedDate \[, specific fields <sup>11)</sup>\]
-|  31      | UpdateIssue                      | 7.5.0      | Ticket <sup>9)</sup>, PubChannelType, PubChannelId, IssueId, EditionId, Version, PublishedDate \[, specific fields <sup>11)</sup>\]
-|  32      | UnpublishIssue                   | 7.5.0      | Ticket <sup>9)</sup>, PubChannelType, PubChannelId, IssueId, EditionId, Version \[, specific fields <sup>11)</sup>\]
-|  33      | SetPublishInfoForIssue           | 7.5.0      | Ticket <sup>9)</sup>, PubChannelType, PubChannelId, IssueId, EditionId, Version, PublishedDate \[, specific fields <sup>11)</sup>\]
+|  24      | IssueDossierReorderAtProduction <sup>21)</sup> | 7.0.13     | Ticket <sup>9)</sup>, PubChannelType, IssueId, DossierIds <sup>10)</sup>
+|  25      | IssueDossierReorderPublished <sup>21)</sup>    | 7.5.0      | Ticket <sup>9)</sup>, PubChannelType, PubChannelId, IssueId, EditionId, DossierIds <sup>10)</sup>
+|  26      | PublishDossier <sup>21)</sup>                  | 7.5.0      | Ticket <sup>9)</sup>, DossierId, PubChannelType, PubChannelId, IssueId, EditionId, PublishedDate \[, specific fields <sup>11)</sup>\]
+|  27      | UpdateDossier <sup>21)</sup>                   | 7.5.0      | Ticket <sup>9)</sup>, DossierId, PubChannelType, PubChannelId, IssueId, EditionId, PublishedDate \[, specific fields <sup>11)</sup>\]
+|  28      | UnpublishDossier <sup>21)</sup>                | 7.5.0      | Ticket <sup>9)</sup>, DossierId, PubChannelType, PubChannelId, IssueId, EditionId \[, specific fields <sup>11)</sup>\]
+|  29      | SetPublishInfoForDossier <sup>21)</sup>        | 7.5.0      | Ticket <sup>9)</sup>, DossierId, PubChannelType, PubChannelId, IssueId, EditionId, PublishedDate \[, specific fields <sup>11)</sup>\]
+|  30      | PublishIssue <sup>21)</sup>                    | 7.5.0      | Ticket <sup>9)</sup>, PubChannelType, PubChannelId, IssueId, EditionId, Version, PublishedDate \[, specific fields <sup>11)</sup>\]
+|  31      | UpdateIssue <sup>21)</sup>                     | 7.5.0      | Ticket <sup>9)</sup>, PubChannelType, PubChannelId, IssueId, EditionId, Version, PublishedDate \[, specific fields <sup>11)</sup>\]
+|  32      | UnpublishIssue <sup>21)</sup>                  | 7.5.0      | Ticket <sup>9)</sup>, PubChannelType, PubChannelId, IssueId, EditionId, Version \[, specific fields <sup>11)</sup>\]
+|  33      | SetPublishInfoForIssue <sup>21)</sup>          | 7.5.0      | Ticket <sup>9)</sup>, PubChannelType, PubChannelId, IssueId, EditionId, Version, PublishedDate \[, specific fields <sup>11)</sup>\]
 |  34      | CreateObjectLabels               | 9.1.0      | Ticket <sup>9)</sup>, ObjectId, Labels <sup>13)</sup>
 |  35      | UpdateObjectLabels               | 9.1.0      | Ticket <sup>9)</sup>, ObjectId, Labels <sup>13)</sup>
 |  36      | DeleteObjectLabels               | 9.1.0      | Ticket <sup>9)</sup>, ObjectId, Labels <sup>13)</sup>
@@ -166,6 +166,8 @@ service results through a subsequent web service. This could be either a success
 
 20. As the server job is working on the offloaded operation in the background, the Ticket will *not* be the same as the ticket
 of the client application that initiated the job. 
+
+21. This event is discontinued since 10.12.0.
 
 ## RabbitMQ integration \[since 10.0\]
 

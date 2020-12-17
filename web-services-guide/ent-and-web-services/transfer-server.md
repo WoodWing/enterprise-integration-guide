@@ -340,12 +340,11 @@ Enterprise Server 8 (and later) will return a home brewed XML structure like thi
 		<Technique protocol="JSON" transfer="HTTP"/>
 		<Technique protocol="SOAP" transfer="DIME"/>
 	</Techniques>
-	<Interfaces minVersion="7" maxVersion="8">
+	<Interfaces minVersion="9" maxVersion="10">
 		<Interface name="Administration" type="core"/>
 		<Interface name="AdminDataSource" type="core"/>
 		<Interface name="DataSource" type="core"/>
 		<Interface name="Planning" type="core"/>
-		<Interface name="Publishing" type="core"/>
 		<Interface name="Workflow" type="core"/>
 	</Interfaces>
 </EnterpriseHandshake>
