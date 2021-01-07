@@ -66,7 +66,7 @@ The `openObject()` method opens files from the Enterprise or Studio Server. It w
 
 | Adobe Version | Supported |
 |---------------|-----------|
-| CC 2017       |           |
 | CC 2018       |           |
 | CC 2019       | 14.2.2+ ✔ |
 | 2020          | 15.1+ ✔   |
+| 2021          | ✔       	|
