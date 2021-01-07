@@ -13,3 +13,4 @@ Properties on the Document object.
 * [managedArticles](./managedArticles.md)
 * [managedImages](./managedImages.md)
 * [managedLayoutModules](./managedLayoutModules.md)
+* [studioDocumentPreferences](./studioDocumentPreferences.md)

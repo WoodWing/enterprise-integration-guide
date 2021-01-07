@@ -10,9 +10,10 @@ The Document in InDesign, InDesign Server (layout) or InCopy (article).
 
 * [activeEdition](Properties/activeEdition.md)
 * [defaultEdition](Properties/defaultEdition.md)
+* [entMetaData](Properties/entMetaData.md)
+* [entWorkflow](Properties/entWorkflow.md)
 * [managedArticles](Properties/managedArticles.md)
 * [managedImages](Properties/managedImages.md)
 * [managedAdverts](Properties/managedAdverts.md)
 * [managedLayoutModules](Properties/managedLayoutModules.md)
-* [entMetaData](Properties/entMetaData.md)
-* [entWorkflow](Properties/entWorkflow.md)
+* [studioDocumentPreferences](Properties/studioDocumentPreferences.md)
