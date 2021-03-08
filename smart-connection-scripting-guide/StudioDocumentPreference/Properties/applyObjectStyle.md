@@ -25,6 +25,13 @@ An ApplyObjectStyleOptions enum value (see below).
 
 The `applyObjectStyle` property defines if and when an object style should be automatically applied to an article.
 
+| Adobe Version | Supported |
+|---------------|-----------|
+| CC 2018       |           |
+| CC 2019       |           |
+| 2020          | v15.2+ ✔  |
+| 2021          | ✔         |
+
 Use one of the following options:
 
 | Value                                                 | Description                                                                             |
