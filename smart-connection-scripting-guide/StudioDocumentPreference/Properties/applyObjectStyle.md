@@ -27,6 +27,7 @@ The `applyObjectStyle` property defines if and when an object style should be au
 
 Use one of the following options:
 
+
 | Value                                                 | Description |
 |-------------------------------------------------------|---------|
 | ApplyObjectStyleOptions.APPLY_DURING_CREATE_AND_PLACE | Only apply the object style when creating or placing the article, not when updating it. |
