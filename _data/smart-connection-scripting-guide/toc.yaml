@@ -827,7 +827,7 @@ toc:
           path: smart-connection-scripting-guide/StudioPreference/Properties/showImportOptionsDialogOnPlace.md
           url: smart-connection-scripting-guide/StudioPreference/Properties/showImportOptionsDialogOnPlace.html
           permalink: 1162-showImportOptionsDialogOnPlace
-        - title: applyObjectStyle
+        - title: showRoutingMessageAlert
           layout: chapter
           path: smart-connection-scripting-guide/StudioPreference/Properties/showRoutingMessageAlert.md
           url: smart-connection-scripting-guide/StudioPreference/Properties/showRoutingMessageAlert.html
