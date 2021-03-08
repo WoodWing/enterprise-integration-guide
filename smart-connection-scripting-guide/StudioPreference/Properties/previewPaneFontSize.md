@@ -26,6 +26,7 @@ A PaneFontSizeOptions enum value (see below).
 The `previewPaneFontSize` property defines the font size for the text in the Preview pane of the Studio panel.
 
 Use one of the following options:
+
 | Value                           | Description                   |
 |---------------------------------|-------------------------------|
 | PaneFontSizeOptions.SMALL       | Use the small font size       |

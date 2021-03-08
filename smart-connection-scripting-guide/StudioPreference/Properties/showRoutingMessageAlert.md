@@ -26,6 +26,7 @@ An ShowRoutingMessageOptions enum value (see below).
 The `showRoutingMessageAlert` property defines  if a message is shown on screen for a user when an object is routed to that user or any user groups of which the user is part.
 
 Use one of the following options:
+
 | Value                                              | Description          |
 |----------------------------------------------------|----------------------|
 | ShowRoutingMessageOptions.DO_NOT_SHOW              | No message is shown. |

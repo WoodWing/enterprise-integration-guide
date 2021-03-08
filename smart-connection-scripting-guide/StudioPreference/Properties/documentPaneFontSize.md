@@ -26,6 +26,7 @@ A PaneFontSizeOptions enum value (see below).
 The `documentPaneFontSize` property defines the font size for the text in the Document pane of the Studio panel.
 
 Use one of the following options:
+
 | Value                           | Description                   |
 |---------------------------------|-------------------------------|
 | PaneFontSizeOptions.SMALL       | Use the small font size       |
