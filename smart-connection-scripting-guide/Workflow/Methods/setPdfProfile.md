@@ -37,7 +37,7 @@ The `setPdfProfile()` method sets the profile to use when generating PDF files f
 
 | Adobe Version | Supported |
 |---------------|-----------|
-| CC 2017       | ✔ (v12.1) |
 | CC 2018       | ✔         |
 | CC 2019       | ✔         |
 | 2020          | ✔         |
+| 2021          | ✔         |

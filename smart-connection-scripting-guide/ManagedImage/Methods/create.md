@@ -37,7 +37,7 @@ The `create()` method creates an image from the given page item in the Enterpris
 
 | Adobe Version | Supported |
 |---------------|---------|
-| CC 2017       | ✔       |
 | CC 2018       | ✔       |
 | CC 2019       | ✔       |
 | 2020          | ✔       |
+| 2021          | ✔       |

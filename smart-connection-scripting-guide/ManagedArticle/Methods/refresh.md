@@ -33,7 +33,7 @@ The `refresh()` method updates the content of the placed Article.
 
 | Adobe Version | Supported |
 |---------------|---------|
-| CC 2017       | ✔       |
 | CC 2018       | ✔       |
 | CC 2019       | ✔       |
 | 2020          | ✔       |
+| 2021          | ✔       |

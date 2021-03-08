@@ -8,11 +8,11 @@ permalink: 1068-index
 Many aspects of Smart Connection and Studio for InDesign & InCopy are scriptable using JavaScript. This guide contains examples sharing how to script the scripting object model that deals with Smart Connection and Studio. It should be used as a companion to InDesign’s Scripting Guide and the scripting model presented by the Adobe ExtendScript Toolkit.
 
 This guide can be used for the following client application versions:
-* Smart Connection for Adobe CC 2017
 * Smart Connection for Adobe CC 2018
 * Smart Connection for Adobe CC 2019
 * Smart Connection for Adobe 2020
 * Studio for InDesign & InCopy 2020
+* Studio for InDesign & InCopy 2021
 
 ## Required knowledge
 We assume the reader of this guide is familiar with:

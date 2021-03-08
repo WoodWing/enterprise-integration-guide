@@ -33,7 +33,7 @@ The `getServers()` method returns a list of servers from the WWSettings.xml file
 
 | Adobe Version | Supported |
 |---------------|---------|
-| CC 2017       | ✔       |
 | CC 2018       | ✔       |
 | CC 2019       | ✔       |
 | 2020          | ✔       |
+| 2021          | ✔       |

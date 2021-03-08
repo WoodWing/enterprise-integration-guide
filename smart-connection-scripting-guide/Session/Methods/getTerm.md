@@ -38,7 +38,7 @@ The `getTerm()` method returns the display value of several terms used in the sy
 
 | Adobe Version | Supported |
 |---------------|---------|
-| CC 2017       | ✔       |
 | CC 2018       | ✔       |
 | CC 2019       | ✔       |
 | 2020          | ✔       |
+| 2021          | ✔       |
