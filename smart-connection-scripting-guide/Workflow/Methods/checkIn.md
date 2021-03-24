@@ -21,7 +21,7 @@ The `checkIn()` method does not return anything.
 
 The `checkIn()` method checks the document in to the Enterprise or Studio Server system.
 
-Use the “Type” key in the EntMetaData to indicate what kind of object should be created. Possible values are: “Layout”, “LayoutTemplate”, “LayoutModule” or “LayoutModuleTemplate”.
+Use the “Type” key in the EntMetaData to indicate what kind of object should be checked in. Possible values are: “Layout”, “LayoutTemplate”, “LayoutModule” or “LayoutModuleTemplate”.
 
 ## Examples
 
