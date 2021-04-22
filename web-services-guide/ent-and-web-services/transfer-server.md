@@ -209,18 +209,18 @@ different application (for example for downloading).
 To request a signed URL from the server you can add the following parameters to the web service entry point. An example 
 URL would be: 
 
-`http://123.123.123.123/index.php?protocol=JSON&transfer=HTTP&signedUrls=true&autoCleanUrls=true`
+`http://123.123.123.123/index.php?protocol=JSON&transfer=HTTP&transferOptions=compressionEnabledUrls,signedUrls,autocleanurls`
 
-The possible options are:
+The possible transfer options are:
 
 * compressionEnabledUrls
-    * When compressionEnabledUrls is true the compression parameter will be added to the url or added to the token when 
+    * When compressionEnabledUrls is set in the transferOptions param, the compression parameter will be added to the url or added to the token when 
     signedUrls is true. The compression parameter is automatically set to 'deflate'.
 * signedUrls
-    * When signedUrls is true a token will be generated that is valid for a number of seconds as configured with 
+    * When signedUrls is set in the transferOptions param, a token will be generated that is valid for a number of seconds as configured with 
      FILE_TRANSFER_SIGNED_URL_TIMEOUT in the configuration of the server. 
 * autoCleanUrls
-	 * When autoCleanUrls is true the autoclean parameter is added to the generated url or token. This will clean the file 
+	* When autoCleanUrls is set in the transferOptions param, the autoclean parameter is added to the generated url or token. This will clean the file 
      from the Transfer Server folder after downloading. In combination with signedUrls this means that the download is valid 
      only once.
 
