@@ -87,6 +87,13 @@ function afterCreateArticle()
 }
 ```
 
+### Automatically deployed scripts
+
+Event scripts can be deployed automatically from Studio Server to InDesign, InCopy or InDesign Server. See https://helpcenter.woodwing.com/hc/en-us/articles/204807589-Automatically-deploying-event-scripts-for-Smart-Connection-in-InDesign-or-InCopy for more information on this mechanism.
+In the case that for one scripting event both a local and a server deployed event script are present, then only the event script deployed from the server will be executed.
+If the event script file is renamed in WWSettings.xml then only the renamed script file is executed. 
+So if the 'afterLogOn.jsx' script is deployed from the Server and WWSettings.xml specifies 'bla.jsx' for the afterLogOn event, then the deployed script will not be executed.
+
 ### Troubleshooting
 It is possible to debug scripts on a per event basis when an event occurs. To debug the afterOpenLayout event:
 ```xml
