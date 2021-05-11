@@ -67,16 +67,16 @@ toc:
           path: smart-connection-scripting-guide/Application/Methods/storedUserQuery.md
           url: smart-connection-scripting-guide/Application/Methods/storedUserQuery.html
           permalink: 1085-storedUserQuery
-        - title: updatePanels
-          layout: chapter
-          path: smart-connection-scripting-guide/Application/Methods/updatePanels.md
-          url: smart-connection-scripting-guide/Application/Methods/updatePanels.html
-          permalink: 1086-updatePanels
         - title: updateGeometry
           layout: chapter
           path: smart-connection-scripting-guide/Application/Methods/updateGeometry.md
           url: smart-connection-scripting-guide/Application/Methods/updateGeometry.html
           permalink: 1246-updateGeometry
+        - title: updatePanels
+          layout: chapter
+          path: smart-connection-scripting-guide/Application/Methods/updatePanels.md
+          url: smart-connection-scripting-guide/Application/Methods/updatePanels.html
+          permalink: 1086-updatePanels
       - title: Application properties
         layout: section
         path: smart-connection-scripting-guide/Application/Properties/index.md
@@ -933,11 +933,6 @@ toc:
       url: smart-connection-scripting-guide/z1-ScriptingEvents/index.html
       permalink: 1240-index
       children:
-      - title: afterGeometryNotification
-        layout: chapter
-        path: smart-connection-scripting-guide/z1-ScriptingEvents/afterGeometryNotification.md
-        url: smart-connection-scripting-guide/z1-ScriptingEvents/afterGeometryNotification.html
-        permalink: 1247-afterGeometryNotification
       - title: afterCreateArticle
         layout: chapter
         path: smart-connection-scripting-guide/z1-ScriptingEvents/afterCreateArticle.md
@@ -988,6 +983,11 @@ toc:
         path: smart-connection-scripting-guide/z1-ScriptingEvents/afterExportArticleTemplate.md
         url: smart-connection-scripting-guide/z1-ScriptingEvents/afterExportArticleTemplate.html
         permalink: 1183-afterExportArticleTemplate
+      - title: afterGeometryNotification
+        layout: chapter
+        path: smart-connection-scripting-guide/z1-ScriptingEvents/afterGeometryNotification.md
+        url: smart-connection-scripting-guide/z1-ScriptingEvents/afterGeometryNotification.html
+        permalink: 1247-afterGeometryNotification
       - title: afterLogOn
         layout: chapter
         path: smart-connection-scripting-guide/z1-ScriptingEvents/afterLogOn.md

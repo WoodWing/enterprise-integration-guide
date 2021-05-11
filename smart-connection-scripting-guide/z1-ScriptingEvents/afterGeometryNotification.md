@@ -55,10 +55,10 @@ var onIdleEventListener = myIdleTask.addEventListener(IdleEvent.ON_IDLE,
 
 function afterReceivingGeometry()
 {
-	try {
+	try{
         doUpdateGeometry();
     }
-	catch(e) {
+	catch(e){
 		alert( "ERROR: in afterGeometryNotification script: " + e.name + "\n\n" + e.message + "\n\nFound on line " + e.line );
 	}
 }
@@ -81,23 +81,23 @@ function doUpdateGeometry() {
 }
 
 function getArticleNames( layoutId ) {
-	var articleNames = "";
+     var articleNames = "";
 	try
 	{
-		var openDocs = app.documents;
-    	var doc;
-     	for (var i = 0; i < openDocs.length; i++) {
-       		doc = openDocs[i];
-        	if (!doc.entMetaData.has("Core_ID") ) 
-           		continue;
+        var openDocs = app.documents;
+        var doc;
+        for (var i = 0; i < openDocs.length; i++) {
+            doc = openDocs[i];
+            if (!doc.entMetaData.has("Core_ID") ) 
+                continue;
             var docId = doc.entMetaData.get( "Core_ID" );
             if (docId == layoutId) {
-            	var managedArticles = doc.managedArticles;
-            	var masLen = managedArticles.length;
-            	var managedArticle, md, artName, lockedBy;
-            	for( var artIdx = 0; artIdx < masLen; ++artIdx ) {
-                	managedArticle = managedArticles.item(artIdx);
-                	md = managedArticle.entMetaData;
+                var managedArticles = doc.managedArticles;
+                var masLen = managedArticles.length;
+                var managedArticle, md, artName, lockedBy;
+                for( var artIdx = 0; artIdx < masLen; ++artIdx ) {
+                    managedArticle = managedArticles.item(artIdx);
+                    md = managedArticle.entMetaData;
             
                     if( md.has( "Core_Name" ) && md.has( "LockedBy" )) {
                         lockedBy = md.get("LockedBy");

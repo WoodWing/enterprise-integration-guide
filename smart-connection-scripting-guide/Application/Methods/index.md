@@ -15,5 +15,6 @@ Methods on the Application object.
 * [queryObjects](./queryObjects.md)
 * [sendObjectToNext](./sendObjectToNext.md)
 * [storedUserQuery](./storedUserQuery.md)
+* [updatePanels](./updateGeometry.md)
 * [updatePanels](./updatePanels.md)
 

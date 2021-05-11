@@ -27,8 +27,7 @@ The `updateGeometry()` method updates the geometry of an article in InCopy by re
 
 ## Examples
 
-See [Scripting Events](./afterGeometryNotification.md)
-
+See [afterGeometryNotification](./../z1-ScriptingEvents/afterGeometryNotification.md)
 
 ## Supported versions
 
@@ -42,4 +41,4 @@ See [Scripting Events](./afterGeometryNotification.md)
 ## See also
 
 * [Application](./index.md)
-* [Scripting Events](./afterGeometryNotification.md)
+* [afterGeometryNotification](./../z1-ScriptingEvents/afterGeometryNotification.md)
