@@ -125,6 +125,7 @@ The following fields are used to describe an event:
 * [afterDetachArticle](./afterDetachArticle.md)
 * [afterExportArticle](./afterExportArticle.md)
 * [afterExportArticleTemplate](./afterExportArticleTemplate.md)
+* [afterGeometryNotification](./afterGeometryNotification.md)
 * [afterLogOn](./afterLogOn.md)
 * [afterOpenArticle](./afterOpenArticle.md)
 * [afterOpenLayout](./afterOpenLayout.md)

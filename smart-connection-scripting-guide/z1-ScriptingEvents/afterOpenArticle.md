@@ -1,7 +1,7 @@
 ---
 layout: chapter
 title: afterOpenArticle
-sortid: 121
+sortid: 122
 permalink: 1185-afterOpenArticle
 ---
 

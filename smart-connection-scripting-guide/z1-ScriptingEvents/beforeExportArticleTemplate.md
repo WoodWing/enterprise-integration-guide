@@ -1,7 +1,7 @@
 ---
 layout: chapter
 title: beforeExportArticleTemplate
-sortid: 134
+sortid: 135
 permalink: 1198-beforeExportArticleTemplate
 ---
 

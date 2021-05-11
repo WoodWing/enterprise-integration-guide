@@ -1,7 +1,7 @@
 ---
 layout: chapter
 title: beforeExportArticle
-sortid: 133
+sortid: 134
 permalink: 1197-beforeExportArticle
 ---
 

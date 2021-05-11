@@ -1,7 +1,7 @@
 ---
 layout: chapter
 title: beforeCreateArticle
-sortid: 128
+sortid: 129
 permalink: 1192-beforeCreateArticle
 ---
 

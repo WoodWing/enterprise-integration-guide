@@ -1,7 +1,7 @@
 ---
 layout: chapter
 title: afterOpenLayout
-sortid: 122
+sortid: 123
 permalink: 1186-afterOpenLayout
 ---
 

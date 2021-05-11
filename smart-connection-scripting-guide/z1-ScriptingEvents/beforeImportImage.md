@@ -1,7 +1,7 @@
 ---
 layout: chapter
 title: beforeImportImage
-sortid: 135
+sortid: 136
 permalink: 1199-beforeImportImage
 ---
 

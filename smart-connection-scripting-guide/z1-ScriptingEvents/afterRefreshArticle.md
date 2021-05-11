@@ -1,7 +1,7 @@
 ---
 layout: chapter
 title: afterRefreshArticle
-sortid: 124
+sortid: 125
 permalink: 1188-afterRefreshArticle
 ---
 

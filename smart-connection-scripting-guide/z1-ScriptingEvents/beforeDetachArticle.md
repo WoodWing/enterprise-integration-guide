@@ -1,7 +1,7 @@
 ---
 layout: chapter
 title: beforeDetachArticle
-sortid: 132
+sortid: 133
 permalink: 1196-beforeDetachArticle
 ---
 

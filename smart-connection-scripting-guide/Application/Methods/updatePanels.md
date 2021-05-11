@@ -1,7 +1,7 @@
 ---
 layout: chapter
 title: updatePanels
-sortid: 10
+sortid: 11
 permalink: 1086-updatePanels
 ---
 ## Syntax
