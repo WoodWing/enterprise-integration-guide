@@ -25,11 +25,11 @@ n/a
 
 ## Notes
 
-This scripting event is available with Smart Connection 14.3.1 for CC 2019.
+This scripting event is available in Smart Connection 14.3.1 for CC 2019.
 
 ## Examples
 
-**Using afterGeometryNotification**
+**Using afterGeometryNotification and app.UpdateGeometry**
 
 ```javascript
 #targetengine 'session';
@@ -56,8 +56,8 @@ var onIdleEventListener = myIdleTask.addEventListener(IdleEvent.ON_IDLE,
 function afterReceivingGeometry()
 {
 	try{
-        doUpdateGeometry();
-    }
+		doUpdateGeometry();
+	}
 	catch(e){
 		alert( "ERROR: in afterGeometryNotification script: " + e.name + "\n\n" + e.message + "\n\nFound on line " + e.line );
 	}
@@ -65,63 +65,63 @@ function afterReceivingGeometry()
 
 function doUpdateGeometry() {
 
-    app.scriptPreferences.userInteractionLevel = UserInteractionLevels.INTERACT_WITH_ALL;
-    var articleNames = getArticleNames( layoutId );
-    if ( articleNames.length > 0 ) {
-        var result = confirm("New layout information is available for article [ " + articleNames + " ]. " + "Do you want to update now?", false);
-        if( result == true ) {
-            try {
-                app.updateGeometry(layoutId);
-            }
-            catch (e) {
-                alert("Cannot update geometry from the script, the updateGeometry action have wrong layout id value. Please fix the script and try again.");
-            }
-        }
-    }
+	app.scriptPreferences.userInteractionLevel = UserInteractionLevels.INTERACT_WITH_ALL;
+	var articleNames = getArticleNames( layoutId );
+	if ( articleNames.length > 0 ) {
+		var result = confirm("New layout information is available for article [ " + articleNames + " ]. " + "Do you want to update now?", false);
+		if( result == true ) {
+			try {
+				app.updateGeometry(layoutId);
+    		}
+    		catch (e) {
+    			alert("Cannot update geometry from the script, the updateGeometry action have wrong layout id value. Please fix the script and try again.");
+    		}
+    	}
+	}
 }
 
 function getArticleNames( layoutId ) {
-     var articleNames = "";
+	var articleNames = "";
 	try
 	{
-        var openDocs = app.documents;
-        var doc;
-        for (var i = 0; i < openDocs.length; i++) {
-            doc = openDocs[i];
-            if (!doc.entMetaData.has("Core_ID") ) 
-                continue;
-            var docId = doc.entMetaData.get( "Core_ID" );
-            if (docId == layoutId) {
-                var managedArticles = doc.managedArticles;
-                var masLen = managedArticles.length;
-                var managedArticle, md, artName, lockedBy;
-                for( var artIdx = 0; artIdx < masLen; ++artIdx ) {
-                    managedArticle = managedArticles.item(artIdx);
-                    md = managedArticle.entMetaData;
+		var openDocs = app.documents;
+    	var doc;
+    	for (var i = 0; i < openDocs.length; i++) {
+			doc = openDocs[i];
+			if (!doc.entMetaData.has("Core_ID") ) 
+				continue;
+    		var docId = doc.entMetaData.get( "Core_ID" );
+    		if (docId == layoutId) {
+    			var managedArticles = doc.managedArticles;
+            	var masLen = managedArticles.length;
+        		var managedArticle, md, artName, lockedBy;
+        		for( var artIdx = 0; artIdx < masLen; ++artIdx ) {
+        			managedArticle = managedArticles.item(artIdx);
+            		md = managedArticle.entMetaData;
             
-                    if( md.has( "Core_Name" ) && md.has( "LockedBy" )) {
-                        lockedBy = md.get("LockedBy");
+            		if( md.has( "Core_Name" ) && md.has( "LockedBy" )) {
+            			lockedBy = md.get("LockedBy");
 						if( lockedByUser(lockedBy) ) {
-                            artName = md.get( "Core_Name" );
-                            if (articleNames.length > 0) {
-                                articleNames += ", ";
-                            }
-                            articleNames += artName;
-                        }
-                    }
-                }
-            }
-        }
+                			artName = md.get( "Core_Name" );
+                        	if (articleNames.length > 0) {
+								articleNames += ", ";
+    						}
+            				articleNames += artName;
+        				}
+        			}
+            	}
+        	}
+		}
     } catch (e) {
-        alert( "ERROR: in afterGeometryNotification script: " + e.name + "\n\n" + e.message + "\n\nFound on line " + e.line );
-    }
+		alert( "ERROR: in afterGeometryNotification script: " + e.name + "\n\n" + e.message + "\n\nFound on line " + e.line );
+	}
 
-    return articleNames;
+	return articleNames;
 }
 
 function lockedByUser(lockName)
 {
-    var activeUser = "";
+	var activeUser = "";
 	if ("activeUser" in app.entSession) {
 		activeUser = app.entSession.activeUser;
 	}
@@ -133,12 +133,12 @@ function lockedByUser(lockName)
 	for(var i = 0; i < users.length; i++)
 	{
 		if(activeUser == users[i][0] || activeUser == users[i][1]) {
-            if (lockName == users[i][0] || lockName == users[i][1]) {
-                // The shortname or longname matches,
-                return true;
-            }
-        }
-    }
+			if (lockName == users[i][0] || lockName == users[i][1]) {
+    		// The shortname or longname matches,
+    			return true;
+    		}
+		}
+	}
 	// Someone else locked the file.
 	return false;
 }
