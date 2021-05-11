@@ -53,8 +53,7 @@ var onIdleEventListener = myIdleTask.addEventListener(IdleEvent.ON_IDLE,
 	}
 );
 
-function afterReceivingGeometry()
-{
+function afterReceivingGeometry() {
 	try{
 		doUpdateGeometry();
 	}
@@ -64,7 +63,6 @@ function afterReceivingGeometry()
 }
 
 function doUpdateGeometry() {
-
 	app.scriptPreferences.userInteractionLevel = UserInteractionLevels.INTERACT_WITH_ALL;
 	var articleNames = getArticleNames( layoutId );
 	if ( articleNames.length > 0 ) {
@@ -72,11 +70,11 @@ function doUpdateGeometry() {
 		if( result == true ) {
 			try {
 				app.updateGeometry(layoutId);
-    		}
-    		catch (e) {
-    			alert("Cannot update geometry from the script, the updateGeometry action have wrong layout id value. Please fix the script and try again.");
-    		}
-    	}
+			}
+			catch (e) {
+				alert("Cannot update geometry from the script, the updateGeometry action have wrong layout id value. Please fix the script and try again.");
+			}
+		}
 	}
 }
 
@@ -85,34 +83,34 @@ function getArticleNames( layoutId ) {
 	try
 	{
 		var openDocs = app.documents;
-    	var doc;
-    	for (var i = 0; i < openDocs.length; i++) {
+		var doc;
+		for (var i = 0; i < openDocs.length; i++) {
 			doc = openDocs[i];
 			if (!doc.entMetaData.has("Core_ID") ) 
 				continue;
-    		var docId = doc.entMetaData.get( "Core_ID" );
-    		if (docId == layoutId) {
-    			var managedArticles = doc.managedArticles;
-            	var masLen = managedArticles.length;
-        		var managedArticle, md, artName, lockedBy;
-        		for( var artIdx = 0; artIdx < masLen; ++artIdx ) {
-        			managedArticle = managedArticles.item(artIdx);
-            		md = managedArticle.entMetaData;
+			var docId = doc.entMetaData.get( "Core_ID" );
+			if (docId == layoutId) {
+				var managedArticles = doc.managedArticles;
+				var masLen = managedArticles.length;
+				var managedArticle, md, artName, lockedBy;
+				for( var artIdx = 0; artIdx < masLen; ++artIdx ) {
+					managedArticle = managedArticles.item(artIdx);
+					md = managedArticle.entMetaData;
             
-            		if( md.has( "Core_Name" ) && md.has( "LockedBy" )) {
-            			lockedBy = md.get("LockedBy");
+					if( md.has( "Core_Name" ) && md.has( "LockedBy" )) {
+						lockedBy = md.get("LockedBy");
 						if( lockedByUser(lockedBy) ) {
-                			artName = md.get( "Core_Name" );
-                        	if (articleNames.length > 0) {
+							artName = md.get( "Core_Name" );
+							if (articleNames.length > 0) {
 								articleNames += ", ";
-    						}
-            				articleNames += artName;
-        				}
-        			}
-            	}
-        	}
+							}
+							articleNames += artName;
+						}
+					}
+				}
+			}
 		}
-    } catch (e) {
+	} catch (e) {
 		alert( "ERROR: in afterGeometryNotification script: " + e.name + "\n\n" + e.message + "\n\nFound on line " + e.line );
 	}
 
@@ -134,9 +132,9 @@ function lockedByUser(lockName)
 	{
 		if(activeUser == users[i][0] || activeUser == users[i][1]) {
 			if (lockName == users[i][0] || lockName == users[i][1]) {
-    		// The shortname or longname matches,
-    			return true;
-    		}
+				// The shortname or longname matches,
+				return true;
+			}
 		}
 	}
 	// Someone else locked the file.
