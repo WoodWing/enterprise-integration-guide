@@ -56,6 +56,11 @@ toc:
         path: web-services-guide/ent-and-web-services/messages.md
         url: web-services-guide/ent-and-web-services/messages.html
         permalink: 1031-messages
+      - title: Webhooks [since 10.13]
+        layout: chapter
+        path: web-services-guide/ent-and-web-services/webhooks.md
+        url: web-services-guide/ent-and-web-services/webhooks.html
+        permalink: 1248-webhooks
     - title: Enterprise Data Entities
       layout: section
       path: web-services-guide/ent-data-entities/index.md
