@@ -135,7 +135,7 @@ Both processors should be called every minute:
 By default, the execution time of the processors is 60 seconds. Make sure that the scheduler runs the processor every minute. If you prefer longer runs, you should obviously adjust the timer for the scheduler, but you should also tell the processor to execute longer; To run for 3 minutes (180 seconds) you should add the following parameter to the URL: `&maxexectime=180`
 
 ## Event processor scaling
-Just one application server on itself could serve many workflow requests in parallel. Each request may cause events getting pushed into the Event Bus, and those could be fanned out over multiple Webhook queues. Although this could cause a significant load, the event processors only have to deal with the message queues, which is a relatively light and fast job. Therefore, in normal circumstances, expected is that one pair of event processors can coop with the traffic caused by incoming workflow requests on one application server.  
+Just one application server on itself could serve many workflow requests in parallel. Each request may cause events getting pushed into the Event Bus, and those could be fanned out over multiple Webhook queues. Although this could cause a significant load, the event processors only have to deal with the message queues, which is a relatively light and fast job. Therefore, in normal circumstances, expected is that one pair of event processors can cope with the traffic caused by incoming workflow requests on one application server.  
 
 If you have setup multiple application servers for one Studio installation, you may want to scale the event processors accordingly. A good start could be to give each application server its own pair of event processors. 
 
@@ -158,7 +158,7 @@ This chapter describes how a 3rd party can be integrated with Studio by using th
 ## Calling the registration web services
 In this paragraph we speak of a 'client' that connects Studio Server. A client could be any kind of backend process, such as a server application, custom script, Workato recipe, etc. 
 
-Pick a web service protocol that suites the technology stack of your client:
+Pick a web service protocol that suits the technology stack of your client:
 * JSON-RPC
 * SOAP
 
