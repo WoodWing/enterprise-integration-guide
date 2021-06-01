@@ -7,7 +7,7 @@ permalink: 1029-client-applications
 
 The Web Service interfaces are accessible in different ways. The way to choose depends on the programming language used 
 to develop your application and the way it needs to be deployed. Most common programming languages today support 
-Web Services, including PHP, Java, RealBasic, VisualBasic, C++, C\#, Flex and many more. Enterprise Server implements 
+Web Services, including PHP, Java, RealBasic, VisualBasic, C++, C\#, JavaScript, TypeScript and many more. Enterprise Server implements 
 its interfaces with PHP. When your solution is written in a programming language other than PHP, you need to develop 
 a client application that talks Web Services as specified by the WSDLs of Enterprise Server.
 
@@ -179,6 +179,25 @@ the client application accesses the server through the “*http://localhost/ente
 client application should reside under the "*http://localhost*/" web root as well. Doing so, Make sure the URL in your 
 web browser address bar is -exactly- the same as the one used in jQuery.Zend.jsonrpc(...) in the example scripts. Note 
 that even “localhost” and “127.0.0.1” do NOT match.
+## TypeScript clients using JSON \[since 10.13.1\]
+
+Most written in the preceding chapter *"JavaScript clients using JSON"* is true for TypeScript clients as well.
+Studio Server 10.13.1 (or later versions) ships TypeScript definitions for the web service interfaces.
+For each web service interface (WSDL file) a single file is provided which contains the TypeScript definitions.
+Those definitions may ease building an integration with Studio Server. 
+
+They can be found on the following locations in Studio Server:
+* Web service interfaces provided by the Studio Server:
+  * `server/sdk/typescript/<interface>/types.ts`
+* Web service interfaces provided by built-in server plug-ins:
+  * `server/plugins/<plugin>/typescript/<interface>/types.ts`
+* Web service interfaces provided by custom server plug-ins:
+  * `config/plugins/<plugin>/typescript/<interface>/types.ts`
+
+The TypeScript client can import such file and use the TypeScript definitions to compose the requests- and data structures. 
+This structure could be provided to a component that wraps it into a JSON-RPC envelope and actually fires the request. 
+For the returned response, this component could apply data class binding by checking the `__classname__` members 
+that are added to each type/interface for this purpose.
 
 ## PHP clients using SOAP
 
