@@ -19,10 +19,10 @@ challenges are encapsulated and hidden from your solution.
 
 ![]({{ site.baseurl }}{% link web-services-guide/images/image14.png %})
 
-Enterprise WSDLs refer to the DIME attachment specification to send documents along with SOAP traffic. DIME is required 
-up to and including Enterprise Server 7.x. Since Enterprise Server 8.0 it is possible to move away from DIME and use the 
-*Transfer Server* instead to send documents directly over HTTP. This is faster in execution and easier to integrate 
-than DIME and therefore clients are encouraged to use the Transfer Server.
+Enterprise WSDLs refer to the DIME attachment specification to send documents along with SOAP traffic. 
+Aside to DIME the *Transfer Server* can be used to send documents directly over HTTP. 
+DIME is faster when lots of small files must be transferred for one service call. DIME is only available for SOAP clients. 
+The *Transfer Server* is easier to integrate and uses less memory at server side compared to DIME.
 
 When your solution is written in PHP, you can use helper classes shipped with Enterprise Server. When your solution 
 -always- runs on the -same- server machine (as the Enterprise Server) you can use the *PHP service helper classes*. 
@@ -164,21 +164,6 @@ and an Edition data classes, which therefore must be specified, as done by the r
 	"id":4
 }
 ```
-
-> At the time of updating this document with Enterprise Server 8.0 info, a demo application is being developed in JavaScript 
-showing how to integrate with Enterprise with JSON (using jQuery). Once completed, the application will appear on Labs.
-
-Note that the demo client application includes some JavaScript modules that takes care of the low level communication 
-details written above, except for the “\_\_classname\_\_” property that needs to be set by the client. Basically those 
-classes can be used for any integration using the JSON RPC 2.0 standard. However, they are enriched with some error 
-handling to simplify clients working with exception handling. Therefore, when developing your own client application, 
-please copy the JavaScript classes included by the demo.
-
-You client application (HTML page) should have the very same web root location as Enterprise Server. For example, when 
-the client application accesses the server through the “*http://localhost/enterprise/index.php*” entry point, then the 
-client application should reside under the "*http://localhost*/" web root as well. Doing so, Make sure the URL in your 
-web browser address bar is -exactly- the same as the one used in jQuery.Zend.jsonrpc(...) in the example scripts. Note 
-that even “localhost” and “127.0.0.1” do NOT match.
 ## TypeScript clients using JSON \[since 10.13.1\]
 
 Most written in the preceding chapter *"JavaScript clients using JSON"* is true for TypeScript clients as well.
@@ -212,9 +197,7 @@ integration easier to develop and faster in execution.
 
 ***External PHP integrations*** are custom stand-alone PHP client applications. Their PHP modules run at a server 
 machine and they communicate to Enterprise Server over an HTTP connection. Therefore they are called *client* applications, 
-seen from Enterprise Server point of view. The SOAP is the most obvious protocol to chose for such integrations. When it 
-is needed to upload or download files to Enterprise Server, DIME can still be used but is no longer recommended. It is 
-better to integrate the *Transfer Server* instead, which runs over another HTTP connection.
+seen from Enterprise Server point of view. The SOAP is the most obvious protocol to chose for such integrations. 
 
 ## Internal PHP integrations
 
@@ -325,7 +308,6 @@ take some useful code fragments:
 * workflow interface: speedtest.php
 * admin interface: adminservicetest.php
 * planning interface: clientplan.php
-* data source interface: datasourceservicetest.php
 
 Note that even for an external integration, you can still include classes from Enterprise Server without using 
 Enterprise Server as a server. A good reason for that is to profit from the helper- and data classes to speed up your 
