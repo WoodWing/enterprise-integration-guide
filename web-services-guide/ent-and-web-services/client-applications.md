@@ -175,7 +175,7 @@ Those definitions may ease building an integration with Studio Server.
 
 They can be found on the following locations in Studio Server:
 * Web service interfaces provided by the Studio Server:
-  * `server/sdk/typescript/<interface>/types.ts`
+  * `sdk/typescript/<interface>/types.ts`
 * Web service interfaces provided by built-in server plug-ins:
   * `server/plugins/<plugin>/typescript/<interface>/types.ts`
 * Web service interfaces provided by custom server plug-ins:
