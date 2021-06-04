@@ -166,6 +166,8 @@ and an Edition data classes, which therefore must be specified, as done by the r
 ```
 ## TypeScript clients using JSON \[since 10.13.1\]
 
+<span style="color: red">**IMPORTANT:** This feature is currently experimental, incomplete and is subject to change. Nevertheless, we invite you to experiment with it. Based on your feedback we can refine and shape this feature into the right direction.</span>
+
 Most written in the preceding chapter *"JavaScript clients using JSON"* is true for TypeScript clients as well.
 Studio Server 10.13.1 (or later versions) ships TypeScript definitions for the web service interfaces.
 For each web service interface (WSDL file) a single file is provided which contains the TypeScript definitions.
