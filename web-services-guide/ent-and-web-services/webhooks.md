@@ -168,11 +168,40 @@ Make your client connect to the service entry point:
 * JSON-RPC: `http://localhost/StudioServer/pluginindex.php?plugin=Webhooks&interface=reg&protocol=JSON`
 * SOAP: `http://localhost/StudioServer/pluginindex.php?plugin=Webhooks&interface=reg&protocol=SOAP`
 
+### SOAP clients
 For SOAP clients, it could be convenient to generate classes based on the WSDL definition. The WSDL can be downloaded as follows: `http://localhost/StudioServer/pluginindex.php?plugin=Webhooks&interface=reg&wsdl=1`. For Java SOAP clients, Studio Server provides pre-generated classes which can be imported from this folder: `.../StudioServer/server/plugins/Webhooks/sdk/java/src/com/woodwing/enterprise/plugins/webhooks/interfaces/services/reg`
 
 For the full definition of all registration web services you can study the WSDL file. There is also a more readable variant in HTML:
 * WSDL: `.../StudioServer/server/plugins/Webhooks/interfaces/reg.wsdl`
 * HTML: `.../StudioServer/server/plugins/Webhooks/sdk/doc/interfaces/Registration.htm`
+
+### JSON-RPC examples
+The examples given in the succeeding chapters are using the JSON-RPC 2.0 protocol. The [JSON-RPC 2.0](https://www.jsonrpc.org/specification) protocol specifies how request objects should be wrapped in envelopes. To improve readability, the examples in the succeeding chapters do not show those envelopes. It is assumed that your client application uses a library that automatically wraps the requests in the envelopes for you. The only part you need to compose are the request objects itself, as shown in the examples. If you do not use such library, you need to wrap each request yourself in an envelope, which has the following structure:
+```json
+{
+	"jsonrpc":"2.0",
+	"method":"<<< your request name >>>",
+	"params": {
+		"req": <<< your request object >>>
+	},
+	"id":<<< your request identifier >>>
+}
+``` 
+Example of a `GetTriggerOptionsRequest` (including the envelope) looks like this:
+```json
+{
+	"jsonrpc":"2.0",
+	"method":"GetTriggerOptionsRequest",
+	"params": {
+		"req": {
+			"Ticket": "b378ce0aUkpaLEx6PKvMNiB8vFZDWsdWc4bT3Uzk",
+			"__classname__": "WhRegGetTriggerOptionsRequest"
+		}
+	},
+	"id":1
+}
+``` 
+The same applies to the response objects; A web service response arrived at your client application is also wrapped by a JSON-RPC envelope. To access the response object, the envelope needs to be unwrapped, which is normally taken care of by your library. Obviously, without such library you have to take care of this yourself.
 
 ## Registering a Webhook
 Log on to Studio Server with system administration credentials to obtain a valid `Ticket`.
