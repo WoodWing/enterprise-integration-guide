@@ -180,11 +180,11 @@ The examples given in the succeeding chapters are using the JSON-RPC 2.0 protoco
 ```json
 {
 	"jsonrpc":"2.0",
-	"method":"<<< your request name >>>",
+	"method":<<<_your_request_name_>>>,
 	"params": {
-		"req": <<< your request object >>>
+		"req":<<<_your_request_object_>>>
 	},
-	"id":<<< your request identifier >>>
+	"id":<<<_your_request_identifier_>>>
 }
 ``` 
 Example of a `GetTriggerOptionsRequest` (including the envelope) looks like this:
