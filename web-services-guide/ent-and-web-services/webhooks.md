@@ -191,7 +191,7 @@ Example of a `GetTriggerOptionsRequest` (including the envelope) looks like this
 ```json
 {
 	"jsonrpc":"2.0",
-	"method":"GetTriggerOptionsRequest",
+	"method":"GetTriggerOptions",
 	"params": {
 		"req": {
 			"Ticket": "b378ce0aUkpaLEx6PKvMNiB8vFZDWsdWc4bT3Uzk",
