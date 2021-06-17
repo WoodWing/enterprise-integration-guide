@@ -149,7 +149,7 @@ function lockedByUser(lockName)
 | CC 2018       |          |
 | CC 2019       | v14.3.1+ ✔         |
 | 2020          |          |
-| 2021          |          |
+| 2021          | v16.3.0+ ✔         |
 
 ## See also
 
