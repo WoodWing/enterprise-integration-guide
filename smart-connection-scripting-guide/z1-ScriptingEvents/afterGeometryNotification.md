@@ -25,7 +25,7 @@ n/a
 
 ## Notes
 
-This scripting event is available in Smart Connection 14.3.1 for CC 2019.
+This scripting event is available in Smart Connection 14.3.1 for CC 2019, Studio Plug-ins 15.2.1 for Adobe 2020 and Studio Plug-ins 16.3.1 for Adobe 2021.
 
 ## Examples
 
@@ -148,8 +148,8 @@ function lockedByUser(lockName)
 |---------------|-----------|
 | CC 2018       |          |
 | CC 2019       | v14.3.1+ ✔         |
-| 2020          |          |
-| 2021          | v16.3.0+ ✔         |
+| 2020          | v15.2.1+ ✔         |
+| 2021          | v16.3.1+ ✔         |
 
 ## See also
 
