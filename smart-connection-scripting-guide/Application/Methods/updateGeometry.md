@@ -35,8 +35,8 @@ See scripting event afterGeometryNotification.
 |---------------|---------|
 | CC 2018       |        |
 | CC 2019       | v14.3.1+ ✔       |
-| 2020          |        |
-| 2021          |  v16.3.0+ ✔       |
+| 2020          |  v15.2.1+ ✔      |
+| 2021          |  v16.3.1+ ✔       |
 
 ## See also
 
