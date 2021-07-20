@@ -92,6 +92,8 @@ The following shows all supported events and their messages:
 |  43      | UpdateIssuesOrder                | 10.4.1     | Ticket <sup>9)</sup>, PublicationId, PubChannelId, IssueIdsOrder <sup>15)</sup> 
 |  44      | UpdatePublicationChannel         | 10.4.1     | Ticket <sup>9)</sup>, PublicationId, Id (publication channel), Name (publication channel), Type, CurrentIssueId, DirectPublish, SupportsForms, SupportsCropping
 |  45      | UpdateProgress  <sup>19)</sup>   | 10.8.0     | Ticket <sup>9) 20)</sup>, OperationId (returned by web service), Progress (percentage in range 0..100)
+|  46      | ObjectFlagRaised <sup>22)</sup>  | 10.14.0    | Ticket <sup>9)</sup>, ID, Flag, FlagMsg
+|  47      | ObjectFlagCleared <sup>22)</sup> | 10.14.0    | Ticket <sup>9)</sup>, IDs, Flag <sup>23)</sup>
 
 1.  ObjectType as specified in the workflow WSDL. Options are: Article, Layout, Image, etc.
 
@@ -168,6 +170,19 @@ service results through a subsequent web service. This could be either a success
 of the client application that initiated the job. 
 
 21. This event is discontinued since 10.12.0.
+
+22. This event was added since 10.11.4 / 10.13.1 / 10.14.0. It can be used to instantly show or clear red flags for the 
+workflow objects listed in the search results. A flag is set for a layout when the planner updates one of its planned 
+pages or placed adverts. This is done to ask for attention in the workflow to open and check-in the layout to reflect 
+the planned changes into the workflow. After check-in the flag gets cleared. The flag can also be set when the archive 
+procedure fails to archive a layout, Digital article or dossier. This is done to get attention in the workflow to manually 
+solve the reported problem. Once solved the Archive Status should be cleared. Then the flag gets cleared automatically 
+and the archive procedure will retry to archive the object.
+
+23. Through the search results (`QueryObjects` and `NamedQuery` web services) only one Flag is returned and shown to 
+the user. Nevertheless, there can be multiple flags raised for one object. For this exceptional situation the client 
+should check if the Flag in the search results matches with the Flag received via the event. Only when matching, the 
+flag in the search results should be cleared. 
 
 ## RabbitMQ integration \[since 10.0\]
 
