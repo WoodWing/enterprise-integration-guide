@@ -92,8 +92,8 @@ The following shows all supported events and their messages:
 |  43      | UpdateIssuesOrder                | 10.4.1     | Ticket <sup>9)</sup>, PublicationId, PubChannelId, IssueIdsOrder <sup>15)</sup> 
 |  44      | UpdatePublicationChannel         | 10.4.1     | Ticket <sup>9)</sup>, PublicationId, Id (publication channel), Name (publication channel), Type, CurrentIssueId, DirectPublish, SupportsForms, SupportsCropping
 |  45      | UpdateProgress  <sup>19)</sup>   | 10.8.0     | Ticket <sup>9) 20)</sup>, OperationId (returned by web service), Progress (percentage in range 0..100)
-|  46      | ObjectFlagRaised <sup>22)</sup>  | 10.14.0    | Ticket <sup>9)</sup>, ID, Flag, FlagMsg
-|  47      | ObjectFlagCleared <sup>22)</sup> | 10.14.0    | Ticket <sup>9)</sup>, IDs, Flag <sup>23)</sup>
+|  46      | ObjectFlagRaised <sup>22)</sup>  | 10.14.0    | Ticket <sup>9)</sup>, ID, Flag<sup>24)</sup>, FlagMsg
+|  47      | ObjectFlagCleared <sup>22)</sup> | 10.14.0    | Ticket <sup>9)</sup>, IDs, Flag <sup>23) 24)</sup>
 
 1.  ObjectType as specified in the workflow WSDL. Options are: Article, Layout, Image, etc.
 
@@ -183,6 +183,30 @@ and the archive procedure will retry to archive the object.
 the user. Nevertheless, there can be multiple flags raised for one object. For this exceptional situation the client 
 should check if the Flag in the search results matches with the Flag received via the event. Only when matching, the 
 flag in the search results should be cleared. 
+
+24. A flag is a number that refers to a type of event. The following flags are supported:
+
+    Flags raised for layouts as their planned pages have been changed in the planning system:
+
+    | **Flag** | **Meaning** 
+    |  --------| ---------
+    | 1 | Planned pages have been created.
+    | 2 | Planned pages have been adjusted (e.g. renumbered) or added to layout.
+    | 3 | Planned pages removed from plan. (Note that the layout remains in workflow.)
+
+    Flags raised for layouts as on their pages placed adverts have been changed in planning system:
+
+    | **Flag** | **Meaning** 
+    |  --------| ---------
+    | 4 | Planned advert has been created on a page.
+    | 5 | Planned advert has been adjusted on a page (e.g. moved).
+    | 6 | Planned advert has been deleted and removed from a page.
+
+    Flags raised for dossier, layout or digital article during archiving operations:
+
+    | **Flag** | **Meaning** 
+    |  --------| ---------
+    | 7 | Failed archiving dossier, layout or digital article.
 
 ## RabbitMQ integration \[since 10.0\]
 
