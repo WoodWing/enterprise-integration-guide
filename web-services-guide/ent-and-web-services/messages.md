@@ -174,15 +174,15 @@ of the client application that initiated the job.
 22. This event was added since 10.11.4 / 10.13.1 / 10.14.0. It can be used to instantly show or clear red flags for the 
 workflow objects listed in the search results. A flag is set for a layout when the planner updates one of its planned 
 pages or placed adverts. This is done to ask for attention in the workflow to open and check-in the layout to reflect 
-the planned changes into the workflow. After check-in the flag gets cleared. The flag can also be set when the archive 
-procedure fails to archive a layout, Digital article or dossier. This is done to get attention in the workflow to manually 
-solve the reported problem. Once solved the Archive Status should be cleared. Then the flag gets cleared automatically 
+the planned changes into the workflow. After check-in the flag is cleared. The flag can also be set when the archive 
+procedure fails to archive a layout, Digital article or Dossier. This is done to get attention in the workflow to manually 
+solve the reported problem. Once solved, the Archive Status should be cleared. The flag is then cleared automatically 
 and the archive procedure will retry to archive the object.
 
 23. Through the search results (`QueryObjects` and `NamedQuery` web services) only one Flag is returned and shown to 
 the user. Nevertheless, there can be multiple flags raised for one object. For this exceptional situation the client 
-should check if the Flag in the search results matches with the Flag received via the event. Only when matching, the 
-flag in the search results should be cleared. 
+should check if the Flag in the search results matches with the Flag received via the event. Only when matching should the 
+flag in the search results be cleared. 
 
 24. A flag is a number that refers to a type of event. The following flags are supported:
 
@@ -191,22 +191,22 @@ flag in the search results should be cleared.
     | **Flag** | **Meaning** 
     |  --------| ---------
     | 1 | Planned pages have been created.
-    | 2 | Planned pages have been adjusted (e.g. renumbered) or added to layout.
-    | 3 | Planned pages removed from plan. (Note that the layout remains in workflow.)
+    | 2 | Planned pages have been adjusted (for example renumbered) or added to the layout.
+    | 3 | Planned pages have been removed from the plan. (Note that the layout remains in the workflow.)
 
-    Flags raised for layouts as on their pages placed adverts have been changed in planning system:
+    Flags raised for layouts on which placed adverts have been changed in the planning system:
 
     | **Flag** | **Meaning** 
     |  --------| ---------
     | 4 | Planned advert has been created on a page.
-    | 5 | Planned advert has been adjusted on a page (e.g. moved).
+    | 5 | Planned advert has been adjusted on a page (for example moved).
     | 6 | Planned advert has been deleted and removed from a page.
 
-    Flags raised for dossier, layout or digital article during archiving operations:
+    Flags raised for a Dossier, layout or Digital article during archiving operations:
 
     | **Flag** | **Meaning** 
     |  --------| ---------
-    | 7 | Failed archiving dossier, layout or digital article.
+    | 7 | Failed to archive a Dossier, layout or Digital article.
 
 ## RabbitMQ integration \[since 10.0\]
 
