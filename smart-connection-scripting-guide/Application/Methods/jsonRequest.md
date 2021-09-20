@@ -31,12 +31,9 @@ The `jsonRequest()` method posts a JSON object string as a request to an Enterpr
 
 ## Examples
 
-**Example title**
+**QueryObjects, DeleteObject, GetPublicationDate**
 
-```javascript
-
-
-```
+See <a href="https://request-download.woodwing.com/v1/?path=enterprise/StudioForInDesignAndInCopy/SampleScripts/jsonRequest-samples.zip"> jsonRequestSamples.zip </a>.
 
 ## Supported versions
 
