@@ -1,8 +1,8 @@
 ---
 layout: chapter
 title: performSimpleRequest
-sortid: 3
-permalink: 1079-performSimpleRequest
+sortid: 7
+permalink: 1083-performSimpleRequest
 ---
 ## Syntax
 

@@ -1,8 +1,8 @@
 ---
 layout: chapter
 title: updatePanels
-sortid: 11
-permalink: 1086-updatePanels
+sortid: 12
+permalink: 1247-updatePanels
 ---
 ## Syntax
 

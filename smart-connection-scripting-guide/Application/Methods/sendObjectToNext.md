@@ -1,8 +1,8 @@
 ---
 layout: chapter
 title: sendObjectToNext
-sortid: 8
-permalink: 1084-sendObjectToNext
+sortid: 9
+permalink: 1085-sendObjectToNext
 ---
 ## Syntax
 

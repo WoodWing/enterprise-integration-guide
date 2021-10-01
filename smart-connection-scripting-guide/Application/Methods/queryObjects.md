@@ -1,8 +1,8 @@
 ---
 layout: chapter
 title: queryObjects
-sortid: 7
-permalink: 1083-queryObjects
+sortid: 8
+permalink: 1084-queryObjects
 ---
 ## Syntax
 

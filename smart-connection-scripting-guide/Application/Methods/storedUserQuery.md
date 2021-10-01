@@ -1,8 +1,8 @@
 ---
 layout: chapter
 title: storedUserQuery
-sortid: 9
-permalink: 1085-storedUserQuery
+sortid: 10
+permalink: 1086-storedUserQuery
 ---
 ## Syntax
 

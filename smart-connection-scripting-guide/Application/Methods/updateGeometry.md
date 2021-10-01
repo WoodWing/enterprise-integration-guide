@@ -1,7 +1,7 @@
 ---
 layout: chapter
 title: updateGeometry
-sortid: 10
+sortid: 11
 permalink: 1246-updateGeometry
 ---
 ## Syntax
