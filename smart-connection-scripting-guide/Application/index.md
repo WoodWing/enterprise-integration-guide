@@ -20,8 +20,10 @@ The object representing the InDesign or InCopy application.
 * [offlineQuery](Methods/offlineQuery.md)
 * [openObject](Methods/openObject.md)
 * [openObjects](Methods/openObjects.md)
+* [performSimpleRequest](Methods/performSimpleRequest.md)
 * [queryObjects](Methods/queryObjects.md)
 * [sendObjectToNext](Methods/sendObjectToNext.md)
 * [storedUserQuery](Methods/storedUserQuery.md)
 * [updateGeometry](Methods/updateGeometry.md)
 * [updatePanels](Methods/updatePanels.md)
+

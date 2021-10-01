@@ -12,6 +12,7 @@ Methods on the Application object.
 * [offlineQuery](./offlineQuery.md)
 * [openObject](./openObject.md)
 * [openObjects](./openObjects.md)
+* [performSimpleRequest](./performSimpleRequest.md)
 * [queryObjects](./queryObjects.md)
 * [sendObjectToNext](./sendObjectToNext.md)
 * [storedUserQuery](./storedUserQuery.md)
