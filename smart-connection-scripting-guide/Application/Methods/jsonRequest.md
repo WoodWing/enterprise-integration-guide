@@ -33,7 +33,7 @@ The `jsonRequest()` method posts a JSON object string as a request to an Enterpr
 
 **QueryObjects, DeleteObject, GetPublicationDate**
 
-[jsonRequestSamples.zip](https://request-download.woodwing.com/v1/?path=enterprise/StudioForInDesignAndInCopy/SampleScripts/jsonRequest-samples.zip)
+[jsonRequestSamples.zip](https://github.com/WoodWing/enterprise-integration-guide/raw/master/assets/download/jsonRequest-samples.zip)
 
 ## Supported versions
 
