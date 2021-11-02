@@ -341,6 +341,17 @@ Example in PHP:
 $signature = hash_hmac( 'sha256', $httpBody, $secretToken );
 ```
 
+Example in Ruby:
+```
+require 'openssl'
+signature = OpenSSL::HMAC.hexdigest( 'SHA256', secret_token, httpBody )
+```
+
+Example in Workato:
+```
+signature = payload.hmac_sha256( input['secret_token'] ).encode_hex
+```
+
 ## Parsing Webhook event data
 The [CloudEvents v1.0.1](https://github.com/cloudevents/spec/blob/v1.0.1/spec.md) standard is respected to structure the event data.
 
