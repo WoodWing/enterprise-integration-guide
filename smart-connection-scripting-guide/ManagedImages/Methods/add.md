@@ -19,7 +19,7 @@ The created, or newly added, MangedImage object.
 
 ## Description
 
-The `add()` method creates a new ManagedImage scripting object that can serve as the basis for creating a new image in Enterprise or Studio Server.
+The `add()` method creates a new ManagedImage scripting object that can serve as the basis for creating a new image in Studio or Enterprise Server.
 
 ## Examples
 
@@ -33,7 +33,7 @@ The `add()` method creates a new ManagedImage scripting object that can serve as
 
 | Adobe Version | Supported |
 |---------------|---------|
-| CC 2018       | ✔       |
 | CC 2019       | ✔       |
 | 2020          | ✔       |
 | 2021          | ✔       |
+| 2022          | ✔         |

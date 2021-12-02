@@ -4,7 +4,7 @@ title: Story
 sortid: 19
 permalink: 1168-index
 ---
-The object representing an Enterprise or Studio Server Story.
+The object representing a Studio or Enterprise Server Story.
 
 ### Properties
 

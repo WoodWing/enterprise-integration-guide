@@ -23,7 +23,7 @@ n/a
 
 ## Notes
 
-This event is not called when importing image type files from panels in Smart Connection or Studio.
+This event is not called when importing image type files from panels in Studio or Smart Connection.
 
 ## Examples
 
@@ -48,10 +48,10 @@ alert( msg );
 
 | Adobe Version | Supported |
 |---------------|-----------|
-| CC 2018       | ✔         |
 | CC 2019       | ✔         |
 | 2020          | ✔         |
 | 2021          | ✔         |
+| 2022          | ✔         |
 
 ## See also
 

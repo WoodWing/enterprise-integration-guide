@@ -13,7 +13,7 @@ EntMetaData.item(index);
 
 ### Parameters
 
-**index** *number or string* 
+**index** *number or string*
 
 The index (number) or name (string)
 
@@ -23,7 +23,7 @@ The property value for the given index or key name. If the key does not exist, a
 
 ## Description
 
-The `item()` method returns the property value for the given index or key name. 
+The `item()` method returns the property value for the given index or key name.
 
 ## Examples
 
@@ -36,7 +36,7 @@ The `item()` method returns the property value for the given index or key name.
 
 | Adobe Version | Supported |
 |---------------|---------|
-| CC 2018       | ✔       |
 | CC 2019       | ✔       |
 | 2020          | ✔       |
 | 2021          | ✔       |
+| 2022          | ✔         |

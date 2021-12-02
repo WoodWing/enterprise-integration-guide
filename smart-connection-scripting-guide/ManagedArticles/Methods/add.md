@@ -19,8 +19,8 @@ The created, or newly added, MangedArticle object.
 
 ## Description
 
-The `add()` method creates a new ManagedArticle scripting object that can serve as the basis for creating a new Article in Enterprise or Studio Server.
-Does not actually create the Article in Enterprise or Studio Server.
+The `add()` method creates a new ManagedArticle scripting object that can serve as the basis for creating a new Article in Studio or Enterprise Server.
+Does not actually create the Article in Studio or Enterprise Server.
 
 ## Examples
 
@@ -34,7 +34,7 @@ Does not actually create the Article in Enterprise or Studio Server.
 
 | Adobe Version | Supported |
 |---------------|---------|
-| CC 2018       | ✔       |
 | CC 2019       | ✔       |
 | 2020          | ✔       |
 | 2021          | ✔       |
+| 2022          | ✔         |

@@ -19,7 +19,7 @@ The `remove()` method does not return anything.
 
 ## Description
 
-The `remove()` method removes the Dossier object. The corresponding Dossier is removed from Enterprise or Studio Server as well.
+The `remove()` method removes the Dossier object. The corresponding Dossier is removed from Studio or Enterprise Server as well.
 
 ## Examples
 
@@ -33,7 +33,7 @@ The `remove()` method removes the Dossier object. The corresponding Dossier is r
 
 | Adobe Version | Supported |
 |---------------|---------|
-| CC 2018       | ✔       |
 | CC 2019       | ✔       |
 | 2020          | ✔       |
 | 2021          | ✔       |
+| 2022          | ✔         |

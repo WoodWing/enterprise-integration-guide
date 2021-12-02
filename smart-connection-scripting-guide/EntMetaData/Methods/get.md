@@ -13,7 +13,7 @@ EntMetaData.get(key);
 
 ### Parameters
 
-**key** *string* 
+**key** *string*
 
 The property key.
 
@@ -23,7 +23,7 @@ The property value for the given key. If the key does not exist, an error will b
 
 ## Description
 
-The `get()` method returns the property value for the given key. 
+The `get()` method returns the property value for the given key.
 
 ## Examples
 
@@ -33,7 +33,7 @@ The `get()` method returns the property value for the given key.
 try
 {
     var doc = app.documents.item(0);
-    
+
     // Access the document’s metadata
     var md = doc.entMetaData;
 
@@ -62,7 +62,7 @@ catch( e)
 
 | Adobe Version | Supported |
 |---------------|---------|
-| CC 2018       | ✔       |
 | CC 2019       | ✔       |
 | 2020          | ✔       |
 | 2021          | ✔       |
+| 2022          | ✔         |

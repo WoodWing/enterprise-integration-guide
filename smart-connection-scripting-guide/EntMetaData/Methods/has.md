@@ -13,7 +13,7 @@ EntMetaData.has(key);
 
 ### Parameters
 
-**key** *string* 
+**key** *string*
 
 The property key.
 
@@ -23,7 +23,7 @@ Returns if the property with the given key exists or not.
 
 ## Description
 
-The `has()` method returns if the property with the given key exists or not. 
+The `has()` method returns if the property with the given key exists or not.
 
 ## Examples
 
@@ -36,7 +36,7 @@ The `has()` method returns if the property with the given key exists or not.
 
 | Adobe Version | Supported |
 |---------------|---------|
-| CC 2018       | ✔       |
 | CC 2019       | ✔       |
 | 2020          | ✔       |
 | 2021          | ✔       |
+| 2022          | ✔         |

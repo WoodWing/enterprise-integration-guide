@@ -5,7 +5,7 @@
 				<figure class="book">
 
 					<!-- Front -->
-					
+
 					<ul class="hardcover_front">
 						<li>
 							<div class="coverDesign orange">
@@ -54,7 +54,7 @@
 					<figcaption>
 						<h1>Web Services Guide</h1>
 						<span>for Studio Server</span>
-						<p>Find out how client applications integrate with Studio Server.<br/> 
+						<p>Find out how client applications integrate with Studio Server.<br/>
 						Study the concepts and basic logic behind the public API of this server.</p>
 					</figcaption>
 				</figure>
@@ -63,13 +63,13 @@
 				<figure class="book">
 
 					<!-- Front -->
-					
+
 					<ul class="hardcover_front">
 						<li>
 							<div class="coverDesign blue">
 								<span class="ribbon">1.3</span>
 								<h2>Scripting Guide</h2>
-								<p>for Smart Connection and Studio for InDesign & InCopy</p>
+								<p>for Studio for InDesign & InCopy and Smart Connection</p>
 							</div>
 						</li>
 						<li></li>
@@ -111,8 +111,8 @@
 					</ul>
 					<figcaption>
 						<h1>Scripting Guide</h1>
-						<span>for Smart Connection and Studio for InDesign & InCopy</span>
-						<p>Many aspects of Smart Connection and Studio for InDesign & InCopy are scriptable using JavaScript. This guide contains examples sharing how to script the scripting object model that deals with Smart Connection and Studio. It should be used as a companion to InDesign’s Scripting Guide and the scripting model presented by the Adobe ExtendScript Toolkit.</p>
+						<span>for Studio for InDesign & InCopy and Smart Connection</span>
+						<p>Many aspects of Studio for InDesign & InCopy and Smart Connection are scriptable using JavaScript. This guide contains examples sharing how to script the scripting object model that deals with Studio and Smart Connection. It should be used as a companion to InDesign’s Scripting Guide and the scripting model presented by the Adobe ExtendScript Toolkit.</p>
 					</figcaption>
 				</figure>
 			</li>

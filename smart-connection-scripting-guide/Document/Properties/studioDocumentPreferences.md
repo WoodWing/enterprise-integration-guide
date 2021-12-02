@@ -35,10 +35,10 @@ You can find examples in the description of the StudioDocumentPreference propert
 
 | Adobe Version | Supported |
 |---------------|---------|
-| CC 2018       |         |
 | CC 2019       |         |
 | 2020          | v15.2+ ✔|
 | 2021          | ✔       |
+| 2022          | ✔       |
 
 ## See also
 

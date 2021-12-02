@@ -39,18 +39,18 @@ When `activeUrl` is empty, there is no active session.
 var sessionObject = app.entSession;
 var serverUrl = sessionObject.activeUrl;
 
-// Given in WWSettings '<SCEnt:ServerInfo name="Enterprise v10.5.0" url="https://server.company.net/enterprise/index.php"/>'
-// serverUrl is now 'https://server.company.net/enterprise/index.php'.
+// Given in WWSettings '<SCEnt:ServerInfo name="Studio v10.5.0" url="https://server.company.net/studio/index.php"/>'
+// serverUrl is now 'https://server.company.net/studio/index.php'.
 ```
 
 ## Supported versions
 
 | Adobe Version | Supported |
 |---------------|---------|
-| CC 2018       | ✔       |
 | CC 2019       | ✔       |
 | 2020          | ✔       |
 | 2021          | ✔       |
+| 2022          | ✔         |
 
 ## See also
 

@@ -15,7 +15,7 @@ Dossiers.retrieve(objectId);
 
 **objectId** *string*
 
-The object ID of the Dossier to retrieve from the Enterprise or Studio Server system.
+The object ID of the Dossier to retrieve from the Studio or Enterprise Server system.
 
 **Return value** *Dossier*
 
@@ -23,7 +23,7 @@ The requested Dossier object.
 
 ## Description
 
-The `retrieve()` method retrieves a Dossier from the Enterprise or Studio Server system and adds it to the Dossiers collection object.
+The `retrieve()` method retrieves a Dossier from the Studio or Enterprise Server system and adds it to the Dossiers collection object.
 
 ## Examples
 
@@ -37,7 +37,7 @@ The `retrieve()` method retrieves a Dossier from the Enterprise or Studio Server
 
 | Adobe Version | Supported |
 |---------------|---------|
-| CC 2018       | ✔       |
 | CC 2019       | ✔       |
 | 2020          | ✔       |
 | 2021          | ✔       |
+| 2022          | ✔         |

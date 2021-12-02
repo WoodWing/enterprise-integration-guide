@@ -19,7 +19,7 @@ The `create()` method does not return anything.
 
 ## Description
 
-The `create()` method creates a new Dossier object. The Dossier is created in Enterprise or Studio Server as well.
+The `create()` method creates a new Dossier object. The Dossier is created in Studio or Enterprise Server as well.
 
 ## Examples
 
@@ -33,7 +33,7 @@ The `create()` method creates a new Dossier object. The Dossier is created in En
 
 | Adobe Version | Supported |
 |---------------|---------|
-| CC 2018       | ✔       |
 | CC 2019       | ✔       |
 | 2020          | ✔       |
 | 2021          | ✔       |
+| 2022          | ✔         |

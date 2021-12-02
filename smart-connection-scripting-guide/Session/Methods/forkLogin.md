@@ -17,17 +17,17 @@ Session.forkLogin(username, ticket, server, quick, requestInfo);
 
 The user name.
 
-**ticket** *string* 
+**ticket** *string*
 
 The ticket of the existing login.
 
-**server** *string* 
+**server** *string*
 
 Name of the location to log in to. This is the name of the entry in the server list of the WWSettings.xml file.
 
 **quick** *boolean (Optional)*
 
-Boolean that indicates if the login to the Enterprise or Studio Server system should be performed without retrieving session information or not. Default is false.
+Boolean that indicates if the login to the Studio or Enterprise Server system should be performed without retrieving session information or not. Default is false.
 
 **requestInfo** *Array of string  (Optional)*
 
@@ -39,7 +39,7 @@ The `forkLogin()` method does not return anything. It throws an exception in cas
 
 ## Description
 
-The `forkLogin()` method performs a login to the Enterprise or Studio Server system based on an existing login.
+The `forkLogin()` method performs a login to the Studio or Enterprise Server system based on an existing login.
 
 ## Examples
 
@@ -53,10 +53,10 @@ The `forkLogin()` method performs a login to the Enterprise or Studio Server sys
 
 | Adobe Version | Supported |
 |---------------|-----------|
-| CC 2018       | ✔         |
 | CC 2019       | ✔         |
 | 2020          | ✔         |
 | 2021          | ✔         |
+| 2022          | ✔         |
 
 ### Single Sign-On
 
@@ -67,7 +67,7 @@ SSO is available for all Studio versions and the following Smart Connection vers
 
 | Adobe Version | Supported |
 |---------------|-----------|
-| CC 2018       | v13.1+ ✔  |
 | CC 2019       | v14.1+ ✔  |
 | 2020          | ✔         |
 | 2021          | ✔         |
+| 2022          | ✔         |

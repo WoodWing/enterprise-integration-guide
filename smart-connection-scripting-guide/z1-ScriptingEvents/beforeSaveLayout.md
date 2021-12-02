@@ -7,7 +7,7 @@ permalink: 1203-beforeSaveLayout
 
 ## When
 
-Before sending a layout to the Enterprise or Studio Server system.
+Before sending a layout to the Studio or Enterprise Server system.
 
 ## Where
 
@@ -63,10 +63,10 @@ throw Error('This is an unexpected error');
 
 | Adobe Version | Supported |
 |---------------|-----------|
-| CC 2018       | ✔         |
 | CC 2019       | ✔         |
 | 2020          | ✔         |
 | 2021          | ✔         |
+| 2022          | ✔         |
 
 ## See also
 

@@ -33,10 +33,10 @@ See scripting event afterGeometryNotification.
 
 | Adobe Version | Supported |
 |---------------|---------|
-| CC 2018       |        |
 | CC 2019       | v14.3.1+ ✔       |
 | 2020          |  v15.2.1+ ✔      |
 | 2021          |  v16.3.1+ ✔       |
+| 2022          | ✔         |
 
 ## See also
 

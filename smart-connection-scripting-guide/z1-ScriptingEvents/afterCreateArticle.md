@@ -7,7 +7,7 @@ permalink: 1174-afterCreateArticle
 
 ## When
 
-After sending a new article to the Enterprise or Studio Server system.
+After sending a new article to the Studio or Enterprise Server system.
 
 ## Where
 
@@ -29,10 +29,10 @@ n/a
 
 | Adobe Version | Supported |
 |---------------|-----------|
-| CC 2018       | ✔         |
 | CC 2019       | ✔         |
 | 2020          | ✔         |
 | 2021          | ✔         |
+| 2022          | ✔         |
 
 ## See also
 

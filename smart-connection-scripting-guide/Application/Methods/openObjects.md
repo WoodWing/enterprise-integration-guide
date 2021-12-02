@@ -6,7 +6,7 @@ permalink: 1082-openObjects
 ---
 ## Syntax
 
-![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) 
+![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %})
 
 ```javascript
 app.openObjects(server, ids [, readonly] [, instantiate] [, dossier]);
@@ -16,7 +16,7 @@ app.openObjects(server, ids [, readonly] [, instantiate] [, dossier]);
 
 **server** *string*
 
-The name of Enterprise or Studio Server (as defined in the WWSettings.xml file) from which the files should be opened.
+The name of Studio or Enterprise Server (as defined in the WWSettings.xml file) from which the files should be opened.
 
 **objectId** *string[]*
 
@@ -46,13 +46,13 @@ The ID of the default parent Dossier. Only used when instantiating Layout templa
 
 Default value: an empty string.
 
-**Return value**  
+**Return value**
 
 The `openObjects()` method does not return anything.
 
 ## Description
 
-The `openObject()` method opens files from the Enterprise or Studio Server. It will give the user the possibility to log in when that is not yet the case. It does not throw errors for non existing objects. Not supported for InDesign Server.
+The `openObject()` method opens files from the Studio or Enterprise Server. It will give the user the possibility to log in when that is not yet the case. It does not throw errors for non existing objects. Not supported for InDesign Server.
 
 ## Examples
 
@@ -66,7 +66,7 @@ The `openObject()` method opens files from the Enterprise or Studio Server. It w
 
 | Adobe Version | Supported |
 |---------------|-----------|
-| CC 2018       |           |
 | CC 2019       | 14.2.2+ ✔ |
 | 2020          | 15.1+ ✔   |
 | 2021          | ✔       	|
+| 2022          | ✔         |

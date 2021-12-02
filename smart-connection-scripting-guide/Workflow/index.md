@@ -17,7 +17,6 @@ Provides access to workflow actions for a document
 * [saveAs](./Methods/saveAs.md)
 * [saveVersion](./Methods/saveVersion.md)
 * [updateAllContent](./Methods/updateAllContent.md)
-* [sendDesignUpdate](./Methods/sendDesignUpdate.md)
 * [placeObject](./Methods/placeObject.md)
 * [restoreFromArchive](./Methods/restoreFromArchive.md)
 * [setPdfProfile](./Methods/setPdfProfile.md)

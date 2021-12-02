@@ -23,10 +23,6 @@ After receiving a Geometry Update notification from Studio Server in InCopy
 
 n/a
 
-## Notes
-
-This scripting event is available in Smart Connection 14.3.1 for CC 2019, Studio Plug-ins 15.2.1 for Adobe 2020 and Studio Plug-ins 16.3.1 for Adobe 2021.
-
 ## Examples
 
 **Using afterGeometryNotification and app.UpdateGeometry**
@@ -38,15 +34,15 @@ var myIdleTask = app.idleTasks.add({name:"one_off_idle_task", sleep:1});
 
 var layoutId = app.scriptArgs.get( 'Core_ID' );
 
-var onIdleEventListener = myIdleTask.addEventListener(IdleEvent.ON_IDLE, 
+var onIdleEventListener = myIdleTask.addEventListener(IdleEvent.ON_IDLE,
 	function() {
 		try {
 			afterReceivingGeometry();
 			var myIdleTaskName = "one_off_idle_task";
-			var myIdleTask = app.idleTasks.itemByName(myIdleTaskName); 
+			var myIdleTask = app.idleTasks.itemByName(myIdleTaskName);
 			if (myIdleTask != null)
 					myIdleTask.remove();
-	
+
 		} catch (err) {
 			alert("Script afterGeometryNotification failed.");
 		}
@@ -86,7 +82,7 @@ function getArticleNames( layoutId ) {
 		var doc;
 		for (var i = 0; i < openDocs.length; i++) {
 			doc = openDocs[i];
-			if (!doc.entMetaData.has("Core_ID") ) 
+			if (!doc.entMetaData.has("Core_ID") )
 				continue;
 			var docId = doc.entMetaData.get( "Core_ID" );
 			if (docId == layoutId) {
@@ -96,7 +92,7 @@ function getArticleNames( layoutId ) {
 				for( var artIdx = 0; artIdx < masLen; ++artIdx ) {
 					managedArticle = managedArticles.item(artIdx);
 					md = managedArticle.entMetaData;
-            
+
 					if( md.has( "Core_Name" ) && md.has( "LockedBy" )) {
 						lockedBy = md.get("LockedBy");
 						if( lockedByUser(lockedBy) ) {
@@ -126,7 +122,7 @@ function lockedByUser(lockName)
 
 	// Get all users on the current server
 	var users = app.entSession.getUsers();
-	
+
 	// Check if the lock name can be tied to our user
 	for(var i = 0; i < users.length; i++)
 	{
@@ -146,10 +142,10 @@ function lockedByUser(lockName)
 
 | Adobe Version | Supported |
 |---------------|-----------|
-| CC 2018       |          |
 | CC 2019       | v14.3.1+ ✔         |
 | 2020          | v15.2.1+ ✔         |
 | 2021          | v16.3.1+ ✔         |
+| 2022          | ✔         |
 
 ## See also
 

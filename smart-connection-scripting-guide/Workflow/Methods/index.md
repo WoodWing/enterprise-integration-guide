@@ -11,6 +11,5 @@ Methods on the Workflow object.
 * [restoreFromArchive](./restoreFromArchive.md)
 * [saveAs](./saveAs.md)
 * [saveVersion](./saveVersion.md)
-* [sendDesignUpdate](./sendDesignUpdate.md)
 * [setPdfProfile](./setPdfProfile.md)
 * [updateAllContent](./updateAllContent.md)

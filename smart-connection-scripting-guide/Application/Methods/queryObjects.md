@@ -42,7 +42,7 @@ The `queryObjects()` method performs a user query based in the passed criteria.
 
 | Adobe Version | Supported |
 |---------------|-----------|
-| CC 2018       | ✔         |
 | CC 2019       | ✔         |
 | 2020          | ✔         |
 | 2021          | ✔       	|
+| 2022          | ✔         |

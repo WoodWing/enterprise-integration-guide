@@ -19,7 +19,7 @@ The `reLogin()` method does not return anything. It throws an exception in case 
 
 ## Description
 
-The `reLogin()` method performs a re-login to the Enterprise or Studio Server system. Useful when changes were made to the configuration, workflow, etc on the server and those value are returned during the login. 
+The `reLogin()` method performs a re-login to the Studio or Enterprise Server system. Useful when changes were made to the configuration, workflow, etc on the server and those value are returned during the login.
 
 ## Examples
 
@@ -33,10 +33,10 @@ The `reLogin()` method performs a re-login to the Enterprise or Studio Server sy
 
 | Adobe Version | Supported |
 |---------------|---------|
-| CC 2018       | ✔       |
 | CC 2019       | ✔       |
 | 2020          | ✔       |
 | 2021          | ✔       |
+| 2022          | ✔         |
 
 ### Single Sign-On
 
@@ -47,7 +47,7 @@ SSO is available for all versions of Studio and the following versions of Smart 
 
 | Adobe Version | Supported |
 |---------------|-----------|
-| CC 2018       | v13.1+ ✔  |
 | CC 2019       | v14.1+ ✔  |
 | 2020          | ✔         |
 | 2021          | ✔         |
+| 2022          | ✔         |
