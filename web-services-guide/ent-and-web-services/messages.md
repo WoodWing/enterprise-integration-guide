@@ -90,7 +90,7 @@ The following shows all supported events and their messages:
 |  41      | ModifyIssue <sup>18)</sup>       | 10.4.1     | Ticket <sup>9)</sup>, PublicationId, PubChannelId, Id (issue), Name (issue), OverrulePublication <sup>17)</sup>, Activated <sup>16)</sup>, PublicationDate, ReversedRead, Description <sup>14)</sup>, Subject <sup>14)</sup>
 |  42      | DeleteIssue <sup>18)</sup>       | 10.4.1     | Ticket <sup>9)</sup>, Id (issue)
 |  43      | UpdateIssuesOrder                | 10.4.1     | Ticket <sup>9)</sup>, PublicationId, PubChannelId, IssueIdsOrder <sup>15)</sup> 
-|  44      | UpdatePublicationChannel         | 10.4.1     | Ticket <sup>9)</sup>, PublicationId, Id (publication channel), Name (publication channel), Type, CurrentIssueId, DirectPublish, SupportsForms, SupportsCropping
+|  44      | UpdatePublicationChannel         | 10.4.1     | Ticket <sup>9)</sup>, PublicationId, Id (publication channel), Name (publication channel), Type, CurrentIssueId, DirectPublish <sup>26)</sup>, SupportsForms <sup>25)</sup>, SupportsCropping <sup>25)</sup>
 |  45      | UpdateProgress  <sup>19)</sup>   | 10.8.0     | Ticket <sup>9) 20)</sup>, OperationId (returned by web service), Progress (percentage in range 0..100)
 |  46      | ObjectFlagRaised <sup>22)</sup>  | 10.14.0    | Ticket <sup>9)</sup>, ID, Flag<sup>24)</sup>, FlagMsg
 |  47      | ObjectFlagCleared <sup>22)</sup> | 10.14.0    | Ticket <sup>9)</sup>, IDs, Flag <sup>23) 24)</sup>
@@ -207,6 +207,10 @@ flag in the search results be cleared.
     | **Flag** | **Meaning** 
     |  --------| ---------
     | 7 | Failed to archive a Dossier, layout or Digital article.
+
+25. SupportsForms and SupportsCropping are deprecated since 10.11.0 and always a "false" value is provided.
+
+26. DirectPublish is no longer included since 10.12.0.
 
 ## RabbitMQ integration \[since 10.0\]
 
