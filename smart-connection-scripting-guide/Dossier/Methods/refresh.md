@@ -19,7 +19,7 @@ The `refresh()` method does not return anything.
 
 ## Description
 
-The `refresh()` method refreshes the Dossier object with new information from the Enterprise or Studio Server.
+The `refresh()` method refreshes the Dossier object with new information from the Studio or Enterprise Server.
 
 ## Examples
 
@@ -33,7 +33,7 @@ The `refresh()` method refreshes the Dossier object with new information from th
 
 | Adobe Version | Supported |
 |---------------|---------|
-| CC 2018       | ✔       |
 | CC 2019       | ✔       |
 | 2020          | ✔       |
 | 2021          | ✔       |
+| 2022          | ✔         |

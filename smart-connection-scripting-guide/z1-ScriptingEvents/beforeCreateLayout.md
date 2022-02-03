@@ -7,7 +7,7 @@ permalink: 1194-beforeCreateLayout
 
 ## When
 
-Before creating a new layout in the Enterprise or Studio Server system. This includes Save As.
+Before creating a new layout in the Studio or Enterprise Server system. This includes Save As.
 
 ## Where
 
@@ -23,16 +23,16 @@ n/a
 
 ## Notes
 
-Changes can be made to the document, these will be saved and sent to the Enterprise or Studio Server system.
+Changes can be made to the document, these will be saved and sent to the Studio or Enterprise Server system.
 
 ## Supported versions
 
 | Adobe Version | Supported |
 |---------------|-----------|
-| CC 2018       | ✔         |
 | CC 2019       | ✔         |
 | 2020          | ✔         |
 | 2021          | ✔         |
+| 2022          | ✔         |
 
 ## See also
 

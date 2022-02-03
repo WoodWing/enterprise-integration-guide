@@ -13,7 +13,7 @@ EntMetaData.set(key, value);
 
 ### Parameters
 
-**key** *string* 
+**key** *string*
 
 The property key.
 
@@ -25,7 +25,7 @@ The property value.
 
 ## Description
 
-The `set()` method adds or changes the passed property. 
+The `set()` method adds or changes the passed property.
 
 ## Examples
 
@@ -39,7 +39,7 @@ The `set()` method adds or changes the passed property.
 
 | Adobe Version | Supported |
 |---------------|---------|
-| CC 2018       | ✔       |
 | CC 2019       | ✔       |
 | 2020          | ✔       |
 | 2021          | ✔       |
+| 2022          | ✔         |

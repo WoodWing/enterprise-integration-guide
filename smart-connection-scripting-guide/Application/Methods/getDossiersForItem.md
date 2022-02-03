@@ -15,7 +15,7 @@ app.getDossiersForItem(objectId);
 
 **objectId** *string*
 
-The object ID on the Enterprise or Studio Server of the object to get its Dossiers for.
+The object ID on the Studio or Enterprise Server of the object to get its Dossiers for.
 
 **Return value** *string[]*
 
@@ -24,7 +24,7 @@ The result is comma separated.
 
 ## Description
 
-The `getDossierForItem()` method performs a query on the Enterprise or Studio Server to retrieve all Dossier IDs of which the object is part of.
+The `getDossierForItem()` method performs a query on the Studio or Enterprise Server to retrieve all Dossier IDs of which the object is part of.
 
 ## Examples
 
@@ -38,7 +38,7 @@ The `getDossierForItem()` method performs a query on the Enterprise or Studio Se
 
 | Adobe Version | Supported |
 |---------------|-----------|
-| CC 2018       | ✔         |
 | CC 2019       | ✔         |
 | 2020          | ✔         |
 | 2021          | ✔         |
+| 2022          | ✔         |

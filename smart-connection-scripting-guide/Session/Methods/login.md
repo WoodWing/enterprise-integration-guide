@@ -17,11 +17,11 @@ Session.login(username, password, server, requestInfo);
 
 The user name.
 
-**password** *string* 
+**password** *string*
 
 The password.
 
-**server** *string* 
+**server** *string*
 
 Name of the location to log in to. This is the name of the entry in the server list of the WWSettings.xml file.
 
@@ -35,7 +35,7 @@ The `login()` method does not return anything. It throws an exception in case of
 
 ## Description
 
-The `login()` method performs a login to the Enterprise or Studio Server system. 
+The `login()` method performs a login to the Studio or Enterprise Server system.
 
 ## Examples
 
@@ -49,10 +49,10 @@ The `login()` method performs a login to the Enterprise or Studio Server system.
 
 | Adobe Version | Supported |
 |---------------|---------|
-| CC 2018       | ✔       |
 | CC 2019       | ✔       |
 | 2020          | ✔       |
 | 2021          | ✔       |
+| 2022          | ✔         |
 
 ### Single Sign-On
 
@@ -63,7 +63,7 @@ SSO is available for all versions of Studio and the following versions of Smart 
 
 | Adobe Version | Supported |
 |---------------|-----------|
-| CC 2018       | v13.1+ ✔  |
 | CC 2019       | v14.1+ ✔  |
 | 2020          | ✔         |
 | 2021          | ✔         |
+| 2022          | ✔         |

@@ -43,10 +43,10 @@ var logonTicket = sessionObject.activeTicket;
 
 | Adobe Version | Supported |
 |---------------|---------|
-| CC 2018       | ✔       |
 | CC 2019       | ✔       |
 | 2020          | ✔       |
 | 2021          | ✔       |
+| 2022          | ✔         |
 
 ## See also
 

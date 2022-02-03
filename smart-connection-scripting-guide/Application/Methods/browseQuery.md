@@ -36,7 +36,7 @@ The result is comma separated.
 
 ## Description
 
-The `browseQuery()` method generates the result of the Browse query returned by the Enterprise or Studio server.
+The `browseQuery()` method generates the result of the Browse query returned by the Studio or Enterprise server.
 
 ## Examples
 
@@ -62,7 +62,7 @@ var queryResult = app.browseQuery("WW News", "1st Issue", "News", "Ready");
 //    <string, Issue ID><string, Format><bool, LockForOffline>
 //    <multilist, Issue IDs><multilist, Edition IDs><bool, HasChildren>
 //
-// Rows: 
+// Rows:
 //  <6315, test-layout, Article, , , 1st Issue, Ready, 2, ,
 //  News, 1, 523.275591, 769.889764, Joe, , , 06/12/2018 09:07, , ,
 //  56 KB, 06/12/2018 09:10, Joe, , , L-testupdate1, WW News, 1, , , ,
@@ -90,7 +90,7 @@ var queryResult = app.browseQuery("WW News", "1st Issue", "News", "Ready");
 
 | Adobe Version | Supported |
 |---------------|-----------|
-| CC 2018       | ✔         |
 | CC 2019       | ✔         |
 | 2020          | ✔         |
 | 2021          | ✔         |
+| 2022          | ✔         |

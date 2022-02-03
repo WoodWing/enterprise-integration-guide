@@ -31,7 +31,7 @@ Returns the Category with the provided name. Throws an exception if the Category
 
 ## Description
 
-The `getCategory()` method returns the Category with the provided name. 
+The `getCategory()` method returns the Category with the provided name.
 
 ## Examples
 
@@ -45,7 +45,7 @@ The `getCategory()` method returns the Category with the provided name.
 
 | Adobe Version | Supported |
 |---------------|---------|
-| CC 2018       | ✔       |
 | CC 2019       | ✔       |
 | 2020          | ✔       |
 | 2021          | ✔       |
+| 2022          | ✔         |

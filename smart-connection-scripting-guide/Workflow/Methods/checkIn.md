@@ -19,7 +19,7 @@ The `checkIn()` method does not return anything.
 
 ## Description
 
-The `checkIn()` method checks the document in to the Enterprise or Studio Server system.
+The `checkIn()` method checks the document in to the Studio or Enterprise Server system.
 
 Use the “Type” key in the EntMetaData to indicate what kind of object should be checked in. Possible values are: “Layout”, “LayoutTemplate”, “LayoutModule” or “LayoutModuleTemplate”.
 
@@ -35,7 +35,7 @@ Use the “Type” key in the EntMetaData to indicate what kind of object should
 
 | Adobe Version | Supported |
 |---------------|-----------|
-| CC 2018       | ✔         |
 | CC 2019       | ✔         |
 | 2020          | ✔         |
 | 2021          | ✔         |
+| 2022          | ✔         |

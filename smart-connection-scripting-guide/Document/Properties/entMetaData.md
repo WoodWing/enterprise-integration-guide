@@ -23,7 +23,7 @@ An EntMetaData object.
 
 ## Description
 
-The `entMetaData` property is used to get the Enterprise or Studio Server metadata associated with the Document.
+The `entMetaData` property is used to get the Studio or Enterprise Server metadata associated with the Document.
 
 ## Examples
 
@@ -36,7 +36,7 @@ The `entMetaData` property is used to get the Enterprise or Studio Server metada
 
 | Adobe Version | Supported |
 |---------------|---------|
-| CC 2018       | ✔       |
 | CC 2019       | ✔       |
 | 2020          | ✔       |
 | 2021          | ✔       |
+| 2022          | ✔         |

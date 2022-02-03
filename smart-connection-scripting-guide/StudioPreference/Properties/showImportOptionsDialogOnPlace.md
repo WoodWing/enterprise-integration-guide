@@ -6,7 +6,7 @@ permalink: 1162-showImportOptionsDialogOnPlace
 ---
 ## Syntax
 
-![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) 
+![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %})
 ```javascript
 StudioPreference.showImportOptionsDialogOnPlace;
 ```
@@ -37,7 +37,7 @@ app.studioPreferences.showImportOptionsDialogOnPlace = true;
 
 | Adobe Version | Supported |
 |---------------|-----------|
-| CC 2018       |           |
 | CC 2019       |           |
 | 2020          | v15.2+ ✔  |
 | 2021          | ✔         |
+| 2022          | ✔         |

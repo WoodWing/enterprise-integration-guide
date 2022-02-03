@@ -33,7 +33,7 @@ The `count()` method returns the number of Dossier objects within the Dossiers c
 
 | Adobe Version | Supported |
 |---------------|---------|
-| CC 2018       | ✔       |
 | CC 2019       | ✔       |
 | 2020          | ✔       |
 | 2021          | ✔       |
+| 2022          | ✔         |

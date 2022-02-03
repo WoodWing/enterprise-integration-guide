@@ -23,7 +23,7 @@ The `checkIn()` method does not return anything.
 
 ## Description
 
-The `checkIn()` method checks-in the placed Article in the Enterprise or Studio Server system.
+The `checkIn()` method checks-in the placed Article in the Studio or Enterprise Server system.
 
 ## Examples
 
@@ -37,7 +37,7 @@ The `checkIn()` method checks-in the placed Article in the Enterprise or Studio 
 
 | Adobe Version | Supported |
 |---------------|---------|
-| CC 2018       | ✔       |
 | CC 2019       | ✔       |
 | 2020          | ✔       |
 | 2021          | ✔       |
+| 2022          | ✔         |

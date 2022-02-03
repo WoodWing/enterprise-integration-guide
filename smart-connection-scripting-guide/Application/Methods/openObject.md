@@ -16,7 +16,7 @@ app.openObject(objectId [, checkout] [, withWindow] [, type] [, dossierId]);
 
 **objectId** *string*
 
-The ID of the object to open on Enterprise or Studio Server
+The ID of the object to open on Studio or Enterprise Server
 
 **checkout** *boolean (Optional)*
 
@@ -37,18 +37,18 @@ The object type. Default is an empty string.
 The ID of the default parent Dossier. Default is an empty string.
 The passed Dossier ID will be used as the default selected Dossier in the Save As dialog when creating an Article or Image from the Layout (if the document is a Layout).
 
-**server** *string (Optional)*  
-<sub>(Supported from v12.3, v13.1 and v14.1)</sub>
+**server** *string (Optional)*
+<sub>(Supported from v14.1)</sub>
 
 The name of the server on which the object with the `objectId` is stored. When needed the user will get the possibility to log in to this server.
 
-**Return value** *Document*  
+**Return value** *Document*
 
 The Document object which is opened. Undefined when a Document could not be opened.
 
 ## Description
 
-The `openObject()` method opens a Document from the Enterprise or Studio Server. Throws an exception in case of an error.
+The `openObject()` method opens a Document from the Studio or Enterprise Server. Throws an exception in case of an error.
 
 ## Examples
 
@@ -62,7 +62,7 @@ The `openObject()` method opens a Document from the Enterprise or Studio Server.
 
 | Adobe Version | Supported |
 |---------------|-----------|
-| CC 2018       | ✔         |
 | CC 2019       | ✔         |
 | 2020          | ✔         |
 | 2021          | ✔         |
+| 2022          | ✔         |

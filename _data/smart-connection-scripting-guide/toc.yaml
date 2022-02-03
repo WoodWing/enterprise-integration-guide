@@ -1,5 +1,5 @@
 toc:
-  - title: Scripting Guide for Smart Connection and Studio for InDesign & InCopy
+  - title: Scripting Guide for Studio for InDesign & InCopy and Smart Connection
     layout: guide
     path: smart-connection-scripting-guide/index.md
     url: smart-connection-scripting-guide/index.html
@@ -906,11 +906,6 @@ toc:
           path: smart-connection-scripting-guide/Workflow/Methods/saveVersion.md
           url: smart-connection-scripting-guide/Workflow/Methods/saveVersion.html
           permalink: 1178-saveVersion
-        - title: sendDesignUpdate
-          layout: chapter
-          path: smart-connection-scripting-guide/Workflow/Methods/sendDesignUpdate.md
-          url: smart-connection-scripting-guide/Workflow/Methods/sendDesignUpdate.html
-          permalink: 1179-sendDesignUpdate
         - title: setPdfProfile
           layout: chapter
           path: smart-connection-scripting-guide/Workflow/Methods/setPdfProfile.md

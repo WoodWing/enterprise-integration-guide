@@ -7,7 +7,7 @@ permalink: 1177-afterCreateEnterpriseImageFromElvisImage
 
 ## When
 
-After an Enterprise or Studio Server Image was created from an Elvis Image (and added to a Dossier)
+After a Studio or Enterprise Server Image was created from an Elvis Image (and added to a Dossier)
 
 ## Where
 
@@ -30,10 +30,10 @@ n/a
 
 | Adobe Version | Supported |
 |---------------|-----------|
-| CC 2018       | ✔         |
 | CC 2019       | ✔         |
 | 2020          | ✔         |
 | 2021          | ✔         |
+| 2022          | ✔         |
 
 ## See also
 

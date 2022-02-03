@@ -13,7 +13,7 @@ Session.getTerm(term);
 
 ### Parameters
 
-**term** *string* 
+**term** *string*
 
 The UI term.
 
@@ -38,7 +38,7 @@ The `getTerm()` method returns the display value of several terms used in the sy
 
 | Adobe Version | Supported |
 |---------------|---------|
-| CC 2018       | ✔       |
 | CC 2019       | ✔       |
 | 2020          | ✔       |
 | 2021          | ✔       |
+| 2022          | ✔         |

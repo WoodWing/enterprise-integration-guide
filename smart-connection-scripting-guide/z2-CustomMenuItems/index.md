@@ -4,7 +4,7 @@ title: Custom menu items
 permalink: 1241-index
 ---
 
-The context menu of the Documents pane in the Smart Connection or Studio panel can be extended with custom menu items. These custom menu items are provided with information by Smart Connection or Studio about the selected items, giving the custom menu items the ability to control the enabling of the items. The information passed by Smart Connection or Studio is all data from the query result for the selected items. Custom menu items work in both list and thumbnail view, although the information passed to the script in thumbnail view is limited.
+The context menu of the Documents pane in the Studio or Smart Connection panel can be extended with custom menu items. These custom menu items are provided with information by Studio or Smart Connection about the selected items, giving the custom menu items the ability to control the enabling of the items. The information passed by Studio or Smart Connection is all data from the query result for the selected items. Custom menu items work in both list and thumbnail view, although the information passed to the script in thumbnail view is limited.
 
 Custom menu items are added and controlled through a script. The script is placed in the Startup Scripts folder in either the application’s scripts folder or in the user’s scripts folder. The script locations are:
 
@@ -16,13 +16,13 @@ Custom menu items are added and controlled through a script. The script is place
 ||/Applications/Adobe InDesign CC/Scripts/Startup Scripts|
 
 Below is an annotated sample script that adds 3 custom menu items with custom enabling. Important notes:
-* Smart Connection or Studio expects the naming of the functions in the ScriptMenu object and of the ScriptMenu instance
+* Studio or Smart Connection expects the naming of the functions in the ScriptMenu object and of the ScriptMenu instance
 as shown in the script.
 * There can only be one instance of the ScriptMenu object, meaning that if you have several customizations adding
 custom menu items, you have to think out a framework for adding custom menu items from these customizations.
 * The targetengine must be “scriptmenu”.
 * The name of the script file does not matter.
-* Any errors occuring need to handled by the script as Smart Connection or Studio will simply ignore any errors occuring during the execution of the script functions.
+* Any errors occuring need to handled by the script as Studio or Smart Connection will simply ignore any errors occuring during the execution of the script functions.
 
 ## Examples
 
@@ -43,7 +43,7 @@ function ScriptMenu()
     }
 
     /**
-     * Tells Smart Connection or Studio whether the calls need to be debugged
+     * Tells Studio or Smart Connection whether the calls need to be debugged
      *
      * @return array of bool
      * -----------------------------------------

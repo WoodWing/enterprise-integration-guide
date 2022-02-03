@@ -33,7 +33,7 @@ The `abortCheckOut()` method aborts the check out of the opened document. Throws
 
 | Adobe Version | Supported |
 |---------------|-----------|
-| CC 2018       | ✔         |
 | CC 2019       | ✔         |
 | 2020          | ✔         |
 | 2021          | ✔         |
+| 2022          | ✔         |

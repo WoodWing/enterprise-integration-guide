@@ -23,7 +23,7 @@ An EntWorkflow object.
 
 ## Description
 
-The `entWorkflow` property is used to get access to the Enterprise or Studio Server worlkflow actions for the Document.
+The `entWorkflow` property is used to get access to the Studio or Enterprise Server worlkflow actions for the Document.
 
 ## Examples
 
@@ -36,7 +36,7 @@ The `entWorkflow` property is used to get access to the Enterprise or Studio Ser
 
 | Adobe Version | Supported |
 |---------------|---------|
-| CC 2018       | ✔       |
 | CC 2019       | ✔       |
 | 2020          | ✔       |
 | 2021          | ✔       |
+| 2022          | ✔         |

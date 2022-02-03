@@ -19,7 +19,7 @@ The `updatePanels()` method does not return anything.
 
 ## Description
 
-The `updatePanels()` method refreshes the contents of all Smart Connection or Studio query panels. Throws an exception in case of an error.
+The `updatePanels()` method refreshes the contents of all Studio or Smart Connection query panels. Throws an exception in case of an error.
 
 ## Examples
 
@@ -33,7 +33,7 @@ The `updatePanels()` method refreshes the contents of all Smart Connection or St
 
 | Adobe Version | Supported |
 |---------------|---------|
-| CC 2018       | ✔       |
 | CC 2019       | ✔       |
 | 2020          | ✔       |
 | 2021          | ✔       |
+| 2022          | ✔       |

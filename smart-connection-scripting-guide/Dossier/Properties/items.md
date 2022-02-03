@@ -19,11 +19,11 @@ Dossier.items;
 
 **Return value** *string[]*
 
-A string of Enterprise or Studio Server object IDs.
+A string of Studio or Enterprise Server object IDs.
 
 ## Description
 
-The `items` property is used to get a list of IDs of Enterprise or Studio Server objects which are residing in the current Dossier.
+The `items` property is used to get a list of IDs of Studio or Enterprise Server objects which are residing in the current Dossier.
 
 ## Examples
 
@@ -36,7 +36,7 @@ The `items` property is used to get a list of IDs of Enterprise or Studio Server
 
 | Adobe Version | Supported |
 |---------------|---------|
-| CC 2018       | ✔       |
 | CC 2019       | ✔       |
 | 2020          | ✔       |
 | 2021          | ✔       |
+| 2022          | ✔         |
