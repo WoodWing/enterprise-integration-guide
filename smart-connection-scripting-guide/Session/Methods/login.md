@@ -8,7 +8,7 @@ permalink: 1218-login
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
 ```javascript
-Session.login(username, password, server, requestInfo);
+Session.login(username, password, server, requestInfo, serverUrl, sso);
 ```
 
 ### Parameters
