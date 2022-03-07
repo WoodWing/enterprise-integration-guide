@@ -817,6 +817,11 @@ toc:
           path: smart-connection-scripting-guide/StudioPreference/Properties/documentPaneFontSize.md
           url: smart-connection-scripting-guide/StudioPreference/Properties/documentPaneFontSize.html
           permalink: 1162-documentPaneFontSize
+        - title: dossierPanelShowRelatedDossiers
+          layout: chapter
+          path: smart-connection-scripting-guide/StudioPreference/Properties/dossierPanelShowRelatedDossiers.md
+          url: smart-connection-scripting-guide/StudioPreference/Properties/dossierPanelShowRelatedDossiers.html
+          permalink: 1162-dossierPanelShowRelatedDossiers
         - title: enableSmartCaching
           layout: chapter
           path: smart-connection-scripting-guide/StudioPreference/Properties/enableSmartCaching.md
