@@ -13,6 +13,7 @@ The object representing the Studio preferences.
 * [bringInCopyArticlesToFrontInLayoutView](./Properties/bringInCopyArticlesToFrontInLayoutView.md)
 * [displayLayoutNameInCreateArticle](./Properties/displayLayoutNameInCreateArticle.md)
 * [documentPaneFontSize](./Properties/documentPaneFontSize.md)
+* [dossierPanelShowRelatedDossiers](./Properties/dossierPanelShowRelatedDossiers.md)
 * [enableSmartCaching](./Properties/enableSmartCaching.md)
 * [playSoundWhenRoutingMessageArrives](./Properties/playSoundWhenRoutingMessageArrives.md)
 * [previewPaneFontSize](./Properties/previewPaneFontSize.md)
