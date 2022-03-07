@@ -10,6 +10,7 @@ Properties on the StudioPreference object.
 * [bringInCopyArticlesToFrontInLayoutView](./bringInCopyArticlesToFrontInLayoutView.md)
 * [displayLayoutNameInCreateArticle](./displayLayoutNameInCreateArticle.md)
 * [documentPaneFontSize](./documentPaneFontSize.md)
+* [dossierPanelShowRelatedDossiers](./dossierPanelShowRelatedDossiers.md)
 * [enableSmartCaching](./enableSmartCaching.md)
 * [playSoundWhenRoutingMessageArrives](./playSoundWhenRoutingMessageArrives.md)
 * [previewPaneFontSize](./previewPaneFontSize.md)
