@@ -1,7 +1,7 @@
 ---
 layout: chapter
 title: offlineQuery
-sortid: 5
+sortid: 6
 permalink: 1081-offlineQuery
 ---
 ## Syntax

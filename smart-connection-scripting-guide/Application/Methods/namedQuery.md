@@ -1,7 +1,7 @@
 ---
 layout: chapter
 title: namedQuery
-sortid: 4
+sortid: 5
 permalink: 1080-namedQuery
 ---
 ## Syntax

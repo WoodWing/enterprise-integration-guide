@@ -1,7 +1,7 @@
 ---
 layout: chapter
 title: storedUserQuery
-sortid: 10
+sortid: 13
 permalink: 1086-storedUserQuery
 ---
 ## Syntax

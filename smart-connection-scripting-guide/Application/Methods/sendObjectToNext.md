@@ -1,7 +1,7 @@
 ---
 layout: chapter
 title: sendObjectToNext
-sortid: 9
+sortid: 11
 permalink: 1085-sendObjectToNext
 ---
 ## Syntax

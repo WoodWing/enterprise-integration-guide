@@ -1,7 +1,7 @@
 ---
 layout: chapter
 title: openObjects
-sortid: 6
+sortid: 8
 permalink: 1082-openObjects
 ---
 ## Syntax

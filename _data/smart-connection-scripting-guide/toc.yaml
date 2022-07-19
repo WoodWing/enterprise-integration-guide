@@ -27,6 +27,11 @@ toc:
           path: smart-connection-scripting-guide/Application/Methods/getDossiersForItem.md
           url: smart-connection-scripting-guide/Application/Methods/getDossiersForItem.html
           permalink: 1078-getDossiersForItem
+        - title: getEntMetaData
+          layout: chapter
+          path: smart-connection-scripting-guide/Application/Methods/getEntMetaData.md
+          url: smart-connection-scripting-guide/Application/Methods/getEntMetaData.html
+          permalink: 1082-getEntMetaData
         - title: jsonRequest
           layout: chapter
           path: smart-connection-scripting-guide/Application/Methods/jsonRequest.md
@@ -67,6 +72,11 @@ toc:
           path: smart-connection-scripting-guide/Application/Methods/sendObjectToNext.md
           url: smart-connection-scripting-guide/Application/Methods/sendObjectToNext.html
           permalink: 1085-sendObjectToNext
+        - title: setEntMetaData
+          layout: chapter
+          path: smart-connection-scripting-guide/Application/Methods/setEntMetaData.md
+          url: smart-connection-scripting-guide/Application/Methods/setEntMetaData.html
+          permalink: 1082-setEntMetaData
         - title: storedUserQuery
           layout: chapter
           path: smart-connection-scripting-guide/Application/Methods/storedUserQuery.md

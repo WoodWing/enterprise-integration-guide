@@ -1,7 +1,7 @@
 ---
 layout: chapter
 title: queryObjects
-sortid: 8
+sortid: 10
 permalink: 1084-queryObjects
 ---
 ## Syntax

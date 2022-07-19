@@ -1,7 +1,7 @@
 ---
 layout: chapter
 title: performSimpleRequest
-sortid: 7
+sortid: 9
 permalink: 1083-performSimpleRequest
 ---
 ## Syntax

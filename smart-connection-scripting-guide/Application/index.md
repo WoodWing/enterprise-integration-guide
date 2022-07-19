@@ -15,6 +15,7 @@ The object representing the InDesign or InCopy application.
 
 * [browseQuery](Methods/browseQuery.md)
 * [getDossiersForItem](Methods/getDossiersForItem.md)
+* [getEntMetaData](Methods/getEntMetaData.md)
 * [jsonRequest](Methods/jsonRequest.md)
 * [namedQuery](Methods/namedQuery.md)
 * [offlineQuery](Methods/offlineQuery.md)
@@ -23,6 +24,7 @@ The object representing the InDesign or InCopy application.
 * [performSimpleRequest](Methods/performSimpleRequest.md)
 * [queryObjects](Methods/queryObjects.md)
 * [sendObjectToNext](Methods/sendObjectToNext.md)
+* [setEntMetaData](Methods/setEntMetaData.md)
 * [storedUserQuery](Methods/storedUserQuery.md)
 * [updateGeometry](Methods/updateGeometry.md)
 * [updatePanels](Methods/updatePanels.md)
