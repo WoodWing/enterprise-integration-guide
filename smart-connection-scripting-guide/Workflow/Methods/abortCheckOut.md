@@ -8,7 +8,7 @@ permalink: 1172-abortCheckOut
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
 ```javascript
-Workflow.saveVersion();
+Workflow.abortCheckOut();
 ```
 
 ### Parameters
