@@ -4,20 +4,22 @@ title: performSimpleRequest
 sortid: 9
 permalink: 1083-performSimpleRequest
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
+
 ```javascript
 app.performSimpleRequest(anyUrl);
 ```
 
 ### Parameters
 
-**anyUrl** *string*
+**anyUrl** _string_
 
 Any valid URL.
 
-**Return value** *string*
+**Return value** _string_
 
 A string containing the complete and total server response.
 
@@ -32,23 +34,22 @@ The `performSimpleRequest()` calls a URL and returns the response as a string.
 ```javascript
 var sURL = "http://localhost/StudioServer/server/wwtest/phpinfo.php";
 
-var sResult = app.performSimpleRequest( sURL );
+var sResult = app.performSimpleRequest(sURL);
 
 // Chop the result for display purposes
-if( sResult.length > 200 )
-{
-	sResult = sResult.substr( 0, 200 );
-	sResult += "...";
+if (sResult.length > 200) {
+  sResult = sResult.substr(0, 200);
+  sResult += "...";
 }
 
-alert( sResult );
+alert(sResult);
 ```
 
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|-----------|
-| CC 2019       | ✔         |
+| ------------- | --------- |
 | 2020          | ✔         |
 | 2021          | ✔         |
 | 2022          | ✔         |
+| 2023          | ✔         |

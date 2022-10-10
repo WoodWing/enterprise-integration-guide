@@ -4,20 +4,22 @@ title: elementLabel
 sortid: 76
 permalink: 1237-elementLabel
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
+
 ```javascript
 PageItem.elementLabel;
 ```
 
 ### Access
 
-*read/write*
+_read/write_
 
 ### Parameters
 
-**Return value** *string*
+**Return value** _string_
 
 The name of the Element Label.
 
@@ -32,13 +34,14 @@ Label.
 **Example title**
 
 ```javascript
+
 ```
 
 ## Support versions
 
 | Adobe Version | Support |
-|---------------|---------|
-| CC 2019       | ✔       |
+| ------------- | ------- |
 | 2020          | ✔       |
 | 2021          | ✔       |
-| 2022          | ✔         |
+| 2022          | ✔       |
+| 2023          | ✔       |

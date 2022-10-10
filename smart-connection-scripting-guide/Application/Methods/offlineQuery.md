@@ -4,16 +4,18 @@ title: offlineQuery
 sortid: 6
 permalink: 1081-offlineQuery
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
+
 ```javascript
 app.offlineQuery();
 ```
 
 ### Parameters
 
-**Return value** *string*
+**Return value** _string_
 
 A string representing the result for the offline query event.
 
@@ -32,8 +34,8 @@ The `namedQuery()` method performs an offline query.
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|-----------|
-| CC 2019       | ✔         |
+| ------------- | --------- |
 | 2020          | ✔         |
 | 2021          | ✔         |
 | 2022          | ✔         |
+| 2023          | ✔         |

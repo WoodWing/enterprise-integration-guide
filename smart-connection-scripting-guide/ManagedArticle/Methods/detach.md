@@ -4,9 +4,11 @@ title: detach
 sortid: 54
 permalink: 1138-detach
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
+
 ```javascript
 ManagedArticle.detach();
 ```
@@ -32,8 +34,8 @@ The `detach()` method detaches the Article from the Layout.
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|---------|
-| CC 2019       | ✔       |
-| 2020          | ✔       |
-| 2021          | ✔       |
+| ------------- | --------- |
+| 2020          | ✔         |
+| 2021          | ✔         |
 | 2022          | ✔         |
+| 2023          | ✔         |

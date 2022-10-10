@@ -4,16 +4,18 @@ title: getUserGroups
 sortid: 90
 permalink: 1215-getUserGroups
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
+
 ```javascript
 Session.getUserGroups();
 ```
 
 ### Parameters
 
-**Return value** *Array of string*
+**Return value** _Array of string_
 
 The returned array is a list of user group names.
 
@@ -32,8 +34,8 @@ The `getUserGroups()` method returns a list of user group names.
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|---------|
-| CC 2019       | ✔       |
-| 2020          | ✔       |
-| 2021          | ✔       |
+| ------------- | --------- |
+| 2020          | ✔         |
+| 2021          | ✔         |
 | 2022          | ✔         |
+| 2023          | ✔         |

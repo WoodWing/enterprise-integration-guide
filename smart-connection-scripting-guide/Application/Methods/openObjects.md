@@ -4,6 +4,7 @@ title: openObjects
 sortid: 8
 permalink: 1082-openObjects
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %})
@@ -14,15 +15,15 @@ app.openObjects(server, ids [, readonly] [, instantiate] [, dossier]);
 
 ### Parameters
 
-**server** *string*
+**server** _string_
 
 The name of Studio or Enterprise Server (as defined in the WWSettings.xml file) from which the files should be opened.
 
-**objectId** *string[]*
+**objectId** _string[]_
 
 The IDs of the files that should be opened.
 
-**readonly** *boolean (Optional)*
+**readonly** _boolean (Optional)_
 
 Defines if the file should be opened as read-only.
 
@@ -30,17 +31,17 @@ Default value: `false`.
 
 Notes:
 
-* Has to be set to true when a layout is opened in InCopy.
+- Has to be set to true when a layout is opened in InCopy.
 
-* Layout templates and Layout Module templates cannot be opened as read-only.
+- Layout templates and Layout Module templates cannot be opened as read-only.
 
-**instantiate** *boolean (Optional)*
+**instantiate** _boolean (Optional)_
 
 Defines if a new document should be instantiated from a template. The referenced file should therefore be a template; the parameter is ignored when the file is a regular layout or article.
 
 Default value: `true`.
 
-**dossier** *string (Optional)*
+**dossier** _string (Optional)_
 
 The ID of the default parent Dossier. Only used when instantiating Layout templates or Layout Module templates.
 
@@ -65,8 +66,8 @@ The `openObject()` method opens files from the Studio or Enterprise Server. It w
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|-----------|
-| CC 2019       | 14.2.2+ ✔ |
+| ------------- | --------- |
 | 2020          | 15.1+ ✔   |
-| 2021          | ✔       	|
+| 2021          | ✔         |
 | 2022          | ✔         |
+| 2023          | ✔         |

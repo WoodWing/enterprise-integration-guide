@@ -4,9 +4,11 @@ title: remove
 sortid: 23
 permalink: 1103-remove
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
+
 ```javascript
 Dossier.remove();
 ```
@@ -32,8 +34,8 @@ The `remove()` method removes the Dossier object. The corresponding Dossier is r
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|---------|
-| CC 2019       | ✔       |
-| 2020          | ✔       |
-| 2021          | ✔       |
+| ------------- | --------- |
+| 2020          | ✔         |
+| 2021          | ✔         |
 | 2022          | ✔         |
+| 2023          | ✔         |

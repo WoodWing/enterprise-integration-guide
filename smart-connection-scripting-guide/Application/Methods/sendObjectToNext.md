@@ -4,16 +4,18 @@ title: sendObjectToNext
 sortid: 11
 permalink: 1085-sendObjectToNext
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
+
 ```javascript
 app.sendObjectToNext(objectId);
 ```
 
 ### Parameters
 
-**objectId** *string*
+**objectId** _string_
 
 The object ID on the Studio or Enterprise Server.
 
@@ -36,8 +38,8 @@ The `sendObjectToNext()` method sends an object to its next status. Throws an ex
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|---------|
-| CC 2019       | ✔       |
-| 2020          | ✔       |
-| 2021          | ✔       |
-| 2022          | ✔       |
+| ------------- | --------- |
+| 2020          | ✔         |
+| 2021          | ✔         |
+| 2022          | ✔         |
+| 2023          | ✔         |

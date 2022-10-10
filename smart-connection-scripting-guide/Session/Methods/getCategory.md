@@ -4,28 +4,30 @@ title: getCategory
 sortid: 83
 permalink: 1208-getCategory
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
+
 ```javascript
 Session.getCategory(brandName, categoryName, issueName);
 ```
 
 ### Parameters
 
-**publication** *string*
+**publication** _string_
 
 The name of the Brand.
 
-**category** *string*
+**category** _string_
 
 The name of the Category..
 
-**issue** *string (Optional)*
+**issue** _string (Optional)_
 
 The name of the overruled Issue.
 
-**Return value** *[EntSection](../../EntSection/index.md)*
+**Return value** _[EntSection](../../EntSection/index.md)_
 
 Returns the Category with the provided name. Throws an exception if the Category does not exist.
 
@@ -44,8 +46,8 @@ The `getCategory()` method returns the Category with the provided name.
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|---------|
-| CC 2019       | ✔       |
-| 2020          | ✔       |
-| 2021          | ✔       |
+| ------------- | --------- |
+| 2020          | ✔         |
+| 2021          | ✔         |
 | 2022          | ✔         |
+| 2023          | ✔         |

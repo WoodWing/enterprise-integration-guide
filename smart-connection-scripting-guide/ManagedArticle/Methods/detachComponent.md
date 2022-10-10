@@ -4,16 +4,18 @@ title: detachComponent
 sortid: 55
 permalink: 1139-detachComponent
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
+
 ```javascript
 ManagedArticle.detachComponent(pageItem);
 ```
 
 ### Parameters
 
-**pageItem** *PageItem, Story*
+**pageItem** _PageItem, Story_
 
 Page item, or Story, that needs to be removed from the multi-component Article.
 
@@ -36,8 +38,8 @@ The `detachComponent()` method detaches a component from the layout and deletes 
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|---------|
-| CC 2019       | ✔       |
-| 2020          | ✔       |
-| 2021          | ✔       |
+| ------------- | --------- |
+| 2020          | ✔         |
+| 2021          | ✔         |
 | 2022          | ✔         |
+| 2023          | ✔         |

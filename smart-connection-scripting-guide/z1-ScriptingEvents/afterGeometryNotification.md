@@ -15,9 +15,9 @@ After receiving a Geometry Update notification from Studio Server in InCopy
 
 ## Arguments in
 
-|Key | Description |
-|----|-------------|
-|Core_ID |The object id of the layout that was updated.|
+| Key     | Description                                   |
+| ------- | --------------------------------------------- |
+| Core_ID | The object id of the layout that was updated. |
 
 ## Arguments out
 
@@ -140,13 +140,13 @@ function lockedByUser(lockName)
 
 ## Supported versions
 
-| Adobe Version | Supported |
-|---------------|-----------|
-| CC 2019       | v14.3.1+ ✔         |
-| 2020          | v15.2.1+ ✔         |
-| 2021          | v16.3.1+ ✔         |
-| 2022          | ✔         |
+| Adobe Version | Supported  |
+| ------------- | ---------- |
+| 2020          | v15.2.1+ ✔ |
+| 2021          | v16.3.1+ ✔ |
+| 2022          | ✔          |
+| 2023          | ✔          |
 
 ## See also
 
-* [Scripting Events](./index.md)
+- [Scripting Events](./index.md)

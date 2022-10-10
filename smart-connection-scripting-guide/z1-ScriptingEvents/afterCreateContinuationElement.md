@@ -15,12 +15,12 @@ After creating a continuation element for a Smart Jump article.
 
 ## Arguments in
 
-|Key |Description|
-|----|-----------|
-|document |The object id of the layout from where the element is created on.|
-|parentStory |The story id of the component of the Smart Jump story the element belongs to.|
-|[continuationFromStory] |The story id of the continuation from element belonging to the component of the Smart Jump story.|
-|[continuationOnStory] |The story id of the continuation on element belonging to the component of the Smart Jump story.|
+| Key                     | Description                                                                                       |
+| ----------------------- | ------------------------------------------------------------------------------------------------- |
+| document                | The object id of the layout from where the element is created on.                                 |
+| parentStory             | The story id of the component of the Smart Jump story the element belongs to.                     |
+| [continuationFromStory] | The story id of the continuation from element belonging to the component of the Smart Jump story. |
+| [continuationOnStory]   | The story id of the continuation on element belonging to the component of the Smart Jump story.   |
 
 ## Arguments out
 
@@ -35,24 +35,30 @@ The event is not sent when creating a Smart Jump. In that case the afterCreateJu
 **Using afterCreateJump**
 
 ```javascript
-var msg="Document: " + app.scriptArgs.get( "document" ) + "\n";
-msg+="Parent Story: " + app.scriptArgs.get( "parentStory" ) + "\n";
-if( app.scriptArgs.isDefined( "continuationToStory" ) )
-    msg+="Continuation To Story: "+app.scriptArgs.get("continuationToStory")+"\n";
-if( app.scriptArgs.isDefined( "continuationFromStory" ) )
-    msg+="Continuation From Story: "+app.scriptArgs.get("continuationFromStory")+"\n";
-alert( msg );
+var msg = "Document: " + app.scriptArgs.get("document") + "\n";
+msg += "Parent Story: " + app.scriptArgs.get("parentStory") + "\n";
+if (app.scriptArgs.isDefined("continuationToStory"))
+  msg +=
+    "Continuation To Story: " +
+    app.scriptArgs.get("continuationToStory") +
+    "\n";
+if (app.scriptArgs.isDefined("continuationFromStory"))
+  msg +=
+    "Continuation From Story: " +
+    app.scriptArgs.get("continuationFromStory") +
+    "\n";
+alert(msg);
 ```
 
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|-----------|
-| CC 2019       | ✔         |
+| ------------- | --------- |
 | 2020          | ✔         |
 | 2021          | ✔         |
 | 2022          | ✔         |
+| 2023          | ✔         |
 
 ## See also
 
-* [Scripting Events](./index.md)
+- [Scripting Events](./index.md)

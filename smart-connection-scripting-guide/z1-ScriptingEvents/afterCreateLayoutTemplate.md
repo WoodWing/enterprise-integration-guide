@@ -15,9 +15,9 @@ After creating a new layout template in the Studio or Enterprise Server system. 
 
 ## Arguments in
 
-|Key |Description|
-|----|-----------|
-|Core_ID| The object id of the layout template that was created.|
+| Key     | Description                                            |
+| ------- | ------------------------------------------------------ |
+| Core_ID | The object id of the layout template that was created. |
 
 ## Arguments out
 
@@ -30,12 +30,12 @@ Changes can be made to the document, these will be saved and sent to the Studio 
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|-----------|
-| CC 2019       | ✔         |
+| ------------- | --------- |
 | 2020          | ✔         |
 | 2021          | ✔         |
 | 2022          | ✔         |
+| 2023          | ✔         |
 
 ## See also
 
-* [Scripting Events](./index.md)
+- [Scripting Events](./index.md)

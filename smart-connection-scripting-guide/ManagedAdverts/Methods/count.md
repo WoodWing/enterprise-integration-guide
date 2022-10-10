@@ -4,16 +4,18 @@ title: count
 sortid: 49
 permalink: 1131-count
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
+
 ```javascript
 ManagedAdverts.count();
 ```
 
 ### Parameters
 
-**Return value** *number*
+**Return value** _number_
 
 The number of ManagedAdvert objects in the collection.
 
@@ -32,8 +34,8 @@ The `count()` method returns the number of ManagedAdvert objects within the Mana
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|---------|
-| CC 2019       | ✔       |
-| 2020          | ✔       |
-| 2021          | ✔       |
+| ------------- | --------- |
+| 2020          | ✔         |
+| 2021          | ✔         |
 | 2022          | ✔         |
+| 2023          | ✔         |

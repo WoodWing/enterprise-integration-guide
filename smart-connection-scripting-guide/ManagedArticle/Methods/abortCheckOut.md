@@ -4,9 +4,11 @@ title: abortCheckOut
 sortid: 50
 permalink: 1134-abortCheckOut
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
+
 ```javascript
 ManagedArticle.abortCheckOut();
 ```
@@ -32,8 +34,8 @@ The `abortCheckOut()` method cancels the check-out of the placed Article.
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|---------|
-| CC 2019       | ✔       |
-| 2020          | ✔       |
-| 2021          | ✔       |
+| ------------- | --------- |
+| 2020          | ✔         |
+| 2021          | ✔         |
 | 2022          | ✔         |
+| 2023          | ✔         |

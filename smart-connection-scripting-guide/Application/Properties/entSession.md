@@ -4,20 +4,22 @@ title: entSession
 sortid: 11
 permalink: 1087-entSession
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
+
 ```javascript
 app.entSession;
 ```
 
 ### Access
 
-*readonly*
+_readonly_
 
 ### Parameters
 
-**Return value** *Session*
+**Return value** _Session_
 
 The Studio or Enterprise Server Session object.
 
@@ -36,7 +38,7 @@ When `activeUrl` is empty, there is no active session.
 ```javascript
 // Check if the session is active.
 var sessionObject = app.entSession;
-var activeSession = (sessionObject.activeUrl !== "");
+var activeSession = sessionObject.activeUrl !== "";
 
 // When logged in, activeSession is now 'true'.
 // When not logged in, activeSession is 'false'.
@@ -45,12 +47,12 @@ var activeSession = (sessionObject.activeUrl !== "");
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|---------|
-| CC 2019       | ✔       |
-| 2020          | ✔       |
-| 2021          | ✔       |
-| 2022          | ✔       |
+| ------------- | --------- |
+| 2020          | ✔         |
+| 2021          | ✔         |
+| 2022          | ✔         |
+| 2023          | ✔         |
 
 ## See also
 
-* [Session](../../Session/index.md)
+- [Session](../../Session/index.md)

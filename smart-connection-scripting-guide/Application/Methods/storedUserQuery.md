@@ -4,20 +4,22 @@ title: storedUserQuery
 sortid: 13
 permalink: 1086-storedUserQuery
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
+
 ```javascript
 app.storedUserQuery(queryName);
 ```
 
 ### Parameters
 
-**queryName** *string*
+**queryName** _string_
 
 The stored name of the query
 
-**Return value** *string*
+**Return value** _string_
 
 A string representing the stored user query result.
 
@@ -36,8 +38,8 @@ The `storedUserQuery()` method generates the result for the strored user query e
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|---------|
-| CC 2019       | ✔       |
-| 2020          | ✔       |
-| 2021          | ✔       |
+| ------------- | --------- |
+| 2020          | ✔         |
+| 2021          | ✔         |
 | 2022          | ✔         |
+| 2023          | ✔         |

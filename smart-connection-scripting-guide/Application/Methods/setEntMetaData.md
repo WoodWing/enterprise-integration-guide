@@ -4,6 +4,7 @@ title: setEntMetaData
 sortid: 12
 permalink: 1082-setEntMetaData
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
@@ -14,11 +15,11 @@ app.setEntMetaData(metaData);
 
 ### Parameters
 
-**metaData** *EntMetaData*
+**metaData** _EntMetaData_
 
 Meta data of the object to set metadata properties for.
 
-**Return value** *int32*
+**Return value** _int32_
 
 The status returned from the Studio Server
 
@@ -28,10 +29,10 @@ The `setEntMetaData()` method sets metadata properties for an object stored in S
 
 Limitations:
 
-* the method will only be successful if the object is not locked, by either the current user or another user.
+- the method will only be successful if the object is not locked, by either the current user or another user.
 
-* only properties that are configured for the Set Properties dialog can be changed using the scripting method.
-    
+- only properties that are configured for the Set Properties dialog can be changed using the scripting method.
+
 ## Examples
 
 **Example title**
@@ -42,21 +43,22 @@ var objID = "19083";
 var meta;
 var key = "C_CITIES";
 try {
-    meta = app.getEntMetaData(objID);
-    var objectStatus = meta.get(key);
-    meta.set(key, ["Paris", "Berlin"]);
-    app.setEntMetaData( meta );
-}
-catch(e) {
-    alert("Setting metadata properties for [" + key + "] failed: [" + e.message + "].");
+  meta = app.getEntMetaData(objID);
+  var objectStatus = meta.get(key);
+  meta.set(key, ["Paris", "Berlin"]);
+  app.setEntMetaData(meta);
+} catch (e) {
+  alert(
+    "Setting metadata properties for [" + key + "] failed: [" + e.message + "]."
+  );
 }
 ```
 
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|-----------|
-| CC 2019       |           |
+| ------------- | --------- |
 | 2020          |           |
 | 2021          |           |
-| 2022          | 17.0.2+ ✔         |
+| 2022          | 17.0.2+ ✔ |
+| 2023          | ✔         |

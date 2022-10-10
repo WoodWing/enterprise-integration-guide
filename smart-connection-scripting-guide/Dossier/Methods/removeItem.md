@@ -4,16 +4,18 @@ title: addItem
 sortid: 24
 permalink: 1104-removeItem
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
+
 ```javascript
 Dossier.addItem(objectId);
 ```
 
 ### Parameters
 
-**objectId** *string*
+**objectId** _string_
 
 The object ID on the Studio or Enterprise Server of the object to add to the Dossier.
 
@@ -36,8 +38,8 @@ The `addItem()` method adds an item to the Dossier. Adds the item to the corresp
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|---------|
-| CC 2019       | ✔       |
-| 2020          | ✔       |
-| 2021          | ✔       |
+| ------------- | --------- |
+| 2020          | ✔         |
+| 2021          | ✔         |
 | 2022          | ✔         |
+| 2023          | ✔         |

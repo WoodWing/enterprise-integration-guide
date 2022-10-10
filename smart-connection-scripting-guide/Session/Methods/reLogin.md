@@ -4,9 +4,11 @@ title: reLogin
 sortid: 94
 permalink: 1220-reLogin
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
+
 ```javascript
 Session.reLogin();
 ```
@@ -32,11 +34,11 @@ The `reLogin()` method performs a re-login to the Studio or Enterprise Server sy
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|---------|
-| CC 2019       | ✔       |
-| 2020          | ✔       |
-| 2021          | ✔       |
+| ------------- | --------- |
+| 2020          | ✔         |
+| 2021          | ✔         |
 | 2022          | ✔         |
+| 2023          | ✔         |
 
 ### Single Sign-On
 
@@ -46,8 +48,8 @@ SSO is available for all versions of Studio and the following versions of Smart 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
 
 | Adobe Version | Supported |
-|---------------|-----------|
-| CC 2019       | v14.1+ ✔  |
+| ------------- | --------- |
 | 2020          | ✔         |
 | 2021          | ✔         |
 | 2022          | ✔         |
+| 2023          | ✔         |

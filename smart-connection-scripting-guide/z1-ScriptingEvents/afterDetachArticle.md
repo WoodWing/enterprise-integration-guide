@@ -15,9 +15,9 @@ After detaching an article from a layout.
 
 ## Arguments in
 
-|Key |Description|
-|----|-----------|
-|Core_ID |The object id of the article template that was created.|
+| Key     | Description                                             |
+| ------- | ------------------------------------------------------- |
+| Core_ID | The object id of the article template that was created. |
 
 ## Arguments out
 
@@ -31,12 +31,12 @@ article from the layout.
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|-----------|
-| CC 2019       | ✔         |
+| ------------- | --------- |
 | 2020          | ✔         |
 | 2021          | ✔         |
 | 2022          | ✔         |
+| 2023          | ✔         |
 
 ## See also
 
-* [Scripting Events](./index.md)
+- [Scripting Events](./index.md)

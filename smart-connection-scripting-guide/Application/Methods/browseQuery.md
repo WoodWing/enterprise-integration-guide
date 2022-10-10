@@ -4,32 +4,34 @@ title: browseQuery
 sortid: 1
 permalink: 1076-browseQuery
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
+
 ```javascript
 app.browseQuery(brand, issue, section, state);
 ```
 
 ### Parameters
 
-**brand** *string*
+**brand** _string_
 
 The name of the Brand to browse for.
 
-**issue** *string*
+**issue** _string_
 
 The name of the Issue to browse for.
 
-**section** *string*
+**section** _string_
 
 The name of the Section to browse for.
 
-**state** *string*
+**state** _string_
 
 The name of the State to browse for.
 
-**Return value** *string*
+**Return value** _string_
 
 A string representing the Browse query result.
 The result is comma separated.
@@ -89,8 +91,8 @@ var queryResult = app.browseQuery("WW News", "1st Issue", "News", "Ready");
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|-----------|
-| CC 2019       | ✔         |
+| ------------- | --------- |
 | 2020          | ✔         |
 | 2021          | ✔         |
 | 2022          | ✔         |
+| 2023          | ✔         |

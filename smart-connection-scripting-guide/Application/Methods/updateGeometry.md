@@ -4,16 +4,18 @@ title: updateGeometry
 sortid: 14
 permalink: 1246-updateGeometry
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %})
+
 ```javascript
 app.updateGeometry();
 ```
 
 ### Parameters
 
-**objectId** *string*
+**objectId** _string_
 
 The ID of the layout that contains the new geometry information
 
@@ -31,13 +33,13 @@ See scripting event afterGeometryNotification.
 
 ## Supported versions
 
-| Adobe Version | Supported |
-|---------------|---------|
-| CC 2019       | v14.3.1+ ✔       |
-| 2020          |  v15.2.1+ ✔      |
-| 2021          |  v16.3.1+ ✔       |
-| 2022          | ✔         |
+| Adobe Version | Supported  |
+| ------------- | ---------- |
+| 2020          | v15.2.1+ ✔ |
+| 2021          | v16.3.1+ ✔ |
+| 2022          | ✔          |
+| 2023          | ✔          |
 
 ## See also
 
-* [Application](./index.md)
+- [Application](./index.md)

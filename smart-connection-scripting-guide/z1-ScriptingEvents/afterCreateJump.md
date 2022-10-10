@@ -15,14 +15,14 @@ After creating a Smart Jump article.
 
 ## Arguments in
 
-|Key |Description|
-|----|-----------|
-|sourceDocument |The object id of the layout from where the Smart Jump starts.|
-|sourceStory |The story id of the first component of the Smart Jump story.|
-|sourceContinuationStory |The story id of the continuation element belonging to the first component of the Smart Jump.|
-|[destinationDocument] |The object id of the layout where the Smart Jump lands.|
-|[destinationStory] |The story id of the second component of the Smart Jump story.|
-|[destinationContinuationStory] |The story id of the continuation element belonging to the second component of the Smart Jump.|
+| Key                            | Description                                                                                   |
+| ------------------------------ | --------------------------------------------------------------------------------------------- |
+| sourceDocument                 | The object id of the layout from where the Smart Jump starts.                                 |
+| sourceStory                    | The story id of the first component of the Smart Jump story.                                  |
+| sourceContinuationStory        | The story id of the continuation element belonging to the first component of the Smart Jump.  |
+| [destinationDocument]          | The object id of the layout where the Smart Jump lands.                                       |
+| [destinationStory]             | The story id of the second component of the Smart Jump story.                                 |
+| [destinationContinuationStory] | The story id of the continuation element belonging to the second component of the Smart Jump. |
 
 ## Arguments out
 
@@ -38,27 +38,32 @@ example using the “Create Jump From Here” command.
 **Using afterCreateJump**
 
 ```javascript
-var msg="Source ID: " + app.scriptArgs.get("sourceDocument") + "\n";
-msg+="Source Story: " + app.scriptArgs.get("sourceStory") + "\n";
-msg+="Source Continuation: "+app.scriptArgs.get("sourceContinuationStory") + "\n";
-if( app.scriptArgs.isDefined( "destinationDocument" ) )
-{
-    msg+="Destination ID: " + app.scriptArgs.get("destinationDocument") + "\n";
-    msg+="Destination Story: " + app.scriptArgs.get("destinationStory") + "\n";
-    msg+="Dest. Continuation:"+app.scriptArgs.get("destinationContinuationStory")+"\n";
+var msg = "Source ID: " + app.scriptArgs.get("sourceDocument") + "\n";
+msg += "Source Story: " + app.scriptArgs.get("sourceStory") + "\n";
+msg +=
+  "Source Continuation: " +
+  app.scriptArgs.get("sourceContinuationStory") +
+  "\n";
+if (app.scriptArgs.isDefined("destinationDocument")) {
+  msg += "Destination ID: " + app.scriptArgs.get("destinationDocument") + "\n";
+  msg += "Destination Story: " + app.scriptArgs.get("destinationStory") + "\n";
+  msg +=
+    "Dest. Continuation:" +
+    app.scriptArgs.get("destinationContinuationStory") +
+    "\n";
 }
-alert( msg );
+alert(msg);
 ```
 
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|-----------|
-| CC 2019       | ✔         |
+| ------------- | --------- |
 | 2020          | ✔         |
 | 2021          | ✔         |
 | 2022          | ✔         |
+| 2023          | ✔         |
 
 ## See also
 
-* [Scripting Events](./index.md)
+- [Scripting Events](./index.md)

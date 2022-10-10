@@ -4,25 +4,28 @@ title: queryObjects
 sortid: 10
 permalink: 1084-queryObjects
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
+
 ```javascript
 app.queryObjects(criteria);
 ```
 
 ### Parameters
 
-**criteria** *string[]*
+**criteria** _string[]_
 
 The query criteria in the form of `<key, value>` pairs
+
 ```javascript
 criteria[0] = 'Brand, WW News';
 criteria[1] = 'Issue, 2nd Issue';
 ...
 ```
 
-**Return value** *string*
+**Return value** _string_
 
 A string representing the query result.
 
@@ -41,8 +44,8 @@ The `queryObjects()` method performs a user query based in the passed criteria.
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|-----------|
-| CC 2019       | ✔         |
+| ------------- | --------- |
 | 2020          | ✔         |
-| 2021          | ✔       	|
+| 2021          | ✔         |
 | 2022          | ✔         |
+| 2023          | ✔         |

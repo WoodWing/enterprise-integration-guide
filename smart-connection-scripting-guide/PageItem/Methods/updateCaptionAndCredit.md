@@ -4,9 +4,11 @@ title: updateCaptionAndCredit
 sortid: 73
 permalink: 1168-updateCaptionAndCredit
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
+
 ```javascript
 PageItem.updateCaptionAndCredit();
 ```
@@ -34,35 +36,32 @@ If the Page Item is a Caption of a Smart Image its Caption information will be u
 The sample will show how to update the credit and/or caption values on specific frames.
 
 ```javascript
-try
-{
-    var myDoc = doc.documents.item(0);
-    // Update the Caption and Credit on an image item.
-    var myGraphic = myDoc.allGraphics[0];
-    myGraphic.updateCaptionAndCredit();
-    // Update the Caption and Credit on a spline item.
-    var myFrame = myDoc.pageItems.item(0);
-    myFrame.updateCaptionAndCredit();
-    // Update the Caption of a spline item.
-    var myCaptionFrame = myDoc.pageItems.item(1);
-    myCaptionFrame.updateCaptionAndCredit();
-    // Update the Credit of a spline item.
-    var myCreditFrame = myDoc.pageItems.item(2);
-    myCreditFrame.updateCaptionAndCredit();
-}
-catch( e)
-{
-    desc = e.description;
-    num = e.number;
-    alert( "error " + num + ": " + desc );
+try {
+  var myDoc = doc.documents.item(0);
+  // Update the Caption and Credit on an image item.
+  var myGraphic = myDoc.allGraphics[0];
+  myGraphic.updateCaptionAndCredit();
+  // Update the Caption and Credit on a spline item.
+  var myFrame = myDoc.pageItems.item(0);
+  myFrame.updateCaptionAndCredit();
+  // Update the Caption of a spline item.
+  var myCaptionFrame = myDoc.pageItems.item(1);
+  myCaptionFrame.updateCaptionAndCredit();
+  // Update the Credit of a spline item.
+  var myCreditFrame = myDoc.pageItems.item(2);
+  myCreditFrame.updateCaptionAndCredit();
+} catch (e) {
+  desc = e.description;
+  num = e.number;
+  alert("error " + num + ": " + desc);
 }
 ```
 
 ## Support versions
 
 | Adobe Version | Support |
-|---------------|---------|
-| CC 2019       | ✔       |
+| ------------- | ------- |
 | 2020          | ✔       |
 | 2021          | ✔       |
-| 2022          | ✔         |
+| 2022          | ✔       |
+| 2023          | ✔       |

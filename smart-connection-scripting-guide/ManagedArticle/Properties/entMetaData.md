@@ -4,20 +4,22 @@ title: entMetaData
 sortid: 60
 permalink: 1145-entMetaData
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
+
 ```javascript
 ManagedArticle.entMetaData;
 ```
 
 ### Access
 
-*readonly*
+_readonly_
 
 ### Parameters
 
-**Return value** *EntMetaData*
+**Return value** _EntMetaData_
 
 An EntMetaData object.
 
@@ -30,13 +32,14 @@ The `entMetaData` property is used to get the Studio or Enterprise Server metada
 **Example title**
 
 ```javascript
+
 ```
 
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|---------|
-| CC 2019       | ✔       |
-| 2020          | ✔       |
-| 2021          | ✔       |
+| ------------- | --------- |
+| 2020          | ✔         |
+| 2021          | ✔         |
 | 2022          | ✔         |
+| 2023          | ✔         |

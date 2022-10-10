@@ -10,18 +10,19 @@ When an image that is stored in Assets/Elvis is turned into an image that is sto
 The script in which this can be implemented should be placed into the Startup Scripts folder in either the application’s scripts
 folder or in the user’s scripts folder. The script locations are:
 
-|Platform|Script locations|
-|--------|----------------|
-|Windows |C:\Documents and Settings\<username>\Application Data\Adobe\InDesign\Version x\<language>\Scripts\Startup Scripts|
-||C:\Program Files\Adobe\Adobe InDesign CC\Scripts\Startup Scripts|
-|Macintosh |~/Library/Preferences/Adobe InDesign/Version x/<language>/Scripts/Startup Scripts|
-||/Applications/Adobe InDesign CC/Scripts/Startup Scripts|
+| Platform  | Script locations                                                                                                  |
+| --------- | ----------------------------------------------------------------------------------------------------------------- |
+| Windows   | C:\Documents and Settings\<username>\Application Data\Adobe\InDesign\Version x\<language>\Scripts\Startup Scripts |
+|           | C:\Program Files\Adobe\Adobe InDesign CC\Scripts\Startup Scripts                                                  |
+| Macintosh | ~/Library/Preferences/Adobe InDesign/Version x/<language>/Scripts/Startup Scripts                                 |
+|           | /Applications/Adobe InDesign CC/Scripts/Startup Scripts                                                           |
 
 The script should have the following properties:
-* The target engine must be “elvisobjectoverride” (`#targetengine "elvisobjectoverride"`).
-* The name of the object must be “AddToDossierOverride” (`function AddToDossierOverride`).
-* There may only be one object of the AddToDossierOverride class and this needs to have the name “addToDossierOverride”
-(`var addToDossierOverride = new AddToDossierOverride`).
+
+- The target engine must be “elvisobjectoverride” (`#targetengine "elvisobjectoverride"`).
+- The name of the object must be “AddToDossierOverride” (`function AddToDossierOverride`).
+- There may only be one object of the AddToDossierOverride class and this needs to have the name “addToDossierOverride”
+  (`var addToDossierOverride = new AddToDossierOverride`).
 
 The AddToDossierOverride class needs to have the following functions:
 
@@ -29,19 +30,20 @@ The AddToDossierOverride class needs to have the following functions:
 
 ### Parameters
 
-**Return value** *Array of Boolean*
+**Return value** _Array of Boolean_
 
 It returns an array of bool:
 
-| Nº | Description |
-| - | ----------- |
-| 1 | debug canPlaceItems? |
-| 2 | debug placeItems? |
-| 3 | show error alerts? |
+| Nº  | Description          |
+| --- | -------------------- |
+| 1   | debug canPlaceItems? |
+| 2   | debug placeItems?    |
+| 3   | show error alerts?   |
 
 Example:
+
 ```javascript
-return [ false, false, true ];
+return [false, false, true];
 ```
 
 ### Description
@@ -52,45 +54,47 @@ Tells Studio or Smart Connection whether the functions need to be debugged or no
 
 ### Parameters
 
-**objectsToAddJson** *string*
+**objectsToAddJson** _string_
 
 A string with json content that contains the database ID and page item of the objects to be added to a Dossier. A sample of such a json string is:
+
 ```javascript
-[{"objectID": "909", "pageItem": "123"}]
+[{ objectID: "909", pageItem: "123" }];
 ```
 
 Properties of one item in this json string:
 
-|Name|Type|Description|
-|----|----|-----------|
-|objectID |string |The database id of the object to be added|
-|pageItem |string |The page item id of the object|
+| Name     | Type   | Description                               |
+| -------- | ------ | ----------------------------------------- |
+| objectID | string | The database id of the object to be added |
+| pageItem | string | The page item id of the object            |
 
-**targetDossier** *string*
+**targetDossier** _string_
 
 A string with the database id of the Dossier that was found by the Studio or Smart Connection code as default Dossier.
 
-**showSelectDossierDialog** *string*
+**showSelectDossierDialog** _string_
 
 A string (“true” or “false”) that indicates if the Studio or Smart Connection code finds that it is needed to show the Select Dossier dialog or not.
 
-**suppressUI** *boolean*
+**suppressUI** _boolean_
 
 Should any user interface be suppressed or not.
 
-**Return value** *Array of Boolean and Strings*
+**Return value** _Array of Boolean and Strings_
 
 The return value is an array with three values:
 
-| Nº | Type | Description |
-| - | ---- | ----------- |
-| 1 | boolean | Indicates if the Studio or Smart Connection code to add the objects to the Dossier should be performed or not. |
-| 2 | string | The database id of the Dossier to which the object should be added to by the Studio or Smart Connection code. (not used when the first boolean is false) |
-| 3 | string | Indicates if the Select Dossier dialog should be shown or not (“true” or “false”). (not used when the first boolean is false) |
+| Nº  | Type    | Description                                                                                                                                              |
+| --- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | boolean | Indicates if the Studio or Smart Connection code to add the objects to the Dossier should be performed or not.                                           |
+| 2   | string  | The database id of the Dossier to which the object should be added to by the Studio or Smart Connection code. (not used when the first boolean is false) |
+| 3   | string  | Indicates if the Select Dossier dialog should be shown or not (“true” or “false”). (not used when the first boolean is false)                            |
 
 A sample of the return value is:
+
 ```javascript
-return [ true, "123", "false" ];
+return [true, "123", "false"];
 ```
 
 ### Description
@@ -150,8 +154,8 @@ var addToDossierOverride = new AddToDossierOverride;
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|-----------|
-| CC 2019       | ✔         |
+| ------------- | --------- |
 | 2020          | ✔         |
 | 2021          | ✔         |
 | 2022          | ✔         |
+| 2023          | ✔         |

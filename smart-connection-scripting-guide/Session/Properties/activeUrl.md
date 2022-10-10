@@ -4,20 +4,22 @@ title: activeUrl
 sortid: 97
 permalink: 1074-activeUrl
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
+
 ```javascript
 Session.activeUrl;
 ```
 
 ### Access
 
-*readonly*
+_readonly_
 
 ### Parameters
 
-**Return value** *string*
+**Return value** _string_
 
 The URL of the active server.
 
@@ -46,12 +48,12 @@ var serverUrl = sessionObject.activeUrl;
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|---------|
-| CC 2019       | ✔       |
-| 2020          | ✔       |
-| 2021          | ✔       |
+| ------------- | --------- |
+| 2020          | ✔         |
+| 2021          | ✔         |
 | 2022          | ✔         |
+| 2023          | ✔         |
 
 ## See also
 
-* [entSession](../../Application/Properties/entSession.md)
+- [entSession](../../Application/Properties/entSession.md)

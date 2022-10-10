@@ -4,20 +4,22 @@ title: studioPreferences
 sortid: 12
 permalink: 1087-studioPreferences
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
+
 ```javascript
 app.studioPreferences;
 ```
 
 ### Access
 
-*readonly*
+_readonly_
 
 ### Parameters
 
-**Return value** *StudioPreference*
+**Return value** _StudioPreference_
 
 WoodWing Studio preference settings object.
 
@@ -34,12 +36,12 @@ You can find examples in the description of the StudioPreference properties.
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|---------|
-| CC 2019       |         |
-| 2020          | v15.2+ ✔|
-| 2021          | ✔       |
-| 2022          | ✔       |
+| ------------- | --------- |
+| 2020          | v15.2+ ✔  |
+| 2021          | ✔         |
+| 2022          | ✔         |
+| 2023          | ✔         |
 
 ## See also
 
-* [StudioPreference](../../StudioPreference/index.md)
+- [StudioPreference](../../StudioPreference/index.md)

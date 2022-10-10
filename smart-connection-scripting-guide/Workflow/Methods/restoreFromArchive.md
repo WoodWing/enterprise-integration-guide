@@ -4,31 +4,33 @@ title: restoreFromArchive
 sortid: 103
 permalink: 1176-restoreFromArchive
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
+
 ```javascript
 Workflow.restoreFromArchive([pathInElvis] [, imageRestoreLocation]);
 ```
 
 ### Parameters
 
-**pathInElvis** *String (Optional)*
+**pathInElvis** _String (Optional)_
 
 The path in Assets where the images should be copied to. Might be empty. In that case the images are not restored and will be unlinked.
 
 Only used in combination with the “Elvis_Copy” image restore location (defined in the script or in the Elvis Enterprise Server plug-in). For the other image restore locations this parameter can be empty.
 
-**imageRestoreLocation** *String (Optional)*
+**imageRestoreLocation** _String (Optional)_
 
 Defines the restore location of images. When not defined the option as defined in the Elvis Enterprise Server plug-in is used. Possible values:
 
-| Value      | Description                                                                |
-|------------|----------------------------------------------------------------------------|
+| Value      | Description                                                                                    |
+| ---------- | ---------------------------------------------------------------------------------------------- |
 | Elvis_Copy | The image is copied in Assets/Elvis and is linked via a Studio/Enterprise Server shadow object |
-| Enterprise | The image is copied to Studio or Enterprise Server                         |
+| Enterprise | The image is copied to Studio or Enterprise Server                                             |
 
-**Return value** *Document*
+**Return value** _Document_
 
 The restored Document object.
 
@@ -49,8 +51,8 @@ Articles on the document will be copied to Studio or Enterprise Server and the A
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|-----------|
-| CC 2019       | ✔         |
+| ------------- | --------- |
 | 2020          | ✔         |
 | 2021          | ✔         |
 | 2022          | ✔         |
+| 2023          | ✔         |
