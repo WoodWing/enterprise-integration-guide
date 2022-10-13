@@ -230,9 +230,9 @@ try {
 	$request->Users = array( $userObj );
 
 	// Request Enterprise to create user in the database.
-	$service = WW_DIContainer::get( AdmCreateUsersService::class ); // Since 10.7.0
+	$service = new AdmCreateUsersService();
+	/** @var AdmCreateUsersResponse $response */
 	$response = $service->execute( $request );
-	// $response is an AdmCreateUsersResponse object
 
 	// Just display the user’s DB id of the created user.
 	echo $response->Users[0]->Id;
@@ -262,32 +262,6 @@ To create users, the WSDL specifies CreateUsersRequest and CreateUsersResponse e
 are generated as well, and again prefixed, for this interface with Adm. By including the AdmCreateUsersService.class.php 
 three classes are included at once:\
 AdmCreateUsersService, AdmCreateUsersRequest and AdmCreateUsersResponse. Those objects are used to execute the service.
-
-### Changes since 10.7.0
-
-Due to internal changes in the service, business and database layers of Enterprise Server, the way that services are 
-loaded has changed. Loading services that are introduced since 10.7 and higher can only be achieved when using:
-
-`$service = WW_DIContainer::get( WflGetNamedQueriesService::class );`
-
-Services that existed before 10.7 can still be loaded with the old code (e.g. `$service = new WflGetNamedQueriesService();`) 
-but is deprecated. Existing services can change in later versions and throw a PHP error. You are therefore encouraged 
-to update your code to use the new syntax. 
-
-If you have an integration that needs to support both pre-10.7 versions and 10.7 and higher you can use the following 
-code to be backwards compatible:
-
-```php
-$service = getServiceInstance( WflGetNamedQueriesService::class );
-
-function getServiceInstance( $classname )
-{
-	if ( class_exists( 'WW_DIContainer' ) ) {
-		return WW_DIContainer::get( $classname );
-	}
-	return new $classname();
-}
-```
 
 ## External PHP integrations
 
