@@ -4,20 +4,22 @@ title: managedArticle
 sortid: 80
 permalink: 1172-managedLayoutModule
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
+
 ```javascript
 PageItem.managedArticle;
 ```
 
 ### Access
 
-*readonly*
+_readonly_
 
 ### Parameters
 
-**Return value** *ManagedArticle*
+**Return value** _ManagedArticle_
 
 A ManagedArticle object.
 
@@ -31,13 +33,14 @@ Returns nothing if there is no object associated.
 **Example title**
 
 ```javascript
+
 ```
 
 ## Support versions
 
 | Adobe Version | Support |
-|---------------|---------|
-| CC 2019       | ✔       |
+| ------------- | ------- |
 | 2020          | ✔       |
 | 2021          | ✔       |
-| 2022          | ✔         |
+| 2022          | ✔       |
+| 2023          | ✔       |

@@ -4,16 +4,18 @@ title: saveVersion
 sortid: 105
 permalink: 1178-saveVersion
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
+
 ```javascript
 Workflow.saveVersion();
 ```
 
 ### Parameters
 
-**Return value** *Document*
+**Return value** _Document_
 
 The already opened Document object.
 
@@ -34,8 +36,8 @@ Throws an exception in case of an error.
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|-----------|
-| CC 2019       | ✔         |
+| ------------- | --------- |
 | 2020          | ✔         |
 | 2021          | ✔         |
 | 2022          | ✔         |
+| 2023          | ✔         |

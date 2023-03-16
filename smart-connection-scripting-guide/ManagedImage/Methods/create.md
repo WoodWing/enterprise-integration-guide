@@ -4,16 +4,18 @@ title: create
 sortid: 63
 permalink: 1152-create
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
+
 ```javascript
 ManagedImage.create(pageItem);
 ```
 
 ### Parameters
 
-**pageItems** *PageItem*
+**pageItems** _PageItem_
 
 The Page item of which the image will be created.
 
@@ -36,8 +38,8 @@ The `create()` method creates an image from the given page item in the Studio or
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|---------|
-| CC 2019       | ✔       |
-| 2020          | ✔       |
-| 2021          | ✔       |
+| ------------- | --------- |
+| 2020          | ✔         |
+| 2021          | ✔         |
 | 2022          | ✔         |
+| 2023          | ✔         |

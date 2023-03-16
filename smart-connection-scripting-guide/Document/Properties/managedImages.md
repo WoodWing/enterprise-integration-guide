@@ -4,20 +4,22 @@ title: managedImages
 sortid: 18
 permalink: 1096-managedImages
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
+
 ```javascript
 Document.managedImages;
 ```
 
 ### Access
 
-*readonly*
+_readonly_
 
 ### Parameters
 
-**Return value** *ManagedImages*
+**Return value** _ManagedImages_
 
 A ManagedImages object.
 
@@ -30,13 +32,14 @@ The `managedImages` property is used to get all managed images belonging to the 
 **Example title**
 
 ```javascript
+
 ```
 
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|---------|
-| CC 2019       | ✔       |
-| 2020          | ✔       |
-| 2021          | ✔       |
+| ------------- | --------- |
+| 2020          | ✔         |
+| 2021          | ✔         |
 | 2022          | ✔         |
+| 2023          | ✔         |

@@ -4,20 +4,22 @@ title: managedImage
 sortid: 79
 permalink: 1171-managedImage
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
+
 ```javascript
 PageItem.managedImage;
 ```
 
 ### Access
 
-*readonly*
+_readonly_
 
 ### Parameters
 
-**Return value** *ManagedImage*
+**Return value** _ManagedImage_
 
 A ManagedImage object.
 
@@ -31,13 +33,14 @@ Returns nothing if there is no object associated.
 **Example title**
 
 ```javascript
+
 ```
 
 ## Support versions
 
 | Adobe Version | Support |
-|---------------|---------|
-| CC 2019       | ✔       |
+| ------------- | ------- |
 | 2020          | ✔       |
 | 2021          | ✔       |
-| 2022          | ✔         |
+| 2022          | ✔       |
+| 2023          | ✔       |

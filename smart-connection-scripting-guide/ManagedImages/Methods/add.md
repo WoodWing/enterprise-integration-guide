@@ -4,16 +4,18 @@ title: add
 sortid: 6600
 permalink: 1158-add
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
+
 ```javascript
 ManagedImages.add();
 ```
 
 ### Parameters
 
-**Return value** *ManagedImage*
+**Return value** _ManagedImage_
 
 The created, or newly added, MangedImage object.
 
@@ -32,8 +34,8 @@ The `add()` method creates a new ManagedImage scripting object that can serve as
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|---------|
-| CC 2019       | ✔       |
-| 2020          | ✔       |
-| 2021          | ✔       |
+| ------------- | --------- |
+| 2020          | ✔         |
+| 2021          | ✔         |
 | 2022          | ✔         |
+| 2023          | ✔         |

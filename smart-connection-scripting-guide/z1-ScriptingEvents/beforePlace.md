@@ -15,17 +15,17 @@ Before placing an object.
 
 ## Arguments in
 
-|Key |Description|
-|----|-----------|
-|Core_ID |The object ID instigated to be placed.|
-|GUID |The GUID of the component to be placed.|
+| Key     | Description                             |
+| ------- | --------------------------------------- |
+| Core_ID | The object ID instigated to be placed.  |
+| GUID    | The GUID of the component to be placed. |
 
 ## Arguments out
 
-|Key |Description|
-|----|-----------|
-|objectId |The overruling object ID when the incoming object must be overruled. Empty when no change has to be made.|
-|GUID |The overruling GUID when the incoming GUID must be overruled. Empty when no change has to be made.|
+| Key      | Description                                                                                               |
+| -------- | --------------------------------------------------------------------------------------------------------- |
+| objectId | The overruling object ID when the incoming object must be overruled. Empty when no change has to be made. |
+| GUID     | The overruling GUID when the incoming GUID must be overruled. Empty when no change has to be made.        |
 
 ## Notes
 
@@ -42,13 +42,13 @@ var overrulingObjId = "";
 var overrulingGUID = "";
 
 // If the sent object ID is '11801 indicate that object with ID '9668' should be placed.
-if(objId === "11801") {
-    overrulingObjId = "9668"
+if (objId === "11801") {
+  overrulingObjId = "9668";
 }
 
 // Correct GUID if necessary.
-if(compGUID === "9460ad9f-7e87-4dea-9a25-491a0d43e297") {
-    overrulingGUID = "6f717dfc-6c71-4072-a219-519ac94e2c0a";
+if (compGUID === "9460ad9f-7e87-4dea-9a25-491a0d43e297") {
+  overrulingGUID = "6f717dfc-6c71-4072-a219-519ac94e2c0a";
 }
 
 // The script argument key 'objectId' is mandatory and case sensative when sending back an object ID.
@@ -59,12 +59,12 @@ app.scriptArgs.set("GUID", overrulingGUID);
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|-----------|
-| CC 2019       | ✔         |
+| ------------- | --------- |
 | 2020          | ✔         |
 | 2021          | ✔         |
 | 2022          | ✔         |
+| 2023          | ✔         |
 
 ## See also
 
-* [Scripting Events](./index.md)
+- [Scripting Events](./index.md)

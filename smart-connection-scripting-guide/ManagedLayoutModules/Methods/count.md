@@ -4,16 +4,18 @@ title: count
 sortid: 70
 permalink: 1166-count
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
+
 ```javascript
 ManagedLayoutModules.count();
 ```
 
 ### Parameters
 
-**Return value** *number*
+**Return value** _number_
 
 The number of ManagedLayoutModules objects in the collection.
 
@@ -32,8 +34,8 @@ The `count()` method returns the number of ManagedLayoutModule objects within th
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|---------|
-| CC 2019       | ✔       |
-| 2020          | ✔       |
-| 2021          | ✔       |
+| ------------- | --------- |
+| 2020          | ✔         |
+| 2021          | ✔         |
 | 2022          | ✔         |
+| 2023          | ✔         |

@@ -4,20 +4,22 @@ title: allIndesignArticleIds
 sortid: 74
 permalink: 1235-allIndesignArticleIds
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
+
 ```javascript
 PageItem.allIndesignArticleIds;
 ```
 
 ### Access
 
-*readonly*
+_readonly_
 
 ### Parameters
 
-**Return value** *Array of String*
+**Return value** _Array of String_
 
 The IDs of all InDesign Articles to which the page item
 belongs.
@@ -34,13 +36,14 @@ from the PageItem.allArticles call.
 **Example title**
 
 ```javascript
+
 ```
 
 ## Support versions
 
 | Adobe Version | Support |
-|---------------|---------|
-| CC 2019       | ✔       |
+| ------------- | ------- |
 | 2020          | ✔       |
 | 2021          | ✔       |
-| 2022          | ✔         |
+| 2022          | ✔       |
+| 2023          | ✔       |

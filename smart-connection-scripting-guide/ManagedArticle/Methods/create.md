@@ -4,20 +4,22 @@ title: create
 sortid: 53
 permalink: 1137-create
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
+
 ```javascript
 ManagedArticle.create(pageItems [, stationary]);
 ```
 
 ### Parameters
 
-**pageItems** *PageItem[]*
+**pageItems** _PageItem[]_
 
 The Page items that will form the Article.
 
-**stationary** *boolean (Optional)*
+**stationary** _boolean (Optional)_
 
 If set to `true`, an Article Template will be created instead of an Article. Default is `false`.
 
@@ -40,8 +42,8 @@ The `create()` method creates a placed Article from the given page items. Depend
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|---------|
-| CC 2019       | ✔       |
-| 2020          | ✔       |
-| 2021          | ✔       |
+| ------------- | --------- |
+| 2020          | ✔         |
+| 2021          | ✔         |
 | 2022          | ✔         |
+| 2023          | ✔         |

@@ -4,20 +4,22 @@ title: enableSmartCaching
 sortid: 68
 permalink: 1162-enableSmartCaching
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %})
+
 ```javascript
 StudioPreference.enableSmartCaching;
 ```
 
 ### Access
 
-*read/write*
+_read/write_
 
 ### Parameters
 
-**Return value** *boolean*
+**Return value** _boolean_
 
 ## Description
 
@@ -36,8 +38,8 @@ app.studioPreferences.enableSmartCaching = true;
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|-----------|
-| CC 2019       |           |
+| ------------- | --------- |
 | 2020          | v15.2+ ✔  |
 | 2021          | ✔         |
 | 2022          | ✔         |
+| 2023          | ✔         |

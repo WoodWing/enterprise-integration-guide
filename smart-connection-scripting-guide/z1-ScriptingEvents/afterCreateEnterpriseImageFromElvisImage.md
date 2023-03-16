@@ -15,10 +15,10 @@ After a Studio or Enterprise Server Image was created from an Elvis Image (and a
 
 ## Arguments in
 
-|Key |Description|
-|----|-----------|
-|Core_ID |The object id of the created image. |
-|pageItem |The id of the frame that contains the image|
+| Key      | Description                                 |
+| -------- | ------------------------------------------- |
+| Core_ID  | The object id of the created image.         |
+| pageItem | The id of the frame that contains the image |
 
 ## Arguments out
 
@@ -29,12 +29,12 @@ n/a
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|-----------|
-| CC 2019       | ✔         |
+| ------------- | --------- |
 | 2020          | ✔         |
 | 2021          | ✔         |
 | 2022          | ✔         |
+| 2023          | ✔         |
 
 ## See also
 
-* [Scripting Events](./index.md)
+- [Scripting Events](./index.md)

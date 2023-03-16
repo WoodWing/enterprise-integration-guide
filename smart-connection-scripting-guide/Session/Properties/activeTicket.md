@@ -4,20 +4,22 @@ title: activeTicket
 sortid: 96
 permalink: 1071-activeTicket
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
+
 ```javascript
 Session.activeTicket;
 ```
 
 ### Access
 
-*readonly*
+_readonly_
 
 ### Parameters
 
-**Return value** *string*
+**Return value** _string_
 
 The ticket of the current session.
 
@@ -42,12 +44,12 @@ var logonTicket = sessionObject.activeTicket;
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|---------|
-| CC 2019       | ✔       |
-| 2020          | ✔       |
-| 2021          | ✔       |
+| ------------- | --------- |
+| 2020          | ✔         |
+| 2021          | ✔         |
 | 2022          | ✔         |
+| 2023          | ✔         |
 
 ## See also
 
-* [entSession](../../Application/Properties/entSession.md)
+- [entSession](../../Application/Properties/entSession.md)

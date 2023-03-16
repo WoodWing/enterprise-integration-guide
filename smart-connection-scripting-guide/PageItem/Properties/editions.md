@@ -4,20 +4,22 @@ title: editions
 sortid: 75
 permalink: 1236-editions
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
+
 ```javascript
 PageItem.editions;
 ```
 
 ### Access
 
-*read/write*
+_read/write_
 
 ### Parameters
 
-**Return value** *Array of string*
+**Return value** _Array of string_
 
 A string of Edition names.
 
@@ -32,13 +34,14 @@ assigned.
 **Example title**
 
 ```javascript
+
 ```
 
 ## Support versions
 
 | Adobe Version | Support |
-|---------------|---------|
-| CC 2019       | ✔       |
+| ------------- | ------- |
 | 2020          | ✔       |
 | 2021          | ✔       |
-| 2022          | ✔         |
+| 2022          | ✔       |
+| 2023          | ✔       |

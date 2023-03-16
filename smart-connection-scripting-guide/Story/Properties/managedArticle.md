@@ -4,20 +4,22 @@ title: managedArticle
 sortid: 99
 permalink: 1170-managedArticle
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
+
 ```javascript
 Story.managedArticle;
 ```
 
 ### Access
 
-*readonly*
+_readonly_
 
 ### Parameters
 
-**Return value** *ManagedArticle*
+**Return value** _ManagedArticle_
 
 The managed article scripting object.
 
@@ -28,16 +30,15 @@ For more info about the Managed Article object please see the [ManagedArticle](.
 
 ## Examples
 
-
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|-----------|
-| CC 2019       | ✔         |
+| ------------- | --------- |
 | 2020          | ✔         |
 | 2021          | ✔         |
 | 2022          | ✔         |
+| 2023          | ✔         |
 
 ## See also
 
-* [ManagedArticle](../../ManagedArticle/index.md)
+- [ManagedArticle](../../ManagedArticle/index.md)

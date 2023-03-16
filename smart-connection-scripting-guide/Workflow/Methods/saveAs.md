@@ -4,16 +4,18 @@ title: saveAs
 sortid: 104
 permalink: 1239-saveAs
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
+
 ```javascript
 Workflow.saveAs();
 ```
 
 ### Parameters
 
-**Return value** *Document*
+**Return value** _Document_
 
 The newly created Document object.
 
@@ -34,8 +36,8 @@ Use the “Type” key in the EntMetaData to indicate what kind of object should
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|-----------|
-| CC 2019       | ✔         |
+| ------------- | --------- |
 | 2020          | ✔         |
 | 2021          | ✔         |
 | 2022          | ✔         |
+| 2023          | ✔         |

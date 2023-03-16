@@ -4,20 +4,22 @@ title: dossierPanelShowRelatedDossiers
 sortid: 68
 permalink: 1162-dossierPanelShowRelatedDossiers
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
+
 ```javascript
 StudioPreference.dossierPanelShowRelatedDossiers;
 ```
 
 ### Access
 
-*read/write*
+_read/write_
 
 ### Parameters
 
-**Return value** *boolean*
+**Return value** _boolean_
 
 ## Description
 
@@ -36,8 +38,8 @@ app.studioPreferences.dossierPanelShowRelatedDossiers = false;
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|-----------|
-| CC 2019       |           |
+| ------------- | --------- |
 | 2020          |           |
-| 2021          | 16.3.3+ ✔         |
-| 2022          | 17.0.1+ ✔         |
+| 2021          | 16.3.3+ ✔ |
+| 2022          | 17.0.1+ ✔ |
+| 2023          | ✔         |

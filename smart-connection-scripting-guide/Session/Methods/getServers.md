@@ -4,16 +4,18 @@ title: getServers
 sortid: 88
 permalink: 1213-getServers
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
+
 ```javascript
 Session.getServers();
 ```
 
 ### Parameters
 
-**Return value** *Array of Array of string*
+**Return value** _Array of Array of string_
 
 The returned array contains arrays of two strings: the display name and the URL of the server.
 
@@ -32,8 +34,8 @@ The `getServers()` method returns a list of servers from the WWSettings.xml file
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|---------|
-| CC 2019       | ✔       |
-| 2020          | ✔       |
-| 2021          | ✔       |
+| ------------- | --------- |
+| 2020          | ✔         |
+| 2021          | ✔         |
 | 2022          | ✔         |
+| 2023          | ✔         |

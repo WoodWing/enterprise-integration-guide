@@ -4,20 +4,22 @@ title: components
 sortid: 59
 permalink: 1144-components
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
+
 ```javascript
 ManagedArticle.components;
 ```
 
 ### Access
 
-*readonly*
+_readonly_
 
 ### Parameters
 
-**Return value** *PageItem[], Story*
+**Return value** _PageItem[], Story_
 
 An array of PageItem objects or a Story.
 
@@ -30,13 +32,14 @@ The `components` property is used to get access to the InDesign page items and s
 **Example title**
 
 ```javascript
+
 ```
 
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|---------|
-| CC 2019       | ✔       |
-| 2020          | ✔       |
-| 2021          | ✔       |
+| ------------- | --------- |
+| 2020          | ✔         |
+| 2021          | ✔         |
 | 2022          | ✔         |
+| 2023          | ✔         |

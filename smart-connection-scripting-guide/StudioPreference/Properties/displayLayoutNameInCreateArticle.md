@@ -4,20 +4,22 @@ title: displayLayoutNameInCreateArticle
 sortid: 68
 permalink: 1162-displayLayoutNameInCreateArticle
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
+
 ```javascript
 StudioPreference.displayLayoutNameInCreateArticle;
 ```
 
 ### Access
 
-*read/write*
+_read/write_
 
 ### Parameters
 
-**Return value** *boolean*
+**Return value** _boolean_
 
 ## Description
 
@@ -36,8 +38,8 @@ app.studioPreferences.displayLayoutNameInCreateArticle = true;
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|-----------|
-| CC 2019       |           |
+| ------------- | --------- |
 | 2020          | v15.2+ ✔  |
 | 2021          | ✔         |
 | 2022          | ✔         |
+| 2023          | ✔         |

@@ -4,20 +4,22 @@ title: activeEdition
 sortid: 12
 permalink: 1089-activeEdition
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
+
 ```javascript
 Document.activeEdition;
 ```
 
 ### Access
 
-*read/write*
+_read/write_
 
 ### Parameters
 
-**Return value** *string*
+**Return value** _string_
 
 The active Edition.
 
@@ -31,13 +33,14 @@ The metadata of the Document contains all possible Editions that can be set.
 **Example title**
 
 ```javascript
+
 ```
 
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|---------|
-| CC 2019       | ✔       |
-| 2020          | ✔       |
-| 2021          | ✔       |
-| 2022          | ✔       |
+| ------------- | --------- |
+| 2020          | ✔         |
+| 2021          | ✔         |
+| 2022          | ✔         |
+| 2023          | ✔         |

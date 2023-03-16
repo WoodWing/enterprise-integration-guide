@@ -4,16 +4,18 @@ title: detachFrame
 sortid: 56
 permalink: 1140-detachFrame
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
+
 ```javascript
 ManagedArticle.detachFrame(pageItem);
 ```
 
 ### Parameters
 
-**pageItems** *PageItem[]*
+**pageItems** _PageItem[]_
 
 The page items that will be detached from the article. If the passed page item is the last placed component of the Article the Error Code "The object cannot be detached." will be returned.
 
@@ -36,8 +38,8 @@ The `detachFrame()` method detaches frames from a multi-component Article. The l
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|---------|
-| CC 2019       | ✔       |
-| 2020          | ✔       |
-| 2021          | ✔       |
+| ------------- | --------- |
+| 2020          | ✔         |
+| 2021          | ✔         |
 | 2022          | ✔         |
+| 2023          | ✔         |

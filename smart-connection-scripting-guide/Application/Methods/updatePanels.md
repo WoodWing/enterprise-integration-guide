@@ -4,9 +4,11 @@ title: updatePanels
 sortid: 15
 permalink: 1247-updatePanels
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %})
+
 ```javascript
 app.updatePanels();
 ```
@@ -32,8 +34,8 @@ The `updatePanels()` method refreshes the contents of all Studio or Smart Connec
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|---------|
-| CC 2019       | ✔       |
-| 2020          | ✔       |
-| 2021          | ✔       |
-| 2022          | ✔       |
+| ------------- | --------- |
+| 2020          | ✔         |
+| 2021          | ✔         |
+| 2022          | ✔         |
+| 2023          | ✔         |

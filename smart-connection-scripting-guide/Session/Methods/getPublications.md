@@ -4,16 +4,18 @@ title: getPublications
 sortid: 87
 permalink: 1212-getPublications
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
+
 ```javascript
 Session.getPublications();
 ```
 
 ### Parameters
 
-**Return value** *Array of [Publication](../../EntPublication/index.md)*
+**Return value** _Array of [Publication](../../EntPublication/index.md)_
 
 The returned array contains a list of all Brands of the current server.
 
@@ -32,8 +34,8 @@ The `getPublications()` method returns a list of all Brands of the current serve
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|---------|
-| CC 2019       | ✔       |
-| 2020          | ✔       |
-| 2021          | ✔       |
+| ------------- | --------- |
+| 2020          | ✔         |
+| 2021          | ✔         |
 | 2022          | ✔         |
+| 2023          | ✔         |

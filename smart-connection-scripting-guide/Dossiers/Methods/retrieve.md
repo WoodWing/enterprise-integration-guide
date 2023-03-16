@@ -4,20 +4,22 @@ title: retrieve
 sortid: 30
 permalink: 1113-retrieve
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
+
 ```javascript
 Dossiers.retrieve(objectId);
 ```
 
 ### Parameters
 
-**objectId** *string*
+**objectId** _string_
 
 The object ID of the Dossier to retrieve from the Studio or Enterprise Server system.
 
-**Return value** *Dossier*
+**Return value** _Dossier_
 
 The requested Dossier object.
 
@@ -36,8 +38,8 @@ The `retrieve()` method retrieves a Dossier from the Studio or Enterprise Server
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|---------|
-| CC 2019       | ✔       |
-| 2020          | ✔       |
-| 2021          | ✔       |
+| ------------- | --------- |
+| 2020          | ✔         |
+| 2021          | ✔         |
 | 2022          | ✔         |
+| 2023          | ✔         |

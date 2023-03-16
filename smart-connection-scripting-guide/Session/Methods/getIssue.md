@@ -4,24 +4,26 @@ title: getIssue
 sortid: 84
 permalink: 1209-getIssue
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
+
 ```javascript
 Session.getIssue(issueName, brandName);
 ```
 
 ### Parameters
 
-**issue** *string*
+**issue** _string_
 
 The name of the Issue.
 
-**publication** *string*
+**publication** _string_
 
 The name of the Brand.
 
-**Return value** *[Issue](../../EntIssue/index.md)*
+**Return value** _[Issue](../../EntIssue/index.md)_
 
 Returns the Issue with the provided name from the provided Brand. Throws an exception if the Issue does not exist.
 
@@ -40,8 +42,8 @@ The `getIssue()` method returns the Issue with the provided name from the provid
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|---------|
-| CC 2019       | ✔       |
-| 2020          | ✔       |
-| 2021          | ✔       |
+| ------------- | --------- |
+| 2020          | ✔         |
+| 2021          | ✔         |
 | 2022          | ✔         |
+| 2023          | ✔         |

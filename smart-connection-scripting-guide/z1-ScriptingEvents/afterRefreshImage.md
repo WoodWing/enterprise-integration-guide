@@ -15,9 +15,9 @@ When opening a layout after a highres advert is placed or modified using the pla
 
 ## Arguments in
 
-|Key |Description|
-|----|-----------|
-|Core_ID |The object id of the advert that was created or modified.|
+| Key     | Description                                               |
+| ------- | --------------------------------------------------------- |
+| Core_ID | The object id of the advert that was created or modified. |
 
 ## Arguments out
 
@@ -28,12 +28,12 @@ n/a
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|-----------|
-| CC 2019       | ✔         |
+| ------------- | --------- |
 | 2020          | ✔         |
 | 2021          | ✔         |
 | 2022          | ✔         |
+| 2023          | ✔         |
 
 ## See also
 
-* [Scripting Events](./index.md)
+- [Scripting Events](./index.md)

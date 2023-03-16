@@ -16,10 +16,10 @@ for scripter to use before detaching the article component.
 
 ## Arguments in
 
-|Key |Description|
-|----|-----------|
-|Core_ID |The object ID of the article that will be detached.|
-|templateGeoFilePath |The template file path.|
+| Key                 | Description                                         |
+| ------------------- | --------------------------------------------------- |
+| Core_ID             | The object ID of the article that will be detached. |
+| templateGeoFilePath | The template file path.                             |
 
 ## Arguments out
 
@@ -32,12 +32,12 @@ A template with all placed components of the article will be generated in the fi
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|-----------|
-| CC 2019       | ✔         |
+| ------------- | --------- |
 | 2020          | ✔         |
 | 2021          | ✔         |
 | 2022          | ✔         |
+| 2023          | ✔         |
 
 ## See also
 
-* [Scripting Events](./index.md)
+- [Scripting Events](./index.md)

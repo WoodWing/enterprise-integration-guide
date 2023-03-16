@@ -4,24 +4,26 @@ title: getCategories
 sortid: 82
 permalink: 1207-getCategories
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
+
 ```javascript
-Session.getCategories(brandName,issueName);
+Session.getCategories(brandName, issueName);
 ```
 
 ### Parameters
 
-**publication** *string*
+**publication** _string_
 
 The name of the Brand.
 
-**issue** *string (Optional)*
+**issue** _string (Optional)_
 
 The name of the overruled Issue.
 
-**Return value** *Array of [EntSection](../../EntSection/index.md)*
+**Return value** _Array of [EntSection](../../EntSection/index.md)_
 
 Returns a list of all Categories of the provided Brand and Issue.
 
@@ -40,8 +42,8 @@ The `getCategories()` method returns a list of all Categories of the provided Br
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|---------|
-| CC 2019       | ✔       |
-| 2020          | ✔       |
-| 2021          | ✔       |
+| ------------- | --------- |
+| 2020          | ✔         |
+| 2021          | ✔         |
 | 2022          | ✔         |
+| 2023          | ✔         |

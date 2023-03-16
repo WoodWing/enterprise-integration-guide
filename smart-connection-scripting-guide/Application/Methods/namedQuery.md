@@ -4,28 +4,30 @@ title: namedQuery
 sortid: 5
 permalink: 1080-namedQuery
 ---
+
 ## Syntax
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
+
 ```javascript
 app.namedQuery(queryName [, filename] [, fileType]);
 ```
 
 ### Parameters
 
-**queryName** *string*
+**queryName** _string_
 
 The name of the query
 
-**fileName** *string (Optional)*
+**fileName** _string (Optional)_
 
 The name of the object or file.
 
-**fileType** *string (Optional)*
+**fileType** _string (Optional)_
 
 The type of th object or file.
 
-**Return value** *string*
+**Return value** _string_
 
 A string representing the Browse query result.
 The result is comma separated.
@@ -45,8 +47,8 @@ The `namedQuery()` method performs a named query. It can be used for the Inbox, 
 ## Supported versions
 
 | Adobe Version | Supported |
-|---------------|-----------|
-| CC 2019       | ✔         |
+| ------------- | --------- |
 | 2020          | ✔         |
 | 2021          | ✔         |
 | 2022          | ✔         |
+| 2023          | ✔         |
