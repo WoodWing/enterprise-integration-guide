@@ -293,7 +293,7 @@ An example of a SOAP client application calling the admin interface (over HTTP),
 and retrieve its database id:
 
 ```php
-require_once( dirname(__FILE__).'/../../config/config.php' );
+require_once __DIR__.'/../../config/config.php';
 try {
 	$ticket = '...'; // TODO: Fill-in your ticket here! (take it from LogOn)
 	
@@ -377,7 +377,7 @@ the server to use the Transfer Server (instead of DIME). As a result, the GetObj
 Transfer Server to download the file. The WW\_Utils\_TransferClient utils class is used to download that native file.
 
 ```php
-require_once( dirname(__FILE__).'/../../config/config.php' );
+require_once __DIR__.'/../../config/config.php';
 require_once BASEDIR.'/server/secure.php';
 try {
 	$ticket   = '...'; // TODO: Fill-in your ticket here! (take it from LogOn)
