@@ -168,34 +168,63 @@ justifications).
 
 ## Search by date
 
-In a QueryObjects request, parameters can be added by specifying a Property, Operator and a Value. For any of the date 
-object properties such as Created, Modified and Deleted, the operators ‘starts’ and ‘within’ can be used. A specification 
-of the Value format can be found on w3.org: *XML Schema Part 2: Datatypes Second Edition*. This format is partially 
-implemented by Enterprise Server as explained in the following paragraphs.
+Search for workflow objects that have a datetime property set between 'now' and a relative datetime.
+The client application can request the server to search within this timespan.
+
+In a `QueryObjects` request, one or more `QueryParam` filters can be provided, each specifying the following attributes:
+* `Property`: Name of any workflow object datetime property, such as `Created`, `Modified` or `Deleted`.
+* `Operator`: Type of timespan, either `starts` or `within`. These options are explained in the paragraphs below.
+* `Value`: Duration specifier relative to 'now'. The meaning and interpretation depends on the provided `Operator`. 
+  * The syntax is inspired on http://www.w3.org/TR/2004/REC-xmlschema-2-20041028/datatypes.html#duration.
+  * The syntax is partially respected; Not all options are supported. The supported options are written below.
+  * The `starts` operation respects similar notation but gives it a different meaning than specified in the referred document. 
 
 **The ‘starts’ operator**
 
-Enterprise validates the following syntax for the Value attribute:
+This operator defines a search within the current, preceding or succeeding logical period of time, relative to 'now'.  
 
-`[-]? [P] [017] [D]`
+The server supports the following values for the `Value` attribute:
 
-With the following meaning:
+| value                  | meaning       | 
+|------------------------|---------------|
+| `-P1D` <sup>①</sup>    | yesterday     | 
+| `P0D`  <sup>①</sup>    | today         |
+| `P1D` <sup>①</sup>     | tomorrow      |
+| ~~`-P7D`~~<sup>②</sup> | ~~last week~~ |
+| `-P1W`<sup>②</sup>     | last week     |
+| `P0W`<sup>②</sup>      | this week     |
+| ~~`P7D`~~<sup>②</sup>  | ~~next week~~ |
+| `P1W`<sup>②</sup>      |  next week    |
 
-* `[-]?` The - (minus) is optional. If it is present, it requests to search backward in time, else forward in time. 
-Note that for the currently supported date properties, looking forward is rather exceptional and therefore not described here.
-* `[P]` The P is mandatory and denotes a duration field.
-* `[017]` The number of days (mandatory), which can be 0, 1 or 7. The handling of the number of days is as follows:
-  * `0` Everything where the date matches today (from 00:00:00 up to 23:59:59).
-  * `1` Everything where the date matches yesterday (from 00:00:00 till 23:59:59, so excluding today). This requires the leading minus.
-  * `7` Looks at the last full week, starting from the first day of last week up to the last day of last week (so excluding 
-  this week). This requires the leading minus.
-* `[D]` The D is mandatory and indicates that the duration is in Days.
+① Notes about the day unit:
+* The day unit (`D`) is specified in the W3C standard (mentioned in the introduction above), but has a _different_ meaning here.
+* A day starts from the first second of the day up to the last second of the day.
+* Searching for 'yesterday' or 'tomorrow' includes the seconds of that day, but excludes the seconds of 'today'.
+* Today includes the seconds of the current day, starting from 00:00:00 until 23:59:59.
 
-
-Valid examples:
-
-* `-P7D` (= last full week, excluding this week)
-* `P0D` (= today)
+② Notes about the week unit:
+* The week unit (`W`) is _not_ specified in the W3C standard (mentioned in the introduction above).
+* Searching for 'last week' or 'next week' includes the days of that week, but excludes the days of 'this week'. 
+* A week starts from first day of the week up to the last day of the week. 
+* The `FIRST_DAY_OF_WEEK` option in the `configserver.php` tells when a week starts.
+* Since Studio Server 10.28 support for "this week" has been added. It returns the `ThisWeek` feature in the `LogOnResponse` to tell this feature is supported. See bullets below. 
+* If the `ThisWeek` feature is returned, client applications:
+  * can use the `P0W` value; 
+  * should start using the `-P1W` and `P1W` values;
+  * should no longer use the `-P7D` and `P7D` values.
+* This is how the server returns the `ThisWeek` feature to the client application during the `LogOn` operation: 
+  ```xml
+  <LogOnResponse>
+    ...
+    <FeatureSet>
+        <Feature>
+            <Key>ThisWeek</Key>
+            <Value xsi:nil="true"/>
+        </Feature>
+    </FeatureSet>
+    ...
+  </LogOnResponse>
+  ```
 
 Example request for objects that were modified yesterday:
 
@@ -214,28 +243,35 @@ Example request for objects that were modified yesterday:
 
 **The ‘within’ operator**
 
-Enterprise validates the following syntax for the Value attribute:
+This operator defines a search within a timespan defined by 'now' and the provided `Value`. This can be either looking
+into the past or the future. Looking to the past is a common case, applicable to `Created` and `Modified` properties.
+Looking into the future is a rare case; It could be applicable for custom object properties e.g. related to planning.
+(Note that those custom properties must be of type `date` or `datetime`.)
+
+The server validates the following syntax for the `Value` attribute:
 
 `[-]? [P] [T]? [0-9]+ [DMH]`
 
-With the following meaning:
+The syntax has the following meaning:
 
-* `[-]`? The - (minus) is optional. If it is present it requests to look an x number of duration units before now. If it 
-is absent it requests to look for a number of duration units from now.
-* `[P]` The P is mandatory and denotes a duration field.
-* `[T]?` The T is optional. If specified, the duration is a Time, else a Date.
-* `[0-9]+` The number of duration units (mandatory) represented by one or more digits.
-* `[DMH]` The duration unit, which must be one of these characters: D, M or H.
-* The meaning depends if T is specified:
-  * When T is not specified: D = days, M = months. (H is not valid.)
-  * When T is specified: H = hours, M = minutes. (D is not valid.)
-
-Note: Unlike the ‘starts’ operation, there is no special handling for the number: if you request 7 days in the past it 
-will look from 7 days in the past, and not the full week before.
+* `[-]?` The `-` (minus) is optional. 
+  * If provided, it requests to look into the past; A duration before 'now'. 
+  * If omitted, it requests to look into the future; A duration starting from 'now'.
+* `[P]` The `P` is mandatory and denotes a duration field.
+* `[T]?` The time indicator `T` is optional. 
+  * When `T` is provided, the duration represents a relative _time_.
+  * When `T` is omitted, the duration represents a relative _date_.
+* `[0-9]+` The number of duration units. One or more digits is allowed.
+* `[DMH]` The duration unit, which must be _one_ of these options: `D`, `M` or `H`.
+  * The meaning depends on whether `T` is specified:
+    * When `T` is provided: `H` = hours, `M` = minutes. (`D` is not valid.)
+    * When `T` is omitted: `D` = days, `M` = months. (`H` is not valid.)
 
 Valid examples:
 * `-PT30M` (= last 30 minutes)
+* `PT4H` (= next 4 hours)
 * `-P1M` (= last month)
+* `P2D` (= next 48 hours)
 
 Example request for objects that were created within the last half year:
 
