@@ -150,12 +150,12 @@ the *SetObjectProperties* service for each object.
 **Important notes for Server Plug-ins**:
 
 * Instead of “Set Properties”, users can use the “Send To” or the “Send To Next” actions as well. Doing so, client 
-applications fire the *SendTo* workflow request to the server. Internally, the server redirects this service to the 
-*SetObjectProperties* service as soon as it arrives, even before any Server Plug-in connector is called. The *SendTo* 
-service is actually a simplified version of the *SetObjectProperties* service. During redirection, the server enriches 
-some object information such as the object targets. This is all done to simplify property interception using custom 
-Server Plugins. In other terms, the *WflSendTo* service connector is never(!) called and *WflSetObjectProperties* is 
-called instead.
+applications fire the *SendTo* or *SendToNext* workflow request to the server. Internally, the server redirects this 
+service to the *SetObjectProperties* service (for *SendTo*) or *MultiSetObjectProperties* service (for *SendToNext*) as 
+soon as it arrives, even before any Server Plug-in connector is called. The *SendTo* service is actually a simplified 
+version of the *SetObjectProperties* service. This is done to simplify property interception using custom Server Plugins. 
+In other terms, the *WflSendTo* or *WflSendToNext* service connector is never(!) called and *WflSetObjectProperties* or 
+*WflMultiSetObjectProperties* is called instead.
 
 * \[Since 9.2\] When implementing the *WlfSetObjectProperties* connector it is mandatory to also implement the 
 *WflMultiSetObjectProperties* connector for the plug-in, and vice versa. Failure to do so will result in validation 
