@@ -71,8 +71,6 @@ function afterReceivingGeometry() {
 }
 
 var articleNames = getArticleNames( layoutId );
-    // for versions 17.0.6, 18.0.3 and later:
-	if( geometryUpdateState == "HighPriority") {
 
 function doUpdateGeometry() {
 	app.scriptPreferences.userInteractionLevel = UserInteractionLevels.INTERACT_WITH_ALL;
