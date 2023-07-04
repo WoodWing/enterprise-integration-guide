@@ -18,10 +18,17 @@ After receiving a Geometry Update notification from Studio Server in InCopy
 | Key     | Description                                   |
 | ------- | --------------------------------------------- |
 | Core_ID | The object id of the layout that was updated. |
+| geometryUpdateState<sup>①</sup> | The impact of the geometry update for the article in InCopy. |
 
 ## Arguments out
 
 n/a
+
+① Notes about the argument _geometryUpdateState_:
+* _geometryUpdateState_ is available since versions 17.0.6 and 18.0.3.
+* For the argument _geometryUpdateState_ possible values are:
+**HighPriority** _the position and/or size of the article being edited is touched_
+**LowPriority** _the geometry of the article is not touched. The layout has been changed.__
 
 ## Examples
 
@@ -33,6 +40,9 @@ n/a
 var myIdleTask = app.idleTasks.add({name:"one_off_idle_task", sleep:1});
 
 var layoutId = app.scriptArgs.get( 'Core_ID' );
+var geometryUpdateState = "HighPriority";
+// for versions 17.0.6, 18.0.3 and later:
+geometryUpdateState = app.scriptArgs.get( 'geometryUpdateState' );
 
 var onIdleEventListener = myIdleTask.addEventListener(IdleEvent.ON_IDLE,
 	function() {
@@ -58,17 +68,25 @@ function afterReceivingGeometry() {
 	}
 }
 
+var articleNames = getArticleNames( layoutId );
+    // for versions 17.0.6, 18.0.3 and later:
+	if( geometryUpdateState == "HighPriority") {
+
 function doUpdateGeometry() {
 	app.scriptPreferences.userInteractionLevel = UserInteractionLevels.INTERACT_WITH_ALL;
 	var articleNames = getArticleNames( layoutId );
 	if ( articleNames.length > 0 ) {
-		var result = confirm("New layout information is available for article [ " + articleNames + " ]. " + "Do you want to update now?", false);
-		if( result == true ) {
-			try {
-				app.updateGeometry(layoutId);
-			}
-			catch (e) {
-				alert("Cannot update geometry from the script, the updateGeometry action have wrong layout id value. Please fix the script and try again.");
+	    // for versions 17.0.6, 18.0.3 and later:
+		if( geometryUpdateState == "HighPriority") {
+	
+			var result = confirm("New layout information is available for article [ " + articleNames + " ]. " + "Do you want to update now?", false);
+			if( result == true ) {
+				try {
+					app.updateGeometry(layoutId);
+				}
+				catch (e) {
+					alert("Cannot update geometry from the script, the updateGeometry action have wrong layout id value. Please fix the script and try again.");
+				}
 			}
 		}
 	}
