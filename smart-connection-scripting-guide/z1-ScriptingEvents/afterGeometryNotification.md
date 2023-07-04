@@ -20,17 +20,15 @@ After receiving a Geometry Update notification from Studio Server in InCopy
 | Core_ID | The object id of the layout that was updated. |
 | geometryUpdateState<sup>①</sup> | The impact of the geometry update for the article in InCopy. |
 
-## Arguments out
-
-n/a
-
 ① Notes about the argument _geometryUpdateState_:
 * _geometryUpdateState_ is available since versions 17.0.6 and 18.0.3.
 * For the argument _geometryUpdateState_ possible values are:
+  * **HighPriority** _the position and/or size of the article being edited is touched_
+  * **LowPriority** _the geometry of the article is not touched. The layout has been changed._
 
-**HighPriority** _the position and/or size of the article being edited is touched_
+## Arguments out
 
-**LowPriority** _the geometry of the article is not touched. The layout has been changed._
+n/a
 
 ## Examples
 
