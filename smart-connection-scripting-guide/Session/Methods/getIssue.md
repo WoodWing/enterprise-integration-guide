@@ -15,11 +15,11 @@ Session.getIssue(issueName, brandName);
 
 ### Parameters
 
-**publication** _string_
+**brandName** _string_
 
 The name of the Brand.
 
-**issue** _string_
+**issueName** _string_
 
 The name of the Issue.
 

@@ -15,7 +15,7 @@ Session.getIssues(brandName);
 
 ### Parameters
 
-**publication** _string_
+**brandName** _string_
 
 The name of the Brand.
 
