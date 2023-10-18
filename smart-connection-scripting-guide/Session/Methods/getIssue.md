@@ -15,13 +15,13 @@ Session.getIssue(issueName, brandName);
 
 ### Parameters
 
-**issue** _string_
-
-The name of the Issue.
-
 **publication** _string_
 
 The name of the Brand.
+
+**issue** _string_
+
+The name of the Issue.
 
 **Return value** _[Issue](../../EntIssue/index.md)_
 
