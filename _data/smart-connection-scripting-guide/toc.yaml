@@ -107,7 +107,7 @@ toc:
           layout: chapter
           path: smart-connection-scripting-guide/Application/Properties/woodwingLogging.md
           url: smart-connection-scripting-guide/Application/Properties/woodwingLogging.html
-          permalink: 1087-woodwingLogging
+          permalink: 1088-woodwingLogging
         - title: studioPreferences
           layout: chapter
           path: smart-connection-scripting-guide/Application/Properties/studioPreferences.md

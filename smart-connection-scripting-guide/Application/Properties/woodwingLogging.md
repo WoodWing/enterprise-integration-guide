@@ -2,7 +2,7 @@
 layout: chapter
 title: woodwingLogging
 sortid: 11
-permalink: 1087-woodwingLogging
+permalink: 1088-woodwingLogging
 ---
 
 ## Syntax
