@@ -10,6 +10,7 @@ The object representing the InDesign or InCopy application.
 
 * [entSession](Properties/entSession.md)
 * [studioPreferences](Properties/studioPreferences.md)
+* [woodwingLogging](./woodwingLogging.md)
 
 ### Methods
 

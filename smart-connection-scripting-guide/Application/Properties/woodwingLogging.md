@@ -15,7 +15,7 @@ app.woodwingLogging;
 
 ### Access
 
-_readonly_
+_read/write_
 
 ### Parameters
 
@@ -29,7 +29,7 @@ The `woodwingLogging` property turns off and on WoodWing logging.
 
 ## Examples
     
-**Turn off WoodWing logging**
+**Turn on WoodWing logging**
 
 ```javascript
     app.woodwingLogging = true;
