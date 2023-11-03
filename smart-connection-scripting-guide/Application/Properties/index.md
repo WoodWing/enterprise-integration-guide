@@ -7,3 +7,4 @@ Properties on the Application object.
 
 * [entSession](./entSession.md)
 * [studioPreferences](./studioPreferences.md)
+* [woodwingLogging](./woodwingLogging.md)
