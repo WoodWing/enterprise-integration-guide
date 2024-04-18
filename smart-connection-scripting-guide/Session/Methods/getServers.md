@@ -35,7 +35,7 @@ The `getServers()` method returns a list of servers from the WWSettings.xml file
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2020          | ✔         |
 | 2021          | ✔         |
 | 2022          | ✔         |
 | 2023          | ✔         |
+| 2024          | ✔         |

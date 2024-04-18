@@ -35,7 +35,7 @@ The `unplacedComponents()` method returns a list of GUIDs of the components that
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2020          | ✔         |
 | 2021          | ✔         |
 | 2022          | ✔         |
 | 2023          | ✔         |
+| 2024          | ✔         |

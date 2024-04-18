@@ -39,7 +39,7 @@ The `entWorkflow` property is used to get access to the Studio or Enterprise Ser
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2020          | ✔         |
 | 2021          | ✔         |
 | 2022          | ✔         |
 | 2023          | ✔         |
+| 2024          | ✔         |

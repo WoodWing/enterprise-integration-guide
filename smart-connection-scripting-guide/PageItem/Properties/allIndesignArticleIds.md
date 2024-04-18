@@ -41,9 +41,9 @@ from the PageItem.allArticles call.
 
 ## Support versions
 
-| Adobe Version | Support |
-| ------------- | ------- |
-| 2020          | ✔       |
-| 2021          | ✔       |
-| 2022          | ✔       |
-| 2023          | ✔       |
+| Adobe Version | Supported |
+| ------------- | --------- |
+| 2021          | ✔         |
+| 2022          | ✔         |
+| 2023          | ✔         |
+| 2024          | ✔         |

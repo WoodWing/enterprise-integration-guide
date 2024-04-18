@@ -35,7 +35,7 @@ The `refresh()` method refreshes the metadata in this scripting object with the 
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2020          | ✔         |
 | 2021          | ✔         |
 | 2022          | ✔         |
 | 2023          | ✔         |
+| 2024          | ✔         |

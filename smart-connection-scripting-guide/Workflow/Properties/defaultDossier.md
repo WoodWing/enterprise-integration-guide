@@ -39,7 +39,8 @@ The `defaultDossier` property is used to get or get the the name of the Dossier 
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2020          | ✔         |
 | 2021          | ✔         |
 | 2022          | ✔         |
 | 2023          | ✔         |
+| 2024          | ✔         |
+

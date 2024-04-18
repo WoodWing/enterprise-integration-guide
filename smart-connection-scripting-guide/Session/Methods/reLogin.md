@@ -35,10 +35,10 @@ The `reLogin()` method performs a re-login to the Studio or Enterprise Server sy
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2020          | ✔         |
 | 2021          | ✔         |
 | 2022          | ✔         |
 | 2023          | ✔         |
+| 2024          | ✔         |
 
 ### Single Sign-On
 
@@ -49,7 +49,7 @@ SSO is available for all versions of Studio and the following versions of Smart 
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2020          | ✔         |
 | 2021          | ✔         |
 | 2022          | ✔         |
 | 2023          | ✔         |
+| 2024          | ✔         |

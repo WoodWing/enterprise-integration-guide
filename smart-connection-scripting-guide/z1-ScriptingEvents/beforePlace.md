@@ -60,10 +60,10 @@ app.scriptArgs.set("GUID", overrulingGUID);
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2020          | ✔         |
 | 2021          | ✔         |
 | 2022          | ✔         |
 | 2023          | ✔         |
+| 2024          | ✔         |
 
 ## See also
 

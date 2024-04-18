@@ -39,7 +39,7 @@ The `getIssues()` method returns a list of all Issues of the provided Brand.
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2020          | ✔         |
 | 2021          | ✔         |
 | 2022          | ✔         |
 | 2023          | ✔         |
+| 2024          | ✔         |

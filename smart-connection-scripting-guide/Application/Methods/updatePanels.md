@@ -35,7 +35,7 @@ The `updatePanels()` method refreshes the contents of all Studio or Smart Connec
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2020          | ✔         |
 | 2021          | ✔         |
 | 2022          | ✔         |
 | 2023          | ✔         |
+| 2024          | ✔         |

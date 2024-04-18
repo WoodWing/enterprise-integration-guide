@@ -40,7 +40,7 @@ The `getDossierForItem()` method performs a query on the Studio or Enterprise Se
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2020          | ✔         |
 | 2021          | ✔         |
 | 2022          | ✔         |
 | 2023          | ✔         |
+| 2024          | ✔         |

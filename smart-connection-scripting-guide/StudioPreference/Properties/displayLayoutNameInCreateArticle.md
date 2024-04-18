@@ -39,7 +39,8 @@ app.studioPreferences.displayLayoutNameInCreateArticle = true;
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2020          | v15.2+ ✔  |
 | 2021          | ✔         |
 | 2022          | ✔         |
 | 2023          | ✔         |
+| 2024          | ✔         |
+
