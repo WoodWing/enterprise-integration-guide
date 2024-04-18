@@ -21,7 +21,7 @@ The `updatePanels()` method does not return anything.
 
 ## Description
 
-The `updatePanels()` method refreshes the contents of all Studio or Smart Connection query panels. Throws an exception in case of an error.
+The `updatePanels()` method refreshes the contents of all Studio for InDesign and InCopy query panels. Throws an exception in case of an error.
 
 ## Examples
 

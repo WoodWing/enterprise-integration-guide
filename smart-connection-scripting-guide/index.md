@@ -26,5 +26,5 @@ We assume the reader of this guide is familiar with:
 
 ## Support
 
-To discuss any issues relating to scripting Studio or Smart Connection, visit the [WoodWing Community](https://helpcenter.woodwing.com/hc/en-us/community/topics) (log-in required).
+To discuss any issues relating to scripting Studio for InDesign and InCopy, visit the [WoodWing Community](https://helpcenter.woodwing.com/hc/en-us/community/topics) (log-in required).
 If you require further support for Studio or Enterprise Server, visit WoodWing’s [Help Center](https://helpcenter.woodwing.com/hc/en-us) and follow the directions for submitting questions.

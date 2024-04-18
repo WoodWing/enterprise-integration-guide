@@ -43,7 +43,7 @@ The `reLogin()` method performs a re-login to the Studio or Enterprise Server sy
 ### Single Sign-On
 
 When logging in on servers which have Single Sign-On (SSO) enabled, the `reLogin()` call will not work on clients except for InDesign Server.
-SSO is available for all versions of Studio and the following versions of Smart Connection:
+SSO is available for all versions of Studio and the following versions of Studio for InDesign and InCopy:
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
 

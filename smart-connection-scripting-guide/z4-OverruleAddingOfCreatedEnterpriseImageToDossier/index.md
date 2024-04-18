@@ -48,7 +48,7 @@ return [false, false, true];
 
 ### Description
 
-Tells Studio or Smart Connection whether the functions need to be debugged or not.
+Tells Studio for InDesign and InCopy whether the functions need to be debugged or not.
 
 ## addObjectsToDossier
 
@@ -71,11 +71,11 @@ Properties of one item in this json string:
 
 **targetDossier** _string_
 
-A string with the database id of the Dossier that was found by the Studio or Smart Connection code as default Dossier.
+A string with the database id of the Dossier that was found by the Studio code as default Dossier.
 
 **showSelectDossierDialog** _string_
 
-A string (“true” or “false”) that indicates if the Studio or Smart Connection code finds that it is needed to show the Select Dossier dialog or not.
+A string (“true” or “false”) that indicates if the Studio code finds that it is needed to show the Select Dossier dialog or not.
 
 **suppressUI** _boolean_
 
@@ -87,8 +87,8 @@ The return value is an array with three values:
 
 | Nº  | Type    | Description                                                                                                                                              |
 | --- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | boolean | Indicates if the Studio or Smart Connection code to add the objects to the Dossier should be performed or not.                                           |
-| 2   | string  | The database id of the Dossier to which the object should be added to by the Studio or Smart Connection code. (not used when the first boolean is false) |
+| 1   | boolean | Indicates if the Studio code to add the objects to the Dossier should be performed or not.                                           |
+| 2   | string  | The database id of the Dossier to which the object should be added to by the Studio code. (not used when the first boolean is false) |
 | 3   | string  | Indicates if the Select Dossier dialog should be shown or not (“true” or “false”). (not used when the first boolean is false)                            |
 
 A sample of the return value is:
@@ -99,11 +99,11 @@ return [true, "123", "false"];
 
 ### Description
 
-Called to override the default Dossier that is used to add the objects to. Depending on the returned information, the Studio or Smart Connection code will use the updated target Dossier, show the Select Dossier dialog, or does not do anything.
+Called to override the default Dossier that is used to add the objects to. Depending on the returned information, the Studio code will use the updated target Dossier, show the Select Dossier dialog, or does not do anything.
 
 ## Sample script
 
-The following script shows the parameters to the user that are passed to the addObjectsToDossier call. At the end we tell Studio or Smart Connection that it can add the objects to the Dossier.
+The following script shows the parameters to the user that are passed to the addObjectsToDossier call. At the end we tell Studio for InDesign and InCopy that it can add the objects to the Dossier.
 
 ```javascript
 #targetengine "elvisobjectoverride"
@@ -121,7 +121,7 @@ function AddToDossierOverride()
     // - getDebugConfig -
     function getDebugConfig()
     {
-        // Tell Studio or Smart Connection not to debug, but to show alerts.
+        // Tell Studio not to debug, but to show alerts.
         return [ false, false, true ];
     }
 
@@ -143,7 +143,7 @@ function AddToDossierOverride()
         message = message + "showSelectDossierDialog = " + showSelectDossierDialog + "\n\n";
         message = message + "suppressUI = " + suppressUI + "\n\n";
         alert( message );
-        // Tell Studio or Smart Connection that to continue with adding the objects
+        // Tell Studio to continue with adding the objects
         // to the dossier
         return [ true, targetDossier, showSelectDossierDialog ];
     }
