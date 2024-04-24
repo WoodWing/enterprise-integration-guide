@@ -39,7 +39,7 @@ The `addItem()` method adds an item to the Dossier. Adds the item to the corresp
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2020          | ✔         |
 | 2021          | ✔         |
 | 2022          | ✔         |
 | 2023          | ✔         |
+| 2024          | ✔         |

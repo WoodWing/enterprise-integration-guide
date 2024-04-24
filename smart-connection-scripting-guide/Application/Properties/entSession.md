@@ -48,10 +48,10 @@ var activeSession = sessionObject.activeUrl !== "";
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2020          | ✔         |
 | 2021          | ✔         |
 | 2022          | ✔         |
 | 2023          | ✔         |
+| 2024          | ✔         |
 
 ## See also
 

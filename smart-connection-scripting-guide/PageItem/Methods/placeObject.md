@@ -46,9 +46,9 @@ When placing articles, either the component id must be given of the article comp
 
 ## Support versions
 
-| Adobe Version | Support |
-| ------------- | ------- |
-| 2020          | ✔       |
-| 2021          | ✔       |
-| 2022          | ✔       |
-| 2023          | ✔       |
+| Adobe Version | Supported |
+| ------------- | --------- |
+| 2021          | ✔         |
+| 2022          | ✔         |
+| 2023          | ✔         |
+| 2024          | ✔         |

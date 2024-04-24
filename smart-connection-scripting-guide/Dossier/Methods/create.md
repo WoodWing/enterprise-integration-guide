@@ -35,7 +35,7 @@ The `create()` method creates a new Dossier object. The Dossier is created in St
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2020          | ✔         |
 | 2021          | ✔         |
 | 2022          | ✔         |
 | 2023          | ✔         |
+| 2024          | ✔         |

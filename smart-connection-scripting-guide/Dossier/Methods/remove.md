@@ -35,7 +35,7 @@ The `remove()` method removes the Dossier object. The corresponding Dossier is r
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2020          | ✔         |
 | 2021          | ✔         |
 | 2022          | ✔         |
 | 2023          | ✔         |
+| 2024          | ✔         |

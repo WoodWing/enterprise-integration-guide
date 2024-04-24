@@ -41,7 +41,7 @@ The `jsonRequest()` method posts a JSON object string as a request to a Studio o
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2020          | ✔         |
 | 2021          | ✔         |
 | 2022          | ✔         |
 | 2023          | ✔         |
+| 2024          | ✔         |

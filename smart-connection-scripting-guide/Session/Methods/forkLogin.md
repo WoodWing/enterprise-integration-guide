@@ -66,10 +66,10 @@ The `forkLogin()` method performs a login to the Studio or Enterprise Server sys
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2020          | ✔         |
 | 2021          | ✔         |
 | 2022          | ✔         |
 | 2023          | ✔         |
+| 2024          | ✔         |
 
 ### Single Sign-On
 

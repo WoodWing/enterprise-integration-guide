@@ -39,7 +39,7 @@ The `woodwingLogging` property turns off and on WoodWing logging.
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2020          | ✔         |
 | 2021          | ✔         |
 | 2022          | ✔         |
 | 2023          | ✔         |
+| 2024          | ✔         |

@@ -39,7 +39,7 @@ The `items` property is used to get a list of IDs of Studio or Enterprise Server
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2020          | ✔         |
 | 2021          | ✔         |
 | 2022          | ✔         |
 | 2023          | ✔         |
+| 2024          | ✔         |

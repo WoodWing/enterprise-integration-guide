@@ -43,7 +43,7 @@ The `getIssue()` method returns the Issue with the provided name from the provid
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2020          | ✔         |
 | 2021          | ✔         |
 | 2022          | ✔         |
 | 2023          | ✔         |
+| 2024          | ✔         |

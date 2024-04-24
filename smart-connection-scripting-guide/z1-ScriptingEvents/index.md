@@ -7,7 +7,7 @@ permalink: 1240-index
 Scripting events allow the integrator to perform scripts on a number of events occurring in the InDesign and InCopy application. Currently scripts can be executed around saving, opening and placing.
 
 ### Setup
-By default Studio or Smart Connection looks for scripts named exactly the same as the event with a ‘.jsx’ extension in the application’s scripts folder. For example the script for the afterPlace event will be afterPlace.jsx. The default locations are:
+By default Studio for InDesign and InCopy looks for scripts named exactly the same as the event with a ‘.jsx’ extension in the application’s scripts folder. For example the script for the afterPlace event will be afterPlace.jsx. The default locations are:
 
 **Windows** C:\Documents and Settings\<username>\Application Data\Adobe\InDesign\Version <x>\Scripts\Scripts Panel
 
@@ -49,7 +49,7 @@ Defines per named event which script needs to be run. Event names are equal to t
 In some rare occasions conflicts occur between an event and the scripted actions executed at that event.
 An example is an afterCreateArticle.jsx script which performs a check-out operation of the just created article.
 The conflict here is that when the user creates an article and thus the script starts executing,
-Studio or Smart Connection might not have finalised all actions related to article creation such as locking all related (article) components.
+Studio for InDesign and InCopy might not have finalised all actions related to article creation such as locking all related (article) components.
 As a result the scripted check-out operation fails as the specified component is not locked or no locked components are found.
 
 These type of issues can be solved by modifying the script slightly.
@@ -57,7 +57,7 @@ The example code below shows how this can be done.
 In the modified afterCreateArticle.jsx script all initial actions are cast in a new function like the afterCreateArticle() below.
 Furthermore two variables are added: an idle task and a listener.
 What now happens when the script is invoked (by the afterCreateArticle event) is that _only_ an idle task is created.
-Hereafter Studio or Smart Connection continues its execution. When Studio or Smart Connection has finalised all actions related to the creation of the article it becomes idle.
+Hereafter Studio for InDesign and InCopy continues its execution. When Studio for InDesign and InCopy has finalised all actions related to the creation of the article it becomes idle.
 On that moment the script performs the specified idle tasks being: the execution of the afterCreateArticle() function and the removal of its own task (such that it executes only once).
 
 ```javascript

@@ -23,7 +23,7 @@ n/a
 
 ## Notes
 
-This event is not called when importing image type files from panels in Studio or Smart Connection.
+This event is not called when importing image type files from panels in Studio for InDesign and InCopy.
 
 ## Examples
 
@@ -48,10 +48,10 @@ alert(msg);
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2020          | ✔         |
 | 2021          | ✔         |
 | 2022          | ✔         |
 | 2023          | ✔         |
+| 2024          | ✔         |
 
 ## See also
 

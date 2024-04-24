@@ -37,10 +37,10 @@ You can find examples in the description of the StudioPreference properties.
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2020          | v15.2+ ✔  |
 | 2021          | ✔         |
 | 2022          | ✔         |
 | 2023          | ✔         |
+| 2024          | ✔         |
 
 ## See also
 

@@ -39,7 +39,7 @@ The `retrieve()` method retrieves a Dossier from the Studio or Enterprise Server
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2020          | ✔         |
 | 2021          | ✔         |
 | 2022          | ✔         |
 | 2023          | ✔         |
+| 2024          | ✔         |

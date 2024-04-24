@@ -52,7 +52,7 @@ Articles on the document will be copied to Studio or Enterprise Server and the A
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2020          | ✔         |
 | 2021          | ✔         |
 | 2022          | ✔         |
 | 2023          | ✔         |
+| 2024          | ✔         |
