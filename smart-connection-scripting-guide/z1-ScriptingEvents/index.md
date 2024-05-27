@@ -39,8 +39,21 @@ Should you require a different location for the scripts or different names, then
 ```
 
 #### ScriptsFolderPath element
-The ScriptsFolderPath element points to the location where scripts are located. Use HFS path names for Mac OS X. It can occur zero or more times.
+The ScriptsFolderPath element points to the location where scripts are located. It can occur zero or more times.
 The optional target attribute indicates in which application the path should be used. Accepted values are InCopy and InDesign. All other values are ignored and have the same result as omitting the attribute. If the element omits this attribute, the path will be used for all applications. An element with a target attribute takes precedence over an element without one.
+
+A note about path formats on macOS:
+
+Since Studio for InDesign and InCopy version 19.0.0 installed on InDesign 19.4 or later, both POSIX ('/') and HFS (':') paths are supported. Before this combination of the Studio for InDesign and InCopy plug-ins and InDesign, only HFS (':') path notation should be applied. It is expected that in future versions of InDesign the HFS path notation will be phased out.
+
+Examples:
+```xml
+<!-- Macintosh, HFS notation: -->
+<SCEnt:ScriptsFolderPath target="InDesign">Macintosh HD:Applications:Adobe InDesign 2024:Scripts:EventScripts</SCEnt:ScriptsFolderPath>
+
+<!-- Macintosh, POSIX notation: -->
+<SCEnt:ScriptsFolderPath target="/Applications/Adobe InDesign 2024/Scripts/EventScripts</SCEnt:ScriptsFolderPath>
+```
 
 #### Script element
 Defines per named event which script needs to be run. Event names are equal to the list in the Events section. For events not defined in the WWsettings.xml file, the default name will be used.
