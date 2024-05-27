@@ -52,7 +52,7 @@ Examples:
 <SCEnt:ScriptsFolderPath target="InDesign">Macintosh HD:Applications:Adobe InDesign 2024:Scripts:EventScripts</SCEnt:ScriptsFolderPath>
 
 <!-- Macintosh, POSIX notation: -->
-<SCEnt:ScriptsFolderPath target="/Applications/Adobe InDesign 2024/Scripts/EventScripts</SCEnt:ScriptsFolderPath>
+<SCEnt:ScriptsFolderPath target="InDesign">/Applications/Adobe InDesign 2024/Scripts/EventScripts</SCEnt:ScriptsFolderPath>
 ```
 
 #### Script element
