@@ -2,7 +2,7 @@
 layout: chapter
 title: checkIn
 sortid: 63
-permalink: 1154-checkIn
+permalink: 1401-checkIn
 ---
 
 ## Syntax

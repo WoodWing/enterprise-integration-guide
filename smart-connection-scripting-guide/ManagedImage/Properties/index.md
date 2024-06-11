@@ -1,7 +1,7 @@
 ---
 layout: section
 title: ManagedImage properties
-permalink: 1155-index
+permalink: 1406-index
 ---
 Properties on the ManagedImage object.
 

@@ -2,7 +2,7 @@
 layout: chapter
 title: checkOut
 sortid: 64
-permalink: 1153-checkOut
+permalink: 1402-checkOut
 ---
 
 ## Syntax

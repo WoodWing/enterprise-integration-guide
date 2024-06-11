@@ -513,6 +513,49 @@ toc:
           path: smart-connection-scripting-guide/ManagedArticles/Methods/count.md
           url: smart-connection-scripting-guide/ManagedArticles/Methods/count.html
           permalink: 1149-count
+    - title: ManagedImage
+      layout: section
+      path: smart-connection-scripting-guide/ManagedImage/index.md
+      url: smart-connection-scripting-guide/ManagedImage/index.html
+      permalink: 1400-index
+      children:
+      - title: ManagedImage methods
+        layout: section
+        path: smart-connection-scripting-guide/ManagedImage/Methods/index.md
+        url: smart-connection-scripting-guide/ManagedImage/Methods/index.html
+        permalink: 1404-index
+        children:
+        - title: checkIn
+          layout: chapter
+          path: smart-connection-scripting-guide/ManagedImage/Methods/checkIn.md
+          url: smart-connection-scripting-guide/ManagedImage/Methods/checkIn.html
+          permalink: 1401-checkIn
+        - title: checkOut
+          layout: chapter
+          path: smart-connection-scripting-guide/ManagedImage/Methods/checkOut.md
+          url: smart-connection-scripting-guide/ManagedImage/Methods/checkOut.html
+          permalink: 1402-checkOut
+        - title: create
+          layout: chapter
+          path: smart-connection-scripting-guide/ManagedImage/Methods/create.md
+          url: smart-connection-scripting-guide/ManagedImage/Methods/create.html
+          permalink: 1403-create
+      - title: ManagedImage properties
+        layout: section
+        path: smart-connection-scripting-guide/ManagedImage/Properties/index.md
+        url: smart-connection-scripting-guide/ManagedImage/Properties/index.html
+        permalink: 1406-index
+        children:
+        - title: entMetaData
+          layout: chapter
+          path: smart-connection-scripting-guide/ManagedImage/Properties/entMetaData.md
+          url: smart-connection-scripting-guide/ManagedImage/Properties/entMetaData.html
+          permalink: 1405-entMetaData
+        - title: pageItem
+          layout: chapter
+          path: smart-connection-scripting-guide/ManagedImage/Properties/pageItem.md
+          url: smart-connection-scripting-guide/ManagedImage/Properties/pageItem.html
+          permalink: 1407-pageItem
     - title: ManagedImages
       layout: section
       path: smart-connection-scripting-guide/ManagedImages/index.md
@@ -1087,44 +1130,6 @@ toc:
       url: smart-connection-scripting-guide/z4-OverruleAddingOfCreatedEnterpriseImageToDossier/index.html
       permalink: 1243-index
       children:
-      children:
-      - title: ManagedImage methods
-        layout: section
-        path: smart-connection-scripting-guide/ManagedImage/Methods/index.md
-        url: smart-connection-scripting-guide/ManagedImage/Methods/index.html
-        permalink: 1153-index
-        children:
-        - title: checkIn
-          layout: chapter
-          path: smart-connection-scripting-guide/ManagedImage/Methods/checkIn.md
-          url: smart-connection-scripting-guide/ManagedImage/Methods/checkIn.html
-          permalink: 1154-checkIn
-        - title: checkOut
-          layout: chapter
-          path: smart-connection-scripting-guide/ManagedImage/Methods/checkOut.md
-          url: smart-connection-scripting-guide/ManagedImage/Methods/checkOut.html
-          permalink: 1153-checkOut
-        - title: create
-          layout: chapter
-          path: smart-connection-scripting-guide/ManagedImage/Methods/create.md
-          url: smart-connection-scripting-guide/ManagedImage/Methods/create.html
-          permalink: 1152-create
-      - title: ManagedImage properties
-        layout: section
-        path: smart-connection-scripting-guide/ManagedImage/Properties/index.md
-        url: smart-connection-scripting-guide/ManagedImage/Properties/index.html
-        permalink: 1155-index
-        children:
-        - title: entMetaData
-          layout: chapter
-          path: smart-connection-scripting-guide/ManagedImage/Properties/entMetaData.md
-          url: smart-connection-scripting-guide/ManagedImage/Properties/entMetaData.html
-          permalink: 1154-entMetaData
-        - title: pageItem
-          layout: chapter
-          path: smart-connection-scripting-guide/ManagedImage/Properties/pageItem.md
-          url: smart-connection-scripting-guide/ManagedImage/Properties/pageItem.html
-          permalink: 1156-pageItem
     - title: Custom menu items
       layout: section
       path: smart-connection-scripting-guide/z2-CustomMenuItems/index.md

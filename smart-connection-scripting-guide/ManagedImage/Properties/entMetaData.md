@@ -2,7 +2,7 @@
 layout: chapter
 title: entMetaData
 sortid: 66
-permalink: 1154-entMetaData
+permalink: 1405-entMetaData
 ---
 
 ## Syntax

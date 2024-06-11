@@ -1,7 +1,7 @@
 ---
 layout: section
 title: ManagedImage methods
-permalink: 1153-index
+permalink: 1404-index
 ---
 Methods on the ManagedImage object.
 
