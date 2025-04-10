@@ -19,7 +19,7 @@ app.getEntMetaData(objectId);
 
 The ID of the object to obtain properties for on Studio Server.
 
-**Return value** _EntMetaData_
+**Return value** [_EntMetaData_](../../EntMetaData/index.md)
 
 The EntMetaData object containing all metadata properties of the object in Studio Server.
 
