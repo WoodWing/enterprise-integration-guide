@@ -25,27 +25,26 @@ The EntMetaData object containing all metadata properties of the object in Studi
 
 ## Description
 
-The `getEntMetaData()` method obtains metadata properties of an object stored in Studio Server. The method throws an exception in case of an error.
+The `getEntMetaData()` method returns an [EntMetaData](../../EntMetaData/index.md) object of a Studio server object by its ID.  
+The EntMetaData object can be manipulated by setting new metadata by using `setEntMetaData()`.
 
 ## Examples
 
 **Example title**
 
 ```javascript
-// get metadata of object '19083', change the status and set the metadata on the server object.
-var objID = "19083";
-var meta;
-var key = "Core_Basket";
-try {
-  meta = app.getEntMetaData(objID);
-  var objectStatus = meta.get(key);
-  meta.set(key, "Layouts");
-  app.setEntMetaData(meta);
-} catch (e) {
-  alert(
-    "Setting metadata properties for [" + key + "] failed: [" + e.message + "]."
-  );
-}
+// Get metadata of object '19083' and change the metadata properties of the Studio server object.
+var objectID = "19083";
+var statusKey = "Core_Basket"; // Status
+var customKey = "C_CITIES"; // Custom property
+
+var metaDataObject = app.getEntMetaData(objectID);
+var statusValue = metaDataObject.get(statusKey);
+var customValue = metaDataObject.get(customKey);
+
+metaDataObject.set(statusKey, "Layouts");
+metaDataObject.set(customKey, ["Paris", "Berlin"]);
+app.setEntMetaData(metaDataObject);
 ```
 
 ## Supported versions
