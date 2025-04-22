@@ -26,7 +26,7 @@ The EntMetaData object containing all metadata properties of the object in Studi
 ## Description
 
 The `getEntMetaData()` method returns an [EntMetaData](../../EntMetaData/index.md) object of a Studio server object by its ID.  
-The EntMetaData object can be manipulated by setting new metadata by using `setEntMetaData()`.
+The EntMetaData object can be manipulated by setting new metadata by using [`setEntMetaData()`](./setEntMetaData.md).
 
 ## Examples
 
