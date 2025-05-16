@@ -41,7 +41,6 @@ var myIdleTask = app.idleTasks.add({name:"one_off_idle_task", sleep:1});
 
 var layoutId = app.scriptArgs.get( 'Core_ID' );
 var geometryUpdateState = "HighPriority";
-// for versions 17.0.6, 18.0.3 and later:
 geometryUpdateState = app.scriptArgs.get( 'geometryUpdateState' );
 
 var onIdleEventListener = myIdleTask.addEventListener(IdleEvent.ON_IDLE,
@@ -68,13 +67,10 @@ function afterReceivingGeometry() {
 	}
 }
 
-var articleNames = getArticleNames( layoutId );
-
 function doUpdateGeometry() {
 	app.scriptPreferences.userInteractionLevel = UserInteractionLevels.INTERACT_WITH_ALL;
 	var articleNames = getArticleNames( layoutId );
 	if ( articleNames.length > 0 ) {
-	    // for versions 17.0.6, 18.0.3 and later:
 		if( geometryUpdateState == "HighPriority") {
 	
 			var result = confirm("New layout information is available for article [ " + articleNames + " ]. " + "Do you want to update now?", false);
@@ -133,17 +129,22 @@ function lockedByUser(lockName)
 {
 	var activeUser = "";
 	if ("activeUser" in app.entSession) {
-		activeUser = app.entSession.activeUser;
+		activeUser = app.entSession.activeUser.toLowerCase();
 	}
+	lockName = lockName.toLowerCase();
 
 	// Get all users on the current server
 	var users = app.entSession.getUsers();
 
 	// Check if the lock name can be tied to our user
+	var userName, fullName;
 	for(var i = 0; i < users.length; i++)
 	{
-		if(activeUser == users[i][0] || activeUser == users[i][1]) {
-			if (lockName == users[i][0] || lockName == users[i][1]) {
+		userName = users[i][0].toLowerCase();
+		fullName = users[i][1].toLowerCase();
+
+		if(activeUser == userName || activeUser == fullName) {
+			if (lockName == userName || lockName == fullName) {
 				// The shortname or longname matches,
 				return true;
 			}
@@ -158,10 +159,10 @@ function lockedByUser(lockName)
 
 | Adobe Version | Supported  |
 | ------------- | ---------- |
-| 2021          | v16.3.1+ ✔ |
 | 2022          | ✔          |
 | 2023          | ✔          |
-| 2024          | ✔         |
+| 2024          | ✔          |
+| 2025          | ✔          |
 
 ## See also
 
