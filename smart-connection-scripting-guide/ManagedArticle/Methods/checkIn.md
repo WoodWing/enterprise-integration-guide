@@ -39,7 +39,7 @@ The `checkIn()` method checks-in the placed Article in the Studio or Enterprise 
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2021          | ✔         |
 | 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
+| 2025          | ✔         |

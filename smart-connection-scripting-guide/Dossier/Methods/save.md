@@ -35,7 +35,7 @@ The `save()` method saves the Dossier object. The corresponding Dossier is saved
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2021          | ✔         |
 | 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
+| 2025          | ✔         |

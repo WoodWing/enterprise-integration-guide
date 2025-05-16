@@ -40,7 +40,7 @@ Returns nothing if there is no object associated.
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2021          | ✔         |
 | 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
+| 2025          | ✔         |

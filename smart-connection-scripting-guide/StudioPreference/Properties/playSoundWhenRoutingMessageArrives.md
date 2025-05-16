@@ -39,8 +39,8 @@ app.studioPreferences.playSoundWhenRoutingMessageArrives = true;
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2021          | ✔         |
 | 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
+| 2025          | ✔         |
 

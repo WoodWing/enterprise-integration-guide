@@ -39,7 +39,7 @@ The `sendObjectToNext()` method sends an object to its next status. Throws an ex
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2021          | ✔         |
 | 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
+| 2025          | ✔         |

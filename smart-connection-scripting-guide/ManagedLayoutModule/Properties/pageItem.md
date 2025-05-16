@@ -39,7 +39,7 @@ The `pageItem` property is used to get access to the associated InDesign PageIte
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2021          | ✔         |
 | 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
+| 2025          | ✔         |

@@ -39,7 +39,7 @@ The `managedAdverts` property is used to get all managed adverts belonging to th
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2021          | ✔         |
 | 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
+| 2025          | ✔         |

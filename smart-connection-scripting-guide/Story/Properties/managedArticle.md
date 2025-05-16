@@ -34,10 +34,10 @@ For more info about the Managed Article object please see the [ManagedArticle](.
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2021          | ✔         |
 | 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
+| 2025          | ✔         |
 
 ## See also
 

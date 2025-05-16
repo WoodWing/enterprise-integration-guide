@@ -36,7 +36,7 @@ Does not actually create the Dossier in Studio or Enterprise Server.
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2021          | ✔         |
 | 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
+| 2025          | ✔         |

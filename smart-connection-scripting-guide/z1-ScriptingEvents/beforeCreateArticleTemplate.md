@@ -29,10 +29,10 @@ Don’t change the text of the article template at this stage. Changes will not 
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2021          | ✔         |
 | 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
+| 2025          | ✔         |
 
 ## See also
 

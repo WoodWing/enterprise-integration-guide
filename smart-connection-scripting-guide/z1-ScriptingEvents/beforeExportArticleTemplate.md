@@ -30,10 +30,10 @@ Changes made to the text will be part of the export, as well as changes made to 
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2021          | ✔         |
 | 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
+| 2025          | ✔         |
 
 ## See also
 

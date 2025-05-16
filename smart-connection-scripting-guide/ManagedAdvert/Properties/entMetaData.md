@@ -39,7 +39,7 @@ The `entMetaData` property is used to get the Studio or Enterprise Server metada
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2021          | ✔         |
 | 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
+| 2025          | ✔         |

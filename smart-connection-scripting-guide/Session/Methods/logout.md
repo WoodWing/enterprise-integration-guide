@@ -35,7 +35,7 @@ The `logout()` method performs a logout from the Studio or Enterprise Server sys
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2021          | ✔         |
 | 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
+| 2025          | ✔         |

@@ -37,10 +37,10 @@ You can find examples in the description of the StudioDocumentPreference propert
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2021          | ✔         |
 | 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
+| 2025          | ✔         |
 
 ## See also
 

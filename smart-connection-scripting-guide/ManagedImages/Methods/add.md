@@ -35,7 +35,7 @@ The `add()` method creates a new ManagedImage scripting object that can serve as
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2021          | ✔         |
 | 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
+| 2025          | ✔         |

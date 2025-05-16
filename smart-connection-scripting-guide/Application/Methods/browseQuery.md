@@ -92,7 +92,7 @@ var queryResult = app.browseQuery("WW News", "1st Issue", "News", "Ready");
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2021          | ✔         |
 | 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
+| 2025          | ✔         |

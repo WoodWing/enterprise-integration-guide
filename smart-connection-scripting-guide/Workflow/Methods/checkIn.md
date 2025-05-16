@@ -37,8 +37,8 @@ Use the “Type” key in the EntMetaData to indicate what kind of object should
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2021          | ✔         |
 | 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
+| 2025          | ✔         |
 

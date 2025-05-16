@@ -45,7 +45,7 @@ var dossierIds = app.getDossiersForItem(layoutId); // [ '41218', '41219' ]
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2021          | ✔         |
 | 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
+| 2025          | ✔         |

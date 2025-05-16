@@ -39,7 +39,7 @@ The `removeItem()` method removes an item from the Dossier. Removes the item fro
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2021          | ✔         |
 | 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
+| 2025          | ✔         |

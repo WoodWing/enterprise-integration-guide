@@ -39,7 +39,7 @@ app.studioPreferences.dossierPanelShowRelatedDossiers = false;
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2021          | 16.3.3+ ✔ |
 | 2022          | 17.0.1+ ✔ |
 | 2023          | ✔         |
 | 2024          | ✔         |
+| 2025          | ✔         |

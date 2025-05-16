@@ -48,7 +48,7 @@ The `namedQuery()` method performs a named query. It can be used for the Inbox, 
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2021          | ✔         |
 | 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
+| 2025          | ✔         |

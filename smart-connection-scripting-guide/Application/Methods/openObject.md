@@ -63,7 +63,7 @@ The `openObject()` method opens a Document from the Studio or Enterprise Server.
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2021          | ✔         |
 | 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
+| 2025          | ✔         |

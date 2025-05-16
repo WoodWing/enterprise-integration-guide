@@ -39,7 +39,7 @@ The `managedLayoutModules` property is used to get all managed Layout Modules be
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2021          | ✔         |
 | 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
+| 2025          | ✔         |

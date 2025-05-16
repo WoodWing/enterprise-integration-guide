@@ -35,7 +35,7 @@ The `updatePanels()` method refreshes the contents of all Studio for InDesign an
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2021          | ✔         |
 | 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
+| 2025          | ✔         |
