@@ -33,9 +33,70 @@ The `jsonRequest()` method posts a JSON object string as a request to a Studio o
 
 ## Examples
 
-**QueryObjects, DeleteObject, GetPublicationDate**
+Full working script examples for QueryObjects, DeleteObject, GetPublicationDate: [jsonRequestSamples.zip](https://github.com/WoodWing/enterprise-integration-guide/raw/master/assets/download/jsonRequest-samples.zip)
 
-[jsonRequestSamples.zip](https://github.com/WoodWing/enterprise-integration-guide/raw/master/assets/download/jsonRequest-samples.zip)
+**QueryObject code snippet**
+
+```javascript
+#include "json2.jsxinc" // Included in the jsonRequest-samples.zip.
+
+var serverUrl =
+  "https://studio.enterprise.woodwing.net/server/index.php?protocol=JSON";
+
+// Construct the request.
+var requestObject = {
+  method: "QueryObjects",
+  id: "1",
+  params: [
+    {
+      Params: [
+        {
+          Property: "Publication",
+          Value: "WW News",
+          Operation: "=",
+          __classname__: "QueryParam",
+        },
+        {
+          Property: "Type",
+          Value: "Image",
+          Operation: "=",
+          __classname__: "QueryParam",
+        },
+        {
+          Property: "Name",
+          Value: "Beachball",
+          Operation: "contains",
+          __classname__: "QueryParam",
+        },
+      ],
+      FirstEntry: 1,
+      MinimalProps: ["ID", "Name", "Type", "Category", "Issues", "State"],
+      Order: [
+        {
+          Property: "Name",
+          Direction: true,
+          __classname__: "QueryOrder",
+        },
+      ],
+      Ticket: app.entSession.activeTicket,
+    },
+  ],
+  jsonrpc: "2.0",
+};
+
+// Execute the request and get the response.
+var response = JSON.parse(
+  app.jsonRequest(serverUrl, JSON.stringify(requestObject))
+);
+
+// Get the object with the requested information.
+var requestedObject = response.result.Rows[0];
+
+// Get the individual values.
+var objectType = requestedObject[1];    // Images
+var objectName = requestedObject[2];    // Beachball
+var brandName = requestedObject[18];    // WW News
+```
 
 ## Supported versions
 
