@@ -33,7 +33,7 @@ The `jsonRequest()` method posts a JSON object string as a request to a Studio o
 
 ## Examples
 
-Full working script examples for `QueryObjects`, `DeleteObject`, `GetPublicationDate`: [jsonRequestSamples.zip](https://github.com/WoodWing/enterprise-integration-guide/raw/master/assets/download/jsonRequest-samples.zip)
+Full working script examples for `QueryObjects`, `DeleteObject`, `GetPublicationDate`: [jsonRequestSamples.zip](https://github.com/WoodWing/enterprise-integration-guide/raw/master/assets/download/jsonRequestSamples.zip)
 
 **QueryObject code snippet**
 
