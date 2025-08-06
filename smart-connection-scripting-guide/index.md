@@ -11,10 +11,10 @@ Many aspects of Studio for InDesign & InCopy are scriptable using JavaScript. Th
 
 This guide can be used for the following client application versions:
 
-- Studio for InDesign & InCopy 2021
 - Studio for InDesign & InCopy 2022
 - Studio for InDesign & InCopy 2023
 - Studio for InDesign & InCopy 2024
+- Studio for InDesign & InCopy 2025
 
 ## Required knowledge
 
