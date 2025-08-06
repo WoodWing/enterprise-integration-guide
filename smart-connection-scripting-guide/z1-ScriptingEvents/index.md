@@ -44,7 +44,7 @@ The optional target attribute indicates in which application the path should be 
 
 A note about path formats on macOS:
 
-Since Studio for InDesign and InCopy version 19.0.0 installed on InDesign 19.4 or later, both POSIX ('/') and HFS (':') paths are supported. Before this combination of the Studio for InDesign and InCopy plug-ins and InDesign, only HFS (':') path notation should be applied. It is expected that in future versions of InDesign the HFS path notation will be phased out.
+Since Studio for InDesign and InCopy version 19.0.0 installed on InDesign 19.4 or later, both POSIX ('/') and HFS (':') paths are supported. Before this combination of the Studio for InDesign and InCopy plug-ins and InDesign, only HFS (':') path notation should be applied. Starting with InDesign and InCopy version 20.0.0 only POSIX ('/') notation is supported in the ScriptsFolderPath element on macOS.
 
 Examples:
 ```xml
@@ -52,7 +52,7 @@ Examples:
 <SCEnt:ScriptsFolderPath target="InDesign">Macintosh HD:Applications:Adobe InDesign 2024:Scripts:EventScripts</SCEnt:ScriptsFolderPath>
 
 <!-- Macintosh, POSIX notation: -->
-<SCEnt:ScriptsFolderPath target="InDesign">/Applications/Adobe InDesign 2024/Scripts/EventScripts</SCEnt:ScriptsFolderPath>
+<SCEnt:ScriptsFolderPath target="InDesign">/Applications/Adobe InDesign 2025/Scripts/EventScripts</SCEnt:ScriptsFolderPath>
 ```
 
 #### Script element
