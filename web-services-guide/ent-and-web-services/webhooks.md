@@ -65,7 +65,6 @@ Studio Server supports the following workflow object events:
 The following object events are currently **not** supported:
 * Checkout to lock object for editing, or Abort Checkout to unlock.
 * Restore object version from history.
-* Set object properties for multiple selected objects.
 * Change object targets or object relations without changing properties (for example dragging an object to a Dossier).
 * Send messages or adding operations to objects.
 * Modifications to planned pages or adverts.
