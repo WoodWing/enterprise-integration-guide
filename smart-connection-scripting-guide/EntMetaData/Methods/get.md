@@ -21,9 +21,10 @@ The property key.
 
 **Return value**
 
-**_*2022, 2023, 2024 up to and including 19.0.5, 2024*_** _string, Array of string, number, Array of number, boolean or Array of boolean_
+**<span style="font-size:90%;">_2022, 2023, 2024 up to and including 19.0.5, 2024_</span>**
+_string, Array of string, number, Array of number, boolean or Array of boolean_
 
-**_*2024 from 19.0.6 onwards*_** _string, Array of string_
+**<span style="font-size:90%;">_2024 from 19.0.6 onwards_</span>** _string, Array of string_
 
 The property value for the given key. If the key does not exist, an error will be thrown.
 
