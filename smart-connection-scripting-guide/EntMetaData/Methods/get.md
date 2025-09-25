@@ -19,7 +19,11 @@ EntMetaData.get(key);
 
 The property key.
 
-**Return value** _string, Array of string, number, Array of number, boolean or Array of boolean_
+**Return value**
+
+**_*2022, 2023, 2024 up to and including 19.0.5, 2024*_** _string, Array of string, number, Array of number, boolean or Array of boolean_
+
+**_*2024 from 19.0.6 onwards*_** _string, Array of string_
 
 The property value for the given key. If the key does not exist, an error will be thrown.
 
@@ -58,9 +62,9 @@ try {
 
 ## Supported versions
 
-| Adobe Version | Supported |
-| ------------- | --------- |
-| 2022          | ✔         |
-| 2023          | ✔         |
-| 2024          | ✔         |
+| Adobe Version | Supported | Description                                                                             |
+| ------------- | --------- | --------------------------------------------------------------------------------------- |
+| 2022          | ✔         | Returns string, Array of string, number, Array of number, boolean, or Array of boolean. |
+| 2023          | ✔         | Returns string, Array of string, number, Array of number, boolean, or Array of boolean. |
+| 2024          | ✔         | From v19.0.6 onwards, returns string or Array of string.                                |
 | 2025          | ✔         |
