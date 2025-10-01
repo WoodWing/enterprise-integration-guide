@@ -21,7 +21,7 @@ The index (number) or name (string) of the metadata item in the metadata object.
 
 **Return value** Array
 
-**<span style="font-size:90%;">_2022, 2023, 2024 up to and including 19.0.5, 2024_</span>**
+**<span style="font-size:90%;">_2022, 2023, 2024 up to and including 19.0.5, 2025_</span>**
 
     Array[0] (property key) _string_
     Array[1] (property value) _string, string[], number, number[], boolean or boolean[]_

@@ -19,7 +19,7 @@ EntMetaData.set(key, value);
 
 **value**
 
-**<span style="font-size:90%;">_2022, 2023, 2024 up to and including 19.0.5, 2024_</span>**
+**<span style="font-size:90%;">_2022, 2023, 2024 up to and including 19.0.5, 2025_</span>**
 _string, Array of string, number, Array of number, boolean or Array of boolean_
 
 **<span style="font-size:90%;">_2024 from 19.0.6 onwards_</span>**
