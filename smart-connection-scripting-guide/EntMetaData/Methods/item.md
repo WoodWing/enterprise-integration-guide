@@ -49,12 +49,12 @@ try {
   // Get the item by property name.
   var idItem = md.item("Core_ID");
   alert("idItem key: [" + idItem[0] + "]"); // Core_ID
-  alert("idItem value: [" + idItem[0] + "]"); // 7635
+  alert("idItem value: [" + idItem[1] + "]"); // 7635
 
   // Get the item by property name.
   var nameItem = md.item("Core_Name");
   alert("idName key: [" + nameItem[0] + "]"); // Core_Name
-  alert("idName value: [" + nameItem[0] + "]"); // "TestDocument"
+  alert("idName value: [" + nameItem[1] + "]"); // "TestDocument"
 } catch (e) {
   desc = e.description;
   num = e.number;
