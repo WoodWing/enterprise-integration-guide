@@ -19,11 +19,13 @@ EntMetaData.set(key, value);
 
 **value**
 
-**<span style="font-size:90%;">_2022, 2023, 2024 up to and including 19.0.5, 2025_</span>**
-_string, Array of string, number, Array of number, boolean or Array of boolean_
+**<span style="font-size:90%;">_2022, 2023, 2024 up to and including 19.0.5, 2025 up to and including 20.0.2_</span>**
 
-**<span style="font-size:90%;">_2024 from 19.0.6 onwards_</span>**
-_string_
+`_string, Array of string, number, Array of number, boolean or Array of boolean_`
+
+**<span style="font-size:90%;">_2024 from 19.0.6 onwards, 2025 from 20.0.3 onwards_</span>**
+
+`_string_`
 
 **Return value**
 
@@ -72,4 +74,4 @@ try {
 | 2022          | ✔         | _value_ accepts string, Array of string, number, Array of number, boolean, or Array of boolean. |
 | 2023          | ✔         | _value_ accepts string, Array of string, number, Array of number, boolean, or Array of boolean. |
 | 2024          | ✔         | From v19.0.6 onwards, _value_ accepts string or Array of string.                                |
-| 2025          | ✔         |
+| 2025          | ✔         | From v20.0.3 onwards, _value_ accepts string or Array of string.                                |
