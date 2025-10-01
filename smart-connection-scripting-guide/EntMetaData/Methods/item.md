@@ -68,5 +68,5 @@ try {
 | ------------- | --------- | ------------------------------------------------------------------------------------------------------------------- |
 | 2022          | ✔         | Returns Array of [string, string \| Array of string \| number \| Array of number \| boolean \| or Array of boolean] |
 | 2023          | ✔         | Returns Array of [string, string \| Array of string \| number \| Array of number \| boolean \| or Array of boolean] |
-| 2024          | ✔         | From v19.0.6 onwards, returns Array of [string, string].                                                            |
+| 2024          | ✔         | From v19.0.6 onwards, returns Array of [string, string \| Array of string].                                         |
 | 2025          | ✔         |
