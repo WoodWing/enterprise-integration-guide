@@ -24,15 +24,15 @@ The index (number) or name (string) of the metadata item in the metadata object.
 **<span style="font-size:90%;">_2022, 2023, 2024 up to and including 19.0.5, 2025 up to and including 20.0.2_</span>**
 
 ```
-Array[0] (property key) _string_
-Array[1] (property value) _string, string[], number, number[], boolean or boolean[]_
+Array[0] (property key): string
+Array[1] (property value): string, string[], number, number[], boolean or boolean[]
 ```
 
 **<span style="font-size:90%;">_2024 from 19.0.6 onwards, 2025 from 20.0.3 onwards_</span>**
 
 ```
-Array[0] (property key) _string_
-Array[1] (property value) _string or string[]_
+Array[0] (property key): string
+Array[1] (property value): string or string[]
 ```
 
 ## Description

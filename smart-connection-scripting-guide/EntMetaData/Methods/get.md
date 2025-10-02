@@ -23,11 +23,11 @@ The property key.
 
 **<span style="font-size:90%;">_2022, 2023, 2024 up to and including 19.0.5, 2025 up to and including 20.0.2_</span>**
 
-`_string, Array of string, number, Array of number, boolean or Array of boolean_`
+`string, Array of string, number, Array of number, boolean or Array of boolean`
 
 **<span style="font-size:90%;">_2024 from 19.0.6 onwards, 2025 from 20.0.3 onwards_</span>**
 
-`_string, Array of string_`
+`string, Array of string`
 
 The property value for the given key. If the key does not exist, an error will be thrown.
 
