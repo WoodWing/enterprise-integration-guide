@@ -53,7 +53,7 @@ return [false, false, true];
 
 **itemsToPlaceJson** _string_
 
-A string with json content that contains the database ID, type, format and guid of the item to be placed. For 8.3 the guid will always be empty. A sample of such a json string is:
+A string with json content that contains the database ID, type, format and guid of the item to be placed. A sample of such a json string is:
 
 ```javascript
 [
@@ -116,7 +116,7 @@ Tells Studio for InDesign and InCopy whether this script can place the passed it
 
 **itemsToPlaceJson** _string_
 
-A string with json content that contains the database ID, type, format and guid of the item to be placed. For 8.3 the guid will always be empty. A sample of such a json string is:
+A string with json content that contains the database ID, type, format and guid of the item to be placed. A sample of such a json string is:
 
 ```javascript
 [
@@ -184,10 +184,10 @@ Properties of one point:
 
 The return value is an array with two values:
 
-| Nº  | Type            | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| --- | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Nº  | Type            | Description                                                                                                                                                                                                                                                                                                                                                                                                       |
+| --- | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1   | boolean         | Indicates if the script handled the place or not. If this boolean is true the script handled the placement and Studio should not perform its place code. If this boolean is false the script did not handle the placement and Studio should perform its place code. Studio is not able to place Dossiers. If the script to place a dossier returns false Studio for InDesign and InCopy will empty the place gun. |
-| 2   | array of number | This is an array of ids of the items that are placed or replaced by the scripting code. If this list is empty and the boolean was true the Studio place code is not called and the place gun is still loaded. If this list contains items the Studio place code is not called and the place gun will be emptied.                                                                                                                  |
+| 2   | array of number | This is an array of ids of the items that are placed or replaced by the scripting code. If this list is empty and the boolean was true the Studio place code is not called and the place gun is still loaded. If this list contains items the Studio place code is not called and the place gun will be emptied.                                                                                                  |
 
 An example of the return value is:
 
@@ -281,7 +281,7 @@ var placeOverride = new PlaceOverride;
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
 | 2025          | ✔         |
+| 2026          | ✔         |

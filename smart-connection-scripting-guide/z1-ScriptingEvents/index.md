@@ -4,9 +4,11 @@ title: Scripting Events
 sortid: 21
 permalink: 1240-index
 ---
+
 Scripting events allow the integrator to perform scripts on a number of events occurring in the InDesign and InCopy application. Currently scripts can be executed around saving, opening and placing.
 
 ### Setup
+
 By default Studio for InDesign and InCopy looks for scripts named exactly the same as the event with a ‘.jsx’ extension in the application’s scripts folder. For example the script for the afterPlace event will be afterPlace.jsx. The default locations are:
 
 **Windows** C:\Documents and Settings\<username>\Application Data\Adobe\InDesign\Version <x>\Scripts\Scripts Panel
@@ -39,6 +41,7 @@ Should you require a different location for the scripts or different names, then
 ```
 
 #### ScriptsFolderPath element
+
 The ScriptsFolderPath element points to the location where scripts are located. It can occur zero or more times.
 The optional target attribute indicates in which application the path should be used. Accepted values are InCopy and InDesign. All other values are ignored and have the same result as omitting the attribute. If the element omits this attribute, the path will be used for all applications. An element with a target attribute takes precedence over an element without one.
 
@@ -47,6 +50,7 @@ A note about path formats on macOS:
 Since Studio for InDesign and InCopy version 19.0.0 installed on InDesign 19.4 or later, both POSIX ('/') and HFS (':') paths are supported. Before this combination of the Studio for InDesign and InCopy plug-ins and InDesign, only HFS (':') path notation should be applied. Starting with InDesign and InCopy version 20.0.0 only POSIX ('/') notation is supported in the ScriptsFolderPath element on macOS.
 
 Examples:
+
 ```xml
 <!-- Macintosh, HFS notation: -->
 <SCEnt:ScriptsFolderPath target="InDesign">Macintosh HD:Applications:Adobe InDesign 2024:Scripts:EventScripts</SCEnt:ScriptsFolderPath>
@@ -56,9 +60,11 @@ Examples:
 ```
 
 #### Script element
+
 Defines per named event which script needs to be run. Event names are equal to the list in the Events section. For events not defined in the WWsettings.xml file, the default name will be used.
 
 ### Conflicts
+
 In some rare occasions conflicts occur between an event and the scripted actions executed at that event.
 An example is an afterCreateArticle.jsx script which performs a check-out operation of the just created article.
 The conflict here is that when the user creates an article and thus the script starts executing,
@@ -108,7 +114,9 @@ If the event script file is renamed in WWSettings.xml then only the renamed scri
 So if the 'afterLogOn.jsx' script is deployed from the Server and WWSettings.xml specifies 'bla.jsx' for the afterLogOn event, then the deployed script will not be executed.
 
 ### Troubleshooting
+
 It is possible to debug scripts on a per event basis when an event occurs. To debug the afterOpenLayout event:
+
 ```xml
 <SCEnt:ScriptingEvents>
     <SCEnt:Script debug="true" event="afterOpenLayout">bla.js</SCEnt:Script>
@@ -117,6 +125,7 @@ It is possible to debug scripts on a per event basis when an event occurs. To de
 ```
 
 The events mechanism has its own logging which can be enabled through the WWsettings.xml file. This will show which script will be run and whether running is successful:
+
 ```xml
 <Logging level="0" allareas="0">
     <Area name="ScriptingEvents"/>
@@ -127,42 +136,42 @@ The events mechanism has its own logging which can be enabled through the WWsett
 
 The following fields are used to describe an event:
 
-|Field|Description|
-|-----|-----------|
-|When |Describes at what moment the event occurs.|
-|Where |Describes in what applications the event occurs.|
-|Arguments in |Table describing key value pairs set in app.scriptArgs for the event.|
-|Arguments out |Table describing key value pairs that a script can set in app.scriptArgs for the event.|
-|Notes |Event related notes.|
+| Field         | Description                                                                             |
+| ------------- | --------------------------------------------------------------------------------------- |
+| When          | Describes at what moment the event occurs.                                              |
+| Where         | Describes in what applications the event occurs.                                        |
+| Arguments in  | Table describing key value pairs set in app.scriptArgs for the event.                   |
+| Arguments out | Table describing key value pairs that a script can set in app.scriptArgs for the event. |
+| Notes         | Event related notes.                                                                    |
 
-* [afterCreateArticle](./afterCreateArticle.md)
-* [afterCreateArticleTemplate](./afterCreateArticleTemplate.md)
-* [afterCreateContinuationElement](./afterCreateContinuationElement.md)
-* [afterCreateEnterpriseImageFromElvisImage](./afterCreateEnterpriseImageFromElvisImage.md)
-* [afterCreateJump](./afterCreateJump.md)
-* [afterCreateLayout](./afterCreateLayout.md)
-* [afterCreateLayoutTemplate](./afterCreateLayoutTemplate.md)
-* [afterDetachArticle](./afterDetachArticle.md)
-* [afterExportArticle](./afterExportArticle.md)
-* [afterExportArticleTemplate](./afterExportArticleTemplate.md)
-* [afterGeometryNotification](./afterGeometryNotification.md)
-* [afterLogOn](./afterLogOn.md)
-* [afterOpenArticle](./afterOpenArticle.md)
-* [afterOpenLayout](./afterOpenLayout.md)
-* [afterPlace](./afterPlace.md)
-* [afterRefreshArticle](./afterRefreshArticle.md)
-* [afterRefreshImage](./afterRefreshImage.md)
-* [afterSaveArticle](./afterSaveArticle.md)
-* [afterSaveLayout](./afterSaveLayout.md)
-* [beforeCreateArticle](./beforeCreateArticle.md)
-* [beforeCreateArticleTemplate](./beforeCreateArticleTemplate.md)
-* [beforeCreateLayout](./beforeCreateLayout.md)
-* [beforeCreateLayoutTemplate](./beforeCreateLayoutTemplate.md)
-* [beforeDetachArticle](./beforeDetachArticle.md)
-* [beforeExportArticle](./beforeExportArticle.md)
-* [beforeExportArticleTemplate](./beforeExportArticleTemplate.md)
-* [beforeImportImage](./beforeImportImage.md)
-* [beforeLogOff](./beforeLogOff.md)
-* [beforePlace](./beforePlace.md)
-* [beforeSaveArticle](./beforeSaveArticle.md)
-* [beforeSaveLayout](./beforeSaveLayout.md)
+- [afterCreateArticle](./afterCreateArticle.md)
+- [afterCreateArticleTemplate](./afterCreateArticleTemplate.md)
+- [afterCreateContinuationElement](./afterCreateContinuationElement.md)
+- [afterCreateEnterpriseImageFromElvisImage](./afterCreateEnterpriseImageFromElvisImage.md)
+- [afterCreateJump](./afterCreateJump.md)
+- [afterCreateLayout](./afterCreateLayout.md)
+- [afterCreateLayoutTemplate](./afterCreateLayoutTemplate.md)
+- [afterDetachArticle](./afterDetachArticle.md)
+- [afterExportArticle](./afterExportArticle.md)
+- [afterExportArticleTemplate](./afterExportArticleTemplate.md)
+- [afterGeometryNotification](./afterGeometryNotification.md)
+- [afterLogOn](./afterLogOn.md)
+- [afterOpenArticle](./afterOpenArticle.md)
+- [afterOpenLayout](./afterOpenLayout.md)
+- [afterPlace](./afterPlace.md)
+- [afterRefreshArticle](./afterRefreshArticle.md)
+- [afterRefreshImage](./afterRefreshImage.md)
+- [afterSaveArticle](./afterSaveArticle.md)
+- [afterSaveLayout](./afterSaveLayout.md)
+- [beforeCreateArticle](./beforeCreateArticle.md)
+- [beforeCreateArticleTemplate](./beforeCreateArticleTemplate.md)
+- [beforeCreateLayout](./beforeCreateLayout.md)
+- [beforeCreateLayoutTemplate](./beforeCreateLayoutTemplate.md)
+- [beforeDetachArticle](./beforeDetachArticle.md)
+- [beforeExportArticle](./beforeExportArticle.md)
+- [beforeExportArticleTemplate](./beforeExportArticleTemplate.md)
+- [beforeImportImage](./beforeImportImage.md)
+- [beforeLogOff](./beforeLogOff.md)
+- [beforePlace](./beforePlace.md)
+- [beforeSaveArticle](./beforeSaveArticle.md)
+- [beforeSaveLayout](./beforeSaveLayout.md)

@@ -7,7 +7,7 @@ permalink: 1175-afterCreateArticleTemplate
 
 ## When
 
-After sending a new article template to the Studio or Enterprise Server system.
+After sending a new article template to the Studio Server system.
 
 ## Where
 
@@ -29,10 +29,10 @@ n/a
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
 | 2025          | ✔         |
+| 2026          | ✔         |
 
 ## See also
 

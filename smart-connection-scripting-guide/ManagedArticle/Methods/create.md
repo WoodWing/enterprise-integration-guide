@@ -43,7 +43,7 @@ The `create()` method creates a placed Article from the given page items. Depend
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
 | 2025          | ✔         |
+| 2026          | ✔         |

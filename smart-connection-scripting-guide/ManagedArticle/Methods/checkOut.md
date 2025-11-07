@@ -35,7 +35,7 @@ The `checkOut()` method checks-out the placed Article.
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
 | 2025          | ✔         |
+| 2026          | ✔         |

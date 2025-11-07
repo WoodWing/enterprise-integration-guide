@@ -5,7 +5,7 @@ sortid: 23
 permalink: 1243-index
 ---
 
-When an image that is stored in Assets/Elvis is turned into an image that is stored in Studio or Enterprise Server, it is by default added to a Dossier. This action can be overruled with scripting code.
+When an image that is stored in Assets is turned into an image that is stored in Studio Server, it is by default added to a Dossier. This action can be overruled with scripting code.
 
 The script in which this can be implemented should be placed into the Startup Scripts folder in either the application’s scripts
 folder or in the user’s scripts folder. The script locations are:
@@ -85,11 +85,11 @@ Should any user interface be suppressed or not.
 
 The return value is an array with three values:
 
-| Nº  | Type    | Description                                                                                                                                              |
-| --- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Nº  | Type    | Description                                                                                                                          |
+| --- | ------- | ------------------------------------------------------------------------------------------------------------------------------------ |
 | 1   | boolean | Indicates if the Studio code to add the objects to the Dossier should be performed or not.                                           |
 | 2   | string  | The database id of the Dossier to which the object should be added to by the Studio code. (not used when the first boolean is false) |
-| 3   | string  | Indicates if the Select Dossier dialog should be shown or not (“true” or “false”). (not used when the first boolean is false)                            |
+| 3   | string  | Indicates if the Select Dossier dialog should be shown or not (“true” or “false”). (not used when the first boolean is false)        |
 
 A sample of the return value is:
 
@@ -155,7 +155,7 @@ var addToDossierOverride = new AddToDossierOverride;
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
 | 2025          | ✔         |
+| 2026          | ✔         |

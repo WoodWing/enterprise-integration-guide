@@ -21,7 +21,7 @@ The `refresh()` method does not return anything.
 
 ## Description
 
-The `refresh()` method refreshes the metadata in this scripting object with the metadata stored in the document. The refresh does not interact with the Studio or Enterprise Server system to retrieve the latest data, but relies on the data delivered to the application through the messaging subsystem.
+The `refresh()` method refreshes the metadata in this scripting object with the metadata stored in the document. The refresh does not interact with the Studio Server system to retrieve the latest data, but relies on the data delivered to the application through the messaging subsystem.
 
 ## Examples
 
@@ -35,7 +35,7 @@ The `refresh()` method refreshes the metadata in this scripting object with the 
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
 | 2025          | ✔         |
+| 2026          | ✔         |

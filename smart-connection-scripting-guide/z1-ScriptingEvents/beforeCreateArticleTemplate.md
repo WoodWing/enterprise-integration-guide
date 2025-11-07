@@ -7,7 +7,7 @@ permalink: 1193-beforeCreateArticleTemplate
 
 ## When
 
-Before sending a new article template to the Studio or Enterprise Server system.
+Before sending a new article template to the Studio Server system.
 
 ## Where
 
@@ -29,10 +29,10 @@ Don’t change the text of the article template at this stage. Changes will not 
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
 | 2025          | ✔         |
+| 2026          | ✔         |
 
 ## See also
 

@@ -11,20 +11,20 @@ Many aspects of Studio for InDesign & InCopy are scriptable using JavaScript. Th
 
 This guide can be used for the following client application versions:
 
-- Studio for InDesign & InCopy 2022
 - Studio for InDesign & InCopy 2023
 - Studio for InDesign & InCopy 2024
 - Studio for InDesign & InCopy 2025
+- Studio for InDesign & InCopy 2026
 
 ## Required knowledge
 
 We assume the reader of this guide is familiar with:
 
-- The functionality of the Studio or Enterprise Server system.
+- The functionality of the Studio Server system.
 - The functionality of Studio within InDesign and InCopy.
 - JavaScript language. For more information, see: [https://javascript.info](https://javascript.info).
 
 ## Support
 
 To discuss any issues relating to scripting Studio for InDesign and InCopy, visit the [WoodWing Community](https://helpcenter.woodwing.com/hc/en-us/community/topics) (log-in required).
-If you require further support for Studio or Enterprise Server, visit WoodWing’s [Help Center](https://helpcenter.woodwing.com/hc/en-us) and follow the directions for submitting questions.
+If you require further support for Studio Server, visit WoodWing’s [Help Center](https://helpcenter.woodwing.com/hc/en-us) and follow the directions for submitting questions.
