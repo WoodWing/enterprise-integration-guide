@@ -17,7 +17,7 @@ Dossier.create();
 
 **Return value**
 
-Before version 19.0.3 build 23 for 2024 and version 20.0.0 build 9 for 2025 the `create()` method does not return anything.  
+Before version 19.0.4 for 2024 and version 20.0.1 for 2025 the `create()` method does not return anything.  
 Starting from these versions, the `create()` method returns the newly created Dossier object.
 
 ## Description
@@ -40,7 +40,7 @@ dosMetaData.set("Core_Section", "Sport");
 // Creates a database object, for example, with ID 43786
 myDossier.create();
 
-// Only from v19.0.3 b23 for 2024 and v20.0.0 b9 for 2025
+// Only from v19.0.4 for 2024, v20.0.1 for 2025 and higher
 alert(dosMetaData.get("Core_ID")); // 43786
 ```
 
@@ -55,7 +55,7 @@ dosMetaData.set("Core_Publication", "WW Erik");
 dosMetaData.set("Core_Issue", "Issue 1");
 dosMetaData.set("Core_Section", "Sport");
 
-// Only from v19.0.3 b23 for 2024 and v20.0.0 b9 for 2025
+// Only from v19.0.4 for 2024, v20.0.1 for 2025 and higher
 // Creates a database object, for example, with ID 43786
 var newDossier = myDossier.create();
 var newDosMetaData = newDossier.entMetaData;
@@ -67,7 +67,7 @@ alert(newDosMetaData.get("Core_ID")); // 43786
 
 | Adobe Version | Supported | Returns created Dossier object |
 | ------------- | --------- | ------------------------------ |
-| 2022          | ✔         |                                |
 | 2023          | ✔         |                                |
-| 2024          | ✔         | ✔ v19.0.3 b23 and up           |
-| 2025          | ✔         | ✔ v20.0.0 b9 and up            |
+| 2024          | ✔         | ✔ v19.0.3 and up               |
+| 2025          | ✔         | ✔ v20.0.1 and up               |
+| 2026          | ✔         | ✔                              |

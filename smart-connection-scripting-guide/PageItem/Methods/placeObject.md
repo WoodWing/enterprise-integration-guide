@@ -33,7 +33,7 @@ The `placeObject()` method does not return anything.
 
 ## Description
 
-The `placeObject()` method places a Studio or Enterprise Server object in the target object. The contentType of the target object must match the source object’s. For images, ads, layout modules and image article components the contentType must be _ContentType.GRAPHIC_TYPE_. For text article components the contentType must be _ContentType.TEXT_TYPE_.
+The `placeObject()` method places a Studio Server object in the target object. The contentType of the target object must match the source object’s. For images, ads, layout modules and image article components the contentType must be _ContentType.GRAPHIC_TYPE_. For text article components the contentType must be _ContentType.TEXT_TYPE_.
 When placing articles, either the component id must be given of the article component, or the article must be a single component article; else the place will fail.
 
 ## Examples
@@ -48,7 +48,7 @@ When placing articles, either the component id must be given of the article comp
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
 | 2025          | ✔         |
+| 2026          | ✔         |

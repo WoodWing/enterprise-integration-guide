@@ -17,7 +17,7 @@ app.jsonRequest(jsonUrl, jsonRequest);
 
 **jsonUrl** _string_
 
-The path to the Studio or Enterprise server URL which can receive and respond to requests done in JSON object string format.
+The path to the Studio server URL which can receive and respond to requests done in JSON object string format.
 
 **jsonRequest** _string_
 
@@ -29,7 +29,7 @@ A string containing the complete and total server response.
 
 ## Description
 
-The `jsonRequest()` method posts a JSON object string as a request to a Studio or Enterprise Server URL in order to receive a response in JSON object string format.
+The `jsonRequest()` method posts a JSON object string as a request to a Studio Server URL in order to receive a response in JSON object string format.
 
 ## Examples
 
@@ -102,7 +102,7 @@ var brandName = requestedObject[18];    // WW News
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
 | 2025          | ✔         |
+| 2026          | ✔         |

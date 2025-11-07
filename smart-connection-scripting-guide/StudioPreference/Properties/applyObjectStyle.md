@@ -49,8 +49,7 @@ app.studioPreferences.applyObjectStyle = ApplyObjectStyleOptions.DO_NOT_APPLY;
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
 | 2025          | ✔         |
-
+| 2026          | ✔         |

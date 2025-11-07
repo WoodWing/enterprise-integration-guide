@@ -21,7 +21,6 @@ After receiving a Geometry Update notification from Studio Server in InCopy
 | geometryUpdateState<sup>①</sup> | The impact of the geometry update for the article in InCopy. |
 
 ① Notes about the argument _geometryUpdateState_:
-* _geometryUpdateState_ is available since versions 17.0.6 and 18.0.3.
 * For the argument _geometryUpdateState_ possible values are:
   * **HighPriority** _the position and/or size of the article being edited is touched_
   * **LowPriority** _the geometry of the article is not touched. The layout has been changed._
@@ -159,10 +158,10 @@ function lockedByUser(lockName)
 
 | Adobe Version | Supported  |
 | ------------- | ---------- |
-| 2022          | ✔          |
 | 2023          | ✔          |
 | 2024          | ✔          |
 | 2025          | ✔          |
+| 2026          | ✔          |
 
 ## See also
 

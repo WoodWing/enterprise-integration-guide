@@ -39,7 +39,7 @@ The `detachFrame()` method detaches frames from a multi-component Article. The l
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
 | 2025          | ✔         |
+| 2026          | ✔         |

@@ -43,7 +43,7 @@ The `getCategories()` method returns a list of all Categories of the provided Br
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
 | 2025          | ✔         |
+| 2026          | ✔         |

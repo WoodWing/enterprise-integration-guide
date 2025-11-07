@@ -17,7 +17,7 @@ app.getDossiersForItem(objectId);
 
 **objectId** _string_
 
-The ID of the object on the Studio or Enterprise Server used to retrieve the IDs of the Dossiers that contain this object.
+The ID of the object on the Studio Server used to retrieve the IDs of the Dossiers that contain this object.
 
 **Return value** _string[]_
 
@@ -25,7 +25,7 @@ An array of string representing the found Dossier IDs.
 
 ## Description
 
-The `getDossierForItem()` method performs a query on the Studio or Enterprise Server to retrieve all Dossier IDs of which the object is part of.
+The `getDossierForItem()` method performs a query on the Studio Server to retrieve all Dossier IDs of which the object is part of.
 
 ## Examples
 
@@ -45,7 +45,7 @@ var dossierIds = app.getDossiersForItem(layoutId); // [ '41218', '41219' ]
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
 | 2025          | ✔         |
+| 2026          | ✔         |

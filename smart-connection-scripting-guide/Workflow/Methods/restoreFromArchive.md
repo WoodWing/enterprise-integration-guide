@@ -25,10 +25,10 @@ Only used in combination with the “Elvis_Copy” image restore location (defin
 
 Defines the restore location of images. When not defined the option as defined in the Elvis Enterprise Server plug-in is used. Possible values:
 
-| Value      | Description                                                                                    |
-| ---------- | ---------------------------------------------------------------------------------------------- |
-| Elvis_Copy | The image is copied in Assets/Elvis and is linked via a Studio/Enterprise Server shadow object |
-| Enterprise | The image is copied to Studio or Enterprise Server                                             |
+| Value      | Description                                                                   |
+| ---------- | ----------------------------------------------------------------------------- |
+| Elvis_Copy | The image is copied in Assets and is linked via a Studio Server shadow object |
+| Enterprise | The image is copied to Studio Server                                          |
 
 **Return value** _Document_
 
@@ -36,9 +36,9 @@ The restored Document object.
 
 ## Description
 
-The `restoreFromArchive()` method restores the opened archived document from Assets as a new object in the Studio or Enterprise Server system. Throws an exception in case of an error. Change the metadata before calling `restoreFromArchive()`.
+The `restoreFromArchive()` method restores the opened archived document from Assets as a new object in the Studio Server system. Throws an exception in case of an error. Change the metadata before calling `restoreFromArchive()`.
 
-Articles on the document will be copied to Studio or Enterprise Server and the Article Components will get new IDs. Spreadsheets are copied to Studio or Enterprise Server.
+Articles on the document will be copied to Studio Server and the Article Components will get new IDs. Spreadsheets are copied to Studio Server.
 
 ## Examples
 
@@ -52,7 +52,7 @@ Articles on the document will be copied to Studio or Enterprise Server and the A
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
 | 2025          | ✔         |
+| 2026          | ✔         |

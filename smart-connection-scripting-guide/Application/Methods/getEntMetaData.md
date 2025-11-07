@@ -51,7 +51,7 @@ app.setEntMetaData(metaDataObject);
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2022          | 17.0.2+ ✔ |
 | 2023          | ✔         |
 | 2024          | ✔         |
 | 2025          | ✔         |
+| 2026          | ✔         |

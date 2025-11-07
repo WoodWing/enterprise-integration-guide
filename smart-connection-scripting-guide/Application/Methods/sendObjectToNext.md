@@ -17,7 +17,7 @@ app.sendObjectToNext(objectId);
 
 **objectId** _string_
 
-The object ID on the Studio or Enterprise Server.
+The object ID on the Studio Server.
 
 **Return value**
 
@@ -39,7 +39,7 @@ The `sendObjectToNext()` method sends an object to its next status. Throws an ex
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
 | 2025          | ✔         |
+| 2026          | ✔         |

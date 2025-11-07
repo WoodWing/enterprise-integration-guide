@@ -17,7 +17,7 @@ app.openObjects(server, ids [, readonly] [, instantiate] [, dossier]);
 
 **server** _string_
 
-The name of Studio or Enterprise Server (as defined in the WWSettings.xml file) from which the files should be opened.
+The name of Studio Server (as defined in the WWSettings.xml file) from which the files should be opened.
 
 **objectId** _string[]_
 
@@ -53,7 +53,7 @@ The `openObjects()` method does not return anything.
 
 ## Description
 
-The `openObject()` method opens files from the Studio or Enterprise Server. It will give the user the possibility to log in when that is not yet the case. It does not throw errors for non existing objects. Not supported for InDesign Server.
+The `openObject()` method opens files from the Studio Server. It will give the user the possibility to log in when that is not yet the case. It does not throw errors for non existing objects. Not supported for InDesign Server.
 
 ## Examples
 
@@ -67,7 +67,7 @@ The `openObject()` method opens files from the Studio or Enterprise Server. It w
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
 | 2025          | ✔         |
+| 2026          | ✔         |

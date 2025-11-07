@@ -28,18 +28,18 @@ Status (true or false) of the woodwingLogging preference.
 The `woodwingLogging` property turns off and on WoodWing logging.
 
 ## Examples
-    
+
 **Turn on WoodWing logging**
 
 ```javascript
-    app.woodwingLogging = true;
+app.woodwingLogging = true;
 ```
 
 ## Supported versions
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
 | 2025          | ✔         |
+| 2026          | ✔         |
