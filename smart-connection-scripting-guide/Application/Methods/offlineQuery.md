@@ -17,18 +17,36 @@ app.offlineQuery();
 
 **Return value** _string_
 
-A string representing the result for the offline query event.
+A string representing the result for the Offline query event. The result is comma separated.
 
 ## Description
 
-The `namedQuery()` method performs an offline query.
+The `offlineQuery()` method performs an offline query. It will list all the objects that are closed for offline usage within the application this query is done.
+An offline query can be performed when a user is logged in as well as when a user is logged out.
 
 ## Examples
 
-**Example title**
+**Example of queryResult when there are no offline objects**
 
 ```javascript
+var queryResult = app.offlineQuery();
 
+// Columns: <int, ID><string, Name><string, Type>
+//
+// Rows:
+```
+
+**Example of queryResult when there are object that are closed for offline useage**
+
+```javascript
+var queryResult = app.offlineQuery();
+
+// Columns: <int, ID><string, Name><string, Type>
+//
+// Rows:
+// <11191, overset_layout, Layout>
+//
+// <15238, offline_layout, Layout>
 ```
 
 ## Supported versions
