@@ -42,7 +42,7 @@ The `browseQuery()` method generates the result of the Browse query returned by 
 
 ## Examples
 
-**Get the results for a specific query**
+**Get the results for browseQuery**
 
 ```javascript
 // Get browse query results from the server.

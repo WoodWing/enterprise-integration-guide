@@ -21,7 +21,7 @@ The ID of the object on the Studio or Enterprise Server used to retrieve the IDs
 
 **Return value** _string[]_
 
-An array of string representing the found Dossier IDs.
+An Array of String representing the found Dossier IDs.
 
 ## Description
 
@@ -29,7 +29,7 @@ The `getDossierForItem()` method performs a query on the Studio or Enterprise Se
 
 ## Examples
 
-**Example title**
+**Get the associated Dossiers for an object by its ID**
 
 ```javascript
 // prerequisites:
