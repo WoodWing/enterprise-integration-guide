@@ -30,7 +30,7 @@ The EntMetaData object can be manipulated by setting new metadata by using [`set
 
 ## Examples
 
-**Example title**
+**Get and set MetaData for an object by its ID**
 
 ```javascript
 // Get metadata of object '19083' and change the metadata properties of the Studio server object.

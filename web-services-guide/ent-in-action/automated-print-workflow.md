@@ -37,7 +37,7 @@ When saving a Layout in Smart Connection the InDesign Articles and their frames 
 			<InDesignArticles>
 				<InDesignArticle>
 					<Id>246</Id>
-					<NameArticle 1</Name>
+					<Name>Article 1</Name>
 				</InDesignArticle>
 				...
 ```
@@ -71,7 +71,7 @@ Enterprise Server returns the InDesign Articles:
 			<InDesignArticles>
 				<InDesignArticle>
 					<Id>246</Id>
-					<NameArticle 1</Name>
+					<Name>Article 1</Name>
 				</InDesignArticle>
 				...
 ```
@@ -208,10 +208,14 @@ logics that determines which text component or image should be placed on which I
 * Add another plug-in that introduces more operations. See also *example on Labs*.
 
 ### Default behaviour
+The *AutomatedPrintWorkflow* plug-in implements the default behaviour.
+This default behaviour varies slightly depending on the version of Studio Server. 
 
-The *AutomatedPrintWorkflow* plug-in implements the default behaviour. It works when Element Labels are unique within 
-each InDesign Article (e.g. there should be one head, intro, body and graphic) and unique within Dossiers. It has the 
-following reasoning:
+
+#### Studio Server 10.62.0 or lower
+
+It works when Element Labels are unique within each InDesign Article (e.g. there should be one _head_, _intro_, _body_ and _graphic_) 
+and unique within Dossiers. It has the following reasoning:
 
 1. Resolve the Layout frames that belong to the selected InDesign Article.
 1. Exclude duplicate InDesign Article frames; Those can not be uniquely matched.
@@ -230,5 +234,42 @@ following reasoning:
    1. Match the frame element labels with the InDesign Article frame element labels.
 1. For each candidate Image:
    1. Only make a match when InDesign Article has one graphic frame and exactly one Image was found in the Dossier.
+1. For each match that could be made, add new Object Operations to the Layout.
+1. For each frame that could not be matched, add the *ClearFrameContent* operation.
+
+#### Studio Server 10.63.0 or higher
+
+From Studio server 10.63.0, the Element Labels do not have to be unique within each InDesign Article.
+(e.g. _head_, _quote_, _quote_, _quote_, _body_, _graphic_, _graphic_ are allowed). 
+More than one article and image are also allowed in a Dossier. It has the following reasoning:
+
+1. Resolve the Layout frames that belong to the selected InDesign Article.
+1. InDesign Article frames are processed according to their sequence in the InDesign Article panel. 
+For example: If the InDesign Article consists of the following frames: _head_, _quote_, _body_, _quote_, _body_, they
+are handled in exactly this order.
+1. Collect frame types (graphic or text) from the resolved InDesign Article frames.
+1. Determine object types (Article, Image) that are compatible with the frame types. 
+1. Take the Issue to which the Layout is assigned to and take the Edition from the InDesign Article frame.
+1. Search in the Dossier for Articles and Images that are assigned to the same Issue and Edition via the Dossier (relational targets).
+   1. Exclude Articles and Images for which the user has no read access rights.
+   1. Exclude Articles and Images in Personal status and routed to another user.
+1. Exclude Articles that are placed already and the user has no Allow Multiple Article Placements access rights.
+1. For each candidate Article: (Note that if more than one article is found in the Dossier, the Articles are processed 
+starting with the one that was created first, followed by the next, and so on) :
+   1. Resolve the Layout frames (placements) of the found Article.
+   1. Exclude graphic frames; This is not supported by Smart Connection.
+   1. Match the frame element labels with the InDesign Article frame element labels.
+      1. When multiple frames with the same element labels are present in the Article (e.g. _quote_, _quote_, _body_, _body_, _head_),
+      content is placed according to the sequence of frames in the InDesign Article. In other words, for each frame in the InDesign Article, 
+      the next available element with the same label from the Article, in order of appearance, is used.
+      1. If there are fewer corresponding elements in the Article than frames of the same type in the InDesign Article, the remaining frames of that type will be left empty.
+      1. If there are more elements in the Article than frames of the same type in the InDesign Article, the extra elements will not be placed.
+1. For each candidate Image:
+   1. Each image can be labelled with an Order value (set in Relation->Order, range 1-1000000). (At the time of writing, no client is available yet to allow user to set the Order value). 
+   1. Match the InDesign Article graphic frames with the images in Dossier.
+      1. Images with a lower Order value take precedence when being placed on the InDesign Article frames.
+      1. If multiple images share the same Order value, they are processed in order of creation (oldest first).
+      1. As with the Article, if there are fewer images in the Dossier than graphic frames in InDesign Article, the remaining graphic frames will be left empty.
+      1. If there are more images in the Dossier than graphic frames in InDesign Article, the extra images will not be placed.
 1. For each match that could be made, add new Object Operations to the Layout.
 1. For each frame that could not be matched, add the *ClearFrameContent* operation.

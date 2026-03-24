@@ -31,7 +31,7 @@ The `namedQuery()` function can also be use for any other custom created Named Q
 
 ## Examples
 
-**Example title**
+**Get the results for namedQuery**
 
 ```javascript
 var queryResults = app.namedQuery("inbox"); // or
