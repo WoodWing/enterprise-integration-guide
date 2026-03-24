@@ -7,7 +7,7 @@ permalink: 1192-beforeCreateArticle
 
 ## When
 
-Before sending a new article to the Studio or Enterprise Server system.
+Before sending a new article to the Studio Server system.
 
 ## Where
 
@@ -29,10 +29,10 @@ Don’t change the text of the article at this stage. Changes will not be sent t
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
 | 2025          | ✔         |
+| 2026          | ✔         |
 
 ## See also
 

@@ -40,15 +40,15 @@ var md;
 var core_name;
 var id;
 
-for(i=0; i<managedImages.length; i++) {
-    im = managedImages[i];
-    md = im.entMetaData;
-    core_name = md.get( "Core_Name");
-    id = doc.entMetaData.get("Core_ID");
-    alert( "image name = [" + core_name + "] ; document id = [" + id + "]");
-    im.checkOut();
-    alert( "Now update the image in the woodwing.noindex folder");
-    im.checkIn();
+for (i = 0; i < managedImages.length; i++) {
+  im = managedImages[i];
+  md = im.entMetaData;
+  core_name = md.get("Core_Name");
+  id = doc.entMetaData.get("Core_ID");
+  alert("image name = [" + core_name + "] ; document id = [" + id + "]");
+  im.checkOut();
+  alert("Now update the image in the woodwing.noindex folder");
+  im.checkIn();
 }
 ```
 
@@ -56,7 +56,7 @@ for(i=0; i<managedImages.length; i++) {
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2022          |           |
 | 2023          |           |
 | 2024          | 19.0.1+ ✔ |
-| 2025          | ✔ 	    |
+| 2025          | ✔         |
+| 2026          | ✔         |

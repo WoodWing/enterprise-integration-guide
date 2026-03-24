@@ -21,11 +21,11 @@ _readonly_
 
 **Return value** _string[]_
 
-A string of Studio or Enterprise Server object IDs.
+A string of Studio Server object IDs.
 
 ## Description
 
-The `items` property is used to get a list of IDs of Studio or Enterprise Server objects which are residing in the current Dossier.
+The `items` property is used to get a list of IDs of Studio Server objects which are residing in the current Dossier.
 
 ## Examples
 
@@ -39,7 +39,7 @@ The `items` property is used to get a list of IDs of Studio or Enterprise Server
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
 | 2025          | ✔         |
+| 2026          | ✔         |

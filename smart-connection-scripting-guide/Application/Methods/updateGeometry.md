@@ -33,12 +33,12 @@ See scripting event afterGeometryNotification.
 
 ## Supported versions
 
-| Adobe Version | Supported  |
-| ------------- | ---------- |
-| 2022          | ✔          |
-| 2023          | ✔          |
-| 2024          | ✔          |
-| 2025          | ✔          |
+| Adobe Version | Supported |
+| ------------- | --------- |
+| 2023          | ✔         |
+| 2024          | ✔         |
+| 2025          | ✔         |
+| 2026          | ✔         |
 
 ## See also
 

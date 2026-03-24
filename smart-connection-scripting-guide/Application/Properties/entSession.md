@@ -21,11 +21,11 @@ _readonly_
 
 **Return value** _Session_
 
-The Studio or Enterprise Server Session object.
+The Studio Server Session object.
 
 ## Description
 
-The `entSession` property gives access to the Studio or Enterprise Server session by returning a Session object.
+The `entSession` property gives access to the Studio Server session by returning a Session object.
 
 For more info about the Session object please see the [Session](../../Session/index.md) documentation.
 
@@ -48,10 +48,10 @@ var activeSession = sessionObject.activeUrl !== "";
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
 | 2025          | ✔         |
+| 2026          | ✔         |
 
 ## See also
 

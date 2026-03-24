@@ -31,11 +31,11 @@ Name of the location to log in to. This is the name of the entry in the server l
 
 The list of request information that should be obtained with the logon. When not specified all information will be requested.
 
-**serverUrl** _string (Optional, since 16.3.3 and 17.0.1)_
+**serverUrl** _string (Optional)_
 
 URL that provides access to the Studio Server from InDesign, InCopy or InDesign Server. If the URL is not specified or empty, then the name of the server will be looked up in WWSettings.xml using the server parameter.
 
-**sso** _boolean (Optional, since 16.3.3 and 17.0.1)_
+**sso** _boolean (Optional)_
 
 Boolean that indicates if the login to the Studio Server system using the serverURL should be tried using the SSO protocol or not.
 If the `serverURL` is not specified or empty, then the server URL is looked up in WWSettings.xml together with the ‘sso’ attribute. The `sso` parameter ignored in that case.
@@ -48,7 +48,7 @@ The `login()` method does not return anything. It throws an exception in case of
 
 ## Description
 
-The `login()` method performs a login to the Studio or Enterprise Server system.
+The `login()` method performs a login to the Studio Server system.
 
 ## Examples
 
@@ -58,7 +58,7 @@ The `login()` method performs a login to the Studio or Enterprise Server system.
 app.entSession.login("John", "JohnsPassword", "localserver");
 ```
 
-**Login with URL (since 16.3.3 / 17.0.1)**
+**Login with URL**
 
 ```javascript
 app.entSession.login(
@@ -75,13 +75,13 @@ app.entSession.login(
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
 | 2025          | ✔         |
+| 2026          | ✔         |
 
 ### Single Sign-On
 
 The `login()` scripting call does not support Single Sign-On (SSO). When running the login scripting call on InDesign Server, SSO is always ignored for SSO enabled application servers.
 In InDesign and InCopy, without specifying the `serverUrl` parameter, the `login()` scripting call will only work on SSO enabled application servers if the `sso` attribute is set to “false” for the corresponding server definition in WWSettings.xml.
-Since Studio for InDesign and InCopy 16.3.3 and 17.0.1: If the `serverUrl` parameter is provided, then the `sso` parameter in the scripting call should be set to “false” to login to an sso enabled Studio Server.
+If the `serverUrl` parameter is provided, then the `sso` parameter in the scripting call should be set to “false” to login to an sso enabled Studio Server.

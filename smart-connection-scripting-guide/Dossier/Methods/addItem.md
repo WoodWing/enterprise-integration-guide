@@ -17,7 +17,7 @@ Dossier.removeItem(objectId);
 
 **objectId** _string_
 
-The object ID on the Studio or Enterprise Server of the object to remove from the Dossier.
+The object ID on the Studio Server of the object to remove from the Dossier.
 
 **Return value**
 
@@ -25,7 +25,7 @@ The `removeItem()` method does not return anything.
 
 ## Description
 
-The `removeItem()` method removes an item from the Dossier. Removes the item from the corresponding Dossier in Studio or Enterprise Server as well.
+The `removeItem()` method removes an item from the Dossier. Removes the item from the corresponding Dossier in Studio Server as well.
 
 ## Examples
 
@@ -39,7 +39,7 @@ The `removeItem()` method removes an item from the Dossier. Removes the item fro
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
 | 2025          | ✔         |
+| 2026          | ✔         |

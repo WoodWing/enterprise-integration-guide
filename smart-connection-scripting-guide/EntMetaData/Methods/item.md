@@ -21,7 +21,7 @@ The index (number) or name (string) of the metadata item in the metadata object.
 
 **Return value** Array
 
-**<span style="font-size:90%;">_2022, 2023, 2024 up to and including 19.0.5, 2025 up to and including 20.0.2_</span>**
+**<span style="font-size:90%;">_2023, 2024 up to and including 19.0.5, 2025 up to and including 20.0.2_</span>**
 
 ```
 Array[0] (property key): string
@@ -70,7 +70,7 @@ try {
 
 | Adobe Version | Supported | Description                                                                                                         |
 | ------------- | --------- | ------------------------------------------------------------------------------------------------------------------- |
-| 2022          | ✔         | Returns Array of [string, string \| Array of string \| number \| Array of number \| boolean \| or Array of boolean] |
 | 2023          | ✔         | Returns Array of [string, string \| Array of string \| number \| Array of number \| boolean \| or Array of boolean] |
 | 2024          | ✔         | From v19.0.6 onwards, returns Array of [string, string \| Array of string].                                         |
 | 2025          | ✔         | From v20.0.3 onwards, returns Array of [string, string \| Array of string].                                         |
+| 2026          | ✔         | Returns Array of [string, string \| Array of string].                                                               |

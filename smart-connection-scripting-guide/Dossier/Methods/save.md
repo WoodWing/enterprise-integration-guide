@@ -21,7 +21,7 @@ The `save()` method does not return anything.
 
 ## Description
 
-The `save()` method saves the Dossier object. The corresponding Dossier is saved in Studio or Enterprise Server as well.
+The `save()` method saves the Dossier object. The corresponding Dossier is saved in Studio Server as well.
 
 ## Examples
 
@@ -35,7 +35,7 @@ The `save()` method saves the Dossier object. The corresponding Dossier is saved
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
 | 2025          | ✔         |
+| 2026          | ✔         |

@@ -17,7 +17,7 @@ Dossier.addItem(objectId);
 
 **objectId** _string_
 
-The object ID on the Studio or Enterprise Server of the object to add to the Dossier.
+The object ID on the Studio Server of the object to add to the Dossier.
 
 **Return value**
 
@@ -25,7 +25,7 @@ The `addItem()` method does not return anything.
 
 ## Description
 
-The `addItem()` method adds an item to the Dossier. Adds the item to the corresponding Dossier in Studio or Enterprise Server as well.
+The `addItem()` method adds an item to the Dossier. Adds the item to the corresponding Dossier in Studio Server as well.
 
 ## Examples
 
@@ -39,7 +39,7 @@ The `addItem()` method adds an item to the Dossier. Adds the item to the corresp
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
 | 2025          | ✔         |
+| 2026          | ✔         |

@@ -44,7 +44,7 @@ var entIssue = app.entSession.getIssue("WW News", "1st Issue");
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
 | 2025          | ✔         |
+| 2026          | ✔         |

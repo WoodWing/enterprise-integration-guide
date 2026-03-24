@@ -33,10 +33,10 @@ A template with all placed components of the article will be generated in the fi
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2022         | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
 | 2025          | ✔         |
+| 2026          | ✔         |
 
 ## See also
 

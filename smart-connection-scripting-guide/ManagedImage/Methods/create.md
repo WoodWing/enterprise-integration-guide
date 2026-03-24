@@ -25,7 +25,7 @@ The `create()` method does not return anything.
 
 ## Description
 
-The `create()` method creates an image from the given page item in the Studio or Enterprise Server system.
+The `create()` method creates an image from the given page item in the Studio Server system.
 
 ## Examples
 
@@ -39,7 +39,7 @@ The `create()` method creates an image from the given page item in the Studio or
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
 | 2025          | ✔         |
+| 2026          | ✔         |

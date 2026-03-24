@@ -21,7 +21,7 @@ The `logout()` method does not return anything. It throws an exception in case o
 
 ## Description
 
-The `logout()` method performs a logout from the Studio or Enterprise Server system.
+The `logout()` method performs a logout from the Studio Server system.
 
 ## Examples
 
@@ -35,7 +35,7 @@ The `logout()` method performs a logout from the Studio or Enterprise Server sys
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
 | 2025          | ✔         |
+| 2026          | ✔         |

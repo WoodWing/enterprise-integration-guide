@@ -21,7 +21,7 @@ The newly created Document object.
 
 ## Description
 
-The `saveAs()` method stores the document as a new object in the Studio or Enterprise Server system. Throws an exception in case of an error. Change the metadata before calling saveAs.
+The `saveAs()` method stores the document as a new object in the Studio Server system. Throws an exception in case of an error. Change the metadata before calling saveAs.
 
 Use the “Type” key in the EntMetaData to indicate what kind of object should be created. Possible values are: “Layout”, “LayoutTemplate”, “LayoutModule” or “LayoutModuleTemplate”.
 
@@ -37,7 +37,7 @@ Use the “Type” key in the EntMetaData to indicate what kind of object should
 
 | Adobe Version | Supported |
 | ------------- | --------- |
-| 2022          | ✔         |
 | 2023          | ✔         |
 | 2024          | ✔         |
 | 2025          | ✔         |
+| 2026          | ✔         |
