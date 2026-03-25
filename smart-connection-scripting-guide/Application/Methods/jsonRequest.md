@@ -31,6 +31,12 @@ A string containing the complete and total server response.
 
 The `jsonRequest()` method posts a JSON object string as a request to a Studio Server URL in order to receive a response in JSON object string format.
 
+## Notes
+
+In Studio for InDesign and InCopy versions earlier than 21.0 (Adobe 2026), the HTTP header `Content-Type` is incorrectly set to `application/x-www-form-urlencoded`.
+According to the standards for communication in json format, the `Content-Type` should be `application/json`. 
+Since Studio for InDesign and InCopy for Adobe 2026 (21.0) the `Content-Type` HTTP header is therefore set to `application/json`.
+
 ## Examples
 
 Full working script examples for `QueryObjects`, `DeleteObject`, `GetPublicationDate`: [jsonRequest-samples.zip](https://github.com/WoodWing/enterprise-integration-guide/raw/master/assets/download/jsonRequest-samples.zip)
