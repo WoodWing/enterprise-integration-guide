@@ -113,6 +113,11 @@ toc:
           path: smart-connection-scripting-guide/Application/Properties/studioPreferences.md
           url: smart-connection-scripting-guide/Application/Properties/studioPreferences.html
           permalink: 1087-studioPreferences
+        - title: studioPlugins
+          layout: chapter
+          path: smart-connection-scripting-guide/Application/Properties/studioPlugins.md
+          url: smart-connection-scripting-guide/Application/Properties/studioPlugins.html
+          permalink: 1248-studioPlugins
     - title: Document
       layout: section
       path: smart-connection-scripting-guide/Document/index.md
@@ -894,6 +899,60 @@ toc:
           path: smart-connection-scripting-guide/Story/Properties/managedArticle.md
           url: smart-connection-scripting-guide/Story/Properties/managedArticle.html
           permalink: 1170-managedArticle
+    - title: StudioPlugins
+      layout: section
+      path: smart-connection-scripting-guide/StudioPlugins/index.md
+      url: smart-connection-scripting-guide/StudioPlugins/index.html
+      permalink: 1249-index
+      children:
+      - title: StudioPlugins properties
+        layout: section
+        path: smart-connection-scripting-guide/StudioPlugins/Properties/index.md
+        url: smart-connection-scripting-guide/StudioPlugins/Properties/index.html
+        permalink: 1250-index
+        children:
+        - title: version
+          layout: chapter
+          path: smart-connection-scripting-guide/StudioPlugins/Properties/version.md
+          url: smart-connection-scripting-guide/StudioPlugins/Properties/version.html
+          permalink: 1251-version
+    - title: PluginVersion
+      layout: section
+      path: smart-connection-scripting-guide/PluginVersion/index.md
+      url: smart-connection-scripting-guide/PluginVersion/index.html
+      permalink: 1252-index
+      children:
+      - title: PluginVersion properties
+        layout: section
+        path: smart-connection-scripting-guide/PluginVersion/Properties/index.md
+        url: smart-connection-scripting-guide/PluginVersion/Properties/index.html
+        permalink: 1253-index
+        children:
+        - title: major
+          layout: chapter
+          path: smart-connection-scripting-guide/PluginVersion/Properties/major.md
+          url: smart-connection-scripting-guide/PluginVersion/Properties/major.html
+          permalink: 1254-major
+        - title: minor
+          layout: chapter
+          path: smart-connection-scripting-guide/PluginVersion/Properties/minor.md
+          url: smart-connection-scripting-guide/PluginVersion/Properties/minor.html
+          permalink: 1255-minor
+        - title: patch
+          layout: chapter
+          path: smart-connection-scripting-guide/PluginVersion/Properties/patch.md
+          url: smart-connection-scripting-guide/PluginVersion/Properties/patch.html
+          permalink: 1256-patch
+        - title: build
+          layout: chapter
+          path: smart-connection-scripting-guide/PluginVersion/Properties/build.md
+          url: smart-connection-scripting-guide/PluginVersion/Properties/build.html
+          permalink: 1257-build
+        - title: release
+          layout: chapter
+          path: smart-connection-scripting-guide/PluginVersion/Properties/release.md
+          url: smart-connection-scripting-guide/PluginVersion/Properties/release.html
+          permalink: 1258-release
     - title: Workflow
       layout: section
       path: smart-connection-scripting-guide/Workflow/index.md
