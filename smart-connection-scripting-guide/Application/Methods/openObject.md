@@ -10,7 +10,7 @@ permalink: 1082-openObject
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
 
 ```javascript
-app.openObject(objectId [, checkout] [, withWindow] [, type] [, dossierId]);
+app.openObject(objectId [, checkout] [, withWindow] [, type] [, dossierId], [, server]);
 ```
 
 ### Parameters
@@ -41,7 +41,9 @@ The passed Dossier ID will be used as the default selected Dossier in the Save A
 **server** _string (Optional)_
 <sub>(Supported from v14.1)</sub>
 
-The name of the server on which the object with the `objectId` is stored. When needed the user will get the possibility to log in to this server.
+The name of the server, similar to as it is declared in the WWWSettings.xml file, on which the object with the `objectId` is stored. The user will get the possibility to log in to this server only when they are logged out.
+
+If the user is already logged in to Server A, a login action for Server B will not be performed.
 
 **Return value** _Object_
 
