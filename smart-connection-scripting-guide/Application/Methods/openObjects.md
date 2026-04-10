@@ -60,7 +60,35 @@ The `openObject()` method opens files from the Studio Server. It will give the u
 **Example title**
 
 ```javascript
+// Open multiple objects by passing their IDs as an array.
+// Objects are checked out by default.
+app.openObjects("StudioServer01", ["article123", "article456"]);
 
+// Open multiple objects as read-only (not checked out).
+// Required when opening layouts in InCopy.
+app.openObjects("StudioServer01", ["layout123", "layout456"], true);
+
+// Open template files as new instances (default behavior).
+app.openObjects("StudioServer01", ["template123", "template456"]);
+
+// Open template files as originals, not as new instances.
+app.openObjects("StudioServer01", ["template123", "template456"], false, false);
+
+// Open layout templates and specify a default parent Dossier.
+// The Dossier ID is used as the default in the Save As dialog when instantiating
+// Layout or Layout Module templates.
+app.openObjects(
+  "StudioServer01",
+  ["template123", "template456"],
+  false,
+  true,
+  "dossier890"
+);
+
+// Build an array of IDs dynamically and open them all at once.
+// Non-existing IDs are silently ignored — no error is thrown.
+var ids = ["article123", "article456", "layout789"];
+app.openObjects("StudioServer01", ids);
 ```
 
 ## Supported versions
