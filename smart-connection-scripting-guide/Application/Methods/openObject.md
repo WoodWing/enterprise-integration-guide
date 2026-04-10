@@ -55,7 +55,7 @@ The `openObject()` method opens an object from the Studio Server. Throws an exce
 
 ## Examples
 
-**Example title**
+**Various examples of opening an object**
 
 ```javascript
 // Open an object with only the objectId.

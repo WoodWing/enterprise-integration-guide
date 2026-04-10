@@ -57,7 +57,7 @@ The `openObject()` method opens files from the Studio Server. It will give the u
 
 ## Examples
 
-**Example title**
+**Various examples of opening objects**
 
 ```javascript
 // Open multiple objects by passing their IDs as an array.
