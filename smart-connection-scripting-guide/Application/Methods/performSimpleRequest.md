@@ -21,7 +21,7 @@ Any valid URL.
 
 **Return value** _string_
 
-A string containing the complete and total server response.
+On success (HTTP 200), a string containing the complete response body. On failure, the HTTP status code as a string (e.g. `"404"`). Returns `"0"` if the connection could not be established.
 
 ## Description
 
@@ -29,7 +29,7 @@ The `performSimpleRequest()` calls a URL and returns the response as a string.
 
 ## Examples
 
-** Call phpinfo.php on a local Studio Server**
+**Call phpinfo.php on a local Studio Server**
 
 ```javascript
 var sURL = "http://localhost/StudioServer/server/wwtest/phpinfo.php";
