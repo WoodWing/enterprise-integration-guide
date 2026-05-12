@@ -46,12 +46,12 @@ if (major < 21) {
 
 ## Supported versions
 
-| Adobe Version | Supported |
-| ------------- | --------- |
-| 2023          |           |
-| 2024          |           |
-| 2025          | ✔         |
-| 2026          | ✔         |
+| Adobe Version  | Supported |
+| -------------- | --------- |
+| 2023           |           |
+| 2024           |           |
+| 2025 (v20.0.4) | ✔         |
+| 2026 (v21.0.1) | ✔         |
 
 ## See also
 

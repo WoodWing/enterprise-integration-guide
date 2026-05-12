@@ -36,19 +36,26 @@ The `studioPlugins` property gives access to information about the installed Woo
 var version = app.studioPlugins.version;
 
 // Compose a version string from the individual version components.
-var versionString = version.major + "." + version.minor + "." + version.patch + " build " + version.build;
+var versionString =
+  version.major +
+  "." +
+  version.minor +
+  "." +
+  version.patch +
+  " build " +
+  version.build;
 alert("Installed Studio plug-in version: " + versionString);
 // Example result: "21.0.1 build 34"
 ```
 
 ## Supported versions
 
-| Adobe Version | Supported |
-| ------------- | --------- |
-| 2023          |           |
-| 2024          |           |
-| 2025          | ✔         |
-| 2026          | ✔         |
+| Adobe Version  | Supported |
+| -------------- | --------- |
+| 2023           |           |
+| 2024           |           |
+| 2025 (v20.0.4) | ✔         |
+| 2026 (v21.0.1) | ✔         |
 
 ## See also
 
