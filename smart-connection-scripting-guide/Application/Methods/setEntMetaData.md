@@ -15,42 +15,39 @@ app.setEntMetaData(metaData);
 
 ### Parameters
 
-**metaData** _EntMetaData_
+**metaData** [_EntMetaData_](../../EntMetaData/index.md)
 
-Meta data of the object to set metadata properties for.
+Metadata of the object to set properties for on Studio Server.
 
 **Return value** _int32_
 
-The status returned from the Studio Server
+The status returned from Studio Server
 
 ## Description
 
-The `setEntMetaData()` method sets metadata properties for an object stored in Studio Server. The object identifier of the Studio Server object is included in the EntMetaData object. The method throws an exception in case of an error.
+The `setEntMetaData()` method sets metadata properties for an object stored in Studio Server. The object identifier of the Studio Server object is included in the [EntMetaData](../../EntMetaData/index.md) object. The method throws an exception in case of an error.
 
 Limitations:
 
-- the method will only be successful if the object is not locked, by either the current user or another user.
+- The method will only be successful if the object is not locked by the current user or another user.
 
-- only properties that are configured for the Set Properties dialog can be changed using the scripting method.
+- Only properties that are configured for the Set Properties dialog can be changed using the scripting method.
 
 ## Examples
 
-**Example title**
+**Set metadata properties for an object by its ID**
 
 ```javascript
-// get metadata of object '19083', change the 'Cities' custom property of type multilist and set the metadata on the server object.
+// Get metadata of object '19083' and change the 'Cities' custom property of type multilist.
 var objID = "19083";
-var meta;
 var key = "C_CITIES";
+
 try {
-  meta = app.getEntMetaData(objID);
-  var objectStatus = meta.get(key);
+  var meta = app.getEntMetaData(objID);
   meta.set(key, ["Paris", "Berlin"]);
   app.setEntMetaData(meta);
 } catch (e) {
-  alert(
-    "Setting metadata properties for [" + key + "] failed: [" + e.message + "]."
-  );
+  alert("Setting metadata properties for [" + key + "] failed: [" + e.message + "].");
 }
 ```
 
