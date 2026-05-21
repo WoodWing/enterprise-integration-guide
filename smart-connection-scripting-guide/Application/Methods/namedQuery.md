@@ -21,13 +21,22 @@ The name of the query (case insensitive).
 
 **Return value** _string_
 
-A string representing the Browse query result.
-The result is comma separated.
+A comma-separated string representing the query result, in the same format as [`storedUserQuery()`](1086-storedUserQuery) and [`browseQuery()`](1076-browseQuery): a `Columns:` header section followed by `Rows:` data, and `First Entry:`, `Listed Entries:`, and `Total Entries:` counters.
 
 ## Description
 
 The `namedQuery()` function performs a named query. It can be used for the standard Inbox, Libraries and Templates queries.
-The `namedQuery()` function can also be use for any other custom created Named Query on the Named Queries page of Studio Server.
+The `namedQuery()` function can also be used for any other custom Named Query created on the Named Queries page of Studio Server.
+
+### Comparison with related query methods
+
+| Method | Query definition | Filters |
+| --- | --- | --- |
+| `namedQuery(queryName)` | Defined by an **administrator** on the Named Queries page of Studio Server (server-side, shared) | Fixed criteria as configured on the server; includes built-ins such as `inbox`, `libraries`, and `templates` |
+| [`storedUserQuery(queryName)`](1086-storedUserQuery) | Saved by the **user** through the Smart Connection panel UI (client-side, per user) | Brand, Issue, Edition, Section, State, plus any additional search criteria saved with the query |
+| [`browseQuery(brand, issue, section, state)`](1076-browseQuery) | No stored definition — all filters are passed **inline** as parameters | Brand, Issue, Section, and State only |
+
+Use `namedQuery()` for shared, server-managed queries that apply consistently across all users. Use [`storedUserQuery()`](1086-storedUserQuery) to re-execute a query a user has saved in their Smart Connection panel. Use [`browseQuery()`](1076-browseQuery) when you want to pass filter criteria directly from the script.
 
 ## Examples
 
@@ -76,6 +85,20 @@ queryResults = app.namedQuery("templates");
 //  Listed Entries: 3
 //
 //  Total Entries: 3"
+```
+
+**Choose between namedQuery, storedUserQuery, and browseQuery**
+
+```javascript
+// Use namedQuery() for a shared, server-defined query (e.g. the user's Inbox).
+var inboxResult = app.namedQuery("inbox");
+
+// Use storedUserQuery() to re-run a query the user saved in the panel,
+// without hardcoding its filter values in the script.
+var savedResult = app.storedUserQuery("Q4 Campaign Assets");
+
+// Use browseQuery() when you know the exact filter values at script time.
+var browseResult = app.browseQuery("WW News", "1st Issue", "News", "Ready");
 ```
 
 ## Supported versions
