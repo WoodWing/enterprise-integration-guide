@@ -19,19 +19,31 @@ _readonly_
 
 ### Parameters
 
-**Return value** _StudioPreference_
+**Return value** _[StudioPreference](../../StudioPreference/index.md)_
 
-WoodWing Studio preference settings object.
+The WoodWing Studio preference settings object.
 
 ## Description
 
-The `studioPreferences` property gives access to the WoodWing Studio preference settings by returning a StudioPreference object.
-
-For more info about the StudioPreferences object please see the [StudioPreference](../../StudioPreference/index.md) documentation.
+The `studioPreferences` property gives access to the WoodWing Studio preference settings by returning a [StudioPreference](../../StudioPreference/index.md) object. Use this object to read or change preferences such as routing message alerts, panel font sizes, smart caching, object style application, and placed image handling.
 
 ## Examples
 
-You can find examples in the description of the StudioPreference properties.
+**Read a preference value**
+
+```javascript
+// Get the current routing message alert preference.
+var pref = app.studioPreferences.showRoutingMessageAlert;
+alert("Routing message alert: " + pref);
+```
+
+**Set a preference value**
+
+```javascript
+// Show a routing message alert when an object is sent to the current user.
+app.studioPreferences.showRoutingMessageAlert =
+  ShowRoutingMessageOptions.SHOW_SENT_TO_ME;
+```
 
 ## Supported versions
 
