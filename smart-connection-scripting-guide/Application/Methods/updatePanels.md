@@ -15,20 +15,35 @@ app.updatePanels();
 
 ### Parameters
 
+None.
+
 **Return value**
 
-The `updatePanels()` method does not return anything.
+The `updatePanels()` method does not return a value.
 
 ## Description
 
-The `updatePanels()` method refreshes the contents of all Studio for InDesign and InCopy query panels. Throws an exception in case of an error.
+The `updatePanels()` method refreshes the contents of all Studio query panels in InDesign or InCopy.
 
 ## Examples
 
-**Example title**
+**Refresh all query panels**
 
 ```javascript
+// Refresh all Studio query panels.
+app.updatePanels();
+```
 
+**Refresh panels after sending an object to its next workflow status**
+
+```javascript
+// Send an object to its next workflow status, then refresh the panels.
+try {
+  app.sendObjectToNext("6315");
+} catch (e) {
+  alert("Failed to send object to next status: " + e.message);
+}
+app.updatePanels();
 ```
 
 ## Supported versions
