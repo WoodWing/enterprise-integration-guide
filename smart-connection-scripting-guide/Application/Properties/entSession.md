@@ -19,15 +19,13 @@ _readonly_
 
 ### Parameters
 
-**Return value** _Session_
+**Return value** _[Session](../../Session/index.md)_
 
 The Studio Server Session object.
 
 ## Description
 
-The `entSession` property gives access to the Studio Server session by returning a Session object.
-
-For more info about the Session object please see the [Session](../../Session/index.md) documentation.
+The `entSession` property gives access to the Studio Server session by returning a [Session](../../Session/index.md) object. Use this object to log in and out of Studio Server, retrieve session details such as the active server, URL, user, and ticket, and query server data such as publications, issues, and users.
 
 ## Examples
 
@@ -42,6 +40,19 @@ var activeSession = sessionObject.activeUrl !== "";
 
 // When logged in, activeSession is now 'true'.
 // When not logged in, activeSession is 'false'.
+```
+
+**Read active session details**
+
+```javascript
+// Retrieve the current session details.
+var session = app.entSession;
+var server = session.activeServer;
+var url    = session.activeUrl;
+var user   = session.activeUser;
+var ticket = session.activeTicket;
+
+alert("Server: " + server + "\nURL: " + url + "\nUser: " + user + "\nTicket: " + ticket);
 ```
 
 ## Supported versions
