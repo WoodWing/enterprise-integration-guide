@@ -25,7 +25,7 @@ The StudioPlugins object, giving access to information about the installed WoodW
 
 ## Description
 
-The `studioPlugins` property gives access to information about the installed WoodWing Studio plug-ins by returning a [StudioPlugins](../../StudioPlugins/index.md) object. Use this object to retrieve the version of the installed Studio plug-ins.
+The `studioPlugins` property gives access to information about the installed WoodWing Studio plug-ins by returning a [StudioPlugins](../../StudioPlugins/index.md) object. Use this object to retrieve the version of the installed Studio plug-ins via its `version` property, which returns a [PluginVersion](../../PluginVersion/index.md) object exposing the major, minor, and patch numbers, the build number, and the release type.
 
 ## Examples
 
@@ -43,9 +43,12 @@ var versionString =
   "." +
   version.patch +
   " build " +
-  version.build;
+  version.build +
+  " (" +
+  version.release +
+  ")";
 alert("Installed Studio plug-in version: " + versionString);
-// Example result: "21.0.1 build 34"
+// Example result: "21.0.1 build 34 (release)"
 ```
 
 ## Supported versions
