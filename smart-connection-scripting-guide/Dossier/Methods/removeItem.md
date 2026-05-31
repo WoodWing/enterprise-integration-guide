@@ -1,6 +1,6 @@
 ---
 layout: chapter
-title: addItem
+title: removeItem
 sortid: 24
 permalink: 1104-removeItem
 ---
@@ -10,29 +10,31 @@ permalink: 1104-removeItem
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
 
 ```javascript
-Dossier.addItem(objectId);
+Dossier.removeItem(id);
 ```
 
 ### Parameters
 
-**objectId** _string_
+**id** _string_
 
-The object ID on the Studio Server of the object to add to the Dossier.
+The object ID on the Studio Server of the object to remove from the Dossier.
 
 **Return value**
 
-The `addItem()` method does not return anything.
+The `removeItem()` method does not return a value.
 
 ## Description
 
-The `addItem()` method adds an item to the Dossier. Adds the item to the corresponding Dossier in Studio Server as well.
+The `removeItem()` method removes an object from the Dossier. The item is also removed from the corresponding Dossier in Studio Server.
 
 ## Examples
 
-**Example title**
+**Remove an item from an existing dossier**
 
 ```javascript
-
+// Retrieve an existing dossier and remove an item from it.
+var dossier = app.dossiers.retrieve("456");
+dossier.removeItem("6315");
 ```
 
 ## Supported versions

@@ -17,18 +17,22 @@ Dossier.refresh();
 
 **Return value**
 
-The `refresh()` method does not return anything.
+The `refresh()` method does not return a value.
 
 ## Description
 
-The `refresh()` method refreshes the Dossier object with new information from the Studio Server.
+The `refresh()` method refreshes the Dossier object by re-fetching its metadata and items from Studio Server.
 
 ## Examples
 
-**Example title**
+**Refresh a dossier and read its updated name**
 
 ```javascript
-
+// Retrieve a dossier, refresh it, then read the current metadata.
+var dossier = app.dossiers.retrieve("456");
+dossier.refresh();
+var name = dossier.entMetaData.get("Core_Name");
+alert("Current dossier name: " + name);
 ```
 
 ## Supported versions

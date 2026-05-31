@@ -68,6 +68,6 @@ alert(newDosMetaData.get("Core_ID")); // 43786
 | Adobe Version | Supported | Returns created Dossier object |
 | ------------- | --------- | ------------------------------ |
 | 2023          | ✔         |                                |
-| 2024          | ✔         | ✔ v19.0.3 and up               |
+| 2024          | ✔         | ✔ v19.0.4 and up               |
 | 2025          | ✔         | ✔ v20.0.1 and up               |
 | 2026          | ✔         | ✔                              |

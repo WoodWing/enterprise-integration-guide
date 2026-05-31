@@ -19,20 +19,36 @@ _readonly_
 
 ### Parameters
 
-**Return value** _EntMetaData_
+**Return value** _[EntMetaData](../../EntMetaData/index.md)_
 
-An EntMetaData object.
+The Studio Server metadata object associated with the Dossier.
 
 ## Description
 
-The `entMetaData` property is used to get the Studio Server metadata associated with the Dossier.
+The `entMetaData` property returns an [EntMetaData](../../EntMetaData/index.md) object that provides access to the Studio Server metadata associated with the Dossier. Use this object to read or set metadata values such as the dossier name, brand, issue, and custom properties.
 
 ## Examples
 
-**Example title**
+**Read metadata of a dossier**
 
 ```javascript
+// Retrieve a dossier and read its metadata.
+var dossier = app.dossiers.retrieve("456");
+var name = dossier.entMetaData.get("Core_Name");
+var brand = dossier.entMetaData.get("Core_Publication");
+alert("Dossier '" + name + "' belongs to brand '" + brand + "'.");
+```
 
+**Set metadata before creating a new dossier**
+
+```javascript
+// Create a new dossier object and set its metadata before saving to Studio Server.
+var dossier = app.dossiers.add();
+dossier.entMetaData.set("Core_Name", "New Dossier");
+dossier.entMetaData.set("Core_Publication", "WW News");
+dossier.entMetaData.set("Core_Issue", "1st Issue");
+dossier.entMetaData.set("Core_Section", "Sport");
+dossier.create();
 ```
 
 ## Supported versions
@@ -43,3 +59,7 @@ The `entMetaData` property is used to get the Studio Server metadata associated 
 | 2024          | ✔         |
 | 2025          | ✔         |
 | 2026          | ✔         |
+
+## See also
+
+- [EntMetaData](../../EntMetaData/index.md)

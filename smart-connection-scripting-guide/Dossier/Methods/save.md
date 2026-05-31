@@ -17,18 +17,21 @@ Dossier.save();
 
 **Return value**
 
-The `save()` method does not return anything.
+The `save()` method does not return a value.
 
 ## Description
 
-The `save()` method saves the Dossier object. The corresponding Dossier is saved in Studio Server as well.
+The `save()` method saves the Dossier object to Studio Server. If the Dossier does not yet exist on Studio Server, it is created first.
 
 ## Examples
 
-**Example title**
+**Update the name of an existing dossier and save it**
 
 ```javascript
-
+// Retrieve a dossier, update its name, then save it.
+var dossier = app.dossiers.retrieve("456");
+dossier.entMetaData.set("Core_Name", "Updated Dossier Name");
+dossier.save();
 ```
 
 ## Supported versions

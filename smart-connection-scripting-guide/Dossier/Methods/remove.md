@@ -17,18 +17,20 @@ Dossier.remove();
 
 **Return value**
 
-The `remove()` method does not return anything.
+The `remove()` method does not return a value.
 
 ## Description
 
-The `remove()` method removes the Dossier object. The corresponding Dossier is removed from Studio Server as well.
+The `remove()` method deletes the Dossier object. The corresponding Dossier is also removed from Studio Server.
 
 ## Examples
 
-**Example title**
+**Remove an existing dossier**
 
 ```javascript
-
+// Retrieve a dossier and remove it from Studio Server.
+var dossier = app.dossiers.retrieve("456");
+dossier.remove();
 ```
 
 ## Supported versions
