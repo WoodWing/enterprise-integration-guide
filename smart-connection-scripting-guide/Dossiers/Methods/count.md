@@ -21,14 +21,16 @@ The number of Dossier objects in the collection.
 
 ## Description
 
-The `count()` method returns the number of Dossier objects within the Dossiers collection object.
+The `count()` method returns the number of [Dossier](../../Dossier/index.md) objects currently in the Dossiers collection.
 
 ## Examples
 
-**Example title**
+**Get the number of dossiers in the collection**
 
 ```javascript
-
+// Get the number of dossiers currently in the collection.
+var count = app.dossiers.count();
+alert("Number of dossiers: " + count);
 ```
 
 ## Supported versions
