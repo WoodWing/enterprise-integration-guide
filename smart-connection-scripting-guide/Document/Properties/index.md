@@ -6,7 +6,7 @@ permalink: 1093-index
 Properties on the Document object.
 
 * [activeEdition](./activeEdition.md)
-* [defaultEdition](./defaultEdition.md)
+* [defaultEditions](./defaultEditions.md)
 * [entMetaData](./entMetaData.md)
 * [entWorkflow](./entWorkflow.md)
 * [managedAdverts](./managedAdverts.md)

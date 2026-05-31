@@ -19,20 +19,22 @@ _readonly_
 
 ### Parameters
 
-**Return value** _ManagedLayoutModules_
+**Return value** _[ManagedLayoutModules](../../ManagedLayoutModules/index.md)_
 
-A ManagedLayoutModules object.
+The collection of managed Layout Modules in the Document.
 
 ## Description
 
-The `managedLayoutModules` property is used to get all managed Layout Modules belonging to the Document.
+The `managedLayoutModules` property returns a [ManagedLayoutModules](../../ManagedLayoutModules/index.md) collection object containing all Layout Modules in the Document that are managed by Studio Server.
 
 ## Examples
 
-**Example title**
+**Count the managed Layout Modules in the active document**
 
 ```javascript
-
+// Get the number of managed Layout Modules in the active document.
+var count = app.activeDocument.managedLayoutModules.count();
+alert("Number of managed Layout Modules: " + count);
 ```
 
 ## Supported versions
@@ -43,3 +45,7 @@ The `managedLayoutModules` property is used to get all managed Layout Modules be
 | 2024          | ✔         |
 | 2025          | ✔         |
 | 2026          | ✔         |
+
+## See also
+
+- [ManagedLayoutModules](../../ManagedLayoutModules/index.md)

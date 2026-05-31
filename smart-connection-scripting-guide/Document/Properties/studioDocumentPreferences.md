@@ -10,7 +10,7 @@ permalink: 1087-studioDocumentPreferences
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
 
 ```javascript
-app.studioDocumentPreferences;
+Document.studioDocumentPreferences;
 ```
 
 ### Access
@@ -19,19 +19,31 @@ _readonly_
 
 ### Parameters
 
-**Return value** _StudioDocumentPreference_
+**Return value** _[StudioDocumentPreference](../../StudioDocumentPreference/index.md)_
 
-WoodWing Studio Document preference settings object.
+The WoodWing Studio Document preference settings object.
 
 ## Description
 
-The `studioDocumentPreferences` property gives access to the WoodWing Studio Document preference settings by returning a StudioDocumentPreference object.
-
-For more info about the StudioDocumentPreferences object please see the [StudioDocumentPreference](../../StudioDocumentPreference/index.md) documentation.
+The `studioDocumentPreferences` property gives access to the WoodWing Studio Document preference settings by returning a [StudioDocumentPreference](../../StudioDocumentPreference/index.md) object. Use this object to read or change document-level preferences such as the object style application behavior.
 
 ## Examples
 
-You can find examples in the description of the StudioDocumentPreference properties.
+**Read the current document-level object style preference**
+
+```javascript
+// Get the applyObjectStyle preference for the active document.
+var pref = app.activeDocument.studioDocumentPreferences.applyObjectStyle;
+alert("Apply object style: " + pref);
+```
+
+**Set the document-level object style preference**
+
+```javascript
+// Always reapply the object style when updating an article.
+app.activeDocument.studioDocumentPreferences.applyObjectStyle =
+  ApplyObjectStyleOptions.REAPPLY_WHEN_UPDATING;
+```
 
 ## Supported versions
 

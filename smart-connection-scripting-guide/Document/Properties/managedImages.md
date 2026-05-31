@@ -19,20 +19,22 @@ _readonly_
 
 ### Parameters
 
-**Return value** _ManagedImages_
+**Return value** _[ManagedImages](../../ManagedImages/index.md)_
 
-A ManagedImages object.
+The collection of managed images in the Document.
 
 ## Description
 
-The `managedImages` property is used to get all managed images belonging to the Document.
+The `managedImages` property returns a [ManagedImages](../../ManagedImages/index.md) collection object containing all images in the Document that are managed by Studio Server.
 
 ## Examples
 
-**Example title**
+**Count the managed images in the active document**
 
 ```javascript
-
+// Get the number of managed images in the active document.
+var count = app.activeDocument.managedImages.count();
+alert("Number of managed images: " + count);
 ```
 
 ## Supported versions
@@ -43,3 +45,7 @@ The `managedImages` property is used to get all managed images belonging to the 
 | 2024          | ✔         |
 | 2025          | ✔         |
 | 2026          | ✔         |
+
+## See also
+
+- [ManagedImages](../../ManagedImages/index.md)

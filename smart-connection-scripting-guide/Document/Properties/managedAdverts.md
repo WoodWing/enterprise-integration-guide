@@ -19,20 +19,22 @@ _readonly_
 
 ### Parameters
 
-**Return value** _ManagedAdverts_
+**Return value** _[ManagedAdverts](../../ManagedAdverts/index.md)_
 
-A ManagedAdverts object.
+The collection of managed adverts in the Document.
 
 ## Description
 
-The `managedAdverts` property is used to get all managed adverts belonging to the Document.
+The `managedAdverts` property returns a [ManagedAdverts](../../ManagedAdverts/index.md) collection object containing all adverts in the Document that are managed by Studio Server.
 
 ## Examples
 
-**Example title**
+**Count the managed adverts in the active document**
 
 ```javascript
-
+// Get the number of managed adverts in the active document.
+var count = app.activeDocument.managedAdverts.count();
+alert("Number of managed adverts: " + count);
 ```
 
 ## Supported versions
@@ -43,3 +45,7 @@ The `managedAdverts` property is used to get all managed adverts belonging to th
 | 2024          | ✔         |
 | 2025          | ✔         |
 | 2026          | ✔         |
+
+## See also
+
+- [ManagedAdverts](../../ManagedAdverts/index.md)

@@ -19,20 +19,22 @@ _readonly_
 
 ### Parameters
 
-**Return value** _ManagedArticles_
+**Return value** _[ManagedArticles](../../ManagedArticles/index.md)_
 
-A ManagedArticles object.
+The collection of managed articles in the Document.
 
 ## Description
 
-The `managedArticles` property is used to get all managed articles belonging to the Document.
+The `managedArticles` property returns a [ManagedArticles](../../ManagedArticles/index.md) collection object containing all articles in the Document that are managed by Studio Server.
 
 ## Examples
 
-**Example title**
+**Count the managed articles in the active document**
 
 ```javascript
-
+// Get the number of managed articles in the active document.
+var count = app.activeDocument.managedArticles.count();
+alert("Number of managed articles: " + count);
 ```
 
 ## Supported versions
@@ -43,3 +45,7 @@ The `managedArticles` property is used to get all managed articles belonging to 
 | 2024          | ✔         |
 | 2025          | ✔         |
 | 2026          | ✔         |
+
+## See also
+
+- [ManagedArticles](../../ManagedArticles/index.md)
