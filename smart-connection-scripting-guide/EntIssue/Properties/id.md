@@ -21,18 +21,21 @@ _readonly_
 
 **Return value** _string_
 
-The ID of the Issue.
+The Studio Server object ID of the Issue.
 
 ## Description
 
-The `id` property is used to get the object ID of the Issue.
+The `id` property returns the unique object ID of the Issue as stored on Studio Server.
 
 ## Examples
 
-**Example title**
+**Get the ID of an Issue**
 
 ```javascript
-
+// Get the ID of an Issue on Studio Server.
+var issue = app.entSession.getIssue("WW News", "1st Issue");
+var issueId = issue.id;
+alert("Issue ID: " + issueId);
 ```
 
 ## Supported versions
@@ -43,3 +46,8 @@ The `id` property is used to get the object ID of the Issue.
 | 2024          | ✔         |
 | 2025          | ✔         |
 | 2026          | ✔         |
+
+## See also
+
+- [getIssue](../../Session/Methods/getIssue.md)
+- [getIssues](../../Session/Methods/getIssues.md)

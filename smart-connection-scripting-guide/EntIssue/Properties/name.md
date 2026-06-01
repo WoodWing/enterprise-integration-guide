@@ -25,14 +25,17 @@ The name of the Issue.
 
 ## Description
 
-The `name` property is used to get the name of the Issue.
+The `name` property returns the name of the Issue as defined on Studio Server.
 
 ## Examples
 
-**Example title**
+**Get the name of an Issue**
 
 ```javascript
-
+// Get the name of an Issue on Studio Server.
+var issue = app.entSession.getIssue("WW News", "1st Issue");
+var issueName = issue.name;
+alert("Issue name: " + issueName);
 ```
 
 ## Supported versions
@@ -43,3 +46,8 @@ The `name` property is used to get the name of the Issue.
 | 2024          | ✔         |
 | 2025          | ✔         |
 | 2026          | ✔         |
+
+## See also
+
+- [getIssue](../../Session/Methods/getIssue.md)
+- [getIssues](../../Session/Methods/getIssues.md)
