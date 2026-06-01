@@ -29,7 +29,7 @@ Below is a list with common properties, exceptions and sample values.
 | RouteTo          | string          | Routed to                       | "woodwing"                    |
 | Comment          | string          | Comment                         | "This image needs retouching" |
 | Format           | string          | Object Format                   | "application/indesign"        |
-| Editions         | Array of string | Editions                        | [ "North, “South" ]           |
+| Editions         | Array of string | Editions                        | [ “North”, “South” ]          |
 | Deadline         | string          | Deadline                        | "2007-11-05T18:00:00"         |
 | CopyrightMarked  | string          | Copyright Marked                | "false"                       |
 | C_ACUSTOMPROP    | string          | Custom property 'A custom prop' | "A value"                     |

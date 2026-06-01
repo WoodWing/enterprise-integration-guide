@@ -25,10 +25,13 @@ The `count()` method returns the number of properties present in the metadata co
 
 ## Examples
 
-**Example title**
+**Count the metadata properties of the active document**
 
 ```javascript
-
+// Count the metadata properties of the active document.
+var md = app.activeDocument.entMetaData;
+var count = md.count();
+alert("Number of metadata properties: " + count);
 ```
 
 ## Supported versions

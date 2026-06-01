@@ -21,18 +21,25 @@ The property key.
 
 **Return value** _boolean_
 
-Returns if the property with the given key exists or not.
+`true` if the property with the given key exists, `false` otherwise.
 
 ## Description
 
-The `has()` method returns if the property with the given key exists or not.
+The `has()` method returns `true` if the property with the given key exists in the metadata collection, or `false` if it does not.
 
 ## Examples
 
-**Example title**
+**Check whether the document is managed by Studio Server**
 
 ```javascript
-
+// Check if the active document has a Studio Server ID.
+var md = app.activeDocument.entMetaData;
+if (md.has("Core_ID")) {
+    var id = md.get("Core_ID");
+    alert("Document is managed by Studio Server with ID: " + id);
+} else {
+    alert("Document is not managed by Studio Server.");
+}
 ```
 
 ## Supported versions

@@ -17,7 +17,7 @@ EntMetaData.refresh();
 
 **Return value**
 
-The `refresh()` method does not return anything.
+The `refresh()` method does not return a value.
 
 ## Description
 
@@ -25,10 +25,14 @@ The `refresh()` method refreshes the metadata in this scripting object with the 
 
 ## Examples
 
-**Example title**
+**Refresh metadata and read the updated name**
 
 ```javascript
-
+// Refresh the metadata of the active document, then read the current name.
+var md = app.activeDocument.entMetaData;
+md.refresh();
+var name = md.get("Core_Name");
+alert("Refreshed document name: " + name);
 ```
 
 ## Supported versions

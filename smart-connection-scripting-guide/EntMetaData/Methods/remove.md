@@ -21,18 +21,20 @@ The property key.
 
 **Return value**
 
-The `remove()` method does not return anything.
+The `remove()` method does not return a value.
 
 ## Description
 
-The `remove()` method removes the property with the given key from the collection.
+The `remove()` method removes the property with the given key from the collection. If the key does not exist, the operation completes without error.
 
 ## Examples
 
-**Example title**
+**Remove a custom metadata property**
 
 ```javascript
-
+// Remove a custom property from the metadata of the active document.
+var md = app.activeDocument.entMetaData;
+md.remove("C_MYPROPERTY");
 ```
 
 ## Supported versions

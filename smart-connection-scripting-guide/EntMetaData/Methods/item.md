@@ -37,11 +37,11 @@ Array[1] (property value): string or string[]
 
 ## Description
 
-The `item()` method returns the property value for the given index or key name.
+The `item()` method returns a key-value pair for the item at the given index or with the given key name. The returned array always contains two elements: `Array[0]` is the property key (string) and `Array[1]` is the property value.
 
 ## Examples
 
-**Example title**
+**Access metadata items by index and by key name**
 
 ```javascript
 try {

@@ -17,19 +17,21 @@ EntMetaData.set(key, value);
 
 **key** _string_
 
+The property key.
+
 **value**
 
 **<span style="font-size:90%;">_2023, 2024 up to and including 19.0.5, 2025 up to and including 20.0.2_</span>**
 
 `string, Array of string, number, Array of number, boolean or Array of boolean`
 
-**<span style="font-size:90%;">_2024 from 19.0.6 onwards, 2025 from 20.0.3 onwards_</span>**
+**<span style="font-size:90%;">_2024 from 19.0.6 onwards, 2025 from 20.0.3 onwards, 2026_</span>**
 
-`string`
+`string or Array of string`
 
 **Return value**
 
-The `set()` method does not return anything.
+The `set()` method does not return a value.
 
 ## Description
 
@@ -37,13 +39,13 @@ The `set()` method adds or changes the passed property.
 
 ## Examples
 
-**Example title**
+**Set a metadata property and read back the current values**
 
 ```javascript
 try {
   var doc = app.documents.item(0);
 
-  // Access the document’s metadata
+  // Access the document's metadata
   var md = doc.entMetaData;
 
   // Iterate the metadata keys and values
