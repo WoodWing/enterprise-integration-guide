@@ -17,18 +17,20 @@ ManagedLayoutModules.count();
 
 **Return value** _number_
 
-The number of ManagedLayoutModules objects in the collection.
+The number of ManagedLayoutModule objects in the collection.
 
 ## Description
 
-The `count()` method returns the number of ManagedLayoutModule objects within the ManagedLayoutModules collection object.
+The `count()` method returns the number of [ManagedLayoutModule](../../ManagedLayoutModule/index.md) objects within the ManagedLayoutModules collection.
 
 ## Examples
 
-**Example title**
+**Count the managed layout modules in the active document**
 
 ```javascript
-
+// Count the managed layout modules in the active document.
+var count = app.activeDocument.managedLayoutModules.count();
+alert("Number of managed layout modules: " + count);
 ```
 
 ## Supported versions
