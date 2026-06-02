@@ -21,14 +21,16 @@ The number of ManagedArticle objects in the collection.
 
 ## Description
 
-The `count()` method returns the number of ManagedArticle objects within the ManagedArticles collection object.
+The `count()` method returns the number of [ManagedArticle](../../ManagedArticle/index.md) objects within the ManagedArticles collection.
 
 ## Examples
 
-**Example title**
+**Count the managed articles in the active document**
 
 ```javascript
-
+// Count the managed articles in the active document.
+var count = app.activeDocument.managedArticles.count();
+alert("Number of managed articles: " + count);
 ```
 
 ## Supported versions

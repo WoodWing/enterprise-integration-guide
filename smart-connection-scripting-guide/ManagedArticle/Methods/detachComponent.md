@@ -17,11 +17,11 @@ ManagedArticle.detachComponent(pageItem);
 
 **pageItem** _PageItem, Story_
 
-Page item, or Story, that needs to be removed from the multi-component Article.
+The page item or Story that needs to be removed from the multi-component Article.
 
 **Return value**
 
-The `detachComponent()` method does not return anything.
+The `detachComponent()` method does not return a value.
 
 ## Description
 
@@ -29,10 +29,18 @@ The `detachComponent()` method detaches a component from the layout and deletes 
 
 ## Examples
 
-**Example title**
+**Detach and delete the first component of a multi-component article**
 
 ```javascript
-
+// Detach and delete the first component from a multi-component managed article.
+var articles = app.activeDocument.managedArticles;
+if (articles.count() > 0) {
+    var article = articles[0];
+    var components = article.components;
+    if (components.length > 1) {
+        article.detachComponent(components[0]);
+    }
+}
 ```
 
 ## Supported versions

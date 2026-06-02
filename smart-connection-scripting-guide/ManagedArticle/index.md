@@ -12,7 +12,7 @@ permalink: 1133-index
 
 ### Methods
 
-* [abortCheckOut](Methods/abortCeckOut.md)
+* [abortCheckOut](Methods/abortCheckOut.md)
 * [checkIn](Methods/checkIn.md)
 * [checkOut](Methods/checkOut.md)
 * [create](Methods/create.md)

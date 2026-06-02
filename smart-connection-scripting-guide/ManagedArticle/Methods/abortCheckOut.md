@@ -17,18 +17,22 @@ ManagedArticle.abortCheckOut();
 
 **Return value**
 
-The `abortCheckOut()` method does not return anything.
+The `abortCheckOut()` method does not return a value.
 
 ## Description
 
-The `abortCheckOut()` method cancels the check-out of the placed Article.
+The `abortCheckOut()` method cancels the check-out of the placed Article, discarding any changes and returning it to its previous state.
 
 ## Examples
 
-**Example title**
+**Cancel the check-out of the first managed article**
 
 ```javascript
-
+// Cancel the check-out of the first managed article in the active document.
+var articles = app.activeDocument.managedArticles;
+if (articles.count() > 0) {
+    articles[0].abortCheckOut();
+}
 ```
 
 ## Supported versions

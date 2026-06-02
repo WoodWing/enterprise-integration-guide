@@ -17,18 +17,22 @@ ManagedArticle.checkOut();
 
 **Return value**
 
-The `checkOut()` method does not return anything.
+The `checkOut()` method does not return a value.
 
 ## Description
 
-The `checkOut()` method checks-out the placed Article.
+The `checkOut()` method checks out the placed Article for editing.
 
 ## Examples
 
-**Example title**
+**Check out the first managed article**
 
 ```javascript
-
+// Check out the first managed article in the active document.
+var articles = app.activeDocument.managedArticles;
+if (articles.count() > 0) {
+    articles[0].checkOut();
+}
 ```
 
 ## Supported versions

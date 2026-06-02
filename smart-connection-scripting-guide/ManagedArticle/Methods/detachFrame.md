@@ -10,7 +10,7 @@ permalink: 1140-detachFrame
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
 
 ```javascript
-ManagedArticle.detachFrame(pageItem);
+ManagedArticle.detachFrame(pageItems);
 ```
 
 ### Parameters
@@ -21,7 +21,7 @@ The page items that will be detached from the article. If the passed page item i
 
 **Return value**
 
-The `detachFrame()` method does not return anything.
+The `detachFrame()` method does not return a value.
 
 ## Description
 
@@ -29,10 +29,18 @@ The `detachFrame()` method detaches frames from a multi-component Article. The l
 
 ## Examples
 
-**Example title**
+**Detach the first component of a multi-component article**
 
 ```javascript
-
+// Detach the first component from a multi-component managed article.
+var articles = app.activeDocument.managedArticles;
+if (articles.count() > 0) {
+    var article = articles[0];
+    var components = article.components;
+    if (components.length > 1) {
+        article.detachFrame([components[0]]);
+    }
+}
 ```
 
 ## Supported versions

@@ -17,7 +17,7 @@ ManagedArticle.unplacedComponents();
 
 **Return value** _string[]_
 
-A list of GUIDs.
+An array of GUIDs identifying the components of the article that are not placed on the current Layout.
 
 ## Description
 
@@ -25,10 +25,19 @@ The `unplacedComponents()` method returns a list of GUIDs of the components that
 
 ## Examples
 
-**Example title**
+**List the unplaced component GUIDs of the first managed article**
 
 ```javascript
-
+// Get the unplaced component GUIDs of the first managed article.
+var articles = app.activeDocument.managedArticles;
+if (articles.count() > 0) {
+    var guids = articles[0].unplacedComponents();
+    if (guids.length > 0) {
+        alert("Unplaced component GUIDs: " + guids.join(", "));
+    } else {
+        alert("All components are placed.");
+    }
+}
 ```
 
 ## Supported versions

@@ -19,20 +19,26 @@ _readonly_
 
 ### Parameters
 
-**Return value** _EntMetaData_
+**Return value** _[EntMetaData](../../EntMetaData/index.md)_
 
-An EntMetaData object.
+The Studio Server metadata object associated with the ManagedArticle.
 
 ## Description
 
-The `entMetaData` property is used to get the Studio Server metadata associated with the Article.
+The `entMetaData` property returns an [EntMetaData](../../EntMetaData/index.md) object that provides access to the Studio Server metadata associated with the ManagedArticle. Use this object to read or set metadata values such as the article name, brand, issue, and status.
 
 ## Examples
 
-**Example title**
+**Read the name of the first managed article**
 
 ```javascript
-
+// Get the metadata of the first managed article in the active document.
+var articles = app.activeDocument.managedArticles;
+if (articles.count() > 0) {
+    var article = articles[0];
+    var name = article.entMetaData.get("Core_Name");
+    alert("Article name: " + name);
+}
 ```
 
 ## Supported versions
@@ -43,3 +49,7 @@ The `entMetaData` property is used to get the Studio Server metadata associated 
 | 2024          | ✔         |
 | 2025          | ✔         |
 | 2026          | ✔         |
+
+## See also
+
+- [EntMetaData](../../EntMetaData/index.md)

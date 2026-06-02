@@ -17,18 +17,22 @@ ManagedArticle.refresh();
 
 **Return value**
 
-The `refresh()` method does not return anything.
+The `refresh()` method does not return a value.
 
 ## Description
 
-The `refresh()` method updates the content of the placed Article.
+The `refresh()` method updates the content of the placed Article with the latest version from Studio Server.
 
 ## Examples
 
-**Example title**
+**Refresh the content of the first managed article**
 
 ```javascript
-
+// Refresh the first managed article in the active document.
+var articles = app.activeDocument.managedArticles;
+if (articles.count() > 0) {
+    articles[0].refresh();
+}
 ```
 
 ## Supported versions
