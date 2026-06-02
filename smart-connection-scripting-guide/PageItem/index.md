@@ -7,15 +7,17 @@ permalink: 1232-index
 
 ### Properties
 
+* [allIndesignArticleIds](Properties/allIndesignArticleIds.md)
 * [editions](Properties/editions.md)
 * [elementLabel](Properties/elementLabel.md)
+* [frameData](Properties/frameData.md)
+* [managedAdvert](Properties/managedAdvert.md)
 * [managedArticle](Properties/managedArticle.md)
 * [managedImage](Properties/managedImage.md)
-* [managedAdvert](Properties/managedAdvert.md)
 * [managedLayoutModule](Properties/managedLayoutModule.md)
-* [allIndesignArticleIds](Properties/allIndesignArticleIds.md)
 
 ### Methods
 
 * [placeObject](Methods/placeObject.md)
+* [replaceEnterpriseImage](Methods/replaceEnterpriseImage.md)
 * [updateCaptionAndCredit](Methods/updateCaptionAndCredit.md)

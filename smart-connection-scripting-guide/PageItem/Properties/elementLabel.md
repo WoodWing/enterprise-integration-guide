@@ -21,23 +21,32 @@ _read/write_
 
 **Return value** _string_
 
-The name of the Element Label.
+The name of the Element Label assigned to the page item.
 
 ## Description
 
-The Element Label assigned to the page item. When assigning to
-a text frame, all threaded text frames will get the same Element
-Label.
+The `elementLabel` property gets or sets the Element Label assigned to the page item. When assigning to a text frame, all threaded text frames will get the same Element Label.
 
 ## Examples
 
-**Example title**
+**Get the element label of a page item**
 
 ```javascript
-
+// Get the element label of the first page item on the first page.
+var pageItem = app.activeDocument.pages[0].pageItems[0];
+var label = pageItem.elementLabel;
+alert("Element label: " + label);
 ```
 
-## Support versions
+**Set the element label of a page item**
+
+```javascript
+// Assign an element label to the first page item on the first page.
+var pageItem = app.activeDocument.pages[0].pageItems[0];
+pageItem.elementLabel = "Intro";
+```
+
+## Supported versions
 
 | Adobe Version | Supported |
 | ------------- | --------- |

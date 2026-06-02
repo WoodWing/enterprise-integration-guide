@@ -634,6 +634,11 @@ toc:
         url: smart-connection-scripting-guide/PageItem/Methods/index.html
         permalink: 1233-index
         children:
+        - title: replaceEnterpriseImage
+          layout: chapter
+          path: smart-connection-scripting-guide/PageItem/Methods/replaceEnterpriseImage.md
+          url: smart-connection-scripting-guide/PageItem/Methods/replaceEnterpriseImage.html
+          permalink: 1233-replaceEnterpriseImage
         - title: placeObject
           layout: chapter
           path: smart-connection-scripting-guide/PageItem/Methods/placeObject.md
@@ -650,6 +655,11 @@ toc:
         url: smart-connection-scripting-guide/PageItem/Properties/index.html
         permalink: 1238-index
         children:
+        - title: frameData
+          layout: chapter
+          path: smart-connection-scripting-guide/PageItem/Properties/frameData.md
+          url: smart-connection-scripting-guide/PageItem/Properties/frameData.html
+          permalink: 1233-frameData
         - title: allIndesignArticleIds
           layout: chapter
           path: smart-connection-scripting-guide/PageItem/Properties/allIndesignArticleIds.md
@@ -680,7 +690,7 @@ toc:
           path: smart-connection-scripting-guide/PageItem/Properties/managedImage.md
           url: smart-connection-scripting-guide/PageItem/Properties/managedImage.html
           permalink: 1171-managedImage
-        - title: managedArticle
+        - title: managedLayoutModule
           layout: chapter
           path: smart-connection-scripting-guide/PageItem/Properties/managedLayoutModule.md
           url: smart-connection-scripting-guide/PageItem/Properties/managedLayoutModule.html

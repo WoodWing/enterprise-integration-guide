@@ -19,24 +19,31 @@ _readonly_
 
 ### Parameters
 
-**Return value** _ManagedAdvert_
+**Return value** _[ManagedAdvert](../../ManagedAdvert/index.md)_
 
-A ManagedAdvert object.
+The associated ManagedAdvert object, or `undefined` if none is associated.
 
 ## Description
 
-Access to the associated ManagedAdvert scripting object.
-Returns nothing if there is no object associated.
+The `managedAdvert` property returns the [ManagedAdvert](../../ManagedAdvert/index.md) object associated with this page item, or `undefined` if the page item is not bound to a managed advert on Studio Server.
 
 ## Examples
 
-**Example title**
+**Check whether a page item is a managed advert**
 
 ```javascript
-
+// Check whether the first page item on the first page is a managed advert.
+var pageItem = app.activeDocument.pages[0].pageItems[0];
+var advert = pageItem.managedAdvert;
+if (advert) {
+    var name = advert.entMetaData.get("Core_Name");
+    alert("Managed advert: " + name);
+} else {
+    alert("Page item is not a managed advert.");
+}
 ```
 
-## Support versions
+## Supported versions
 
 | Adobe Version | Supported |
 | ------------- | --------- |
@@ -44,3 +51,7 @@ Returns nothing if there is no object associated.
 | 2024          | ✔         |
 | 2025          | ✔         |
 | 2026          | ✔         |
+
+## See also
+
+- [ManagedAdvert](../../ManagedAdvert/index.md)

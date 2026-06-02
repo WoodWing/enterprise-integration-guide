@@ -19,24 +19,31 @@ _readonly_
 
 ### Parameters
 
-**Return value** _ManagedImage_
+**Return value** _[ManagedImage](../../ManagedImage/index.md)_
 
-A ManagedImage object.
+The associated ManagedImage object, or `undefined` if none is associated.
 
 ## Description
 
-Access to the associated ManagedImage scripting object.
-Returns nothing if there is no object associated.
+The `managedImage` property returns the [ManagedImage](../../ManagedImage/index.md) object associated with this page item, or `undefined` if the page item is not bound to a managed image on Studio Server.
 
 ## Examples
 
-**Example title**
+**Check whether a page item is a managed image**
 
 ```javascript
-
+// Check whether the first page item on the first page is a managed image.
+var pageItem = app.activeDocument.pages[0].pageItems[0];
+var image = pageItem.managedImage;
+if (image) {
+    var name = image.entMetaData.get("Core_Name");
+    alert("Managed image: " + name);
+} else {
+    alert("Page item is not a managed image.");
+}
 ```
 
-## Support versions
+## Supported versions
 
 | Adobe Version | Supported |
 | ------------- | --------- |
@@ -44,3 +51,7 @@ Returns nothing if there is no object associated.
 | 2024          | ✔         |
 | 2025          | ✔         |
 | 2026          | ✔         |
+
+## See also
+
+- [ManagedImage](../../ManagedImage/index.md)

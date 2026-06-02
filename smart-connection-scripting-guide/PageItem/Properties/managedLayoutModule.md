@@ -1,6 +1,6 @@
 ---
 layout: chapter
-title: managedArticle
+title: managedLayoutModule
 sortid: 80
 permalink: 1172-managedLayoutModule
 ---
@@ -10,7 +10,7 @@ permalink: 1172-managedLayoutModule
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
 
 ```javascript
-PageItem.managedArticle;
+PageItem.managedLayoutModule;
 ```
 
 ### Access
@@ -19,24 +19,31 @@ _readonly_
 
 ### Parameters
 
-**Return value** _ManagedArticle_
+**Return value** _[ManagedLayoutModule](../../ManagedLayoutModule/index.md)_
 
-A ManagedArticle object.
+The associated ManagedLayoutModule object, or `undefined` if none is associated.
 
 ## Description
 
-Access to the associated ManagedArticle scripting object.
-Returns nothing if there is no object associated.
+The `managedLayoutModule` property returns the [ManagedLayoutModule](../../ManagedLayoutModule/index.md) object associated with this page item, or `undefined` if the page item is not bound to a managed layout module on Studio Server.
 
 ## Examples
 
-**Example title**
+**Check whether a page item is a managed layout module**
 
 ```javascript
-
+// Check whether the first page item on the first page is a managed layout module.
+var pageItem = app.activeDocument.pages[0].pageItems[0];
+var layoutModule = pageItem.managedLayoutModule;
+if (layoutModule) {
+    var name = layoutModule.entMetaData.get("Core_Name");
+    alert("Managed layout module: " + name);
+} else {
+    alert("Page item is not a managed layout module.");
+}
 ```
 
-## Support versions
+## Supported versions
 
 | Adobe Version | Supported |
 | ------------- | --------- |
@@ -44,3 +51,7 @@ Returns nothing if there is no object associated.
 | 2024          | ✔         |
 | 2025          | ✔         |
 | 2026          | ✔         |
+
+## See also
+
+- [ManagedLayoutModule](../../ManagedLayoutModule/index.md)

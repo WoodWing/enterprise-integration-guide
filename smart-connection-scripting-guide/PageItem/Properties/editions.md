@@ -19,25 +19,34 @@ _read/write_
 
 ### Parameters
 
-**Return value** _Array of string_
+**Return value** _string[]_
 
-A string of Edition names.
+An array of Edition names assigned to the page item.
 
 ## Description
 
-The Editions assigned to the page item. When assigning to a text
-frame, all linked text frames will get the same set of Editions
-assigned.
+The `editions` property gets or sets the editions assigned to the page item. When assigning to a text frame, all linked text frames will get the same set of editions assigned.
 
 ## Examples
 
-**Example title**
+**Get the editions of a page item**
 
 ```javascript
-
+// Get the editions assigned to the first page item on the first page.
+var pageItem = app.activeDocument.pages[0].pageItems[0];
+var editions = pageItem.editions;
+alert("Editions: " + editions.join(", "));
 ```
 
-## Support versions
+**Set the editions of a page item**
+
+```javascript
+// Assign editions to the first page item on the first page.
+var pageItem = app.activeDocument.pages[0].pageItems[0];
+pageItem.editions = ["North", "South"];
+```
+
+## Supported versions
 
 | Adobe Version | Supported |
 | ------------- | --------- |

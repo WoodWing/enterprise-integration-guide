@@ -19,27 +19,30 @@ _readonly_
 
 ### Parameters
 
-**Return value** _Array of String_
+**Return value** _string[]_
 
-The IDs of all InDesign Articles to which the page item
-belongs.
+An array of IDs of all InDesign Articles to which the page item belongs.
 
 ## Description
 
-Returns the IDs of all InDesign Articles to which the page item
-belongs. The IDs of InDesign Articles that contain a parent
-group item of the page item will also be returned. This differs
-from the PageItem.allArticles call.
+The `allIndesignArticleIds` property returns the IDs of all InDesign Articles to which the page item belongs. The IDs of InDesign Articles that contain a parent group item of the page item are also returned. This differs from the `PageItem.allArticles` call.
 
 ## Examples
 
-**Example title**
+**Get the InDesign Article IDs of the first page item**
 
 ```javascript
-
+// Get all InDesign Article IDs for the first page item on the first page.
+var pageItem = app.activeDocument.pages[0].pageItems[0];
+var ids = pageItem.allIndesignArticleIds;
+if (ids.length > 0) {
+    alert("InDesign Article IDs: " + ids.join(", "));
+} else {
+    alert("This page item does not belong to any InDesign Articles.");
+}
 ```
 
-## Support versions
+## Supported versions
 
 | Adobe Version | Supported |
 | ------------- | --------- |

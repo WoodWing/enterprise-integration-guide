@@ -19,24 +19,31 @@ _readonly_
 
 ### Parameters
 
-**Return value** _ManagedArticle_
+**Return value** _[ManagedArticle](../../ManagedArticle/index.md)_
 
-A ManagedArticle object.
+The associated ManagedArticle object, or `undefined` if none is associated.
 
 ## Description
 
-Access to the associated ManagedArticle scripting object.
-Returns nothing if there is no object associated.
+The `managedArticle` property returns the [ManagedArticle](../../ManagedArticle/index.md) object associated with this page item, or `undefined` if the page item is not bound to a managed article on Studio Server.
 
 ## Examples
 
-**Example title**
+**Check whether a page item is a managed article component**
 
 ```javascript
-
+// Check whether the first page item on the first page is a managed article component.
+var pageItem = app.activeDocument.pages[0].pageItems[0];
+var article = pageItem.managedArticle;
+if (article) {
+    var name = article.entMetaData.get("Core_Name");
+    alert("Managed article: " + name);
+} else {
+    alert("Page item is not a managed article component.");
+}
 ```
 
-## Support versions
+## Supported versions
 
 | Adobe Version | Supported |
 | ------------- | --------- |
@@ -44,3 +51,7 @@ Returns nothing if there is no object associated.
 | 2024          | ✔         |
 | 2025          | ✔         |
 | 2026          | ✔         |
+
+## See also
+
+- [ManagedArticle](../../ManagedArticle/index.md)
