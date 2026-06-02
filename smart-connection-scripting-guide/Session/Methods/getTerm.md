@@ -9,7 +9,7 @@ permalink: 1214-getTerm
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
 
-```javascript
+```text
 Session.getTerm(term);
 ```
 
@@ -17,11 +17,11 @@ Session.getTerm(term);
 
 **term** _string_
 
-The UI term.
+The system term to look up.
 
 **Return value** _string_
 
-The `getTerm()` method returns the display value of the system term
+The display value of the provided system term as configured on Studio Server.
 
 ## Description
 
@@ -29,10 +29,12 @@ The `getTerm()` method returns the display value of several terms used in the sy
 
 ## Examples
 
-**Example title**
+**Get the display name for a system term**
 
 ```javascript
-
+// Get the display value of the "Brand" term as configured on Studio Server.
+var term = app.entSession.getTerm("Brand");
+alert("Brand is called: " + term);
 ```
 
 ## Supported versions

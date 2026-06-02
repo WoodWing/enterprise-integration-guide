@@ -21,7 +21,7 @@ _readonly_
 
 **Return value** _string_
 
-The display name of the active serer.
+The display name of the active server.
 
 ## Description
 

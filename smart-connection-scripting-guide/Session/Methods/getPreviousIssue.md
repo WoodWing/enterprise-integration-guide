@@ -1,8 +1,8 @@
 ---
 layout: chapter
-title: getIssue
-sortid: 84
-permalink: 1209-getIssue
+title: getPreviousIssue
+sortid: 104
+permalink: 1268-getPreviousIssue
 ---
 
 ## Syntax
@@ -10,7 +10,7 @@ permalink: 1209-getIssue
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
 
 ```text
-Session.getIssue(brandName, issueName);
+Session.getPreviousIssue(brandName);
 ```
 
 ### Parameters
@@ -19,26 +19,22 @@ Session.getIssue(brandName, issueName);
 
 The name of the Brand.
 
-**issueName** _string_
-
-The name of the Issue.
-
 **Return value** _[EntIssue](../../EntIssue/index.md)_
 
-The EntIssue object on the Studio Server.
+Returns the previous Issue of the provided Brand. Throws an exception if no previous Issue exists.
 
 ## Description
 
-The `getIssue()` method returns an EntIssue object from the Studio Server for the provided Brand name and Issue name. If the object does not exist it will throw an exception.
+The `getPreviousIssue()` method returns the previous Issue of the provided Brand as defined on Studio Server.
 
 ## Examples
 
-**Get a specific Issue**
+**Get the previous Issue of a Brand**
 
 ```javascript
-// Get the Issue "1st Issue" from the Brand "WW News".
-var issue = app.entSession.getIssue("WW News", "1st Issue");
-alert("Issue ID: " + issue.id + ", name: " + issue.name);
+// Get the previous Issue of the Brand "WW News".
+var issue = app.entSession.getPreviousIssue("WW News");
+alert("Previous Issue: " + issue.name + " (ID: " + issue.id + ")");
 ```
 
 ## Supported versions
@@ -52,6 +48,6 @@ alert("Issue ID: " + issue.id + ", name: " + issue.name);
 
 ## See also
 
+- [getIssue](./getIssue.md)
 - [getCurrentIssue](./getCurrentIssue.md)
-- [getPreviousIssue](./getPreviousIssue.md)
 - [getNextIssue](./getNextIssue.md)

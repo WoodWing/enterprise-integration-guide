@@ -1,8 +1,8 @@
 ---
 layout: chapter
-title: login
-sortid: 92
-permalink: 1218-login
+title: quickLogin
+sortid: 100
+permalink: 1264-quickLogin
 ---
 
 ## Syntax
@@ -10,7 +10,7 @@ permalink: 1218-login
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
 
 ```text
-Session.login(username, password, server [, requestInfo] [, serverUrl] [, sso]);
+Session.quickLogin(username, password, server [, serverUrl] [, sso]);
 ```
 
 ### Parameters
@@ -27,10 +27,6 @@ The password.
 
 Name of the location to log in to. This is the name of the entry in the server list of the WWSettings.xml file.
 
-**requestInfo** _Array of string (Optional)_
-
-The list of request information that should be obtained with the logon. When not specified all information will be requested.
-
 **serverUrl** _string (Optional)_
 
 URL that provides access to the Studio Server from InDesign, InCopy or InDesign Server. If the URL is not specified or empty, then the name of the server will be looked up in WWSettings.xml using the server parameter.
@@ -44,45 +40,31 @@ Note that on InDesign Server SSO is always ignored. As a consequence the sso par
 
 **Return value**
 
-The `login()` method does not return a value. It throws an exception in case of an error.
+The `quickLogin()` method does not return a value. It throws an exception in case of an error.
 
 ## Description
 
-The `login()` method performs a login to the Studio Server system.
+The `quickLogin()` method performs a login to the Studio Server system without retrieving session information. This makes it faster than a regular `login()` call. Use this method when you do not need session details such as publications, users, or workflow data after logging in.
 
 ## Examples
 
-**Login with server name**
+**Quick login with a server name**
 
 ```javascript
-// Log in using a server name defined in WWSettings.xml.
-app.entSession.login("John", "JohnsPassword", "localserver");
+// Log in without retrieving session information.
+app.entSession.quickLogin("John", "JohnsPassword", "localserver");
 ```
 
-**Login with URL**
+**Quick login with a URL**
 
 ```javascript
-// Log in using a server URL directly.
-app.entSession.login(
+// Quick login using a server URL instead of a server name.
+app.entSession.quickLogin(
   "John",
   "JohnsPassword",
   "",
-  new Array(),
   "https://localhost:8888/StudioServer/index.php",
   false
-);
-```
-
-**Login requesting only specific session data**
-
-```javascript
-// Log in and request only publication and issue data during the login.
-// This reduces the data retrieved from the server compared to a full login.
-app.entSession.login(
-  "John",
-  "JohnsPassword",
-  "localserver",
-  ["Publications", "Issues"]
 );
 ```
 
@@ -95,8 +77,7 @@ app.entSession.login(
 | 2025          | ✔         |
 | 2026          | ✔         |
 
-### Single Sign-On
+## See also
 
-The `login()` scripting call does not support Single Sign-On (SSO). When running the login scripting call on InDesign Server, SSO is always ignored for SSO enabled application servers.
-In InDesign and InCopy, without specifying the `serverUrl` parameter, the `login()` scripting call will only work on SSO enabled application servers if the `sso` attribute is set to "false" for the corresponding server definition in WWSettings.xml.
-If the `serverUrl` parameter is provided, then the `sso` parameter in the scripting call should be set to "false" to login to an sso enabled Studio Server.
+- [login](./login.md)
+- [forkLogin](./forkLogin.md)

@@ -9,7 +9,7 @@ permalink: 1215-getUserGroups
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
 
-```javascript
+```text
 Session.getUserGroups();
 ```
 
@@ -21,14 +21,16 @@ The returned array is a list of user group names.
 
 ## Description
 
-The `getUserGroups()` method returns a list of user group names.
+The `getUserGroups()` method returns a list of user group names as defined on Studio Server.
 
 ## Examples
 
-**Example title**
+**Get all user groups**
 
 ```javascript
-
+// Get all user group names from Studio Server.
+var groups = app.entSession.getUserGroups();
+alert("User groups: " + groups.join(", "));
 ```
 
 ## Supported versions

@@ -9,7 +9,7 @@ permalink: 1220-reLogin
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
 
-```javascript
+```text
 Session.reLogin();
 ```
 
@@ -17,18 +17,19 @@ Session.reLogin();
 
 **Return value**
 
-The `reLogin()` method does not return anything. It throws an exception in case of an error.
+The `reLogin()` method does not return a value. It throws an exception in case of an error.
 
 ## Description
 
-The `reLogin()` method performs a re-login to the Studio Server system. Useful when changes were made to the configuration, workflow, etc on the server and those value are returned during the login.
+The `reLogin()` method performs a re-login to the Studio Server system. Useful when changes were made to the configuration, workflow, etc on the server and those values are returned during the login.
 
 ## Examples
 
-**Example title**
+**Re-login to refresh session data**
 
 ```javascript
-
+// Re-login to pick up configuration changes made on the server.
+app.entSession.reLogin();
 ```
 
 ## Supported versions

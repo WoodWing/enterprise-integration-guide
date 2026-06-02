@@ -9,7 +9,7 @@ permalink: 1213-getServers
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
 
-```javascript
+```text
 Session.getServers();
 ```
 
@@ -25,10 +25,14 @@ The `getServers()` method returns a list of servers from the WWSettings.xml file
 
 ## Examples
 
-**Example title**
+**List all available servers**
 
 ```javascript
-
+// Get all servers defined in WWSettings.xml.
+var servers = app.entSession.getServers();
+for (var i = 0; i < servers.length; i++) {
+    alert("Server: " + servers[i][0] + " — URL: " + servers[i][1]);
+}
 ```
 
 ## Supported versions

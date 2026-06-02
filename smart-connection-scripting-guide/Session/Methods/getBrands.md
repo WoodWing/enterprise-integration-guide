@@ -1,8 +1,8 @@
 ---
 layout: chapter
-title: getPublication
-sortid: 86
-permalink: 1211-getPublication
+title: getBrands
+sortid: 101
+permalink: 1265-getBrands
 ---
 
 ## Syntax
@@ -10,31 +10,29 @@ permalink: 1211-getPublication
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
 
 ```text
-Session.getPublication(brandName);
+Session.getBrands();
 ```
 
 ### Parameters
 
-**brandName** _string_
+**Return value** _Array of [EntPublication](../../EntPublication/index.md)_
 
-The name of the Brand.
-
-**Return value** _[EntPublication](../../EntPublication/index.md)_
-
-Returns the Brand with the provided name. Throws an exception if the Brand does not exist.
+The returned array contains a list of all Brands on the current server.
 
 ## Description
 
-The `getPublication()` method returns the Brand with the provided name.
+The `getBrands()` method returns a list of all Brands on the current server. It is an alias for [getPublications()](./getPublications.md).
 
 ## Examples
 
-**Get a specific Brand**
+**Get all Brands on the server**
 
 ```javascript
-// Get the Brand named "WW News".
-var brand = app.entSession.getPublication("WW News");
-alert("Brand ID: " + brand.id + ", name: " + brand.name);
+// Get all Brands on the server.
+var brands = app.entSession.getBrands();
+for (var i = 0; i < brands.length; i++) {
+    alert("Brand: " + brands[i].name + " (ID: " + brands[i].id + ")");
+}
 ```
 
 ## Supported versions
@@ -48,4 +46,5 @@ alert("Brand ID: " + brand.id + ", name: " + brand.name);
 
 ## See also
 
+- [getPublications](./getPublications.md)
 - [getBrand](./getBrand.md)

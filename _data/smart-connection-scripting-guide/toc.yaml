@@ -777,6 +777,46 @@ toc:
           path: smart-connection-scripting-guide/Session/Methods/reLogin.md
           url: smart-connection-scripting-guide/Session/Methods/reLogin.html
           permalink: 1220-reLogin
+        - title: quickLogin
+          layout: chapter
+          path: smart-connection-scripting-guide/Session/Methods/quickLogin.md
+          url: smart-connection-scripting-guide/Session/Methods/quickLogin.html
+          permalink: 1264-quickLogin
+        - title: getBrands
+          layout: chapter
+          path: smart-connection-scripting-guide/Session/Methods/getBrands.md
+          url: smart-connection-scripting-guide/Session/Methods/getBrands.html
+          permalink: 1265-getBrands
+        - title: getBrand
+          layout: chapter
+          path: smart-connection-scripting-guide/Session/Methods/getBrand.md
+          url: smart-connection-scripting-guide/Session/Methods/getBrand.html
+          permalink: 1266-getBrand
+        - title: getCurrentIssue
+          layout: chapter
+          path: smart-connection-scripting-guide/Session/Methods/getCurrentIssue.md
+          url: smart-connection-scripting-guide/Session/Methods/getCurrentIssue.html
+          permalink: 1267-getCurrentIssue
+        - title: getPreviousIssue
+          layout: chapter
+          path: smart-connection-scripting-guide/Session/Methods/getPreviousIssue.md
+          url: smart-connection-scripting-guide/Session/Methods/getPreviousIssue.html
+          permalink: 1268-getPreviousIssue
+        - title: getNextIssue
+          layout: chapter
+          path: smart-connection-scripting-guide/Session/Methods/getNextIssue.md
+          url: smart-connection-scripting-guide/Session/Methods/getNextIssue.html
+          permalink: 1269-getNextIssue
+        - title: getSections
+          layout: chapter
+          path: smart-connection-scripting-guide/Session/Methods/getSections.md
+          url: smart-connection-scripting-guide/Session/Methods/getSections.html
+          permalink: 1270-getSections
+        - title: getSection
+          layout: chapter
+          path: smart-connection-scripting-guide/Session/Methods/getSection.md
+          url: smart-connection-scripting-guide/Session/Methods/getSection.html
+          permalink: 1271-getSection
       - title: Session properties
         layout: section
         path: smart-connection-scripting-guide/Session/Properties/index.md

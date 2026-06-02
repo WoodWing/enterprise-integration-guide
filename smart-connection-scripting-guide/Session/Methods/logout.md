@@ -9,7 +9,7 @@ permalink: 1219-logout
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
 
-```javascript
+```text
 Session.logout();
 ```
 
@@ -17,7 +17,7 @@ Session.logout();
 
 **Return value**
 
-The `logout()` method does not return anything. It throws an exception in case of an error.
+The `logout()` method does not return a value. It throws an exception in case of an error.
 
 ## Description
 
@@ -25,10 +25,11 @@ The `logout()` method performs a logout from the Studio Server system.
 
 ## Examples
 
-**Example title**
+**Log out from Studio Server**
 
 ```javascript
-
+// Log out from Studio Server.
+app.entSession.logout();
 ```
 
 ## Supported versions

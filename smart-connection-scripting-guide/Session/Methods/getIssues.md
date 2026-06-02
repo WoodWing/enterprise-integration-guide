@@ -9,7 +9,7 @@ permalink: 1210-getIssues
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
 
-```javascript
+```text
 Session.getIssues(brandName);
 ```
 
@@ -19,7 +19,7 @@ Session.getIssues(brandName);
 
 The name of the Brand.
 
-**Return value** _Array of [Issue](../../EntIssue/index.md)_
+**Return value** _Array of [EntIssue](../../EntIssue/index.md)_
 
 Returns a list of all Issues of the provided Brand.
 
@@ -29,10 +29,14 @@ The `getIssues()` method returns a list of all Issues of the provided Brand.
 
 ## Examples
 
-**Example title**
+**Get all Issues of a Brand**
 
 ```javascript
-
+// Get all Issues of the Brand "WW News".
+var issues = app.entSession.getIssues("WW News");
+for (var i = 0; i < issues.length; i++) {
+    alert("Issue: " + issues[i].name + " (ID: " + issues[i].id + ")");
+}
 ```
 
 ## Supported versions

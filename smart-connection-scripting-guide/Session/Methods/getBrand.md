@@ -1,8 +1,8 @@
 ---
 layout: chapter
-title: getPublication
-sortid: 86
-permalink: 1211-getPublication
+title: getBrand
+sortid: 102
+permalink: 1266-getBrand
 ---
 
 ## Syntax
@@ -10,7 +10,7 @@ permalink: 1211-getPublication
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
 
 ```text
-Session.getPublication(brandName);
+Session.getBrand(brandName);
 ```
 
 ### Parameters
@@ -25,7 +25,7 @@ Returns the Brand with the provided name. Throws an exception if the Brand does 
 
 ## Description
 
-The `getPublication()` method returns the Brand with the provided name.
+The `getBrand()` method returns the Brand with the provided name. It is an alias for [getPublication()](./getPublication.md).
 
 ## Examples
 
@@ -33,7 +33,7 @@ The `getPublication()` method returns the Brand with the provided name.
 
 ```javascript
 // Get the Brand named "WW News".
-var brand = app.entSession.getPublication("WW News");
+var brand = app.entSession.getBrand("WW News");
 alert("Brand ID: " + brand.id + ", name: " + brand.name);
 ```
 
@@ -48,4 +48,5 @@ alert("Brand ID: " + brand.id + ", name: " + brand.name);
 
 ## See also
 
-- [getBrand](./getBrand.md)
+- [getPublication](./getPublication.md)
+- [getBrands](./getBrands.md)

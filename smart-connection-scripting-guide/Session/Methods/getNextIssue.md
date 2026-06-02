@@ -1,8 +1,8 @@
 ---
 layout: chapter
-title: getPublication
-sortid: 86
-permalink: 1211-getPublication
+title: getNextIssue
+sortid: 105
+permalink: 1269-getNextIssue
 ---
 
 ## Syntax
@@ -10,7 +10,7 @@ permalink: 1211-getPublication
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
 
 ```text
-Session.getPublication(brandName);
+Session.getNextIssue(brandName);
 ```
 
 ### Parameters
@@ -19,22 +19,22 @@ Session.getPublication(brandName);
 
 The name of the Brand.
 
-**Return value** _[EntPublication](../../EntPublication/index.md)_
+**Return value** _[EntIssue](../../EntIssue/index.md)_
 
-Returns the Brand with the provided name. Throws an exception if the Brand does not exist.
+Returns the next Issue of the provided Brand. Throws an exception if no next Issue exists.
 
 ## Description
 
-The `getPublication()` method returns the Brand with the provided name.
+The `getNextIssue()` method returns the next Issue of the provided Brand as defined on Studio Server.
 
 ## Examples
 
-**Get a specific Brand**
+**Get the next Issue of a Brand**
 
 ```javascript
-// Get the Brand named "WW News".
-var brand = app.entSession.getPublication("WW News");
-alert("Brand ID: " + brand.id + ", name: " + brand.name);
+// Get the next Issue of the Brand "WW News".
+var issue = app.entSession.getNextIssue("WW News");
+alert("Next Issue: " + issue.name + " (ID: " + issue.id + ")");
 ```
 
 ## Supported versions
@@ -48,4 +48,6 @@ alert("Brand ID: " + brand.id + ", name: " + brand.name);
 
 ## See also
 
-- [getBrand](./getBrand.md)
+- [getIssue](./getIssue.md)
+- [getCurrentIssue](./getCurrentIssue.md)
+- [getPreviousIssue](./getPreviousIssue.md)

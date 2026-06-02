@@ -9,21 +9,21 @@ permalink: 1208-getCategory
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
 
-```javascript
-Session.getCategory(brandName, categoryName, issueName);
+```text
+Session.getCategory(brandName, categoryName [, issueName]);
 ```
 
 ### Parameters
 
-**publication** _string_
+**brandName** _string_
 
 The name of the Brand.
 
-**category** _string_
+**categoryName** _string_
 
-The name of the Category..
+The name of the Category.
 
-**issue** _string (Optional)_
+**issueName** _string (Optional)_
 
 The name of the overruled Issue.
 
@@ -37,10 +37,20 @@ The `getCategory()` method returns the Category with the provided name.
 
 ## Examples
 
-**Example title**
+**Get a specific Category**
 
 ```javascript
+// Get the Category "Sport" from the Brand "WW News".
+var category = app.entSession.getCategory("WW News", "Sport");
+alert("Category ID: " + category.id + ", name: " + category.name);
+```
 
+**Get a Category scoped to a specific Issue**
+
+```javascript
+// Get the Category "Sport" scoped to the Issue "1st Issue".
+var category = app.entSession.getCategory("WW News", "Sport", "1st Issue");
+alert("Category ID: " + category.id);
 ```
 
 ## Supported versions
@@ -51,3 +61,8 @@ The `getCategory()` method returns the Category with the provided name.
 | 2024          | ✔         |
 | 2025          | ✔         |
 | 2026          | ✔         |
+
+## See also
+
+- [getSection](./getSection.md)
+- [getCategories](./getCategories.md)

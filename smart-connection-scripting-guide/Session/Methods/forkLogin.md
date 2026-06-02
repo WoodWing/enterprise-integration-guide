@@ -9,8 +9,8 @@ permalink: 1206-forkLogin
 
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
 
-```javascript
-Session.forkLogin(username, ticket, server, quick, requestInfo, serverUrl, sso);
+```text
+Session.forkLogin(username, ticket, server [, quick] [, requestInfo] [, serverUrl] [, sso]);
 ```
 
 ### Parameters
@@ -29,7 +29,7 @@ Name of the location to log in to. This is the name of the entry in the server l
 
 **quick** _boolean (Optional)_
 
-Boolean that indicates if the login to the Studio Server system should be performed without retrieving session information or not. Default is false.
+Boolean that indicates if the login to the Studio Server system should be performed without retrieving session information or not. Default is `false`.
 
 **requestInfo** _Array of string (Optional)_
 
@@ -42,24 +42,47 @@ URL that provides access to the Studio Server from InDesign, InCopy or InDesign 
 **sso** _boolean (Optional)_
 
 Boolean that indicates if the login to the Studio Server system using the serverURL should be tried using the SSO protocol or not.
-If the `serverURL` is not specified or empty, then the server URL is looked up in WWSettings.xml together with the ‘sso’ attribute. The `sso` parameter ignored in that case.
+If the `serverURL` is not specified or empty, then the server URL is looked up in WWSettings.xml together with the 'sso' attribute. The `sso` parameter ignored in that case.
 The default value is `true`.
 Note that on InDesign Server SSO is always ignored. As a consequence the sso parameter will not have any effect on InDesign Server.
 
 **Return value**
 
-The `forkLogin()` method does not return anything. It throws an exception in case of an error.
+The `forkLogin()` method does not return a value. It throws an exception in case of an error.
 
 ## Description
 
-The `forkLogin()` method performs a login to the Studio Server system based on an existing login.
+The `forkLogin()` method performs a login to the Studio Server system based on an existing login ticket. This is typically used when a parent process passes its session ticket to a child process, allowing the child to create a session without requiring credentials.
 
 ## Examples
 
-**Example title**
+**Fork login using an existing ticket**
 
 ```javascript
+// Fork login using a ticket from another session.
+app.entSession.forkLogin("John", "s4df-abcd-1234-5678", "localserver");
+```
 
+**Fork login without retrieving session information**
+
+```javascript
+// Fork login using the quick parameter to skip session data retrieval.
+app.entSession.forkLogin("John", "s4df-abcd-1234-5678", "localserver", true);
+```
+
+**Fork login using a server URL**
+
+```javascript
+// Fork login using a server URL directly, with SSO disabled.
+app.entSession.forkLogin(
+  "John",
+  "s4df-abcd-1234-5678",
+  "",
+  false,
+  new Array(),
+  "https://localhost:8888/StudioServer/index.php",
+  false
+);
 ```
 
 ## Supported versions
@@ -74,5 +97,5 @@ The `forkLogin()` method performs a login to the Studio Server system based on a
 ### Single Sign-On
 
 The `forkLogin()` scripting call does not support Single Sign-On (SSO). When running the login scripting call on InDesign Server, SSO is always ignored for SSO enabled application servers.
-In InDesign and InCopy, without specifying the `serverUrl` parameter, the `forkLogin()` scripting call will only work on SSO enabled application servers if the `sso` attribute is set to “false” for the corresponding server definition in WWSettings.xml.
-If the `serverUrl` parameter is provided, then the `sso` parameter in the scripting call should be set to “false” to login to an sso enabled Studio Server.
+In InDesign and InCopy, without specifying the `serverUrl` parameter, the `forkLogin()` scripting call will only work on SSO enabled application servers if the `sso` attribute is set to "false" for the corresponding server definition in WWSettings.xml.
+If the `serverUrl` parameter is provided, then the `sso` parameter in the scripting call should be set to "false" to login to an sso enabled Studio Server.
