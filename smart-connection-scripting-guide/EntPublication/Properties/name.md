@@ -21,18 +21,21 @@ _readonly_
 
 **Return value** _string_
 
-The name of the Issue.
+The name of the Brand.
 
 ## Description
 
-The `name` property is used to get the name of the Brand.
+The `name` property returns the name of the Brand as defined on Studio Server.
 
 ## Examples
 
-**Example title**
+**Get the name of a Brand**
 
 ```javascript
-
+// Get the name of a Brand on Studio Server.
+var publication = app.entSession.getPublication("WW News");
+var pubName = publication.name;
+alert("Brand name: " + pubName);
 ```
 
 ## Supported versions
@@ -43,3 +46,8 @@ The `name` property is used to get the name of the Brand.
 | 2024          | ✔         |
 | 2025          | ✔         |
 | 2026          | ✔         |
+
+## See also
+
+- [getPublication](../../Session/Methods/getPublication.md)
+- [getPublications](../../Session/Methods/getPublications.md)

@@ -21,18 +21,21 @@ _readonly_
 
 **Return value** _string_
 
-The ID of the Brand.
+The Studio Server object ID of the Brand.
 
 ## Description
 
-The `id` property is used to get the ID of the Brand.
+The `id` property returns the unique object ID of the Brand as stored on Studio Server.
 
 ## Examples
 
-**Example title**
+**Get the ID of a Brand**
 
 ```javascript
-
+// Get the ID of a Brand on Studio Server.
+var publication = app.entSession.getPublication("WW News");
+var pubId = publication.id;
+alert("Brand ID: " + pubId);
 ```
 
 ## Supported versions
@@ -43,3 +46,8 @@ The `id` property is used to get the ID of the Brand.
 | 2024          | ✔         |
 | 2025          | ✔         |
 | 2026          | ✔         |
+
+## See also
+
+- [getPublication](../../Session/Methods/getPublication.md)
+- [getPublications](../../Session/Methods/getPublications.md)

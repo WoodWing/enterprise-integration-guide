@@ -21,18 +21,21 @@ _readonly_
 
 **Return value** _string_
 
-The ID of the Category.
+The Studio Server object ID of the Category.
 
 ## Description
 
-The `id` property is used to get the ID of the Category.
+The `id` property returns the unique object ID of the Category as stored on Studio Server.
 
 ## Examples
 
-**Example title**
+**Get the ID of a Category**
 
 ```javascript
-
+// Get the ID of a Category on Studio Server.
+var section = app.entSession.getCategory("WW News", "News");
+var sectionId = section.id;
+alert("Category ID: " + sectionId);
 ```
 
 ## Supported versions
@@ -43,3 +46,7 @@ The `id` property is used to get the ID of the Category.
 | 2024          | ✔         |
 | 2025          | ✔         |
 | 2026          | ✔         |
+
+## See also
+
+- [getCategory](../../Session/Methods/getCategory.md)

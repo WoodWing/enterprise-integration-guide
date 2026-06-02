@@ -25,14 +25,17 @@ The name of the Category.
 
 ## Description
 
-The `name` property is used to get the name of the Category.
+The `name` property returns the name of the Category as defined on Studio Server.
 
 ## Examples
 
-**Example title**
+**Get the name of a Category**
 
 ```javascript
-
+// Get the name of a Category on Studio Server.
+var section = app.entSession.getCategory("WW News", "News");
+var sectionName = section.name;
+alert("Category name: " + sectionName);
 ```
 
 ## Supported versions
@@ -43,3 +46,7 @@ The `name` property is used to get the name of the Category.
 | 2024          | ✔         |
 | 2025          | ✔         |
 | 2026          | ✔         |
+
+## See also
+
+- [getCategory](../../Session/Methods/getCategory.md)
