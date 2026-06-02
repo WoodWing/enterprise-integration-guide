@@ -51,6 +51,40 @@
     }
 
     /**
+     * Scroll the TOC container just enough to make the currently selected
+     * `li.ww-menu-item-selected` element visible.
+     *
+     * Uses getBoundingClientRect() so that nested-list offsetTop chains are
+     * avoided and the result is always relative to the current viewport.
+     * Does nothing when the item is already fully within the visible area.
+     */
+    function scrollActiveItemIntoView() {
+        var toc = getToc();
+        if (!toc) return;
+
+        var activeItem = toc.querySelector('li.ww-menu-item-selected');
+        if (!activeItem) return;
+
+        var PADDING = 8; // px of breathing room above / below the item
+
+        var tocRect  = toc.getBoundingClientRect();
+        var itemRect = activeItem.getBoundingClientRect();
+
+        var isAbove = itemRect.top    < tocRect.top    + PADDING;
+        var isBelow = itemRect.bottom > tocRect.bottom - PADDING;
+
+        if (!isAbove && !isBelow) return; // Already visible — do nothing
+
+        if (isAbove) {
+            // Item is above the visible area: scroll up
+            toc.scrollTop += itemRect.top - tocRect.top - PADDING;
+        } else {
+            // Item is below the visible area: scroll down
+            toc.scrollTop += itemRect.bottom - tocRect.bottom + PADDING;
+        }
+    }
+
+    /**
      * Update the active TOC item by toggling ww-menu-item-selected /
      * ww-menu-item classes to match the new target URL.
      *
@@ -146,10 +180,12 @@
                 var rootRelative = url.replace(window.location.origin, '');
                 updateTocActiveItem(rootRelative);
 
-                // ---- Re-apply stored TOC scroll ----
-                // The TOC DOM was never replaced so scrollTop is already
-                // correct; this line is a safety net for edge cases.
-                restoreTocScroll();
+                // ---- Ensure the active TOC item is visible ----
+                // Scroll the TOC only if the newly highlighted item has ended
+                // up outside the visible portion of div.toc (e.g. after a
+                // back/forward navigation where the saved scroll offset belonged
+                // to a different page). Does nothing when already visible.
+                scrollActiveItemIntoView();
             })
             .catch(function (err) {
                 console.warn('toc-nav: fetch failed (' + err.message + '), falling back to full navigation.');
@@ -164,8 +200,11 @@
 
     document.addEventListener('DOMContentLoaded', function () {
 
-        // Restore persisted TOC scroll on every initial page load.
+        // Restore persisted TOC scroll on every initial page load, then ensure
+        // the active item is visible. scrollActiveItemIntoView() only overrides
+        // the restored position when the active item would otherwise be hidden.
         restoreTocScroll();
+        scrollActiveItemIntoView();
 
         // Register initial page in history so the back button works from
         // the very first page a visitor lands on.
