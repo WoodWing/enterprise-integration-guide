@@ -21,18 +21,24 @@ _readonly_
 
 **Return value** _PageItem_
 
-A PageItem object.
+The InDesign PageItem object associated with the ManagedAdvert.
 
 ## Description
 
-The `pageItem` property is used to get access to the associated InDesign PageItem object.
+The `pageItem` property returns the InDesign PageItem object that contains the ManagedAdvert on the layout.
 
 ## Examples
 
-**Example title**
+**Get the page item of the first managed advert**
 
 ```javascript
-
+// Get the page item of the first managed advert in the active document.
+var adverts = app.activeDocument.managedAdverts;
+if (adverts.count() > 0) {
+    var advert = adverts[0];
+    var pageItem = advert.pageItem;
+    alert("Page item bounds: " + pageItem.geometricBounds);
+}
 ```
 
 ## Supported versions

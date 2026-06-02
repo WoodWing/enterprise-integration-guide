@@ -21,14 +21,16 @@ The number of ManagedAdvert objects in the collection.
 
 ## Description
 
-The `count()` method returns the number of ManagedAdvert objects within the ManagedAdverts collection object.
+The `count()` method returns the number of [ManagedAdvert](../../ManagedAdvert/index.md) objects within the ManagedAdverts collection.
 
 ## Examples
 
-**Example title**
+**Count the managed adverts in the active document**
 
 ```javascript
-
+// Count the managed adverts in the active document.
+var count = app.activeDocument.managedAdverts.count();
+alert("Number of managed adverts: " + count);
 ```
 
 ## Supported versions
