@@ -15,20 +15,24 @@ ManagedImages.add();
 
 ### Parameters
 
-**Return value** _ManagedImage_
+**Return value** _[ManagedImage](../../ManagedImage/index.md)_
 
-The created, or newly added, MangedImage object.
+The newly created ManagedImage scripting object.
 
 ## Description
 
-The `add()` method creates a new ManagedImage scripting object that can serve as the basis for creating a new image in Studio Server.
+The `add()` method creates a new [ManagedImage](../../ManagedImage/index.md) scripting object and adds it to the ManagedImages collection. The image is not yet created on Studio Server at this point. Call `create()` on the returned ManagedImage object to save it to Studio Server.
 
 ## Examples
 
-**Example title**
+**Add a new ManagedImage and create it on Studio Server**
 
 ```javascript
-
+// Add a ManagedImage scripting object, set its metadata, then create it on Studio Server.
+var image = app.activeDocument.managedImages.add();
+image.entMetaData.set("Core_Name", "My Image");
+image.entMetaData.set("Core_Publication", "WW News");
+image.create(app.selection[0]);
 ```
 
 ## Supported versions
@@ -39,3 +43,7 @@ The `add()` method creates a new ManagedImage scripting object that can serve as
 | 2024          | ✔         |
 | 2025          | ✔         |
 | 2026          | ✔         |
+
+## See also
+
+- [ManagedImage.create()](../../ManagedImage/Methods/create.md)

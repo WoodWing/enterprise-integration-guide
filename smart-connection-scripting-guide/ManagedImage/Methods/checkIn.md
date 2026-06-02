@@ -10,41 +10,44 @@ permalink: 1401-checkIn
 ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
 
 ```javascript
-ManagedImage.checkIn();
+ManagedImage.checkIn([useSmartCheckIn]);
 ```
 
 ### Parameters
 
+**useSmartCheckIn** _boolean (Optional)_
+
+When `true`, only changed image files are checked in (smart check-in). When `false`, the image file is always checked in regardless of whether it changed. Default is `true`.
+
+Should not be used in combination with the similar option of `PageItem.replaceEnterpriseImage`.
+
 **Return value**
 
-The `checkIn()` method does not return anything.
+The `checkIn()` method does not return a value.
 
 ## Description
 
-The `checkIn()` method checks-in the placed Image in the Studio Server system.
+The `checkIn()` method checks in the placed image to Studio Server.
 
 ## Examples
 
-**Example title**
+**Check in all managed images in the active document**
 
 ```javascript
-var doc = app.activeDocument;
-var managedImages = doc.managedImages;
+// Check in all managed images in the active document.
+var images = app.activeDocument.managedImages;
+for (var i = 0; i < images.count(); i++) {
+    images[i].checkIn();
+}
+```
 
-var im;
-var md;
-var core_name;
-var id;
+**Force check-in of all images, bypassing smart check-in**
 
-for (i = 0; i < managedImages.length; i++) {
-  im = managedImages[i];
-  md = im.entMetaData;
-  core_name = md.get("Core_Name");
-  id = doc.entMetaData.get("Core_ID");
-  alert("image name = [" + core_name + "] ; document id = [" + id + "]");
-  im.checkOut();
-  alert("Now update the image in the woodwing.noindex folder");
-  im.checkIn();
+```javascript
+// Check in all managed images, always uploading the file even if unchanged.
+var images = app.activeDocument.managedImages;
+for (var i = 0; i < images.count(); i++) {
+    images[i].checkIn(false);
 }
 ```
 

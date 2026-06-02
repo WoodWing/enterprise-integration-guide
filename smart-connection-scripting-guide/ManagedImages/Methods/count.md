@@ -21,14 +21,16 @@ The number of ManagedImage objects in the collection.
 
 ## Description
 
-The `count()` method returns the number of ManagedImage objects within the ManagedImages collection object.
+The `count()` method returns the number of [ManagedImage](../../ManagedImage/index.md) objects within the ManagedImages collection.
 
 ## Examples
 
-**Example title**
+**Count the managed images in the active document**
 
 ```javascript
-
+// Count the managed images in the active document.
+var count = app.activeDocument.managedImages.count();
+alert("Number of managed images: " + count);
 ```
 
 ## Supported versions

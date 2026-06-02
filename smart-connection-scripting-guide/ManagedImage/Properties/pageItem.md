@@ -21,18 +21,24 @@ _readonly_
 
 **Return value** _PageItem_
 
-A PageItem object.
+The InDesign PageItem object associated with the ManagedImage.
 
 ## Description
 
-The `pageItem` property is used to get access to the associated InDesign PageItem object.
+The `pageItem` property returns the InDesign PageItem object that contains the ManagedImage on the layout.
 
 ## Examples
 
-**Example title**
+**Get the page item of the first managed image**
 
 ```javascript
-
+// Get the page item of the first managed image in the active document.
+var images = app.activeDocument.managedImages;
+if (images.count() > 0) {
+    var image = images[0];
+    var pageItem = image.pageItem;
+    alert("Page item bounds: " + pageItem.geometricBounds);
+}
 ```
 
 ## Supported versions

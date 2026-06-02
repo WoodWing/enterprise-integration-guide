@@ -17,38 +17,30 @@ ManagedImage.checkOut();
 
 **Return value**
 
-The `checkOut()` method does not return anything.
+The `checkOut()` method does not return a value.
 
 ## Description
 
-The `checkOut()` method checks-out the placed Image.
+The `checkOut()` method checks out the placed image for editing outside of InDesign.
 
 Note 1: The InDesign user interface is not capable of handling/showing checked out images. It is e.g. not possible to check out and check in images by using the interface, besides during an Edit Original operation. We advise to not use this function.
 
-Note 2: After using this call you are also responsible to call checkIn to check the image back in.
+Note 2: After using this call you are also responsible to call `checkIn()` to check the image back in.
 
 ## Examples
 
-**Example title**
+**Check out then check in a managed image**
 
 ```javascript
-var doc = app.activeDocument;
-var managedImages = doc.managedImages;
-
-var im;
-var md;
-var core_name;
-var id;
-
-for (i = 0; i < managedImages.length; i++) {
-  im = managedImages[i];
-  md = im.entMetaData;
-  core_name = md.get("Core_Name");
-  id = doc.entMetaData.get("Core_ID");
-  alert("image name = [" + core_name + "] ; document id = [" + id + "]");
-  im.checkOut();
-  alert("Now update the image in the woodwing.noindex folder");
-  im.checkIn();
+// Check out the first managed image, then check it back in.
+var images = app.activeDocument.managedImages;
+if (images.count() > 0) {
+    var image = images[0];
+    var name = image.entMetaData.get("Core_Name");
+    alert("Checking out image: " + name);
+    image.checkOut();
+    // Update the image file externally, then check it back in.
+    image.checkIn();
 }
 ```
 
