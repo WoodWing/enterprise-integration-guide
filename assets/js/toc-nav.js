@@ -75,13 +75,12 @@
 
         if (!isAbove && !isBelow) return; // Already visible — do nothing
 
-        if (isAbove) {
-            // Item is above the visible area: scroll up
-            toc.scrollTop += itemRect.top - tocRect.top - PADDING;
-        } else {
-            // Item is below the visible area: scroll down
-            toc.scrollTop += itemRect.bottom - tocRect.bottom + PADDING;
-        }
+        // Center the item in the TOC viewport.
+        // Delta = (item's center in viewport) − (toc's center in viewport).
+        // Adding that delta to scrollTop moves the item to the middle of the container.
+        var itemCenter = itemRect.top  + itemRect.height / 2;
+        var tocCenter  = tocRect.top   + toc.clientHeight / 2;
+        toc.scrollTop += itemCenter - tocCenter;
     }
 
     /**
