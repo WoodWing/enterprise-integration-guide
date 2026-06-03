@@ -19,16 +19,29 @@ _readonly_
 
 ### Parameters
 
-**Return value** _ManagedArticle_
+**Return value** _[ManagedArticle](../../ManagedArticle/index.md)_
 
-The managed article scripting object.
+The associated ManagedArticle object, or `undefined` if the story is not bound to a managed article on Studio Server.
 
 ## Description
 
-The `managedArticle` property is used to obtain access to the associated ManagedArticle scripting object. Returns nothing if there is no object associated.
-For more info about the Managed Article object please see the [ManagedArticle](../../ManagedArticle/index.md) documentation.
+The `managedArticle` property returns the [ManagedArticle](../../ManagedArticle/index.md) object associated with this story, or `undefined` if the story is not part of a managed article on Studio Server.
 
 ## Examples
+
+**Check whether a story is a managed article component**
+
+```javascript
+// Check whether the first story in the active document is a managed article component.
+var story = app.activeDocument.stories[0];
+var article = story.managedArticle;
+if (article) {
+    var name = article.entMetaData.get("Core_Name");
+    alert("Managed article: " + name);
+} else {
+    alert("Story is not a managed article component.");
+}
+```
 
 ## Supported versions
 

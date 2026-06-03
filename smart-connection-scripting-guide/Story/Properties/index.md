@@ -6,3 +6,4 @@ permalink: 1169-index
 Properties on the Story object.
 
 * [managedArticle](./managedArticle.md)
+* [textLock](./textLock.md)

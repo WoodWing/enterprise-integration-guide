@@ -10,3 +10,4 @@ The object representing a Studio Server Story.
 ### Properties
 
 - [managedArticle](./Properties/managedArticle.md)
+- [textLock](./Properties/textLock.md)
