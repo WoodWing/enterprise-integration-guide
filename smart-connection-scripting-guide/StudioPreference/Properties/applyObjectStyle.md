@@ -39,10 +39,36 @@ The default value is ApplyObjectStyleOptions.APPLY_DURING_CREATE_AND_PLACE.
 
 ## Examples
 
-**Set the "Apply Object Style" preference to "Do Not Apply"**
+**Read the current preference**
 
 ```javascript
-app.studioPreferences.applyObjectStyle = ApplyObjectStyleOptions.DO_NOT_APPLY;
+// Read the current applyObjectStyle preference.
+var pref = app.studioPreferences.applyObjectStyle;
+alert("Apply object style: " + pref);
+```
+
+**Apply the object style only during create and place**
+
+```javascript
+// Apply the object style only when creating or placing — not on updates.
+app.studioPreferences.applyObjectStyle =
+  ApplyObjectStyleOptions.APPLY_DURING_CREATE_AND_PLACE;
+```
+
+**Always reapply the object style**
+
+```javascript
+// Always reapply the object style, including when updating an article.
+app.studioPreferences.applyObjectStyle =
+  ApplyObjectStyleOptions.REAPPLY_WHEN_UPDATING;
+```
+
+**Never apply the object style**
+
+```javascript
+// Never apply an object style automatically.
+app.studioPreferences.applyObjectStyle =
+  ApplyObjectStyleOptions.DO_NOT_APPLY;
 ```
 
 ## Supported versions

@@ -21,18 +21,36 @@ _read/write_
 
 **Return value** _boolean_
 
+`true` if a sound is played when a routing message arrives, `false` if no sound is played.
+
 ## Description
 
 The `playSoundWhenRoutingMessageArrives` property defines if a sound should play when a user receives a message when a file is routed to that user.
 
-The default value is 'false'.
+The default value is `false`.
 
 ## Examples
 
-**Turn on the "Play Sound when Message Arrives" preference**
+**Read the current sound preference**
 
 ```javascript
+// Read whether sound is enabled for routing messages.
+var soundEnabled = app.studioPreferences.playSoundWhenRoutingMessageArrives;
+alert("Play sound: " + soundEnabled);
+```
+
+**Enable sound on routing message arrival**
+
+```javascript
+// Play a sound when a routing message arrives.
 app.studioPreferences.playSoundWhenRoutingMessageArrives = true;
+```
+
+**Disable sound on routing message arrival**
+
+```javascript
+// Do not play a sound when a routing message arrives.
+app.studioPreferences.playSoundWhenRoutingMessageArrives = false;
 ```
 
 ## Supported versions

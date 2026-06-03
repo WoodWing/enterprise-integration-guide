@@ -39,11 +39,36 @@ The default value is ShowRoutingMessageOptions.DO_NOT_SHOW.
 
 ## Examples
 
-**Set the "Routing Message Options > Alert" preference to "Do not show dialog"**
+**Read the current routing message alert preference**
 
 ```javascript
+// Read the current routing message alert preference.
+var pref = app.studioPreferences.showRoutingMessageAlert;
+alert("Routing message alert: " + pref);
+```
+
+**Do not show any routing message**
+
+```javascript
+// Disable routing message alerts entirely.
 app.studioPreferences.showRoutingMessageAlert =
   ShowRoutingMessageOptions.DO_NOT_SHOW;
+```
+
+**Show a message when an object is routed to the current user**
+
+```javascript
+// Show a routing message alert only when an object is routed directly to the current user.
+app.studioPreferences.showRoutingMessageAlert =
+  ShowRoutingMessageOptions.SHOW_SENT_TO_ME;
+```
+
+**Show a message when an object is routed to the user or any of their groups**
+
+```javascript
+// Show a routing message alert when an object is routed to the user or any of their user groups.
+app.studioPreferences.showRoutingMessageAlert =
+  ShowRoutingMessageOptions.SHOW_SENT_TO_ME_OR_GROUP;
 ```
 
 ## Supported versions

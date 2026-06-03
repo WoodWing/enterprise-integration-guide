@@ -40,10 +40,40 @@ The default value is PaneFontSizeOptions.SMALL.
 
 ## Examples
 
-**Set the "Document Pane Font Size" preference to "Large"**
+**Read the current preference**
 
 ```javascript
+// Read the current Document pane font size.
+var pref = app.studioPreferences.documentPaneFontSize;
+alert("Document pane font size: " + pref);
+```
+
+**Set the Document pane font size to Small**
+
+```javascript
+// Use the small font size in the Document pane.
+app.studioPreferences.documentPaneFontSize = PaneFontSizeOptions.SMALL;
+```
+
+**Set the Document pane font size to Medium**
+
+```javascript
+// Use the medium font size in the Document pane.
+app.studioPreferences.documentPaneFontSize = PaneFontSizeOptions.MEDIUM;
+```
+
+**Set the Document pane font size to Large**
+
+```javascript
+// Use the large font size in the Document pane.
 app.studioPreferences.documentPaneFontSize = PaneFontSizeOptions.LARGE;
+```
+
+**Set the Document pane font size to Extra Large**
+
+```javascript
+// Use the extra large font size in the Document pane.
+app.studioPreferences.documentPaneFontSize = PaneFontSizeOptions.EXTRA_LARGE;
 ```
 
 ## Supported versions

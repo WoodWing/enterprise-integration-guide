@@ -21,18 +21,36 @@ _read/write_
 
 **Return value** _boolean_
 
+`true` if the layout name is used as the default article name, `false` if it is not.
+
 ## Description
 
 The `displayLayoutNameInCreateArticle` property defines if the name of the layout should be used as the default name for an article that is created from a frame on the layout.
 
-The default value is 'false'.
+The default value is `false`.
 
 ## Examples
 
-**Turn on the "Display Layout Name in Create Article" preference**
+**Read the current preference**
 
 ```javascript
+// Read whether the layout name is used as the default article name.
+var pref = app.studioPreferences.displayLayoutNameInCreateArticle;
+alert("Display layout name: " + pref);
+```
+
+**Use the layout name as the default article name**
+
+```javascript
+// Pre-fill the article name with the layout name when creating an article.
 app.studioPreferences.displayLayoutNameInCreateArticle = true;
+```
+
+**Do not use the layout name as the default article name**
+
+```javascript
+// Leave the article name field empty when creating an article.
+app.studioPreferences.displayLayoutNameInCreateArticle = false;
 ```
 
 ## Supported versions

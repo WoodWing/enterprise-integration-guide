@@ -21,18 +21,36 @@ _read/write_
 
 **Return value** _boolean_
 
+`true` if Studio images are updated to their latest version when a layout is opened, `false` if they are not.
+
 ## Description
 
 The `updatePlacedImagesWhenOpeningLayout` property defines if images stored in Studio should be updated to their latest version when a layout is opened.
 
-The default value is 'true'.
+The default value is `true`.
 
 ## Examples
 
-**Turn on the "Update Placed Studio Images When Opening a Layout" preference**
+**Read the current preference**
 
 ```javascript
+// Read whether Studio images are updated when a layout is opened.
+var pref = app.studioPreferences.updatePlacedImagesWhenOpeningLayout;
+alert("Update images on open: " + pref);
+```
+
+**Update placed Studio images when opening a layout**
+
+```javascript
+// Automatically update placed Studio images to their latest version on layout open.
 app.studioPreferences.updatePlacedImagesWhenOpeningLayout = true;
+```
+
+**Do not update placed Studio images when opening a layout**
+
+```javascript
+// Do not update placed Studio images automatically when a layout is opened.
+app.studioPreferences.updatePlacedImagesWhenOpeningLayout = false;
 ```
 
 ## Supported versions

@@ -40,10 +40,40 @@ The default value is PaneFontSizeOptions.SMALL.
 
 ## Examples
 
-**Set the "Preview Pane Font Size" preference to "Large"**
+**Read the current preference**
 
 ```javascript
+// Read the current Preview pane font size.
+var pref = app.studioPreferences.previewPaneFontSize;
+alert("Preview pane font size: " + pref);
+```
+
+**Set the Preview pane font size to Small**
+
+```javascript
+// Use the small font size in the Preview pane.
+app.studioPreferences.previewPaneFontSize = PaneFontSizeOptions.SMALL;
+```
+
+**Set the Preview pane font size to Medium**
+
+```javascript
+// Use the medium font size in the Preview pane.
+app.studioPreferences.previewPaneFontSize = PaneFontSizeOptions.MEDIUM;
+```
+
+**Set the Preview pane font size to Large**
+
+```javascript
+// Use the large font size in the Preview pane.
 app.studioPreferences.previewPaneFontSize = PaneFontSizeOptions.LARGE;
+```
+
+**Set the Preview pane font size to Extra Large**
+
+```javascript
+// Use the extra large font size in the Preview pane.
+app.studioPreferences.previewPaneFontSize = PaneFontSizeOptions.EXTRA_LARGE;
 ```
 
 ## Supported versions

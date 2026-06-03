@@ -21,18 +21,36 @@ _read/write_
 
 **Return value** _boolean_
 
+`true` if the Import options dialog is shown when an image is placed, `false` if it is not.
+
 ## Description
 
 The `showImportOptionsDialogOnPlace` property defines if the Import options dialog should be shown when an image is placed.
 
-The default value is 'false'.
+The default value is `false`.
 
 ## Examples
 
-**Turn on the "Show Import Options Dialog on Place" preference**
+**Read the current preference**
 
 ```javascript
+// Read whether the Import options dialog is shown on place.
+var pref = app.studioPreferences.showImportOptionsDialogOnPlace;
+alert("Show import options: " + pref);
+```
+
+**Show the Import options dialog when placing an image**
+
+```javascript
+// Show the Import options dialog each time an image is placed.
 app.studioPreferences.showImportOptionsDialogOnPlace = true;
+```
+
+**Do not show the Import options dialog when placing an image**
+
+```javascript
+// Place images without showing the Import options dialog.
+app.studioPreferences.showImportOptionsDialogOnPlace = false;
 ```
 
 ## Supported versions
