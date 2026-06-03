@@ -859,7 +859,7 @@ toc:
           layout: chapter
           path: smart-connection-scripting-guide/StudioDocumentPreference/Properties/applyObjectStyle.md
           url: smart-connection-scripting-guide/StudioDocumentPreference/Properties/applyObjectStyle.html
-          permalink: 1162-applyObjectStyle
+          permalink: 1305-applyObjectStyle
     - title: StudioPreference
       layout: section
       path: smart-connection-scripting-guide/StudioPreference/index.md

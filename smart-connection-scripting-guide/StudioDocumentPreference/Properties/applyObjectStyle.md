@@ -25,7 +25,7 @@ An ApplyObjectStyleOptions enum value (see below).
 
 ## Description
 
-The `applyObjectStyle` property defines if and when an object style should be automatically applied to an article in this specific document. This is a document-level preference that overrides the application-level setting in [studioPreferences.applyObjectStyle](../../StudioPreference/Properties/applyObjectStyle.md) for the individual document.
+The `applyObjectStyle` property defines if and when an object style should be automatically applied to an article in this specific document. It is the document-level counterpart of [studioPreferences.applyObjectStyle](../../StudioPreference/Properties/applyObjectStyle.md): both control the same behavior and share the same enum values, but their settings are stored and read independently. Changing one does not affect the other.
 
 Use one of the following options:
 
