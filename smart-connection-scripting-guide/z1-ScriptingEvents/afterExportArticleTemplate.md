@@ -15,15 +15,22 @@ After creating the XML representation of an article template on disk.
 
 ## Arguments in
 
-| Key     | Description                                     |
-| ------- | ----------------------------------------------- |
-| Core_ID | The object id of the article that was exported. |
+n/a
 
 ## Arguments out
 
 n/a
 
 ## Notes
+
+## Examples
+
+**Using afterExportArticleTemplate**
+
+```javascript
+// afterExportArticleTemplate.jsx - runs after exporting an article template
+alert("Article template exported successfully.");
+```
 
 ## Supported versions
 

@@ -21,9 +21,18 @@ After sending an article to the Studio Server system.
 
 ## Arguments out
 
-n/a|
+n/a
 
 ## Notes
+
+## Examples
+
+**Using afterSaveArticle**
+
+```javascript
+var msg = "Saved article ID: " + app.scriptArgs.get("Core_ID");
+alert(msg);
+```
 
 ## Supported versions
 

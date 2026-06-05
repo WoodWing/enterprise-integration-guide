@@ -25,6 +25,15 @@ n/a
 
 ## Notes
 
+## Examples
+
+**Using afterSaveLayout**
+
+```javascript
+var msg = "Saved layout ID: " + app.scriptArgs.get("Core_ID");
+alert(msg);
+```
+
 ## Supported versions
 
 | Adobe Version | Supported |

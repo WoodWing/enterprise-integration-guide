@@ -26,6 +26,15 @@ n/a
 Changes made to the text will be part of the export, as well as changes made to the layout in InDesign
 (Server) that will be part of the template information.
 
+## Examples
+
+**Using beforeExportArticleTemplate**
+
+```javascript
+// beforeExportArticleTemplate.jsx - runs before exporting an article template
+alert("About to export article template.");
+```
+
 ## Supported versions
 
 | Adobe Version | Supported |

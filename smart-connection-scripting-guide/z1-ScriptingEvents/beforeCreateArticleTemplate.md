@@ -25,6 +25,15 @@ n/a
 
 Don’t change the text of the article template at this stage. Changes will not be sent to the server. Use beforeExportArticle instead.
 
+## Examples
+
+**Using beforeCreateArticleTemplate**
+
+```javascript
+// beforeCreateArticleTemplate.jsx - runs before sending a new article template to Studio Server
+alert("About to create a new article template.");
+```
+
 ## Supported versions
 
 | Adobe Version | Supported |

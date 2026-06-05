@@ -15,9 +15,9 @@ After detaching an article from a layout.
 
 ## Arguments in
 
-| Key     | Description                                             |
-| ------- | ------------------------------------------------------- |
-| Core_ID | The object id of the article template that was created. |
+| Key     | Description                                     |
+| ------- | ----------------------------------------------- |
+| Core_ID | The object id of the article that was detached. |
 
 ## Arguments out
 
@@ -27,6 +27,15 @@ n/a
 
 This event is only broadcasted when using the Detach Article action, not when detaching by deleting the
 article from the layout.
+
+## Examples
+
+**Using afterDetachArticle**
+
+```javascript
+var msg = "Detached article ID: " + app.scriptArgs.get("Core_ID");
+alert(msg);
+```
 
 ## Supported versions
 

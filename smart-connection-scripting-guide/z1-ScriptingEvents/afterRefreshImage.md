@@ -11,7 +11,7 @@ When opening a layout after a highres advert is placed or modified using the pla
 
 ## Where
 
-![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %})
+![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
 
 ## Arguments in
 
@@ -24,6 +24,15 @@ When opening a layout after a highres advert is placed or modified using the pla
 n/a
 
 ## Notes
+
+## Examples
+
+**Using afterRefreshImage**
+
+```javascript
+var msg = "Refreshed image ID: " + app.scriptArgs.get("Core_ID");
+alert(msg);
+```
 
 ## Supported versions
 

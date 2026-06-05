@@ -11,20 +11,30 @@ After a Studio Server Image was created from an Assets Image (and added to a Dos
 
 ## Where
 
-![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %})
+![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
 
 ## Arguments in
 
 | Key      | Description                                 |
 | -------- | ------------------------------------------- |
+| pageitem | The id of the frame that contains the image. |
 | Core_ID  | The object id of the created image.         |
-| pageItem | The id of the frame that contains the image |
 
 ## Arguments out
 
 n/a
 
 ## Notes
+
+## Examples
+
+**Using afterCreateEnterpriseImageFromElvisImage**
+
+```javascript
+var msg = "Created image ID: " + app.scriptArgs.get("Core_ID") + "\n";
+msg += "Frame ID: " + app.scriptArgs.get("pageitem");
+alert(msg);
+```
 
 ## Supported versions
 

@@ -18,6 +18,7 @@ for scripter to use before detaching the article component.
 
 | Key                 | Description                                         |
 | ------------------- | --------------------------------------------------- |
+| objectId            | The object ID of the article that will be detached. |
 | Core_ID             | The object ID of the article that will be detached. |
 | templateGeoFilePath | The template file path.                             |
 
@@ -28,6 +29,18 @@ n/a
 ## Notes
 
 A template with all placed components of the article will be generated in the file path: templateGeoFilePath, and will be deleted after the event.
+
+## Examples
+
+**Using beforeDetachArticle**
+
+```javascript
+var articleId = app.scriptArgs.get("Core_ID");
+var templatePath = app.scriptArgs.get("templateGeoFilePath");
+var msg = "About to detach article ID: " + articleId + "\n";
+msg += "Geometry template: " + templatePath;
+alert(msg);
+```
 
 ## Supported versions
 

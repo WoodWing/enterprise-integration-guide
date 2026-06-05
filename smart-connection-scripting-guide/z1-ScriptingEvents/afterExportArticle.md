@@ -25,6 +25,19 @@ n/a
 
 ## Notes
 
+`Core_ID` is not available in all export code paths. Use `app.scriptArgs.isDefined("Core_ID")` before accessing it.
+
+## Examples
+
+**Using afterExportArticle**
+
+```javascript
+var msg = "Article exported";
+if (app.scriptArgs.isDefined("Core_ID"))
+  msg += " (ID: " + app.scriptArgs.get("Core_ID") + ")";
+alert(msg);
+```
+
 ## Supported versions
 
 | Adobe Version | Supported |

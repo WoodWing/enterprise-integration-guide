@@ -146,7 +146,7 @@ The following fields are used to describe an event:
 
 - [afterCreateArticle](./afterCreateArticle.md)
 - [afterCreateArticleTemplate](./afterCreateArticleTemplate.md)
-- [afterCreateContinuationElement](./afterCreateContinuationElement.md)
+- [afterCreateContinuationElements](./afterCreateContinuationElements.md)
 - [afterCreateEnterpriseImageFromElvisImage](./afterCreateEnterpriseImageFromElvisImage.md)
 - [afterCreateJump](./afterCreateJump.md)
 - [afterCreateLayout](./afterCreateLayout.md)

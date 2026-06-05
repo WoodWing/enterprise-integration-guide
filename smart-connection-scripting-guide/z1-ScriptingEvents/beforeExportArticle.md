@@ -23,7 +23,18 @@ n/a
 
 ## Notes
 
-Changes made to the text will be part of the export.
+Changes made to the text will be part of the export. `Core_ID` may be available in some workflows — use `app.scriptArgs.isDefined("Core_ID")` before accessing it.
+
+## Examples
+
+**Using beforeExportArticle**
+
+```javascript
+var msg = "About to export article";
+if (app.scriptArgs.isDefined("Core_ID"))
+  msg += " (ID: " + app.scriptArgs.get("Core_ID") + ")";
+alert(msg);
+```
 
 ## Supported versions
 

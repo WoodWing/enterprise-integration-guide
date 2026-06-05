@@ -25,6 +25,15 @@ n/a
 
 ## Notes
 
+## Examples
+
+**Using afterCreateArticleTemplate**
+
+```javascript
+var msg = "Created article template ID: " + app.scriptArgs.get("Core_ID");
+alert(msg);
+```
+
 ## Supported versions
 
 | Adobe Version | Supported |

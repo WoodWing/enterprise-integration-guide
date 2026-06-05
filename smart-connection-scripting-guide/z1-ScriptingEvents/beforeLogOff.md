@@ -23,6 +23,15 @@ n/a
 
 ## Notes
 
+## Examples
+
+**Using beforeLogOff**
+
+```javascript
+// beforeLogOff.jsx - runs just before the log-off action
+alert("About to log off from Studio.");
+```
+
 ## Supported versions
 
 | Adobe Version | Supported |

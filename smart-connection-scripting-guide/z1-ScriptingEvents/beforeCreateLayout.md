@@ -25,6 +25,15 @@ n/a
 
 Changes can be made to the document, these will be saved and sent to the Studio Server system.
 
+## Examples
+
+**Using beforeCreateLayout**
+
+```javascript
+// beforeCreateLayout.jsx - runs before creating a new layout in Studio Server
+alert("About to create a new layout.");
+```
+
 ## Supported versions
 
 | Adobe Version | Supported |

@@ -23,6 +23,15 @@ n/a
 
 ## Notes
 
+## Examples
+
+**Using afterOpenLayout**
+
+```javascript
+// afterOpenLayout.jsx - runs after opening a layout
+alert("Layout opened successfully.");
+```
+
 ## Supported versions
 
 | Adobe Version | Supported |

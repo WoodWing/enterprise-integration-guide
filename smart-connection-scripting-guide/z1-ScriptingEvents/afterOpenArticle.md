@@ -25,6 +25,15 @@ n/a
 
 ## Notes
 
+## Examples
+
+**Using afterOpenArticle**
+
+```javascript
+var msg = "Opened article ID: " + app.scriptArgs.get("Core_ID");
+alert(msg);
+```
+
 ## Supported versions
 
 | Adobe Version | Supported |

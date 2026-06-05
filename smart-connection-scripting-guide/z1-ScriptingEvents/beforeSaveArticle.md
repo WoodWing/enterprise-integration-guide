@@ -25,7 +25,7 @@ Before sending an article to the Studio Server system.
 | Editions         | New Edition(s).                           |
 | Core_Basket      | New Status.                               |
 | RouteTo          | New routing.                              |
-| Action           | The workflow action done by the user.     |
+| Action           | The workflow action done by the user. Possible values: `Undefined`, `Close`, `SaveVersion`, `CheckIn`. |
 
 ## Arguments out
 

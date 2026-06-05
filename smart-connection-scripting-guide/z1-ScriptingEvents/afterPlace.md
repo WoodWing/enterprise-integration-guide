@@ -11,7 +11,7 @@ After placing an object.
 
 ## Where
 
-![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
+![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesign.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/incopy.png %}) ![]({{ site.baseurl }}{% link smart-connection-scripting-guide/images/indesignserver.png %})
 
 ## Arguments in
 
@@ -24,6 +24,15 @@ After placing an object.
 n/a
 
 ## Notes
+
+## Examples
+
+**Using afterPlace**
+
+```javascript
+var msg = "Placed into frame ID: " + app.scriptArgs.get("pageitem");
+alert(msg);
+```
 
 ## Supported versions
 

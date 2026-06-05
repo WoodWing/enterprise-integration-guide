@@ -23,6 +23,15 @@ n/a
 
 ## Notes
 
+## Examples
+
+**Using afterLogOn**
+
+```javascript
+// afterLogOn.jsx - runs after a successful login
+alert("Logged on to Studio successfully.");
+```
+
 ## Supported versions
 
 | Adobe Version | Supported |

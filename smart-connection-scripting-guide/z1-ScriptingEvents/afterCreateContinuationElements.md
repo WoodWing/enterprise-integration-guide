@@ -1,8 +1,8 @@
 ---
 layout: chapter
-title: afterCreateContinuationElement
+title: afterCreateContinuationElements
 sortid: 112
-permalink: 1176-afterCreateContinuationElement
+permalink: 1176-afterCreateContinuationElements
 ---
 
 ## When
@@ -20,7 +20,7 @@ After creating a continuation element for a Smart Jump article.
 | document                | The object id of the layout from where the element is created on.                                 |
 | parentStory             | The story id of the component of the Smart Jump story the element belongs to.                     |
 | [continuationFromStory] | The story id of the continuation from element belonging to the component of the Smart Jump story. |
-| [continuationOnStory]   | The story id of the continuation on element belonging to the component of the Smart Jump story.   |
+| [continuationToStory]   | The story id of the continuation to element belonging to the component of the Smart Jump story.   |
 
 ## Arguments out
 
@@ -32,7 +32,7 @@ The event is not sent when creating a Smart Jump. In that case the afterCreateJu
 
 ## Examples
 
-**Using afterCreateJump**
+**Using afterCreateContinuationElements**
 
 ```javascript
 var msg = "Document: " + app.scriptArgs.get("document") + "\n";

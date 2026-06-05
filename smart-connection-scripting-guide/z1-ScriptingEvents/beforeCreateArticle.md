@@ -25,6 +25,15 @@ n/a
 
 Don’t change the text of the article at this stage. Changes will not be sent to the server. Use beforeExportArticle instead.
 
+## Examples
+
+**Using beforeCreateArticle**
+
+```javascript
+// beforeCreateArticle.jsx - runs before sending a new article to Studio Server
+alert("About to create a new article.");
+```
+
 ## Supported versions
 
 | Adobe Version | Supported |

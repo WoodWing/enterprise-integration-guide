@@ -27,6 +27,15 @@ n/a
 
 Changes can be made to the document, these will be saved and sent to the Studio Server system.
 
+## Examples
+
+**Using afterCreateLayout**
+
+```javascript
+var msg = "Created layout ID: " + app.scriptArgs.get("Core_ID");
+alert(msg);
+```
+
 ## Supported versions
 
 | Adobe Version | Supported |
