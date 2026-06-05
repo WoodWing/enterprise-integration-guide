@@ -9,14 +9,16 @@ Provides access to workflow actions for a document
 ### Properties
 
 * [defaultDossier](./Properties/defaultDossier.md)
+* [relations](./Properties/relations.md)
 
 ### Methods
 
-* [checkIn](./Methods/checkIn.md)
 * [abortCheckOut](./Methods/abortCheckOut.md)
+* [checkIn](./Methods/checkIn.md)
+* [placeObject](./Methods/placeObject.md)
+* [replaceEnterpriseFile](./Methods/replaceEnterpriseFile.md)
+* [restoreFromArchive](./Methods/restoreFromArchive.md)
 * [saveAs](./Methods/saveAs.md)
 * [saveVersion](./Methods/saveVersion.md)
-* [updateAllContent](./Methods/updateAllContent.md)
-* [placeObject](./Methods/placeObject.md)
-* [restoreFromArchive](./Methods/restoreFromArchive.md)
 * [setPdfProfile](./Methods/setPdfProfile.md)
+* [updateAllContent](./Methods/updateAllContent.md)

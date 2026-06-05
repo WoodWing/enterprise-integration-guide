@@ -23,29 +23,60 @@ Only used in combination with the “Elvis_Copy” image restore location (defin
 
 **imageRestoreLocation** _String (Optional)_
 
-Defines the restore location of images. When not defined the option as defined in the Elvis Enterprise Server plug-in is used. Possible values:
+Defines the restore location of images. When not defined, the option configured in the Assets plug-in is used. Possible values:
 
-| Value      | Description                                                                   |
-| ---------- | ----------------------------------------------------------------------------- |
-| Elvis_Copy | The image is copied in Assets and is linked via a Studio Server shadow object |
-| Enterprise | The image is copied to Studio Server                                          |
+| Value           | Description                                                                    |
+| --------------- | ------------------------------------------------------------------------------ |
+| Elvis_Copy      | The image is copied in Assets and is linked via a Studio Server shadow object. |
+| Elvis_Original  | The image is linked from its original location in Assets.                      |
+| Enterprise      | The image is copied to Studio Server.                                          |
 
-**Return value** _Document_
+**Return value** _[Document](../../Document/index.md)_
 
-The restored Document object.
+The Document object representing the restored document.
 
 ## Description
 
-The `restoreFromArchive()` method restores the opened archived document from Assets as a new object in the Studio Server system. Throws an exception in case of an error. Change the metadata before calling `restoreFromArchive()`.
+The `restoreFromArchive()` method restores the active archived document from Assets as a new object in Studio Server. Set the desired metadata on the document via [entMetaData](../../Document/Properties/entMetaData.md) before calling `restoreFromArchive()`. Throws an exception in case of an error.
 
-Articles on the document will be copied to Studio Server and the Article Components will get new IDs. Spreadsheets are copied to Studio Server.
+Articles on the document are copied to Studio Server and Article Components receive new IDs. Spreadsheets are also copied to Studio Server.
 
 ## Examples
 
-**Example title**
+**Restore the archived document using the server's default image restore setting**
 
 ```javascript
+// Restore the archived document; image restore location is determined by the server.
+try {
+  var doc = app.activeDocument.entWorkflow.restoreFromArchive();
+  alert("Document restored: " + doc.name);
+} catch (e) {
+  alert("Restore failed: " + e.message);
+}
+```
 
+**Restore with images copied to a specific path in Assets**
+
+```javascript
+// Restore and copy images to a specific path in Assets.
+try {
+  var doc = app.activeDocument.entWorkflow.restoreFromArchive("/restored/images", "Elvis_Copy");
+  alert("Document restored: " + doc.name);
+} catch (e) {
+  alert("Restore failed: " + e.message);
+}
+```
+
+**Restore with images copied to Studio Server**
+
+```javascript
+// Restore and copy images to Studio Server.
+try {
+  var doc = app.activeDocument.entWorkflow.restoreFromArchive("", "Enterprise");
+  alert("Document restored: " + doc.name);
+} catch (e) {
+  alert("Restore failed: " + e.message);
+}
 ```
 
 ## Supported versions

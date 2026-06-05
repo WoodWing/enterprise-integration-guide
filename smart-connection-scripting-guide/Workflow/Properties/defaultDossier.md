@@ -19,20 +19,29 @@ _read/write_
 
 ### Parameters
 
-**Return value** _String_
+**Return value** _string_
 
-The name of the dossier.
+The ID of the dossier used as the default in the create workflow dialog.
 
 ## Description
 
-The `defaultDossier` property is used to get or get the the name of the Dossier which is used as the default Dossier in the create workflow dialog.
+The `defaultDossier` property gets or sets the ID of the Dossier that is pre-selected as the default in the create workflow dialog.
 
 ## Examples
 
-**Example title**
+**Read the default dossier ID**
 
 ```javascript
+// Get the ID of the default dossier for the active document.
+var dossierId = app.activeDocument.entWorkflow.defaultDossier;
+alert("Default dossier ID: " + dossierId);
+```
 
+**Set the default dossier**
+
+```javascript
+// Pre-select a specific dossier in the create workflow dialog.
+app.activeDocument.entWorkflow.defaultDossier = "98765";
 ```
 
 ## Supported versions

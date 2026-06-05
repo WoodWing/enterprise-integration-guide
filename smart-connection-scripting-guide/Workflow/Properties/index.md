@@ -3,7 +3,7 @@ layout: section
 title: Workflow properties
 permalink: 1155-index
 ---
-Properties on the ManagedImage object.
+Properties on the Workflow object.
 
-* [entMetaData](./entMetaData.md)
-* [items](./pageItem.md)
+* [defaultDossier](./defaultDossier.md)
+* [relations](./relations.md)

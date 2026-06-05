@@ -15,22 +15,32 @@ Workflow.saveAs();
 
 ### Parameters
 
-**Return value** _Document_
+**Return value** _[Document](../../Document/index.md)_
 
-The newly created Document object.
+The Document object representing the document saved as a new Studio Server object.
 
 ## Description
 
-The `saveAs()` method stores the document as a new object in the Studio Server system. Throws an exception in case of an error. Change the metadata before calling saveAs.
+The `saveAs()` method saves the active document as a new object in Studio Server. Set the desired metadata on the document via [entMetaData](../../Document/Properties/entMetaData.md) before calling `saveAs()`. Throws an exception in case of an error.
 
-Use the “Type” key in the EntMetaData to indicate what kind of object should be created. Possible values are: “Layout”, “LayoutTemplate”, “LayoutModule” or “LayoutModuleTemplate”.
+Use the `”Type”` key in the [entMetaData](../../Document/Properties/entMetaData.md) to indicate what kind of object should be created. Possible values are: `”Layout”`, `”LayoutTemplate”`, `”LayoutModule”` or `”LayoutModuleTemplate”`.
 
 ## Examples
 
-**Example title**
+**Save the active document as a new Studio Server object**
 
 ```javascript
-
+// Set the required metadata and save the document as a new Studio Server object.
+var doc = app.activeDocument;
+doc.entMetaData.set(“Name”, “New Layout Copy”);
+doc.entMetaData.set(“Brand”, “WW News”);
+doc.entMetaData.set(“Type”, “Layout”);
+try {
+  var newDoc = doc.entWorkflow.saveAs();
+  alert(“Saved as: “ + newDoc.name);
+} catch (e) {
+  alert(“Save as failed: “ + e.message);
+}
 ```
 
 ## Supported versions

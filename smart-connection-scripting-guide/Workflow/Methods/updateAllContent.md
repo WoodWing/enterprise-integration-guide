@@ -17,18 +17,24 @@ Workflow.updateAllContent();
 
 **Return value**
 
-The `updateAllContent()` method does not return anything.
+The `updateAllContent()` method does not return a value.
 
 ## Description
 
-The `updateAllContent()` method updates the contents of all articles and images in the document to match the latest version. Throws an exception in case of an error.
+The `updateAllContent()` method updates all placed articles and images in the active document to their latest version on Studio Server. The document must be a managed Studio Server object and the user must be logged in. Throws an exception in case of an error.
 
 ## Examples
 
-**Example title**
+**Update all content in the active document**
 
 ```javascript
-
+// Update all placed articles and images to their latest version.
+try {
+  app.activeDocument.entWorkflow.updateAllContent();
+  alert("All content updated successfully.");
+} catch (e) {
+  alert("Update failed: " + e.message);
+}
 ```
 
 ## Supported versions

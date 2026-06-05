@@ -15,22 +15,26 @@ Workflow.saveVersion();
 
 ### Parameters
 
-**Return value** _Document_
+**Return value** _[Document](../../Document/index.md)_
 
-The already opened Document object.
+The Document object representing the document after saving the new version.
 
 ## Description
 
-The `saveVersion()` method silently saves a new version of the document to the Studio Server system. Metadata of the document that has been changed by the calling script will not be picked up and sent to the Studio Server system, instead the existing metadata will be sent.
-
-Throws an exception in case of an error.
+The `saveVersion()` method saves a new version of the active document to Studio Server without showing a metadata dialog. Any metadata changes made by the calling script are not applied; the existing server metadata is used. Throws an exception in case of an error.
 
 ## Examples
 
-**Example title**
+**Save a version of the active document**
 
 ```javascript
-
+// Save a version of the active document to Studio Server.
+try {
+  var doc = app.activeDocument.entWorkflow.saveVersion();
+  alert("Version saved: " + doc.name);
+} catch (e) {
+  alert("Save version failed: " + e.message);
+}
 ```
 
 ## Supported versions

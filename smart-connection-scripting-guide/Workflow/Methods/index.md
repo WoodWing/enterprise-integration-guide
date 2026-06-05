@@ -8,6 +8,7 @@ Methods on the Workflow object.
 * [abortCheckOut](./abortCheckOut.md)
 * [checkIn](./checkIn.md)
 * [placeObject](./placeObject.md)
+* [replaceEnterpriseFile](./replaceEnterpriseFile.md)
 * [restoreFromArchive](./restoreFromArchive.md)
 * [saveAs](./saveAs.md)
 * [saveVersion](./saveVersion.md)
