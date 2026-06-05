@@ -29,14 +29,26 @@ The `patch` property returns the patch version number component of the installed
 
 ## Examples
 
-**Retrieve the semantic version string of the installed plug-in**
+**Verify whether a required patch version is installed**
 
 ```javascript
-// Combine major, minor and patch to form the semantic version string.
+// Check whether a minimum patch version is installed.
 var version = app.studioPlugins.version;
-var semver = version.major + "." + version.minor + "." + version.patch;
-// For plug-in version "v21.0.1 DAILY build 34", semver is "21.0.1".
-alert("Installed Studio plug-in: " + semver);
+
+// In a version string such as "v21.0.1 DAILY build 34", the patch number is 1.
+if (version.major === 21 && version.minor === 0 && version.patch < 1) {
+  alert(
+    "Update required: plug-in v21.0.1 or higher is needed. " +
+      "Installed patch: " +
+      version.patch,
+  );
+} else {
+  alert(
+    "Studio plug-in v21.0.1 or higher is installed (patch: " +
+      version.patch +
+      ").",
+  );
+}
 ```
 
 ## Supported versions
