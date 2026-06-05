@@ -34,11 +34,11 @@ The AddToDossierOverride class needs to have the following functions:
 
 It returns an array of bool:
 
-| Nº  | Description          |
-| --- | -------------------- |
-| 1   | debug canPlaceItems? |
-| 2   | debug placeItems?    |
-| 3   | show error alerts?   |
+| Nº  | Description                  |
+| --- | ---------------------------- |
+| 1   | reserved (not used)          |
+| 2   | debug addObjectsToDossier?   |
+| 3   | show error alerts?           |
 
 Example:
 
@@ -77,9 +77,9 @@ A string with the database id of the Dossier that was found by the Studio code a
 
 A string (“true” or “false”) that indicates if the Studio code finds that it is needed to show the Select Dossier dialog or not.
 
-**suppressUI** _boolean_
+**suppressUI** _string_
 
-Should any user interface be suppressed or not.
+A string ("true" or "false") that indicates whether any user interface should be suppressed or not.
 
 **Return value** _Array of Boolean and Strings_
 

@@ -108,7 +108,7 @@ A boolean that indicates if the script is capable of placing the passed item(s) 
 
 ### Description
 
-Tells Studio for InDesign and InCopy whether this script can place the passed items or not. At this moment this function is only called for Dossiers.
+Tells Studio for InDesign and InCopy whether this script can place the passed items or not. This function is called when placing both Articles and Dossiers.
 
 ## placeItems
 
@@ -150,9 +150,9 @@ var item = doc.pageItems.itemByID(targetID);
 
 The string can also be "0". In that case the target item is unknown.
 
-**targetPage** _number_
+**targetPage** _string_
 
-0-based page number that matches the passed targetPointJson. It can directly be used in the myDoc.pages.item(<page_num>) scripting call.
+A string with the 0-based page number that matches the passed targetPointJson. It can directly be used in the myDoc.pages.item(<page_num>) scripting call.
 
 **targetPointJson** _string_
 
