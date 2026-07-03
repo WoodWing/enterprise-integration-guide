@@ -907,6 +907,11 @@ toc:
           path: smart-connection-scripting-guide/StudioPreference/Properties/enableSmartCaching.md
           url: smart-connection-scripting-guide/StudioPreference/Properties/enableSmartCaching.html
           permalink: 1162-enableSmartCaching
+        - title: overrideFrameElementLabelOnPlace
+          layout: chapter
+          path: smart-connection-scripting-guide/StudioPreference/Properties/overrideFrameElementLabelOnPlace.md
+          url: smart-connection-scripting-guide/StudioPreference/Properties/overrideFrameElementLabelOnPlace.html
+          permalink: 1162-overrideFrameElementLabelOnPlace
         - title: playSoundWhenRoutingMessageArrives
           layout: chapter
           path: smart-connection-scripting-guide/StudioPreference/Properties/playSoundWhenRoutingMessageArrives.md

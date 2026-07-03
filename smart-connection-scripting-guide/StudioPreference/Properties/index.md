@@ -12,6 +12,7 @@ Properties on the StudioPreference object.
 * [documentPaneFontSize](./documentPaneFontSize.md)
 * [dossierPanelShowRelatedDossiers](./dossierPanelShowRelatedDossiers.md)
 * [enableSmartCaching](./enableSmartCaching.md)
+* [overrideFrameElementLabelOnPlace](./overrideFrameElementLabelOnPlace.md)
 * [playSoundWhenRoutingMessageArrives](./playSoundWhenRoutingMessageArrives.md)
 * [previewPaneFontSize](./previewPaneFontSize.md)
 * [showImportOptionsDialogOnPlace](./showImportOptionsDialogOnPlace.md)

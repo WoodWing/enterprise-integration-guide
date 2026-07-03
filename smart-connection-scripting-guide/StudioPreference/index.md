@@ -15,6 +15,7 @@ The object representing the Studio preferences.
 * [documentPaneFontSize](./Properties/documentPaneFontSize.md)
 * [dossierPanelShowRelatedDossiers](./Properties/dossierPanelShowRelatedDossiers.md)
 * [enableSmartCaching](./Properties/enableSmartCaching.md)
+* [overrideFrameElementLabelOnPlace](./Properties/overrideFrameElementLabelOnPlace.md)
 * [playSoundWhenRoutingMessageArrives](./Properties/playSoundWhenRoutingMessageArrives.md)
 * [previewPaneFontSize](./Properties/previewPaneFontSize.md)
 * [showImportOptionsDialogOnPlace](./Properties/showImportOptionsDialogOnPlace.md)
