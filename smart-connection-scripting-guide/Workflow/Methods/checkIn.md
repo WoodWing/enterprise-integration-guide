@@ -44,7 +44,7 @@ try {
 ```javascript
 // Update the status metadata and then check in the document.
 var doc = app.activeDocument;
-doc.entMetaData.set(“Status”, “Ready for review”);
+doc.entMetaData.set(“Core_Basket”, “Ready for review”);
 try {
   doc.entWorkflow.checkIn();
 } catch (e) {

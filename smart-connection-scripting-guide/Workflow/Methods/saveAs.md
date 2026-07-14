@@ -32,9 +32,9 @@ Use the `”Type”` key in the [entMetaData](../../Document/Properties/entMetaD
 ```javascript
 // Set the required metadata and save the document as a new Studio Server object.
 var doc = app.activeDocument;
-doc.entMetaData.set(“Name”, “New Layout Copy”);
-doc.entMetaData.set(“Brand”, “WW News”);
-doc.entMetaData.set(“Type”, “Layout”);
+doc.entMetaData.set("Core_Name", "New Layout Copy");
+doc.entMetaData.set("Core_Publication", "WW News");
+doc.entMetaData.set("Core_Basket", "Layout Draft");
 try {
   var newDoc = doc.entWorkflow.saveAs();
   alert(“Saved as: “ + newDoc.name);
