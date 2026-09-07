@@ -61,9 +61,10 @@ Studio Server supports the following workflow object events:
 | Copied | `com.woodwing.studio/object/copied` | Creating a new object by copying an existing object.
 | Saved | `com.woodwing.studio/object/saved` | Saving a new file version for an object.
 | Modified | `com.woodwing.studio/object/properties-updated` | Changing the properties of an object using the Properties dialog.
+| Unlocked | `com.woodwing.studio/object/unlocked` | Releasing the lock of an object.
 
 The following object events are currently **not** supported:
-* Checkout to lock object for editing, or Abort Checkout to unlock.
+* Checkout to lock an object for editing.
 * Restore object version from history.
 * Change object targets or object relations without changing properties (for example dragging an object to a Dossier).
 * Send messages or adding operations to objects.
@@ -377,7 +378,7 @@ The `id` is unique per event.
 
 The `source` element contains the `Enterprise System ID` (prefixed by `urn:uuid:`) which is unique per Studio Server installation.
 
-The `data` element contains an `Object` for which `Metadata` and `Targets` are provided. The structure of those elements is defined in the workflow service definition (SCEnterprise.wsdl file).
+The `data` element contains an `Object` for which `Metadata` and `Targets` are provided. The structure of those elements is defined in the workflow service definition (SCEnterprise.wsdl file). For the Unlocked event, only `Metadata` is provided; `Targets` is `null`.
 
 ## Disabling or removing a Webhook registration
 Simply remove a Webhook registration if it needs to be disabled. (And create a new registration to enable.)
